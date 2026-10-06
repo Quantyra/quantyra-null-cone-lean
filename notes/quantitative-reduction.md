@@ -2,6 +2,8 @@
 
 2026-10-06, E002/S005. The explicit density comparison below is established by a direct mathematical argument. The reduction from finite abstract orders is conditional on an unproved reconstruction hypothesis. Neither is Lean verified. No novelty is claimed for Lipschitz interpolation or the statistical separation argument.
 
+Later same-day update: `finite-order-rate.md` now supplies the reconstruction hypothesis through a grid-witness proof and derives explicit exponents and constants. The conditional derivation below is retained; its original open-hypothesis status is superseded by that proof draft, subject to audit and formal verification.
+
 ## Rectangle discrepancy controls the coefficient
 
 For rho,sigma in K define C_rho(u,v) = integral over [0,u] times [0,v] of rho and epsilon = sup |C_rho-C_sigma|. Then

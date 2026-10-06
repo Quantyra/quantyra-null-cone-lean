@@ -2,7 +2,7 @@
 
 2026-10-06, E002/S005. Selected substantive target: the deterministic finite rank-reconstruction theorem underlying `finite-order-rate.md`. It replaces the earlier tentative full continuum automorphism target because it directly carries the quantitative proof. This is a specification, not a compiled proof.
 
-Environment pinned: Lean v4.30.0 and mathlib commit `c5ea00351c28e24afc9f0f84379aa41082b1188f` (verified remote tag v4.30.0). `QuantyraNullCone.lean` is a library initializer, not a theorem proof. Dependency setup is separate from theorem verification.
+Environment pinned: Lean v4.30.0 and mathlib commit `c5ea00351c28e24afc9f0f84379aa41082b1188f` (verified remote tag v4.30.0). Dependency setup and a root-library build now succeed. `notes/lean-verification.md` records the four checked component theorems and exact dependencies. The selected full rank theorem remains incomplete: marginal-strip counts, the geometric disagreement subset, and the final two-coordinate assembly remain to be formalized.
 
 ## Exact mathematical statement
 
@@ -33,4 +33,4 @@ This statement includes all realizers, missing coordinate orderings, one global 
 
 A compiled proof of only components 1 or 2 does not complete this target. Avoid `sorry`, new axioms, and assumptions equivalent to the target. Audit theorem dependencies with Lean's axiom printer; ordinary classical choice and foundational quotient/propositional extensionality dependencies are acceptable and should be reported.
 
-Remaining to-do list: complete dependency setup; implement all six components; compile; inspect axioms and reproduce the build. Probability, continuous-density interpolation, and the full spacetime theorem remain outside the claim of this first selected Lean target.
+Remaining to-do list: prove the strip-count and disagreement bridges; assemble all six components as the exact finite rank theorem; compile and inspect its axioms. Probability, continuous-density interpolation, and the full spacetime theorem remain outside the claim of this first selected Lean target.

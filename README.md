@@ -7,3 +7,5 @@ Model and conjecture: `../Quantyra-Space-Planning/docs/finite-order-spacetime-th
 Current evidence is a mathematical proof draft, not a Lean verification or a novelty claim. No compiled Lean project exists yet. The inverse-rate conjecture remains open within this investigation.
 
 See [identifiability proof draft](notes/identifiability.md).
+
+The [quantitative reduction](notes/quantitative-reduction.md) proves an explicit rectangle-to-density bound in prose, gives its sharp exponent for that intermediary, and isolates the unproved finite-order reconstruction hypothesis sufficient for the main conjecture.

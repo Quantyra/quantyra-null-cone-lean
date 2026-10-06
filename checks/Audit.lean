@@ -1,0 +1,6 @@
+import QuantyraNullCone
+
+#check QuantyraNullCone.finite_realizer_rank_rigidity
+#check QuantyraNullCone.finite_realizer_rank_rigidity_specified
+#print axioms QuantyraNullCone.finite_realizer_rank_rigidity
+#print axioms QuantyraNullCone.finite_realizer_rank_rigidity_specified

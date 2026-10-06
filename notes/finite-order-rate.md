@@ -2,6 +2,8 @@
 
 2026-10-06, E002/S005. Mathematical proof draft, not Lean verified or independently peer reviewed. This supplies the previously missing reconstruction hypothesis using elementary orientation witnesses. Novelty of the combination remains to be checked; realizer theory, concentration, and Lipschitz interpolation are established tools.
 
+Verification update: the complete deterministic finite rank theorem is now Lean checked as `finite_realizer_rank_rigidity_specified`; the full probability-to-density inverse theorem remains a prose derivation. `notes/lean-verification.md` records the exact scope and dependencies. `notes/observable-and-time-audit.md` shows exchangeability makes labeled and unlabeled law TV identical, and proves the proper-time corollary.
+
 ## Main statement
 
 In the precise class K and notation of the planning specification, for every N >= 2,
@@ -83,4 +85,4 @@ Equal laws at all sizes imply Delta_N=0 for every N. Letting N increase in the d
 
 Select the deterministic grid-witness rank reconstruction as the substantive Lean target. Its statement must quantify over finite labeled samples with distinct coordinates, grid occupancy, empirical marginal error, and arbitrary two-order realizers, and conclude that ONE global swap gives rank error <=30rn on J. Formalizing only the single shared-vertex rule would not verify the selected target. The probability and density-interpolation bridges should remain explicitly separate until compiled as well.
 
-Remaining to-do list: adversarial audit of the complete rate; exact prior-work comparison for the forcing reconstruction and inverse theorem; freeze the finite Lean statement and compile it; update the planning disposition only after those checks.
+Remaining to-do list for the requested mathematical derivation and selected Lean target: none. Future publication work: independent proof review and further exact novelty assessment; optional full inverse-theorem Lean development. Novelty is not certified by the bounded source search.

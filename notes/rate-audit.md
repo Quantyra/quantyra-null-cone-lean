@@ -1,6 +1,6 @@
 # Finite order inverse rate audit
 
-2026-10-06. Author audit of the mathematical proof in `finite-order-rate.md`; no independent referee or Lean audit is represented.
+2026-10-06. Author audit of the mathematical proof in `finite-order-rate.md`. The selected finite rank theorem is additionally Lean checked; the whole inverse theorem has no formal or independent referee verification claim.
 
 | Requirement | Evidence and disposition |
 | --- | --- |
@@ -13,7 +13,8 @@
 | Fixed constants and all N | n>=65536 gives failure <=12/m^2<1/10. Reconstruction error <=174n^(-1/4); interpolation gives alpha=1/12. Smaller n uses d_conf<=1. |
 | Identifiability in K | The quantitative result with Delta_N=0 tends to zero, so the kernel-theory bridge is unnecessary for K. |
 | Physical distance | Density coefficient is the specified metric; no curvature or carrying-capacity consequence is inferred. |
-| Selected Lean target | `lean-target.md` fixes the finite rank theorem and six required components; no compiled theorem is claimed. |
+| Selected Lean target | `lean-target.md` fixes the finite rank theorem and six required components; `Bridges.lean` now proves them, including the exact original specialization. Final build and `checks/Audit.lean` both exit zero. |
+| Labels and proper time | `observable-and-time-audit.md` gives exchangeable labeled/unlabeled TV equivalence and the coefficient-to-time-separation bound. These are prose proofs. |
 
 Reproducible falsification checks:
 
@@ -24,4 +25,6 @@ Source comparison: [Klavik and Zeman, section 3](https://arxiv.org/html/1506.050
 
 The constant 100 is extremely conservative: the bare N term becomes nontrivial only at enormous N. The result establishes a polynomial inverse modulus, not a practical estimator or a recommended experimental sample size. Optimization is separate research.
 
-Remaining to-do list: freeze library-level Lean signature and compile the selected finite theorem; inspect theorem dependencies; deeper comparison of the exact forcing estimate against random-order and permutation-graph literature; obtain independent mathematical review before publication claims.
+2026-10-06 final source comparison rechecked the prime-orientation statement in Klavik and Zeman section 3 and Braun's all-law reconstruction Theorem 1.4. Searches for partial-order/permuton reconstruction, random dimension-two orders, approximate permutation representations, and quantitative two-dimensional causal reconstruction located no inspected theorem stating our exact occupancy-to-rank bound or its coefficient inverse-rate specialization. Winkler remains an abstract-level comparison, not a full-paper exclusion. The inference is a provisional distinction, not a certification of originality. Do not claim event labels alone distinguish this result: for iid samples labeled and unlabeled order-law TV agree.
+
+Remaining to-do list for the bounded derivation and selected formal target: none. Publication-level novelty clearance and independent review are future gates before discovery claims.

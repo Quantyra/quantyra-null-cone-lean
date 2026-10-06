@@ -1,12 +1,13 @@
 import QuantyraNullCone.Realizer
 import QuantyraNullCone.Grid
 import QuantyraNullCone.Counts
+import QuantyraNullCone.Bridges
 
 /-!
 Quantyra finite-order reconstruction.
 
 The selected theorem is specified in notes/lean-target.md.
-The orientation, occupied-grid witness, and general rank-count lemmas are compiled.
-The full selected finite rank reconstruction theorem still requires the geometric
-disagreement and marginal-strip count bridges. This import does not verify that theorem.
+The selected deterministic finite rank reconstruction theorem is proved in Bridges.
+The probability, cumulative reconstruction, and continuous density interpolation
+parts of the full spacetime inverse theorem remain mathematical prose proofs.
 -/

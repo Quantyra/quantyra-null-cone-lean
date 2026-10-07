@@ -184,6 +184,9 @@ class Gmail:
 
 
 def authenticate():
+    # Google's helper prints the URL before blocking; make it visible in piped runs.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)
     from google_auth_oauthlib.flow import InstalledAppFlow
     config = validate_client(load_secret("client.dpapi"))
     flow = InstalledAppFlow.from_client_config(config, SCOPES, autogenerate_code_verifier=True)

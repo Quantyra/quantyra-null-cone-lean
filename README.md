@@ -2,9 +2,11 @@
 
 [![Verify proofs and manuscript](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml/badge.svg)](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23202762.svg)](https://doi.org/10.5281/zenodo.23202762)
+
 Lean 4 proof software and a draft preprint by **Daniel Eric Fredriksen, Quantyra Inc.** Developed with OpenAI Codex assistance under the author's research direction.
 
-**Read the [preprint PDF](manuscript/finite-causal-order-reconstruction.pdf)** or its [TeX source](manuscript/finite-causal-order-reconstruction.tex). [Integrity and reproducibility](INTEGRITY.md) · [Citation metadata](CITATION.cff) · [Zenodo metadata](.zenodo.json) · [Changelog](CHANGELOG.md).
+**Read the [preprint PDF](manuscript/finite-causal-order-reconstruction.pdf)** or its [TeX source](manuscript/finite-causal-order-reconstruction.tex). [Integrity and reproducibility](INTEGRITY.md) Â· [Citation metadata](CITATION.cff) Â· [Zenodo metadata](.zenodo.json) Â· [Changelog](CHANGELOG.md).
 
 ## Result and verification scope
 
@@ -44,7 +46,7 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 ## Citation, archive and licenses
 
-Version **0.1.0** publication package is prepared. Cite the author, repository and exact release or commit using [CITATION.cff](CITATION.cff). Zenodo's GitHub integration is enabled; **no DOI is asserted until a published record is verified**. [Release text](releases/v0.1.0.md) documents the bounded scope. The preprint has not been submitted to arXiv or a journal.
+[Version **0.1.0**](https://github.com/Quantyra/quantyra-null-cone-lean/releases/tag/v0.1.0) is published and archived: software version DOI [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763); concept DOI [10.5281/zenodo.23202762](https://doi.org/10.5281/zenodo.23202762) covers all versions. Use [CITATION.cff](CITATION.cff) to cite the exact release. [Release text](releases/v0.1.0.md) documents its bounded scope. Zenodo dates the release 7 October 2026 in UTC (6 October locally). The archive includes the preprint but is a **software deposit**, not a manuscript-specific DOI. The main-branch PDF adds the verified software DOI as a post-archive citation annotation; the immutable release PDF predates that annotation. The preprint has not been submitted to arXiv or a journal.
 
 Software, Lean proofs, scripts and repository documentation: [Apache-2.0](LICENSE). Files under `manuscript/`: [CC-BY-4.0](LICENSES/CC-BY-4.0.txt). See [NOTICE](NOTICE) for attribution and license boundaries. Dependencies retain their own licenses.
 

@@ -1,0 +1,79 @@
+[
+  {
+    "run": "space-sampling-20261007T094906Z-65ffc1",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "428fd383f80d877d0ffdf60f4e654192fe54a24a78902e9ac615cacd575c43aa"
+  },
+  {
+    "run": "space-sampling-20261007T095508Z-350865",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "410688bfaa388d6a6182997ad1e76104733c2ba2cf782cfe1f3b41c874a312c8"
+  },
+  {
+    "run": "space-sampling-20261007T095909Z-ad8738",
+    "exit": 1,
+    "warnings": 2,
+    "accepted": false,
+    "input_sha256": "1e8354e330ad0890ed86af0c21434abada4f6d4e3c9d1616e062e1b264d479d4"
+  },
+  {
+    "run": "space-sampling-20261007T100306Z-143f24",
+    "exit": 0,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "6e34442af33fecc3352632399361204c227620e588034a559172adbd6fdb4a78"
+  },
+  {
+    "run": "space-sampling-20261007T100623Z-73182d",
+    "exit": 1,
+    "warnings": 1,
+    "accepted": false,
+    "input_sha256": "d66a5c487500f774af5ab8320e2a2c3db1880da494c934f590003e3fd3db082b"
+  },
+  {
+    "run": "space-sampling-20261007T101017Z-89fb35",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "d989987aaae59cf387b08d6858eaf79f487bc0f4a75306da86e2d38037854051"
+  },
+  {
+    "run": "space-sampling-20261007T101605Z-8cdc47",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "df1cb4362edc739431d09810c4f2c2bc5e2784674216fea2a89ab19ba2c5e22f"
+  },
+  {
+    "run": "space-sampling-20261007T102102Z-240f58",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "8c443d8860d43b57bd2176fa7739b23f9fef1aef65b913a25594f91c6b8efb4a"
+  },
+  {
+    "run": "space-sampling-20261007T102611Z-799a61",
+    "exit": 1,
+    "warnings": 3,
+    "accepted": false,
+    "input_sha256": "aea9446ab1ae6b7bc8430490f5133515774722ca43a311969f921315f616b1c4"
+  },
+  {
+    "run": "space-sampling-20261007T103127Z-54c215",
+    "exit": 0,
+    "warnings": 2,
+    "accepted": false,
+    "input_sha256": "74b44fdb4bd9c80fdad705e7c77a6cc515a0e11eaf21a5a6bfb295e3a9b723c8"
+  },
+  {
+    "run": "space-sampling-20261007T103552Z-585351",
+    "exit": 0,
+    "warnings": 0,
+    "accepted": true,
+    "input_sha256": "eec58987012e239728a30d362bb7e01ea9532dab10257e7a59a8f215a8eef582"
+  }
+]

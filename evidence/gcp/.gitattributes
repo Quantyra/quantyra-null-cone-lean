@@ -1,2 +1,2 @@
-# Retain compiler/audit output byte for byte, including emitted final blank lines.
-**/logs/* -text whitespace=-blank-at-eof
+# Retain compiler/audit output byte for byte, including emitted whitespace.
+**/logs/* -text whitespace=-blank-at-eof,-blank-at-eol

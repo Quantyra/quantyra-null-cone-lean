@@ -32,3 +32,35 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.boundary_card_le_of_grid_marginals
 #print axioms QuantyraNullCone.grid_vertices_empiricalCDF
 #print axioms QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices
+#check QuantyraNullCone.InDensityClass.sample_ae_mem_diamond
+#check QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines
+#check QuantyraNullCone.InDensityClass.gridCell_mass_lower
+#check QuantyraNullCone.InDensityClass.sample_misses_le_exp
+#check QuantyraNullCone.InDensityClass.grid_occupancy_failure
+#check QuantyraNullCone.InDensityClass.fst_map_uniform
+#check QuantyraNullCone.InDensityClass.snd_map_uniform
+#check QuantyraNullCone.InDensityClass.sample_coordinates_injective
+#check QuantyraNullCone.InDensityClass.indicator_concentration
+#check QuantyraNullCone.InDensityClass.empiricalCDF_concentration
+#check QuantyraNullCone.InDensityClass.grid_vertices_failure
+#check QuantyraNullCone.InDensityClass.sample_good_probability
+#check QuantyraNullCone.InDensityClass.reconstruction_probability_grid
+#check QuantyraNullCone.grid_failure_bound
+#check QuantyraNullCone.fourth_root_grid_data
+#check QuantyraNullCone.InDensityClass.reconstruction_probability
+#print axioms QuantyraNullCone.InDensityClass.sample_ae_mem_diamond
+#print axioms QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines
+#print axioms QuantyraNullCone.InDensityClass.gridCell_mass_lower
+#print axioms QuantyraNullCone.InDensityClass.sample_misses_le_exp
+#print axioms QuantyraNullCone.InDensityClass.grid_occupancy_failure
+#print axioms QuantyraNullCone.InDensityClass.fst_map_uniform
+#print axioms QuantyraNullCone.InDensityClass.snd_map_uniform
+#print axioms QuantyraNullCone.InDensityClass.sample_coordinates_injective
+#print axioms QuantyraNullCone.InDensityClass.indicator_concentration
+#print axioms QuantyraNullCone.InDensityClass.empiricalCDF_concentration
+#print axioms QuantyraNullCone.InDensityClass.grid_vertices_failure
+#print axioms QuantyraNullCone.InDensityClass.sample_good_probability
+#print axioms QuantyraNullCone.InDensityClass.reconstruction_probability_grid
+#print axioms QuantyraNullCone.grid_failure_bound
+#print axioms QuantyraNullCone.fourth_root_grid_data
+#print axioms QuantyraNullCone.InDensityClass.reconstruction_probability

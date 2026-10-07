@@ -1,0 +1,10 @@
+{
+  "project": "quantyra-lean-cert-20260915",
+  "instance": "quantyra-lean-builder-01",
+  "id": "8337954477286097405",
+  "zone": "us-central1-a",
+  "machine_type": "e2-highmem-8",
+  "initial_state": "TERMINATED",
+  "final_state": "TERMINATED",
+  "idle_shutdown_before_acceptance_launch": true
+}

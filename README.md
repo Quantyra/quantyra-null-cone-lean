@@ -19,9 +19,9 @@ d_conf(rho, sigma) <= 100 (N^(-1/12) + Delta_N(rho, sigma)).
 Improved prose bound: d_conf <= 130 ((log N / N)^(1/6) + Delta_N).
 ```
 
-The class comprises smooth densities on the square between `1/2` and `3/2`, with uniform marginals and Euclidean Lipschitz constant at most two. `Delta_N` compares iid finite causal-order laws; `d_conf` compares density coefficients in supremum norm modulo axis exchange. Only abstract orders are observed. The full inverse theorem's probability and continuum arguments are **prose proofs, not Lean verified**. Originality and independent review remain unconfirmed. Constants are conservative; no practical sample budget or optimal exponent is claimed.
+The class comprises smooth densities on the square between `1/2` and `3/2`, with uniform marginals and Euclidean Lipschitz constant at most two. `Delta_N` compares iid finite causal-order laws; `d_conf` compares density coefficients in supremum norm modulo axis exchange. Only abstract orders are observed. The original grid reconstruction probability bound is Lean verified. The full inverse theorem's density interpolation, observable-law separation and all-N assembly remain **prose proofs, not Lean verified**. Originality and independent review remain unconfirmed. Constants are conservative; no practical sample budget or optimal exponent is claimed.
 
-The active formal extension adds [deterministic coordinate/CDF bridges](QuantyraNullCone/Cumulative.lean), [concrete density/order-law definitions](QuantyraNullCone/Model.lean), [probability normalization](QuantyraNullCone/Measures.lean) and [uniform marginals/CDF threshold stability](QuantyraNullCone/DensityCDF.lean), followed by the [grid-to-CDF bridge](QuantyraNullCone/GridAccuracy.lean). Grid vertices now supply the marginal, boundary and latent-CDF accuracy premises; probability/interpolation stages remain unfinished. These compiled intermediate exports do not complete the full inverse theorem.
+The active formal extension adds [deterministic coordinate/CDF bridges](QuantyraNullCone/Cumulative.lean), [concrete density/order-law definitions](QuantyraNullCone/Model.lean), [probability normalization](QuantyraNullCone/Measures.lean) and [uniform marginals/CDF threshold stability](QuantyraNullCone/DensityCDF.lean), followed by the [grid-to-CDF bridge](QuantyraNullCone/GridAccuracy.lean). Grid vertices supply the marginal, boundary and latent-CDF accuracy premises. [Sampling and concentration](QuantyraNullCone/ProbabilityRate.lean) now give the original `9/10` reconstruction success bound at `174 n^(-1/4)` for `n>=65536`; density interpolation, observable-TV separation and full assembly remain unfinished. These compiled intermediate exports do not complete the full inverse theorem.
 
 This is restricted theoretical geometry. It establishes no new physics, general spacetime reconstruction, curvature control or carrying-capacity gain.
 
@@ -36,7 +36,7 @@ python checks/check_grid_witnesses.py
 python checks/check_small_realizers.py
 ```
 
-Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b1188f**. Both final theorem dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, with no added axioms or admitted proofs. [Verification evidence](notes/lean-verification.md) records the exact statements and retained GCP build provenance, alongside historical local results. CI verifies the library, dependency reports, sanity checks and manuscript compilation.
+Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b1188f**. All selected export dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, with no added axioms or admitted proofs. [Verification evidence](notes/lean-verification.md) records the exact statements and retained GCP build provenance, alongside historical local results. CI verifies the library, dependency reports, sanity checks and manuscript compilation.
 
 ## Manuscript and research notes
 

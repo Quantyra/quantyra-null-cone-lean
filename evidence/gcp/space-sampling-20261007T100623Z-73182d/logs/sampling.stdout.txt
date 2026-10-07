@@ -1,0 +1,201 @@
+ℹ [916/983] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [973/1043] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1050/1103] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1051/1103] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1052/1103] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2719/2781] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2720/2781] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2721/2781] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2892/2894] Built QuantyraNullCone.Sampling (8.5s)
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2893/2894] Building QuantyraNullCone.Coordinates (7.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/QuantyraNullCone/Coordinates.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean/QuantyraNullCone/Coordinates.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean/QuantyraNullCone/Coordinates.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/ir/QuantyraNullCone/Coordinates.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/ir/QuantyraNullCone/Coordinates.setup.json --json
+error: QuantyraNullCone/Coordinates.lean:46:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (Function.eval k) (Measure.pi fun x => densityMeasure rho)
+in the target expression
+  Measure.map f (Measure.map (Function.eval k) (sampleMeasure rho n)) = unitUniform
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+i j : Fin n
+hij : i ≠ j
+f : DiamondPoint → ℝ
+hf : Measurable f
+hLaw : Measure.map f (densityMeasure rho) = unitUniform
+this✝ : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+this : IsProbabilityMeasure (sampleMeasure rho n) := sample_isProbabilityMeasure h n
+hIndep : iIndepFun (fun k sample => f (sample k)) (sampleMeasure rho n)
+k : Fin n
+⊢ Measure.map f (Measure.map (Function.eval k) (sampleMeasure rho n)) = unitUniform
+error: QuantyraNullCone/Coordinates.lean:49:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (fun ω => ((f ∘ fun sample => sample i) ω, (f ∘ fun sample => sample j) ω)) (sampleMeasure rho n)
+in the target expression
+  Measure.map (fun sample => (f (sample i), f (sample j))) (sampleMeasure rho n) = unitUniform.prod unitUniform
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+i j : Fin n
+hij : i ≠ j
+f : DiamondPoint → ℝ
+hf : Measurable f
+hLaw : Measure.map f (densityMeasure rho) = unitUniform
+this✝ : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+this : IsProbabilityMeasure (sampleMeasure rho n) := sample_isProbabilityMeasure h n
+hIndep : iIndepFun (fun k sample => f (sample k)) (sampleMeasure rho n)
+hMap : ∀ (k : Fin n), Measure.map (fun sample => f (sample k)) (sampleMeasure rho n) = unitUniform
+⊢ Measure.map (fun sample => (f (sample i), f (sample j))) (sampleMeasure rho n) = unitUniform.prod unitUniform
+error: QuantyraNullCone/Coordinates.lean:56:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (fun sample => (f (sample i), f (sample j))) (sampleMeasure rho n)
+in the target expression
+  (Measure.map (fun a => ((f ∘ fun f => f i) a, (f ∘ fun f => f j) a)) (sampleMeasure rho n)) (Set.diagonal ℝ) =
+    (sampleMeasure rho n) ((fun a => ((f ∘ fun f => f i) a, (f ∘ fun f => f j) a)) ⁻¹' Set.diagonal ℝ)
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+i j : Fin n
+hij : i ≠ j
+f : DiamondPoint → ℝ
+hf : Measurable f
+hLaw : Measure.map f (densityMeasure rho) = unitUniform
+this✝ : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+this : IsProbabilityMeasure (sampleMeasure rho n) := sample_isProbabilityMeasure h n
+hIndep : iIndepFun (fun k sample => f (sample k)) (sampleMeasure rho n)
+hMap : ∀ (k : Fin n), Measure.map (fun sample => f (sample k)) (sampleMeasure rho n) = unitUniform
+hJoint : Measure.map (fun sample => (f (sample i), f (sample j))) (sampleMeasure rho n) = unitUniform.prod unitUniform
+hMapDiag :
+  (Measure.map (fun a => ((f ∘ fun f => f i) a, (f ∘ fun f => f j) a)) (sampleMeasure rho n)) (Set.diagonal ℝ) =
+    (sampleMeasure rho n) ((fun a => ((f ∘ fun f => f i) a, (f ∘ fun f => f j) a)) ⁻¹' Set.diagonal ℝ)
+⊢ (sampleMeasure rho n) {sample | f (sample i) = f (sample j)} = 0
+info: QuantyraNullCone/Coordinates.lean:84:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:85:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:86:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+✖ [2894/2894] Building QuantyraNullCone.Concentration (18s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/QuantyraNullCone/Concentration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean/QuantyraNullCone/Concentration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/lib/lean/QuantyraNullCone/Concentration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/ir/QuantyraNullCone/Concentration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T100623Z-73182d/source/.lake/build/ir/QuantyraNullCone/Concentration.setup.json --json
+error: QuantyraNullCone/Concentration.lean:29:17: typeclass instance problem is stuck
+  IsProbabilityMeasure ?m.194
+
+Note: Lean will not try to resolve this typeclass instance problem because the third type argument to `IsProbabilityMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: QuantyraNullCone/Concentration.lean:43:10: Application type mismatch: The argument
+  hSGMap
+has type
+  HasSubgaussianMGF (fun q => Y q - p) (1 / 4) (Measure.map (Function.eval i) (sampleMeasure rho n))
+but is expected to have type
+  HasSubgaussianMGF ?m.300 ?m.295 (Measure.map (fun f => f i) ?m.309)
+in the application
+  HasSubgaussianMGF.of_map (Measurable.aemeasurable (measurable_pi_apply i)) hSGMap
+error: QuantyraNullCone/Concentration.lean:48:17: Unknown identifier `measure_sum_ge_le_of_iIndepFun`
+error: QuantyraNullCone/Concentration.lean:15:45: unsolved goals
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+hn : 0 < n
+S : Set DiamondPoint
+hS : MeasurableSet S
+r : ℝ
+hr : 0 ≤ r
+this✝ : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+this : IsProbabilityMeasure (sampleMeasure rho n) := sample_isProbabilityMeasure h n
+Y : DiamondPoint → ℝ := S.indicator fun x => 1
+p : ℝ := ((densityMeasure rho) S).toReal
+X : Fin n → (Fin n → DiamondPoint) → ℝ := fun i sample => Y (sample i) - p
+hMeas : Measurable Y
+hBound : ∀ (q : DiamondPoint), Y q ∈ Set.Icc 0 1
+hMean : ∫ (q : DiamondPoint), Y q ∂densityMeasure rho = p
+hSG : HasSubgaussianMGF (fun q => Y q - p) (1 / 4) (densityMeasure rho)
+hIndep : iIndepFun X (sampleMeasure rho n)
+hEach : ∀ (i : Fin n), HasSubgaussianMGF (X i) (1 / 4) (sampleMeasure rho n)
+hNegIndep : iIndepFun (fun i sample => -X i sample) (sampleMeasure rho n)
+hnR : 0 < ↑n
+hThreshold : 0 ≤ ↑n * r
+⊢ (sampleMeasure rho n).real
+      {sample | r ≤ |(∑ i, S.indicator (fun x => 1) (sample i)) / ↑n - ((densityMeasure rho) S).toReal|} ≤
+    2 * Real.exp (-2 * ↑n * r ^ 2)
+warning: QuantyraNullCone/Concentration.lean:27:39: This simp argument is unused:
+  setIntegral_const
+
+Hint: Omit it from the simp argument list.
+  simp [Y, p, integral_indicator hS, s̵e̵t̵I̵n̵t̵e̵g̵r̵a̵l̵_̵c̵o̵n̵s̵t̵,̵ ̵Measure.real]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/Concentration.lean:103:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i, (cdfRegion s t).indicator (fun x => 1) (?sample i)
+in the target expression
+  sample ∈ {sample | r ≤ |empiricalCDF (fun i => (sample i).1) (fun i => (sample i).2) s t - populationCDF rho s t|} ↔
+    sample ∈
+      {sample |
+        r ≤
+          |(∑ i, (cdfRegion s t).indicator (fun x => 1) (sample i)) / ↑n -
+              ((densityMeasure rho) (cdfRegion s t)).toReal|}
+
+case h.e'_3.e_s.h
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+hn : 0 < n
+s t r : ℝ
+hr : 0 ≤ r
+hCount :
+  ∀ (sample : Fin n → DiamondPoint),
+    ∑ i, (cdfRegion s t).indicator (fun x => 1) (sample i) =
+      ↑(rectangleCount (fun i => (sample i).1) (fun i => (sample i).2) s t).card
+sample : Fin n → DiamondPoint
+⊢ sample ∈ {sample | r ≤ |empiricalCDF (fun i => (sample i).1) (fun i => (sample i).2) s t - populationCDF rho s t|} ↔
+    sample ∈
+      {sample |
+        r ≤
+          |(∑ i, (cdfRegion s t).indicator (fun x => 1) (sample i)) / ↑n -
+              ((densityMeasure rho) (cdfRegion s t)).toReal|}
+info: QuantyraNullCone/Concentration.lean:137:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Concentration.lean:138:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Concentration.lean:139:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.Coordinates
+- QuantyraNullCone.Concentration

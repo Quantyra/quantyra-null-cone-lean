@@ -1,0 +1,73 @@
+QuantyraNullCone/Sampling.lean:68:41: error: mod_cast has type
+  j.succ ≤ m
+but is expected to have type
+  ↑j + ↑m * r ≤ ↑m
+QuantyraNullCone/Sampling.lean:71:41: error: mod_cast has type
+  k.succ ≤ m
+but is expected to have type
+  ↑k + ↑m * r ≤ ↑m
+QuantyraNullCone/Sampling.lean:91:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Measure.prod ?m.83 ?m.84) (?s ×ˢ ?t)
+in the target expression
+  (volume.prod volume) ((Set.Ioo (↑j * r) ((↑j + 1) * r)).prod (Set.Ioo (↑k * r) ((↑k + 1) * r))) =
+    ENNReal.ofReal (r ^ 2)
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+j k m : ℕ
+r : ℝ
+hj : j < m
+hk : k < m
+hr : 0 < r
+hmr : ↑m * r = 1
+this : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+⊢ (volume.prod volume) ((Set.Ioo (↑j * r) ((↑j + 1) * r)).prod (Set.Ioo (↑k * r) ((↑k + 1) * r))) =
+    ENNReal.ofReal (r ^ 2)
+QuantyraNullCone/Sampling.lean:99:2: error: Type mismatch: After simplification, term
+  hLowReal
+ has type
+  2⁻¹ * r ^ 2 ≤ ((densityMeasure rho) (openGridCell j k r)).toReal
+but is expected to have type
+  r ^ 2 / 2 ≤ ((densityMeasure rho) (openGridCell j k r)).toReal
+QuantyraNullCone/Sampling.lean:121:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  1 - Measure.real ?m.41 S
+in the target expression
+  0 ≤ 1 - ((densityMeasure rho) S).toReal
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+S : Set DiamondPoint
+hS : MeasurableSet S
+this : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+⊢ 0 ≤ 1 - ((densityMeasure rho) S).toReal
+QuantyraNullCone/Sampling.lean:147:17: error: Application type mismatch: The argument
+  hj
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  j < m
+of sort `Prop` in the application
+  ⟨j, hj⟩
+QuantyraNullCone/Sampling.lean:147:23: error: Application type mismatch: The argument
+  k
+has type
+  j < m
+of sort `Prop` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  Fin.mk k
+'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

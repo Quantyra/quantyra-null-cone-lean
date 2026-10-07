@@ -13,7 +13,8 @@ The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_s
 | Normalization of the concrete density, iid sample and directed-order laws | `Measures.lean` | Compiled from the original density class; no assumed probability normalization |
 | Uniform coordinate marginal measures, CDF threshold stability and unit-edge values | `DensityCDF.lean` | Compiled from K; concrete CDF threshold stability is proved rather than assumed |
 | Grid-vertex deductions and concrete deterministic `87r` CDF reconstruction | `GridAccuracy.lean` | GCP compiled; actual K plus occupancy/distinctness/vertex accuracy, without assumed marginal/boundary/CDF conclusions |
-| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; probability and continuum bridges are not Lean verified |
+| Iid support/null ties, occupancy, concentration and original fourth-root reconstruction probability | `Sampling.lean`, `Coordinates.lean`, `Concentration.lean`, `GoodSamples.lean`, `ProbabilityRate.lean` | GCP verified from original K; `9/10` success at `174 n^(-1/4)` for every `n>=65536` |
+| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; reconstruction probability is formalized, while interpolation, observable-TV separation and all-N assembly remain unverified |
 | Identifiability, label-law equivalence, proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences |
 | Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |
 
@@ -32,6 +33,7 @@ try {
 lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
 lake exe cache get Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.MeasureTheory.Measure.WithDensity Mathlib.MeasureTheory.Measure.Lebesgue.Basic Mathlib.MeasureTheory.Constructions.Pi Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 lake exe cache get Mathlib.MeasureTheory.Integral.Prod Mathlib.MeasureTheory.Function.LocallyIntegrable
+lake exe cache get Mathlib.Probability.Moments.SubGaussian Mathlib.Probability.Independence.Basic Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Analysis.SpecialFunctions.Pow.Real
 lake build QuantyraNullCone
 python checks/check_integrity.py
 python checks/check_grid_witnesses.py

@@ -1,0 +1,30 @@
+QuantyraNullCone/Sampling.lean:154:53: error: Ambiguous term
+  not_imp
+Possible interpretations:
+  _root_.not_imp : ¬(?m.101 → ?m.102) ↔ ?m.101 ∧ ¬?m.102
+  
+  Classical.not_imp : ¬(?m.101 → ?m.102) ↔ ?m.101 ∧ ¬?m.102
+QuantyraNullCone/Sampling.lean:157:17: error: Application type mismatch: The argument
+  hj
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  j < m
+of sort `Prop` in the application
+  ⟨j, hj⟩
+QuantyraNullCone/Sampling.lean:157:23: error: Application type mismatch: The argument
+  k
+has type
+  j < m
+of sort `Prop` but is expected to have type
+  ℕ
+of sort `Type` in the application
+  Fin.mk k
+'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

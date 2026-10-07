@@ -1,0 +1,22 @@
+QuantyraNullCone/Sampling.lean:154:53: warning: `_root_.not_imp` has been deprecated: Use `Classical.not_imp` instead
+QuantyraNullCone/Sampling.lean:165:15: error: typeclass instance problem is stuck
+  IsOrderedRing ?m.236
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, and third type arguments to `IsOrderedRing` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+QuantyraNullCone/Sampling.lean:154:53: warning: This simp argument is unused:
+  _root_.not_imp
+
+Hint: Omit it from the simp argument list.
+  simp only [GridOccupied, not_forall, not_exists,̵ ̵_̵r̵o̵o̵t̵_̵.̵n̵o̵t̵_̵i̵m̵p̵] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

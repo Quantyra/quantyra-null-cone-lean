@@ -7,6 +7,11 @@ import QuantyraNullCone.Model
 import QuantyraNullCone.Measures
 import QuantyraNullCone.DensityCDF
 import QuantyraNullCone.GridAccuracy
+import QuantyraNullCone.Sampling
+import QuantyraNullCone.Coordinates
+import QuantyraNullCone.Concentration
+import QuantyraNullCone.GoodSamples
+import QuantyraNullCone.ProbabilityRate
 
 /-!
 Quantyra finite-order reconstruction.
@@ -14,6 +19,7 @@ Quantyra finite-order reconstruction.
 The selected theorem is specified in notes/lean-target.md.
 The selected deterministic finite rank reconstruction theorem is proved in Bridges.
 The coordinate/rank identity and deterministic cumulative sandwich are also proved.
-The analytic premises, probability and continuous density interpolation required
-for the full spacetime inverse theorem remain outside the completed formal scope.
+The probability modules extend the original grid reconstruction rate.
+Continuous density interpolation, observable-law separation and the all-N inverse
+assembly remain separate unfinished stages of the full spacetime inverse theorem.
 -/

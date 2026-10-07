@@ -1,0 +1,1 @@
+PASS: 120 latent permutation orders; 771 realizers; every forcing triple

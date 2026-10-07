@@ -33,7 +33,15 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "InDensityClass.vMarginal_mass", "InDensityClass.populationCDF_thresholdStability",
              "InDensityClass.populationCDF_u_one", "InDensityClass.populationCDF_one_v",
              "grid_marginal_accuracy_uniform", "boundary_card_le_of_grid_marginals",
-             "grid_vertices_empiricalCDF", "finite_realizer_cumulative_error_of_grid_vertices"):
+             "grid_vertices_empiricalCDF", "finite_realizer_cumulative_error_of_grid_vertices",
+             "InDensityClass.sample_ae_mem_diamond", "InDensityClass.sample_ae_no_grid_lines",
+             "InDensityClass.gridCell_mass_lower", "InDensityClass.sample_misses_le_exp",
+             "InDensityClass.grid_occupancy_failure", "InDensityClass.fst_map_uniform",
+             "InDensityClass.snd_map_uniform", "InDensityClass.sample_coordinates_injective",
+             "InDensityClass.indicator_concentration", "InDensityClass.empiricalCDF_concentration",
+             "InDensityClass.grid_vertices_failure", "InDensityClass.sample_good_probability",
+             "InDensityClass.reconstruction_probability_grid", "grid_failure_bound",
+             "fourth_root_grid_data", "InDensityClass.reconstruction_probability"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

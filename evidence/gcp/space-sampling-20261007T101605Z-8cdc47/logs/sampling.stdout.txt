@@ -1,0 +1,100 @@
+ℹ [978/983] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [979/983] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [980/983] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [981/983] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [982/983] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2579/2694] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2580/2694] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2581/2694] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2892/2895] Built QuantyraNullCone.Sampling (3.9s)
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2893/2895] Built QuantyraNullCone.Coordinates (3.1s)
+info: QuantyraNullCone/Coordinates.lean:90:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:91:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:92:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✖ [2894/2895] Building QuantyraNullCone.Concentration (4.4s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/QuantyraNullCone/Concentration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/.lake/build/lib/lean/QuantyraNullCone/Concentration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/.lake/build/lib/lean/QuantyraNullCone/Concentration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/.lake/build/ir/QuantyraNullCone/Concentration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-sampling-20261007T101605Z-8cdc47/source/.lake/build/ir/QuantyraNullCone/Concentration.setup.json --json
+error: QuantyraNullCone/Concentration.lean:68:4: No goals to be solved
+error: QuantyraNullCone/Concentration.lean:81:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ x ∈ ?m.698, -?f x
+in the target expression
+  sample ∈ {sample | ↑n * r ≤ ∑ i, -X i sample}
+
+case neg.h
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n : ℕ
+hn : 0 < n
+S : Set DiamondPoint
+hS : MeasurableSet S
+r : ℝ
+hr : 0 ≤ r
+this✝ : IsProbabilityMeasure (densityMeasure rho) := ⋯
+this : IsProbabilityMeasure (sampleMeasure rho n) := ⋯
+Y : DiamondPoint → ℝ := ⋯
+p : ℝ := ⋯
+X : Fin n → (Fin n → DiamondPoint) → ℝ := ⋯
+hMeas : Measurable Y
+hBound : ∀ (q : DiamondPoint), Y q ∈ Set.Icc 0 1
+hMean : ∫ (q : DiamondPoint), Y q ∂densityMeasure rho = p
+hSG : HasSubgaussianMGF (fun q => Y q - p) (1 / 4) (densityMeasure rho)
+hIndep : iIndepFun X (sampleMeasure rho n)
+hEach : ∀ (i : Fin n), HasSubgaussianMGF (X i) (1 / 4) (sampleMeasure rho n)
+hNegIndep : iIndepFun (fun i sample => -X i sample) (sampleMeasure rho n)
+hnR : 0 < ↑n
+hThreshold : 0 ≤ ↑n * r
+hUpper : (sampleMeasure rho n).real {ω | ↑n * r ≤ ∑ i, X i ω} ≤ Real.exp (-2 * ↑n * r ^ 2)
+hLower : (sampleMeasure rho n).real {ω | ↑n * r ≤ ∑ i, -X i ω} ≤ Real.exp (-2 * ↑n * r ^ 2)
+hExponent : -(↑n * r) ^ 2 / (2 * ↑(∑ _i, 1 / 4)) = -2 * ↑n * r ^ 2
+hSum : ∀ (sample : Fin n → DiamondPoint), ∑ i, X i sample = ↑n * ((∑ i, Y (sample i)) / ↑n - p)
+sample : Fin n → DiamondPoint
+hs : sample ∈ {sample | r ≤ |(∑ i, Y (sample i)) / ↑n - p|}
+hAbs : ↑n * r ≤ |∑ i, X i sample|
+hSign : ¬0 ≤ ∑ i, X i sample
+⊢ sample ∈ {sample | ↑n * r ≤ ∑ i, -X i sample}
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.Concentration

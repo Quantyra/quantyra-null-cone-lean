@@ -1,0 +1,38 @@
+{
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-07",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra Inc"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.3.1",
+  "access_right": "open",
+  "keywords": [
+    "causal order",
+    "inverse stability",
+    "partial orders",
+    "conformal geometry",
+    "Lean 4",
+    "formal verification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23202763",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "description": "<p>Literature revision of the published 0.3.0 preprint by Daniel Eric Fredriksen, Quantyra Inc. It credits Winkler's 1985 existential coordinate forcing and the stronger flat-model twin/swap recovery in the dimension-two paper (PDF 1991, publisher 1990). The candidate contribution is narrowed to explicit occupied-grid quantification and the uniform nonconstant-density inverse modulus. Originality remains provisional; structural/citation gaps are disclosed.</p><p>The seven mathematical statement environments and accepted Lean proof sources are unchanged. The original inverse, all-law identifiability and directed labeled/unlabeled law equivalence retain their exact-source GCP verification; logarithmic-grid and proper-time consequences remain prose. Developed with OpenAI Codex assistance; open-source informal review and downstream testing, with no specialist/adoption gate. CC-BY-4.0.</p>"
+}

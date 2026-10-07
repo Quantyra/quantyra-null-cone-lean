@@ -71,5 +71,45 @@ class VersionPublicationTests(unittest.TestCase):
             self.assertTrue(calls and all(method == "GET" for method, _ in calls))
 
 
+    def test_next_literature_version_uses_selected_previous_record(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            previous_package = root/'manuscript/deposit/v0.3.0'
+            previous_package.mkdir(parents=True)
+            (previous_package/'published-record.json').write_text(json.dumps({'files': {}}))
+            previous = {'metadata': {'version': '0.3.0', 'title': 'Paper'},
+                        'conceptrecid': '23206772', 'conceptdoi': '10.5281/zenodo.23206772'}
+            parent = {'submitted': True, 'metadata': {'version': '0.3.0'}}
+            draft = {'id': 23225029, 'conceptrecid': '23206772', 'submitted': False,
+                     'metadata': {'title': 'Paper', 'prereserve_doi': {'doi': '10.5281/zenodo.23225029'}}}
+            calls = []
+            class Response:
+                status_code = 200
+                def __init__(self, data): self.data = data
+                def json(self): return self.data
+            class Session:
+                headers = {}
+                def request(self, method, url, **kwargs):
+                    calls.append((method, url))
+                    if method != 'GET': raise AssertionError('Recovered draft requires no creation')
+                    if url.endswith('/23214579'): return Response(parent)
+                    if url.endswith('/23225029'): return Response(draft)
+                    return Response([draft])
+            args = ['publisher', '--reserve', '--package', 'manuscript/deposit/v0.3.1',
+                    '--version', '0.3.1', '--previous', '23214579', '--previous-version', '0.3.0',
+                    '--previous-package', 'manuscript/deposit/v0.3.0']
+            with patch.object(publisher, 'ROOT', root), \
+                 patch.object(publisher, 'public_record', return_value=previous), \
+                 patch.object(publisher, 'public_files', return_value={}), \
+                 patch.object(publisher.requests, 'Session', Session), \
+                 patch.object(zenodo_credentials, 'aws_token', return_value=('offline-test-token', {})), \
+                 patch.object(sys, 'argv', args), contextlib.redirect_stdout(io.StringIO()):
+                publisher.main()
+            result = json.loads((root/'manuscript/deposit/v0.3.1/draft-record.json').read_text())
+            self.assertEqual(result['previous_record'], 23214579)
+            self.assertEqual(result['id'], 23225029)
+            self.assertTrue(all(method == 'GET' for method, _ in calls))
+
+
 if __name__ == "__main__":
     unittest.main()

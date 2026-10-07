@@ -10,6 +10,8 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--package", default="manuscript/deposit/v0.3.0", help="Repository-relative versioned package directory")
+parser.add_argument("--source", default="manuscript/finite-causal-order-reconstruction.tex")
+parser.add_argument("--readme", default="manuscript/README.md")
 args = parser.parse_args()
 DESTINATION = (ROOT / args.package).resolve()
 assert DESTINATION.is_relative_to(ROOT / "manuscript/deposit")
@@ -33,15 +35,16 @@ assert metadata["creators"] == [
 ]
 version = metadata["version"]
 assert re.fullmatch(r"\d+\.\d+\.\d+", version)
-source = ROOT / "manuscript/finite-causal-order-reconstruction.tex"
+source = (ROOT / args.source).resolve()
+assert source.is_relative_to(ROOT / "manuscript")
 pdf = source.with_suffix(".pdf")
 assert f"version {version}" in source.read_text(encoding="utf-8")
 assert pdf.read_bytes().startswith(b"%PDF-")
 assert "doi" not in metadata, "A manuscript DOI must come from a real record"
 
-payload = [source, pdf, ROOT / "manuscript/README.md", ROOT / "LICENSES/CC-BY-4.0.txt"]
+payload = [source, pdf, ROOT / args.readme, ROOT / "LICENSES/CC-BY-4.0.txt"]
 for name in ("draft-record.json", "review.json", "README.md", "tex-build.log"):
-    if (DESTINATION / name).exists():
+    if (DESTINATION / name).exists() and DESTINATION / name not in payload:
         payload.append(DESTINATION / name)
 manifest = {
     "title": metadata["title"],

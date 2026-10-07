@@ -15,3 +15,7 @@ tools/finite_data*.py text eol=lf
 tools/benchmark_finite_data.py text eol=lf
 tools/test_finite_data.py text eol=lf
 tools/compare_confidence_calibrations.py text eol=lf
+manuscript/deposit/v0.3.1/*.tex text eol=lf
+manuscript/deposit/v0.3.1/*.md text eol=lf
+manuscript/deposit/v0.3.1/*.json text eol=lf
+manuscript/deposit/v0.3.1/*.log text eol=lf

@@ -1,4 +1,4 @@
-"""Reserve, verify and publish manuscript 0.3.0 in the existing Zenodo family.
+"""Reserve, verify and publish a manuscript version in the existing Zenodo family.
 
 --reserve creates/reuses the new-version draft and stores only public identifiers.
 Without --publish, --commit verifies the frozen payload without network writes.
@@ -57,12 +57,23 @@ def public_files(record):
 
 
 def main():
+    global PACKAGE, PREVIOUS, RESERVATION
     parser = argparse.ArgumentParser(description=__doc__)
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--reserve", action="store_true")
     modes.add_argument("--publish", action="store_true")
     parser.add_argument("--commit")
+    parser.add_argument("--package", default="manuscript/deposit/v0.3.0")
+    parser.add_argument("--version", default="0.3.0")
+    parser.add_argument("--previous", type=int, default=23206773)
+    parser.add_argument("--previous-version", default="0.2.0")
+    parser.add_argument("--previous-package", default="manuscript/deposit")
     args = parser.parse_args()
+    PACKAGE = (ROOT / args.package).resolve()
+    assert PACKAGE.is_relative_to(ROOT / "manuscript/deposit") and PACKAGE != ROOT / "manuscript/deposit"
+    PREVIOUS = args.previous
+    RESERVATION = PACKAGE / "draft-record.json"
+    PACKAGE.mkdir(parents=True, exist_ok=True)
     if args.reserve and args.commit:
         parser.error("--reserve does not accept --commit")
     if not args.reserve and not args.commit:
@@ -77,13 +88,15 @@ def main():
         manifest = json.loads(frozen(PACKAGE / "manifest.json"))
         bundle = json.loads(frozen(PACKAGE / "bundle.json"))
         reservation = json.loads(frozen(RESERVATION))
-        assert metadata["version"] == manifest["version"] == "0.3.0"
+        assert metadata["version"] == manifest["version"] == args.version
         assert metadata["upload_type"] == "publication" and metadata["publication_type"] == "preprint"
         assert metadata["license"] == "cc-by-4.0" and metadata["access_right"] == "open"
         assert digest(frozen(PACKAGE / "zenodo-metadata.json")) == manifest["metadata_sha256"]
         for name, expected in manifest["files"].items():
             assert digest(frozen(ROOT / name)) == expected["sha256"], name
-        pdf = ROOT / "manuscript/finite-causal-order-reconstruction.pdf"
+        pdf_names = [name for name in manifest["files"] if name.endswith(".pdf")]
+        assert len(pdf_names) == 1
+        pdf = ROOT / pdf_names[0]
         source_zip = PACKAGE / bundle["file"]
         payload = [pdf, source_zip]
         assert digest(source_zip.read_bytes()) == bundle["sha256"]
@@ -107,8 +120,8 @@ def main():
         return response
 
     previous = public_record(PREVIOUS)
-    assert previous["metadata"]["version"] == "0.2.0"
-    previous_receipt = json.loads((ROOT / "manuscript/deposit/published-record.json").read_text())
+    assert previous["metadata"]["version"] == args.previous_version
+    previous_receipt = json.loads((ROOT / args.previous_package / "published-record.json").read_text())
     assert public_files(previous) == previous_receipt["files"]
     if args.reserve:
         if RESERVATION.exists():
@@ -116,7 +129,7 @@ def main():
             draft = request("GET", f"{API}/deposit/depositions/{reservation['id']}").json()
         else:
             parent = request("GET", f"{API}/deposit/depositions/{PREVIOUS}").json()
-            assert parent["submitted"] and parent["metadata"]["version"] == "0.2.0"
+            assert parent["submitted"] and parent["metadata"]["version"] == args.previous_version
             # The compatibility API's parent latest_draft link may still point
             # to the published record. Locate the existing unpublished family
             # member before any creation request (including after interruption).
@@ -134,12 +147,16 @@ def main():
             assert str(draft["conceptrecid"]) == str(previous["conceptrecid"])
             assert draft["metadata"]["title"] == previous["metadata"]["title"]
             # Zenodo may clear the version field when cloning a record.
-            assert draft["metadata"].get("version") in {None, "", "0.2.0", "0.3.0"}
+            assert draft["metadata"].get("version") in {None, "", args.previous_version, args.version}
             reservation = {"id": draft["id"], "previous_record": PREVIOUS,
                            "conceptrecid": str(previous["conceptrecid"]),
                            "conceptdoi": previous["conceptdoi"],
                            "doi": draft["metadata"]["prereserve_doi"]["doi"]}
             save(RESERVATION, reservation)
+        assert draft['id'] == reservation['id'] and draft['id'] != PREVIOUS
+        assert not draft['submitted']
+        assert str(draft['conceptrecid']) == str(previous['conceptrecid']) == reservation['conceptrecid']
+        assert draft['metadata']['prereserve_doi']['doi'] == reservation['doi']
         print(json.dumps(reservation, indent=2))
         return
 
@@ -199,7 +216,7 @@ def main():
         (e["key"], e["checksum"]) for e in historical_software["files"]}
     software_files = public_files(software)
     receipt = {"id": record_id, "doi": actual["doi"], "conceptdoi": record["conceptdoi"],
-               "url": f"https://zenodo.org/records/{record_id}", "version": "0.3.0",
+               "url": f"https://zenodo.org/records/{record_id}", "version": args.version,
                "source_commit": args.commit, "proof_commit": "b7d762acc9c10ca881f8366f545f3998b0528448",
                "previous_record": PREVIOUS, "same_version_family_verified": True,
                "previous_manuscript_downloads_unchanged": True, "software_doi_version_preserved": True,

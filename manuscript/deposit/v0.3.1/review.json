@@ -1,0 +1,42 @@
+{
+  "version": "0.3.1",
+  "reviewed_utc": "2026-10-07T23:09:39.141857+00:00",
+  "pages": 9,
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_findings": "All nine final pages readable; no clipping or overlap. Version and new DOI labels checked on page 1; Winkler credits and references checked on pages 2 and 9.",
+  "pdf_sha256": "79431d68fd6a45c297c060557a44bb43ddcef86c5fe0a081a4ce05ee27b71639",
+  "tex_sha256": "97e87d4b6a40ed6ff598bb9f58aa6fa352049bf76c8dc77a60dad3825a6097e8",
+  "page_render_sha256": {
+    "page-01.png": "e4a687f0696280f207223277c050c336e4b7dc04a8a6b0816049c34497b216dc",
+    "page-02.png": "a78361b0ec593eb1f78c7281ef0ca3b505e7ef0e6d78b7f809a7901e77827945",
+    "page-03.png": "90a2cb471420bf5160c0bb7c42418dc364ef79f0cbfdd5144ae6f0284951e996",
+    "page-04.png": "27b4857abd2437ff782876949464a8975e9a4f6251c9d6febf196600172c75ed",
+    "page-05.png": "66d591a9f37d85a92db4e11cc64c3dbcc4ad323b2b928350ddc65f565e37685a",
+    "page-06.png": "41cd3fd5e746cdd0f7565ba35b32116a8482b6ee22a4d940e59e33b0b5655312",
+    "page-07.png": "3b0b5d1be3ec1dd936cba8a2745cf0bca1583d41c099b1c3c5316d1fd6a94bf7",
+    "page-08.png": "f349fc26c4777dcd80a34cc2a5d66352daa8e553b468ad31fbf3e2ff0087be43",
+    "page-09.png": "ff10d82aacd17519d383a11c254fb8f379024c56fb9f1d185c14487ec4263a2f"
+  },
+  "compiler": "Tectonic 0.17.0",
+  "build_exit": 0,
+  "latex_reference_or_box_warnings": false,
+  "compiler_notice": "Nonfatal Fontconfig default-configuration notice; rendered fonts reviewed.",
+  "build_log_sha256": "3be174d34a03e5688ba93c231c01df157aa450a93ac0d8f38405b5549ba0ffa1",
+  "build_log_line_endings": "canonical LF",
+  "all_seven_mathematical_statement_environments_unchanged": true,
+  "proof_commit": "b7d762acc9c10ca881f8366f545f3998b0528448",
+  "gcp_run": "space-unlabeled-20261007T123238Z-759aaa",
+  "new_lean_execution_required": false,
+  "doi_and_proof_links_verified": true,
+  "publication_authorization": "Dan: Proceed, 2026-10-07"
+}

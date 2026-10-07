@@ -1,5 +1,12 @@
 # Changelog
 
+## Manuscript 0.3.0 - 2026-10-07
+
+- Updated abstract, theorem commentary and formal-verification section for the completed original all-N inverse theorem and all-size identifiability, including labeled/unlabeled directed-order laws.
+- Added exact proof commit, GCP source/dependency evidence and a statement-to-module map; clarified the density-independent classical-choice selector.
+- Retained the mathematical estimates and prose status of the logarithmic-grid improvement and proper-time comparison.
+- Prepared a new version in the existing Zenodo manuscript family; historical manuscript 0.2.0 and software 0.1.0 remain preserved.
+
 ## 0.1.0 - released 2026-10-07 UTC (2026-10-06 locally)
 
 - Complete finite realizer rank rigidity theorem and original-statement specialization in Lean 4.30.0.

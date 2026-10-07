@@ -1,0 +1,38 @@
+{
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-07",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra Inc"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.3.0",
+  "access_right": "open",
+  "keywords": [
+    "causal order",
+    "inverse stability",
+    "partial orders",
+    "conformal geometry",
+    "Lean 4",
+    "formal verification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23202763",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "description": "<p>Preprint by Daniel Eric Fredriksen, Quantyra Inc., version 0.3.0. For smooth densities on the unit square between 1/2 and 3/2, with uniform marginals and Euclidean Lipschitz constant at most two, iid finite directed causal-order laws yield the explicit coefficient inverse bound 100(N^(-1/12) + Delta_N). A logarithmic grid scale improves the sample-size term to give 130((log N/N)^(1/6) + Delta_N), for every integer N at least two.</p><p>This revision documents the completed Lean 4 formalization of the original inverse estimate and all-size identifiability for actual labeled and unlabeled directed-order laws, including normalization, concentration, cumulative reconstruction, density interpolation, transpose transport, exchangeability and exact labeled/unlabeled total variation equality. Pinned Lean 4.30.0/mathlib sources at commit b7d762acc9c10ca881f8366f545f3998b0528448 were verified on GCP with 68 selected export audits, zero compiler warnings and no added axioms or admitted proofs. The improved logarithmic-grid rate and proper-time comparison remain prose proofs.</p><p>The constants are conservative; no optimal exponent, practical sample budget, general spacetime reconstruction or new physics is claimed. Originality remains provisional, including outstanding full-text literature comparisons. Developed with OpenAI Codex assistance under the author's research direction. Quantyra follows open-source, decentralized informal feedback and downstream use/testing; specialist review is not a publication prerequisite. Manuscript and source: CC-BY-4.0. The related version 0.1.0 software DOI identifies the separate historical Apache-2.0 software release; the completed formalization is identified by its exact later source commit.</p>"
+}

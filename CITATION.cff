@@ -20,11 +20,11 @@ references:
       - family-names: Fredriksen
         given-names: Daniel Eric
         affiliation: "Quantyra Inc"
-    doi: "10.5281/zenodo.23206773"
-    url: "https://zenodo.org/records/23206773"
-    version: "0.2.0"
+    doi: "10.5281/zenodo.23214579"
+    url: "https://zenodo.org/records/23214579"
+    version: "0.3.0"
     year: 2026
-    notes: "Open Zenodo preprint; CC-BY-4.0. Full inverse theorem remains a prose proof."
+    notes: "CC-BY-4.0 preprint. Original inverse theorem, identifiability and labeled/unlabeled law equivalence are Lean verified at source commit b7d762acc9c10ca881f8366f545f3998b0528448; logarithmic-grid improvement and proper-time comparison remain prose proofs."
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23202762"

@@ -1,0 +1,53 @@
+{
+  "reviewed_utc": "2026-10-07T14:12:25.163030+00:00",
+  "version": "0.3.0",
+  "pages": 9,
+  "tex_sha256": "6388f044e7e78a2a686dc15b6a098a2451c7314eb18fa872a110a155c8f71fc1",
+  "pdf_sha256": "8abd7fb702dc235a6cfaafc0e8534b396bf380984e401d99fece6afafc2a4c5f",
+  "compiler": "Tectonic 0.17.0",
+  "build_exit": 0,
+  "latex_reference_or_box_warnings": false,
+  "build_log_sha256": "598c0db07e1f33e44d7414d79688d3a0bea1d87fdac381fa3770b52d39c20a2f",
+  "render_engine": "PyMuPDF 1.28.2",
+  "render_scale": 1.5,
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "page_render_sha256": {
+    "page-01.png": "db248a1d35329820a12bbe478a34153b22dbb461cf3b520185e776b0b440cddb",
+    "page-02.png": "159d56b78340823ea9565a71c58a565a4ef82520bc5acc6fa2e6f7d8da102d56",
+    "page-03.png": "bcd836eed05ebcf0480c15e87f3872c959d1e15950a53b50cfb76b9d7bb648ec",
+    "page-04.png": "cf7cea9ed9be1d3b2d49290da8712c268b00dd0dfef67b5d2e769cb7c3103e69",
+    "page-05.png": "c0e7ec4e9bd5bb714560f1bc884f7743ba65b48349ad1434b947341772f2ec2c",
+    "page-06.png": "f75e7e5de7d9afdf30e232f3d5f65a67eb3667e4550fe8e13890dfa987436200",
+    "page-07.png": "55f01cc8a45238ac110245f328ceb3f6cdf18191bbe3912e45336139c722ee5a",
+    "page-08.png": "e09d897cb0f07e72577f2d65fd0fb1c5e00ece7b882e47dc77439d97d425a98c",
+    "page-09.png": "77dc2146724fde7adebe7e44f985318a03c2d1b0be85ff24c36a607da05c3e84"
+  },
+  "visual_findings": "All nine pages readable, formulas and references resolved, no clipping or overlap. Stale scope sentence found on page 7 was corrected; final page 7 re-inspected. Other final page renders are byte-identical to the already inspected pages.",
+  "all_seven_mathematical_statement_environments_unchanged": true,
+  "selector_exposition": "Density-independent fixed choice matches Lean; lexicographic selection remains an example.",
+  "formal_scope": "Original all-N inverse and identifiability for actual labeled/unlabeled directed-order laws, including probability and analytic bridges.",
+  "remaining_prose_results": [
+    "Logarithmic-grid improved inverse estimate",
+    "Proper-time comparison"
+  ],
+  "proof_commit": "b7d762acc9c10ca881f8366f545f3998b0528448",
+  "gcp_run": "space-unlabeled-20261007T123238Z-759aaa",
+  "gcp_receipt_sha256": "98688db6d04e7ead1a57d5ec6d4ad7eea3aba62e66221d0ed52555ad02e7c01e",
+  "gcp_capture_sha256": "60d665a4eeb481e6ef53a974fc33b4c33b9517eacc09158ecd4dd6cfb939f60b",
+  "cited_commit_and_current_captured_proof_check_config_bytes_match": true,
+  "selected_export_type_and_axiom_reports": 68,
+  "new_lean_execution_required": false,
+  "publication_mode_tests_passed": 4,
+  "credential_regressions_passed": 6,
+  "pdf_doi_and_proof_links_verified": true
+}

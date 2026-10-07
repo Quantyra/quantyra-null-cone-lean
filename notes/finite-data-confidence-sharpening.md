@@ -43,4 +43,6 @@ At delta=1/20 with zero rank budget:
 
 The larger settings can cross the no-data flat-CDF prior 1/8 when B(P) is small enough. This supersedes the obstruction only for the new calibration. It does not establish useful density recovery, optimality or new priority. Experiments and density limitations are recorded separately.
 
-Remaining to-do list: assess observed-order certificates and density resolution in the companion audit.
+The [delivery audit and observed-order comparison](finite-data-sharpening-audit.md) demonstrate the CDF improvement and retain the negative density-paper decision.
+
+Remaining to-do list: none for this calibration derivation. Publication choice and density-specific research remain separate.

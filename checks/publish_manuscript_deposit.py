@@ -1,8 +1,10 @@
 """Publish the frozen S012 manuscript as its own Zenodo preprint record.
 
-Requires an authorized --publish invocation and ZENODO_ACCESS_TOKEN supplied
-outside repository files. Persistent draft identity prevents duplicate records
-on resumption. Never prints the credential or raw authenticated responses.
+Requires an authorized --publish invocation; defaults to the migrated Quantyra
+AWS secret, with explicit external token routes also supported. The separate
+--check-credentials mode performs read-only GET checks. Persistent draft identity
+prevents duplicate records on resumption. Never prints the credential or raw
+authenticated responses.
 """
 
 import argparse
@@ -11,11 +13,14 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 from urllib.parse import urlparse
 
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
+# The supported embedded Windows Python omits the script directory from sys.path.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 PACKAGE = ROOT / "manuscript/deposit"
 STATE = ROOT / "tmp/manuscript-deposit-state.json"
 API = "https://zenodo.org/api"
@@ -32,13 +37,23 @@ def trusted_api(url):
 
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--commit", required=True, help="Commit containing the exact frozen payload")
-parser.add_argument("--publish", action="store_true", help="Execute the authorized manuscript deposit")
+parser.add_argument("--commit", help="Commit containing the exact frozen payload")
+mode = parser.add_mutually_exclusive_group()
+mode.add_argument("--publish", action="store_true", help="Execute the authorized manuscript deposit")
+mode.add_argument("--check-credentials", action="store_true", help="Read-only AWS/Zenodo GET checks; no deposit or local state writes")
 parser.add_argument("--env-file", type=Path, help="Read ZENODO_ACCESS_TOKEN from a local file outside Git")
-parser.add_argument("--aws-secret", help="Read the token from an AWS Secrets Manager JSON secret")
-parser.add_argument("--aws-profile", help="Explicit AWS profile for the selected secret")
-parser.add_argument("--aws-region", help="Explicit AWS region for the selected secret")
+parser.add_argument("--aws-secret", default="quantyra/zenodo/access-token", help="AWS JSON secret (default: migrated Quantyra secret)")
+parser.add_argument("--aws-profile", default="quantyra", help="AWS profile (default: quantyra; destination account enforced)")
+parser.add_argument("--aws-region", default="us-east-1", help="AWS region (default: us-east-1)")
 args = parser.parse_args()
+if args.check_credentials:
+    if args.env_file:
+        parser.error("--check-credentials uses AWS only; --env-file is not allowed")
+    from zenodo_credentials import aws_token, read_only_check
+    token, credential_metadata = aws_token(args.aws_secret, args.aws_profile, args.aws_region)
+    raise SystemExit(0 if read_only_check(token, credential_metadata) else 1)
+if not args.commit:
+    parser.error("--commit is required for payload verification or publication")
 assert len(args.commit) == 40 and all(c in "0123456789abcdef" for c in args.commit)
 def frozen_bytes(name):
     return subprocess.check_output(["git", "show", f"{args.commit}:{name}"], cwd=ROOT)
@@ -73,17 +88,8 @@ if not token and args.env_file:
             token = line.strip().split("=", 1)[1].strip().strip("\"'")
             break
 if not token and args.aws_secret:
-    assert args.aws_profile and args.aws_region, "Specify the secret's profile and region"
-    import boto3
-    from botocore.exceptions import ClientError
-    client = boto3.Session(profile_name=args.aws_profile, region_name=args.aws_region).client(
-        "secretsmanager"
-    )
-    try:
-        secret = client.get_secret_value(SecretId=args.aws_secret)
-    except ClientError as exc:
-        raise SystemExit("AWS secret lookup failed: " + exc.response["Error"]["Code"])
-    token = json.loads(secret["SecretString"]).get("ZENODO_ACCESS_TOKEN")
+    from zenodo_credentials import aws_token
+    token, _ = aws_token(args.aws_secret, args.aws_profile, args.aws_region)
 if not token:
     raise SystemExit("ZENODO_ACCESS_TOKEN is unavailable; no deposit created")
 session = requests.Session()

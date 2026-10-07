@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06 Hawaii",
+  "aws": {
+    "account": "063280428495",
+    "principal": "arn:aws:iam::063280428495:user/ServiceAdmin",
+    "profile": "quantyra",
+    "region": "us-east-1",
+    "secret_arn": "arn:aws:secretsmanager:us-east-1:063280428495:secret:quantyra/zenodo/access-token-D2k2iI",
+    "version_id": "e8a38822dd461bcdfe5e1d79c62b9aace932ee4a34e6a2713959d629e00cc68d",
+    "stages": ["migrated-e8a38822dd461bcdfe5e1d79c62b9aac", "AWSCURRENT"],
+    "token_field": "ZENODO_ACCESS_TOKEN"
+  },
+  "python_requests": [
+    {"method": "GET", "path": "/api/records/23206773", "probe": "public_record", "status": 200, "content_type": "application/json"},
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "unauthenticated", "status": 403, "content_type": "application/json"},
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "invalid_bearer", "status": 403, "content_type": "application/json"},
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "migrated_bearer", "status": 200, "content_type": "application/json", "authenticated_list_verified": true}
+  ],
+  "node_fetch": [
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "unauthenticated", "status": 403, "content_type": "text/html"},
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "invalid_bearer", "status": 403, "content_type": "text/html"},
+    {"method": "GET", "path": "/api/deposit/depositions", "probe": "migrated_bearer", "status": 403, "content_type": "text/html"}
+  ],
+  "credential_check_passed": true,
+  "publication_writes": 0,
+  "tests": {"regressions": 6, "passed": 6, "dry_run": "PASS", "source_profile": "refused before secret read", "conflicting_modes": "argparse rejection"}
+}

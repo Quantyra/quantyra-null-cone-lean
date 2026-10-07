@@ -39,6 +39,7 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 - [Manuscript build and license](manuscript/README.md).
 - [Finite-order inverse derivation](notes/finite-order-rate.md) and [author audit](notes/rate-audit.md).
+- [Further proof review and continuation requirements](notes/proof-review-2026-10-06.md), including explicit cumulative-error and orbit-separation checks. This remains AI-assisted review, not independent refereeing.
 - [Selected formal statement](notes/lean-target.md).
 - [Label equivalence and proper-time comparison](notes/observable-and-time-audit.md).
 - [Novelty assessment](notes/novelty-search.md) and [OpenAI mathematics release comparison](notes/openai-math-review.md).

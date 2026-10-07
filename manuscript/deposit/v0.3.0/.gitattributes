@@ -1,0 +1,5 @@
+# Preserve artifact hashes and unedited compiler output across platforms.
+*.json text eol=lf
+*.md text eol=lf
+*.log -text -whitespace
+*.zip binary

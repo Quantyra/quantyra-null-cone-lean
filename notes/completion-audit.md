@@ -2,6 +2,8 @@
 
 2026-10-06, E002/S005. Objective: establish identifiability from abstract orders, derive or refute the quantitative bound, then select a substantive Lean proof target. The selected target has additionally been proved in Lean. The original class, observable, and geometric error have been preserved.
 
+**Current notice, 2026-10-07 (S009):** this table audits the earlier bounded milestone. Its full-inverse/prose, local-build and review-gate language below is historical. The original all-N inverse, actual label/unlabel law equivalence and all-law identifiability are now GCP verified at proof commit `b7d762acc9c10ca881f8366f545f3998b0528448`, run `space-unlabeled-20261007T123238Z-759aaa` (2907 build jobs, 68 exact export/axiom audits). [Selected-story audit](selected-stories-completion-audit.md) and [research navigation](../RESEARCH.md) give current evidence. Published manuscript 0.3.0 is delivered; a literature revision remains explicitly unpublished. Specialist review is not a workflow/publication gate; [contributing](../CONTRIBUTING.md) and [community evidence](community-evidence.md) supply informal feedback/use/testing mechanisms. Historical rows and derivations are preserved.
+
 | Requirement | Authoritative evidence | Conclusion |
 | --- | --- | --- |
 | Restricted class and gauge | Planning `docs/finite-order-spacetime-theorem-specification.md`: smooth densities, 1/2 and 3/2 bounds, 2-Lipschitz, uniform marginals, unit volume; d_conf modulo one null-axis swap. | Preserved; no dynamics, topology, or curvature reconstruction substituted. |

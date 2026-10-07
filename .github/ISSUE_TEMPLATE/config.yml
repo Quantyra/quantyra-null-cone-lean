@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Proof scope and contributing
+    url: https://github.com/Quantyra/quantyra-null-cone-lean/blob/main/CONTRIBUTING.md
+    about: Find exact statements, verification boundaries and feedback handling.

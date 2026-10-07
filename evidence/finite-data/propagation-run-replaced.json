@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "status": "intentionally_stopped_after_performance_fix",
+  "verified_pid": 14452,
+  "reason": "512-point measurement exposed redundant incoming-edge scans. Incoming bitsets remove redundant work; all ten exhaustive/certificate tests pass after the fix. Accepted benchmark reruns the full original 80-trial scope.",
+  "terminal_exit_code": 1,
+  "last_tool_output": "{\"n\": 512, \"family\": \"flat\", \"c\": \"0\", \"trial\": 1, \"covered\": true, \"seconds\": 24.993}\r\n{\"n\": 512, \"family\": \"flat\", \"c\": \"0\", \"trial\": 2, \"covered\": true, \"seconds\": 25.985}\r\n{\"n\": 512, \"family\": \"flat\", \"c\": \"0\", \"trial\": 3, \"covered\": true, \"seconds\": 29.631}\r\n",
+  "accepted_coverage_evidence": false,
+  "replacement": "benchmark-20261007.json",
+  "not_an_observation_timeout_restart": true
+}

@@ -1,0 +1,24 @@
+name: Verify finite-data certificates
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: tools/requirements-finite-data.txt
+      - name: Install pinned numerical dependencies
+        run: python -m pip install -r tools/requirements-finite-data.txt
+      - name: Exhaustive combinatorics and rational certificate tests
+        run: python -m unittest discover -s tools -p test_finite_data.py -v
+      - name: Independently verify retained report with standard library only
+        run: python -S tools/finite_data.py verify evidence/finite-data/cli-smoke-report.json

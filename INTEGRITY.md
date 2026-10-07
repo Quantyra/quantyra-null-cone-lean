@@ -9,7 +9,7 @@ The finite formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_spec
 | Strip and rank disagreement counts | `Counts.lean`, `Bridges.lean` | Lean verified |
 | Both finite rank bounds with one global exchange | `Bridges.lean`, `checks/Audit.lean` | Lean verified; only `propext`, `Classical.choice`, `Quot.sound` dependencies |
 | Inclusive rank identity, `32r` coordinate rigidity, deterministic `87r` CDF bridge | `Cumulative.lean` | Compiled deterministic results; concrete analytic/latent-accuracy premises remain explicit |
-| Concrete density/order-law definitions and order observable measurability | `Model.lean` | Compiled; full probability-to-density theorem remains incomplete |
+| Concrete density/order-law definitions and order observable measurability | `Model.lean` | GCP verified; the full original probability-to-density inverse theorem is complete in the later modules below |
 | Normalization of the concrete density, iid sample and directed-order laws | `Measures.lean` | Compiled from the original density class; no assumed probability normalization |
 | Uniform coordinate marginal measures, CDF threshold stability and unit-edge values | `DensityCDF.lean` | Compiled from K; concrete CDF threshold stability is proved rather than assumed |
 | Grid-vertex deductions and concrete deterministic `87r` CDF reconstruction | `GridAccuracy.lean` | GCP compiled; actual K plus occupancy/distinctness/vertex accuracy, without assumed marginal/boundary/CDF conclusions |
@@ -21,11 +21,13 @@ The finite formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_spec
 | All-law coefficient identifiability on the square under one global identity/transpose | `Identifiability.lean` | GCP verified from equality of every labeled iid directed-order law; no assumed coefficient equality |
 | Iid relabeling invariance, exact labeled/unlabeled TV/Delta equivalence, quotient-law inverse and identifiability | `Exchangeability.lean`, `QuotientTV.lean`, `Unlabeled.lean` | GCP verified from actual K and iid laws; quotient is directed-order isomorphism, without time-dual identification |
 | Proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequence; formalization is separately selectable |
-| Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |
+| Originality and significance | `notes/novelty-search.md`, `notes/winkler-full-text-comparison.md` | Provisional; earlier forcing and stronger flat-model recovery credited; no priority certificate |
 
 No new axioms, admitted proofs, exact realizer uniqueness assumption, or hypotheses equivalent to the final rank conclusion are introduced. `checks/check_integrity.py` rejects forbidden declarations and audits Lean's printed dependencies. The sanity scripts falsify particular witness/count errors; they do not establish the universal theorem.
 
 ## Reproduce the formal result
+
+Quantyra development/acceptance Lean commands below run on remote GCP under the established compute protocol. Authoritative exact-source evidence is retained; hosted CI is supplementary. Local editing, hashing, inspection and the separate Python finite-data tests do not invoke Lean. [Research navigation](RESEARCH.md) and [contribution handling](CONTRIBUTING.md) distinguish current formal results, prose arguments and feedback evidence.
 
 Install elan and Python 3. The toolchain file selects Lean 4.30.0; the manifest and lakefile pin mathlib to `c5ea00351c28e24afc9f0f84379aa41082b1188f`. From this repository:
 
@@ -53,3 +55,5 @@ Use `MATHLIB_NO_CACHE_ON_UPDATE=1 lake update` on POSIX shells. Stop on a nonzer
 The coefficient estimate applies only to the stated regular two-dimensional class with fixed marginal gauge and residual axis exchange. It controls no curvature or derivatives, proves no new dynamics, and demonstrates no carrying-capacity improvement. The manuscript reports AI assistance. No AI system is listed as an author and no independent review is represented as completed.
 
 GitHub release `v0.1.0` targets commit `51846e81eecbc24d004ef0ec6c621c8ad90e8e52`. Both jobs passed in [CI run 37570765299](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37570765299). Zenodo archived that release as [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763), concept DOI [10.5281/zenodo.23202762](https://doi.org/10.5281/zenodo.23202762). The public record confirms author, version, license and tag; its ZIP checksum and included PDF were verified against the release artifact. The separate manuscript v0.2.0 is published at [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773), under CC-BY-4.0, with frozen source commit and verified downloads in `manuscript/deposit/published-record.json`. It retains the full inverse theorem's prose status and provisional originality. Existing release artifacts remain unchanged. No arXiv submission or scholarly-profile update is automatic.
+
+Current manuscript [0.3.0](https://doi.org/10.5281/zenodo.23214579) documents the completed original formalization, with [publication receipt](manuscript/deposit/v0.3.0/published-record.json). Earlier archives retain historical verification wording. The [unpublished literature revision](manuscript/working/README.md) credits newly inspected precedents. [Community evidence](notes/community-evidence.md) records actual internal/outside tests and reports without requiring specialist review or adoption.

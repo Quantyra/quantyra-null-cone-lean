@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "n_max": 4096,
+  "delta": "1/20",
+  "no_data_cdf_error_upper": "1/8",
+  "no_data_density_error_upper": "1/2",
+  "conclusion": "This grid/union-bound certificate cannot beat the flat CDF prior at this confidence within the implemented n range, even with zero forcing ambiguity. Other calibrations/methods are not excluded.",
+  "cases": [
+    {
+      "q_range": "33..64",
+      "multiplier": 2312,
+      "t": "32/9",
+      "lower_formula": "multiplier*(1-t/512)^512",
+      "diagnostic_decimal_lower": 65.22935123507025,
+      "exact_lower_exceeds_delta": true
+    },
+    {
+      "q_range": "65..128",
+      "multiplier": 8712,
+      "t": "8",
+      "lower_formula": "multiplier*(1-t/512)^512",
+      "diagnostic_decimal_lower": 2.743673996664953,
+      "exact_lower_exceeds_delta": true
+    },
+    {
+      "q_range": "129..256",
+      "multiplier": 33800,
+      "t": "98/9",
+      "lower_formula": "multiplier*(1-t/512)^512",
+      "diagnostic_decimal_lower": 0.5609463019003262,
+      "exact_lower_exceeds_delta": true
+    },
+    {
+      "q_range": "257 and above",
+      "multiplier": 133128,
+      "t": "128/9",
+      "lower_formula": "multiplier*(1-t/512)^512",
+      "diagnostic_decimal_lower": 0.07248159172916419,
+      "exact_lower_exceeds_delta": true
+    }
+  ]
+}

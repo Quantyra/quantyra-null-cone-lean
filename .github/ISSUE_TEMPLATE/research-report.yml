@@ -1,0 +1,39 @@
+name: Research, proof or reproducibility report
+description: Errors, counterexamples, build failures, prior work, questions or observed use.
+title: "[Research] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Report type
+      options:
+        - Mathematical error or counterexample
+        - Build or reproducibility failure
+        - Prior-work implication
+        - Improvement or question
+        - Downstream use or testing
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Affected DOI, release or exact commit
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Exact theorem, proof step or file
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Mathematical argument or reproduction steps and evidence
+      description: Include expected and observed behavior, commands/logs, dependencies/platform or source links.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Scope and limitations of the result or use

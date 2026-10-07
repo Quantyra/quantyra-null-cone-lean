@@ -1,0 +1,41 @@
+{
+  "state": "review_only_not_published",
+  "proposed_version": "0.3.1",
+  "baseline_doi": "10.5281/zenodo.23214579",
+  "finalization_required": [
+    "explicit publication selection",
+    "reserve next version in existing manuscript family",
+    "finalize version and new DOI labels; compile/review all pages",
+    "freeze exact final package, upload/publish and verify downloads"
+  ],
+  "files": {
+    "working/finite-causal-order-reconstruction.tex": {
+      "bytes": 28611,
+      "sha256": "72f670c1003abc58ebd467e08b32d9b8e65be3edaf8e330cae57968b97d2e028"
+    },
+    "working/finite-causal-order-reconstruction.pdf": {
+      "bytes": 110167,
+      "sha256": "d19ef34527244fa1f04e44b517e78fad1accfd5a2e145a0f975d5edca08fc5b3"
+    },
+    "working/prepare_literature_revision.py": {
+      "bytes": 3995,
+      "sha256": "78ef219d69d043c4ccaaefcd53a3c8c2679da364c28bda97d0080bb1f504d384"
+    },
+    "working/README.md": {
+      "bytes": 1660,
+      "sha256": "f1d14d928e422f381340651f5996186ab9d8a57f481276a9e6b9ce865595a6e6"
+    },
+    "finite-causal-order-reconstruction.tex": {
+      "bytes": 27276,
+      "sha256": "6388f044e7e78a2a686dc15b6a098a2451c7314eb18fa872a110a155c8f71fc1"
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "bytes": 18664,
+      "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c"
+    },
+    "proposed-zenodo-metadata.json": {
+      "bytes": 1908,
+      "sha256": "b90bc7ff7696d687dc976e3ff804c86eaaf9d85dad945c000d762e3a343edee2"
+    }
+  }
+}

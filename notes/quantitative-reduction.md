@@ -4,6 +4,8 @@
 
 Later same-day update: `finite-order-rate.md` now supplies the reconstruction hypothesis through a grid-witness proof and derives explicit exponents and constants. The conditional derivation below is retained; its original open-hypothesis status is superseded by that proof draft, subject to audit and formal verification.
 
+**Current notice, 2026-10-07 (S009):** the original reconstruction, boundary interpolation, TV separation and all-N inverse `100(N^(-1/12)+Delta_N)` are now proved from actual K and actual unlabeled directed-order laws in the GCP-verified library. [Lean evidence](lean-verification.md) records the exact 68-export capture; [research navigation](../RESEARCH.md) maps the current statements. The conditional derivation and earlier scope above remain historical. The logarithmic-grid improvement and proper-time comparison are prose, and the new Python finite-data method is not a Lean extension. Full Winkler comparison narrows originality; open-source informal feedback has no specialist/adoption gate.
+
 ## Rectangle discrepancy controls the coefficient
 
 For rho,sigma in K define C_rho(u,v) = integral over [0,u] times [0,v] of rho and epsilon = sup |C_rho-C_sigma|. Then

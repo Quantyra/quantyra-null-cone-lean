@@ -2,6 +2,8 @@
 
 2026-10-06. Proof draft for E002/S005. This specializes established kernel-equivalence machinery; it is not claimed as a new theorem. Independent review and Lean verification remain outstanding.
 
+**Current notice, 2026-10-07 (S009):** the historical verification/review status above is superseded for the original class K. `Identifiability.lean` and `Unlabeled.lean` now prove all-law identifiability on the square from actual iid directed-order laws; exact-source GCP run `space-unlabeled-20261007T123238Z-759aaa` has 68 audited exports. The broader positive-continuous-density kernel argument below remains a separate prose derivation, not an enlarged Lean claim. [Current scope](../RESEARCH.md), [formal evidence](lean-verification.md) and [literature comparison](winkler-full-text-comparison.md) govern current wording. The repository is public; informal open-source feedback/use/testing replaces specialist-review gates. Preserve the historical proof below.
+
 ## Statement
 
 For continuous positive probability densities rho and sigma on the square, both with uniform coordinate marginals, equality of all finite labeled sampled product-order laws implies rho = sigma or rho(u,v) = sigma(v,u). The numerical Lipschitz bound and smoothness in K are unnecessary for this qualitative statement. Conversely these two alternatives give equal laws.

@@ -6,6 +6,8 @@
 
 Lean 4 proof software and a preprint by **Daniel Eric Fredriksen, Quantyra Inc.** Developed with OpenAI Codex assistance under the author's research direction.
 
+[Research and exact-proof navigation](RESEARCH.md) · [Contribute an error, prior-work report or test](CONTRIBUTING.md) · [Observed community evidence](notes/community-evidence.md) · [Finite-data CLI](tools/FINITE_DATA.md).
+
 **Read the [preprint PDF](manuscript/finite-causal-order-reconstruction.pdf)** or its [TeX source](manuscript/finite-causal-order-reconstruction.tex). [Integrity and reproducibility](INTEGRITY.md) Â· [Citation metadata](CITATION.cff) Â· [Zenodo metadata](.zenodo.json) Â· [Changelog](CHANGELOG.md).
 
 ## Result and verification scope
@@ -28,6 +30,8 @@ The [full Winkler comparison](notes/winkler-full-text-comparison.md) now establi
 This is restricted theoretical geometry. It establishes no new physics, general spacetime reconstruction, curvature control or carrying-capacity gain.
 
 ## Build
+
+Quantyra development and acceptance Lean commands below execute on remote GCP. Existing GCP evidence remains authoritative; hosted CI is supplementary. The finite-data Python CLI and tests are separate and do not compile Lean.
 
 Use elan and Python 3; [INTEGRITY.md](INTEGRITY.md) gives the fresh-checkout dependency and focused-cache commands. Once dependencies are present:
 

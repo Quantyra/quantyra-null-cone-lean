@@ -2,6 +2,8 @@
 
 Reviewed on 2026-10-06 Hawaii time for Quantyra Space, proof review and continuation plan (E002/S008). Baseline: `b0c8ce62e5ee9c5c7f4a21058063c03a116b2d9c`, including the manuscript, all four Lean modules, and the identifiability, quantitative-reduction, rate, label/time, and completion notes. This is a further Codex review under the author's direction, not independent specialist review.
 
+**Current notice, 2026-10-07 (S009/S011):** the review below is historical. Its specialist-review gate is superseded by the open-source [contribution/feedback protocol](../CONTRIBUTING.md). Full inverse/identifiability and law equivalence now have retained GCP evidence; S010's full Winkler comparison is complete with a bounded originality verdict. [Current research navigation](../RESEARCH.md) maps those claims. Historical opinions, proof analysis and earlier to-do lists remain preserved and do not reinstate a specialist/adoption prerequisite.
+
 **Verdict:** no blocking mathematical error found in the finite theorem or the probability-to-density argument. The stated constants and hypotheses are consistent. The finite theorem has matching Lean and prose statements; the full inverse bound remains a prose proof. Originality remains provisional. The immediate work is clearer exposition and historical-status reconciliation, followed by full-text comparison and independent review.
 
 ## Verification evidence

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-07",
+  "status": "intentionally_stopped_after_measurement_design_review",
+  "process_identity_verified": "python process 15676; benchmark_finite_data.py; benchmark-20261007.json output argument",
+  "terminal_exit_code": 1,
+  "reason": "Per-trial tracemalloc substantially inflated runtime. Normal runtime and separate memory-profile repetitions are required for interpretable measurements.",
+  "complete_trials_observed_in_tool_log": 24,
+  "observed_cases": ["n=128 flat, 8", "n=128 FGM -1/2, 8", "n=128 FGM +1/2, 8"],
+  "coverage_failures_observed": 0,
+  "accepted_coverage_evidence": false,
+  "replacement": "benchmark-20261007.json: full 80 normal trials and 10 separate profiling repetitions",
+  "not_an_observation_timeout_restart": true
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this proof software, please cite this release."
+title: "quantyra-null-cone-lean: finite causal-order rank rigidity"
+type: software
+authors:
+  - family-names: Fredriksen
+    given-names: Daniel Eric
+    affiliation: "Quantyra Inc"
+url: "https://github.com/Quantyra/quantyra-null-cone-lean"
+repository-code: "https://github.com/Quantyra/quantyra-null-cone-lean"
+license: Apache-2.0
+version: "0.1.0"
+keywords:
+  - Lean 4
+  - formal verification
+  - causal order
+  - spacetime reconstruction
+  - partial orders
+abstract: >-
+  Lean 4 proof of finite realizer rank rigidity: for every two-order realizer
+  of an occupied-grid sample, one global axis exchange gives both interior
+  rank error bounds of at most 30rn under explicit marginal and boundary
+  hypotheses. The accompanying draft derives the restricted density inverse
+  bound d_conf <= 100 (N^(-1/12) + Delta_N) in prose. Only the deterministic
+  finite theorem is Lean verified. Novelty and independent review remain
+  unconfirmed. Software is Apache-2.0; the manuscript is CC-BY-4.0.

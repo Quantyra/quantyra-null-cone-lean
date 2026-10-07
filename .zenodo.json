@@ -1,0 +1,10 @@
+{
+  "title": "quantyra-null-cone-lean: finite causal-order rank rigidity",
+  "upload_type": "software",
+  "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "access_right": "open",
+  "keywords": ["lean4", "formal-verification", "causal-order", "spacetime-reconstruction", "partial-orders", "quantyra"],
+  "description": "<p>Lean 4 proof of finite realizer rank rigidity: for every two-order realizer of an occupied-grid sample, one global axis exchange gives both interior rank errors at most 30rn under explicit marginal and boundary hypotheses.</p><p>The accompanying draft preprint derives d_conf &lt;= 100 (N^(-1/12) + Delta_N) for a restricted smooth positive uniform-marginal density class in a two-dimensional conformal diamond. Only the deterministic finite theorem is Lean verified. Probability, continuous-density interpolation and proper-time comparisons remain prose proofs. Novelty and independent review are unconfirmed; no general spacetime reconstruction, new physical law, curvature estimate or carrying-capacity benefit is claimed.</p><p>Software and proof code: Apache-2.0. The files under manuscript/ are licensed CC-BY-4.0 as stated in manuscript/README.md and LICENSES/CC-BY-4.0.txt.</p>"
+}

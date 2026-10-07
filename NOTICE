@@ -1,0 +1,15 @@
+Quantyra finite causal order reconstruction
+Copyright 2026 Quantyra Inc.
+
+Author: Daniel Eric Fredriksen, Quantyra Inc.
+Developed with OpenAI Codex assistance under the author's research direction.
+
+Software, Lean proof sources, scripts, and repository documentation are
+licensed under Apache-2.0, except files under manuscript/, which are
+licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0).
+External dependencies retain their own licenses. Their code and build
+caches are not included in the source archive.
+
+Only the deterministic finite realizer rank theorem is Lean verified.
+The full inverse theorem is a prose derivation. Novelty and independent
+publication review remain unconfirmed.

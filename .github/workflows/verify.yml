@@ -1,0 +1,49 @@
+name: Verify proofs and manuscript
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned dependencies and focused cache
+        run: |
+          MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
+          lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
+      - name: Build and audit
+        run: |
+          set -o pipefail
+          lake build QuantyraNullCone 2>&1 | tee lean-build.log
+          python3 checks/check_integrity.py 2>&1 | tee lean-audit.log
+          python3 checks/check_grid_witnesses.py | tee grid-check.log
+          python3 checks/check_small_realizers.py | tee realizer-check.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proof-verification-${{ github.sha }}
+          path: '*.log'
+  manuscript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install TeX
+        run: sudo apt-get update && sudo apt-get install -y latexmk texlive-latex-extra texlive-fonts-recommended lmodern
+      - name: Compile and check references
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=manuscript manuscript/finite-causal-order-reconstruction.tex
+          if grep -E 'Overfull|undefined|There were undefined references' manuscript/finite-causal-order-reconstruction.log; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preprint-${{ github.sha }}
+          path: |
+            manuscript/finite-causal-order-reconstruction.pdf
+            manuscript/finite-causal-order-reconstruction.log

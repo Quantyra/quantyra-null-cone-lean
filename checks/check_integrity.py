@@ -26,7 +26,10 @@ for report in reports:
     names = {name.strip() for name in report.split(",") if name.strip()}
     if not names <= ALLOWED:
         sys.exit(f"Unexpected theorem dependencies: {sorted(names - ALLOWED)}")
-for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_specified"):
-    if not re.search(rf"'QuantyraNullCone\.{name}' depends on axioms:", result.stdout):
+for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_specified",
+             "finite_realizer_coordinate_rigidity", "finite_realizer_cumulative_error",
+             "sampledOrder_measurable", "InDensityClass.densityMeasure_univ",
+             "InDensityClass.orderLaw_isProbabilityMeasure"):
+    if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

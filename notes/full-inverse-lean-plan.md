@@ -27,4 +27,6 @@ Retain Lean 4.30.0 and pinned mathlib `c5ea00351c28e24afc9f0f84379aa41082b1188f`
 
 Keep compilable intermediate results, state which bridges are still incomplete, and preserve the already checked finite theorem. Local tooling is being installed in the user-owned `QuantyraTools/SpaceProofs` directory; tool installations and dependency caches are not proof repository artifacts. Claims of full formal verification follow a requirement-by-requirement audit of the actual exported theorem.
 
-Remaining to-do list: all six compiled stages and final type/dependency/completion audit.
+Compiled local progress: F0 concrete definitions, observable measurability and density/sample/order-law probability normalization; F1 inclusive-rank identity, coordinate rigidity, rectangle sandwich and deterministic `87r` consequence with analytic/latent-accuracy premises explicit. The full inverse theorem is not yet exported.
+
+Remaining to-do list: prove uniform marginal/CDF measure facts and derive grid-vertex inputs; F2 concentration/occupancy/null events; F3 density interpolation; F4 same observable-map separation; F5-F6 full all-N assembly/identifiability and final type/dependency/completion audit.

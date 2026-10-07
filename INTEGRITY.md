@@ -8,6 +8,9 @@ The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_s
 | Grid witnesses and common orientation | `Grid.lean` | Lean verified |
 | Strip and rank disagreement counts | `Counts.lean`, `Bridges.lean` | Lean verified |
 | Both finite rank bounds with one global exchange | `Bridges.lean`, `checks/Audit.lean` | Lean verified; only `propext`, `Classical.choice`, `Quot.sound` dependencies |
+| Inclusive rank identity, `32r` coordinate rigidity, deterministic `87r` CDF bridge | `Cumulative.lean` | Compiled deterministic results; concrete analytic/latent-accuracy premises remain explicit |
+| Concrete density/order-law definitions and order observable measurability | `Model.lean` | Compiled; full probability-to-density theorem remains incomplete |
+| Normalization of the concrete density, iid sample and directed-order laws | `Measures.lean` | Compiled from the original density class; no assumed probability normalization |
 | `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; probability and continuum bridges are not Lean verified |
 | Identifiability, label-law equivalence, proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences |
 | Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |
@@ -25,10 +28,13 @@ try {
   lake update
 } finally { $env:MATHLIB_NO_CACHE_ON_UPDATE = $previousCacheSetting }
 lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
+lake exe cache get Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.MeasureTheory.Measure.WithDensity Mathlib.MeasureTheory.Measure.Lebesgue.Basic Mathlib.MeasureTheory.Constructions.Pi Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+lake exe cache get Mathlib.MeasureTheory.Integral.Prod Mathlib.MeasureTheory.Function.LocallyIntegrable
 lake build QuantyraNullCone
 python checks/check_integrity.py
 python checks/check_grid_witnesses.py
 python checks/check_small_realizers.py
+python checks/check_grid_scale.py
 ```
 
 Use `MATHLIB_NO_CACHE_ON_UPDATE=1 lake update` on POSIX shells. Stop on a nonzero command exit. The focused cache avoids downloading the entire mathlib build. Successful local verification is recorded in [Lean verification](notes/lean-verification.md); CI records the tested commit and uploads its logs.
@@ -37,4 +43,4 @@ Use `MATHLIB_NO_CACHE_ON_UPDATE=1 lake update` on POSIX shells. Stop on a nonzer
 
 The coefficient estimate applies only to the stated regular two-dimensional class with fixed marginal gauge and residual axis exchange. It controls no curvature or derivatives, proves no new dynamics, and demonstrates no carrying-capacity improvement. The manuscript reports AI assistance. No AI system is listed as an author and no independent review is represented as completed.
 
-GitHub release `v0.1.0` targets commit `51846e81eecbc24d004ef0ec6c621c8ad90e8e52`. Both jobs passed in [CI run 37570765299](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37570765299). Zenodo archived that release as [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763), concept DOI [10.5281/zenodo.23202762](https://doi.org/10.5281/zenodo.23202762). The public record confirms author, version, license and tag; its ZIP checksum and included PDF were verified against the release artifact. The main-branch manuscript subsequently adds a citation annotation for that software archive; it does not replace the original archived PDF. A manuscript-only deposit, if made later, is a separate citable object with its own license and identifier. No arXiv submission or scholarly-profile update is automatic.
+GitHub release `v0.1.0` targets commit `51846e81eecbc24d004ef0ec6c621c8ad90e8e52`. Both jobs passed in [CI run 37570765299](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37570765299). Zenodo archived that release as [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763), concept DOI [10.5281/zenodo.23202762](https://doi.org/10.5281/zenodo.23202762). The public record confirms author, version, license and tag; its ZIP checksum and included PDF were verified against the release artifact. The separate manuscript v0.2.0 is published at [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773), under CC-BY-4.0, with frozen source commit and verified downloads in `manuscript/deposit/published-record.json`. It retains the full inverse theorem's prose status and provisional originality. Existing release artifacts remain unchanged. No arXiv submission or scholarly-profile update is automatic.

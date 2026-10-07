@@ -21,6 +21,8 @@ Improved prose bound: d_conf <= 130 ((log N / N)^(1/6) + Delta_N).
 
 The class comprises smooth densities on the square between `1/2` and `3/2`, with uniform marginals and Euclidean Lipschitz constant at most two. `Delta_N` compares iid finite causal-order laws; `d_conf` compares density coefficients in supremum norm modulo axis exchange. Only abstract orders are observed. The full inverse theorem's probability and continuum arguments are **prose proofs, not Lean verified**. Originality and independent review remain unconfirmed. Constants are conservative; no practical sample budget or optimal exponent is claimed.
 
+The active formal extension adds [deterministic coordinate/CDF bridges](QuantyraNullCone/Cumulative.lean), [concrete density/order-law definitions](QuantyraNullCone/Model.lean) and [probability normalization](QuantyraNullCone/Measures.lean), including observable measurability. These compiled intermediate exports preserve explicit analytic premises in the CDF bridge; they do not complete the full inverse theorem.
+
 This is restricted theoretical geometry. It establishes no new physics, general spacetime reconstruction, curvature control or carrying-capacity gain.
 
 ## Build

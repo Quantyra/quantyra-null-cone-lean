@@ -2,5 +2,15 @@ import QuantyraNullCone
 
 #check QuantyraNullCone.finite_realizer_rank_rigidity
 #check QuantyraNullCone.finite_realizer_rank_rigidity_specified
+#check QuantyraNullCone.finite_realizer_coordinate_rigidity
+#check QuantyraNullCone.finite_realizer_cumulative_error
+#check QuantyraNullCone.sampledOrder_measurable
+#check QuantyraNullCone.InDensityClass.densityMeasure_univ
+#check QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity_specified
+#print axioms QuantyraNullCone.finite_realizer_coordinate_rigidity
+#print axioms QuantyraNullCone.finite_realizer_cumulative_error
+#print axioms QuantyraNullCone.sampledOrder_measurable
+#print axioms QuantyraNullCone.InDensityClass.densityMeasure_univ
+#print axioms QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure

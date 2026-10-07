@@ -2,6 +2,8 @@
 
 Author: Daniel Eric Fredriksen, Quantyra Inc. Current manuscript version 0.3.0, 7 October 2026. The archived software release retains its original version 0.1.0 manuscript.
 
+An [unpublished literature revision](working/README.md), with [review PDF](working/finite-causal-order-reconstruction.pdf), now credits the fully inspected Winkler precedents and narrows the candidate contribution. The published 0.3.0 source/PDF and DOI package below remain preserved.
+
 [TeX source](finite-causal-order-reconstruction.tex) and [compiled PDF](finite-causal-order-reconstruction.pdf) present the fixed class, the original `100(N^(-1/12) + Delta_N)` inverse estimate and the improved `130((log N/N)^(1/6) + Delta_N)` estimate, the finite realizer theorem, label-law equivalence, and the proper-time consequence. The finite realizer theorem, original all-N inverse estimate, all-size identifiability and actual labeled/unlabeled law equivalence are formalized in Lean. The optimized logarithmic-grid estimate and proper-time consequence remain prose proofs. Exact proof commit `b7d762acc9c10ca881f8366f545f3998b0528448` has authoritative GCP verification with 68 export audits; see [the retained evidence](../evidence/gcp/space-unlabeled-20261007T123238Z-759aaa/receipt.json). Originality remains provisional. Quantyra supports open-source, decentralized informal feedback and downstream use/testing; specialist review is not a publication prerequisite.
 
 ## Build

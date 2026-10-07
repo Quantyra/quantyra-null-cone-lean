@@ -23,6 +23,8 @@ The formal proof includes finite realizer rank rigidity, normalization, cumulati
 
 The logarithmic-grid improvement and proper-time consequence remain prose proofs. Their Lean formalization is optional future work. Originality remains provisional; constants are conservative and no practical sample budget or optimal exponent is claimed. Quantyra follows open-source, decentralized informal feedback and downstream testing; specialist review is not a publication gate.
 
+The [full Winkler comparison](notes/winkler-full-text-comparison.md) now establishes earlier coordinate-forcing and stronger flat-model rank recovery precedents. An [unpublished literature revision](manuscript/working/README.md) credits those results; the published artifacts remain intact. Next research is scoped in [finite-data estimation](notes/finite-data-follow-up-scope.md). The [higher-dimensional feasibility check](notes/higher-dimensional-feasibility.md) rejects a naive coordinate-density extension through an explicit conformal-gauge counterexample and records the reopening requirements.
+
 This is restricted theoretical geometry. It establishes no new physics, general spacetime reconstruction, curvature control or carrying-capacity gain.
 
 ## Build

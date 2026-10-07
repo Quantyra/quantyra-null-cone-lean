@@ -16,6 +16,7 @@ The accompanying mathematical draft derives
 
 ```text
 d_conf(rho, sigma) <= 100 (N^(-1/12) + Delta_N(rho, sigma)).
+Improved prose bound: d_conf <= 130 ((log N / N)^(1/6) + Delta_N).
 ```
 
 The class comprises smooth densities on the square between `1/2` and `3/2`, with uniform marginals and Euclidean Lipschitz constant at most two. `Delta_N` compares iid finite causal-order laws; `d_conf` compares density coefficients in supremum norm modulo axis exchange. Only abstract orders are observed. The full inverse theorem's probability and continuum arguments are **prose proofs, not Lean verified**. Originality and independent review remain unconfirmed. Constants are conservative; no practical sample budget or optimal exponent is claimed.
@@ -39,6 +40,8 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 - [Manuscript build and license](manuscript/README.md).
 - [Finite-order inverse derivation](notes/finite-order-rate.md) and [author audit](notes/rate-audit.md).
+- [Logarithmic-grid optimization](notes/grid-scale-optimization.md): complete improved prose derivation, cutoff, exact constants, audit and finite checks.
+- [Full inverse Lean development contracts](notes/full-inverse-lean-plan.md): active extension; unfinished analytic/probability stages are not claimed verified.
 - [Further proof review and continuation requirements](notes/proof-review-2026-10-06.md), including explicit cumulative-error and orbit-separation checks. This remains AI-assisted review, not independent refereeing.
 - [Selected formal statement](notes/lean-target.md).
 - [Label equivalence and proper-time comparison](notes/observable-and-time-audit.md).

@@ -1,0 +1,16 @@
+{
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-06",
+  "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
+  "license": "cc-by-4.0",
+  "version": "0.2.0",
+  "access_right": "open",
+  "keywords": ["causal order", "inverse stability", "partial orders", "conformal geometry", "Lean 4", "formal verification"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.23202763", "relation": "references", "scheme": "doi", "resource_type": "software"},
+    {"identifier": "https://github.com/Quantyra/quantyra-null-cone-lean", "relation": "isSupplementedBy", "scheme": "url", "resource_type": "software"}
+  ],
+  "description": "<p>Draft preprint by Daniel Eric Fredriksen, Quantyra Inc., version 0.2.0. For smooth densities on the unit square between 1/2 and 3/2, with uniform marginals and Euclidean Lipschitz constant at most two, iid finite directed causal-order laws yield the explicit coefficient inverse bound 100(N^(-1/12) + Delta_N). A logarithmic grid scale improves the sample-size term to give 130((log N/N)^(1/6) + Delta_N), for every integer N at least two.</p><p>The deterministic occupied-grid finite realizer rank theorem is Lean verified. The full probability-to-density inverse theorem, label-law equivalence and proper-time comparison remain prose proofs in this manuscript version. The constants are conservative; no optimal exponent, practical sample budget, general spacetime reconstruction or new physics is claimed. Originality remains provisional, including outstanding full-text literature comparisons.</p><p>Developed with OpenAI Codex assistance under the author's research direction. Quantyra follows open-source, decentralized informal feedback and downstream use/testing; specialist review is not a publication prerequisite. Manuscript and source: CC-BY-4.0. The related version 0.1.0 software DOI identifies a separate Apache-2.0 software release and its original included preprint, not this manuscript deposit.</p>"
+}

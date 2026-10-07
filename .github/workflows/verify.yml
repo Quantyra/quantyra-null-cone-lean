@@ -19,6 +19,7 @@ jobs:
         run: |
           MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
           lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
+          lake exe cache get Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.MeasureTheory.Measure.WithDensity Mathlib.MeasureTheory.Measure.Lebesgue.Basic Mathlib.MeasureTheory.Constructions.Pi Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
       - name: Build and audit
         run: |
           set -o pipefail
@@ -26,6 +27,7 @@ jobs:
           python3 checks/check_integrity.py 2>&1 | tee lean-audit.log
           python3 checks/check_grid_witnesses.py | tee grid-check.log
           python3 checks/check_small_realizers.py | tee realizer-check.log
+          python3 checks/check_grid_scale.py | tee grid-scale-check.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:

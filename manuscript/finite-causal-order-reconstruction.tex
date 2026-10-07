@@ -21,7 +21,7 @@
 \newcommand{\norm}[1]{\left\lVert #1\right\rVert_\infty}
 \title{Quantitative reconstruction from finite causal orders\\in a conformal diamond}
 \author{Daniel Eric Fredriksen\\Quantyra Inc.\\\url{https://github.com/Quantyra/quantyra-null-cone-lean}}
-\date{6 October 2026 \quad Draft preprint, version 0.1.0}
+\date{6 October 2026 \quad Draft preprint, version 0.2.0}
 
 \begin{document}
 \maketitle
@@ -34,15 +34,18 @@ Observing only the partial orders induced by independent volume samples,
 we derive an explicit inverse estimate: the supremum difference of the
 densities, modulo exchange of the null axes, is at most
 $100(N^{-1/12}+\Delta_N)$, where $\Delta_N$ is the largest total variation
-distance between the finite order laws through size $N$. The argument
+distance between the finite order laws through size $N$. A logarithmic
+grid scale further gives $130((\log N/N)^{1/6}+\Delta_N)$ for every
+$N\ge2$. The argument
 uses an occupied-grid forcing construction that constrains every
 two-order realizer, after one common axis exchange, to have interior
 rank error at most $30rn$. This deterministic finite theorem has been
 formalized in Lean~4. The concentration, cumulative reconstruction,
 density interpolation and proper-time arguments are given here as
 ordinary mathematical proofs and are not claimed as Lean verified.
-The constants are conservative, the exponent is not claimed optimal,
-and originality and independent review remain unconfirmed.
+The constants are conservative, the exponents are not claimed optimal,
+and originality remains provisional. Public source and reproducibility
+artifacts support decentralized informal feedback and downstream testing.
 \end{abstract}
 
 \noindent\textbf{Keywords:} causal order; conformal geometry; two-dimensional
@@ -52,8 +55,8 @@ and this manuscript are available in the public repository above.\\
 \textbf{Software archive:} version 0.1.0,
 \href{https://doi.org/10.5281/zenodo.23202763}{doi:10.5281/zenodo.23202763}.
 This DOI identifies the software release including the original preprint;
-it is not a manuscript-specific DOI. This copy adds the verified citation
-after archival.\\
+it is not a manuscript-specific DOI. The original release is preserved;
+this revision adds the improved grid-scale estimate.\\
 \textbf{License:} manuscript CC-BY-4.0; software Apache-2.0.
 
 \section{Introduction and scope}
@@ -251,13 +254,26 @@ vertices and the uniform population marginals:
 four marginal tails is bounded by $4r+r$.
 \end{enumerate}
 Coordinate ties and grid-line points have probability zero.
-The finite theorem applies. Each latent normalized rank differs from
-its coordinate by at most $2r$, so every interior reconstructed point
-is within $32r$ in each coordinate after one exchange. For any anchored
-rectangle, moving both thresholds by $32r$ costs at most $64r$ in
-population mass. Clipping thresholds to the square does not increase
-this bound. The boundary fraction costs at most $20r$ and replacing
-latent empirical mass by population mass costs $3r$. Consequently
+The finite theorem applies. Distinct coordinates and inclusive thresholds
+give the exact identity $\rank_u(i)/n=F_{u,n}(u_i)$, and likewise for $v$;
+there is no additional $1/n$ term. Each latent normalized rank differs
+from its coordinate by at most $2r$, so every interior reconstructed point
+is within $32r$ in each coordinate after one exchange.
+
+Write $q_i$ for the aligned reconstructed point, $b=\#B/n\le20r$,
+and $d=32r$. For $s,t\in[0,1]$ put
+$s_- =\max(0,s-d)$, $s_+=\min(1,s+d)$ and similarly for $t$.
+Interior-point indicator inclusions give, simultaneously for all thresholds,
+\[
+ C_n(s_-,t_-)-b\le A_n^S(s,t)\le C_n(s_+,t_+)+b.
+\]
+If a lower threshold clips to zero, its latent rectangle contains no
+points because latent coordinates are strictly positive. Upper clipping
+uses the unit-square bounds. This includes reconstructed ranks equal
+to one and values $d>1$. Uniform population marginals bound the mass
+change from moving the two thresholds by $2d=64r$; the latent empirical
+replacement costs $3r$. Each direction uses one boundary penalty $b$.
+Consequently
 \begin{equation}\label{eq:reconstruction}
  \min\{\norm{A_n(P)-C_\rho},\norm{A_n(P)-C_{\rho^T}}\}\le87r.
 \end{equation}
@@ -314,6 +330,10 @@ Let
                          \norm{C_\rho-C_{\sigma^T}}\},\qquad
  t_n=\TV(\nu_n(\rho),\nu_n(\sigma)).
 \]
+Transposition is a supremum-norm isometry, so the minimum of the four
+cross-distances between the two transpose orbits is exactly $\epsilon_*$.
+The selector has a finite order domain; every output preimage used below
+is therefore measurable without a function-space measurability assumption.
 If $\epsilon_*>2a_n$, the sets of outputs within $a_n$ of the two
 transpose orbits are disjoint. Each law places at least $9/10$ of
 its mass on its own good set and at most $1/10$ on the other's.
@@ -336,6 +356,60 @@ The bare $N$ term becomes smaller than one only when $N>10^{24}$.
 The bound establishes a polynomial modulus, not a useful finite sample
 budget. No optimality of the $N^{-1/12}$ rate is asserted.
 \end{remark}
+
+\subsection{A logarithmic grid scale}
+\begin{theorem}[Improved inverse estimate]\label{thm:improved}
+For every $\rho,\sigma\in\K$ and integer $N\ge2$,
+\[
+ \dc(\rho,\sigma)\le130\bigl((\log N/N)^{1/6}+\Delta_N(\rho,\sigma)\bigr).
+\]
+The logarithm is natural. The observable, class and residual quotient
+are those of Theorem~\ref{thm:main}.
+\end{theorem}
+\begin{proof}
+For $n\ge65536$ set $x=\sqrt{n/(8\log n)}$, $m=\lfloor x\rfloor$,
+and $r=1/m$. The function $t/\log t$ is increasing for $t>e$, since
+its derivative is $(\log t-1)/(\log t)^2$. At the cutoff,
+$\log65536=16\log2<16$, hence $x^2>512>16^2$.
+Thus $m\ge16$ and $\log n\ge1$. Also $m\ge x-1\ge x/2$, so
+\[
+ m^2\le\frac{n}{8\log n},\qquad
+ r\le2\sqrt{\frac{8\log n}{n}}.
+\]
+The deterministic reconstruction proof is unchanged. The two failure
+terms in Section~\ref{sec:probability} satisfy
+\begin{align*}
+ m^2e^{-n/(2m^2)}&\le\frac{1}{8n^3\log n},\\
+ 2(m+1)^2e^{-2n/m^2}&\le\frac{n^{-15}}{\log n}.
+\end{align*}
+Indeed the exponents are at least $4\log n$ and $16\log n$;
+$(m+1)^2\le4m^2$ supplies the second prefactor. Their sum is at most
+$1/(8n^3)+n^{-15}<1/10$. Consequently success is at least $9/10$,
+with cumulative error
+\[
+ a_n=174\sqrt8\sqrt{\log n/n}.
+\]
+The same orbit-separation and interpolation argument gives
+\[
+ \dc\le(712704\sqrt8)^{1/3}(\log n/n)^{1/6}+\tfrac54t_n.
+\]
+The coefficient is below 130: squaring the positive cubed comparison
+reduces it to
+\[
+ 8\cdot712704^2=4063575932928<4826809000000=130^6.
+\]
+Set $n=N$ and use $t_N\le\Delta_N$.
+
+For $2\le N<65536$, $\log2\ge1/2$ follows by integrating $1/t$
+on $[1,2]$. Thus $\log N/N\ge1/131072>(1/8)^6$, and the
+displayed N term exceeds $130/8>1\ge\dc$. This proves the small-N
+branch without a grid or concentration assertion there.
+\end{proof}
+
+The new estimate improves the asymptotic N term but is not an optimal
+rate or a practical sampling guarantee. It uses the same prose
+probability and continuum bridges, which remain outside the current
+Lean verification scope.
 
 \section{Observable labels and proper time}
 \begin{proposition}[Labeled and unlabeled laws]
@@ -424,8 +498,9 @@ does not claim to settle the general causal-set Hauptvermutung.
 
 The work was developed with OpenAI Codex assistance under Daniel Eric
 Fredriksen's research direction. AI-assisted derivation and writing are
-disclosed; no independent specialist or referee review is represented
-as completed. The repository retains the derivation, exact-source
+disclosed. The open-source workflow supports decentralized informal
+feedback, reuse and downstream testing; formal specialist review is
+not a publication prerequisite. The repository retains the derivation, exact-source
 comparisons and verification provenance. The candidate contribution
 is the explicit restricted inverse estimate and its approximate
 realizer-rigidity ingredient; publication-level originality assessment

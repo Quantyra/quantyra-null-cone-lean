@@ -1,6 +1,6 @@
 # Proof scope and integrity
 
-The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_specified`, in [Bridges.lean](QuantyraNullCone/Bridges.lean). Every two-order realizer admits one globally chosen exchange giving both rank errors at most `30rn` at every interior event. Hypotheses specify distinct coordinates, an occupied open grid with `m >= 16`, empirical marginal error at most `2r`, and boundary count at most `20rn`, where `r = 1/m`. The stronger general theorem retains only the marginal assumptions actually used.
+The finite formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_specified`, in [Bridges.lean](QuantyraNullCone/Bridges.lean). Every two-order realizer admits one globally chosen exchange giving both rank errors at most `30rn` at every interior event. Hypotheses specify distinct coordinates, an occupied open grid with `m >= 16`, empirical marginal error at most `2r`, and boundary count at most `20rn`, where `r = 1/m`. The stronger general theorem retains only the marginal assumptions actually used. The formal extension now also proves `InDensityClass.full_inverse` and `InDensityClass.all_law_identifiability` for the actual labeled directed-order laws, with the label/unlabel bridge still separate.
 
 | Claim | Evidence | Verification status |
 | --- | --- | --- |
@@ -16,8 +16,10 @@ The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_s
 | Iid support/null ties, occupancy, concentration and original fourth-root reconstruction probability | `Sampling.lean`, `Coordinates.lean`, `Concentration.lean`, `GoodSamples.lean`, `ProbabilityRate.lean` | GCP verified from original K; `9/10` success at `174 n^(-1/4)` for every `n>=65536` |
 | Boundary-valid density interpolation and actual coefficient supremum attainment | `DensityInterpolation.lean` | GCP verified: actual K plus CDF error epsilon imply coefficient deviation cubed at most `2048 epsilon` |
 | One measurable order-only selector, finite-law event TV bound and CDF orbit separation | `OrderSelector.lean`, `FiniteTV.lean` | GCP verified from actual K: `n>=65536` and observed TV below `4/5` give one global CDF orientation with error `348 n^(-1/4)` |
-| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; reconstruction probability is formalized, while all-N coefficient assembly and identifiability remain unverified |
-| Identifiability, label-law equivalence, proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences |
+| Transpose closure of K, density-measure/CDF transport and coefficient isometry | `Transpose.lean` | GCP verified with the original Euclidean Lipschitz definition |
+| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | GCP verified in `InverseRate.lean` for actual labeled directed-order laws, every N>=2, only original K; quotient-law equivalence is not yet formalized |
+| All-law coefficient identifiability on the square under one global identity/transpose | `Identifiability.lean` | GCP verified from equality of every labeled iid directed-order law; no assumed coefficient equality |
+| Label-law equivalence and proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences; formal label bridge remains, proper-time formalization is separately selectable |
 | Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |
 
 No new axioms, admitted proofs, exact realizer uniqueness assumption, or hypotheses equivalent to the final rank conclusion are introduced. `checks/check_integrity.py` rejects forbidden declarations and audits Lean's printed dependencies. The sanity scripts falsify particular witness/count errors; they do not establish the universal theorem.
@@ -35,7 +37,7 @@ try {
 lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
 lake exe cache get Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.MeasureTheory.Measure.WithDensity Mathlib.MeasureTheory.Measure.Lebesgue.Basic Mathlib.MeasureTheory.Constructions.Pi Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 lake exe cache get Mathlib.MeasureTheory.Integral.Prod Mathlib.MeasureTheory.Function.LocallyIntegrable
-lake exe cache get Mathlib.Probability.Moments.SubGaussian Mathlib.Probability.Independence.Basic Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Analysis.SpecialFunctions.Pow.Real
+lake exe cache get Mathlib.Probability.Moments.SubGaussian Mathlib.Probability.Independence.Basic Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Analysis.SpecialFunctions.Pow.Real Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 lake build QuantyraNullCone
 python checks/check_integrity.py
 python checks/check_grid_witnesses.py
@@ -43,7 +45,7 @@ python checks/check_small_realizers.py
 python checks/check_grid_scale.py
 ```
 
-Use `MATHLIB_NO_CACHE_ON_UPDATE=1 lake update` on POSIX shells. Stop on a nonzero command exit. The focused cache avoids downloading the entire mathlib build. Successful local verification is recorded in [Lean verification](notes/lean-verification.md); CI records the tested commit and uploads its logs.
+Use `MATHLIB_NO_CACHE_ON_UPDATE=1 lake update` on POSIX shells. Stop on a nonzero command exit. The focused cache avoids downloading the entire mathlib build. Authoritative GCP verification is recorded in [Lean verification](notes/lean-verification.md), alongside historical local results; supplementary CI records the tested commit and uploads its logs.
 
 ## Research and publication boundary
 

@@ -1,0 +1,5 @@
+inputs.tar.gz: OK
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+PASS exact source snapshot
+STAGE=interpolation-lean
+EXIT=0

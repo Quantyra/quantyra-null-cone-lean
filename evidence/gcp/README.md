@@ -17,3 +17,7 @@ Lean 4.30.0: baseline root build 2583 jobs and twelve export audits; candidate r
 ## Observable-law CDF separation
 
 [space-observable-20261007T114943Z-041e63](space-observable-20261007T114943Z-041e63/receipt.json) verifies the root build (2901 jobs) and forty-two export audits without warnings. The [development index](observable-development-index.json) retains the setup failure and failed proof attempts. The actual-K export compares only directed-order laws, with one fixed code-only selector and one global CDF orientation. All-N coefficient assembly and identifiability remain incomplete.
+
+## All-N inverse and identifiability
+
+[space-identifiability-20261007T121032Z-4c3c47](space-identifiability-20261007T121032Z-4c3c47/receipt.json) verifies the root build (2904 jobs) and fifty-five export audits without compiler warnings. The [development index](inverse-development-index.json) preserves the earlier warning and failed proof attempt. The main all-N estimate assumes only original K and N>=2 for actual labeled directed-order laws; all-law equality gives density equality on the square under one global transpose choice. The formal label/unlabel bridge remains.

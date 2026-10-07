@@ -15,6 +15,9 @@ import QuantyraNullCone.ProbabilityRate
 import QuantyraNullCone.DensityInterpolation
 import QuantyraNullCone.OrderSelector
 import QuantyraNullCone.FiniteTV
+import QuantyraNullCone.Transpose
+import QuantyraNullCone.InverseRate
+import QuantyraNullCone.Identifiability
 
 /-!
 Quantyra finite-order reconstruction.
@@ -25,6 +28,7 @@ The coordinate/rank identity and deterministic cumulative sandwich are also prov
 The probability modules extend the original grid reconstruction rate.
 The density interpolation module proves the original cubic coefficient/CDF bound.
 The order-only selector and finite-law TV argument prove CDF orbit separation.
-The all-N coefficient inverse assembly remains an unfinished stage of the full
-spacetime inverse theorem.
+The original all-N coefficient inverse bound and all-law identifiability are proved
+for the actual labeled directed-order laws. Labeled/unlabeled equivalence and the
+separately selectable proper-time consequence retain their own scope status.
 -/

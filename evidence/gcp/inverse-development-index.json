@@ -1,0 +1,30 @@
+[
+  {
+    "run": "space-transpose-20261007T120004Z-d7de7b",
+    "exit": 0,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "5af6c29ffb7ae220f525eb3067e92b32ff5a2e723367df0e8d42bd7d7ceb5338"
+  },
+  {
+    "run": "space-inverse-20261007T120449Z-c1319d",
+    "exit": 0,
+    "warnings": 1,
+    "accepted": false,
+    "input_sha256": "d64b4684a0d2192790cc9477a7425f5107c8fa01ad257d99778f7c4fe6185b99"
+  },
+  {
+    "run": "space-identifiability-20261007T120806Z-9f7570",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "c8dd58ac097e484bd90b90b40cde23549b9cca3ebd9f0bab66cef3def5d54329"
+  },
+  {
+    "run": "space-identifiability-20261007T121032Z-4c3c47",
+    "exit": 0,
+    "warnings": 0,
+    "accepted": true,
+    "input_sha256": "814688f4f5e6676af5e5c2adc8049416b98040362359d6025a8d1e3c5b440a2d"
+  }
+]

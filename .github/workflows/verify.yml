@@ -21,7 +21,7 @@ jobs:
           lake exe cache get Mathlib.Data.Real.Archimedean Mathlib.Algebra.Order.Floor.Semiring Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity
           lake exe cache get Mathlib.Analysis.Calculus.ContDiff.Basic Mathlib.MeasureTheory.Measure.WithDensity Mathlib.MeasureTheory.Measure.Lebesgue.Basic Mathlib.MeasureTheory.Constructions.Pi Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
           lake exe cache get Mathlib.MeasureTheory.Integral.Prod Mathlib.MeasureTheory.Function.LocallyIntegrable
-          lake exe cache get Mathlib.Probability.Moments.SubGaussian Mathlib.Probability.Independence.Basic Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Analysis.SpecialFunctions.Pow.Real
+          lake exe cache get Mathlib.Probability.Moments.SubGaussian Mathlib.Probability.Independence.Basic Mathlib.Analysis.SpecialFunctions.Exp Mathlib.Analysis.SpecialFunctions.Pow.Real Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
       - name: Build and audit
         run: |
           set -o pipefail

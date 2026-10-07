@@ -33,3 +33,7 @@ Coordinate interchange sends each admissible curve to one with swapped endpoints
 2026-10-07 scope update: the order-only selector and observable-TV CDF separation are now GCP verified in `OrderSelector.lean` and `FiniteTV.lean`. Their observed law is the labeled directed-order code law defined in `Model.lean`. The exchangeability and labeled/unlabeled TV equivalence above still require a formal bridge before claiming the complete original unlabeled-observable theorem. Proper-time formalization remains a separately selectable consequence. Quantyra uses open-source, decentralized informal review and downstream use/testing; specialist review is not a required publication or workflow gate.
 
 Remaining to-do list: formal label-law equivalence for the full inverse theorem; optional proper-time formalization; record actual public feedback, use and testing when available.
+
+2026-10-07 later scope update: `InverseRate.lean` now proves the original all-N coefficient estimate and `Identifiability.lean` its all-law consequence on the square, with exact GCP acceptance. These exports use the actual labeled directed-order laws. The labeled/unlabeled equivalence above is still a prose bridge; proper-time formalization remains optional. The archived manuscript 0.2.0 formal-scope text predates these software proofs.
+
+Remaining to-do list: formal label-law equivalence and final scope reconciliation; optional proper-time formalization and recording actual public feedback.

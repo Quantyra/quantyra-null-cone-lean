@@ -47,7 +47,13 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "selectedCDF_measurable", "InDensityClass.orderCDFGood_probability",
              "finite_probability_event_bound", "InDensityClass.orderLawTV_event_bound",
              "InDensityClass.orderCDFGood_intersects",
-             "InDensityClass.populationCDF_orbit_of_orderLawTV"):
+             "InDensityClass.populationCDF_orbit_of_orderLawTV", "InDensityClass.transpose",
+             "diamondVolume_transpose_preserving", "densityMeasure_transpose_apply",
+             "populationCDF_transpose", "coefficientDeviation_transpose_both",
+             "InDensityClass.coefficientDeviation_bounds", "InDensityClass.conformalDistance_bounds",
+             "orderLawTV_le_finiteLawDiscrepancy", "InDensityClass.conformalDistance_of_small_TV",
+             "InDensityClass.full_inverse", "InDensityClass.coefficientDeviation_zero_iff",
+             "InDensityClass.conformalDistance_zero_iff", "InDensityClass.all_law_identifiability"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

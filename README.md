@@ -25,7 +25,7 @@ The formal proof includes finite realizer rank rigidity, normalization, cumulati
 
 The logarithmic-grid improvement and proper-time consequence remain prose proofs. Their Lean formalization is optional future work. Originality remains provisional; constants are conservative and no practical sample budget or optimal exponent is claimed. Quantyra follows open-source, decentralized informal feedback and downstream testing; specialist review is not a publication gate.
 
-The [full Winkler comparison](notes/winkler-full-text-comparison.md) now establishes earlier coordinate-forcing and stronger flat-model rank recovery precedents. An [unpublished literature revision](manuscript/working/README.md) credits those results; the published artifacts remain intact. Next research is scoped in [finite-data estimation](notes/finite-data-follow-up-scope.md). The [higher-dimensional feasibility check](notes/higher-dimensional-feasibility.md) rejects a naive coordinate-density extension through an explicit conformal-gauge counterexample and records the reopening requirements.
+The [full Winkler comparison](notes/winkler-full-text-comparison.md) now establishes earlier coordinate-forcing and stronger flat-model rank recovery precedents. [Manuscript 0.3.1](https://doi.org/10.5281/zenodo.23225029) credits those results; earlier published artifacts and the historical working draft remain intact. Next research is scoped in [finite-data estimation](notes/finite-data-follow-up-scope.md). The [higher-dimensional feasibility check](notes/higher-dimensional-feasibility.md) rejects a naive coordinate-density extension through an explicit conformal-gauge counterexample and records the reopening requirements.
 
 This is restricted theoretical geometry. It establishes no new physics, general spacetime reconstruction, curvature control or carrying-capacity gain.
 
@@ -60,7 +60,9 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 ## Citation, archive and licenses
 
-Manuscript version **0.3.0** updates the verification scope to cover the original inverse theorem, identifiability and actual labeled/unlabeled laws. [Verified publication receipt](manuscript/deposit/v0.3.0/published-record.json); published manuscript DOI [10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579). Its exact proof/evidence revision is [`b7d762acc9c10ca881f8366f545f3998b0528448`](https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448).
+Latest manuscript: **[0.3.1](https://doi.org/10.5281/zenodo.23225029)**, the literature-only revision crediting Winkler and narrowing the candidate contribution. [PDF](manuscript/deposit/v0.3.1/finite-causal-order-reconstruction.pdf), [source/package](manuscript/deposit/v0.3.1/README.md) and [verified publication receipt](manuscript/deposit/v0.3.1/published-record.json). Seven mathematical statements and accepted GCP proofs are unchanged; finite-data work is separate.
+
+Historical manuscript version **0.3.0** updates the verification scope to cover the original inverse theorem, identifiability and actual labeled/unlabeled laws. [Verified publication receipt](manuscript/deposit/v0.3.0/published-record.json); published manuscript DOI [10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579). Its exact proof/evidence revision is [`b7d762acc9c10ca881f8366f545f3998b0528448`](https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448).
 
 Historical manuscript **0.2.0** remains at [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773), with its [unchanged receipt and frozen artifacts](manuscript/deposit/published-record.json). Its PDF describes the earlier formal scope. Use the manuscript DOI for the paper and the software DOI below for the historical proof software release.
 

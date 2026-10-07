@@ -12,6 +12,10 @@ import QuantyraNullCone
 #check QuantyraNullCone.InDensityClass.populationCDF_thresholdStability
 #check QuantyraNullCone.InDensityClass.populationCDF_u_one
 #check QuantyraNullCone.InDensityClass.populationCDF_one_v
+#check QuantyraNullCone.grid_marginal_accuracy_uniform
+#check QuantyraNullCone.boundary_card_le_of_grid_marginals
+#check QuantyraNullCone.grid_vertices_empiricalCDF
+#check QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity_specified
 #print axioms QuantyraNullCone.finite_realizer_coordinate_rigidity
@@ -24,3 +28,7 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.InDensityClass.populationCDF_thresholdStability
 #print axioms QuantyraNullCone.InDensityClass.populationCDF_u_one
 #print axioms QuantyraNullCone.InDensityClass.populationCDF_one_v
+#print axioms QuantyraNullCone.grid_marginal_accuracy_uniform
+#print axioms QuantyraNullCone.boundary_card_le_of_grid_marginals
+#print axioms QuantyraNullCone.grid_vertices_empiricalCDF
+#print axioms QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices

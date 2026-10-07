@@ -31,7 +31,9 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "sampledOrder_measurable", "InDensityClass.densityMeasure_univ",
              "InDensityClass.orderLaw_isProbabilityMeasure", "InDensityClass.uMarginal_mass",
              "InDensityClass.vMarginal_mass", "InDensityClass.populationCDF_thresholdStability",
-             "InDensityClass.populationCDF_u_one", "InDensityClass.populationCDF_one_v"):
+             "InDensityClass.populationCDF_u_one", "InDensityClass.populationCDF_one_v",
+             "grid_marginal_accuracy_uniform", "boundary_card_le_of_grid_marginals",
+             "grid_vertices_empiricalCDF", "finite_realizer_cumulative_error_of_grid_vertices"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

@@ -1,0 +1,14 @@
+{
+  "run": "space-20261007T093129Z-retry1",
+  "source_capture_run": "space-20261007T090025Z-58150c4e",
+  "compile_host": "GCP",
+  "exit": 0,
+  "source_verified": true,
+  "dependency_identities_verified": true,
+  "owned_warning_headers": {
+    "baseline": [],
+    "candidate": []
+  },
+  "candidate_exports": 16,
+  "baseline_exports": 12
+}

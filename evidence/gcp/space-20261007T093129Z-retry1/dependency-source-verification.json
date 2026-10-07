@@ -1,0 +1,56 @@
+{
+  "Cli": {
+    "rev": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c",
+    "tracked_files": 12,
+    "tracked_tree_sha256": "fced2224b6ac4539ed68c9cf30afed0e72da7bc03902eed67902c307b6e344e8",
+    "all_tracked_bytes_match_git": true
+  },
+  "LeanSearchClient": {
+    "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "tracked_files": 15,
+    "tracked_tree_sha256": "e5699f9e254213ab111a18aa3e02b3cae2350cb19019ee2d0ad15f33d7a8c201",
+    "all_tracked_bytes_match_git": true
+  },
+  "Qq": {
+    "rev": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c",
+    "tracked_files": 35,
+    "tracked_tree_sha256": "bd96708c427de0333e35b60e27fa42e9761b9ddbd8d10a31a8c580d1309c98fc",
+    "all_tracked_bytes_match_git": true
+  },
+  "aesop": {
+    "rev": "558915ae105bfd8074e22d597613d1961822adc2",
+    "tracked_files": 258,
+    "tracked_tree_sha256": "281b7bbfaff462ec2152219c23dd8d65f863e5e3ff051b84992c39fdad56f0df",
+    "all_tracked_bytes_match_git": true
+  },
+  "batteries": {
+    "rev": "32dc18cde3684679f3c003de608743b57498c56f",
+    "tracked_files": 273,
+    "tracked_tree_sha256": "b106480c3a69043238c961904814c2a6599b33c54b136df835adcf58e14c5fe2",
+    "all_tracked_bytes_match_git": true
+  },
+  "importGraph": {
+    "rev": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1",
+    "tracked_files": 56,
+    "tracked_tree_sha256": "96af496494b49677a4fac571798f4c112979a43142d0c0706c36749c48a83a27",
+    "all_tracked_bytes_match_git": true
+  },
+  "mathlib": {
+    "rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+    "tracked_files": 8769,
+    "tracked_tree_sha256": "d564f0a2e85ab1e83fee0ee64733d93b55a12b4f2bef1aacf885eeeb78e7fff5",
+    "all_tracked_bytes_match_git": true
+  },
+  "plausible": {
+    "rev": "a456461b368b71d2accd95234832cd9c174b5437",
+    "tracked_files": 35,
+    "tracked_tree_sha256": "cfc99e1f80a21e126e065fb6f52ec30e7e0518db2c2c6d6af75dadaa8cbec579",
+    "all_tracked_bytes_match_git": true
+  },
+  "proofwidgets": {
+    "rev": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8",
+    "tracked_files": 100,
+    "tracked_tree_sha256": "c58b0bc3b1e95e9ca0f1fb61657e29f4656e8af2006c188cbce9e358e95002b6",
+    "all_tracked_bytes_match_git": true
+  }
+}

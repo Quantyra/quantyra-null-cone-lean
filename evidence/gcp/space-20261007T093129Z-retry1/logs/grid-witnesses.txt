@@ -1,0 +1,1 @@
+PASS: 36 exact-coordinate grids; 865445 separated edges; constants checked

@@ -6,6 +6,7 @@ import QuantyraNullCone.Cumulative
 import QuantyraNullCone.Model
 import QuantyraNullCone.Measures
 import QuantyraNullCone.DensityCDF
+import QuantyraNullCone.GridAccuracy
 
 /-!
 Quantyra finite-order reconstruction.

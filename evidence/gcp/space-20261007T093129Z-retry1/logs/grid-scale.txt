@@ -1,0 +1,2 @@
+PASS: 612 sample sizes; 173 integer grid transitions; cutoff, both failure terms, floor factor and exact coefficient constant
+Derived coefficient: 126.323668677941050 < 130

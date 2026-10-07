@@ -5,6 +5,7 @@ import QuantyraNullCone.Bridges
 import QuantyraNullCone.Cumulative
 import QuantyraNullCone.Model
 import QuantyraNullCone.Measures
+import QuantyraNullCone.DensityCDF
 
 /-!
 Quantyra finite-order reconstruction.

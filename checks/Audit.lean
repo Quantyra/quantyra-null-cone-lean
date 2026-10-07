@@ -7,6 +7,11 @@ import QuantyraNullCone
 #check QuantyraNullCone.sampledOrder_measurable
 #check QuantyraNullCone.InDensityClass.densityMeasure_univ
 #check QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure
+#check QuantyraNullCone.InDensityClass.uMarginal_mass
+#check QuantyraNullCone.InDensityClass.vMarginal_mass
+#check QuantyraNullCone.InDensityClass.populationCDF_thresholdStability
+#check QuantyraNullCone.InDensityClass.populationCDF_u_one
+#check QuantyraNullCone.InDensityClass.populationCDF_one_v
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity
 #print axioms QuantyraNullCone.finite_realizer_rank_rigidity_specified
 #print axioms QuantyraNullCone.finite_realizer_coordinate_rigidity
@@ -14,3 +19,8 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.sampledOrder_measurable
 #print axioms QuantyraNullCone.InDensityClass.densityMeasure_univ
 #print axioms QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure
+#print axioms QuantyraNullCone.InDensityClass.uMarginal_mass
+#print axioms QuantyraNullCone.InDensityClass.vMarginal_mass
+#print axioms QuantyraNullCone.InDensityClass.populationCDF_thresholdStability
+#print axioms QuantyraNullCone.InDensityClass.populationCDF_u_one
+#print axioms QuantyraNullCone.InDensityClass.populationCDF_one_v

@@ -29,4 +29,8 @@ Keep compilable intermediate results, state which bridges are still incomplete, 
 
 Compiled local progress: F0 concrete definitions, observable measurability and density/sample/order-law probability normalization; F1 inclusive-rank identity, coordinate rigidity, rectangle sandwich and deterministic `87r` consequence with analytic/latent-accuracy premises explicit. The full inverse theorem is not yet exported.
 
-Remaining to-do list: prove uniform marginal/CDF measure facts and derive grid-vertex inputs; F2 concentration/occupancy/null events; F3 density interpolation; F4 same observable-map separation; F5-F6 full all-N assembly/identifiability and final type/dependency/completion audit.
+Further compiled progress: `DensityCDF.lean` identifies the concrete measure with density integrals, proves both coordinate marginal measures equal restricted unit-interval volume, derives `|F(s,t)-F(s',t')|<=|s-s'|+|t-t'|` at all real thresholds, and proves `F(s,1)=s` and `F(1,t)=t` on [0,1]. None of those exports assumes the uniform-marginal measure or CDF conclusion.
+
+Next deterministic obligations: bound latent empirical CDF by `3r` from grid-vertex accuracy and derive both `2r` marginal errors. Derive the `20rn` boundary count directly from the sharper `r` vertex error at 4r and 1-4r: merely using the coarser `2r` marginal bound would give 24rn and does not discharge the required constant. Then apply the existing `87r` theorem with the concrete threshold-stability export. Treat null coordinate/grid ties and occupancy/concentration as the separate probability stage.
+
+Remaining to-do list: grid-vertex deductions and concrete deterministic reconstruction; F2 concentration/occupancy/null events; F3 density interpolation; F4 same observable-map separation; F5-F6 full all-N assembly/identifiability and final type/dependency/completion audit.

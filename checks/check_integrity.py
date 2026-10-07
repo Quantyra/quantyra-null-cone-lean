@@ -29,7 +29,9 @@ for report in reports:
 for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_specified",
              "finite_realizer_coordinate_rigidity", "finite_realizer_cumulative_error",
              "sampledOrder_measurable", "InDensityClass.densityMeasure_univ",
-             "InDensityClass.orderLaw_isProbabilityMeasure"):
+             "InDensityClass.orderLaw_isProbabilityMeasure", "InDensityClass.uMarginal_mass",
+             "InDensityClass.vMarginal_mass", "InDensityClass.populationCDF_thresholdStability",
+             "InDensityClass.populationCDF_u_one", "InDensityClass.populationCDF_one_v"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

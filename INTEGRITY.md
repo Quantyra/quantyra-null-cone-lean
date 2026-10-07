@@ -11,6 +11,7 @@ The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_s
 | Inclusive rank identity, `32r` coordinate rigidity, deterministic `87r` CDF bridge | `Cumulative.lean` | Compiled deterministic results; concrete analytic/latent-accuracy premises remain explicit |
 | Concrete density/order-law definitions and order observable measurability | `Model.lean` | Compiled; full probability-to-density theorem remains incomplete |
 | Normalization of the concrete density, iid sample and directed-order laws | `Measures.lean` | Compiled from the original density class; no assumed probability normalization |
+| Uniform coordinate marginal measures, CDF threshold stability and unit-edge values | `DensityCDF.lean` | Compiled from K; concrete CDF threshold stability is proved rather than assumed |
 | `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; probability and continuum bridges are not Lean verified |
 | Identifiability, label-law equivalence, proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences |
 | Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |

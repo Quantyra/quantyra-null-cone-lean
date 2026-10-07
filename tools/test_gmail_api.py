@@ -20,7 +20,7 @@ def client():
 
 
 class GmailBoundaries(unittest.TestCase):
-    def test_installed_app_authorization_uses_pkce_state_and_readonly_scope(self):
+    def test_installed_app_authorization_uses_pkce_state_and_modify_scope(self):
         from google_auth_oauthlib.flow import InstalledAppFlow
         flow = InstalledAppFlow.from_client_config(client(), api.SCOPES,
                                                   autogenerate_code_verifier=True)
@@ -61,12 +61,71 @@ class GmailBoundaries(unittest.TestCase):
         with self.assertRaises(api.AccessError):
             api.validate_client(config)
 
-    def test_refuse_write_scopes(self):
+    def test_refuse_excessive_scope_grants(self):
         for scopes in [[], ["https://mail.google.com/"],
                        api.SCOPES + ["https://www.googleapis.com/auth/gmail.send"]]:
             with self.assertRaises(api.AccessError):
                 api.validate_scopes(scopes)
         api.validate_scopes(api.SCOPES)
+
+    def test_existing_token_requires_the_imported_client_before_network_use(self):
+        token = {"scopes": api.SCOPES, "client_id": "different.apps.googleusercontent.com",
+                 "token_uri": "https://oauth2.googleapis.com/token"}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "token.json"
+            path.write_text(json.dumps(token))
+            with patch.object(api, "load_secret", return_value=client()), patch.object(api, "Gmail") as gmail:
+                with self.assertRaises(api.AccessError):
+                    api.import_token(path)
+                gmail.assert_not_called()
+
+    def test_existing_token_rejects_non_google_endpoint(self):
+        token = {"scopes": api.SCOPES, "client_id": client()["installed"]["client_id"],
+                 "token_uri": "https://attacker.invalid/token"}
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "token.json"
+            path.write_text(json.dumps(token))
+            with patch.object(api, "load_secret", return_value=client()), patch.object(api, "Gmail") as gmail:
+                with self.assertRaises(api.AccessError):
+                    api.import_token(path)
+                gmail.assert_not_called()
+
+    def test_mark_read_removes_only_unread_and_checks_result(self):
+        gmail = Mock()
+        gmail.get.side_effect = [{"labelIds": ["INBOX", "UNREAD"]}, {"labelIds": ["INBOX"]}]
+        gmail.session.post.return_value.status_code = 200
+        with patch("builtins.print"):
+            api.mark_read(gmail, "abc123")
+        gmail.session.post.assert_called_once_with(
+            api.API_ROOT + "/messages/abc123/modify", json={"removeLabelIds": ["UNREAD"]},
+            timeout=45, allow_redirects=False)
+        self.assertEqual(gmail.get.call_count, 2)
+        gmail.save.assert_called_once()
+
+    def test_already_read_message_has_no_write(self):
+        gmail = Mock()
+        gmail.get.return_value = {"labelIds": ["INBOX"]}
+        with patch("builtins.print"):
+            api.mark_read(gmail, "abc123")
+        gmail.session.post.assert_not_called()
+
+    def test_mark_read_refuses_unconfirmed_result(self):
+        gmail = Mock()
+        gmail.get.return_value = {"labelIds": ["UNREAD"]}
+        gmail.session.post.return_value.status_code = 200
+        with self.assertRaises(api.AccessError):
+            api.mark_read(gmail, "abc123")
+
+    def test_mark_read_account_mismatch_has_no_write(self):
+        gmail = api.Gmail.__new__(api.Gmail)
+        gmail.credentials = Mock()
+        gmail.session = Mock()
+        gmail.verified = False
+        gmail.session.get.return_value.status_code = 200
+        gmail.session.get.return_value.json.return_value = {"emailAddress": "other@example.com"}
+        with self.assertRaises(api.AccessError):
+            api.mark_read(gmail, "abc123")
+        gmail.session.post.assert_not_called()
 
     def test_refuse_credentials_or_private_mail_in_git(self):
         with tempfile.TemporaryDirectory() as root:
@@ -98,6 +157,16 @@ class GmailBoundaries(unittest.TestCase):
     def test_reject_path_in_message_id(self):
         with self.assertRaises(api.AccessError):
             api.validate_id("../../token")
+
+    def test_long_attachment_id_keeps_message_and_path_guards(self):
+        attachment = "A" * 448
+        self.assertEqual(api.validate_id(attachment, max_length=4096), attachment)
+        with self.assertRaises(api.AccessError):
+            api.validate_id(attachment)
+        with self.assertRaises(api.AccessError):
+            api.validate_id("../" + attachment, max_length=4096)
+        with self.assertRaises(api.AccessError):
+            api.validate_id("A" * 4097, max_length=4096)
 
     def test_reject_invalid_or_oversized_attachment(self):
         for payload in ["%%%", base64.urlsafe_b64encode(b"not a pdf").decode()]:

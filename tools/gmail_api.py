@@ -1,4 +1,4 @@
-"""On-demand, read-only Quantyra Gmail API access. No connector dependency.
+"""On-demand Quantyra Gmail reads and marking reviewed messages as read.
 
 Credentials use Windows user-bound DPAPI outside Git. OAuth uses Google's
 installed-app library, PKCE, state validation and a loopback callback.
@@ -28,7 +28,7 @@ if DEPENDENCIES.is_dir():
     sys.path.insert(0, str(DEPENDENCIES))
 
 MAILBOX = "dfredriksen@quantyra.org"
-SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]
 API_ROOT = "https://gmail.googleapis.com/gmail/v1/users/me"
 STATE_ROOT = Path.home() / ".quantyra" / "gmail"
 MAX_PDF_BYTES = 25 * 1024 * 1024
@@ -142,7 +142,7 @@ def validate_client(config):
 
 def validate_scopes(scopes):
     if set(scopes or []) != set(SCOPES):
-        raise AccessError("This tool accepts only the Gmail read-only OAuth grant.")
+        raise AccessError("This tool requires exactly the Gmail modify OAuth grant.")
 
 
 def import_client(path):
@@ -223,10 +223,57 @@ def connect():
         if not credentials.refresh_token:
             raise AccessError("Reauthentication required: no usable offline credential.")
         credentials.refresh(Request())
+    validate_scopes(credentials.granted_scopes or credentials.scopes)
     gmail = Gmail(credentials)
     gmail.verify()
     gmail.save()
     return gmail
+
+
+def import_token(path):
+    """Reuse an existing matching AIOS grant after live mailbox verification."""
+    from google.auth.transport.requests import Request
+    from google.oauth2.credentials import Credentials
+    config = json.loads(path.read_text(encoding="utf-8-sig"))
+    validate_scopes(config.get("scopes"))
+    client = validate_client(load_secret("client.dpapi"))["installed"]
+    if config.get("client_id") != client["client_id"]:
+        raise AccessError("The existing token does not belong to the imported OAuth client.")
+    if config.get("token_uri") != "https://oauth2.googleapis.com/token":
+        raise AccessError("Refusing a token configured for a non-Google endpoint.")
+    credentials = Credentials.from_authorized_user_info(config, SCOPES)
+    if not credentials.refresh_token:
+        raise AccessError("The existing credential has no offline refresh token.")
+    if not credentials.valid:
+        credentials.refresh(Request())
+    validate_scopes(credentials.granted_scopes or credentials.scopes)
+    gmail = Gmail(credentials)
+    receipt = gmail.verify()
+    gmail.save()
+    atomic_write(outside_git(STATE_ROOT) / "connection-receipt.json",
+                 json.dumps({**receipt, "scope": SCOPES[0], "credential_storage": "Windows user DPAPI",
+                             "authentication": "verified-existing-AIOS-grant"}, indent=2).encode())
+    print(json.dumps(receipt))
+
+
+def mark_read(gmail, message_id):
+    """The sole write operation: remove UNREAD from one reviewed message."""
+    suffix = "/messages/" + validate_id(message_id)
+    before = gmail.get(suffix, {"format": "metadata"})
+    changed = "UNREAD" in before.get("labelIds", [])
+    if changed:
+        response = gmail.session.post(
+            API_ROOT + suffix + "/modify", json={"removeLabelIds": ["UNREAD"]},
+            timeout=45, allow_redirects=False,
+        )
+        if response.status_code != 200:
+            raise AccessError(f"Gmail mark-read failed with HTTP {response.status_code}.")
+        after = gmail.get(suffix, {"format": "metadata"})
+        if "UNREAD" in after.get("labelIds", []):
+            raise AccessError("Gmail did not confirm that the selected message is read.")
+    gmail.save()
+    print(json.dumps({"message_id": message_id, "marked_read": True, "changed": changed,
+                      "verified_at": utc_now()}))
 
 
 def parts(payload):
@@ -240,8 +287,8 @@ def headers(payload):
             if h.get("name", "").lower() in {"from", "to", "subject", "date", "message-id"}}
 
 
-def validate_id(value):
-    if not re.fullmatch(r"[A-Za-z0-9_-]{1,256}", value):
+def validate_id(value, *, max_length=256):
+    if not isinstance(value, str) or not 1 <= len(value) <= max_length or not re.fullmatch(r"[A-Za-z0-9_-]+", value):
         raise AccessError("Invalid Gmail message or attachment ID.")
     return quote(value, safe="")
 
@@ -288,7 +335,7 @@ def download(gmail, message_id, output_dir):
         if body.get("size", 0) > MAX_PDF_BYTES:
             raise AccessError("PDF exceeds the download size limit.")
         if body.get("attachmentId"):
-            suffix = "/messages/" + validate_id(message_id) + "/attachments/" + validate_id(body["attachmentId"])
+            suffix = "/messages/" + validate_id(message_id) + "/attachments/" + validate_id(body["attachmentId"], max_length=4096)
             encoded = gmail.get(suffix).get("data", "")
         else:
             encoded = body.get("data", "")
@@ -319,6 +366,8 @@ def main(argv=None):
     commands = parser.add_subparsers(dest="command", required=True)
     importer = commands.add_parser("import-client")
     importer.add_argument("path", type=Path)
+    token_importer = commands.add_parser("import-token")
+    token_importer.add_argument("path", type=Path)
     commands.add_parser("auth")
     commands.add_parser("profile")
     finder = commands.add_parser("search")
@@ -327,10 +376,14 @@ def main(argv=None):
     downloader = commands.add_parser("download")
     downloader.add_argument("--message-id", required=True)
     downloader.add_argument("--output-dir", type=Path, required=True)
+    marker = commands.add_parser("mark-read")
+    marker.add_argument("--message-id", required=True)
     args = parser.parse_args(argv)
     try:
         if args.command == "import-client":
             import_client(args.path)
+        elif args.command == "import-token":
+            import_token(args.path)
         elif args.command == "auth":
             authenticate()
         else:
@@ -339,6 +392,8 @@ def main(argv=None):
                 print(json.dumps(gmail.verify()))
             elif args.command == "search":
                 search(gmail, args.query, args.limit)
+            elif args.command == "mark-read":
+                mark_read(gmail, args.message_id)
             else:
                 download(gmail, args.message_id, args.output_dir)
     except AccessError as error:

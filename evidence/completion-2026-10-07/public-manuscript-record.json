@@ -1,0 +1,150 @@
+{
+  "created": "2026-10-07T07:58:28.945272+00:00",
+  "modified": "2026-10-07T07:58:29.343549+00:00",
+  "id": 23206773,
+  "conceptrecid": "23206772",
+  "doi": "10.5281/zenodo.23206773",
+  "conceptdoi": "10.5281/zenodo.23206772",
+  "doi_url": "https://doi.org/10.5281/zenodo.23206773",
+  "metadata": {
+    "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+    "doi": "10.5281/zenodo.23206773",
+    "publication_date": "2026-10-06",
+    "description": "<p>Draft preprint by Daniel Eric Fredriksen, Quantyra Inc., version 0.2.0. For smooth densities on the unit square between 1/2 and 3/2, with uniform marginals and Euclidean Lipschitz constant at most two, iid finite directed causal-order laws yield the explicit coefficient inverse bound 100(N^(-1/12) + Delta_N). A logarithmic grid scale improves the sample-size term to give 130((log N/N)^(1/6) + Delta_N), for every integer N at least two.</p><p>The deterministic occupied-grid finite realizer rank theorem is Lean verified. The full probability-to-density inverse theorem, label-law equivalence and proper-time comparison remain prose proofs in this manuscript version. The constants are conservative; no optimal exponent, practical sample budget, general spacetime reconstruction or new physics is claimed. Originality remains provisional, including outstanding full-text literature comparisons.</p><p>Developed with OpenAI Codex assistance under the author's research direction. Quantyra follows open-source, decentralized informal feedback and downstream use/testing; specialist review is not a publication prerequisite. Manuscript and source: CC-BY-4.0. The related version 0.1.0 software DOI identifies a separate Apache-2.0 software release and its original included preprint, not this manuscript deposit.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Fredriksen, Daniel Eric",
+        "affiliation": "Quantyra Inc"
+      }
+    ],
+    "keywords": [
+      "causal order",
+      "inverse stability",
+      "partial orders",
+      "conformal geometry",
+      "Lean 4",
+      "formal verification"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.23202763",
+        "relation": "references",
+        "resource_type": "software",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean",
+        "relation": "isSupplementedBy",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "version": "0.2.0",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23206772"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "links": {
+    "self": "https://zenodo.org/api/records/23206773",
+    "self_html": "https://zenodo.org/records/23206773",
+    "preview_html": "https://zenodo.org/records/23206773?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23206773",
+    "self_doi": "https://doi.org/10.5281/zenodo.23206773",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23206773",
+    "reserve_doi": "https://zenodo.org/api/records/23206773/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23206772",
+    "parent_html": "https://zenodo.org/records/23206772",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23206772",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23206772",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23206773/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23206773/sequence/default",
+    "files": "https://zenodo.org/api/records/23206773/files",
+    "media_files": "https://zenodo.org/api/records/23206773/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23206773:finite-causal-order-reconstruction.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "archive": "https://zenodo.org/api/records/23206773/files-archive",
+    "archive_media": "https://zenodo.org/api/records/23206773/media-files-archive",
+    "latest": "https://zenodo.org/api/records/23206773/versions/latest",
+    "latest_html": "https://zenodo.org/records/23206773/latest",
+    "versions": "https://zenodo.org/api/records/23206773/versions",
+    "draft": "https://zenodo.org/api/records/23206773/draft",
+    "access_links": "https://zenodo.org/api/records/23206773/access/links",
+    "access_grants": "https://zenodo.org/api/records/23206773/access/grants",
+    "access_users": "https://zenodo.org/api/records/23206773/access/users",
+    "access_request": "https://zenodo.org/api/records/23206773/access/request",
+    "access": "https://zenodo.org/api/records/23206773/access",
+    "communities": "https://zenodo.org/api/records/23206773/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23206773/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23206773/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23206773/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23206773/quota-increase",
+    "requests": "https://zenodo.org/api/records/23206773/requests"
+  },
+  "updated": "2026-10-07T07:58:29.343549+00:00",
+  "recid": "23206773",
+  "revision": 3,
+  "files": [
+    {
+      "id": "b0a1ee26-5a1f-4682-9fb2-9dfa23ccb90f",
+      "key": "finite-causal-order-reconstruction-v0.2.0-source.zip",
+      "size": 118739,
+      "checksum": "md5:40d9a73b45d8da10436c66e1db3746ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction-v0.2.0-source.zip/content"
+      }
+    },
+    {
+      "id": "549fc3fe-f417-48b2-b792-45b2010bcade",
+      "key": "finite-causal-order-reconstruction.pdf",
+      "size": 101384,
+      "checksum": "md5:62377171ce37311eeff71530eb364d41",
+      "links": {
+        "self": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction.pdf/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1655232"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 0,
+    "unique_views": 0,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

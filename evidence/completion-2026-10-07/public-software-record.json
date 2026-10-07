@@ -1,0 +1,129 @@
+{
+  "created": "2026-10-07T04:20:27.369808+00:00",
+  "modified": "2026-10-07T04:20:27.547127+00:00",
+  "id": 23202763,
+  "conceptrecid": "23202762",
+  "doi": "10.5281/zenodo.23202763",
+  "conceptdoi": "10.5281/zenodo.23202762",
+  "doi_url": "https://doi.org/10.5281/zenodo.23202763",
+  "metadata": {
+    "title": "quantyra-null-cone-lean: finite causal-order rank rigidity",
+    "doi": "10.5281/zenodo.23202763",
+    "publication_date": "2026-10-07",
+    "description": "<p>Lean 4 proof of finite realizer rank rigidity: for every two-order realizer of an occupied-grid sample, one global axis exchange gives both interior rank errors at most 30rn under explicit marginal and boundary hypotheses.</p><p>The accompanying draft preprint derives d_conf &lt;= 100 (N^(-1/12) + Delta_N) for a restricted smooth positive uniform-marginal density class in a two-dimensional conformal diamond. Only the deterministic finite theorem is Lean verified. Probability, continuous-density interpolation and proper-time comparisons remain prose proofs. Novelty and independent review are unconfirmed; no general spacetime reconstruction, new physical law, curvature estimate or carrying-capacity benefit is claimed.</p><p>Software and proof code: Apache-2.0. The files under manuscript/ are licensed CC-BY-4.0 as stated in manuscript/README.md and LICENSES/CC-BY-4.0.txt.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Fredriksen, Daniel Eric",
+        "affiliation": "Quantyra Inc"
+      }
+    ],
+    "keywords": [
+      "lean4",
+      "formal-verification",
+      "causal-order",
+      "spacetime-reconstruction",
+      "partial-orders",
+      "quantyra"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/v0.1.0",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "version": "0.1.0",
+    "custom": {
+      "code:codeRepository": "https://github.com/Quantyra/quantyra-null-cone-lean"
+    },
+    "resource_type": {
+      "title": "Software",
+      "type": "software"
+    },
+    "license": {
+      "id": "apache2.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23202762"
+          }
+        }
+      ]
+    }
+  },
+  "title": "quantyra-null-cone-lean: finite causal-order rank rigidity",
+  "links": {
+    "self": "https://zenodo.org/api/records/23202763",
+    "self_html": "https://zenodo.org/records/23202763",
+    "preview_html": "https://zenodo.org/records/23202763?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23202763",
+    "self_doi": "https://doi.org/10.5281/zenodo.23202763",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23202763",
+    "reserve_doi": "https://zenodo.org/api/records/23202763/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23202762",
+    "parent_html": "https://zenodo.org/records/23202762",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23202762",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23202762",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23202763/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23202763/sequence/default",
+    "files": "https://zenodo.org/api/records/23202763/files",
+    "media_files": "https://zenodo.org/api/records/23202763/media-files",
+    "archive": "https://zenodo.org/api/records/23202763/files-archive",
+    "archive_media": "https://zenodo.org/api/records/23202763/media-files-archive",
+    "latest": "https://zenodo.org/api/records/23202763/versions/latest",
+    "latest_html": "https://zenodo.org/records/23202763/latest",
+    "versions": "https://zenodo.org/api/records/23202763/versions",
+    "draft": "https://zenodo.org/api/records/23202763/draft",
+    "access_links": "https://zenodo.org/api/records/23202763/access/links",
+    "access_grants": "https://zenodo.org/api/records/23202763/access/grants",
+    "access_users": "https://zenodo.org/api/records/23202763/access/users",
+    "access_request": "https://zenodo.org/api/records/23202763/access/request",
+    "access": "https://zenodo.org/api/records/23202763/access",
+    "communities": "https://zenodo.org/api/records/23202763/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23202763/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23202763/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23202763/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23202763/quota-increase",
+    "requests": "https://zenodo.org/api/records/23202763/requests"
+  },
+  "updated": "2026-10-07T04:20:27.547127+00:00",
+  "recid": "23202763",
+  "revision": 3,
+  "files": [
+    {
+      "id": "cd6475cd-973b-4c04-a388-abfc5b0a44aa",
+      "key": "Quantyra/quantyra-null-cone-lean-v0.1.0.zip",
+      "size": 487167,
+      "checksum": "md5:6620e07d65b5f4e8b6c1f4e5fe54879d",
+      "links": {
+        "self": "https://zenodo.org/api/records/23202763/files/Quantyra/quantyra-null-cone-lean-v0.1.0.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1655232"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 0,
+    "unique_views": 0,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

@@ -10,6 +10,7 @@ url: "https://github.com/Quantyra/quantyra-null-cone-lean"
 repository-code: "https://github.com/Quantyra/quantyra-null-cone-lean"
 license: Apache-2.0
 version: "0.1.0"
+notes: "This citation identifies the immutable 0.1.0 software release. Later main-branch GCP-verified full inverse and unlabeled-law proofs are documented in README and verification notes; they are not part of that archived release."
 date-released: "2026-10-07"
 doi: "10.5281/zenodo.23202763"
 references:

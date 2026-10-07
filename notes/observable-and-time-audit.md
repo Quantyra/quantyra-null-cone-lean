@@ -37,3 +37,9 @@ Remaining to-do list: formal label-law equivalence for the full inverse theorem;
 2026-10-07 later scope update: `InverseRate.lean` now proves the original all-N coefficient estimate and `Identifiability.lean` its all-law consequence on the square, with exact GCP acceptance. These exports use the actual labeled directed-order laws. The labeled/unlabeled equivalence above is still a prose bridge; proper-time formalization remains optional. The archived manuscript 0.2.0 formal-scope text predates these software proofs.
 
 Remaining to-do list: formal label-law equivalence and final scope reconciliation; optional proper-time formalization and recording actual public feedback.
+
+## Final formal scope — 2026-10-07
+
+The label argument above is now formalized in `Exchangeability.lean`, `QuotientTV.lean` and `Unlabeled.lean`, with exact GCP acceptance and no assumed exchangeability/TV premises. The all-N inverse and all-law identifiability now use actual unlabeled directed-order isomorphism laws. Earlier same-day updates are retained as development history. Proper-time comparison remains a prose consequence and its formalization is optional.
+
+Remaining to-do list: none for label equivalence; optional proper-time formalization and recording actual public feedback when available.

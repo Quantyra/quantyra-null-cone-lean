@@ -21,3 +21,7 @@ Lean 4.30.0: baseline root build 2583 jobs and twelve export audits; candidate r
 ## All-N inverse and identifiability
 
 [space-identifiability-20261007T121032Z-4c3c47](space-identifiability-20261007T121032Z-4c3c47/receipt.json) verifies the root build (2904 jobs) and fifty-five export audits without compiler warnings. The [development index](inverse-development-index.json) preserves the earlier warning and failed proof attempt. The main all-N estimate assumes only original K and N>=2 for actual labeled directed-order laws; all-law equality gives density equality on the square under one global transpose choice. The formal label/unlabel bridge remains.
+
+## Original unlabeled observable
+
+[space-unlabeled-20261007T123238Z-759aaa](space-unlabeled-20261007T123238Z-759aaa/receipt.json): complete root build (2907 jobs), sixty-eight exact-type/axiom audits, exact source/dependency checks, zero warnings. [Retained attempts](unlabeled-development-index.json). Both the original all-N coefficient bound and all-law identifiability now use actual directed-order isomorphism classes. The task-started instance is TERMINATED.

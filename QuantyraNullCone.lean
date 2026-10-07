@@ -18,6 +18,9 @@ import QuantyraNullCone.FiniteTV
 import QuantyraNullCone.Transpose
 import QuantyraNullCone.InverseRate
 import QuantyraNullCone.Identifiability
+import QuantyraNullCone.Exchangeability
+import QuantyraNullCone.QuotientTV
+import QuantyraNullCone.Unlabeled
 
 /-!
 Quantyra finite-order reconstruction.
@@ -29,6 +32,7 @@ The probability modules extend the original grid reconstruction rate.
 The density interpolation module proves the original cubic coefficient/CDF bound.
 The order-only selector and finite-law TV argument prove CDF orbit separation.
 The original all-N coefficient inverse bound and all-law identifiability are proved
-for the actual labeled directed-order laws. Labeled/unlabeled equivalence and the
-separately selectable proper-time consequence retain their own scope status.
+for both actual labeled directed-order laws and their unlabeled isomorphism classes.
+Iid exchangeability and the exact labeled/unlabeled TV equivalence are proved.
+The separately selectable proper-time consequence retains its prose scope status.
 -/

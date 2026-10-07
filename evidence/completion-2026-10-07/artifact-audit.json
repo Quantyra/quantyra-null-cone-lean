@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-07T12:36:06.759876+00:00",
+  "manuscript_doi": "10.5281/zenodo.23206773",
+  "metadata_matches_frozen_payload": true,
+  "files": {
+    "finite-causal-order-reconstruction-v0.2.0-source.zip": {
+      "sha256": "e63d18e2e75f05df181eeeda38aab623c23922657d1f277963725eafb86d66d2",
+      "checksum": "md5:40d9a73b45d8da10436c66e1db3746ec",
+      "bytes": 118739,
+      "download_url": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction-v0.2.0-source.zip/content"
+    },
+    "finite-causal-order-reconstruction.pdf": {
+      "sha256": "c8395d0cb0c55da8257cdd3ffe85c8d1b66c11e1a74e39d7ca6de645c52db463",
+      "checksum": "md5:62377171ce37311eeff71530eb364d41",
+      "bytes": 101384,
+      "download_url": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction.pdf/content"
+    }
+  },
+  "software_version_doi_preserved": "10.5281/zenodo.23202763",
+  "software_version": "0.1.0",
+  "grid_scale_check_exit": 0
+}

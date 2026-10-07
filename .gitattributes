@@ -1,0 +1,7 @@
+manuscript/*.tex text eol=lf
+manuscript/*.md text eol=lf
+manuscript/deposit/*.md text eol=lf
+manuscript/deposit/*.json text eol=lf
+LICENSES/CC-BY-4.0.txt text eol=lf
+*.pdf binary
+*.zip binary

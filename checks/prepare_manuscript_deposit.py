@@ -45,7 +45,7 @@ manifest = {
     },
 }
 manifest_path = DESTINATION / "manifest.json"
-manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
 bundle_path = DESTINATION / f"finite-causal-order-reconstruction-v{version}-source.zip"
 with zipfile.ZipFile(bundle_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
     for path in [*payload, manifest_path, METADATA]:
@@ -66,7 +66,7 @@ bundle_receipt = {
     "bytes": bundle_path.stat().st_size, "members": len(payload) + 2
 }
 (DESTINATION / "bundle.json").write_text(
-    json.dumps(bundle_receipt, indent=2) + "\n", encoding="utf-8"
+    json.dumps(bundle_receipt, indent=2) + "\n", encoding="utf-8", newline="\n"
 )
 print("PASS: manuscript/source/license hashes and deterministic source ZIP")
 print(json.dumps(bundle_receipt))

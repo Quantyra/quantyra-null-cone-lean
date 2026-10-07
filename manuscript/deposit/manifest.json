@@ -6,16 +6,16 @@
   "metadata_sha256": "114bb496706343a5306c35f6a79b52037022b1c5367838ac286705c71405318d",
   "files": {
     "manuscript/finite-causal-order-reconstruction.tex": {
-      "sha256": "b99bf9445cbd3bed31a071c53bc3e4761087332b89084fb99dc7babb04cb90b9",
-      "bytes": 24289
+      "sha256": "12425d075a88011f66f60036b1d26ec217da1d4509cfa93e103e585d9d0d32dc",
+      "bytes": 23856
     },
     "manuscript/finite-causal-order-reconstruction.pdf": {
       "sha256": "c8395d0cb0c55da8257cdd3ffe85c8d1b66c11e1a74e39d7ca6de645c52db463",
       "bytes": 101384
     },
     "manuscript/README.md": {
-      "sha256": "321c710bd03a15de5a3cfa602cd417eb33428a9e90415cf064f307cedec08940",
-      "bytes": 2391
+      "sha256": "1ef6ff154b7b26310ad0f07aeb16d5bb7593d0adfae00656bb62e66c54de00ba",
+      "bytes": 2372
     },
     "LICENSES/CC-BY-4.0.txt": {
       "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c",

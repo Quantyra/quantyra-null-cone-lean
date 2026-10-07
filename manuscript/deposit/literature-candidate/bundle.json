@@ -1,7 +1,7 @@
 {
   "state": "review_only_not_published",
   "bundle": "literature-revision-review-source.zip",
-  "bytes": 141592,
-  "sha256": "1357b21860c287670cbf2c76711abae3dcca906507f2998619ba4f1f22d2352d",
+  "bytes": 141583,
+  "sha256": "fe13b4a7643e41759b2b3c832f3fb02c9dc039dc09516c5d85989ef58413d023",
   "members_verified": 8
 }

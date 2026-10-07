@@ -182,7 +182,7 @@ def main():
                                       'coverage_scope': 'Simulations in five specified K densities; '
                                                         'Wilson intervals are diagnostics, not a uniform proof',
                                       'trials': results, 'memory_profiles': profiles,
-                                      'summaries': summaries}, indent=2)+'\n', encoding='utf-8')
+                                      'summaries': summaries}, indent=2)+'\n', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':

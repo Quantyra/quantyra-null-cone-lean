@@ -9,12 +9,15 @@
   "source_sha256": {
     "tools/finite_data_core.py": "80e7a067e59fa0cbb1ee263376fbca5eb582197248ad332c381c8f6291969054",
     "tools/finite_data_lp.py": "23738f10df8e76540b576a9cb86679b2d3be7a2f13be25bf84cab8928fa777f8",
-    "tools/benchmark_finite_data.py": "4679d9bce8eb84494d4332345f3f5db3e601569269a6bc6266208f454684525b"
+    "tools/benchmark_finite_data.py": "ec77c923e69a30e450e5b88ee204aceb9a793ac00facaa70093f161015224c26"
   },
   "numerical_api_source_sha256": "789001c2412e2e6546f9b33d4cb525c3ba9af3b9f2ce28045cada69a4496121b",
-  "benchmark_sha256": "3c81d45b1d4af0080a7f22ea1c4ae1b216e5416d9ecd8a6d884b15c9e068db91",
+  "benchmark_sha256": "f66e104df8ec320a20695eeea709f6c677fafedf49c3e5547a7dd7e36c40c905",
   "scope": "80 normal trials, 10 separate memory repetitions; standard-library certificate smoke; 11 unit tests; calibration-limit proof",
-  "post_benchmark_cli_change": "Compact JSON and separate 512 MiB report limit; estimate/verify_report numerical functions unchanged; final CLI smoke verified",
+  "post_benchmark_cli_change": "Compact JSON and separate 512 MiB report limit; estimate/verify_report numerical functions unchanged; final CLI smoke verified; later benchmark writer explicitly uses LF, with no computation change",
   "lean_commands_run": 0,
-  "formal_sources_changed": false
+  "formal_sources_changed": false,
+  "benchmark_original_windows_bytes_sha256": "3c81d45b1d4af0080a7f22ea1c4ae1b216e5416d9ecd8a6d884b15c9e068db91",
+  "benchmark_source_sha256_at_execution": "4679d9bce8eb84494d4332345f3f5db3e601569269a6bc6266208f454684525b",
+  "canonical_artifact_encoding": "UTF-8 LF; mathematical data unchanged; original Windows CRLF hash retained"
 }

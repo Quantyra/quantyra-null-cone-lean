@@ -25,12 +25,18 @@ metadata['description'] = ('<p>Proposed literature revision of the published 0.3
     'and proper-time consequences remain prose. Developed with OpenAI Codex '
     'assistance; open-source informal review and downstream testing, with no '
     'specialist/adoption gate. CC-BY-4.0.</p>')
-(DEST/'proposed-zenodo-metadata.json').write_text(json.dumps(metadata, indent=2)+'\n', encoding='utf-8')
-payload = {f'working/{name}': (SOURCE/name).read_bytes() for name in
+(DEST/'proposed-zenodo-metadata.json').write_text(json.dumps(metadata, indent=2)+'\n', encoding='utf-8', newline='\n')
+
+
+def portable_bytes(path):
+    return path.read_bytes() if path.suffix == '.pdf' else path.read_text(encoding='utf-8').encode('utf-8')
+
+
+payload = {f'working/{name}': portable_bytes(SOURCE/name) for name in
            ['finite-causal-order-reconstruction.tex', 'finite-causal-order-reconstruction.pdf',
             'prepare_literature_revision.py', 'README.md']}
-payload['finite-causal-order-reconstruction.tex'] = (ROOT/'manuscript/finite-causal-order-reconstruction.tex').read_bytes()
-payload['LICENSES/CC-BY-4.0.txt'] = (ROOT/'LICENSES/CC-BY-4.0.txt').read_bytes()
+payload['finite-causal-order-reconstruction.tex'] = portable_bytes(ROOT/'manuscript/finite-causal-order-reconstruction.tex')
+payload['LICENSES/CC-BY-4.0.txt'] = portable_bytes(ROOT/'LICENSES/CC-BY-4.0.txt')
 payload['proposed-zenodo-metadata.json'] = (DEST/'proposed-zenodo-metadata.json').read_bytes()
 manifest = {'state': 'review_only_not_published', 'proposed_version': '0.3.1',
             'baseline_doi': '10.5281/zenodo.23214579',
@@ -56,5 +62,5 @@ with zipfile.ZipFile(bundle) as archive:
 receipt = {'state': manifest['state'], 'bundle': bundle.name,
            'bytes': bundle.stat().st_size, 'sha256': hashlib.sha256(bundle.read_bytes()).hexdigest(),
            'members_verified': len(payload)}
-(DEST/'bundle.json').write_text(json.dumps(receipt, indent=2)+'\n', encoding='utf-8')
+(DEST/'bundle.json').write_text(json.dumps(receipt, indent=2)+'\n', encoding='utf-8', newline='\n')
 print(json.dumps(receipt))

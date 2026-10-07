@@ -124,3 +124,9 @@ Remaining to-do list: actual exchangeability, finite quotient TV/Delta equivalen
 The archived software 0.1.0 and manuscript 0.2.0 remain immutable historical packages; current main-branch formal results postdate them. Originality is still provisional. Open-source informal feedback/use/testing remains the review workflow, without a specialist-review or adoption gate.
 
 Remaining to-do list: final delivery and scope completion audit.
+
+## Final delivery closeout ? 2026-10-07
+
+The full original-observable proof and requirement audit are committed and pushed at `b7d762acc9c10ca881f8366f545f3998b0528448`. [Supplementary hosted checks](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37622943270) passed both jobs, including the root/type/axiom audit, all existing finite/grid sanity checks and manuscript compilation. Exact proof/check/build-configuration bytes match the authoritative GCP capture, with sixty-eight export reports and no compiler warnings. Fresh public manuscript PDF/source identities and software DOI/version were verified; S014's high-precision check passed. The task-started GCP instance is TERMINATED. Final planning closeout records S012-S014 completion and supersedes development-stage delivery to-do lists.
+
+Remaining to-do list: none for S012-S014.

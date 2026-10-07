@@ -9,3 +9,7 @@ Lean 4.30.0: baseline root build 2583 jobs and twelve export audits; candidate r
 ## Original probability stage
 
 [space-sampling-20261007T103552Z-585351](space-sampling-20261007T103552Z-585351/receipt.json) verifies the root build (2898 jobs) and thirty-two export audits with zero warnings. The [development index](sampling-development-index.json) retains failures and the earlier successful compile with two owned lint warnings; only the final clean root/audit run is accepted. Its original-K probability export gives `9/10` reconstruction success with `174 n^(-1/4)` error for `n>=65536`. Source archives, hashes and complete compiler/audit output are retained for every attempt. This remains an intermediate S013 result; the coefficient inverse theorem is unfinished.
+
+## Density interpolation
+
+[space-interpolation-20261007T112652Z-43e687](space-interpolation-20261007T112652Z-43e687/receipt.json) verifies the root build (2899 jobs) and thirty-five export audits without warnings. The [development index](interpolation-development-index.json) retains the earlier failed attempt and successful module check. The actual-K interpolation export proves the cubic `2048 epsilon` bound; observable-TV separation and all-N inverse assembly remain incomplete.

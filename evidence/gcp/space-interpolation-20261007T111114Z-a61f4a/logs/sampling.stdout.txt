@@ -1,0 +1,74 @@
+ℹ [2575/2577] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2576/2577] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✖ [2577/2577] Building QuantyraNullCone.DensityInterpolation (89s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/QuantyraNullCone/DensityInterpolation.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/.lake/build/lib/lean/QuantyraNullCone/DensityInterpolation.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/.lake/build/lib/lean/QuantyraNullCone/DensityInterpolation.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/.lake/build/ir/QuantyraNullCone/DensityInterpolation.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-interpolation-20261007T111114Z-a61f4a/source/.lake/build/ir/QuantyraNullCone/DensityInterpolation.setup.json --json
+error: QuantyraNullCone/DensityInterpolation.lean:54:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ((densityMeasure rho) S).toReal
+in the target expression
+  (densityMeasure rho).real S = ∫ (q : ℝ × ℝ) in S, rho q ∂volume.prod volume
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+S : Set DiamondPoint
+hS : MeasurableSet S
+hSub : S ⊆ diamond
+⊢ (densityMeasure rho).real S = ∫ (q : ℝ × ℝ) in S, rho q ∂volume.prod volume
+error: QuantyraNullCone/DensityInterpolation.lean:59:48: unsolved goals
+rho sigma : DiamondPoint → ℝ
+hR : InDensityClass rho
+hS : InDensityClass sigma
+⊢ (0, 0) ∈ (Set.Icc 0 1).prod (Set.Icc 0 1)
+error: QuantyraNullCone/DensityInterpolation.lean:135:51: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.restrict ?m.895 Set.univ
+in the target expression
+  (V.restrict Q) Set.univ < ⊤
+
+rho sigma : DiamondPoint → ℝ
+hR : InDensityClass rho
+hS : InDensityClass sigma
+p : DiamondPoint
+hp : p ∈ diamond
+delta : ℝ
+hd : 0 < delta
+hValue : rho p - sigma p = delta
+w : ℝ := delta / 16
+a : ℝ := min p.1 (1 - w)
+c : ℝ := min p.2 (1 - w)
+Q : Set DiamondPoint := Set.Ioc a (a + w) ×ˢ Set.Ioc c (c + w)
+V : Measure DiamondPoint := volume.prod volume
+hw : 0 < w
+hd1 : delta ≤ 1
+hw1 : w ≤ 1
+ha0 : 0 ≤ min p.1 (1 - w)
+ha1 : min p.1 (1 - w) + w ≤ 1
+hpA : p.1 ∈ Set.Icc (min p.1 (1 - w)) (min p.1 (1 - w) + w)
+hc0 : 0 ≤ min p.2 (1 - w)
+hc1 : min p.2 (1 - w) + w ≤ 1
+hpC : p.2 ∈ Set.Icc (min p.2 (1 - w)) (min p.2 (1 - w) + w)
+hQM : MeasurableSet Q
+hQD : Q ⊆ diamond
+hLower : ∀ q ∈ Q, delta / 2 ≤ rho q - sigma q
+hArea : V Q = ENNReal.ofReal (w ^ 2)
+⊢ (V.restrict Q) Set.univ < ⊤
+error: QuantyraNullCone/DensityInterpolation.lean:161:4: not a positivity goal
+info: QuantyraNullCone/DensityInterpolation.lean:195:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityInterpolation

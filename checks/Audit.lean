@@ -64,3 +64,9 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.grid_failure_bound
 #print axioms QuantyraNullCone.fourth_root_grid_data
 #print axioms QuantyraNullCone.InDensityClass.reconstruction_probability
+#check QuantyraNullCone.InDensityClass.rectangle_mass_cdf
+#check QuantyraNullCone.InDensityClass.coefficientDeviation_attained
+#check QuantyraNullCone.InDensityClass.coefficient_interpolation
+#print axioms QuantyraNullCone.InDensityClass.rectangle_mass_cdf
+#print axioms QuantyraNullCone.InDensityClass.coefficientDeviation_attained
+#print axioms QuantyraNullCone.InDensityClass.coefficient_interpolation

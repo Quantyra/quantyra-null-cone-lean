@@ -1,0 +1,42 @@
+[
+  {
+    "run": "space-selector-20261007T113921Z-6190dd",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "7e320f223ff0e318e7a07d223956a17898c12d9a54a9e85d69c3ce3586bf03bc",
+    "lean_invoked": false
+  },
+  {
+    "run": "space-selector-20261007T114223Z-7e4639",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "62279be7fc39440b1930595bcbb88d6446cf55d3f721c5adc18f04d0dcdfb394",
+    "lean_invoked": true
+  },
+  {
+    "run": "space-observable-20261007T114607Z-2c2cab",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "a0aa2dcf4b749f0d97ad0138139fbe98f526e2b3896e7dd1ace7cbb611af4a0d",
+    "lean_invoked": true
+  },
+  {
+    "run": "space-observable-20261007T114807Z-0643c7",
+    "exit": 1,
+    "warnings": 0,
+    "accepted": false,
+    "input_sha256": "6373de8fd1cbb1451c47f39be1a4d03d2530f87e8e976f83c443ca5eec1c168e",
+    "lean_invoked": true
+  },
+  {
+    "run": "space-observable-20261007T114943Z-041e63",
+    "exit": 0,
+    "warnings": 0,
+    "accepted": true,
+    "input_sha256": "5c49353fe3ef8efe545cf263d5d9aeefb72159f6d3f38a82dc3e45336a5a3ba4",
+    "lean_invoked": true
+  }
+]

@@ -70,3 +70,17 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.InDensityClass.rectangle_mass_cdf
 #print axioms QuantyraNullCone.InDensityClass.coefficientDeviation_attained
 #print axioms QuantyraNullCone.InDensityClass.coefficient_interpolation
+#check QuantyraNullCone.chronological_realizer_exists
+#check QuantyraNullCone.selectedCDF_measurable
+#check QuantyraNullCone.InDensityClass.orderCDFGood_probability
+#check QuantyraNullCone.finite_probability_event_bound
+#check QuantyraNullCone.InDensityClass.orderLawTV_event_bound
+#check QuantyraNullCone.InDensityClass.orderCDFGood_intersects
+#check QuantyraNullCone.InDensityClass.populationCDF_orbit_of_orderLawTV
+#print axioms QuantyraNullCone.chronological_realizer_exists
+#print axioms QuantyraNullCone.selectedCDF_measurable
+#print axioms QuantyraNullCone.InDensityClass.orderCDFGood_probability
+#print axioms QuantyraNullCone.finite_probability_event_bound
+#print axioms QuantyraNullCone.InDensityClass.orderLawTV_event_bound
+#print axioms QuantyraNullCone.InDensityClass.orderCDFGood_intersects
+#print axioms QuantyraNullCone.InDensityClass.populationCDF_orbit_of_orderLawTV

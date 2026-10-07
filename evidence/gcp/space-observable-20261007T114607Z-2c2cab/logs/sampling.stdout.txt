@@ -1,0 +1,186 @@
+ℹ [978/1159] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [979/1159] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [980/1159] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [981/1159] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [982/1159] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2579/2658] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2580/2658] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2581/2658] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2582/2658] Replayed QuantyraNullCone.Sampling
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2604/2658] Replayed QuantyraNullCone.Coordinates
+info: QuantyraNullCone/Coordinates.lean:90:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:91:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:92:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2894/2898] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2895/2898] Replayed QuantyraNullCone.GoodSamples
+info: QuantyraNullCone/GoodSamples.lean:88:0: 'QuantyraNullCone.InDensityClass.sample_good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GoodSamples.lean:89:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability_grid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2896/2898] Replayed QuantyraNullCone.ProbabilityRate
+info: QuantyraNullCone/ProbabilityRate.lean:142:0: 'QuantyraNullCone.grid_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:143:0: 'QuantyraNullCone.fourth_root_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:144:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2897/2898] Built QuantyraNullCone.OrderSelector (3.2s)
+info: QuantyraNullCone/OrderSelector.lean:100:0: 'QuantyraNullCone.chronological_realizer_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:101:0: 'QuantyraNullCone.selectedCDF_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:102:0: 'QuantyraNullCone.InDensityClass.orderCDFGood_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2898/2898] Building QuantyraNullCone.FiniteTV (3.9s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/QuantyraNullCone/FiniteTV.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/.lake/build/lib/lean/QuantyraNullCone/FiniteTV.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/.lake/build/lib/lean/QuantyraNullCone/FiniteTV.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/.lake/build/ir/QuantyraNullCone/FiniteTV.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-observable-20261007T114607Z-2c2cab/source/.lake/build/ir/QuantyraNullCone/FiniteTV.setup.json --json
+error: QuantyraNullCone/FiniteTV.lean:21:41: overloaded, errors 
+  21:42 Unknown identifier `x`
+  
+  invalid {...} notation, expected type is not of the form (C ...)
+    Set α
+error: QuantyraNullCone/FiniteTV.lean:30:17: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (∑ i ∈ ?s, ?f i) / ?a
+in the target expression
+  μ.real S - ν.real S ≤ ∑ i, (d i + |d i|) / 2
+
+α : Type u_1
+inst✝⁴ : Fintype α
+inst✝³ : MeasurableSpace α
+inst✝² : MeasurableSingletonClass α
+μ ν : Measure α
+inst✝¹ : IsProbabilityMeasure μ
+inst✝ : IsProbabilityMeasure ν
+S : Set α
+d : α → ℝ := fun x => μ.real {x} - ν.real {x}
+s : Finset α := {x | x ∈ S}
+hs : ↑s = S
+hTotal : ∑ x, d x = 0
+hSelected : (∑ x, if x ∈ S then d x else 0) = μ.real S - ν.real S
+hPoint : ∀ (x : α), (if x ∈ S then d x else 0) ≤ (d x + |d x|) / 2
+hSum : μ.real S - ν.real S ≤ ∑ i, (d i + |d i|) / 2
+⊢ μ.real S - ν.real S ≤ 1 / 2 * ∑ x, |μ.real {x} - ν.real {x}|
+error: QuantyraNullCone/FiniteTV.lean:56:28: Application type mismatch: The argument
+  orderCDFGood_measurable ?m.164 ?m.165
+has type
+  MeasurableSet {code | OrderCDFGood ?m.164 ?m.165 code}
+but is expected to have type
+  Disjoint ?m.161 ?m.162
+in the application
+  @measureReal_union ?m.158 ?m.159 ?m.160 ?m.161 ?m.162 (orderCDFGood_measurable ?m.164 ?m.165)
+error: QuantyraNullCone/FiniteTV.lean:56:10: could not synthesize default value for parameter 'h₁' using tactics
+error: QuantyraNullCone/FiniteTV.lean:56:10: tactic 'aesop' failed, failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.
+Initial goal:
+  rho sigma : DiamondPoint → ℝ
+  hR : InDensityClass rho
+  hS : InDensityClass sigma
+  n : ℕ
+  hn : 65536 ≤ n
+  hTV : orderLawTV rho sigma n < 4 / 5
+  this✝ : IsProbabilityMeasure (orderLaw rho n) := orderLaw_isProbabilityMeasure hR n
+  this : IsProbabilityMeasure (orderLaw sigma n) := orderLaw_isProbabilityMeasure hS n
+  A : Set (OrderCode n) := {code | OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code}
+  B : Set (OrderCode n) := {code | OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code}
+  hEmpty : ¬∃ code, OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code ∧ OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code
+  hDisjoint : Disjoint A B
+  ⊢ ?m.160 ?m.161 ≠ ⊤
+Remaining goals after safe rules:
+  rho sigma : DiamondPoint → ℝ
+  hR : InDensityClass rho
+  hS : InDensityClass sigma
+  n : ℕ
+  hn : 65536 ≤ n
+  hTV : orderLawTV rho sigma n < 4 / 5
+  this_1 : IsProbabilityMeasure (orderLaw rho n) := ⋯
+  this : IsProbabilityMeasure (orderLaw sigma n) := ⋯
+  A : Set (OrderCode n) := ⋯
+  B : Set (OrderCode n) := ⋯
+  hEmpty : ¬∃ code, OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code ∧ OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code
+  hDisjoint : Disjoint A B
+  ⊢ ?m.160 ?m.161 ≠ ⊤
+error: QuantyraNullCone/FiniteTV.lean:56:10: could not synthesize default value for parameter 'h₂' using tactics
+error: QuantyraNullCone/FiniteTV.lean:56:10: tactic 'aesop' failed, failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.
+Initial goal:
+  rho sigma : DiamondPoint → ℝ
+  hR : InDensityClass rho
+  hS : InDensityClass sigma
+  n : ℕ
+  hn : 65536 ≤ n
+  hTV : orderLawTV rho sigma n < 4 / 5
+  this✝ : IsProbabilityMeasure (orderLaw rho n) := orderLaw_isProbabilityMeasure hR n
+  this : IsProbabilityMeasure (orderLaw sigma n) := orderLaw_isProbabilityMeasure hS n
+  A : Set (OrderCode n) := {code | OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code}
+  B : Set (OrderCode n) := {code | OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code}
+  hEmpty : ¬∃ code, OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code ∧ OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code
+  hDisjoint : Disjoint A B
+  ⊢ ?m.160 ?m.162 ≠ ⊤
+Remaining goals after safe rules:
+  rho sigma : DiamondPoint → ℝ
+  hR : InDensityClass rho
+  hS : InDensityClass sigma
+  n : ℕ
+  hn : 65536 ≤ n
+  hTV : orderLawTV rho sigma n < 4 / 5
+  this_1 : IsProbabilityMeasure (orderLaw rho n) := ⋯
+  this : IsProbabilityMeasure (orderLaw sigma n) := ⋯
+  A : Set (OrderCode n) := ⋯
+  B : Set (OrderCode n) := ⋯
+  hEmpty : ¬∃ code, OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code ∧ OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code
+  hDisjoint : Disjoint A B
+  ⊢ ?m.160 ?m.162 ≠ ⊤
+info: QuantyraNullCone/FiniteTV.lean:96:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: QuantyraNullCone/FiniteTV.lean:96:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: QuantyraNullCone/FiniteTV.lean:98:0: 'QuantyraNullCone.finite_probability_event_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteTV.lean:99:0: 'QuantyraNullCone.InDensityClass.orderLawTV_event_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/FiniteTV.lean:100:0: 'QuantyraNullCone.InDensityClass.orderCDFGood_intersects' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/FiniteTV.lean:101:0: 'QuantyraNullCone.InDensityClass.populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.FiniteTV

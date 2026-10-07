@@ -15,7 +15,8 @@ The principal formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_s
 | Grid-vertex deductions and concrete deterministic `87r` CDF reconstruction | `GridAccuracy.lean` | GCP compiled; actual K plus occupancy/distinctness/vertex accuracy, without assumed marginal/boundary/CDF conclusions |
 | Iid support/null ties, occupancy, concentration and original fourth-root reconstruction probability | `Sampling.lean`, `Coordinates.lean`, `Concentration.lean`, `GoodSamples.lean`, `ProbabilityRate.lean` | GCP verified from original K; `9/10` success at `174 n^(-1/4)` for every `n>=65536` |
 | Boundary-valid density interpolation and actual coefficient supremum attainment | `DensityInterpolation.lean` | GCP verified: actual K plus CDF error epsilon imply coefficient deviation cubed at most `2048 epsilon` |
-| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; reconstruction probability is formalized, while observable-TV separation and all-N assembly remain unverified |
+| One measurable order-only selector, finite-law event TV bound and CDF orbit separation | `OrderSelector.lean`, `FiniteTV.lean` | GCP verified from actual K: `n>=65536` and observed TV below `4/5` give one global CDF orientation with error `348 n^(-1/4)` |
+| `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | Mathematical proof draft; reconstruction probability is formalized, while all-N coefficient assembly and identifiability remain unverified |
 | Identifiability, label-law equivalence, proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequences |
 | Originality and significance | `notes/novelty-search.md`, `notes/openai-math-review.md` | Provisional; no independent specialist review |
 

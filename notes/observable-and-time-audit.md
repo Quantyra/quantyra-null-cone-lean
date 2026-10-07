@@ -30,4 +30,6 @@ for causally related endpoints, including closure endpoints under the stated end
 
 Coordinate interchange sends each admissible curve to one with swapped endpoints and leaves the product u'v' unchanged. Selecting the identity or swap attaining d_conf consequently bounds the uniform discrepancy of corresponding time separations by d_conf. Combined with the derived inverse rate, this gives the same bound `100(N^(-1/12)+Delta_N)` for that endpoint-matched proper-time error. It controls neither curvature nor derivatives of the metric.
 
-Remaining to-do list: optional formalization of these two elementary bridges if the whole inverse theorem is later developed in Lean; independent review before publication claims.
+2026-10-07 scope update: the order-only selector and observable-TV CDF separation are now GCP verified in `OrderSelector.lean` and `FiniteTV.lean`. Their observed law is the labeled directed-order code law defined in `Model.lean`. The exchangeability and labeled/unlabeled TV equivalence above still require a formal bridge before claiming the complete original unlabeled-observable theorem. Proper-time formalization remains a separately selectable consequence. Quantyra uses open-source, decentralized informal review and downstream use/testing; specialist review is not a required publication or workflow gate.
+
+Remaining to-do list: formal label-law equivalence for the full inverse theorem; optional proper-time formalization; record actual public feedback, use and testing when available.

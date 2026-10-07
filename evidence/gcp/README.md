@@ -13,3 +13,7 @@ Lean 4.30.0: baseline root build 2583 jobs and twelve export audits; candidate r
 ## Density interpolation
 
 [space-interpolation-20261007T112652Z-43e687](space-interpolation-20261007T112652Z-43e687/receipt.json) verifies the root build (2899 jobs) and thirty-five export audits without warnings. The [development index](interpolation-development-index.json) retains the earlier failed attempt and successful module check. The actual-K interpolation export proves the cubic `2048 epsilon` bound; observable-TV separation and all-N inverse assembly remain incomplete.
+
+## Observable-law CDF separation
+
+[space-observable-20261007T114943Z-041e63](space-observable-20261007T114943Z-041e63/receipt.json) verifies the root build (2901 jobs) and forty-two export audits without warnings. The [development index](observable-development-index.json) retains the setup failure and failed proof attempts. The actual-K export compares only directed-order laws, with one fixed code-only selector and one global CDF orientation. All-N coefficient assembly and identifiability remain incomplete.

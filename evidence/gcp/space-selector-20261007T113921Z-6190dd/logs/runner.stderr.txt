@@ -1,0 +1,1 @@
+cp: cannot stat '/home/dfredriksen_quantyra_org/quantyra-space-runs/space-selector-20261007T112652Z-43e687/source/.lake/build': No such file or directory

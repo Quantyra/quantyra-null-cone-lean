@@ -1,0 +1,9 @@
+{
+  "run": "space-observable-20261007T114943Z-041e63",
+  "compile_host": "GCP",
+  "exit": 0,
+  "source_verified_before_and_after": true,
+  "dependency_identities_and_clean_tracked_trees": true,
+  "audited_exports": 42,
+  "owned_warnings": 0
+}

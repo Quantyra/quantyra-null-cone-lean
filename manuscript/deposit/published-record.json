@@ -1,0 +1,30 @@
+{
+  "id": 23206773,
+  "doi": "10.5281/zenodo.23206773",
+  "url": "https://zenodo.org/records/23206773",
+  "source_commit": "49b94b7af47a910d13e13d39ee45d4a359451e19",
+  "version": "0.2.0",
+  "resource_type": "publication/preprint",
+  "license": "CC-BY-4.0",
+  "software_version_doi": "10.5281/zenodo.23202763",
+  "files": {
+    "finite-causal-order-reconstruction.pdf": {
+      "sha256": "c8395d0cb0c55da8257cdd3ffe85c8d1b66c11e1a74e39d7ca6de645c52db463",
+      "zenodo_checksum": "md5:62377171ce37311eeff71530eb364d41"
+    },
+    "finite-causal-order-reconstruction-v0.2.0-source.zip": {
+      "sha256": "e63d18e2e75f05df181eeeda38aab623c23922657d1f277963725eafb86d66d2",
+      "zenodo_checksum": "md5:40d9a73b45d8da10436c66e1db3746ec"
+    }
+  },
+  "verified_metadata": [
+    "title",
+    "version",
+    "creators",
+    "type",
+    "license",
+    "open access",
+    "separate manuscript DOI",
+    "software DOI relation"
+  ]
+}

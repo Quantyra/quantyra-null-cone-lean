@@ -40,23 +40,24 @@ parser.add_argument("--aws-profile", help="Explicit AWS profile for the selected
 parser.add_argument("--aws-region", help="Explicit AWS region for the selected secret")
 args = parser.parse_args()
 assert len(args.commit) == 40 and all(c in "0123456789abcdef" for c in args.commit)
-metadata = json.loads((PACKAGE / "zenodo-metadata.json").read_text(encoding="utf-8"))
-manifest = json.loads((PACKAGE / "manifest.json").read_text(encoding="utf-8"))
-bundle = json.loads((PACKAGE / "bundle.json").read_text(encoding="utf-8"))
+def frozen_bytes(name):
+    return subprocess.check_output(["git", "show", f"{args.commit}:{name}"], cwd=ROOT)
+
+
+metadata_bytes = frozen_bytes("manuscript/deposit/zenodo-metadata.json")
+metadata = json.loads(metadata_bytes)
+manifest = json.loads(frozen_bytes("manuscript/deposit/manifest.json"))
+bundle = json.loads(frozen_bytes("manuscript/deposit/bundle.json"))
 pdf = ROOT / "manuscript/finite-causal-order-reconstruction.pdf"
 source_zip = PACKAGE / bundle["file"]
 
 for name, expected in manifest["files"].items():
-    path = ROOT / name
-    assert digest(path.read_bytes()) == expected["sha256"], f"Changed payload: {name}"
-    committed = subprocess.check_output(["git", "show", f"{args.commit}:{name}"], cwd=ROOT)
+    committed = frozen_bytes(name)
     assert digest(committed) == expected["sha256"], f"Commit does not freeze payload: {name}"
 assert digest(source_zip.read_bytes()) == bundle["sha256"]
-assert digest((PACKAGE / "zenodo-metadata.json").read_bytes()) == manifest["metadata_sha256"]
-for path in (source_zip, PACKAGE / "zenodo-metadata.json"):
-    committed = subprocess.check_output(
-        ["git", "show", f"{args.commit}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT
-    )
+assert digest(metadata_bytes) == manifest["metadata_sha256"]
+for path in (pdf, source_zip):
+    committed = frozen_bytes(path.relative_to(ROOT).as_posix())
     assert digest(committed) == digest(path.read_bytes()), "Deposit package differs from frozen commit"
 assert metadata["upload_type"] == "publication" and metadata["publication_type"] == "preprint"
 assert metadata["version"] == manifest["version"]

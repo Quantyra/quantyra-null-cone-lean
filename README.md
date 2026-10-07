@@ -50,6 +50,8 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 ## Citation, archive and licenses
 
+Manuscript version **0.2.0** has its own open preprint DOI: [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773). [Verified deposit evidence](manuscript/deposit/published-record.json) includes the frozen source commit and downloaded PDF/source-bundle hashes. Cite this DOI for the manuscript and the software DOI below for the proof software.
+
 [Version **0.1.0**](https://github.com/Quantyra/quantyra-null-cone-lean/releases/tag/v0.1.0) is published and archived: software version DOI [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763); concept DOI [10.5281/zenodo.23202762](https://doi.org/10.5281/zenodo.23202762) covers all versions. Use [CITATION.cff](CITATION.cff) to cite the exact release. [Release text](releases/v0.1.0.md) documents its bounded scope. Zenodo dates the release 7 October 2026 in UTC (6 October locally). The archive includes the preprint but is a **software deposit**, not a manuscript-specific DOI. The main-branch PDF adds the verified software DOI as a post-archive citation annotation; the immutable release PDF predates that annotation. The preprint has not been submitted to arXiv or a journal.
 
 Software, Lean proofs, scripts and repository documentation: [Apache-2.0](LICENSE). Files under `manuscript/`: [CC-BY-4.0](LICENSES/CC-BY-4.0.txt). See [NOTICE](NOTICE) for attribution and license boundaries. Dependencies retain their own licenses.

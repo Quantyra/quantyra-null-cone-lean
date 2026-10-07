@@ -16,8 +16,8 @@ Alternatively run `pdflatex` twice with the same `-interaction`, `-halt-on-error
 
 ## License and citation
 
-Every file under `manuscript/` is licensed under [CC-BY-4.0](../LICENSES/CC-BY-4.0.txt), copyright 2026 Quantyra Inc. Attribution: Daniel Eric Fredriksen, *Quantitative reconstruction from finite causal orders in a conformal diamond*, draft preprint, version 0.2.0 (2026), Quantyra Inc. Cite the repository's exact release/commit until a manuscript-specific DOI exists. Software elsewhere in the repository is Apache-2.0.
+Every file under `manuscript/` is licensed under [CC-BY-4.0](../LICENSES/CC-BY-4.0.txt), copyright 2026 Quantyra Inc. Attribution: Daniel Eric Fredriksen, *Quantitative reconstruction from finite causal orders in a conformal diamond*, preprint, version 0.2.0 (2026), Quantyra Inc., [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773). Software elsewhere in the repository is Apache-2.0.
 
-The manuscript is prepared for public review; it has not been submitted to arXiv or a journal, and no manuscript-specific DOI is claimed.
+The manuscript is published as an open Zenodo preprint at [record 23206773](https://zenodo.org/records/23206773); it has not been submitted to arXiv or a journal. The [verified deposit receipt](deposit/published-record.json) records the exact source commit, metadata checks and downloaded-file hashes. The archived source bundle retains the README as it stood before publication; current citation documentation adds the assigned DOI.
 
 Software release v0.1.0 is archived at [10.5281/zenodo.23202763](https://doi.org/10.5281/zenodo.23202763). Its release asset and Zenodo ZIP retain the original preprint. Version 0.2.0 adds the logarithmic-grid bound and explanatory corrections. The old software DOI remains a software citation, not an identifier for a separate manuscript deposit.

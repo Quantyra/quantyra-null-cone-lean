@@ -9,6 +9,9 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 DESTINATION = ROOT / "manuscript/deposit"
 METADATA = DESTINATION / "zenodo-metadata.json"
+assert not (DESTINATION / "published-record.json").exists(), (
+    "This deposit is published. Preserve its bundle/manifests; prepare a separately versioned package."
+)
 
 
 def sha256(path):

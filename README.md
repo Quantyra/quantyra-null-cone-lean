@@ -52,7 +52,7 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 ## Citation, archive and licenses
 
-Manuscript version **0.3.0** updates the verification scope to cover the original inverse theorem, identifiability and actual labeled/unlabeled laws. [Prepared versioned package](manuscript/deposit/v0.3.0/README.md); reserved manuscript DOI [10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579). Its exact proof/evidence revision is [`b7d762acc9c10ca881f8366f545f3998b0528448`](https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448).
+Manuscript version **0.3.0** updates the verification scope to cover the original inverse theorem, identifiability and actual labeled/unlabeled laws. [Verified publication receipt](manuscript/deposit/v0.3.0/published-record.json); published manuscript DOI [10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579). Its exact proof/evidence revision is [`b7d762acc9c10ca881f8366f545f3998b0528448`](https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448).
 
 Historical manuscript **0.2.0** remains at [10.5281/zenodo.23206773](https://doi.org/10.5281/zenodo.23206773), with its [unchanged receipt and frozen artifacts](manuscript/deposit/published-record.json). Its PDF describes the earlier formal scope. Use the manuscript DOI for the paper and the software DOI below for the historical proof software release.
 

@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-07T14:16:43.145248+00:00",
+  "doi_redirect_chain": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.23214579",
+      "status": 302,
+      "location": "https://zenodo.org/doi/10.5281/zenodo.23214579"
+    },
+    {
+      "url": "https://zenodo.org/doi/10.5281/zenodo.23214579",
+      "status": 302,
+      "location": "https://zenodo.org/records/23214579"
+    }
+  ],
+  "resolved_record": "https://zenodo.org/records/23214579",
+  "direct_pdf_url": "https://zenodo.org/records/23214579/files/finite-causal-order-reconstruction.pdf",
+  "pdf_sha256": "8abd7fb702dc235a6cfaafc0e8534b396bf380984e401d99fece6afafc2a4c5f",
+  "doi_resolves_to_new_record": true
+}

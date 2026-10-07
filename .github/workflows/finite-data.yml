@@ -22,3 +22,5 @@ jobs:
         run: python -m unittest discover -s tools -p test_finite_data.py -v
       - name: Independently verify retained report with standard library only
         run: python -S tools/finite_data.py verify evidence/finite-data/cli-smoke-report.json
+      - name: Independently verify split DKW report with standard library only
+        run: python -S tools/finite_data.py verify evidence/finite-data/cli-split-dkw-report.json

@@ -12,6 +12,8 @@ For any integer j>=0 put b_j=#{i:d_i>j}/n. On the remaining points each normaliz
 
 ## Uniform probabilistic certificate
 
+This section records the original `grid` calibration, retained for old reports. New estimates default to the [separate DKW marginal/joint calibration](finite-data-confidence-sharpening.md), with radius B(P)+2epsilon_m+epsilon_j+2/q. The deterministic forcing and LP arguments apply to either certified radius.
+
 Choose a deterministic q and epsilon from n and requested delta. On the (q+1)^2 fixed population-CDF grid vertices, Hoeffding and a union bound give
 
     Pr(max_vertex |C_n-C_rho| > epsilon) <= 2(q+1)^2 exp(-2n epsilon^2).

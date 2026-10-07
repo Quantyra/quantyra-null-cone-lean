@@ -18,6 +18,7 @@ Input JSON uses vertices 0,...,n-1 and **all** strict relations, including trans
 ```text
 python tools/finite_data.py estimate input.json --grid 8 --delta 1/20 --output result.json
 python tools/finite_data.py verify result.json
+python tools/finite_data.py estimate input.json --calibration grid --output legacy-result.json
 python tools/benchmark_finite_data.py --output experiments.json --trials 8 --sizes 128 512 --grid 8
 ```
 
@@ -28,5 +29,7 @@ The result contains the two permutations, a rooted original-graph forcing certif
 Full-range bands `[1/2,3/2]` and error bound one mean the method has no certified density resolution at that setting. A smaller CDF bound does not by itself prove practically useful density recovery. Numerical solver failures or inconsistent restrictions return conservative full-range bands and a reported fallback status; they do not certify mathematical infeasibility. No noisy-order repair, optimal sample complexity or curvature claim is included.
 
 For the Windows embedded development interpreter, dependencies are isolated at `C:/Users/dfred/QuantyraTools/FiniteData/site-packages`; insert that directory and `tools` into `sys.path` before `runpy.run_path`/unittest. Ordinary Python users use the commands above. This support runtime does not run Lean.
+
+New estimates default to `split-dkw`: separate finite DKW marginal concentration and fixed-grid joint concentration. [Derivation and exact rounding](../notes/finite-data-confidence-sharpening.md). Use `--calibration grid` to reproduce the original calibration, including the historical 80-trial experiment. Reports lacking a method field continue to verify as legacy reports.
 
 Remaining to-do list: none for CLI usage; research improvements follow the experiment gate.

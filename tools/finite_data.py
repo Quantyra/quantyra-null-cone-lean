@@ -5,7 +5,7 @@ import sys
 from fractions import Fraction as F
 from pathlib import Path
 from finite_data_core import (order_rows, realizer, certify_realizer, confidence,
-                              corner_counts, verify_forcing_certificate, calibration)
+                              corner_counts, verify_forcing_certificate, calibration, calibration_radius)
 from finite_data_lp import model, solve, verify_bounds
 
 
@@ -15,12 +15,12 @@ def histogram_violation(histogram, counts, n, k, radius):
                        for p in range(k+1) for q in range(k+1)])
 
 
-def estimate(order, k=4, delta=F(1, 20)):
+def estimate(order, k=4, delta=F(1, 20), calibration_method='split-dkw'):
     if type(k) is not int or not 1 <= k <= 16:
         raise ValueError('estimation grid must be an integer in [1,16]')
     rows = order_rows(order['n'], order['relations'])
     first, second = realizer(rows)
-    conf = confidence(first, second, rows, delta)
+    conf = confidence(first, second, rows, delta, calibration_method)
     counts = corner_counts(first, second, k)
     lp = model(counts, len(rows), conf['cdf_radius'])
     result = solve(lp)
@@ -31,6 +31,7 @@ def estimate(order, k=4, delta=F(1, 20)):
     if result['status'] != 'certified_outer_bounds':
         result['histogram_error_upper'] = F(1)
     report = {'schema': 1, 'input': order, 'grid': k, 'delta': F(delta),
+              'calibration_method': calibration_method,
               'first': first, 'second': second, 'confidence': conf, 'bands': result,
               'interpretation': 'Simultaneous coverage in K under one global identity/transpose; '
                                 'ordinary mathematical guarantee, not Lean certification.'}
@@ -47,13 +48,14 @@ def verify_report(report):
     certify_realizer(rows, first, second)
     conf = report['confidence']
     verify_forcing_certificate(rows, first, conf['rank_certificate'])
-    expected_cal = calibration(len(rows), F(report['delta']))
+    method = report.get('calibration_method', 'grid')
+    expected_cal = calibration(len(rows), F(report['delta']), method)
     actual_cal = conf['calibration']
     for key, value in expected_cal.items():
-        if F(actual_cal[key]) != value:
+        if (actual_cal[key] != value if isinstance(value, str) else F(actual_cal[key]) != value):
             raise ValueError('incorrect confidence calibration')
     expected_radius = min(F(1), F(conf['rank_certificate']['trim_budget'])+
-                          3*expected_cal['epsilon']+F(4, expected_cal['q']))
+                          calibration_radius(expected_cal, method))
     expected_failure = F(0) if expected_radius == 1 else expected_cal['failure_upper']
     if F(conf['cdf_radius']) != expected_radius or F(conf['failure_upper']) != expected_failure:
         raise ValueError('incorrect confidence radius/probability')
@@ -88,6 +90,7 @@ def main():
     reconstruct.add_argument('--output', type=Path, required=True)
     reconstruct.add_argument('--grid', type=int, default=4)
     reconstruct.add_argument('--delta', default='1/20')
+    reconstruct.add_argument('--calibration', choices=['grid', 'split-dkw'], default='split-dkw')
     check = commands.add_parser('verify')
     check.add_argument('input', type=Path)
     args = parser.parse_args()
@@ -98,7 +101,7 @@ def main():
         else:
             if args.output.exists():
                 raise ValueError('output already exists; choose a new path')
-            report = estimate(read_json(args.input), args.grid, F(args.delta))
+            report = estimate(read_json(args.input), args.grid, F(args.delta), args.calibration)
             args.output.parent.mkdir(parents=True, exist_ok=True)
             payload = json.dumps(report, default=str, separators=(',', ':'))+'\n'
             if len(payload.encode('utf-8')) > 512*1024*1024:

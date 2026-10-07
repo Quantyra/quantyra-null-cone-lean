@@ -31,6 +31,8 @@ This is restricted theoretical geometry. It establishes no new physics, general 
 
 ## Build
 
+The [order-only finite-data CLI](tools/FINITE_DATA.md) now defaults to [separate DKW marginal/joint confidence](notes/finite-data-confidence-sharpening.md). Legacy certificates retain their meaning. Smaller CDF radii do not establish useful density recovery; the [original experiment report](notes/finite-data-experiment-report.md) remains an evaluation of the earlier calibration.
+
 Quantyra development and acceptance Lean commands below execute on remote GCP. Existing GCP evidence remains authoritative; hosted CI is supplementary. The finite-data Python CLI and tests are separate and do not compile Lean.
 
 Use elan and Python 3; [INTEGRITY.md](INTEGRITY.md) gives the fresh-checkout dependency and focused-cache commands. Once dependencies are present:

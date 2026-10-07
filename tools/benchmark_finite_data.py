@@ -82,7 +82,7 @@ def transpose(values, k):
     return [values[j*k+i] for i in range(k) for j in range(k)]
 
 
-def evaluate(n, seed, family, coefficient, k, profile_memory=False):
+def evaluate(n, seed, family, coefficient, k, profile_memory=False, calibration_method='split-dkw'):
     points = sample(n, seed, family, float(coefficient))
     started = time.perf_counter()
     order = observed_order(points)
@@ -90,7 +90,7 @@ def evaluate(n, seed, family, coefficient, k, profile_memory=False):
     if profile_memory:
         tracemalloc.start()
     started = time.perf_counter()
-    report = estimate(order, k)
+    report = estimate(order, k, calibration_method=calibration_method)
     estimate_seconds = time.perf_counter()-started
     peak = None
     if profile_memory:
@@ -114,6 +114,9 @@ def evaluate(n, seed, family, coefficient, k, profile_memory=False):
         joint.append(cc and pc and cdf[swap] <= float(report['confidence']['cdf_radius']) and
                      error <= bands['histogram_error_upper'])
     return {'n': n, 'seed': seed, 'family': family, 'coefficient': str(coefficient), 'grid': k,
+            'calibration_method': calibration_method,
+            'cdf_radius_exact': str(report['confidence']['cdf_radius']),
+            'rank_trim_budget_exact': str(report['confidence']['rank_certificate']['trim_budget']),
             'cdf_radius': float(report['confidence']['cdf_radius']),
             'cdf_error': min(cdf), 'cdf_error_each_global_orientation': cdf,
             'cdf_covered': min(cdf) <= float(report['confidence']['cdf_radius']),
@@ -147,6 +150,7 @@ def main():
     parser.add_argument('--trials', type=int, default=8)
     parser.add_argument('--sizes', type=int, nargs='+', default=[128, 512])
     parser.add_argument('--grid', type=int, default=8)
+    parser.add_argument('--calibration', choices=['grid', 'split-dkw'], default='split-dkw')
     args = parser.parse_args()
     if args.output.exists() or not 1 <= args.trials <= 100 or any(n < 2 or n > 4096 for n in args.sizes):
         parser.error('choose a fresh output, 1-100 trials, and sizes 2-4096')
@@ -158,7 +162,7 @@ def main():
             group = []
             for trial in range(args.trials):
                 seed = 2026100700+100000*n+1000*index+trial
-                row = evaluate(n, seed, family, c, args.grid)
+                row = evaluate(n, seed, family, c, args.grid, calibration_method=args.calibration)
                 results.append(row)
                 group.append(row)
                 print(json.dumps({'n': n, 'family': family, 'c': str(c), 'trial': trial,
@@ -167,7 +171,8 @@ def main():
             count = sum(x['all_guarantees_one_global_orientation'] for x in group)
             # Repeat the first seed once for memory, without counting it as an
             # independent trial or contaminating normal runtime measurements.
-            profiles.append(evaluate(n, group[0]['seed'], family, c, args.grid, profile_memory=True))
+            profiles.append(evaluate(n, group[0]['seed'], family, c, args.grid, profile_memory=True,
+                                     calibration_method=args.calibration))
             summaries.append({'n': n, 'family': family, 'coefficient': str(c), 'trials': args.trials,
                               'joint_coverage_count': count, 'joint_coverage_wilson_95': wilson(count, args.trials),
                               'mean_cdf_radius': sum(x['cdf_radius'] for x in group)/len(group),

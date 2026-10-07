@@ -8,7 +8,7 @@ from fractions import Fraction as F
 from itertools import permutations, combinations
 from finite_data_core import (order_rows, realizer, ranks, certify_realizer,
                               forcing_certificate, verify_forcing_certificate,
-                              calibration, exp_negative_upper, InvalidOrder)
+                              calibration, calibration_radius, exp_negative_upper, InvalidOrder)
 from finite_data_lp import model, solve, verify_bounds, dual_lower_bound
 from finite_data import estimate, verify_report
 from benchmark_finite_data import cdf_errors, truth_cell_ranges
@@ -187,6 +187,48 @@ class LPTests(unittest.TestCase):
             raw = 2*(cal['q']+1)**2*exp_negative_upper(2*512*cal['epsilon']**2)
             self.assertLessEqual(raw, cal['failure_upper'])
             self.assertLessEqual(cal['failure_upper'], delta)
+
+    def test_split_calibration_failure_allocation_and_prior_improvement(self):
+        for n in (512, 3072, 4096):
+            for delta in (F(1, 20), F(1, 100)):
+                cal = calibration(n, delta, 'split-dkw')
+                self.assertEqual(cal['marginal_budget']+cal['joint_budget'], delta)
+                for name, prefactor in [('marginal', 4), ('joint', 2*(cal['q']+1)**2)]:
+                    raw = prefactor*exp_negative_upper(2*n*cal[name+'_epsilon']**2)
+                    self.assertLessEqual(raw, cal[name+'_failure_upper'])
+                    self.assertLessEqual(cal[name+'_failure_upper'], cal[name+'_budget'])
+                self.assertLessEqual(cal['failure_upper'], delta)
+                self.assertLess(calibration_radius(cal, 'split-dkw'),
+                                calibration_radius(calibration(n, delta), 'grid'))
+        self.assertLess(calibration_radius(calibration(3072, F(1, 20), 'split-dkw'), 'split-dkw'), F(1, 8))
+        # Cached calibration values cannot be poisoned by a returned mutable dict.
+        cal['q'] = 1
+        self.assertNotEqual(calibration(4096, F(1, 100), 'split-dkw')['q'], 1)
+
+    def test_both_report_methods_and_corrupted_split_calibration(self):
+        order = {'n': 4, 'relations': [[0, 2], [0, 3], [1, 3]]}
+        for method in ('grid', 'split-dkw'):
+            report = json.loads(json.dumps(estimate(order, 2, calibration_method=method), default=str))
+            self.assertTrue(verify_report(report))
+            if method == 'grid':
+                del report['calibration_method']
+                self.assertTrue(verify_report(report))
+            else:
+                for key in ('method', 'marginal_epsilon', 'joint_epsilon', 'marginal_budget',
+                            'joint_budget', 'marginal_failure_upper', 'joint_failure_upper'):
+                    changed = copy.deepcopy(report)
+                    changed['confidence']['calibration'][key] = 'grid' if key == 'method' else '0'
+                    with self.assertRaises(ValueError):
+                        verify_report(changed)
+
+    def test_split_extreme_budget_uses_deterministic_fallback(self):
+        report = estimate({'n': 1, 'relations': []}, 1, F(1, 10**100))
+        self.assertEqual(report['confidence']['cdf_radius'], 1)
+        self.assertEqual(report['confidence']['failure_upper'], 0)
+        self.assertTrue(verify_report(json.loads(json.dumps(report, default=str))))
+        for method, delta in [('unknown', F(1, 20)), ('split-dkw', F(0)), ('split-dkw', F(1))]:
+            with self.assertRaises(ValueError):
+                calibration(64, delta, method)
 
 
 if __name__ == '__main__':

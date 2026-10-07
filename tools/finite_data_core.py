@@ -208,10 +208,67 @@ def _calibration(n, delta):
     return q, eps, failure
 
 
-def calibration(n, delta):
+def _round_failure_upper(raw, budget):
+    denominator = 10**12*budget.denominator
+    return F(-(-raw.numerator*denominator//raw.denominator), denominator)
+
+
+@lru_cache(maxsize=4096)
+def _epsilon_budget(n, prefactor, budget):
+    denominator = 1000000
+    lo, hi = 0, denominator
+    while lo < hi:
+        mid = (lo+hi)//2
+        eps = F(mid, denominator)
+        if prefactor*exp_negative_upper(2*n*eps*eps) <= budget:
+            hi = mid
+        else:
+            lo = mid+1
+    eps = F(lo, denominator)
+    raw = min(F(1), prefactor*exp_negative_upper(2*n*eps*eps))
+    return eps, _round_failure_upper(raw, budget)
+
+
+@lru_cache(maxsize=512)
+def _split_calibration(n, delta):
+    if type(n) is not int or n < 1 or not 0 < delta < 1:
+        raise ValueError('positive integer n and delta in (0,1) required')
+    choices = []
+    meshes = sorted(set([max(1, min(4096, isqrt(n)))]+[2**i for i in range(13)]))
+    for numerator in range(1, 8):
+        budget_marginal = delta*F(numerator, 8)
+        budget_joint = delta-budget_marginal
+        marginal_eps, marginal_failure = _epsilon_budget(n, 4, budget_marginal)
+        for q in meshes:
+            joint_eps, joint_failure = _epsilon_budget(n, 2*(q+1)**2, budget_joint)
+            cost = 2*marginal_eps+joint_eps+F(2, q)
+            choices.append((cost, q, numerator, marginal_eps, joint_eps,
+                            marginal_failure, joint_failure))
+    return min(choices)
+
+
+def calibration(n, delta, method='grid'):
     delta = F(delta)
+    if method == 'split-dkw':
+        _, q, numerator, marginal_eps, joint_eps, marginal_failure, joint_failure = _split_calibration(n, delta)
+        return {'method': 'split-dkw', 'q': q, 'marginal_epsilon': marginal_eps,
+                'joint_epsilon': joint_eps, 'marginal_budget': delta*F(numerator, 8),
+                'joint_budget': delta*(1-F(numerator, 8)),
+                'marginal_failure_upper': marginal_failure, 'joint_failure_upper': joint_failure,
+                'failure_upper': min(F(1), marginal_failure+joint_failure),
+                'requested_delta': delta}
+    if method != 'grid':
+        raise ValueError('unknown calibration method')
     q, eps, failure = _calibration(n, delta)
     return {'q': q, 'epsilon': eps, 'failure_upper': failure, 'requested_delta': delta}
+
+
+def calibration_radius(cal, method):
+    if method == 'split-dkw':
+        return 2*F(cal['marginal_epsilon'])+F(cal['joint_epsilon'])+F(2, cal['q'])
+    if method == 'grid':
+        return 3*F(cal['epsilon'])+F(4, cal['q'])
+    raise ValueError('unknown calibration method')
 
 
 def corner_counts(first, second, k):
@@ -221,10 +278,10 @@ def corner_counts(first, second, k):
              for q in range(k+1)] for p in range(k+1)]
 
 
-def confidence(first, second, rows, delta):
+def confidence(first, second, rows, delta, method='grid'):
     cert = forcing_certificate(rows, first)
-    cal = calibration(len(rows), delta)
-    radius = min(F(1), cert['trim_budget']+3*cal['epsilon']+F(4, cal['q']))
+    cal = calibration(len(rows), delta, method)
+    radius = min(F(1), cert['trim_budget']+calibration_radius(cal, method))
     # A radius of one is deterministic, including when the union bound is weak.
     return {'rank_certificate': cert, 'calibration': cal, 'cdf_radius': radius,
             'failure_upper': F(0) if radius == 1 else cal['failure_upper']}

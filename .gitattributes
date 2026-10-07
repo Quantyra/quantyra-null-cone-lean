@@ -14,3 +14,4 @@ manuscript/working/*.md text eol=lf
 tools/finite_data*.py text eol=lf
 tools/benchmark_finite_data.py text eol=lf
 tools/test_finite_data.py text eol=lf
+tools/compare_confidence_calibrations.py text eol=lf

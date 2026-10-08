@@ -24,4 +24,6 @@ After collection and a successful check for other Lean/Lake work, the task-start
 
 The next report bridge should define success as a predicate of the finite observed `OrderCode`. Its preimage under `sampledOrder` is measurable even when success quantifies over every real threshold. Almost-everywhere coordinate support/injectivity and the accepted accuracy event then imply this observable success event through `checked_trimmed_CDF`. Preserve one orientation for all trim cutoffs; a cutoff selected from the observed order needs no additional union. The deterministic radius-one branch must cover rejected budget checks.
 
+Source/evidence commit `9c94ce11a3e089f0fb379dc795698d8ca371e63f` is pushed. Supplementary [proof/manuscript CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37724203707), [literature CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37724203732) and [Python CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37724203710) all passed. This delivery closeout changes docs/evidence only; proof/check/config bytes retain exact accepted identities.
+
 Remaining to-do list: accuracy-to-CDF/report integration and representations; actual cell feasibility, all-point expansion, histogram error and deterministic fallbacks; final S024 acceptance and delivery; S025.

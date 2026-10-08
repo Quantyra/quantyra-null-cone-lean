@@ -1,0 +1,19 @@
+{
+  "source_commit": "9c94ce11a3e089f0fb379dc795698d8ca371e63f",
+  "scope": "continuous uniform/original-K DKW and exact rational split checker; S024 report/density and S025 incomplete",
+  "proof_manuscript_ci": {
+    "run": 37724203707,
+    "result": "success"
+  },
+  "literature_ci": {
+    "run": 37724203732,
+    "result": "success"
+  },
+  "python_ci": {
+    "run": 37724203710,
+    "result": "success"
+  },
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "evidence_closeout_scope": "docs/evidence only; accepted proof/check/config bytes unchanged"
+}

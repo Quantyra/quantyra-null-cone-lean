@@ -32,6 +32,6 @@ All development/acceptance Lean, Lake and transitive Lean commands execute on GC
 
 Finish each story with focused verified commits/pushes and accurate scope documents. Existing DOI artifacts remain immutable; a later manuscript version can advertise enlarged formal coverage after actual acceptance. Certification establishes correctness of encoded statements, not originality, optimality, practical inference or new physics. No specialist-review/adoption gate applies.
 
-S023 delivery is complete. [S024's deterministic foundations](finite-foundation-certification.md) have partial exact-source GCP acceptance with 107 audited exports. The [universal sharp-DKW likelihood barrier](dkw-analytic-certification.md) adds eight selected exports for 115 in the latest root acceptance; sharp probability coverage and the density certificate suite remain open.
+S023 delivery is complete. [S024's deterministic foundations](finite-foundation-certification.md) have partial exact-source GCP acceptance with 107 audited exports. The [universal sharp-DKW likelihood barrier](dkw-analytic-certification.md) adds eight selected exports, and the [sharp finite-grid counting-law tails](dkw-finite-certification.md) add ten more, for 125 in the latest root acceptance. Continuous-sample/actual-K probability coverage and the density certificate suite remain open.
 
 Remaining to-do list: finish finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).

@@ -139,3 +139,9 @@ Remaining to-do list: deliver S023; complete S024-S025.
 S022 and S023 delivery is complete. [Finite-data foundations](finite-foundation-certification.md) record the 107-export acceptance of forcing/rank, position, rational dual, rounding and conditional CDF proofs. [Sharp-DKW analytic certification](dkw-analytic-certification.md) adds the universal likelihood barrier, proved stationary parameter, Bernoulli Pinsker and actual derivative/shape arguments. Exact-source run `space-dkw-analytic-acceptance-20261008T022033Z-1e119b` passed the 2924-job root build and 115 exact-type/axiom audits with zero warnings or added axioms. Statistical DKW coverage and the cell/point/histogram/report suite remain open; S024 is not complete.
 
 Remaining to-do list: sharp probability coverage, actual density/report guarantees and full S024 delivery; S025.
+
+## S024 sharp finite-grid counting-law acceptance
+
+[Finite-grid certification](dkw-finite-certification.md) records exact-source GCP run `space-dkw-finite-acceptance-20261008T025036Z-645562`: 2928 root-build jobs and 125 exact-type/axiom reports, exit zero with no warnings or added axioms. Cartesian revealed-atom identities, terminal mean, a direct first-crossing Ville bound, the sharp one-sided likelihood/CDF consequence, exact bin reflection and the two-sided all-nonnegative-tolerance counting-law bound are proved. The theorem's left side is cardinal divided by q^n. Uniform continuous quantization/law and the dense-grid/actual-K transport remain unproved, so this does not complete S024.
+
+Remaining to-do list: continuous uniform and actual-K DKW/coverage transport; density/report suite; full S024 acceptance and delivery; S025.

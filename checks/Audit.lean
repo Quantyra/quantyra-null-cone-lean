@@ -258,6 +258,32 @@ example {e : ℝ} (he : 0 < e) (he1 : e < 1) :
       2 * e ^ 2 ≤ QuantyraNullCone.dkwLikelihoodBarrier e lambda t :=
   QuantyraNullCone.dkw_sharp_likelihood_barrier he he1
 
+#check QuantyraNullCone.finite_bin_atom_card
+#check QuantyraNullCone.finite_bin_atom_likelihood_identity
+#check QuantyraNullCone.finite_bin_terminal_sum
+#check QuantyraNullCone.finite_bin_reveal_count
+#check QuantyraNullCone.finite_bin_invariant_terminal_sum
+#check QuantyraNullCone.finite_bin_likelihood_maximal
+#check QuantyraNullCone.finite_bin_deviation_likelihood
+#check QuantyraNullCone.finite_bin_upper_DKW
+#check QuantyraNullCone.finite_bin_reflect_CDF
+#check QuantyraNullCone.finite_bin_two_sided_DKW
+#print axioms QuantyraNullCone.finite_bin_atom_card
+#print axioms QuantyraNullCone.finite_bin_atom_likelihood_identity
+#print axioms QuantyraNullCone.finite_bin_terminal_sum
+#print axioms QuantyraNullCone.finite_bin_reveal_count
+#print axioms QuantyraNullCone.finite_bin_invariant_terminal_sum
+#print axioms QuantyraNullCone.finite_bin_likelihood_maximal
+#print axioms QuantyraNullCone.finite_bin_deviation_likelihood
+#print axioms QuantyraNullCone.finite_bin_upper_DKW
+#print axioms QuantyraNullCone.finite_bin_reflect_CDF
+#print axioms QuantyraNullCone.finite_bin_two_sided_DKW
+
+example {n q : ℕ} {e : ℝ} (hn : 0 < n) (hq : 0 < q) (he : 0 ≤ e) :
+    ((QuantyraNullCone.finiteBinAbsDeviation (n := n) (q := q) e).card : ℝ) / (q : ℝ) ^ n ≤
+      2 * Real.exp (-2 * (n : ℝ) * e ^ 2) :=
+  QuantyraNullCone.finite_bin_two_sided_DKW hn hq he
+
 example {n : ℕ} {rows : Fin n → Fin n → Bool}
     (L R : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows))
     (anchor : QuantyraNullCone.FiniteArc n) (trace : List (QuantyraNullCone.ForcingEntry n))

@@ -1,0 +1,4 @@
+1292 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T023359Z-fe3477/run.sh
+1294 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T023359Z-fe3477/logs/runner.stdout.txt
+1295 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T023359Z-fe3477/logs/runner.stderr.txt
+1344 lake build QuantyraNullCone.DKWBins

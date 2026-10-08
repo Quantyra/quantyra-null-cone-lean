@@ -1,0 +1,59 @@
+ℹ [2122/2133] Replayed QuantyraNullCone.DKWBarrier
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2123/2133] Replayed QuantyraNullCone.DKWRoots
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2124/2133] Replayed QuantyraNullCone.DKWPinsker
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2126/2133] Replayed QuantyraNullCone.DKWDifferential
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2130/2133] Replayed QuantyraNullCone.DKWLikelihood
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2132/2133] Built QuantyraNullCone.DKWBins (2.9s)
+info: QuantyraNullCone/DKWBins.lean:167:0: 'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBins.lean:168:0: 'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2133/2133] Building QuantyraNullCone.DKWMaximal (2.8s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/QuantyraNullCone/DKWMaximal.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/.lake/build/lib/lean/QuantyraNullCone/DKWMaximal.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/.lake/build/lib/lean/QuantyraNullCone/DKWMaximal.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/.lake/build/ir/QuantyraNullCone/DKWMaximal.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-bins-20261008T024131Z-8b5f96/source/.lake/build/ir/QuantyraNullCone/DKWMaximal.setup.json --json
+error: QuantyraNullCone/DKWMaximal.lean:111:4: don't know how to synthesize implicit argument `α`
+  @Set.PairwiseDisjoint (Finset (BinProfile n (?m.12 lambda B))) ℕ Finset.partialOrder Finset.instOrderBot
+    (↑(Finset.Icc 1 q)) (finiteBinFirstCross lambda B)
+context:
+n q : ℕ
+lambda B : ℝ
+⊢ Type
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: QuantyraNullCone/DKWMaximal.lean:111:46: don't know how to synthesize implicit argument `q`
+  @finiteBinFirstCross n (?m.12 lambda B) lambda B
+context:
+n q : ℕ
+lambda B : ℝ
+⊢ ℕ
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: QuantyraNullCone/DKWMaximal.lean:160:8: Type mismatch
+  Eq.symm (Finset.sum_biUnion hDis)
+has type
+  ∑ x ∈ Finset.Icc 1 q, ∑ i ∈ finiteBinFirstCross lambda B x, ?m.95 i =
+    ∑ x ∈ (Finset.Icc 1 q).biUnion (finiteBinFirstCross lambda B), ?m.95 x
+but is expected to have type
+  ∑ _x ∈ E, B = ∑ k ∈ Finset.Icc 1 q, ∑ _x ∈ P k, B
+error: QuantyraNullCone/DKWMaximal.lean:173:53: Type mismatch
+  Finset.sum_biUnion hDis
+has type
+  ∑ x ∈ (Finset.Icc 1 q).biUnion (finiteBinFirstCross lambda B), ?m.168 x =
+    ∑ x ∈ Finset.Icc 1 q, ∑ i ∈ finiteBinFirstCross lambda B x, ?m.168 i
+but is expected to have type
+  ∑ k ∈ Finset.Icc 1 q, ∑ x ∈ P k, finiteBinLikelihood lambda 1 x = ∑ x ∈ E, finiteBinLikelihood lambda 1 x
+info: QuantyraNullCone/DKWMaximal.lean:183:0: 'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWMaximal

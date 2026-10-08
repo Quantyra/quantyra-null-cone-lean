@@ -1,0 +1,28 @@
+1
+is not definitionally equal to the right-hand side
+  ↑a + 1
+
+case neg.mpr
+q k : ℕ
+a : Fin q
+ha : ¬↑a < k
+⊢ max (↑a + 1) k = ↑a + 1
+error: QuantyraNullCone/DKWBins.lean:118:8: Unknown constant `Finset.sum_div`
+error: QuantyraNullCone/DKWBins.lean:116:72: unsolved goals
+n q k : ℕ
+hk : 0 < k
+hkq : k ≤ q
+lambda : ℝ
+x : BinProfile n q
+⊢ ∑ x ∈ finiteBinAtom k x, (∏ i, finiteBinWeight lambda (x i)) / (1 + lambda) ^ n =
+    (↑k + lambda * ↑q) ^ finiteBinCount x k / (1 + lambda) ^ n
+info: QuantyraNullCone/DKWBins.lean:166:0: 'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DKWBins.lean:167:0: 'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWBins
+error: build failed
+TERMINAL_EXIT=1

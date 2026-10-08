@@ -109,7 +109,17 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "dkw_likelihood_hasDerivAt",
              "dkw_likelihood_derivative_hasDerivAt",
              "dkw_likelihood_stationary_value_lower",
-             "dkw_sharp_likelihood_barrier"):
+             "dkw_sharp_likelihood_barrier",
+             "finite_bin_atom_card",
+             "finite_bin_atom_likelihood_identity",
+             "finite_bin_terminal_sum",
+             "finite_bin_reveal_count",
+             "finite_bin_invariant_terminal_sum",
+             "finite_bin_likelihood_maximal",
+             "finite_bin_deviation_likelihood",
+             "finite_bin_upper_DKW",
+             "finite_bin_reflect_CDF",
+             "finite_bin_two_sided_DKW"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' "
                      rf"(?:depends on axioms:|does not depend on any axioms)", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")

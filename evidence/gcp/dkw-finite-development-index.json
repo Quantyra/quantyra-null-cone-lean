@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "run": "space-dkw-bins-20261008T023359Z-fe3477",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-bins-20261008T023917Z-1ebe3c",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-bins-20261008T024131Z-8b5f96",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-finite-20261008T024444Z-fa68ca",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-finite-20261008T024810Z-795bf4",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-finite-acceptance-20261008T025036Z-645562",
+      "kind": "finite-counting-acceptance",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "task_started_instance_in_run": "space-dkw-bins-20261008T023359Z-fe3477",
+  "scope": "sharp uniform finite-profile counting-law tails; continuous and actual-K DKW remain open",
+  "instance_final_state": "TERMINATED"
+}

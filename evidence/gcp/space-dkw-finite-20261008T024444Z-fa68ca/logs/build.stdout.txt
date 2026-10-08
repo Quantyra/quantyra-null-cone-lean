@@ -1,0 +1,90 @@
+ℹ [2122/2134] Replayed QuantyraNullCone.DKWBarrier
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2123/2134] Replayed QuantyraNullCone.DKWRoots
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2124/2134] Replayed QuantyraNullCone.DKWPinsker
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2126/2134] Replayed QuantyraNullCone.DKWDifferential
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2130/2134] Replayed QuantyraNullCone.DKWLikelihood
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2132/2134] Built QuantyraNullCone.DKWBins (2.8s)
+info: QuantyraNullCone/DKWBins.lean:167:0: 'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBins.lean:168:0: 'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2133/2134] Built QuantyraNullCone.DKWMaximal (2.5s)
+info: QuantyraNullCone/DKWMaximal.lean:183:0: 'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2134/2134] Building QuantyraNullCone.DKWFiniteCDF (3.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/QuantyraNullCone/DKWFiniteCDF.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/.lake/build/lib/lean/QuantyraNullCone/DKWFiniteCDF.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/.lake/build/lib/lean/QuantyraNullCone/DKWFiniteCDF.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/.lake/build/ir/QuantyraNullCone/DKWFiniteCDF.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-finite-20261008T024444Z-fa68ca/source/.lake/build/ir/QuantyraNullCone/DKWFiniteCDF.setup.json --json
+error: QuantyraNullCone/DKWFiniteCDF.lean:49:17: don't know how to synthesize implicit argument `b`
+  @And.right (0 ≤ finiteBinCDF x ?m.152) (finiteBinCDF x ?m.152 ≤ 1) (finite_bin_CDF_bounds hn x)
+context:
+n q k : ℕ
+e lambda : ℝ
+hn : 0 < n
+hq : 0 < q
+hk : 0 < k
+hL : 0 < lambda
+x : BinProfile n q
+hBarrier : ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ dkwLikelihoodBarrier e lambda t
+hBad : e < finiteBinCDF x k - ↑k / ↑q
+hnR : 0 < ↑n
+hqR : 0 < ↑q
+hkR : 0 < ↑k
+t : ℝ := ⋯
+ht : 0 < t
+⊢ Prop
+error: QuantyraNullCone/DKWFiniteCDF.lean:49:17: don't know how to synthesize implicit argument `a`
+  @And.right (0 ≤ finiteBinCDF x ?m.152) (finiteBinCDF x ?m.152 ≤ 1) (finite_bin_CDF_bounds hn x)
+context:
+n q k : ℕ
+e lambda : ℝ
+hn : 0 < n
+hq : 0 < q
+hk : 0 < k
+hL : 0 < lambda
+x : BinProfile n q
+hBarrier : ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ dkwLikelihoodBarrier e lambda t
+hBad : e < finiteBinCDF x k - ↑k / ↑q
+hnR : 0 < ↑n
+hqR : 0 < ↑q
+hkR : 0 < ↑k
+t : ℝ := ⋯
+ht : 0 < t
+⊢ Prop
+error: QuantyraNullCone/DKWFiniteCDF.lean:49:18: don't know how to synthesize implicit argument `k`
+  @finite_bin_CDF_bounds n q ?m.152 hn x
+context:
+n q k : ℕ
+e lambda : ℝ
+hn : 0 < n
+hq : 0 < q
+hk : 0 < k
+hL : 0 < lambda
+x : BinProfile n q
+hBarrier : ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ dkwLikelihoodBarrier e lambda t
+hBad : e < finiteBinCDF x k - ↑k / ↑q
+hnR : 0 < ↑n
+hqR : 0 < ↑q
+hkR : 0 < ↑k
+t : ℝ := ⋯
+ht : 0 < t
+⊢ ℕ
+error: QuantyraNullCone/DKWFiniteCDF.lean:49:9: failed to infer `have` declaration type
+error: QuantyraNullCone/DKWFiniteCDF.lean:95:29: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  fun a => Finset.decidableExistsAndFinsetCoe
+inferred
+  fun a => Classical.propDecidable (∃ k ∈ Finset.Icc 0 q, e < finiteBinCDF a k - ↑k / ↑q)
+info: QuantyraNullCone/DKWFiniteCDF.lean:117:0: 'QuantyraNullCone.finite_bin_deviation_likelihood' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteCDF.lean:118:0: 'QuantyraNullCone.finite_bin_upper_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWFiniteCDF

@@ -1,0 +1,28 @@
+1
+  @finiteBinFirstCross n (?m.12 lambda B) lambda B
+context:
+n q : ℕ
+lambda B : ℝ
+⊢ ℕ
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+error: QuantyraNullCone/DKWMaximal.lean:160:8: Type mismatch
+  Eq.symm (Finset.sum_biUnion hDis)
+has type
+  ∑ x ∈ Finset.Icc 1 q, ∑ i ∈ finiteBinFirstCross lambda B x, ?m.95 i =
+    ∑ x ∈ (Finset.Icc 1 q).biUnion (finiteBinFirstCross lambda B), ?m.95 x
+but is expected to have type
+  ∑ _x ∈ E, B = ∑ k ∈ Finset.Icc 1 q, ∑ _x ∈ P k, B
+error: QuantyraNullCone/DKWMaximal.lean:173:53: Type mismatch
+  Finset.sum_biUnion hDis
+has type
+  ∑ x ∈ (Finset.Icc 1 q).biUnion (finiteBinFirstCross lambda B), ?m.168 x =
+    ∑ x ∈ Finset.Icc 1 q, ∑ i ∈ finiteBinFirstCross lambda B x, ?m.168 i
+but is expected to have type
+  ∑ k ∈ Finset.Icc 1 q, ∑ x ∈ P k, finiteBinLikelihood lambda 1 x = ∑ x ∈ E, finiteBinLikelihood lambda 1 x
+info: QuantyraNullCone/DKWMaximal.lean:183:0: 'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWMaximal
+error: build failed
+TERMINAL_EXIT=1

@@ -26,7 +26,7 @@ import QuantyraNullCone.ImprovedInverse
 import QuantyraNullCone.ProperTime
 import QuantyraNullCone.FiniteFoundation
 import QuantyraNullCone.FiniteFixtures
-import QuantyraNullCone.DKWLikelihood
+import QuantyraNullCone.DKWFiniteTail
 
 /-!
 Quantyra finite-order reconstruction.
@@ -43,6 +43,7 @@ Iid exchangeability and the exact labeled/unlabeled TV equivalence are proved.
 The logarithmic-grid all-N inverse and actual absolutely continuous proper-time
 comparison are proved, including one global orientation for every endpoint pair.
 Finite-data forcing/rank, LP residual checking, rounding and conditional CDF
-foundations are proved. The sharp-DKW analytic likelihood barrier is a separate
-supporting target; DKW coverage and cell/point/histogram guarantees remain open.
+foundations and the sharp-DKW analytic likelihood barrier are proved. Finite-bin
+likelihood, maximal and sharp counting-law tail bounds are proved separately;
+continuous-sample DKW coverage and cell/point/histogram guarantees remain open.
 -/

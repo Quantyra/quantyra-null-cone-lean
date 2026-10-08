@@ -1,6 +1,6 @@
 # Remaining sharp-DKW finite probability contract
 
-S024 implementation contract after [analytic acceptance](dkw-analytic-certification.md). These probability statements are not yet Lean proved. The target remains the actual sharp two-sided `2*exp(-2*n*e^2)` under iid uniform sampling, and then the existing original-K split-DKW coverage. A weaker union bound is not a replacement.
+S024 implementation contract after [analytic acceptance](dkw-analytic-certification.md). The finite-bin counting-law and first-crossing statements below now have [exact-source GCP acceptance](dkw-finite-certification.md). Uniform continuous quantization, dense-grid and actual-K transport remain unproved. The target remains the actual sharp two-sided `2*exp(-2*n*e^2)` under iid uniform sampling, and then the existing original-K split-DKW coverage. A weaker union bound is not a replacement.
 
 ## Finite bins and likelihood
 
@@ -34,4 +34,4 @@ For dyadic q, prove the nested grid events have the same probability bound. Thei
 
 Finally transport each actual-K coordinate sample vector to the uniform product law using the accepted marginal and iid identities. The two coordinates of a sampled point may be dependent. Combine their sharp tails with the actual joint-grid Hoeffding union, rational exponential/ceiling allocations, and the proved conditional all-cutoff CDF theorem. This must match the current executable calibration and report representation.
 
-Remaining to-do list: all finite probability/transport contracts above; density cell/point/histogram/report suite; final S024 acceptance; S025.
+Remaining to-do list: continuous uniform quantization/law, dense-grid and actual-K coverage/calibration transport; density cell/point/histogram/report suite; final S024 acceptance; S025.

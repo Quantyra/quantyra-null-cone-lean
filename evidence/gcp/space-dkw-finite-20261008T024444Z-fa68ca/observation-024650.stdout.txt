@@ -1,0 +1,28 @@
+1
+n q k : ℕ
+e lambda : ℝ
+hn : 0 < n
+hq : 0 < q
+hk : 0 < k
+hL : 0 < lambda
+x : BinProfile n q
+hBarrier : ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ dkwLikelihoodBarrier e lambda t
+hBad : e < finiteBinCDF x k - ↑k / ↑q
+hnR : 0 < ↑n
+hqR : 0 < ↑q
+hkR : 0 < ↑k
+t : ℝ := ⋯
+ht : 0 < t
+⊢ ℕ
+error: QuantyraNullCone/DKWFiniteCDF.lean:49:9: failed to infer `have` declaration type
+error: QuantyraNullCone/DKWFiniteCDF.lean:95:29: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  fun a => Finset.decidableExistsAndFinsetCoe
+inferred
+  fun a => Classical.propDecidable (∃ k ∈ Finset.Icc 0 q, e < finiteBinCDF a k - ↑k / ↑q)
+info: QuantyraNullCone/DKWFiniteCDF.lean:117:0: 'QuantyraNullCone.finite_bin_deviation_likelihood' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteCDF.lean:118:0: 'QuantyraNullCone.finite_bin_upper_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWFiniteCDF
+error: build failed
+TERMINAL_EXIT=1

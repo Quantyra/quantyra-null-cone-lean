@@ -23,6 +23,7 @@ import QuantyraNullCone.QuotientTV
 import QuantyraNullCone.Unlabeled
 import QuantyraNullCone.LogGridRate
 import QuantyraNullCone.ImprovedInverse
+import QuantyraNullCone.ProperTime
 
 /-!
 Quantyra finite-order reconstruction.
@@ -36,5 +37,6 @@ The order-only selector and finite-law TV argument prove CDF orbit separation.
 The original all-N coefficient inverse bound and all-law identifiability are proved
 for both actual labeled directed-order laws and their unlabeled isomorphism classes.
 Iid exchangeability and the exact labeled/unlabeled TV equivalence are proved.
-The separately selectable proper-time consequence retains its prose scope status.
+The logarithmic-grid all-N inverse and actual absolutely continuous proper-time
+comparison are proved, including one global orientation for every endpoint pair.
 -/

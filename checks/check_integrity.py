@@ -72,7 +72,19 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "InDensityClass.logarithmic_orderCDFGood_probability",
              "InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV",
              "logarithmic_small_sample_lower", "InDensityClass.full_inverse_logarithmic",
-             "InDensityClass.full_inverse_logarithmic_unlabeled"):
+             "InDensityClass.full_inverse_logarithmic_unlabeled",
+             "sqrt_coefficient_lipschitz",
+             "FutureCurve.integral_derivU",
+             "FutureCurve.integral_derivV",
+             "FutureCurve.integral_weight_cauchy_schwarz",
+             "FutureCurve.integrable_length",
+             "FutureCurve.length_difference",
+             "timeSeparation_empty",
+             "InDensityClass.timeSeparation_difference",
+             "InDensityClass.timeSeparation_transpose",
+             "InDensityClass.proper_time_conformalDistance",
+             "InDensityClass.proper_time_inverse_unlabeled",
+             "InDensityClass.proper_time_logarithmic_unlabeled"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' depends on axioms:", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")
 print("PASS: proof sources and final Lean dependency reports")

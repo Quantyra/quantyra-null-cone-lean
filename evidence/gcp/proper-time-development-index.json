@@ -1,0 +1,31 @@
+{
+  "runs": [
+    {
+      "run": "space-propertime-20261008T001827Z-fbe2c9",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-propertime-20261008T002405Z-f2ff54",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-propertime-20261008T002723Z-5b6478",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-propertime-20261008T002945Z-e840ea",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-propertime-acceptance-20261008T003208Z-4a6684",
+      "kind": "acceptance",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "task_started_instance_in_run": "space-propertime-20261008T001827Z-fbe2c9"
+}

@@ -1,0 +1,28 @@
+1
+case h
+p q : DiamondPoint
+c : FutureCurve p q
+rho : DiamondPoint → ℝ
+hR : InDensityClass rho
+t : ℝ
+ht : t ∈ Icc 0 1
+hb : rho (c.point t) ≤ 3 / 2
+hCoef : √(2 * rho (c.point t)) ≤ √3
+⊢ |((fun t => √(2 * rho (c.point t))) * c.weight) t| ≤ √3 * c.weight t
+info: QuantyraNullCone/ProperTime.lean:402:0: 'QuantyraNullCone.FutureCurve.integral_derivU' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:403:0: 'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:404:0: 'QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:405:0: 'QuantyraNullCone.FutureCurve.length_difference' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:406:0: 'QuantyraNullCone.InDensityClass.proper_time_conformalDistance' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:407:0: 'QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ProperTime
+error: build failed
+TERMINAL_EXIT=1

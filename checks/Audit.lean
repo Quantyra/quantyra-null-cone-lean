@@ -165,3 +165,38 @@ example {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
       130 * ((Real.log (N : ℝ) / N) ^ (1 / 6 : ℝ) +
         QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N) :=
   hR.full_inverse_logarithmic_unlabeled hS hN
+
+#check QuantyraNullCone.sqrt_coefficient_lipschitz
+#check QuantyraNullCone.FutureCurve.integral_derivU
+#check QuantyraNullCone.FutureCurve.integral_derivV
+#check QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz
+#check QuantyraNullCone.FutureCurve.integrable_length
+#check QuantyraNullCone.FutureCurve.length_difference
+#check QuantyraNullCone.timeSeparation_empty
+#check QuantyraNullCone.InDensityClass.timeSeparation_difference
+#check QuantyraNullCone.InDensityClass.timeSeparation_transpose
+#check QuantyraNullCone.InDensityClass.proper_time_conformalDistance
+#check QuantyraNullCone.InDensityClass.proper_time_inverse_unlabeled
+#check QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled
+#print axioms QuantyraNullCone.sqrt_coefficient_lipschitz
+#print axioms QuantyraNullCone.FutureCurve.integral_derivU
+#print axioms QuantyraNullCone.FutureCurve.integral_derivV
+#print axioms QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz
+#print axioms QuantyraNullCone.FutureCurve.integrable_length
+#print axioms QuantyraNullCone.FutureCurve.length_difference
+#print axioms QuantyraNullCone.timeSeparation_empty
+#print axioms QuantyraNullCone.InDensityClass.timeSeparation_difference
+#print axioms QuantyraNullCone.InDensityClass.timeSeparation_transpose
+#print axioms QuantyraNullCone.InDensityClass.proper_time_conformalDistance
+#print axioms QuantyraNullCone.InDensityClass.proper_time_inverse_unlabeled
+#print axioms QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled
+
+example {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+    (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma)
+    {N : ℕ} (hN : 2 ≤ N) :
+    ∃ swap : Bool, ∀ p q : QuantyraNullCone.DiamondPoint,
+      |QuantyraNullCone.timeSeparation rho p q - QuantyraNullCone.timeSeparation sigma
+        (QuantyraNullCone.alignedPoint swap p) (QuantyraNullCone.alignedPoint swap q)| ≤
+      130 * ((Real.log (N : ℝ) / N) ^ (1 / 6 : ℝ) +
+        QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N) :=
+  hR.proper_time_logarithmic_unlabeled hS hN

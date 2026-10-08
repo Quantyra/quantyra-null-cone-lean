@@ -1,0 +1,28 @@
+1
+a b : ℝ
+ha : 1 / 2 ≤ a
+hb : 1 / 2 ≤ b
+ha0 : 0 ≤ 2 * a
+hb0 : 0 ≤ 2 * b
+⊢ 0 ≤ ?m.125
+error: QuantyraNullCone/ProperTime.lean:64:4: No goals to be solved
+error: QuantyraNullCone/ProperTime.lean:66:39: Invalid field `mpr`: The environment does not contain `Function.mpr`, so it is not possible to project the field `mpr` from an expression
+  Real.le_sqrt ?m.144
+of type
+  0 ≤ ?m.143 → (?m.142 ≤ √?m.143 ↔ ?m.142 ^ 2 ≤ ?m.143)
+error: QuantyraNullCone/ProperTime.lean:66:25: unsolved goals
+a b : ℝ
+ha : 1 / 2 ≤ a
+hb : 1 / 2 ≤ b
+ha0 : 0 ≤ 2 * a
+hb0 : 0 ≤ 2 * b
+ha1 : 1 ≤ √(2 * a)
+⊢ 0 ≤ ?m.142
+error: QuantyraNullCone/ProperTime.lean:67:4: No goals to be solved
+info: QuantyraNullCone/ProperTime.lean:78:0: 'QuantyraNullCone.FutureCurve.integral_derivU' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:79:0: 'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ProperTime
+error: build failed
+TERMINAL_EXIT=1

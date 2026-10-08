@@ -1,6 +1,6 @@
 # Remaining Lean certification targets
 
-2026-10-07. The author asks whether the remaining prose results should be Lean certified. Recommendation: yes, with the published paper first. All four stories are selected for execution. S022 now has accepted exact-source GCP proofs; S023-S025 remain uncertified. Original inverse/identifiability and label-law equivalence retain accepted GCP verification at `b7d762acc9c10ca881f8366f545f3998b0528448`; manuscript 0.3.1 correctly identifies the remaining prose results.
+2026-10-07. The author asks whether the remaining prose results should be Lean certified. Recommendation: yes, with the published paper first. All four stories are selected for execution. S022 and S023 now have accepted exact-source GCP proofs; S024-S025 remain uncertified. Original inverse/identifiability and label-law equivalence retain accepted GCP verification at `b7d762acc9c10ca881f8366f545f3998b0528448`; manuscript 0.3.1 correctly identifies the remaining prose results.
 
 ## 1. Logarithmic-grid inverse: S022
 
@@ -32,4 +32,4 @@ All development/acceptance Lean, Lake and transitive Lean commands execute on GC
 
 Finish each story with focused verified commits/pushes and accurate scope documents. Existing DOI artifacts remain immutable; a later manuscript version can advertise enlarged formal coverage after actual acceptance. Certification establishes correctness of encoded statements, not originality, optimality, practical inference or new physics. No specialist-review/adoption gate applies.
 
-Remaining to-do list: deliver accepted S022; execute actual proper-time S023, finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md).
+Remaining to-do list: deliver accepted S023; execute finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).

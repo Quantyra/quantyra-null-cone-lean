@@ -1,0 +1,7 @@
+{
+  "run": "space-propertime-20261008T002405Z-f2ff54",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.ProperTime",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

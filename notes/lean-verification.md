@@ -127,3 +127,9 @@ Remaining to-do list: none for S012-S014.
 The [S022 acceptance record](logarithmic-certification.md) supersedes earlier prose-only descriptions of the logarithmic bound for current software. Exact-source GCP run `space-loggrid-acceptance-20261008T000726Z-1e4d11` passed the 2909-job root build and 78 exact-type/axiom audits with no warnings or added axioms. Original proofs and published artifacts remain preserved.
 
 Remaining to-do list: deliver S022 and complete S023-S025.
+
+## S023 actual proper-time acceptance
+
+[Proper-time certification](proper-time-certification.md) records exact-source GCP run `space-propertime-acceptance-20261008T003208Z-4a6684`: 2910 root-build jobs, 90 exact-type/axiom audits, exit zero, no warnings or added axioms. Actual AC curves, FTC derivative integrals, Cauchy-Schwarz, length/supremum comparison and global transpose transport are proved.
+
+Remaining to-do list: deliver S023; complete S024-S025.

@@ -20,11 +20,11 @@ references:
       - family-names: Fredriksen
         given-names: Daniel Eric
         affiliation: "Quantyra Inc"
-    doi: "10.5281/zenodo.23225029"
-    url: "https://zenodo.org/records/23225029"
-    version: "0.3.1"
+    doi: "10.5281/zenodo.23247720"
+    url: "https://zenodo.org/records/23247720"
+    version: "0.4.0"
     year: 2026
-    notes: "CC-BY-4.0 preprint. Original inverse theorem, identifiability and labeled/unlabeled law equivalence are Lean verified at source commit b7d762acc9c10ca881f8366f545f3998b0528448; logarithmic-grid improvement and proper-time comparison remain prose proofs."
+    notes: "CC-BY-4.0 preprint. Both inverse rates, identifiability, labeled/unlabeled law equivalence and actual absolutely continuous proper-time comparison are Lean verified at proof revision 74c1f743d085c63b45ac2bf30008ad5d29b98fbc; exact-source acceptance ran on GCP. Separate finite-data and 2+1 modules are summarized with their limitations."
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23202762"

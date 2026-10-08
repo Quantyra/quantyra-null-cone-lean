@@ -1,0 +1,68 @@
+{
+  "checked_utc": "2026-10-08T20:13:14.651631+00:00",
+  "doi": "10.5281/zenodo.23247720",
+  "doi_http_status": 200,
+  "doi_final_url": "https://zenodo.org/records/23247720",
+  "direct_pdf_url": "https://zenodo.org/records/23247720/files/finite-causal-order-reconstruction.pdf?download=1",
+  "direct_pdf_http_status": 200,
+  "direct_pdf_sha256": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+  "independent_public_record_and_download_checks": {
+    "23247720": {
+      "version": "0.4.0",
+      "files": {
+        "finite-causal-order-reconstruction.pdf": {
+          "sha256": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+          "zenodo_checksum": "md5:eabc2c1a37fa196492229a4329307592"
+        },
+        "finite-causal-order-reconstruction-v0.4.0-source.zip": {
+          "sha256": "4647f513f1e205049f06469a18716a51c676b11dc3f842ca7d26ba01c1164ded",
+          "zenodo_checksum": "md5:c61bdca9360e38d0ada3bb752aca8806"
+        }
+      },
+      "matched_frozen_receipt": true
+    },
+    "23225029": {
+      "version": "0.3.1",
+      "files": {
+        "finite-causal-order-reconstruction.pdf": {
+          "sha256": "79431d68fd6a45c297c060557a44bb43ddcef86c5fe0a081a4ce05ee27b71639",
+          "zenodo_checksum": "md5:fdaec19c5c59227d019150f721dca3d5"
+        },
+        "finite-causal-order-reconstruction-v0.3.1-source.zip": {
+          "sha256": "a830b8968d2abc174fe24a096fd86b1b25a0e73af85b7826c99967f37bf11bf4",
+          "zenodo_checksum": "md5:242c961a6275a72cb2488b8bb1edbdee"
+        }
+      },
+      "matched_frozen_receipt": true
+    },
+    "23214579": {
+      "version": "0.3.0",
+      "files": {
+        "finite-causal-order-reconstruction.pdf": {
+          "sha256": "8abd7fb702dc235a6cfaafc0e8534b396bf380984e401d99fece6afafc2a4c5f",
+          "zenodo_checksum": "md5:6916b182e702f2365fc3975e70aab149"
+        },
+        "finite-causal-order-reconstruction-v0.3.0-source.zip": {
+          "sha256": "09eed732539a559baf36504b0f75a23496ca9ac45a494d1385d042fe9176a9e1",
+          "zenodo_checksum": "md5:b721db9d71ff97e5e91d133783ba6122"
+        }
+      },
+      "matched_frozen_receipt": true
+    },
+    "23206773": {
+      "version": "0.2.0",
+      "files": {
+        "finite-causal-order-reconstruction-v0.2.0-source.zip": {
+          "sha256": "e63d18e2e75f05df181eeeda38aab623c23922657d1f277963725eafb86d66d2",
+          "zenodo_checksum": "md5:40d9a73b45d8da10436c66e1db3746ec"
+        },
+        "finite-causal-order-reconstruction.pdf": {
+          "sha256": "c8395d0cb0c55da8257cdd3ffe85c8d1b66c11e1a74e39d7ca6de645c52db463",
+          "zenodo_checksum": "md5:62377171ce37311eeff71530eb364d41"
+        }
+      },
+      "matched_frozen_receipt": true
+    }
+  },
+  "software_download_verified_in_publication_receipt": true
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## Manuscript 0.4.0 - 2026-10-08
+
+- Published the post-certification revision at [10.5281/zenodo.23247720](https://doi.org/10.5281/zenodo.23247720) in the existing manuscript family.
+- Updated formal coverage for both inverse rates and actual AC-curve proper time, with exact 295-export GCP acceptance provenance and bounded summaries of separate modules.
+- Preserved all seven mathematical statements, Winkler attribution, provisional originality, decentralized informal review, earlier deposits and the unpublished review candidate.
+- Reviewed all ten pages and verified public metadata, DOI resolution and downloaded PDF/source hashes.
+
 ## Manuscript 0.3.0 - 2026-10-07
 
 - Updated abstract, theorem commentary and formal-verification section for the completed original all-N inverse theorem and all-size identifiability, including labeled/unlabeled directed-order laws.

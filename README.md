@@ -8,7 +8,7 @@ Lean 4 proof software and a preprint by **Daniel Eric Fredriksen, Quantyra Inc.*
 
 [Research and exact-proof navigation](RESEARCH.md) · [Contribute an error, prior-work report or test](CONTRIBUTING.md) · [Observed community evidence](notes/community-evidence.md) · [Finite-data CLI](tools/FINITE_DATA.md).
 
-**Review the [unpublished 0.4.0 PDF](manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.pdf)** reflecting completed certification, or read the [published 0.3.1 PDF](manuscript/deposit/v0.3.1/finite-causal-order-reconstruction.pdf). [Revision evidence](manuscript/revisions/v0.4.0/README.md) | [Paper portfolio](notes/manuscript-portfolio.md) | [Integrity](INTEGRITY.md). Root-level manuscript files preserve the historical 0.3.0 baseline.
+**Read the [published 0.4.0 PDF](https://zenodo.org/records/23247720/files/finite-causal-order-reconstruction.pdf?download=1)** reflecting completed certification. [DOI](https://doi.org/10.5281/zenodo.23247720) | [Source and publication evidence](manuscript/deposit/v0.4.0/README.md) | [Historical review candidate](manuscript/revisions/v0.4.0/README.md) | [Paper portfolio](notes/manuscript-portfolio.md) | [Integrity](INTEGRITY.md). Root-level manuscript files preserve the historical 0.3.0 baseline.
 
 ## Result and verification scope
 
@@ -62,7 +62,9 @@ Lean is pinned to **4.30.0**, mathlib to **c5ea00351c28e24afc9f0f84379aa41082b11
 
 ## Citation, archive and licenses
 
-Latest manuscript: **[0.3.1](https://doi.org/10.5281/zenodo.23225029)**, the literature-only revision crediting Winkler and narrowing the candidate contribution. [PDF](manuscript/deposit/v0.3.1/finite-causal-order-reconstruction.pdf), [source/package](manuscript/deposit/v0.3.1/README.md) and [verified publication receipt](manuscript/deposit/v0.3.1/published-record.json). Seven mathematical statements and accepted GCP proofs are unchanged; finite-data work is separate.
+Latest manuscript: **[0.4.0](https://doi.org/10.5281/zenodo.23247720)** documents both certified inverse rates and the actual AC-curve proper-time comparison. [PDF](manuscript/deposit/v0.4.0/finite-causal-order-reconstruction.pdf), [source/package](manuscript/deposit/v0.4.0/README.md), [verified publication receipt](manuscript/deposit/v0.4.0/published-record.json) and [DOI/download check](manuscript/deposit/v0.4.0/resolution-check.json). All seven mathematical statements remain unchanged from 0.3.1. Exact accepted proof revision `74c1f743d085c63b45ac2bf30008ad5d29b98fbc` has 295 selected GCP audits across the library; finite-data and genuine 2+1 follow-up manuscripts remain separate.
+
+Historical manuscript **[0.3.1](https://doi.org/10.5281/zenodo.23225029)** is the preserved literature revision crediting Winkler and narrowing the candidate contribution. [Frozen package and receipt](manuscript/deposit/v0.3.1/README.md).
 
 Historical manuscript version **0.3.0** updates the verification scope to cover the original inverse theorem, identifiability and actual labeled/unlabeled laws. [Verified publication receipt](manuscript/deposit/v0.3.0/published-record.json); published manuscript DOI [10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579). Its exact proof/evidence revision is [`b7d762acc9c10ca881f8366f545f3998b0528448`](https://github.com/Quantyra/quantyra-null-cone-lean/tree/b7d762acc9c10ca881f8366f545f3998b0528448).
 

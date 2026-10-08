@@ -1,6 +1,6 @@
 # Proofs and research navigation
 
-Current unpublished manuscript candidate: [0.4.0 PDF](manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.pdf), reflecting completed certification; [review evidence](manuscript/revisions/v0.4.0/README.md) and [separate-paper decisions](notes/manuscript-portfolio.md). Latest published version remains 0.3.1. Older manuscript entries below identify historical artifacts.
+Current published manuscript: [0.4.0 PDF](https://zenodo.org/records/23247720/files/finite-causal-order-reconstruction.pdf?download=1), [DOI](https://doi.org/10.5281/zenodo.23247720), [publication evidence](manuscript/deposit/v0.4.0/README.md) and [separate-paper decisions](notes/manuscript-portfolio.md). Both inverse rates and actual AC-curve proper time are certified. The [review candidate](manuscript/revisions/v0.4.0/README.md) and older manuscript entries identify preserved historical artifacts.
 
 - Published manuscript [0.3.0, DOI 10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579); preserved [PDF](manuscript/finite-causal-order-reconstruction.pdf), [TeX](manuscript/finite-causal-order-reconstruction.tex) and [publication receipt](manuscript/deposit/v0.3.0/published-record.json).
 - [Unpublished literature revision](manuscript/working/README.md) credits the full Winkler comparison; it has no separate DOI.

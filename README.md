@@ -4,7 +4,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23202762.svg)](https://doi.org/10.5281/zenodo.23202762)
 
-Lean 4 proof software and a preprint by **Daniel Eric Fredriksen, Quantyra Inc.** Developed with OpenAI Codex assistance under the author's research direction.
+Lean 4 proof software and two published preprints by **Daniel Eric Fredriksen, Quantyra Inc.** Developed with OpenAI Codex assistance under the author's research direction.
 
 [Research and exact-proof navigation](RESEARCH.md) · [Contribute an error, prior-work report or test](CONTRIBUTING.md) · [Observed community evidence](notes/community-evidence.md) · [Finite-data CLI](tools/FINITE_DATA.md).
 
@@ -12,7 +12,7 @@ Lean 4 proof software and a preprint by **Daniel Eric Fredriksen, Quantyra Inc.*
 
 ## Result and verification scope
 
-The separate **[2+1 coordinate-gauge manuscript](manuscript/conformal-gauge/conformal-gauge-counterexample.pdf)** is now prepared as unpublished version 0.1.0. It gives the complete construction and proofs, an explicit metric isometry and a comparison with established conformal-flow and reconstruction results. [Source, formal map and review evidence](manuscript/conformal-gauge/README.md). It has no DOI yet.
+The separate **[2+1 coordinate-gauge paper](https://zenodo.org/records/23249816/files/conformal-gauge-counterexample.pdf?download=1)** is published as version 0.1.0, [DOI 10.5281/zenodo.23249816](https://doi.org/10.5281/zenodo.23249816), in its own manuscript family. It gives the complete construction and proofs, an explicit metric isometry and a comparison with established conformal-flow and reconstruction results. [Source, formal map and review evidence](manuscript/conformal-gauge/README.md) | [Publication verification](manuscript/conformal-gauge/PUBLICATION.md). The two papers share this proof repository.
 
 The original inverse estimate and all-size identifiability are **Lean verified for actual unlabeled directed-order laws**:
 

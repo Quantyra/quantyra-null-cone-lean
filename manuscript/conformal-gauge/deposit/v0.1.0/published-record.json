@@ -1,0 +1,70 @@
+{
+  "id": 23249816,
+  "doi": "10.5281/zenodo.23249816",
+  "conceptdoi": "10.5281/zenodo.23249815",
+  "url": "https://zenodo.org/records/23249816",
+  "version": "0.1.0",
+  "source_commit": "7a263dfc82d3d8b4519620009e2945c4395c27b9",
+  "proof_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "reviewed_draft_commit": "3b35dc99847a52ed9133557ef2845cf62020640a",
+  "independent_manuscript_family_verified": true,
+  "verified_utc": "2026-10-08T22:37:12.845809+00:00",
+  "files": {
+    "conformal-gauge-counterexample.pdf": {
+      "sha256": "d2b3b36dfd68036be9468f76844a98c8a2627271ca602ee3d445cd6cd7b50a29",
+      "zenodo_checksum": "md5:89cbac005258f8d316d435af49e6d450"
+    },
+    "conformal-gauge-counterexample-v0.1.0-source.zip": {
+      "sha256": "a6f26f3aecaaadcd3d28efdea1eaea625dfc83a204fd926fd89b79306aac4112",
+      "zenodo_checksum": "md5:bb0a56a1eaffdb4d5c116d7e9d7a186e"
+    }
+  },
+  "prior_manuscript_and_software_downloads_unchanged": {
+    "23206773": {
+      "finite-causal-order-reconstruction-v0.2.0-source.zip": {
+        "sha256": "e63d18e2e75f05df181eeeda38aab623c23922657d1f277963725eafb86d66d2",
+        "zenodo_checksum": "md5:40d9a73b45d8da10436c66e1db3746ec"
+      },
+      "finite-causal-order-reconstruction.pdf": {
+        "sha256": "c8395d0cb0c55da8257cdd3ffe85c8d1b66c11e1a74e39d7ca6de645c52db463",
+        "zenodo_checksum": "md5:62377171ce37311eeff71530eb364d41"
+      }
+    },
+    "23214579": {
+      "finite-causal-order-reconstruction.pdf": {
+        "sha256": "8abd7fb702dc235a6cfaafc0e8534b396bf380984e401d99fece6afafc2a4c5f",
+        "zenodo_checksum": "md5:6916b182e702f2365fc3975e70aab149"
+      },
+      "finite-causal-order-reconstruction-v0.3.0-source.zip": {
+        "sha256": "09eed732539a559baf36504b0f75a23496ca9ac45a494d1385d042fe9176a9e1",
+        "zenodo_checksum": "md5:b721db9d71ff97e5e91d133783ba6122"
+      }
+    },
+    "23225029": {
+      "finite-causal-order-reconstruction.pdf": {
+        "sha256": "79431d68fd6a45c297c060557a44bb43ddcef86c5fe0a081a4ce05ee27b71639",
+        "zenodo_checksum": "md5:fdaec19c5c59227d019150f721dca3d5"
+      },
+      "finite-causal-order-reconstruction-v0.3.1-source.zip": {
+        "sha256": "a830b8968d2abc174fe24a096fd86b1b25a0e73af85b7826c99967f37bf11bf4",
+        "zenodo_checksum": "md5:242c961a6275a72cb2488b8bb1edbdee"
+      }
+    },
+    "23247720": {
+      "finite-causal-order-reconstruction.pdf": {
+        "sha256": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+        "zenodo_checksum": "md5:eabc2c1a37fa196492229a4329307592"
+      },
+      "finite-causal-order-reconstruction-v0.4.0-source.zip": {
+        "sha256": "4647f513f1e205049f06469a18716a51c676b11dc3f842ca7d26ba01c1164ded",
+        "zenodo_checksum": "md5:c61bdca9360e38d0ada3bb752aca8806"
+      }
+    },
+    "23202763": {
+      "Quantyra/quantyra-null-cone-lean-v0.1.0.zip": {
+        "sha256": "d5d7fa278d84d02d7243764ac6c49b0f009dec0908a7a40669f1bef263f13df2",
+        "zenodo_checksum": "md5:6620e07d65b5f4e8b6c1f4e5fe54879d"
+      }
+    }
+  }
+}

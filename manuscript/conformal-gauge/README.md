@@ -1,6 +1,8 @@
 # A certified coordinate-gauge obstruction in a 2+1 diamond
 
-Separate manuscript by Daniel Eric Fredriksen, Quantyra Inc., version 0.1.0, 8 October 2026. **Unpublished; no DOI assigned.** [Read the PDF](conformal-gauge-counterexample.pdf) or [TeX](conformal-gauge-counterexample.tex). This is a second paper, distinct from the [published reconstruction manuscript 0.4.0](https://doi.org/10.5281/zenodo.23247720).
+Separate manuscript by Daniel Eric Fredriksen, Quantyra Inc., version 0.1.0, 8 October 2026. **Published: [10.5281/zenodo.23249816](https://doi.org/10.5281/zenodo.23249816).** [Read the published PDF](https://zenodo.org/records/23249816/files/conformal-gauge-counterexample.pdf?download=1), [final TeX/package](deposit/v0.1.0/README.md) or [publication verification](PUBLICATION.md). This is a second paper with its own DOI/version family, distinct from the [published reconstruction manuscript 0.4.0](https://doi.org/10.5281/zenodo.23247720).
+
+The [original reviewed PDF](conformal-gauge-counterexample.pdf), [TeX](conformal-gauge-counterexample.tex), build logs and `review.json` at this directory level preserve the unpublished S028 preparation snapshot from commit `3b35dc99847a52ed9133557ef2845cf62020640a`. Its review hashes describe that historical snapshot, including the README before this publication-navigation update. The DOI-bearing edition is frozen under `deposit/v0.1.0`; only its title-page status and DOI label differ from the original source.
 
 The explicit example has smooth normalized densities in [1/2,3/2] with Euclidean Lipschitz constant at most two, identical finite directed-order laws and positive coefficient distance modulo spatial O(2). The metrics are nevertheless isometric. The construction uses the established causal-diamond conformal flow. The paper supplies the complete construction and proofs, a bounded primary-source comparison, and exact links to the accepted Lean statements; it claims no new conformal flow, physical nonidentifiability or mathematical priority.
 
@@ -25,4 +27,4 @@ It checks polynomial derivative/Jacobian, inverse, separation and null identitie
 
 All files here are CC-BY-4.0. The proof library is Apache-2.0. OpenAI Codex assistance is disclosed in the manuscript; decentralized informal feedback, use and testing remain the review workflow. Third-party papers were inspected through primary public sources; their full PDFs are not redistributed in this repository.
 
-Remaining to-do list: none for S028 manuscript preparation and review. DOI publication remains a subsequent action.
+Remaining to-do list: none for S028 preparation or S029 publication.

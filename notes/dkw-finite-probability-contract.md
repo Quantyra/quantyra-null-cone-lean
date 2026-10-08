@@ -34,4 +34,12 @@ For dyadic q, prove the nested grid events have the same probability bound. Thei
 
 Finally transport each actual-K coordinate sample vector to the uniform product law using the accepted marginal and iid identities. The two coordinates of a sampled point may be dependent. Combine their sharp tails with the actual joint-grid Hoeffding union, rational exponential/ceiling allocations, and the proved conditional all-cutoff CDF theorem. This must match the current executable calibration and report representation.
 
+## Concrete quantization interface to implement
+
+An executable global bin map can use zero-based value `min(q-1)(Nat.ceil(q*x)-1)` with q>0. Its measurability factors through measurable natural ceiling and a map from the countable natural domain to `Fin q`. On `0<x<=1`, the ceiling lies in 1..q, so clipping is inactive. Prove for every 0<=k<=q that `bin(x).val<k` is equivalent to `x<=k/q`. The positive grid ties are included correctly.
+
+Start with `volume.restrict(Ioc 0 1)` so supported points are positive almost everywhere. Prove its equality with the closed-interval uniform measure by the null endpoint before applying the actual-K marginal transport. Each bin singleton preimage on support is `Ioc(j/q)((j+1)/q)`, with volume 1/q. For the sample product law, its profile singleton preimage is a Cartesian product of those intervals. Product mass and finite singleton summation must give the exact cardinal/q^n identity used in the accepted counting-law theorem.
+
+For the dense limit, define the actual finite-grid sample events at q=2^m. Prove inclusion of each grid in its successor by index k->2k. On supported samples, every strict real-threshold deviation occurs on one sufficiently fine grid: use empirical monotonicity, a bracket of width at most 1/q and the positive gap above e, approaching from above for the upper tail and below for the lower tail. This proves the needed countable-union event identity and measurability before taking its probability. These are still unverified implementation contracts.
+
 Remaining to-do list: continuous uniform quantization/law, dense-grid and actual-K coverage/calibration transport; density cell/point/histogram/report suite; final S024 acceptance; S025.

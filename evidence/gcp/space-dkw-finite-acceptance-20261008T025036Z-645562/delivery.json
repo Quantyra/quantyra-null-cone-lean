@@ -1,0 +1,19 @@
+{
+  "source_commit": "9ffa877a361eef651da8461950e6f73c42aea560",
+  "scope": "sharp finite-grid counting-law tails; continuous/actual-K DKW and S024 suite incomplete",
+  "proof_manuscript_ci": {
+    "run": 37720349215,
+    "result": "success"
+  },
+  "literature_ci": {
+    "run": 37720349200,
+    "result": "success"
+  },
+  "python_ci": {
+    "run": 37720349232,
+    "result": "success"
+  },
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "evidence_closeout_scope": "docs/evidence only; proof/check/config bytes retain exact accepted identities"
+}

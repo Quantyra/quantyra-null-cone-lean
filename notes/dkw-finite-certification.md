@@ -20,4 +20,6 @@ The task-started VM was verified TERMINATED after collection and a successful ch
 
 The [remaining probability contract](dkw-finite-probability-contract.md) now starts at quantization and actual uniform measure transport, then the dense-grid limit and actual-K marginal/joint/calibration bridge. These must discharge the empirical accuracy premises in `checked_trimmed_CDF`. Cell-average feasibility, all-point expansion, histogram/fallback and the full executable report representation remain separate open obligations.
 
+Source/evidence commit `9ffa877a361eef651da8461950e6f73c42aea560` is pushed. Supplementary [proof/manuscript CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37720349215), [literature CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37720349200) and [Python CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37720349232) all passed. This closeout changes evidence/docs only; proof/check/config bytes retain the accepted identities.
+
 Remaining to-do list: continuous uniform quantization/law and dense-grid DKW; actual-K coverage/calibration; density/report suite and full S024 acceptance; S025.

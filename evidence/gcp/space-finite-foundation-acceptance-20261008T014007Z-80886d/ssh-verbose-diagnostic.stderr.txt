@@ -1,0 +1,23 @@
+Leaving host lookup to proxy of "compute.8337954477286097405" (for SSH connection)
+Starting local proxy command: \"C:\\Users\\dfred\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\platform\\bundledpython\\python.exe\" \"C:\\Users\\dfred\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\lib\\gcloud.py\" compute start-iap-tunnel \"quantyra-lean-builder-01\" 22 --listen-on-stdin \"--project=quantyra-lean-cert-20260915\" \"--zone=us-central1-a\" \"--verbosity=warning\"
+We claim version: SSH-2.0-PuTTY_Release_0.83
+Connected to compute.8337954477286097405
+proxy: WARNING: 
+proxy: 
+proxy: To increase the performance of the tunnel, consider installing NumPy. For instructions,
+proxy: please see https://cloud.google.com/iap/docs/using-tcp-forwarding#increasing_the_tcp_upload_bandwidth
+proxy: 
+proxy: WARNING: [0] Failed to send all data from [stdin].
+Remote side unexpectedly closed network connection
+FATAL ERROR: Remote side unexpectedly closed network connection
+
+Recommendation: To check for possible causes of SSH connectivity issues and get
+recommendations, rerun the ssh command with the --troubleshoot option.
+
+gcloud compute ssh quantyra-lean-builder-01 --project=quantyra-lean-cert-20260915 --zone=us-central1-a --troubleshoot
+
+Or, to investigate an IAP tunneling issue:
+
+gcloud compute ssh quantyra-lean-builder-01 --project=quantyra-lean-cert-20260915 --zone=us-central1-a --troubleshoot --tunnel-through-iap
+
+ERROR: (gcloud.compute.ssh) [C:\Users\dfred\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\sdk\plink.exe] exited with return code [1].

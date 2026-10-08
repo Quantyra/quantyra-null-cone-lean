@@ -1,0 +1,33 @@
+{
+  "run": "space-finite-foundation-acceptance-20261008T014007Z-80886d",
+  "accepted_source_commit": "e767045b9a4e522c8946fd3c09c6fec1e7e80450",
+  "accepted_root_build_jobs": 2917,
+  "accepted_exports": 107,
+  "source_scope": "partial deterministic S024 foundations",
+  "instance_state": "RUNNING",
+  "shutdown_attempted": false,
+  "shutdown_preflight": "connection closed before remote execution; no process result obtained",
+  "gcp_troubleshoot": "network reachable; permissions, VPC, VM and boot checks report no issues",
+  "alternate_iap_tunnel": "4010 destination read failed",
+  "local_lean_invocations": 0,
+  "remaining": [
+    "sharp DKW and joint-grid coverage",
+    "density cell/point/histogram and complete representation bridge",
+    "S025 genuine 2+1 gauge counterexample",
+    "shutdown task-started VM after safe ownership/workload check"
+  ],
+  "supplementary_ci": {
+    "proof_manuscript": {
+      "run": 37715221227,
+      "result": "success"
+    },
+    "literature": {
+      "run": 37715221248,
+      "result": "success"
+    },
+    "python": {
+      "run": 37715221226,
+      "result": "success"
+    }
+  }
+}

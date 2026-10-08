@@ -1,0 +1,17 @@
+{
+  "title": "A certified coordinate-gauge obstruction for causal-order reconstruction in a 2+1 diamond",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-08",
+  "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
+  "license": "cc-by-4.0",
+  "version": "0.1.0",
+  "access_right": "open",
+  "keywords": ["causal order", "conformal diamond", "coordinate gauge", "Lorentzian isometry", "Lean 4", "formal verification"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/74c1f743d085c63b45ac2bf30008ad5d29b98fbc", "relation": "isSupplementedBy", "scheme": "url", "resource_type": "software"},
+    {"identifier": "10.5281/zenodo.23247720", "relation": "references", "scheme": "doi", "resource_type": "publication-preprint"},
+    {"identifier": "10.5281/zenodo.23202763", "relation": "references", "scheme": "doi", "resource_type": "software"}
+  ],
+  "description": "<p>On the unit 2+1 Minkowski diamond, the established causal-diamond conformal flow transports normalized flat volume to a nonconstant smooth density between 1/2 and 3/2 with Euclidean Lipschitz constant at most two. Every finite labeled and unlabeled directed chronological-order law agrees with the flat law, while the coordinate supremum distance remains positive modulo every spatial orthogonal transformation. Nevertheless, the associated volume-normalized Lorentzian metrics are smoothly isometric, with an explicit pullback identity.</p><p>This separate technical preprint gives the construction and complete proofs, identifies the flow with its established conformal-field-theory formula, compares relevant order-law and reconstruction precedents, and maps the claims to accepted Lean 4 statements. Its contribution is an explicit certified density-class example and an audit of an insufficient coordinate gauge. It claims no new conformal flow, mathematical priority, higher-dimensional inverse rate or physical nonidentifiability. Formal and prose refinements are distinguished. The exact proof revision has remote GCP acceptance; the shared library audit covers 295 selected exports, not 295 results of this paper.</p><p>Author: Daniel Eric Fredriksen, Quantyra Inc. Developed with OpenAI Codex assistance. Open-source decentralized informal feedback and downstream use/testing remain the review workflow. Manuscript and source bundle: CC-BY-4.0. The separately linked proof software is Apache-2.0. This is a distinct manuscript with its own DOI and version history, separate from the reconstruction paper.</p>"
+}

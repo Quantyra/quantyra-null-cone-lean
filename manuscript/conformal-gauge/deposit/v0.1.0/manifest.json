@@ -1,0 +1,83 @@
+{
+  "title": "A certified coordinate-gauge obstruction for causal-order reconstruction in a 2+1 diamond",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.23249816",
+  "proof_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "reviewed_draft_commit": "3b35dc99847a52ed9133557ef2845cf62020640a",
+  "mathematical_body_unchanged": true,
+  "metadata_sha256": "0f094fa9895875aaa0ba3de72098785c1a08ed1f854fd739fd4e8fc7e3379510",
+  "files": {
+    "manuscript/conformal-gauge/deposit/v0.1.0/conformal-gauge-counterexample.log": {
+      "sha256": "178f29bf25738afeb35ac7bc5de52db3f124fa6c36d2a4d86223070939dbae56",
+      "bytes": 18082
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/conformal-gauge-counterexample.pdf": {
+      "sha256": "d2b3b36dfd68036be9468f76844a98c8a2627271ca602ee3d445cd6cd7b50a29",
+      "bytes": 108056
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/conformal-gauge-counterexample.tex": {
+      "sha256": "214a8ab65a9849a2e65dcc92117b02809cfa2fada081de6011ff5c3a13d44bd8",
+      "bytes": 28619
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/draft-record.json": {
+      "sha256": "eef6ff152a34d5bff6bfb2436b9aaff9222b121a88c408ac551422961437a338",
+      "bytes": 193
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/README.md": {
+      "sha256": "15472f4b36d09bd63007839c76840eba713223c4a13aa8e02c10b71596bfe1a5",
+      "bytes": 3694
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/review.json": {
+      "sha256": "e8b5c2b82cd591f7c9544a3a83ef02adea1c8ae8aabeea8a77101611c29b9345",
+      "bytes": 3012
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/tex-build.log": {
+      "sha256": "427d61ea8d3f5aa8e8969e533154a3abdb03d77fc191d8b6df66539b09d843af",
+      "bytes": 626
+    },
+    "manuscript/conformal-gauge/deposit/v0.1.0/zenodo-metadata.json": {
+      "sha256": "0f094fa9895875aaa0ba3de72098785c1a08ed1f854fd739fd4e8fc7e3379510",
+      "bytes": 2618
+    },
+    "manuscript/conformal-gauge/formal-map.json": {
+      "sha256": "9568ccefea142738f6dcb4fd797e74146af39f9de261ddd88abbd1d269970410",
+      "bytes": 8905
+    },
+    "manuscript/conformal-gauge/source-verification.json": {
+      "sha256": "44ef8a8b0b018a905b2a6af73938f508f6a766537da4d11a33e953796cb41905",
+      "bytes": 12440
+    },
+    "manuscript/conformal-gauge/algebra-check.json": {
+      "sha256": "1831a54f3d689335c9ce536c9bb70211517ebf5e62b9571b48482f229de8d3b2",
+      "bytes": 1275
+    },
+    "manuscript/conformal-gauge/literature-comparison.md": {
+      "sha256": "7263e141a050e26bed46bccdaf6cabd04d4deee6cd3a3ff877f412a4361882ec",
+      "bytes": 2964
+    },
+    "manuscript/conformal-gauge/literature-sources.json": {
+      "sha256": "8a1a2bd3245a08b7c51eb22c7ef2b1311a06623dbf5c62d8d7cc0d07613e06d9",
+      "bytes": 1879
+    },
+    "manuscript/conformal-gauge/check_algebra.py": {
+      "sha256": "2ac7a473b9b310e58718d75dc56d15f29a0fc7f0637d7c8001b8d83912cb3dfa",
+      "bytes": 2813
+    },
+    "manuscript/conformal-gauge/verify_sources.py": {
+      "sha256": "9b2fa991b4ba25e88e19f26b3ff84038cefec6bb9bbc7ac629e470075e657d1c",
+      "bytes": 5009
+    },
+    "manuscript/conformal-gauge/build.py": {
+      "sha256": "eb379e162fa9942974c9f7ea9cfa6816b629817139b292991bc0b866ffb0f507",
+      "bytes": 1834
+    },
+    "manuscript/conformal-gauge/review.json": {
+      "sha256": "d04467291cb13b260e0e2006cef03834c8e414ad1856e6bbbbe54fe504c550c2",
+      "bytes": 4989
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c",
+      "bytes": 18664
+    }
+  }
+}

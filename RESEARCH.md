@@ -1,5 +1,7 @@
 # Proofs and research navigation
 
+Separate unpublished paper: [A certified coordinate-gauge obstruction in a 2+1 diamond](manuscript/conformal-gauge/conformal-gauge-counterexample.pdf), version 0.1.0, with [proof map, primary-source comparison and review](manuscript/conformal-gauge/README.md). This is the second manuscript; its two metrics are explicitly isometric, and the flow is established. No DOI is assigned.
+
 Current published manuscript: [0.4.0 PDF](https://zenodo.org/records/23247720/files/finite-causal-order-reconstruction.pdf?download=1), [DOI](https://doi.org/10.5281/zenodo.23247720), [publication evidence](manuscript/deposit/v0.4.0/README.md) and [separate-paper decisions](notes/manuscript-portfolio.md). Both inverse rates and actual AC-curve proper time are certified. The [review candidate](manuscript/revisions/v0.4.0/README.md) and older manuscript entries identify preserved historical artifacts.
 
 - Published manuscript [0.3.0, DOI 10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579); preserved [PDF](manuscript/finite-causal-order-reconstruction.pdf), [TeX](manuscript/finite-causal-order-reconstruction.tex) and [publication receipt](manuscript/deposit/v0.3.0/published-record.json).

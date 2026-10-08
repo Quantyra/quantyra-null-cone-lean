@@ -1,0 +1,217 @@
+{
+  "proof_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "gcp_run": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+  "claims": [
+    {
+      "claim": "Main Theorem 1.1",
+      "formal_scope": "Zero-hypothesis fixed example: class membership, all laws, positive O(2) distance and Cartesian metric pullback. Smooth automorphism is a separate accepted theorem.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzIsometry.lean",
+          "name": "QuantyraNullCone.higher_dimensional_gauge_counterexample3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Model and volume",
+      "formal_scope": "Actual Cartesian Lorentz chronology and Euclidean volume; normalized flat measure and density class.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzVolume.lean",
+          "name": "QuantyraNullCone.lorentz_diamond_volume3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzFlat.lean",
+          "name": "QuantyraNullCone.flat_density_class3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Lemma 2.1 and smoothness part of Theorem 1.1",
+      "formal_scope": "Every |a|<1, smooth neighborhood of closed diamond, bijection, explicit inverse and strict future chronology.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzSmooth.lean",
+          "name": "QuantyraNullCone.lorentz_flow_smooth_automorphism3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzPreservation.lean",
+          "name": "QuantyraNullCone.lorentz_flow_preserves_open3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzPreservation.lean",
+          "name": "QuantyraNullCone.lorentz_flow_image3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Lemma 2.2 and Appendix A",
+      "formal_scope": "Actual Frechet derivative, determinant, bilinear pullback and two-point Lorentz separation, under nonzero denominator.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzDerivative.lean",
+          "name": "QuantyraNullCone.hasFDerivAt_lorentz_flow3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzJacobian.lean",
+          "name": "QuantyraNullCone.lorentz_flow_derivative_det3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzJacobian.lean",
+          "name": "QuantyraNullCone.lorentz_flow_derivative_bilinear3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzChronology.lean",
+          "name": "QuantyraNullCone.lorentz_flow_separation3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Proposition 2.3",
+      "formal_scope": "Chronology equivalence on closed diamond for every |a|<1.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzChronology.lean",
+          "name": "QuantyraNullCone.lorentz_flow_chronological_iff3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Lemma 3.1",
+      "formal_scope": "Fixed a=1/100 smoothness, density bounds [1/2,3/2] and Euclidean Lipschitz constant two. Sharper displayed constants are prose refinements checked algebraically.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzGaugeBounds.lean",
+          "name": "QuantyraNullCone.gauge_density_bounds3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeBounds.lean",
+          "name": "QuantyraNullCone.gauge_density_smooth3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeLipschitz.lean",
+          "name": "QuantyraNullCone.gauge_denominator_lipschitz3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeLipschitz.lean",
+          "name": "QuantyraNullCone.reciprocal_cube_lipschitz3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeLipschitz.lean",
+          "name": "QuantyraNullCone.gauge_density_lipschitz3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Proposition 3.2",
+      "formal_scope": "Fixed a=1/100 actual inverse/forward measure transport, derived normalization and full class membership. General-a version is proved in prose.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzTransport.lean",
+          "name": "QuantyraNullCone.gauge_inverse_transport3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeClass.lean",
+          "name": "QuantyraNullCone.gauge_density_normalized3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeClass.lean",
+          "name": "QuantyraNullCone.gauge_density_class3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzGaugeClass.lean",
+          "name": "QuantyraNullCone.gauge_forward_transport3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Proposition 4.1",
+      "formal_scope": "Actual finite iid product transport and all labeled/unlabeled directed-order laws, including n=0.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzOrderLaws.lean",
+          "name": "QuantyraNullCone.gauge_sample_forward_transport3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzOrderLaws.lean",
+          "name": "QuantyraNullCone.gauge_order_laws_equal3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzOrderLaws.lean",
+          "name": "QuantyraNullCone.gauge_unlabeled_order_laws_equal3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Proposition 5.1",
+      "formal_scope": "Density invariance for every spatial linear isometry, strict interior anchor inequality and strictly positive actual supremum/infimum. Displayed rational lower bound is an elementary prose calculation.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzSpatialDistance.lean",
+          "name": "QuantyraNullCone.gauge_density_spatial_invariant3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzSpatialDistance.lean",
+          "name": "QuantyraNullCone.gauge_anchor_density_gt3",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzSpatialDistance.lean",
+          "name": "QuantyraNullCone.gauge_o2_distance_positive3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "claim": "Proposition 5.2",
+      "formal_scope": "Actual real-power coefficient and Cartesian bilinear metric pullback for every point/tangent pair. Manifold interpretation and metric-volume calculation are explained in prose.",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LorentzIsometry.lean",
+          "name": "QuantyraNullCone.gauge_metric_coefficient3",
+          "audit_kind": "compiled_dependency",
+          "audited_parent": "QuantyraNullCone.gauge_metric_isometry3"
+        },
+        {
+          "file": "QuantyraNullCone/LorentzIsometry.lean",
+          "name": "QuantyraNullCone.gauge_metric_isometry3",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    }
+  ],
+  "prose_only_consequences": [
+    "General-a measure transport",
+    "Sharper density interval and Lipschitz constant 21/100",
+    "Rational anchor lower bound",
+    "Corollary 5.3 excluding any vanishing inverse remainder for d_O2",
+    "CHM parameter/sign conversion",
+    "Metric-volume formula and manifold-language interpretation",
+    "General conformal density-action formula and implications for a corrected gauge"
+  ],
+  "review_boundary": "This map is a manually inspected mathematical correspondence. The verifier checks identities and accepted statement occurrence, not semantic equivalence of arbitrary prose."
+}

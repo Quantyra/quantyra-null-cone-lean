@@ -23,3 +23,8 @@ manuscript/deposit/v0.4.0/*.tex text eol=lf
 manuscript/deposit/v0.4.0/*.md text eol=lf
 manuscript/deposit/v0.4.0/*.json text eol=lf
 manuscript/deposit/v0.4.0/*.log -text
+manuscript/conformal-gauge/*.tex text eol=lf
+manuscript/conformal-gauge/*.md text eol=lf
+manuscript/conformal-gauge/*.json text eol=lf
+manuscript/conformal-gauge/*.py text eol=lf
+manuscript/conformal-gauge/*.log -text

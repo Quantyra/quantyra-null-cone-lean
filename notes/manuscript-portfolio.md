@@ -1,17 +1,19 @@
 # Manuscript portfolio after certification
 
-2026-10-08, S026. Preparation decision under Dan's “Proceed”; no new paper or DOI is published by this decision.
+2026-10-08, S026 portfolio decision, updated through S028. The reconstruction paper is published; the separate 2+1 manuscript is now drafted and reviewed.
 
 | Work | Decision | Reason and boundary |
 | --- | --- | --- |
 | Reconstruction and proper time | Revise the existing paper as 0.4.0; published under S027 | Both inverse bounds and actual AC-curve proper-time consequences belong to the same result chain. Update their formal status and exact GCP evidence while preserving all seven mathematical statements and Winkler attribution. |
 | One-order finite-data confidence | Keep separate; defer a standalone manuscript | The procedure and actual full-report coverage are certified, but tested density bands remain full range. A future paper must explain fixed pre-sampling calibration, unconditional accepted-output failure, solver/checker boundaries and the limitation honestly. Useful density resolution, stronger calibration or a clearly scoped methods/negative-results contribution would justify reassessing the paper gate. Certification alone does not supply a practical inference result. |
-| Genuine 2+1 conformal gauge counterexample | Select as the next separate short technical-paper candidate | Its explicit smooth automorphism, actual density-class/measure transport, all finite directed-order law equality, positive O(2) coordinate distance and derived isometry make a coherent technical statement. Use the main paper only for a bounded summary. Before drafting a publication candidate, assemble full exposition and compare the construction with established conformal/gauge precedents. No originality or new physical nonidentifiability claim is warranted by certification. |
+| Genuine 2+1 conformal gauge counterexample | Separate unpublished version 0.1.0 prepared and reviewed under S028 | [Ten-page manuscript and evidence](../manuscript/conformal-gauge/README.md) give the construction, complete proofs, explicit isometry, accepted Lean statement map and bounded primary-source comparison. The flow is identified with established causal-diamond conformal flow. The paper presents a certified example and coordinate-gauge audit, with no new-flow, priority or physical nonidentifiability claim. No DOI is assigned. |
 
-There is currently one published manuscript family. Version 0.4.0 is its latest publication; older packages and working/review snapshots are versions or copies of that paper. The historical 0.4.0 review candidate became a separately finalized publication in the same family under S027. Neither the statistical procedure nor the 2+1 counterexample has a standalone manuscript yet. The original quantitative higher-dimensional reconstruction program remains parked pending a justified gauge and finite stability theorem.
+There are now two distinct manuscripts: the published reconstruction paper (latest version 0.4.0) and the unpublished 2+1 technical paper (version 0.1.0). Earlier reconstruction packages and working/review snapshots are versions or copies of the first paper. The statistical procedure still has no standalone manuscript. The quantitative higher-dimensional reconstruction program remains parked pending a justified gauge and finite stability theorem.
 
 Historical review candidate: [PDF](../manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.pdf), [source](../manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.tex). Published baseline: [0.3.1 PDF](../manuscript/deposit/v0.3.1/finite-causal-order-reconstruction.pdf). Both are explicitly labeled; the baseline DOI does not identify the candidate.
 
 S027 publication update, 2026-10-08: [0.4.0 is published](https://doi.org/10.5281/zenodo.23247720); the original S026 preparation decision above remains historical.
 
-Remaining to-do list: none for the existing-paper revision/publication; separately commission the higher-dimensional exposition/literature comparison if selected. No additional manuscript drafting is part of S026.
+S028 manuscript update, 2026-10-08: the [separate 2+1 PDF](../manuscript/conformal-gauge/conformal-gauge-counterexample.pdf) is complete, with exact formula comparison to Casini--Huerta--Myers, Janson/Braun context, a proof map, algebra checks and all-page review. Full-text Hislop--Longo comparison is not asserted; its earlier role is credited through the inspected CHM source. The exact flow match is supported by the inspected CHM full text.
+
+Remaining to-do list: subsequent DOI publication of the 2+1 manuscript; a contribution/scope decision and drafting for any finite-data paper. None for S028 preparation.

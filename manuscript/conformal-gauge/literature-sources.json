@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "name": "casini-huerta-myers-2011",
+      "url": "https://arxiv.org/pdf/1102.0440v2",
+      "final_url": "https://arxiv.org/pdf/1102.0440v2",
+      "sha256": "5ca30728bd91f92a40ea71766237b10027719ee38da779866caf64bde4fe711a",
+      "pages": 45,
+      "status": "downloaded",
+      "inspected_date": "2026-10-08",
+      "version_read": "1102.0440v2",
+      "selected_pdf_pages": [
+        8,
+        9,
+        10,
+        42
+      ]
+    },
+    {
+      "name": "braun-2025",
+      "url": "https://arxiv.org/pdf/2507.01907",
+      "final_url": "https://arxiv.org/pdf/2507.01907",
+      "sha256": "4b315a09d43ca94f56d895b1ae571f5e7510fee1510e2c5a547254895cdf928e",
+      "pages": 16,
+      "status": "downloaded",
+      "inspected_date": "2026-10-08",
+      "version_read": "2507.01907v1",
+      "selected_pdf_pages": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "janson-2009",
+      "url": "https://arxiv.org/pdf/0902.0306",
+      "final_url": "https://arxiv.org/pdf/0902.0306",
+      "sha256": "7d831fd58e049b0c4d69de8408f45e607a22b351e0027c6e9079dab7c101f953",
+      "pages": 36,
+      "status": "downloaded",
+      "inspected_date": "2026-10-08",
+      "version_read": "0902.0306v1",
+      "selected_pdf_pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "name": "hislop-longo-1982",
+      "url": "https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-84/issue-1/Modular-structure-of-the-local-algebras-associated-with-the-free/cmp/1103921046.pdf",
+      "status": "unavailable",
+      "reason": "ValueError",
+      "inspected_date": "2026-10-08",
+      "inspection_boundary": "CHM reference [27] and indexed primary abstract only; full PDF unavailable; no full-text comparison asserted"
+    }
+  ],
+  "redistributed_third_party_pdfs": false
+}

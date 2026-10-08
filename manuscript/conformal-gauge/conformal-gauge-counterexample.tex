@@ -1,0 +1,624 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{pdftitle={A certified coordinate-gauge obstruction for causal-order reconstruction in a 2+1 diamond},pdfauthor={Daniel Eric Fredriksen},pdfkeywords={causal order, conformal diamond, coordinate gauge, Lean, isometry}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\D}{\mathcal D}
+\newcommand{\K}{\mathcal K_3}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\Otwo}{\mathrm O(2)}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\code}[1]{{\small\ttfamily\def\_{\textunderscore\allowbreak}#1}}
+\title{A certified coordinate-gauge obstruction for causal-order reconstruction in a $2+1$ diamond}
+\author{Daniel Eric Fredriksen\\Quantyra Inc.\\\url{https://github.com/Quantyra/quantyra-null-cone-lean}}
+\date{8 October 2026\\Version 0.1.0 --- unpublished manuscript}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Finite chronological-order samples are invariant under a smooth change of
+coordinates that transports both chronology and sampling measure. We give an
+explicit Lean-certified example showing why quotienting density coefficients
+only by spatial rotations and reflections does not remove this freedom.
+On the unit $2+1$ Minkowski diamond, the standard conformal diamond flow
+transports normalized flat volume to a nonconstant smooth density between
+$1/2$ and $3/2$ with Euclidean Lipschitz constant at most two.
+Every finite labeled and unlabeled directed-order law agrees with the flat
+law, while the coordinate supremum distance remains positive after every
+spatial orthogonal transformation. Nevertheless, the volume-normalized
+Lorentzian metrics are smoothly isometric, with an explicit pullback identity.
+We prove each step, identify the flow with its established conformal-field-theory
+formula, and give a statement-to-source map for the accepted formalization.
+The contribution is an explicit certified instance and an audit of the
+proposed coordinate gauge. The flow and the general invariance principle
+are established; no new physical nonidentifiability or priority claim is made.
+\end{abstract}
+
+\noindent\textbf{Status:} separate unpublished technical manuscript; no DOI assigned.\\
+\textbf{Artifacts:} source, Lean proofs and GCP acceptance evidence in the repository above.\\
+\textbf{License:} manuscript CC-BY-4.0; proof software Apache-2.0.
+
+\section{Question, result and scope}
+An inverse problem based on finite causal orders must specify which
+coordinate descriptions represent the same object. In the reconstruction
+paper~\cite{Fredriksen}, a restricted $1+1$ density class fixes uniform
+null-coordinate marginals. A tentative higher-dimensional extension would
+instead compare density functions on a fixed diamond modulo spatial
+rotations and reflections. The present example shows that this smaller
+symmetry group leaves an observable ambiguity inside a smooth, uniformly
+bounded class.
+
+The obstruction uses an established conformal flow. Its mathematical value
+here is the complete passage from a Cartesian formula to an admissible
+density, actual probability laws, a positive coordinate discrepancy and an
+explicit isometry, together with machine-checked evidence. Section~\ref{sec:prior}
+compares the construction with primary sources. We do not treat certification
+as a proof of originality.
+
+\subsection{The fixed model}
+Write $p=(t,z)=(t,x,y)$, $r=|z|_2$, and set
+\[
+ \D=\{(t,z): |t|+|z|_2<1\},\qquad
+ \eta=-\dd t^2+\dd x^2+\dd y^2.
+\]
+An overline denotes closure. The underlying coordinate norm is the
+Euclidean norm on $\R^3$. The chronological relation is the genuine
+Lorentzian relation
+\begin{equation}\label{eq:chronology}
+ p\ll q\quad\Longleftrightarrow\quad q_t-p_t>|q_z-p_z|_2.
+\end{equation}
+The diamond is convex. Thus the straight segment realizes every relation
+in~\eqref{eq:chronology}; conversely, integrating the future timelike cone
+inequality along a timelike curve gives the same endpoint condition.
+Consequently this is also the intrinsic chronology of the diamond.
+
+Its flat volume and normalized reference measure are
+\begin{equation}\label{eq:volume}
+ V=\int_{-1}^{1}\pi(1-|t|)^2\,\dd t=\frac{2\pi}{3},
+ \qquad \mu_0=V^{-1}\,\dd t\,\dd x\,\dd y\big|_{\D}.
+\end{equation}
+Let $\K$ consist of real functions smooth on an open neighborhood of
+$\overline\D$ such that
+\begin{equation}\label{eq:class}
+ \frac12\leq\rho\leq\frac32,\qquad
+ |\rho(p)-\rho(q)|\leq2\|p-q\|_2\quad(p,q\in\overline\D),
+ \qquad \int\rho\,\dd\mu_0=1.
+\end{equation}
+For $\rho\in\K$, put $\mu_\rho=\rho\mu_0$ and
+\begin{equation}\label{eq:metric}
+ g_\rho=V^{-2/3}\rho^{2/3}\eta.
+\end{equation}
+The Lorentzian volume density of this three-dimensional metric is
+$V^{-1}\rho$: multiplying $\eta$ by a positive coefficient $c$ multiplies
+$\sqrt{|\det\eta|}$ by $c^{3/2}$. Hence $\operatorname{vol}_{g_\rho}=\mu_\rho$
+and its total volume is one. Positive conformal scaling preserves time
+orientation and chronology.
+
+For $n\geq0$, sample $P_1,\ldots,P_n$ independently from $\mu_\rho$ and
+form the matrix
+\[
+ A_n(P)_{ij}=\mathbf 1_{\{P_i\ll P_j\}}.
+\]
+Write $\nu_n^\rho$ for its law. This is a Borel pushforward because the
+inequality in~\eqref{eq:chronology} is open. Let $\bar\nu_n^\rho$ be the
+pushforward under simultaneous relabeling of rows and columns. This
+forgets vertex names and retains the direction of the order; it does
+not identify an order with its time reverse.
+
+For $R\in\Otwo$, let $T_R(t,z)=(t,Rz)$. The proposed discrepancy is
+\begin{equation}\label{eq:distance}
+ d_{\Otwo}(\rho,\sigma)=
+ \inf_{R\in\Otwo}\sup_{p\in\D}|\rho(p)-\sigma(T_Rp)|.
+\end{equation}
+The group includes reflections. It does not include nonlinear conformal
+maps of the diamond.
+
+\subsection{Main statement}
+For $|a|<1$, define
+\begin{align}
+ D_a(t,z)&=(1+at)^2-a^2|z|_2^2,\label{eq:denominator}\\
+ N_a(t,z)&=(t+a)(1+at)-a|z|_2^2,\nonumber\\
+ \Omega_a(t,z)&=\frac{1-a^2}{D_a(t,z)},\nonumber\\
+ F_a(t,z)&=\left(\frac{N_a(t,z)}{D_a(t,z)},\,
+                  \frac{(1-a^2)z}{D_a(t,z)}\right).\label{eq:flow}
+\end{align}
+The formulas are used on the positive-denominator neighborhood of the
+closed diamond. Fix from now on
+\begin{equation}\label{eq:density}
+ a_*=\frac1{100},\qquad \rho_0=1,\qquad
+ \rho_* =\Omega_{-a_*}^{\,3}.
+\end{equation}
+
+\begin{theorem}\label{thm:main}
+The densities $\rho_0,\rho_*$ belong to $\K$. For every $n\geq0$,
+\[
+ \nu_n^{\rho_*}=\nu_n^{\rho_0},\qquad
+ \bar\nu_n^{\rho_*}=\bar\nu_n^{\rho_0}.
+\]
+Nevertheless $d_{\Otwo}(\rho_0,\rho_*)>0$. The map $F_{-a_*}$ is a
+smooth time-oriented diffeomorphism of $\D$ satisfying
+\begin{equation}\label{eq:isometry}
+ g_{\rho_*}=F_{-a_*}^{\,*}g_{\rho_0}.
+\end{equation}
+Both maps and their inverse formulas extend smoothly to neighborhoods
+of the closed diamond, including the spatial axis and boundary points.
+\end{theorem}
+
+Sections~\ref{sec:flow}--\ref{sec:separation} prove the theorem. The
+isometry in~\eqref{eq:isometry} identifies the two geometries exactly.
+The positive discrepancy is a failure of the proposed coordinate gauge
+to identify two descriptions of that geometry.
+
+\section{The conformal diamond flow}\label{sec:flow}
+\begin{lemma}\label{lem:automorphism}
+For $|a|<1$, $F_a$ maps the open and closed diamond bijectively to
+themselves, with inverse $F_{-a}$. It is smooth on an open neighborhood
+of $\overline\D$.
+\end{lemma}
+\begin{proof}
+Use radial null variables $u=t+r$ and $v=t-r$. Membership in
+$\overline\D$ is equivalent to $|u|,|v|\leq1$, and
+\[
+ D_a=(1+au)(1+av)\geq(1-|a|)^2>0.
+\]
+Thus $U_a=\{D_a>0\}$ is an open neighborhood of $\overline\D$ and
+the Cartesian rational formulas are smooth there. There is no division
+by $r$ in~\eqref{eq:flow}.
+
+The function $f_a(s)=(s+a)/(1+as)$ satisfies
+\[
+ f_a'(s)=\frac{1-a^2}{(1+as)^2}>0,\qquad
+ f_a(\pm1)=\pm1,\qquad f_{-a}(f_a(s))=s.
+\]
+Directly from~\eqref{eq:flow}, positivity of $\Omega_a$ and $r\geq0$,
+\begin{equation}\label{eq:null}
+ t' + r'=f_a(u),\qquad t'-r'=f_a(v),\qquad r'=\Omega_a r.
+\end{equation}
+This proves preservation of the open and closed diamond. When $r>0$,
+the spatial direction is unchanged, so applying $f_{-a}$ to both null
+variables restores $t,r,z$. At $r=0$ the spatial coordinates stay zero
+and the same inverse identity restores $t$. Applying the argument
+with $-a$ proves both inverse compositions and surjectivity. The inverse
+also has a positive-denominator neighborhood, proving the asserted
+smoothness up to the boundary in the ambient-coordinate sense.
+\end{proof}
+
+\begin{lemma}\label{lem:conformal}
+For $p\in\overline\D$ and $|a|<1$,
+\begin{equation}\label{eq:derivative}
+ (\dd F_a)_p^{\mathsf T}\eta(\dd F_a)_p=\Omega_a(p)^2\eta,
+ \qquad \det(\dd F_a)_p=\Omega_a(p)^3>0.
+\end{equation}
+For $p,q\in\overline\D$, the separation identity is
+\begin{equation}\label{eq:separation}
+ \eta(F_a(q)-F_a(p),F_a(q)-F_a(p))
+ =\Omega_a(p)\Omega_a(q)\eta(q-p,q-p).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Away from the axis use polar coordinates, so that
+$\eta=-\dd u\,\dd v+r^2\dd\theta^2$ (with the symmetric interpretation
+of the mixed term). The two null derivatives have product
+$f_a'(u)f_a'(v)=\Omega_a^2$, and $r'^2=\Omega_a^2r^2$ while the
+angle stays fixed. This proves the bilinear identity there. Cartesian
+smoothness and continuity extend it to the axis and boundary.
+
+Taking determinants yields $(\det\dd F_a)^2=\Omega_a^6$. For a fixed
+point of $\overline\D$, replace $a$ by $sa$, $0\leq s\leq1$. The
+determinant is continuous and never zero, and is one at $s=0$.
+Its sign is therefore positive throughout, proving the determinant
+formula. This sign step is needed for the density transport below.
+
+For completeness,~\eqref{eq:separation} is an identity of rational
+Cartesian functions. Multiply by $D_a(p)^2D_a(q)^2$, insert
+the three numerators in~\eqref{eq:flow}, and expand: the resulting
+polynomial is
+\[
+ (1-a^2)^2D_a(p)D_a(q)
+ \bigl(-(q_t-p_t)^2+(q_x-p_x)^2+(q_y-p_y)^2\bigr).
+\]
+Both denominators are positive, giving~\eqref{eq:separation}.
+Appendix~\ref{app:algebra} gives a Cartesian derivative certificate
+which also avoids polar coordinates altogether.
+\end{proof}
+
+\begin{proposition}\label{prop:chronology}
+For $|a|<1$ and $p,q\in\overline\D$,
+$p\ll q$ if and only if $F_a(p)\ll F_a(q)$.
+\end{proposition}
+\begin{proof}
+Suppose $p\ll q$. Along the continuous deformation $s\mapsto F_{sa}$,
+equation~\eqref{eq:separation} keeps the squared Lorentz separation
+strictly negative. The transformed time difference cannot be zero,
+because a vector with zero time component has nonnegative Lorentz square.
+It starts positive at $s=0$, hence remains positive at $s=1$ by the
+intermediate value theorem. Negative square and positive time difference
+together give~\eqref{eq:chronology} for the images. Apply the same
+argument to $F_{-a}$ and use Lemma~\ref{lem:automorphism} for the converse.
+This proves orientation preservation for arbitrary pairs, including
+pairs with different spatial directions.
+\end{proof}
+
+\section{Density bounds and actual measure transport}\label{sec:density}
+\begin{lemma}\label{lem:bounds}
+The function $\rho_*$ is smooth on a neighborhood of $\overline\D$ and
+satisfies the bounds and Euclidean Lipschitz condition in~\eqref{eq:class}.
+\end{lemma}
+\begin{proof}
+Smoothness follows from $D_{-a_*}>0$. Factoring in null variables gives
+\[
+ (99/100)^2\leq D_{-a_*}(p)\leq(101/100)^2,
+ \qquad
+ (99/101)^3\leq\rho_*(p)\leq(101/99)^3.
+\]
+The latter interval lies inside $[1/2,3/2]$, as follows by multiplying
+the positive integer denominators.
+
+Here is a direct global Lipschitz estimate using Euclidean distances.
+Every coordinate of a point of $\overline\D$ has absolute value at most
+one. Hence, for any such $p,q$ and coordinate $i$,
+\[
+ |p_i-q_i|\leq\|p-q\|_2,\qquad
+ |p_i^2-q_i^2|\leq2\|p-q\|_2.
+\]
+Expansion of $D_{-a_*}=1-2a_*t+a_*^2(t^2-x^2-y^2)$ therefore gives
+\begin{equation}\label{eq:denom-lip}
+ |D_{-a_*}(p)-D_{-a_*}(q)|
+ \leq(2a_*+6a_*^2)\|p-q\|_2
+ \leq\frac3{100}\|p-q\|_2.
+\end{equation}
+If $9/10\leq d,e\leq11/10$ and $0\leq c\leq1$, then
+\begin{align*}
+ \left|\frac c{d^3}-\frac c{e^3}\right|
+ &=\frac{c|d-e|(d^2+de+e^2)}{d^3e^3}\\
+ &\leq\frac{363/100}{(9/10)^6}|d-e|\leq7|d-e|.
+\end{align*}
+Take $d=D_{-a_*}(p)$, $e=D_{-a_*}(q)$ and $c=(1-a_*^2)^3$.
+Their stated bounds satisfy these hypotheses. Combining this with
+\eqref{eq:denom-lip} gives a Lipschitz constant at most $21/100<2$.
+The formal class theorem records the required constant two.
+\end{proof}
+
+\begin{proposition}\label{prop:transport}
+For every $|a|<1$,
+\begin{equation}\label{eq:transport}
+ (F_a)_*\mu_0=\Omega_{-a}^{\,3}\mu_0.
+\end{equation}
+In particular $\rho_*$ is normalized and belongs to $\K$, as does $1$.
+\end{proposition}
+\begin{proof}
+The change-of-variables formula for the diffeomorphism $F_a:\D\to\D$
+and Lemma~\ref{lem:conformal} give, for every nonnegative Borel function $h$,
+\begin{align*}
+ \int_\D h(F_a(p))\,\dd\mu_0(p)
+ &=\frac1V\int_\D h(q)|\det\dd F_{-a}(q)|\,\dd q\\
+ &=\int_\D h(q)\Omega_{-a}(q)^3\,\dd\mu_0(q).
+\end{align*}
+This proves equality of the actual measures. Setting $h=1$ proves
+normalization, rather than assuming it as an additional hypothesis.
+Lemma~\ref{lem:bounds} supplies the remaining conditions for $a=a_*$.
+The constant function one has all class properties immediately
+from~\eqref{eq:volume}.
+\end{proof}
+
+\section{Finite order laws}\label{sec:laws}
+\begin{proposition}\label{prop:laws}
+For every $n\geq0$, both finite-order laws in Theorem~\ref{thm:main} agree.
+\end{proposition}
+\begin{proof}
+Let $P_1,\ldots,P_n$ be independent with law $\mu_0$ and define
+$Q_i=F_{a_*}(P_i)$. Deterministic coordinatewise transport preserves
+independence, and Proposition~\ref{prop:transport} makes each $Q_i$
+have law $\mu_{\rho_*}$. Equivalently,
+\[
+ (F_{a_*}^{\times n})_*(\mu_0^{\otimes n})
+ =\mu_{\rho_*}^{\otimes n}.
+\]
+Proposition~\ref{prop:chronology} gives $A_n(Q)=A_n(P)$ pointwise for
+every sample in $\D^n$. Taking laws proves the labeled equality.
+Pushing both equal measures through the same relabeling quotient gives
+the unlabeled equality. At $n=0$ both laws are the unit mass on the
+empty order. No estimation, asymptotic limit or time-reversal quotient
+is used.
+\end{proof}
+
+\section{Coordinate separation and geometric isometry}\label{sec:separation}
+\begin{proposition}\label{prop:positive}
+The discrepancy in~\eqref{eq:distance} is positive. More explicitly,
+\begin{equation}\label{eq:anchor}
+ d_{\Otwo}(1,\rho_*)\geq
+ \left(\frac{39996}{39601}\right)^3-1>0.
+\end{equation}
+\end{proposition}
+\begin{proof}
+The density depends on $z$ only through $|z|_2^2$, so
+$\rho_*\circ T_R=\rho_*$ for every $R\in\Otwo$. Each supremum in
+\eqref{eq:distance} is thus the same number. It is finite because
+$|\rho_*-1|\leq1/2$. At the interior point $p_*=(1/2,0,0)$,
+\[
+ \rho_*(p_*)=
+ \left(\frac{1-1/10000}{(1-1/200)^2}\right)^3
+ =\left(\frac{39996}{39601}\right)^3>1.
+\]
+The supremum bounds this value minus one for every $R$. Taking the
+infimum proves~\eqref{eq:anchor}. This uses an interior point and hence
+does not depend on whether boundary values enter the coordinate norm.
+\end{proof}
+
+\begin{proposition}\label{prop:isometry}
+The map $H=F_{-a_*}$ is a smooth time-oriented isometry from
+$(\D,g_{\rho_*})$ onto $(\D,g_1)$.
+\end{proposition}
+\begin{proof}
+The previous results give its smooth inverse and time orientation.
+Since $\Omega_{-a_*}>0$,
+\[
+ \rho_*^{2/3}=(\Omega_{-a_*}^3)^{2/3}
+ =\Omega_{-a_*}^2.
+\]
+Using the derivative pullback identity in~\eqref{eq:derivative},
+\[
+ H^*g_1=V^{-2/3}H^*\eta
+       =V^{-2/3}\Omega_{-a_*}^2\eta=g_{\rho_*}.
+\]
+This equality holds for every tangent-vector pair at every point,
+including the ambient extension to $\overline\D$. It proves the claimed
+isometry directly. The sampling measures transform in the compatible
+direction $H_*\mu_{\rho_*}=\mu_0$.
+\end{proof}
+
+These propositions complete Theorem~\ref{thm:main}. In particular the
+nonconstant coordinate coefficient in $g_{\rho_*}$ still describes a
+flat geometry. A coordinate formula alone does not distinguish
+Lorentzian isometry classes.
+
+Define, for either the labeled or unlabeled directed laws,
+\[
+ \Delta_N(\rho,\sigma)=\max_{1\leq n\leq N}
+          \TV(\nu_n^\rho,\nu_n^\sigma).
+\]
+\begin{corollary}\label{cor:inverse}
+There is no function $b:\mathbb N\times[0,1]\to[0,\infty)$ with
+$b(N,0)\to0$ such that, for every pair in $\K$ and all $N\geq1$,
+\[
+ d_{\Otwo}(\rho,\sigma)\leq b(N,\Delta_N(\rho,\sigma)).
+\]
+The assertion holds for either choice of finite-order laws.
+\end{corollary}
+\begin{proof}
+Insert $\rho=1$ and $\sigma=\rho_*$. Proposition~\ref{prop:laws}
+gives $\Delta_N=0$ for every $N$, while Proposition~\ref{prop:positive}
+gives a fixed positive lower bound for the left side. Letting $N$
+tend to infinity is a contradiction.
+\end{proof}
+This corollary is an elementary prose consequence of the certified
+example. It asserts failure of this particular coordinate discrepancy;
+it supplies no inverse rate for a corrected gauge.
+
+\section{Comparison with established work}\label{sec:prior}
+\subsection{The flow is established}
+Casini, Huerta and Myers give the causal-diamond flow in
+equation (2.13) of their arXiv v2 PDF~\cite{CHM}; their discussion
+cites Hislop and Longo~\cite{HL} for earlier double-cone modular
+geometry. To identify their formula with ours, set the ball radius
+to one and $a=\tanh(\pi s)$. Their $x^+=r+t$ becomes $u$,
+and their $x^-=r-t$ becomes $-v$.
+For $k=e^{-2\pi s}$, elementary algebra gives
+\[
+ \frac{(1+w)-k(1-w)}{(1+w)+k(1-w)}
+ =\frac{w+a}{1+aw},\qquad a=\frac{1-k}{1+k}.
+\]
+The opposite sign in the $x^-$ exponential gives the same $f_a$
+after replacing $x^-$ by $-v$. Equations~\eqref{eq:null} then give
+exactly~\eqref{eq:flow}. Thus this manuscript does not introduce a
+new conformal transformation. Its parameter $a_*$ selects a small
+member of that established family.
+
+\subsection{Probability-law equivalence}
+Janson's Theorem 7.1~\cite{Janson} relates equivalent poset kernels,
+their finite random-poset laws and measure-preserving representations.
+Our deterministic kernel is $W(p,q)=\mathbf1_{p\ll q}$.
+Propositions~\ref{prop:transport} and~\ref{prop:chronology} supply an
+explicit measure-preserving order isomorphism between the two measured
+spaces. The coupling proof is the direct invariance direction of this
+general framework; it does not provide a new abstract equivalence theorem.
+
+\subsection{Reconstruction up to isometry}
+Braun's Theorem 1.4~\cite{Braun} reconstructs finite-volume, causally
+continuous, future-chronocomplete spacetimes up to smooth isometry from
+all finite labeled chronological adjacency laws. The weighted version
+and Remark 1.6 explain the corresponding conformal rescaling.
+Our explicit pullback identity gives the isometry directly. Positive
+coordinate distance is therefore compatible with that reconstruction
+target. We use no unverified application of its converse or its
+geometric hypotheses. The equality of unlabeled laws here follows
+from the explicit labeled coupling and makes no claim to solve a
+general reconstruction conjecture for unlabeled data.
+
+\subsection{Contribution and limits of the comparison}
+The flow, order-law invariance under transport, and geometric
+interpretation are established ingredients. This paper packages their
+explicit small-parameter realization inside~\eqref{eq:class}, proves
+the coordinate discrepancy and pullback together, and exposes the
+formal proof and acceptance evidence. It can serve as a checked test
+case for proposed inverse distances and gauge normalizations.
+The comparison covers the displayed flow and the cited reconstruction
+and kernel-equivalence results. It is not an exhaustive priority search
+for this exact bounded-density example or its formalization; no first-result
+claim is made.
+
+\section{Formal statements and reproducibility}\label{sec:formal}
+The proof is implemented in Lean 4.30.0 with mathlib revision
+\begin{center}
+\code{c5ea00351c28e24afc9f0f84379aa41082b1188f}.
+\end{center}
+Cartesian points use
+\code{EuclideanSpace} over three real coordinates. The norm is genuinely
+Euclidean, chronology uses the spatial radius, and all sampling laws
+are actual measure-theoretic products and pushforwards.
+
+The main export is
+\begin{center}
+\code{QuantyraNullCone.higher\_dimensional\_gauge\_counterexample3}.
+\end{center}
+It has no input hypotheses: the explicit parameter is part of the
+definitions. Its conjunction gives both density-class memberships,
+all labeled and unlabeled law equalities, a positive infimum over
+all spatial linear isometries, and the metric pullback for every
+point and tangent-vector pair. Smooth automorphism and chronology
+are also exported separately. The following map identifies the key
+statements, all in namespace \code{QuantyraNullCone}:
+\begin{itemize}
+\raggedright
+\item Volume and probability: \code{lorentz\_diamond\_volume3},
+\code{flat\_density\_class3}, in \code{LorentzVolume.lean} and
+\code{LorentzFlat.lean}.
+\item Lemma~\ref{lem:automorphism}: \code{lorentz\_flow\_smooth\_automorphism3},
+in \code{LorentzSmooth.lean}, with inverse and preservation dependencies.
+\item Lemma~\ref{lem:conformal}: \code{hasFDerivAt\_lorentz\_flow3},
+\code{lorentz\_flow\_derivative\_det3},
+\code{lorentz\_flow\_derivative\_bilinear3} and
+\code{lorentz\_flow\_separation3}, in \code{LorentzDerivative.lean},
+\code{LorentzJacobian.lean} and \code{LorentzChronology.lean}.
+\item Proposition~\ref{prop:chronology}: \code{lorentz\_flow\_chronological\_iff3},
+in \code{LorentzChronology.lean}.
+\item Lemma~\ref{lem:bounds} and Proposition~\ref{prop:transport} at $a_*$:
+\code{gauge\_density\_bounds3}, \code{gauge\_density\_lipschitz3},
+\code{gauge\_density\_class3}, \code{gauge\_forward\_transport3},
+in the \code{LorentzGauge} modules and \code{LorentzTransport.lean}.
+\item Proposition~\ref{prop:laws}: \code{gauge\_order\_laws\_equal3} and
+\code{gauge\_unlabeled\_order\_laws\_equal3}, in \code{LorentzOrderLaws.lean}.
+\item Proposition~\ref{prop:positive}: \code{gauge\_anchor\_density\_gt3} and
+\code{gauge\_o2\_distance\_positive3}, in \code{LorentzSpatialDistance.lean}.
+\item Proposition~\ref{prop:isometry}: \code{gauge\_metric\_isometry3},
+in \code{LorentzIsometry.lean}.
+\end{itemize}
+
+The general-$a$ transport statement, displayed sharper density and
+Lipschitz constants, explicit rational anchor lower bound,
+Corollary~\ref{cor:inverse}, and literature parameter conversion are
+proved in the exposition. The accepted Lean exports give the fixed
+$a_*$ transport, class bounds, Lipschitz constant two and strict positive
+distance; we do not claim separate exports for every displayed refinement.
+Likewise, the interpretation of the coordinate bilinear pullback as a
+manifold isometry and the determinant calculation of metric volume are
+spelled out here; the Lean theorem uses the actual Cartesian derivative
+and bilinear metric rather than a packaged Lorentzian-manifold structure.
+
+The accepted proof/evidence revision is
+\href{https://github.com/Quantyra/quantyra-null-cone-lean/tree/74c1f743d085c63b45ac2bf30008ad5d29b98fbc}{\code{74c1f743d085c63b45ac2bf30008ad5d29b98fbc}}.
+Authoritative verification ran on GCP under
+\code{space-lorentz-acceptance-20261008T071627Z-221cd8}.
+The root build completed 3001 jobs and 295 selected type/axiom audits
+across the full repository, including 76 exports added by this campaign.
+This count includes other research modules. No owned warnings or added
+axioms were reported. The selected dependencies use only
+\code{propext}, \code{Classical.choice} and \code{Quot.sound}.
+Source hashes and all nine pinned dependency identities were checked
+before and after execution. The raw logs, receipt and failed-development
+ledger are retained in the repository's \code{evidence/gcp} directory.
+
+Every development and acceptance Lean invocation for this campaign ran
+on GCP. Hosted CI is supplementary. This manuscript reuses that acceptance
+after checking the relevant source identities; it requires no new Lean
+compilation. Its symbolic and rational algebra checks supplement the
+proof audit and do not certify analytic or probabilistic claims by testing.
+The manuscript directory contains build instructions, a formal statement
+map, primary-source comparison and a review receipt.
+
+\section{Implications for a corrected inverse problem}
+A time-oriented conformal diffeomorphism $H:\D\to\D$ with
+$H^*\eta=\Omega_H^2\eta$ acts on volume-normalized density descriptions
+by
+\begin{equation}\label{eq:gauge-action}
+ \rho_H(p)=|\det\dd H_p|\,\sigma(H(p))
+          =\Omega_H(p)^3\sigma(H(p)).
+\end{equation}
+Whenever the densities in question meet the required regularity,
+$g_{\rho_H}=H^*g_\sigma$. Omitting the Jacobian factor would transform
+scalar values, rather than the sampling-volume density. In the example,
+$H=F_{-a_*}$ and $\sigma=1$.
+
+An inverse problem for coefficients must therefore justify a normalization
+that removes this freedom, or use an error quantity on the appropriate
+geometric equivalence classes. The full conformal action need not preserve
+the fixed bounds in $\K$. Moreover, nonconstant Jacobian weights mean
+that simply taking an infimum of coefficient differences under that
+action does not automatically yield a symmetric metric. A corrected
+definition requires its own invariance and stability analysis.
+
+This example does not supply a finite reconstruction lemma for that
+corrected problem. The quantitative higher-dimensional inverse question
+remains open in this project. It also does not alter the separate
+$1+1$ theorem, whose prescribed null-coordinate marginal normalization
+is a different model assumption. Both metrics here represent the same
+geometry, so there is no conclusion that two distinct physical spacetimes
+are indistinguishable by the observations.
+
+The work was developed with OpenAI Codex assistance under the author's
+research direction. Quantyra's review workflow is open-source,
+decentralized and informal: readers can inspect, use, test and improve
+the public artifacts. Specialist independent review is not a publication
+prerequisite; no external review or adoption is claimed by this manuscript.
+
+\appendix
+\section{Cartesian algebra certificate}\label{app:algebra}
+Let $c=1-a^2$, $D=D_a(p)$, $N=N_a(p)$ and let the numerator vector be
+$A=(N,cx,cy)$. Its derivatives are
+\[
+ \nabla D=(2a(1+at),-2a^2x,-2a^2y),\qquad
+ \nabla N=(1+a^2+2at,-2ax,-2ay).
+\]
+The quotient rule gives
+\[
+ (\dd F_a)_{ij}=\frac{B_{ij}}{D^2},\qquad
+ B=D\,\dd A-A(\nabla D)^{\mathsf T}.
+\]
+With $E=\operatorname{diag}(-1,1,1)$, expansion gives the polynomial
+identities
+\[
+ B^{\mathsf T}EB=c^2D^2E,\qquad \det B=c^3D^3.
+\]
+Division by $D^4$ and $D^6$ respectively recovers both identities
+in~\eqref{eq:derivative}. These are exactly Cartesian identities,
+including $x=y=0$; no limiting polar computation is needed.
+The supplementary symbolic script checks these polynomials, the
+inverse and separation numerators, the null-coordinate formulas and
+the literature parameter conversion. Exact rational checks cover the
+class constants and the interior anchor. Analytic domain restrictions,
+smoothness and probability transport are justified in the proofs above
+and by the mapped Lean statements, rather than by symbolic cancellation.
+
+\begin{thebibliography}{9}
+\bibitem{CHM} H. Casini, M. Huerta and R. C. Myers,
+\emph{Towards a derivation of holographic entanglement entropy},
+JHEP \textbf{05} (2011), 036.
+\href{https://arxiv.org/abs/1102.0440v2}{arXiv:1102.0440v2}.
+\bibitem{HL} P. D. Hislop and R. Longo,
+\emph{Modular structure of the local algebras associated with the free
+massless scalar field theory}, Commun. Math. Phys. \textbf{84} (1982),
+71--85. \href{https://doi.org/10.1007/BF01208372}{doi:10.1007/BF01208372}.
+\bibitem{Janson} S. Janson,
+\emph{Poset limits and exchangeable random posets},
+\href{https://arxiv.org/abs/0902.0306v1}{arXiv:0902.0306v1} (2009),
+Theorem 7.1.
+\bibitem{Braun} M. Braun,
+\emph{Spacetime reconstruction by order and number},
+\href{https://arxiv.org/abs/2507.01907v1}{arXiv:2507.01907v1} (2025).
+\bibitem{Fredriksen} D. E. Fredriksen,
+\emph{Quantitative reconstruction from finite causal orders in a conformal
+diamond}, version 0.4.0 (2026), Quantyra Inc.
+\href{https://doi.org/10.5281/zenodo.23247720}{doi:10.5281/zenodo.23247720}.
+\end{thebibliography}
+\end{document}

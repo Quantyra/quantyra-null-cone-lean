@@ -19,3 +19,7 @@ manuscript/deposit/v0.3.1/*.tex text eol=lf
 manuscript/deposit/v0.3.1/*.md text eol=lf
 manuscript/deposit/v0.3.1/*.json text eol=lf
 manuscript/deposit/v0.3.1/*.log text eol=lf
+manuscript/deposit/v0.4.0/*.tex text eol=lf
+manuscript/deposit/v0.4.0/*.md text eol=lf
+manuscript/deposit/v0.4.0/*.json text eol=lf
+manuscript/deposit/v0.4.0/*.log -text

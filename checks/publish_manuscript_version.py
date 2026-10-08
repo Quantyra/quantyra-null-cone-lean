@@ -63,12 +63,16 @@ def main():
     modes.add_argument("--reserve", action="store_true")
     modes.add_argument("--publish", action="store_true")
     parser.add_argument("--commit")
+    parser.add_argument("--proof-commit", default="b7d762acc9c10ca881f8366f545f3998b0528448",
+                        help="Accepted proof revision recorded in the publication receipt")
     parser.add_argument("--package", default="manuscript/deposit/v0.3.0")
     parser.add_argument("--version", default="0.3.0")
     parser.add_argument("--previous", type=int, default=23206773)
     parser.add_argument("--previous-version", default="0.2.0")
     parser.add_argument("--previous-package", default="manuscript/deposit")
     args = parser.parse_args()
+    if len(args.proof_commit) != 40 or any(c not in "0123456789abcdef" for c in args.proof_commit):
+        parser.error("--proof-commit must be a full lowercase Git commit hash")
     PACKAGE = (ROOT / args.package).resolve()
     assert PACKAGE.is_relative_to(ROOT / "manuscript/deposit") and PACKAGE != ROOT / "manuscript/deposit"
     PREVIOUS = args.previous
@@ -217,7 +221,7 @@ def main():
     software_files = public_files(software)
     receipt = {"id": record_id, "doi": actual["doi"], "conceptdoi": record["conceptdoi"],
                "url": f"https://zenodo.org/records/{record_id}", "version": args.version,
-               "source_commit": args.commit, "proof_commit": "b7d762acc9c10ca881f8366f545f3998b0528448",
+               "source_commit": args.commit, "proof_commit": args.proof_commit,
                "previous_record": PREVIOUS, "same_version_family_verified": True,
                "previous_manuscript_downloads_unchanged": True, "software_doi_version_preserved": True,
                "software_files": software_files,

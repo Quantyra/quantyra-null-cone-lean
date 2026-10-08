@@ -1,0 +1,50 @@
+{
+  "state": "finalized_for_publication",
+  "version": "0.4.0",
+  "doi": "10.5281/zenodo.23247720",
+  "reviewed_utc": "2026-10-08T20:11:42.611591+00:00",
+  "pages": 10,
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "visual_findings": "All ten rendered pages inspected; DOI/version, mathematical layout, formal coverage, limitations and references checked; no clipping or overlap.",
+  "compiler": "Tectonic 0.17.0",
+  "build_exit": 0,
+  "reference_or_layout_warnings": false,
+  "compiler_notice": "Nonfatal Fontconfig configuration notice; rendered fonts checked.",
+  "all_seven_mathematical_statements_unchanged": true,
+  "baseline_pdf_and_zip_preserved": true,
+  "historical_review_candidate_bytes_preserved": true,
+  "accepted_lean_audit_integrity_pins_and_workflows_unchanged": true,
+  "publication_helper_change": "CLI proof-commit argument records the current accepted revision; six offline tests passed. This is outside Lean acceptance; no claim that all 109 captured utilities are unchanged.",
+  "proof_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "gcp_run": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+  "audited_exports": 295,
+  "new_lean_invocations": 0,
+  "files": {
+    "finite-causal-order-reconstruction.tex": "f85cd3e0c5dad8101c47df790bd894c1504b920a977029f5ad1e2dac61012e5c",
+    "finite-causal-order-reconstruction.pdf": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+    "tex-build.log": "eb49e737f3d5f21d9e35fdb96c33afa30dc5e87002e55559b15026329808c828"
+  },
+  "page_render_sha256": {
+    "page-01.png": "b72b42a6501248a231e9ba777c5041919553c0cc1524826ef4aee10b9bca0b8b",
+    "page-02.png": "f66973a347f2598ac0820a019f4a03e000f16a74824df44d2aeb46ae45d09993",
+    "page-03.png": "17012b31790e1ac94d2a82c27b4bded0be53dff57909fa56c73244c412260650",
+    "page-04.png": "4dbe291bb2d5ffb25888ac9ea3bb4f7292dc72cf20b12e3863b3ac1820e53e3b",
+    "page-05.png": "1e0391a622f0e4de11c4f31b1d23c5088c08fee8a142013a8b1313c061318abf",
+    "page-06.png": "1fd5a4ce29e44c4c1fd368c346810aed734b46d9a9222c8fb43c6ed0a9bcb505",
+    "page-07.png": "cb7ac8db68fd68fcb92fba4412c008c75ac243ef996a36dda566f9bba577cba7",
+    "page-08.png": "8300f8f23a987225675a4789d48cd06a4939efccabfc0d9c2c74d2e76fdb3f3e",
+    "page-09.png": "da72efcf77515bd4a43ac09e88239ae7786a2772a017c6532d6ae785c1408bd8",
+    "page-10.png": "b84a7e64b8fbe56d8d5b06fedc80efe9654d9335e0e8fd6c809af89e2f619f28"
+  }
+}

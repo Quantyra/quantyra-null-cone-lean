@@ -1,0 +1,640 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{pdftitle={Quantitative reconstruction from finite causal orders in a conformal diamond},pdfauthor={Daniel Eric Fredriksen},pdfsubject={Finite realizer rank rigidity and a restricted inverse stability bound},pdfkeywords={causal order, spacetime reconstruction, partial orders, Lean 4, inverse stability}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\K}{\mathcal K}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\dc}{d_{\mathrm{conf}}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert_\infty}
+\title{Quantitative reconstruction from finite causal orders\\in a conformal diamond}
+\author{Daniel Eric Fredriksen\\Quantyra Inc.\\\url{https://github.com/Quantyra/quantyra-null-cone-lean}}
+\date{8 October 2026 \\ version 0.4.0}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Consider smooth volume densities on the unit square, bounded between
+$1/2$ and $3/2$, with uniform marginals and Euclidean Lipschitz constant at
+most two. In null coordinates these define a restricted class of
+$1+1$-dimensional conformal diamonds with the same chronological relation.
+Observing only the partial orders induced by independent volume samples,
+we derive an explicit inverse estimate: the supremum difference of the
+densities, modulo exchange of the null axes, is at most
+$100(N^{-1/12}+\Delta_N)$, where $\Delta_N$ is the largest total variation
+distance between the finite order laws through size $N$. A logarithmic
+grid scale further gives $130((\log N/N)^{1/6}+\Delta_N)$ for every
+$N\ge2$. The argument
+uses an occupied-grid forcing construction that constrains every
+two-order realizer, after one common axis exchange, to have interior
+rank error at most $30rn$. Lean~4 proofs cover this finite theorem,
+both inverse estimates, all-size identifiability, and the proper-time
+comparison for actual absolutely continuous future curves. They include
+the probability and analytic bridges, equality of labeled and unlabeled
+order-law total variation, and one orientation shared by all endpoint pairs.
+The constants are conservative, the exponents are not claimed optimal,
+and originality remains provisional. Public source and reproducibility
+artifacts support decentralized informal feedback and downstream testing.
+\end{abstract}
+
+\noindent\textbf{Keywords:} causal order; conformal geometry; two-dimensional
+posets; quantitative identifiability; formal verification.\\
+\textbf{Artifacts:} Lean source, pinned dependencies, verification audit,
+and this manuscript are available in the public repository above.\\
+\textbf{Manuscript DOI:} version 0.4.0,
+\href{https://doi.org/10.5281/zenodo.23247720}{doi:10.5281/zenodo.23247720}.\\
+\textbf{Previous manuscript:} version 0.3.1,
+\href{https://doi.org/10.5281/zenodo.23225029}{doi:10.5281/zenodo.23225029}.\\
+\textbf{Software archive:} historical version 0.1.0,
+\href{https://doi.org/10.5281/zenodo.23202763}{doi:10.5281/zenodo.23202763}.
+The later full formalization is identified in Section~\ref{sec:formal}.\\
+\textbf{License:} manuscript CC-BY-4.0; software Apache-2.0.
+
+\section{Introduction and scope}
+Chronology and volume have long motivated spacetime reconstruction.
+Janson's equivalence theory for random posets supplies qualitative
+identification of order kernels from all finite laws~\cite{Janson}.
+Braun proves a smooth reconstruction theorem from chronological
+adjacency laws under geometric hypotheses in spacetime dimension at
+least three~\cite{Braun}. Henson gives a numerical construction of
+approximate flat embeddings in two dimensions~\cite{Henson}.
+These precedents establish the general reconstruction objective.
+
+The present draft concerns an explicit finite inverse modulus for a
+fixed, regular, two-dimensional class. Orientation forcing and modular
+decomposition are established methods~\cite{KlavikZeman}. Winkler's
+\emph{Random orders}, Theorem~7 and its proof, use existential poset
+configurations to recover finite coordinate-order patterns up to axes
+in the infinite box-dense setting~\cite{Winkler1985}. In the flat
+two-dimensional random model, the typical-event argument in
+\emph{Random orders of dimension 2}, Section~II and the proof of
+Theorem~4.3, leaves only disjoint adjacent twin transpositions and one
+global axis exchange~\cite{Winkler}. It follows that every realizer has
+rank error at most one after that exchange, a stronger flat-model
+conclusion than our $30rn$ estimate. Exact unique realizability is
+unnecessary for this recovery.
+
+Our candidate contribution is narrower: explicit deterministic
+occupied-grid quantification and its uniform statistical use over the
+nonconstant positive Lipschitz class, leading to a finite
+law-to-coefficient inverse modulus. The independent uniform-permutation
+counting in Winkler's finite model does not immediately give this
+uniform conclusion for dependent coordinate rankings. We have not
+located an equivalent or directly implying inverse bound in the
+inspected literature. The full-text comparison and its remaining
+structural/citation gaps are recorded in the repository; originality
+remains provisional, with no certified priority claim.
+
+The result concerns geometric inference within a stipulated class.
+It supplies neither new physical dynamics nor reconstruction of an
+arbitrary spacetime. No curvature estimate, practical sample-complexity
+claim, or societal carrying-capacity consequence is established.
+
+\section{Model and main estimate}
+Let $D=[0,1]^2$, with null coordinates $(u,v)$, and set
+\[
+ g_\rho=-\rho(u,v)(du\otimes dv+dv\otimes du).
+\]
+The interior of $D$ is the spacetime; its closure is used for coefficient
+norms and endpoint limits. Its volume measure is $\rho\,du\,dv$, and
+chronology is
+\[
+ (u,v)\prec (u',v')\quad\Longleftrightarrow\quad u<u',\ v<v'.
+\]
+Let $\K$ consist of densities smooth on a neighborhood of $D$ such that
+\begin{equation}\label{eq:class}
+ \tfrac12\le\rho\le\tfrac32,\qquad
+ |\rho(x)-\rho(y)|\le2|x-y|_2,\qquad
+ \int_0^1\rho(u,v)\,dv=\int_0^1\rho(v,u)\,dv=1
+ \quad(u\in[0,1]).
+\end{equation}
+In particular, total volume is one. Write $T(u,v)=(v,u)$ and
+$\rho^T=\rho\circ T$. The uniform-marginal gauge is fixed; the residual
+equivalence used here is axis exchange, not time reversal.
+
+For $k$ independent samples from $\rho\,du\,dv$, let $\nu_k(\rho)$ be
+the law of their labeled strict partial order. Labels are event indices,
+not coordinate rankings. For $N\ge2$, define
+\[
+ \Delta_N(\rho,\sigma)=\max_{2\le k\le N}
+       \TV(\nu_k(\rho),\nu_k(\sigma)),\qquad
+ \dc(\rho,\sigma)=\min\{\norm{\rho-\sigma},\norm{\rho-\sigma^T}\}.
+\]
+Total variation is $\sup_A|\mu(A)-\nu(A)|$.
+
+\begin{theorem}[Inverse estimate]\label{thm:main}
+For every $\rho,\sigma\in\K$ and integer $N\ge2$,
+\begin{equation}\label{eq:main}
+ \dc(\rho,\sigma)\le100\bigl(N^{-1/12}+\Delta_N(\rho,\sigma)\bigr).
+\end{equation}
+\end{theorem}
+The theorem is proved in Sections~\ref{sec:probability}--\ref{sec:inverse}
+using the finite theorem of Section~\ref{sec:finite}. The complete
+original estimate and Corollary~\ref{cor:identification} are now formalized
+for both labeled and unlabeled directed-order laws; see
+Section~\ref{sec:formal}.
+
+\begin{corollary}[All-size identification]\label{cor:identification}
+If $\nu_k(\rho)=\nu_k(\sigma)$ for every $k$, then
+$\rho=\sigma$ or $\rho=\sigma^T$ on $D$.
+\end{corollary}
+\begin{proof}
+Every $\Delta_N$ vanishes. Let $N\to\infty$ in~\eqref{eq:main}.
+The minimum of the two fixed nonnegative supremum norms is zero.
+\end{proof}
+
+\section{Occupied grids and finite rank rigidity}\label{sec:finite}
+Take $n\ge1$ points $x_i=(u_i,v_i)\in(0,1)^2$, with distinct $u$
+coordinates and distinct $v$ coordinates. Let $m\ge16$, $r=1/m$,
+and assume that no coordinate lies on a grid line and every open cell
+\[
+ (jr,(j+1)r)\times(kr,(k+1)r),\qquad 0\le j,k<m,
+\]
+contains a point. Put $J=[4r,1-4r]^2$ and
+$B=\{i:x_i\notin J\}$. A realizer is a pair of strict total orders
+$(L_1,L_2)$ whose intersection is the sampled chronology $P$.
+For any strict order $L$, set
+\[
+ \rank_L(i)=1+\#\{j:L(j,i)\}.
+\]
+Let $\rank_u,\rank_v$ denote the coordinate ranks. Define empirical
+marginals with inclusive thresholds, for example
+$F_{v,n}(t)=n^{-1}\#\{i:v_i\le t\}$.
+
+\begin{theorem}[Finite realizer rank rigidity]\label{thm:finite}
+In addition to occupancy, suppose both empirical marginal errors on
+$[0,1]$ are at most $2r$ and $\#B\le20rn$. For every realizer
+$(L_1,L_2)$ there exists one exchange of these two orders, chosen for
+the entire sample, such that for every $i$ with $x_i\in J$,
+\[
+ |\rank_{L_1}(i)-\rank_u(i)|\le30rn,\qquad
+ |\rank_{L_2}(i)-\rank_v(i)|\le30rn.
+\]
+Here $L_1,L_2$ denote the orders after the chosen exchange.
+\end{theorem}
+
+\subsection{Orientation forcing}
+For a realizer define
+\[
+ Q(x,y)\quad\Longleftrightarrow\quad L_1(x,y)\text{ and }L_2(y,x).
+\]
+Every incomparable pair has precisely one $Q$ orientation. The relation
+$Q$ is transitive: two successive comparisons hold in $L_1$, and their
+reverses hold in $L_2$. Thus their endpoints are incomparable and
+have the corresponding $Q$ comparison.
+
+If the incomparability edges $xy$ and $xz$ share $x$, while $y$ and $z$
+are comparable in $P$, their orientations at $x$ agree. Otherwise a
+two-edge $Q$ path would make $y,z$ incomparable by transitivity.
+We use this elementary forcing rule for both the latent realizer and
+any proposed realizer.
+
+\subsection{A common anchor fixes separated pairs}
+Occupancy supplies points in the following cells:
+\begin{align*}
+ A&\in(r,2r)\times(1-2r,1-r),\\
+ B_0&\in(1-2r,1-r)\times(r,2r),\\
+ W&\in(1-r,1)\times(1-3r,1-2r).
+\end{align*}
+The edges $AB_0$ and $AW$ are incomparability edges and $B_0\prec W$.
+Take any interior incomparable $x,y$ with
+$u_x<u_y$ and $v_x-v_y\ge3r$.
+The interval $(v_y,v_x)$ contains an open grid interval: take
+$k=\lfloor v_y/r\rfloor+1$; then $kr>v_y$ and
+$(k+1)r\le v_y+2r<v_x$. Interior membership ensures an admissible
+row. Occupancy in its first-column cell gives
+\[
+ z\in(0,r)\times(kr,(k+1)r).
+\]
+The coordinate inequalities imply
+$z\prec x$, $z\prec A$, $y\prec W$, and $B_0\prec W$.
+The sequence of incomparability edges
+\[
+ xy,\quad zy,\quad Ay,\quad AW,\quad AB_0
+\]
+has comparable opposite endpoints at each successive shared vertex.
+Specifically the comparable pairs are $(z,x)$, $(z,A)$, $(y,W)$,
+and $(B_0,W)$. The forcing rule therefore gives
+\[
+ Q(x,y)\ \Longleftrightarrow\ Q(z,y)
+ \ \Longleftrightarrow\ Q(A,y)
+ \ \Longleftrightarrow\ Q(A,W)
+ \ \Longleftrightarrow\ Q(A,B_0).
+\]
+Exchanging $L_1,L_2$ reverses $Q$. Choose this exchange once so that
+$Q(A,B_0)$ agrees with the latent $u$ order. All separated interior
+incomparable pairs then agree. Comparable pairs agree automatically
+in both realizers. No prime-graph or exact-uniqueness assumption is used.
+
+\subsection{Counting possible disagreements}
+For a fixed interior $x_i$, any disagreement in either order can only
+involve a point outside $J$ or one with $|v_j-v_i|<3r$.
+Set $a=v_i-3r$ and $b=v_i+3r$; both belong to $[0,1]$.
+The strip is contained in $\{j:a<v_j\le b\}$, so the marginal bound gives
+\[
+ \#\{j:|v_j-v_i|<3r\}/n
+ \le F_{v,n}(b)-F_{v,n}(a)\le(b-a)+4r=10r.
+\]
+At most $20rn+10rn$ partners can disagree. The absolute difference
+of two predecessor counts is at most the number of points on which
+their predecessor indicators differ. This proves both rank bounds,
+with the same exchange, and establishes Theorem~\ref{thm:finite}.
+
+\section{Order-only reconstruction and probability}\label{sec:probability}
+For each labeled dimension-two poset $P$, fix one of the finitely many
+pairs of total orders with intersection $P$, independently of the density.
+For example, one may use the lexicographically first pair with labels
+breaking ties. The Lean construction uses classical choice; the proof
+applies to every realizer and does not depend on this choice. Define $A_n(P)$ as the
+empirical cumulative distribution function of
+\[
+ \left(\frac{\rank_{L_1}(i)}n,\frac{\rank_{L_2}(i)}n\right),\qquad1\le i\le n.
+\]
+For other order codes define $A_n$ to be the zero function. This is a single function
+of the observed order; grid points and anchors appear only in its
+accuracy proof. No computational efficiency is asserted.
+
+Write $C_\rho(s,t)=\int_{[0,s]\times[0,t]}\rho$ and let $C_n$ be the
+latent empirical cumulative function. Suppose occupancy holds and
+$|C_n-C_\rho|\le r$ at every grid vertex. By monotonicity between
+vertices and the uniform population marginals:
+\begin{enumerate}
+\item each empirical marginal has error at most $2r$ at every threshold;
+\item the full empirical cumulative error is at most $3r$;
+\item the fraction outside $J$ is at most $20r$, since each of the
+four marginal tails is bounded by $4r+r$.
+\end{enumerate}
+Coordinate ties and grid-line points have probability zero.
+The finite theorem applies. Distinct coordinates and inclusive thresholds
+give the exact identity $\rank_u(i)/n=F_{u,n}(u_i)$, and likewise for $v$;
+there is no additional $1/n$ term. Each latent normalized rank differs
+from its coordinate by at most $2r$, so every interior reconstructed point
+is within $32r$ in each coordinate after one exchange.
+
+Write $q_i$ for the aligned reconstructed point, $b=\#B/n\le20r$,
+and $d=32r$. For $s,t\in[0,1]$ put
+$s_- =\max(0,s-d)$, $s_+=\min(1,s+d)$ and similarly for $t$.
+Interior-point indicator inclusions give, simultaneously for all thresholds,
+\[
+ C_n(s_-,t_-)-b\le A_n^S(s,t)\le C_n(s_+,t_+)+b.
+\]
+If a lower threshold clips to zero, its latent rectangle contains no
+points because latent coordinates are strictly positive. Upper clipping
+uses the unit-square bounds. This includes reconstructed ranks equal
+to one and values $d>1$. Uniform population marginals bound the mass
+change from moving the two thresholds by $2d=64r$; the latent empirical
+replacement costs $3r$. Each direction uses one boundary penalty $b$.
+Consequently
+\begin{equation}\label{eq:reconstruction}
+ \min\{\norm{A_n(P)-C_\rho},\norm{A_n(P)-C_{\rho^T}}\}\le87r.
+\end{equation}
+The transpose of a cumulative function exchanges its arguments and
+preserves the supremum norm.
+
+For $n\ge16^4$ choose $m=\lfloor n^{1/4}\rfloor$. Every cell has
+mass at least $1/(2m^2)$, giving an occupancy failure bound
+$m^2\exp(-n/(2m^2))$. At each grid vertex, the empirical mass is an
+average of independent Bernoulli variables. Hoeffding's
+inequality~\cite{Hoeffding} and a union bound give failure probability
+$2(m+1)^2\exp(-2n/m^2)$ for vertex error at most $r$.
+Independence across vertices or overlapping suborders is not assumed.
+Since $n\ge m^4$ and $e^t\ge t^2/2$,
+\begin{align*}
+ m^2e^{-n/(2m^2)}+2(m+1)^2e^{-2n/m^2}
+ &\le m^2e^{-m^2/2}+2(m+1)^2e^{-2m^2}\\
+ &\le\frac8{m^2}+\frac{(m+1)^2}{m^4}
+ \le\frac{12}{m^2}\le\frac{12}{256}<\frac1{10}.
+\end{align*}
+Also $m\ge n^{1/4}/2$. Thus~\eqref{eq:reconstruction} holds with
+probability at least $9/10$, uniformly in $\rho\in\K$, with
+\begin{equation}\label{eq:an}
+ a_n=174n^{-1/4}
+\end{equation}
+in place of $87r$.
+
+\section{From finite laws to coefficient error}\label{sec:inverse}
+\begin{lemma}[Cumulative interpolation]\label{lem:interpolation}
+For $\rho,\sigma\in\K$ and $\epsilon=\norm{C_\rho-C_\sigma}$,
+\[
+ \norm{\rho-\sigma}^3\le2048\epsilon.
+\]
+\end{lemma}
+\begin{proof}
+Put $f=\rho-\sigma$ and $\delta=\norm f\le1$. The function $f$ is
+$4$-Lipschitz. If $\delta>0$, take a maximizer $x$ of $|f|$ and
+$h=\delta/16$. In each coordinate choose a length-$h$ interval
+extending from $x$ towards the half of $[0,1]$ with more room.
+Their product $R$ lies in $D$. For $z\in R$,
+$|z-x|_2\le2h$, so $|f(z)-f(x)|\le8h=\delta/2$.
+The sign is fixed and
+\[
+ \left|\int_R f\right|\ge(\delta/2)h^2=\delta^3/512.
+\]
+Inclusion--exclusion expresses this integral by four corner values
+of $C_\rho-C_\sigma$, of total absolute value at most $4\epsilon$.
+The result follows; $\delta=0$ is immediate.
+\end{proof}
+
+Let
+\[
+ \epsilon_* =\min\{\norm{C_\rho-C_\sigma},
+                         \norm{C_\rho-C_{\sigma^T}}\},\qquad
+ t_n=\TV(\nu_n(\rho),\nu_n(\sigma)).
+\]
+Transposition is a supremum-norm isometry, so the minimum of the four
+cross-distances between the two transpose orbits is exactly $\epsilon_*$.
+The selector has a finite order domain; every output preimage used below
+is therefore measurable without a function-space measurability assumption.
+If $\epsilon_*>2a_n$, the sets of outputs within $a_n$ of the two
+transpose orbits are disjoint. Each law places at least $9/10$ of
+its mass on its own good set and at most $1/10$ on the other's.
+Taking the preimage of a good set under the same order-only map
+$A_n$ yields $t_n\ge4/5$. Therefore $t_n<4/5$ implies
+$\epsilon_*\le2a_n$. Applying Lemma~\ref{lem:interpolation} to
+the minimizing orientation yields
+$\dc\le(4096a_n)^{1/3}$. If $t_n\ge4/5$, the elementary
+$\dc\le1$ gives $\dc\le(5/4)t_n$. In both cases
+\[
+ \dc\le(4096a_n)^{1/3}+\tfrac54t_n.
+\]
+For $n\ge65536$, substitute~\eqref{eq:an} and use
+$4096\cdot174=712704<100^3$. Setting $n=N$ and using
+$t_N\le\Delta_N$ proves~\eqref{eq:main}. For $2\le N<65536$,
+$\dc\le1<100N^{-1/12}$ proves it directly.
+
+\begin{remark}[Magnitude and optimality]
+The bare $N$ term becomes smaller than one only when $N>10^{24}$.
+The bound establishes a polynomial modulus, not a useful finite sample
+budget. No optimality of the $N^{-1/12}$ rate is asserted.
+\end{remark}
+
+\subsection{A logarithmic grid scale}
+\begin{theorem}[Improved inverse estimate]\label{thm:improved}
+For every $\rho,\sigma\in\K$ and integer $N\ge2$,
+\[
+ \dc(\rho,\sigma)\le130\bigl((\log N/N)^{1/6}+\Delta_N(\rho,\sigma)\bigr).
+\]
+The logarithm is natural. The observable, class and residual quotient
+are those of Theorem~\ref{thm:main}.
+\end{theorem}
+\begin{proof}
+For $n\ge65536$ set $x=\sqrt{n/(8\log n)}$, $m=\lfloor x\rfloor$,
+and $r=1/m$. The function $t/\log t$ is increasing for $t>e$, since
+its derivative is $(\log t-1)/(\log t)^2$. At the cutoff,
+$\log65536=16\log2<16$, hence $x^2>512>16^2$.
+Thus $m\ge16$ and $\log n\ge1$. Also $m\ge x-1\ge x/2$, so
+\[
+ m^2\le\frac{n}{8\log n},\qquad
+ r\le2\sqrt{\frac{8\log n}{n}}.
+\]
+The deterministic reconstruction proof is unchanged. The two failure
+terms in Section~\ref{sec:probability} satisfy
+\begin{align*}
+ m^2e^{-n/(2m^2)}&\le\frac{1}{8n^3\log n},\\
+ 2(m+1)^2e^{-2n/m^2}&\le\frac{n^{-15}}{\log n}.
+\end{align*}
+Indeed the exponents are at least $4\log n$ and $16\log n$;
+$(m+1)^2\le4m^2$ supplies the second prefactor. Their sum is at most
+$1/(8n^3)+n^{-15}<1/10$. Consequently success is at least $9/10$,
+with cumulative error
+\[
+ a_n=174\sqrt8\sqrt{\log n/n}.
+\]
+The same orbit-separation and interpolation argument gives
+\[
+ \dc\le(712704\sqrt8)^{1/3}(\log n/n)^{1/6}+\tfrac54t_n.
+\]
+The coefficient is below 130: squaring the positive cubed comparison
+reduces it to
+\[
+ 8\cdot712704^2=4063575932928<4826809000000=130^6.
+\]
+Set $n=N$ and use $t_N\le\Delta_N$.
+
+For $2\le N<65536$, $\log2\ge1/2$ follows by integrating $1/t$
+on $[1,2]$. Thus $\log N/N\ge1/131072>(1/8)^6$, and the
+displayed N term exceeds $130/8>1\ge\dc$. This proves the small-N
+branch without a grid or concentration assertion there.
+\end{proof}
+
+The new estimate improves the asymptotic $N$ term but is not an optimal
+rate or a practical sampling guarantee. It reuses the probability and
+continuum bridges formalized for the original estimate. The logarithmic
+grid choice, its probability bounds and the complete all-$N$ rate are
+now formalized; see Section~\ref{sec:formal}.
+
+\section{Observable labels and proper time}
+\begin{proposition}[Labeled and unlabeled laws]
+For each $k$, the total variation distance of the labeled order laws
+equals that of their unlabeled order-isomorphism laws.
+\end{proposition}
+\begin{proof}
+Exchangeability makes each labeled poset in a relabeling orbit $O$
+have probability $p_O/|O|$. For the second law let the orbit mass be
+$q_O$. Then labeled total variation is
+\[
+ \tfrac12\sum_O\sum_{P\in O}
+       |p_O/|O|-q_O/|O||=\tfrac12\sum_O|p_O-q_O|,
+\]
+the unlabeled distance. Order duality is not included in relabeling.
+\end{proof}
+The label-based tie-breaking in $A_n$ therefore does not confer extra
+information in these iid law comparisons.
+
+For an absolutely continuous future-directed curve $\gamma=(u,v)$,
+with nonnegative coordinate derivatives almost everywhere, define
+\[
+ L_\rho(\gamma)=\int\sqrt{2\rho(\gamma)u'v'}.
+\]
+Time separation is the supremum over such curves between the endpoints,
+and is zero if no such future curve exists.
+\begin{proposition}[Proper-time comparison]
+There is one choice $S\in\{\mathrm{id},T\}$ such that, for all
+endpoints $p,q\in D$,
+\[
+ |\tau_\rho(p,q)-\tau_\sigma(Sp,Sq)|\le\dc(\rho,\sigma).
+\]
+\end{proposition}
+\begin{proof}
+First set $\delta=\norm{\rho-\sigma}$. The density floor gives
+\[
+ |\sqrt{2\rho}-\sqrt{2\sigma}|
+ =\frac{2|\rho-\sigma|}{\sqrt{2\rho}+\sqrt{2\sigma}}\le\delta.
+\]
+For a common monotone curve from $p$ to $q$, Cauchy--Schwarz gives
+$\int\sqrt{u'v'}\le\sqrt{(q_u-p_u)(q_v-p_v)}\le1$.
+Thus curve lengths differ by at most $\delta$. Both suprema are
+finite, since every such length is at most $\sqrt3$, and the curve
+classes agree. Taking suprema proves the identity-aligned bound.
+Axis exchange preserves the product of derivatives and maps endpoints
+and curves consistently. Choose the orientation attaining $\dc$.
+\end{proof}
+
+\section{Formal verification and reproducibility}\label{sec:formal}
+The formalization uses the class in~\eqref{eq:class}: neighborhood
+smoothness, bounds $1/2\le\rho\le3/2$, Euclidean Lipschitz constant two,
+and both uniform marginals. The laws are pushforwards of the actual iid
+density measure by the Boolean chronological relation. Observations
+contain no coordinate ranks or latent positions. The unlabeled law is
+the pushforward by directed-order isomorphism; order duality is not
+part of that quotient.
+
+The finite theorem appears in \path{QuantyraNullCone/Bridges.lean} as
+\path{finite_realizer_rank_rigidity_specified}. Its existential Boolean
+exchange precedes the universal event quantifier and is shared by both
+rank bounds. The original inverse estimate appears as
+\path{InDensityClass.full_inverse} in \path{InverseRate.lean}, and
+\path{InDensityClass.full_inverse_unlabeled} in \path{Unlabeled.lean}.
+These theorems assume only membership of both densities in $\K$ and
+$N\ge2$. Concentration, reconstruction, interpolation and exchangeability
+are proved rather than supplied as additional hypotheses.
+
+The source modules, all under \path{QuantyraNullCone/}, cover the
+following steps:
+\begin{itemize}
+\item \path{Model.lean}, \path{Measures.lean} and \path{DensityCDF.lean}
+define the model and derive probability normalization, uniform marginals
+and cumulative threshold stability.
+\item \path{Cumulative.lean} and \path{GridAccuracy.lean} prove the
+all-threshold $87r$ reconstruction estimate from the finite rank theorem.
+\path{Sampling.lean}, \path{Coordinates.lean}, \path{Concentration.lean},
+\path{GoodSamples.lean} and \path{ProbabilityRate.lean} discharge occupancy,
+null-tie, concentration and integer-grid obligations, giving success
+probability at least $9/10$ with error $174n^{-1/4}$ for $n\ge65536$.
+\item \path{DensityInterpolation.lean} proves the coefficient bound
+$\delta^3\le2048\epsilon$. \path{OrderSelector.lean}, \path{FiniteTV.lean}
+and \path{Transpose.lean} prove the common order-only selection, total
+variation separation and transpose identities. \path{InverseRate.lean}
+handles the original all-$N$ estimate, including small $N$ and large TV.
+\item \path{Exchangeability.lean}, \path{QuotientTV.lean} and
+\path{Unlabeled.lean} derive iid relabeling invariance and exact equality
+of labeled and unlabeled TV and $\Delta_N$. The all-size conclusion is
+\path{InDensityClass.all_law_identifiability} in \path{Identifiability.lean}
+and \path{InDensityClass.all_unlabeled_law_identifiability} in
+\path{Unlabeled.lean}. Equality holds everywhere on $D$ after one global
+identity or axis exchange; no equality outside $D$ is asserted.
+\item \path{LogGridRate.lean} and \path{ImprovedInverse.lean} prove
+the logarithmic-grid probability estimate and the exact constant-130
+inverse, including small-$N$ and high-TV branches. The exports are
+\path{InDensityClass.full_inverse_logarithmic} and its actual unlabeled-law
+counterpart \path{InDensityClass.full_inverse_logarithmic_unlabeled}.
+\item \path{ProperTime.lean} defines actual absolutely continuous
+future curves, their length integrals and the endpoint time-separation
+supremum, with zero for an empty curve class. It proves the comparison
+and both inverse-law consequences with one global orientation for
+every endpoint pair; the target length inequality is not assumed.
+\end{itemize}
+
+Lean~4.30.0 and mathlib commit
+\texttt{c5ea00351c28e24afc9f0f84379aa41082b1188f} are pinned.
+The accepted proof/evidence revision is
+\href{https://github.com/Quantyra/quantyra-null-cone-lean/tree/74c1f743d085c63b45ac2bf30008ad5d29b98fbc}{\texttt{74c1f743d085c63b45ac2bf30008ad5d29b98fbc}}.
+Authoritative verification ran on GCP under identifier
+\path{space-lorentz-acceptance-20261008T071627Z-221cd8}.
+The complete root build passed 3001 jobs and all 295 selected exact-type
+and axiom audits, with zero compiler warnings or added axioms.
+This audit includes separate finite-data and higher-dimensional modules;
+the count does not mean that this paper contains 295 mathematical results.
+Exact source hashes were checked before and after execution, as were
+all nine pinned dependency revisions and their tracked trees.
+The \href{https://github.com/Quantyra/quantyra-null-cone-lean/tree/74c1f743d085c63b45ac2bf30008ad5d29b98fbc/evidence/gcp/space-lorentz-acceptance-20261008T071627Z-221cd8}{retained evidence}
+contains immutable inputs, manifests, raw logs and the acceptance receipt.
+Earlier 68-, 78-, 90- and 219-export acceptances remain preserved.
+The audited dependencies use only \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}; no additional axioms
+or admitted proofs are introduced. Every development and acceptance
+Lean invocation ran on GCP; hosted CI is supplementary.
+Reproduction and statement-to-source mappings are in
+\path{INTEGRITY.md} and \path{notes/lean-verification.md}.
+
+Both the logarithmic inverse and proper-time consequence in this paper
+are now formally verified. Supplementary finite checks remain useful
+for detecting particular implementation errors; universal mathematical
+claims are supported by the kernel-checked proofs. Kernel checking does
+not establish originality, optimality or the adequacy of the model.
+
+\subsection{Related certified work outside the main theorem}
+The same repository now contains a separately scoped one-order
+finite-data procedure. Its formalization connects implication-forced
+ranks, sharp DKW calibration, canonical rational linear programs,
+dual residual checks, cell and point bands, histogram error and a
+conservative fallback. The main full-report theorem bounds
+accepted-output failure under the original density class and a fixed
+pre-sampling calibration budget, using one orientation for every field.
+It does not assert coverage conditional on acceptance, certify the
+entire Python runtime, or authorize data-selected probability budgets.
+Current tested density bands remain full range; useful practical
+density inference has not been established. The detailed statistical
+procedure is kept separate from this inverse-law paper.
+
+A genuine $2+1$-dimensional Lorentzian counterexample is also certified
+separately. On the diamond $|t|+\sqrt{x^2+y^2}<1$, an explicit smooth
+conformal automorphism transports flat volume to a distinct smooth
+normalized density satisfying the selected bounds and Euclidean
+Lipschitz constraint. Actual iid coupling gives identical finite
+directed-order laws at every size. The densities nevertheless have
+positive coordinate supremum distance modulo spatial $O(2)$.
+The formalization also derives the metric pullback: these metrics
+are isometric. The obstruction therefore concerns the proposed
+coordinate gauge, rather than new physical nonidentifiability or a
+higher-dimensional inverse rate. The explicit construction and proof
+map are in \path{notes/higher-dimensional-certification.md}; its
+full exposition is reserved for a separate technical paper.
+
+\section{Discussion and research provenance}
+The proof uses a fixed gauge and uniform positive density to separate
+small geometric ambiguity from large-scale orientation. Extending
+the class, finding sharper or optimal rates, controlling derivatives,
+obtaining informative finite-data density confidence, and selecting a
+valid higher-dimensional gauge with a stability theorem remain separate
+questions. The logarithmic-grid and proper-time certification tasks
+are complete. This draft
+does not claim to settle the general causal-set Hauptvermutung.
+
+The work was developed with OpenAI Codex assistance under Daniel Eric
+Fredriksen's research direction. AI-assisted derivation and writing are
+disclosed. The open-source workflow supports decentralized informal
+feedback, reuse and downstream testing; formal specialist review is
+not a publication prerequisite. The repository retains the derivation, exact-source
+comparisons and verification provenance. The candidate contribution
+is the explicit restricted inverse estimate and the occupied-grid
+quantification supporting its uniform use over nonconstant densities.
+Earlier qualitative forcing and stronger flat-model rank recovery are
+credited above; broader priority assessment remains provisional.
+
+\begin{thebibliography}{9}
+\bibitem{Janson} S. Janson, \emph{Poset limits and exchangeable random
+posets}, arXiv:0902.0306. \url{https://arxiv.org/abs/0902.0306}.
+\bibitem{Braun} M. Braun, \emph{Spacetime reconstruction by order and
+number}, arXiv:2507.01907 (2025).
+\url{https://arxiv.org/abs/2507.01907}.
+\bibitem{Henson} J. Henson, \emph{Constructing an interval of Minkowski
+space from a causal set}, arXiv:gr-qc/0601069 (2006).
+\url{https://arxiv.org/abs/gr-qc/0601069}.
+\bibitem{KlavikZeman} P. Klav\'ik and P. Zeman,
+\emph{Automorphism Groups of Comparability Graphs},
+arXiv:1506.05064. \url{https://arxiv.org/abs/1506.05064}.
+\bibitem{Winkler1985} P. Winkler, \emph{Random orders},
+Order \textbf{1}, 317--331 (1985).
+\url{https://doi.org/10.1007/BF00582738}.
+\bibitem{Winkler} P. Winkler, \emph{Random orders of dimension 2},
+Order \textbf{7}, 329--339 (PDF dated 1991; publisher metadata 1990).
+\url{https://doi.org/10.1007/BF00383197}.
+\bibitem{Hoeffding} W. Hoeffding, \emph{Probability inequalities for
+sums of bounded random variables}, Journal of the American Statistical
+Association \textbf{58}(301), 13--30 (1963).
+\url{https://doi.org/10.1080/01621459.1963.10500830}.
+\end{thebibliography}
+\end{document}

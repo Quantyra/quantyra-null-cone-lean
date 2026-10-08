@@ -1,0 +1,37 @@
+{
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "version": "0.4.0",
+  "license": "CC-BY-4.0",
+  "software_version_doi": "10.5281/zenodo.23202763",
+  "metadata_sha256": "5491ed49f1e9f97c3a62041e551bf448fe6e4dbfa629397a3646e47dfdfe5e4c",
+  "files": {
+    "manuscript/deposit/v0.4.0/finite-causal-order-reconstruction.tex": {
+      "sha256": "f85cd3e0c5dad8101c47df790bd894c1504b920a977029f5ad1e2dac61012e5c",
+      "bytes": 31099
+    },
+    "manuscript/deposit/v0.4.0/finite-causal-order-reconstruction.pdf": {
+      "sha256": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+      "bytes": 112662
+    },
+    "manuscript/deposit/v0.4.0/README.md": {
+      "sha256": "14fa81cc54bb0ee59cb7eef8a9d9cd33048d954da5fd24606102a9527d0a3295",
+      "bytes": 1394
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c",
+      "bytes": 18664
+    },
+    "manuscript/deposit/v0.4.0/draft-record.json": {
+      "sha256": "0d1deeffcf49cc5192c0253ee3e0ab062ad1d44fdef22af862bfb9772317150f",
+      "bytes": 161
+    },
+    "manuscript/deposit/v0.4.0/review.json": {
+      "sha256": "081d317463a8cbbfe6465d27322496eb3bf5b9acfd791659b3a0972cbc4a82a8",
+      "bytes": 2485
+    },
+    "manuscript/deposit/v0.4.0/tex-build.log": {
+      "sha256": "eb49e737f3d5f21d9e35fdb96c33afa30dc5e87002e55559b15026329808c828",
+      "bytes": 609
+    }
+  }
+}

@@ -16,6 +16,12 @@ import zenodo_credentials
 
 
 class VersionPublicationTests(unittest.TestCase):
+    def test_invalid_proof_revision_fails_before_credentials(self):
+        with patch.object(sys, "argv", ["publisher", "--reserve", "--proof-commit", "short"]), patch.object(zenodo_credentials, "aws_token") as token:
+            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                publisher.main()
+            token.assert_not_called()
+
     def test_only_zenodo_api_urls_receive_credentials(self):
         self.assertEqual(publisher.trusted("https://zenodo.org/api/records/123"), "https://zenodo.org/api/records/123")
         for url in ("http://zenodo.org/api/records/123", "https://zenodo.org.evil.test/api/123",

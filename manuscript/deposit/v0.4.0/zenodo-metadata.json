@@ -1,0 +1,38 @@
+{
+  "title": "Quantitative reconstruction from finite causal orders in a conformal diamond",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-08",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra Inc"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.4.0",
+  "access_right": "open",
+  "keywords": [
+    "causal order",
+    "inverse stability",
+    "partial orders",
+    "conformal geometry",
+    "Lean 4",
+    "formal verification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23202763",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "description": "<p>Post-certification revision of the quantitative reconstruction preprint by Daniel Eric Fredriksen, Quantyra Inc. Lean 4 now covers both polynomial and logarithmic inverse bounds, all-size identifiability, equality of directed labeled/unlabeled order-law total variation, and proper-time comparison for actual absolutely continuous future curves with one orientation shared by all endpoint pairs. The seven mathematical statement environments are unchanged from 0.3.1. Exact-source remote GCP acceptance audited 295 selected exports across the reconstruction and separate finite-data and higher-dimensional modules; this is not a claim that every exported theorem appears in this paper.</p><p>Winkler's coordinate forcing and stronger flat-model realizer recovery are credited. The candidate contribution remains explicit occupied-grid quantification and a uniform nonconstant-density inverse modulus; originality and optimal exponents remain provisional. Separate finite-data and genuine 2+1 Lorentzian modules do not supply new higher-dimensional inverse rates or physical nonidentifiability claims. Developed with OpenAI Codex assistance; open-source decentralized informal feedback and downstream testing remain the review workflow. CC-BY-4.0.</p>"
+}

@@ -31,6 +31,7 @@ import QuantyraNullCone.SplitCalibration
 import QuantyraNullCone.CDFReportFixtures
 import QuantyraNullCone.DensityFeasibility
 import QuantyraNullCone.DensityReportFixtures
+import QuantyraNullCone.LorentzIsometry
 
 /-!
 Quantyra finite-order reconstruction.
@@ -56,4 +57,10 @@ deterministic radius-one fallback are proved. Actual cell mean restrictions,
 all-point expansion and conditional rounded-histogram error are proved. The
 executable LP matrix, rational density report checker and actual full-report
 probability guarantee are connected under one shared density orientation.
+The genuine 2+1 Lorentzian model includes actual Euclidean volume and chronology,
+Cartesian smooth automorphisms, their derivatives and Jacobians, actual density
+transport/class membership and equality of every finite directed order law.
+The explicit conformal gauge has positive coordinate distance modulo spatial O(2),
+while its metric is isometric to the flat metric. This is a coordinate gauge
+obstruction, and does not prove new physical nonidentifiability or inverse rates.
 -/

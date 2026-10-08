@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/LorentzGaugeClass.lean:56:0: 'QuantyraNullCone.gauge_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeClass.lean:57:0: 'QuantyraNullCone.gauge_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2998/3001] Built QuantyraNullCone.LorentzOrderLaws (3.2s)
+info: QuantyraNullCone/LorentzOrderLaws.lean:53:0: 'QuantyraNullCone.gauge_sample_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:54:0: 'QuantyraNullCone.gauge_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:55:0: 'QuantyraNullCone.gauge_unlabeled_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2999/3001] Building QuantyraNullCone.LorentzIsometry (2.8s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/QuantyraNullCone/LorentzIsometry.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/.lake/build/lib/lean/QuantyraNullCone/LorentzIsometry.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/.lake/build/lib/lean/QuantyraNullCone/LorentzIsometry.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/.lake/build/ir/QuantyraNullCone/LorentzIsometry.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-acceptance-20261008T071334Z-904bcb/source/.lake/build/ir/QuantyraNullCone/LorentzIsometry.setup.json --json
+error: QuantyraNullCone/LorentzIsometry.lean:12:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (flowFactor3 (-gaugeParameter3) p ^ 3) ^ (2 / 3)
+in the target expression
+  (flowFactor3 (-gaugeParameter3) p ^ 3).rpow (2 / 3) = flowFactor3 (-gaugeParameter3) p ^ 2
+
+p : LorentzPoint3
+hp : p ∈ closedLorentzDiamond3
+hPos : 0 < flowFactor3 (-gaugeParameter3) p
+⊢ (flowFactor3 (-gaugeParameter3) p ^ 3).rpow (2 / 3) = flowFactor3 (-gaugeParameter3) p ^ 2
+info: QuantyraNullCone/LorentzIsometry.lean:40:0: 'QuantyraNullCone.gauge_metric_isometry3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIsometry.lean:41:0: 'QuantyraNullCone.higher_dimensional_gauge_counterexample3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzIsometry
+error: build failed
+TERMINAL_EXIT=1

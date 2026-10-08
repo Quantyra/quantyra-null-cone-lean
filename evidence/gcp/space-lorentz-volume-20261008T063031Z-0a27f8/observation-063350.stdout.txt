@@ -1,0 +1,28 @@
+1
+            (1 + p.ofLp 0 * a * 2 + p.ofLp 0 ^ 2 * a ^ 2 - a ^ 2 * spatialRadius3 p ^ 2)⁻¹ -
+        a ^ 3 * spatialRadius3 p ^ 2 * (1 + p.ofLp 0 * a * 2 + p.ofLp 0 ^ 2 * a ^ 2 - a ^ 2 * spatialRadius3 p ^ 2)⁻¹ -
+      spatialRadius3 p * (1 + p.ofLp 0 * a * 2 + p.ofLp 0 ^ 2 * a ^ 2 - a ^ 2 * spatialRadius3 p ^ 2)⁻¹ =
+    p.ofLp 0 + a - spatialRadius3 p
+info: QuantyraNullCone/LorentzPreservation.lean:120:0: 'QuantyraNullCone.null_map_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:121:0: 'QuantyraNullCone.null_map_strict_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:122:0: 'QuantyraNullCone.lorentz_null_plus3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:123:0: 'QuantyraNullCone.lorentz_null_minus3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:124:0: 'QuantyraNullCone.lorentz_flow_preserves_closed3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:125:0: 'QuantyraNullCone.lorentz_flow_preserves_open3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:126:0: 'QuantyraNullCone.lorentz_flow_image3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:127:0: 'QuantyraNullCone.lorentz_flow_injectiveOn3' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✔ [2718/2728] Built Mathlib.MeasureTheory.Measure.EverywherePos (4.5s)
+✔ [2719/2728] Built Mathlib.MeasureTheory.Measure.Haar.Unique (12s)
+✔ [2720/2728] Built Mathlib.MeasureTheory.Measure.Lebesgue.Integral (2.8s)
+✔ [2721/2728] Built Mathlib.MeasureTheory.Integral.IntegralEqImproper (9.7s)
+✔ [2722/2728] Built Mathlib.MeasureTheory.Integral.ExpDecay (2.3s)
+✔ [2723/2728] Built Mathlib.Analysis.SpecialFunctions.ImproperIntegrals (3.5s)
+✔ [2724/2728] Built Mathlib.Analysis.SpecialFunctions.Gamma.Basic (3.8s)
+✔ [2725/2728] Built Mathlib.MeasureTheory.Integral.Gamma (3.6s)
+✔ [2726/2728] Built Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral (4.2s)
+✔ [2727/2728] Built Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls (4.9s)
+Some required targets logged failures:
+- QuantyraNullCone.LorentzPreservation
+error: build failed
+TERMINAL_EXIT=1

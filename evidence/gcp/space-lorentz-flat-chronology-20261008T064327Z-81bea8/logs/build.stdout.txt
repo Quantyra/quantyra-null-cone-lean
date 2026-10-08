@@ -1,0 +1,130 @@
+ℹ [2723/2731] Built QuantyraNullCone.LorentzDiamond (3.1s)
+info: QuantyraNullCone/LorentzDiamond.lean:106:0: 'QuantyraNullCone.spatial_radius_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:107:0: 'QuantyraNullCone.closed_lorentz_diamond_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:108:0: 'QuantyraNullCone.chronological3_irreflexive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:109:0: 'QuantyraNullCone.continuous_spatial_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:110:0: 'QuantyraNullCone.sampledOrder3_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2724/2731] Built QuantyraNullCone.LorentzFlow (3.1s)
+info: QuantyraNullCone/LorentzFlow.lean:85:0: 'QuantyraNullCone.lorentz_flow_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:86:0: 'QuantyraNullCone.spatial_radius_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:87:0: 'QuantyraNullCone.flow_denominator_null_factors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:88:0: 'QuantyraNullCone.closed_lorentz_null_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:89:0: 'QuantyraNullCone.flow_denominator_lower3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:90:0: 'QuantyraNullCone.flow_denominator_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:91:0: 'QuantyraNullCone.flow_factor_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2725/2731] Built QuantyraNullCone.LorentzMeasures (3.4s)
+info: QuantyraNullCone/LorentzMeasures.lean:78:0: 'QuantyraNullCone.lorentz_norm_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:79:0: 'QuantyraNullCone.isCompact_closedLorentzDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:80:0: 'QuantyraNullCone.flat_diamond3_ae_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:81:0: 'QuantyraNullCone.InDensityClass3.integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:82:0: 'QuantyraNullCone.InDensityClass3.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:83:0: 'QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2726/2731] Built QuantyraNullCone.LorentzInverse (2.8s)
+info: QuantyraNullCone/LorentzInverse.lean:53:0: 'QuantyraNullCone.flow_inverse_denominator_identity3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:54:0: 'QuantyraNullCone.flow_inverse_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:55:0: 'QuantyraNullCone.flow_inverse_factor3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:56:0: 'QuantyraNullCone.lorentz_flow_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:57:0: 'QuantyraNullCone.lorentz_flow_inverse_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2727/2731] Built QuantyraNullCone.LorentzPreservation (3.3s)
+info: QuantyraNullCone/LorentzPreservation.lean:122:0: 'QuantyraNullCone.null_map_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:123:0: 'QuantyraNullCone.null_map_strict_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:124:0: 'QuantyraNullCone.lorentz_null_plus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:125:0: 'QuantyraNullCone.lorentz_null_minus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:126:0: 'QuantyraNullCone.lorentz_flow_preserves_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:127:0: 'QuantyraNullCone.lorentz_flow_preserves_open3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:128:0: 'QuantyraNullCone.lorentz_flow_image3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:129:0: 'QuantyraNullCone.lorentz_flow_injectiveOn3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2728/2731] Built QuantyraNullCone.LorentzVolumeCoordinates (3.6s)
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:68:0: 'QuantyraNullCone.split_lorentz_volume_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:69:0: 'QuantyraNullCone.split_lorentz_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:70:0: 'QuantyraNullCone.split_lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:71:0: 'QuantyraNullCone.lorentz_diamond_volume_slices3' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2729/2731] Built QuantyraNullCone.LorentzChronology (6.8s)
+warning: QuantyraNullCone/LorentzChronology.lean:77:36: This simp argument is unused:
+  zero_pow
+
+Hint: Omit it from the simp argument list.
+  simp only [PiLp.sub_apply, hFs, z̵e̵r̵o̵_̵p̵o̵w̵,̵ ̵neg_zero, zero_add] at hNeg
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzChronology.lean:77:46: This simp argument is unused:
+  neg_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [PiLp.sub_apply, hFs, zero_pow, n̵e̵g̵_̵zero,̵ ̵z̵e̵r̵o̵_add] at hNeg
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzChronology.lean:77:56: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [PiLp.sub_apply, hFs, zero_pow, neg_zero,̵ ̵z̵e̵r̵o̵_̵a̵d̵d̵] at hNeg
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: QuantyraNullCone/LorentzChronology.lean:96:0: 'QuantyraNullCone.chronological_iff_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:97:0: 'QuantyraNullCone.lorentz_flow_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:98:0: 'QuantyraNullCone.continuousOn_flow_time_parameter3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:99:0: 'QuantyraNullCone.lorentz_flow_chronological_forward3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:100:0: 'QuantyraNullCone.lorentz_flow_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2730/2731] Building QuantyraNullCone.LorentzVolume (3.3s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/QuantyraNullCone/LorentzVolume.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/.lake/build/lib/lean/QuantyraNullCone/LorentzVolume.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/.lake/build/lib/lean/QuantyraNullCone/LorentzVolume.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/.lake/build/ir/QuantyraNullCone/LorentzVolume.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-flat-chronology-20261008T064327Z-81bea8/source/.lake/build/ir/QuantyraNullCone/LorentzVolume.setup.json --json
+error: QuantyraNullCone/LorentzVolume.lean:27:45: Invalid field `integrableOn_compact`: The environment does not contain `Continuous.integrableOn_compact`, so it is not possible to project the field `integrableOn_compact` from an expression
+  continuous_lorentz_slice_area3
+of type `Continuous lorentzSliceArea3`
+error: QuantyraNullCone/LorentzVolume.lean:26:73: unsolved goals
+⊢ Integrable lorentzSliceArea3 volume
+error: QuantyraNullCone/LorentzVolume.lean:39:23: linarith failed to find a contradiction
+case h
+t : ℝ
+ht : t ∈ Icc (-1) 0
+a✝ : 1 - -t < 0
+⊢ False
+failed
+error: QuantyraNullCone/LorentzVolume.lean:44:64: linarith failed to find a contradiction
+case h
+t : ℝ
+ht : t ∈ Icc 0 1
+a✝ : 1 - t < 0
+⊢ False
+failed
+error: QuantyraNullCone/LorentzVolume.lean:43:51: unsolved goals
+t : ℝ
+ht : t ∈ Icc 0 1
+⊢ max 0 (1 - t) ^ 2 = (1 - t) ^ 2
+error: QuantyraNullCone/LorentzVolume.lean:56:45: Unknown constant `intervalIntegral.integral_id`
+error: QuantyraNullCone/LorentzVolume.lean:57:4: Unknown constant `intervalIntegral.integral_pow`
+info: QuantyraNullCone/LorentzVolume.lean:58:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzVolume.lean:46:98: unsolved goals
+hFunc : (fun t => Real.pi * (1 + t) ^ 2) = fun t => Real.pi + 2 * Real.pi * t + Real.pi * t ^ 2
+⊢ Real.pi * (4 / 3) + ∫ (x : ℝ) in -1..0, Real.pi * x * 2 = Real.pi * (1 / 3)
+error: QuantyraNullCone/LorentzVolume.lean:70:45: Unknown constant `intervalIntegral.integral_id`
+error: QuantyraNullCone/LorentzVolume.lean:71:4: Unknown constant `intervalIntegral.integral_pow`
+info: QuantyraNullCone/LorentzVolume.lean:72:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzVolume.lean:60:98: unsolved goals
+hFunc : (fun t => Real.pi * (1 - t) ^ 2) = fun t => Real.pi + -2 * Real.pi * t + Real.pi * t ^ 2
+⊢ Real.pi * (4 / 3) - ∫ (x : ℝ) in 0..1, Real.pi * x * 2 = Real.pi * (1 / 3)
+error: QuantyraNullCone/LorentzVolume.lean:82:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Icc (-1) 1).indicator lorentzSliceArea3
+in the target expression
+  ∫ (x : ℝ) in -1..1, lorentzSliceArea3 x = lorentzVolume3
+
+hIndicator : (Icc (-1) 1).indicator lorentzSliceArea3 = lorentzSliceArea3
+⊢ ∫ (x : ℝ) in -1..1, lorentzSliceArea3 x = lorentzVolume3
+info: QuantyraNullCone/LorentzVolume.lean:106:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:107:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:108:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzVolume

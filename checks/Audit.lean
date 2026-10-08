@@ -1,5 +1,8 @@
 import QuantyraNullCone
 
+#check QuantyraNullCone.chronological3_transitive
+#print axioms QuantyraNullCone.chronological3_transitive
+
 #check QuantyraNullCone.finite_realizer_rank_rigidity
 #check QuantyraNullCone.finite_realizer_rank_rigidity_specified
 #check QuantyraNullCone.finite_realizer_coordinate_rigidity
@@ -564,3 +567,230 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
     1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
       (QuantyraNullCone.densityReportCoverage (n := n) rho q eM eJ) :=
   h.checked_density_report_coverage hn hc
+
+-- Genuine 2+1 geometry, actual density transport and coordinate-gauge counterexample.
+
+#check QuantyraNullCone.chronological_iff_square3
+#print axioms QuantyraNullCone.chronological_iff_square3
+
+#check QuantyraNullCone.lorentz_flow_separation3
+#print axioms QuantyraNullCone.lorentz_flow_separation3
+
+#check QuantyraNullCone.continuousOn_flow_time_parameter3
+#print axioms QuantyraNullCone.continuousOn_flow_time_parameter3
+
+#check QuantyraNullCone.lorentz_flow_chronological_forward3
+#print axioms QuantyraNullCone.lorentz_flow_chronological_forward3
+
+#check QuantyraNullCone.lorentz_flow_chronological_iff3
+#print axioms QuantyraNullCone.lorentz_flow_chronological_iff3
+
+#check QuantyraNullCone.hasFDerivAt_flow_denominator3
+#print axioms QuantyraNullCone.hasFDerivAt_flow_denominator3
+
+#check QuantyraNullCone.hasFDerivAt_flow_numerator3
+#print axioms QuantyraNullCone.hasFDerivAt_flow_numerator3
+
+#check QuantyraNullCone.hasFDerivAt_lorentz_flow3
+#print axioms QuantyraNullCone.hasFDerivAt_lorentz_flow3
+
+#check QuantyraNullCone.spatial_radius_sq3
+#print axioms QuantyraNullCone.spatial_radius_sq3
+
+#check QuantyraNullCone.closed_lorentz_diamond_bounds3
+#print axioms QuantyraNullCone.closed_lorentz_diamond_bounds3
+
+#check QuantyraNullCone.chronological3_irreflexive
+#print axioms QuantyraNullCone.chronological3_irreflexive
+
+#check QuantyraNullCone.continuous_spatial_radius3
+#print axioms QuantyraNullCone.continuous_spatial_radius3
+
+#check QuantyraNullCone.sampledOrder3_measurable
+#print axioms QuantyraNullCone.sampledOrder3_measurable
+
+#check QuantyraNullCone.flat_diamond_measure_mass3
+#print axioms QuantyraNullCone.flat_diamond_measure_mass3
+
+#check QuantyraNullCone.flat_density_class3
+#print axioms QuantyraNullCone.flat_density_class3
+
+#check QuantyraNullCone.sampledOrder3_flow_eq
+#print axioms QuantyraNullCone.sampledOrder3_flow_eq
+
+#check QuantyraNullCone.lorentz_flow_zero3
+#print axioms QuantyraNullCone.lorentz_flow_zero3
+
+#check QuantyraNullCone.spatial_radius_flow3
+#print axioms QuantyraNullCone.spatial_radius_flow3
+
+#check QuantyraNullCone.flow_denominator_null_factors3
+#print axioms QuantyraNullCone.flow_denominator_null_factors3
+
+#check QuantyraNullCone.closed_lorentz_null_bounds3
+#print axioms QuantyraNullCone.closed_lorentz_null_bounds3
+
+#check QuantyraNullCone.flow_denominator_lower3
+#print axioms QuantyraNullCone.flow_denominator_lower3
+
+#check QuantyraNullCone.flow_denominator_pos3
+#print axioms QuantyraNullCone.flow_denominator_pos3
+
+#check QuantyraNullCone.flow_factor_pos3
+#print axioms QuantyraNullCone.flow_factor_pos3
+
+#check QuantyraNullCone.flow_denominator_upper3
+#print axioms QuantyraNullCone.flow_denominator_upper3
+
+#check QuantyraNullCone.gauge_density_bounds3
+#print axioms QuantyraNullCone.gauge_density_bounds3
+
+#check QuantyraNullCone.gauge_density_smooth3
+#print axioms QuantyraNullCone.gauge_density_smooth3
+
+#check QuantyraNullCone.gauge_density_normalized3
+#print axioms QuantyraNullCone.gauge_density_normalized3
+
+#check QuantyraNullCone.gauge_density_class3
+#print axioms QuantyraNullCone.gauge_density_class3
+
+#check QuantyraNullCone.gauge_forward_transport3
+#print axioms QuantyraNullCone.gauge_forward_transport3
+
+#check QuantyraNullCone.closed_lorentz_coordinate_square_difference3
+#print axioms QuantyraNullCone.closed_lorentz_coordinate_square_difference3
+
+#check QuantyraNullCone.gauge_denominator_lipschitz3
+#print axioms QuantyraNullCone.gauge_denominator_lipschitz3
+
+#check QuantyraNullCone.reciprocal_cube_lipschitz3
+#print axioms QuantyraNullCone.reciprocal_cube_lipschitz3
+
+#check QuantyraNullCone.gauge_density_lipschitz3
+#print axioms QuantyraNullCone.gauge_density_lipschitz3
+
+#check QuantyraNullCone.flow_inverse_denominator_identity3
+#print axioms QuantyraNullCone.flow_inverse_denominator_identity3
+
+#check QuantyraNullCone.flow_inverse_denominator3
+#print axioms QuantyraNullCone.flow_inverse_denominator3
+
+#check QuantyraNullCone.flow_inverse_factor3
+#print axioms QuantyraNullCone.flow_inverse_factor3
+
+#check QuantyraNullCone.lorentz_flow_inverse3
+#print axioms QuantyraNullCone.lorentz_flow_inverse3
+
+#check QuantyraNullCone.lorentz_flow_inverse_closed3
+#print axioms QuantyraNullCone.lorentz_flow_inverse_closed3
+
+#check QuantyraNullCone.gauge_metric_isometry3
+#print axioms QuantyraNullCone.gauge_metric_isometry3
+
+#check QuantyraNullCone.higher_dimensional_gauge_counterexample3
+#print axioms QuantyraNullCone.higher_dimensional_gauge_counterexample3
+
+#check QuantyraNullCone.lorentz_flow_derivative_matrix3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_matrix3
+
+#check QuantyraNullCone.lorentz_flow_derivative_det3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_det3
+
+#check QuantyraNullCone.lorentz_flow_derivative_bilinear3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_bilinear3
+
+#check QuantyraNullCone.lorentz_norm_sq3
+#print axioms QuantyraNullCone.lorentz_norm_sq3
+
+#check QuantyraNullCone.isCompact_closedLorentzDiamond3
+#print axioms QuantyraNullCone.isCompact_closedLorentzDiamond3
+
+#check QuantyraNullCone.flat_diamond3_ae_mem
+#print axioms QuantyraNullCone.flat_diamond3_ae_mem
+
+#check QuantyraNullCone.InDensityClass3.integrable
+#print axioms QuantyraNullCone.InDensityClass3.integrable
+
+#check QuantyraNullCone.InDensityClass3.densityMeasure_univ
+#print axioms QuantyraNullCone.InDensityClass3.densityMeasure_univ
+
+#check QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure
+#print axioms QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure
+
+#check QuantyraNullCone.gauge_sample_forward_transport3
+#print axioms QuantyraNullCone.gauge_sample_forward_transport3
+
+#check QuantyraNullCone.gauge_order_laws_equal3
+#print axioms QuantyraNullCone.gauge_order_laws_equal3
+
+#check QuantyraNullCone.gauge_unlabeled_order_laws_equal3
+#print axioms QuantyraNullCone.gauge_unlabeled_order_laws_equal3
+
+#check QuantyraNullCone.null_map_bounds3
+#print axioms QuantyraNullCone.null_map_bounds3
+
+#check QuantyraNullCone.null_map_strict_bounds3
+#print axioms QuantyraNullCone.null_map_strict_bounds3
+
+#check QuantyraNullCone.lorentz_null_plus3
+#print axioms QuantyraNullCone.lorentz_null_plus3
+
+#check QuantyraNullCone.lorentz_null_minus3
+#print axioms QuantyraNullCone.lorentz_null_minus3
+
+#check QuantyraNullCone.lorentz_flow_preserves_closed3
+#print axioms QuantyraNullCone.lorentz_flow_preserves_closed3
+
+#check QuantyraNullCone.lorentz_flow_preserves_open3
+#print axioms QuantyraNullCone.lorentz_flow_preserves_open3
+
+#check QuantyraNullCone.lorentz_flow_image3
+#print axioms QuantyraNullCone.lorentz_flow_image3
+
+#check QuantyraNullCone.lorentz_flow_injectiveOn3
+#print axioms QuantyraNullCone.lorentz_flow_injectiveOn3
+
+#check QuantyraNullCone.lorentz_flow_smooth3
+#print axioms QuantyraNullCone.lorentz_flow_smooth3
+
+#check QuantyraNullCone.lorentz_flow_smooth_automorphism3
+#print axioms QuantyraNullCone.lorentz_flow_smooth_automorphism3
+
+#check QuantyraNullCone.gauge_density_spatial_invariant3
+#print axioms QuantyraNullCone.gauge_density_spatial_invariant3
+
+#check QuantyraNullCone.gauge_anchor_density_gt3
+#print axioms QuantyraNullCone.gauge_anchor_density_gt3
+
+#check QuantyraNullCone.gauge_o2_distance_positive3
+#print axioms QuantyraNullCone.gauge_o2_distance_positive3
+
+#check QuantyraNullCone.lorentz_flow_measurable3
+#print axioms QuantyraNullCone.lorentz_flow_measurable3
+
+#check QuantyraNullCone.gauge_inverse_transport_volume3
+#print axioms QuantyraNullCone.gauge_inverse_transport_volume3
+
+#check QuantyraNullCone.gauge_inverse_transport3
+#print axioms QuantyraNullCone.gauge_inverse_transport3
+
+#check QuantyraNullCone.integrable_lorentz_slice_area3
+#print axioms QuantyraNullCone.integrable_lorentz_slice_area3
+
+#check QuantyraNullCone.integral_lorentz_slice_area3
+#print axioms QuantyraNullCone.integral_lorentz_slice_area3
+
+#check QuantyraNullCone.lorentz_diamond_volume3
+#print axioms QuantyraNullCone.lorentz_diamond_volume3
+
+#check QuantyraNullCone.split_lorentz_volume_preserving3
+#print axioms QuantyraNullCone.split_lorentz_volume_preserving3
+
+#check QuantyraNullCone.split_lorentz_radius3
+#print axioms QuantyraNullCone.split_lorentz_radius3
+
+#check QuantyraNullCone.split_lorentz_diamond_volume3
+#print axioms QuantyraNullCone.split_lorentz_diamond_volume3
+
+#check QuantyraNullCone.lorentz_diamond_volume_slices3
+#print axioms QuantyraNullCone.lorentz_diamond_volume_slices3

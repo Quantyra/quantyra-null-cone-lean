@@ -46,3 +46,9 @@ Then one needs a finite order-only anchor/coordinate reconstruction lemma with u
 The reproducible [rational algebra check](../checks/check_higher_dimensional_gauge.py) verifies inverse, Jacobian/conformal identities and chronological comparisons at explicit rational points, as well as exact conservative density/Lipschitz bounds. It is local Python, not Lean certification. The model, observable, proposed symmetries, error target and decisive counterexample complete the feasibility scope. Prioritize the [finite-data project](finite-data-follow-up-scope.md).
 
 Remaining to-do list: none for feasibility. Reopening requires a justified gauge/metric and a credible finite reconstruction/stability lemma.
+
+## Subsequent S025 certification
+
+The [genuine 2+1 counterexample](higher-dimensional-certification.md) now has GCP root/type/axiom acceptance with actual volume/chronology, smooth map and derivative/Jacobian, density transport/class membership, all finite directed-order law equality, positive O(2) coordinate distance and the derived metric isometry. This supersedes the earlier Python-only verification status, while preserving the negative feasibility decision and its physical-claim boundary. The naive coordinate gauge remains invalid; no quantitative higher-dimensional inverse program is reopened.
+
+Remaining to-do list: none for feasibility; S025 delivery closeout is recorded separately.

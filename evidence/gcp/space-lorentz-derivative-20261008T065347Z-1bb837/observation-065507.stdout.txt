@@ -1,0 +1,28 @@
+1
+h0 : |p.ofLp 0 - q.ofLp 0| ≤ ‖p - q‖
+h1 : |p.ofLp 0 ^ 2 - q.ofLp 0 ^ 2| ≤ 2 * ‖p - q‖
+h2 : |p.ofLp 1 ^ 2 - q.ofLp 1 ^ 2| ≤ 2 * ‖p - q‖
+h3 : |p.ofLp 2 ^ 2 - q.ofLp 2 ^ 2| ≤ 2 * ‖p - q‖
+a✝ :
+  3 / 100 * ‖p - q‖ <
+    |-(2 / 100) * (p.ofLp 0 - q.ofLp 0) + 1 / 10000 * (p.ofLp 0 ^ 2 - q.ofLp 0 ^ 2) +
+          -(1 / 10000) * (p.ofLp 1 ^ 2 - q.ofLp 1 ^ 2) +
+        -(1 / 10000) * (p.ofLp 2 ^ 2 - q.ofLp 2 ^ 2)|
+⊢ False
+failed
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:116:0: 'QuantyraNullCone.closed_lorentz_coordinate_square_difference3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:117:0: 'QuantyraNullCone.gauge_denominator_lipschitz3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:118:0: 'QuantyraNullCone.reciprocal_cube_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:119:0: 'QuantyraNullCone.gauge_density_lipschitz3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [2733/2734] Built QuantyraNullCone.LorentzVolume (3.3s)
+info: QuantyraNullCone/LorentzVolume.lean:112:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:113:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:114:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- QuantyraNullCone.LorentzDerivative
+- QuantyraNullCone.LorentzGaugeLipschitz
+error: build failed
+TERMINAL_EXIT=1

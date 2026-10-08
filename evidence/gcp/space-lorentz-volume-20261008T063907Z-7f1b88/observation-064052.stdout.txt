@@ -1,0 +1,28 @@
+1
+  MeasurePreserving.measure_preimage split_lorentz_volume_preserving3 (IsOpen.measurableSet isOpen_splitLorentzDiamond3)
+error: QuantyraNullCone/LorentzVolumeCoordinates.lean:61:81: unsolved goals
+⊢ ∫⁻ (x : ℝ), volume (Prod.mk x ⁻¹' {q | q.2 ∈ Metric.ball 0 (1 - |q.1|)}) ∂volume =
+    ∫⁻ (t : ℝ), ENNReal.ofReal (1 - |t|) ^ 2 * ENNReal.ofReal Real.pi
+warning: QuantyraNullCone/LorentzVolumeCoordinates.lean:63:35: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [splitLorentzDiamond3, S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵,̵ ̵EuclideanSpace.volume_ball_fin_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzVolumeCoordinates.lean:63:53: This simp argument is unused:
+  EuclideanSpace.volume_ball_fin_two
+
+Hint: Omit it from the simp argument list.
+  simp only [splitLorentzDiamond3, Set.mem_setOf_eq,̵ ̵E̵u̵c̵l̵i̵d̵e̵a̵n̵S̵p̵a̵c̵e̵.̵v̵o̵l̵u̵m̵e̵_̵b̵a̵l̵l̵_̵f̵i̵n̵_̵t̵w̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:65:0: 'QuantyraNullCone.split_lorentz_volume_preserving3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:66:0: 'QuantyraNullCone.split_lorentz_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:67:0: 'QuantyraNullCone.split_lorentz_diamond_volume3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:68:0: 'QuantyraNullCone.lorentz_diamond_volume_slices3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzVolumeCoordinates
+error: build failed
+TERMINAL_EXIT=1

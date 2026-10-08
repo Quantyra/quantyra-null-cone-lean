@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/LorentzVolume.lean:75:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzVolume.lean:62:98: unsolved goals
+hFunc : (fun t => Real.pi * (1 - t) ^ 2) = fun t => Real.pi + -2 * Real.pi * t + Real.pi * t ^ 2
+⊢ Real.pi * (4 / 3) - ∫ (x : ℝ) in 0..1, Real.pi * x * 2 = Real.pi * (1 / 3)
+warning: QuantyraNullCone/LorentzVolume.lean:72:50: This simp argument is unused:
+  integral_id
+
+Hint: Omit it from the simp argument list.
+  simp only [intervalIntegral.integral_const_mul, integral_i̵d̵,̵ ̵i̵n̵t̵e̵g̵r̵a̵l̵_̵pow,
+  ̵  ̵ ̵ ̵intervalIntegral.integral_const,
+  ̲  ̲ ̲ ̲smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: QuantyraNullCone/LorentzVolume.lean:108:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:109:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:110:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzGaugeBounds
+- QuantyraNullCone.LorentzVolume
+error: build failed
+TERMINAL_EXIT=1

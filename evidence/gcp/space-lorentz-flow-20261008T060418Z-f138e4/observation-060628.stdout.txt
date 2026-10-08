@@ -1,0 +1,17 @@
+0
+ℹ [2582/2583] Built QuantyraNullCone.LorentzDiamond (3.1s)
+info: QuantyraNullCone/LorentzDiamond.lean:106:0: 'QuantyraNullCone.spatial_radius_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:107:0: 'QuantyraNullCone.closed_lorentz_diamond_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:108:0: 'QuantyraNullCone.chronological3_irreflexive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:109:0: 'QuantyraNullCone.continuous_spatial_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:110:0: 'QuantyraNullCone.sampledOrder3_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2583/2583] Built QuantyraNullCone.LorentzFlow (2.9s)
+info: QuantyraNullCone/LorentzFlow.lean:85:0: 'QuantyraNullCone.lorentz_flow_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:86:0: 'QuantyraNullCone.spatial_radius_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:87:0: 'QuantyraNullCone.flow_denominator_null_factors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:88:0: 'QuantyraNullCone.closed_lorentz_null_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:89:0: 'QuantyraNullCone.flow_denominator_lower3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:90:0: 'QuantyraNullCone.flow_denominator_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:91:0: 'QuantyraNullCone.flow_factor_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2583 jobs).
+TERMINAL_EXIT=0

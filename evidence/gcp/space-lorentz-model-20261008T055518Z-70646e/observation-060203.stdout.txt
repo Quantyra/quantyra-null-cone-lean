@@ -1,0 +1,28 @@
+1
+✖ [2582/2582] Building QuantyraNullCone.LorentzDiamond (41s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/QuantyraNullCone/LorentzDiamond.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/.lake/build/lib/lean/QuantyraNullCone/LorentzDiamond.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/.lake/build/lib/lean/QuantyraNullCone/LorentzDiamond.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/.lake/build/ir/QuantyraNullCone/LorentzDiamond.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-model-20261008T055518Z-70646e/source/.lake/build/ir/QuantyraNullCone/LorentzDiamond.setup.json --json
+error: QuantyraNullCone/LorentzDiamond.lean:15:49: Unknown identifier `toLp`
+error: QuantyraNullCone/LorentzDiamond.lean:62:14: Type mismatch
+  le_of_lt ?m.9
+has type
+  ?m.7 ≤ ?m.8
+but is expected to have type
+  x✝ ∈ closedLorentzDiamond3
+error: QuantyraNullCone/LorentzDiamond.lean:81:16: `fun_prop` was unable to prove `Continuous fun p => |p.ofLp 0| + spatialRadius3 p`
+
+Issues:
+  No theorems found for `QuantyraNullCone.spatialRadius3` in order to prove `Continuous fun p => spatialRadius3 p`
+error: QuantyraNullCone/LorentzDiamond.lean:83:18: `fun_prop` was unable to prove `Continuous fun p => |p.ofLp 0| + spatialRadius3 p`
+
+Issues:
+  No theorems found for `QuantyraNullCone.spatialRadius3` in order to prove `Continuous fun p => spatialRadius3 p`
+info: QuantyraNullCone/LorentzDiamond.lean:101:0: 'QuantyraNullCone.spatial_radius_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:102:0: 'QuantyraNullCone.closed_lorentz_diamond_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:103:0: 'QuantyraNullCone.chronological3_irreflexive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:104:0: 'QuantyraNullCone.continuous_spatial_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:105:0: 'QuantyraNullCone.sampledOrder3_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzDiamond
+error: build failed
+TERMINAL_EXIT=1

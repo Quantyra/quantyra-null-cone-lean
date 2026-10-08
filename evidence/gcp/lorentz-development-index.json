@@ -1,0 +1,193 @@
+{
+  "story": "S025",
+  "compile_host": "GCP",
+  "local_lean_lake_invocations": 0,
+  "captures": [
+    {
+      "run": "space-lorentz-acceptance-20261008T071334Z-904bcb",
+      "target": "QuantyraNullCone",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 2,
+      "capture_manifest_sha256": "d075b5aacdfb02950883a58df7f523d302425a45b3a88a3a9968cfda34c0bacb",
+      "terminal_finished_utc": "2026-10-08T07:14:55Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+      "target": "QuantyraNullCone",
+      "exit": 0,
+      "warnings": 0,
+      "errors": 0,
+      "capture_manifest_sha256": "2997c634e0c5cff0b0335e67b47bde60d6f897f2ccab2e3526f89cfbbb2f76e5",
+      "terminal_finished_utc": "2026-10-08T07:18:01Z",
+      "acceptance": true
+    },
+    {
+      "run": "space-lorentz-class-20261008T070346Z-92b0c7",
+      "target": "QuantyraNullCone.LorentzGaugeClass",
+      "exit": 1,
+      "warnings": 3,
+      "errors": 4,
+      "capture_manifest_sha256": "25d67a4d8225fe2105d9ad35fc737bf73d464c6501a6cbb4263f7caec06c9df9",
+      "terminal_finished_utc": "2026-10-08T07:05:10Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-derivative-20261008T065347Z-1bb837",
+      "target": "QuantyraNullCone.LorentzFlat",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 10,
+      "capture_manifest_sha256": "0b1b5679858a112fed025348005f7fab9fb1ef83d81214815430004d556784eb",
+      "terminal_finished_utc": "2026-10-08T06:55:10Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-distance-20261008T065706Z-58f94c",
+      "target": "QuantyraNullCone.LorentzFlat",
+      "exit": 1,
+      "warnings": 1,
+      "errors": 8,
+      "capture_manifest_sha256": "f188b3706f821527aa21be9bf2810c7ca32ed82e085797995e9b157ccfdc5a46",
+      "terminal_finished_utc": "2026-10-08T06:58:43Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-final-integration-20261008T071041Z-e36cf4",
+      "target": "QuantyraNullCone.LorentzIsometry",
+      "exit": 1,
+      "warnings": 2,
+      "errors": 3,
+      "capture_manifest_sha256": "eb49bcdfe0f88ca984755c7c9d90913857caa18f591db0a02afce179d8bd9ae0",
+      "terminal_finished_utc": "2026-10-08T07:12:14Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-flat-chronology-20261008T064327Z-81bea8",
+      "target": "QuantyraNullCone.LorentzFlat",
+      "exit": 1,
+      "warnings": 3,
+      "errors": 13,
+      "capture_manifest_sha256": "93a5c64a38ebcb09bada0437c1ea1f91a9bd1a84a09f935b6efb18c7057868a0",
+      "terminal_finished_utc": "2026-10-08T06:44:45Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-flat-gauge-20261008T064650Z-06a4be",
+      "target": "QuantyraNullCone.LorentzFlat",
+      "exit": 1,
+      "warnings": 2,
+      "errors": 9,
+      "capture_manifest_sha256": "1e8c14c2f47e2740fe1605ae80dc4fb8f583707a2b156fc00330d5b261070a46",
+      "terminal_finished_utc": "2026-10-08T06:48:09Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-flat-lipschitz-20261008T065006Z-0f3114",
+      "target": "QuantyraNullCone.LorentzFlat",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 2,
+      "capture_manifest_sha256": "723101ba2a0dd49860bf2b4109479bd2fe88f13c26bedb551087bfa32d187ab7",
+      "terminal_finished_utc": "2026-10-08T06:51:22Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-flow-20261008T060418Z-f138e4",
+      "target": "QuantyraNullCone.LorentzFlow",
+      "exit": 0,
+      "warnings": 0,
+      "errors": 0,
+      "capture_manifest_sha256": "e079ae1a188592c4cf53db9484de4c7fa34a73e28a4b044f1598aa0fee2791e2",
+      "terminal_finished_utc": "2026-10-08T06:05:19Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-inverse-20261008T061137Z-9ea75e",
+      "target": "QuantyraNullCone.LorentzInverse",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 3,
+      "capture_manifest_sha256": "d064e923d8fb15070237a4529bea8a675915353d96e8f4e4c1c5b36fc7e3bac8",
+      "terminal_finished_utc": "2026-10-08T06:12:20Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-isometry-20261008T070658Z-701ae2",
+      "target": "QuantyraNullCone.LorentzIsometry",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 6,
+      "capture_manifest_sha256": "145f29f59bf947de9ba63e67ff255971a28d700168497a14f1b8d8cf363ae16c",
+      "terminal_finished_utc": "2026-10-08T07:08:40Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-model-20261008T055518Z-70646e",
+      "target": "QuantyraNullCone.LorentzDiamond",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 5,
+      "capture_manifest_sha256": "52a460efe044fdd6f7cbf64c134d25f3bda4789f0e85b1420b362f590c6e86d9",
+      "terminal_finished_utc": "2026-10-08T05:59:59Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-preservation-20261008T061523Z-ed594f",
+      "target": "QuantyraNullCone.LorentzPreservation",
+      "exit": 1,
+      "warnings": 3,
+      "errors": 4,
+      "capture_manifest_sha256": "d3d0e6bfa4127e29b2f4f04efe649ad2ede0977657872e2238853ec61040dbae",
+      "terminal_finished_utc": "2026-10-08T06:16:07Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-preservation-20261008T062252Z-a261a0",
+      "target": "QuantyraNullCone.LorentzPreservation",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 2,
+      "capture_manifest_sha256": "e01afd3744442d3d3620572ddf150a21ced1501189bb6d0a994cdf059b9176d3",
+      "terminal_finished_utc": "2026-10-08T06:23:46Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-transport-20261008T070039Z-fe118f",
+      "target": "QuantyraNullCone.LorentzTransport",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 4,
+      "capture_manifest_sha256": "b1fb002804fb3b96698671ec92cf406b872b89e8dd64fae9aa8e8903184edc2c",
+      "terminal_finished_utc": "2026-10-08T07:02:04Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-volume-20261008T063031Z-0a27f8",
+      "target": "QuantyraNullCone.LorentzVolumeCoordinates",
+      "exit": 1,
+      "warnings": 0,
+      "errors": 3,
+      "capture_manifest_sha256": "e37a6de2d8cf52db1bf34db57c6b20a8eab959a37bad488c6be37140b3467190",
+      "terminal_finished_utc": "2026-10-08T06:32:20Z",
+      "acceptance": false
+    },
+    {
+      "run": "space-lorentz-volume-20261008T063907Z-7f1b88",
+      "target": "QuantyraNullCone.LorentzVolumeCoordinates",
+      "exit": 1,
+      "warnings": 2,
+      "errors": 7,
+      "capture_manifest_sha256": "0b0e028e8353eea31020aeef27ed9a104e56172fef611532c56fce038c862e1e",
+      "terminal_finished_utc": "2026-10-08T06:40:31Z",
+      "acceptance": false
+    }
+  ],
+  "total_captures": 18,
+  "failed_captures": 16,
+  "root_acceptance": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+  "audited_exports": 295,
+  "new_audited_exports": 76,
+  "published_payload_preserved": true
+}

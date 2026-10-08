@@ -1,6 +1,6 @@
 # Remaining Lean certification targets
 
-2026-10-07. The author asks whether the remaining prose results should be Lean certified. Recommendation: yes, with the published paper first. All four stories are selected for execution. S022 and S023 now have accepted exact-source GCP proofs; S024-S025 remain uncertified. Original inverse/identifiability and label-law equivalence retain accepted GCP verification at `b7d762acc9c10ca881f8366f545f3998b0528448`; manuscript 0.3.1 correctly identifies the remaining prose results.
+2026-10-07. The author asks whether the remaining prose results should be Lean certified. Recommendation: yes, with the published paper first. All four stories are selected for execution. All four stories now have accepted exact-source GCP proofs, with 295 selected exports in the latest root audit. S025 delivery/CI/cleanup closeout remains. The detailed targets below retain the original selected contract and its then-current library assessment. Original inverse/identifiability and label-law equivalence retain accepted GCP verification at `b7d762acc9c10ca881f8366f545f3998b0528448`; manuscript 0.3.1 correctly identifies the remaining prose results.
 
 ## 1. Logarithmic-grid inverse: S022
 
@@ -32,6 +32,6 @@ All development/acceptance Lean, Lake and transitive Lean commands execute on GC
 
 Finish each story with focused verified commits/pushes and accurate scope documents. Existing DOI artifacts remain immutable; a later manuscript version can advertise enlarged formal coverage after actual acceptance. Certification establishes correctness of encoded statements, not originality, optimality, practical inference or new physics. No specialist-review/adoption gate applies.
 
-S023 delivery is complete. [S024's deterministic foundations](finite-foundation-certification.md) have partial exact-source GCP acceptance with 107 audited exports. The [universal sharp-DKW likelihood barrier](dkw-analytic-certification.md) adds eight selected exports, and the [sharp finite-grid counting-law tails](dkw-finite-certification.md) add ten more, for 125 in the latest root acceptance. Continuous-sample/actual-K probability coverage and the density certificate suite remain open.
+S023 delivery is complete. [S024's deterministic foundations](finite-foundation-certification.md) have partial exact-source GCP acceptance with 107 audited exports. The [universal sharp-DKW likelihood barrier](dkw-analytic-certification.md) adds eight selected exports, and the [sharp finite-grid counting-law tails](dkw-finite-certification.md) add ten more, for 125 in the latest root acceptance. These were intermediate S024 milestones. The subsequent [full density-report acceptance](density-report-certification.md) closes actual-K probability and executable density-report integration. [S025 acceptance](higher-dimensional-certification.md) closes the genuine Lorentzian counterexample obligations.
 
-Remaining to-do list: finish finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).
+Remaining to-do list: focused S025 delivery, supplementary CI and cleanup closeout. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).

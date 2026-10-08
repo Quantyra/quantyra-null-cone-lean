@@ -1,0 +1,28 @@
+1
+u v : LorentzPoint3
+⊢ lorentzVolume3.rpow (-2 / 3) * flowFactor3 (-gaugeParameter3) p ^ 2 * lorentzBilinear3 u v =
+    lorentzVolume3.rpow (-2 / 3) * flowFactor3 (-gaugeParameter3) p ^ 2 * lorentzBilinear3 u v * Real.rpow 1 (2 / 3)
+warning: QuantyraNullCone/LorentzIsometry.lean:21:43: This simp argument is unused:
+  Real.one_rpow
+
+Hint: Omit it from the simp argument list.
+  simp only [densityMetric3, flatDensity3, R̵e̵a̵l̵.̵o̵n̵e̵_̵r̵p̵o̵w̵,̵ ̵mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzIsometry.lean:21:58: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [densityMetric3, flatDensity3, Real.one_rpow,̵ ̵m̵u̵l̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: QuantyraNullCone/LorentzIsometry.lean:39:0: 'QuantyraNullCone.gauge_metric_isometry3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIsometry.lean:40:0: 'QuantyraNullCone.higher_dimensional_gauge_counterexample3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzIsometry
+error: build failed
+TERMINAL_EXIT=1

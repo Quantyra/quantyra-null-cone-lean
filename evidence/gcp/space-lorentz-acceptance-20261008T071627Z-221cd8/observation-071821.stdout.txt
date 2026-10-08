@@ -1,0 +1,27 @@
+0
+ℹ [2994/3001] Built QuantyraNullCone.LorentzFlat (2.0s)
+info: QuantyraNullCone/LorentzFlat.lean:40:0: 'QuantyraNullCone.flat_diamond_measure_mass3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:41:0: 'QuantyraNullCone.flat_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:42:0: 'QuantyraNullCone.sampledOrder3_flow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2995/3001] Built QuantyraNullCone.LorentzJacobian (6.6s)
+info: QuantyraNullCone/LorentzJacobian.lean:61:0: 'QuantyraNullCone.lorentz_flow_derivative_matrix3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:62:0: 'QuantyraNullCone.lorentz_flow_derivative_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:63:0: 'QuantyraNullCone.lorentz_flow_derivative_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2996/3001] Built QuantyraNullCone.LorentzTransport (3.4s)
+info: QuantyraNullCone/LorentzTransport.lean:52:0: 'QuantyraNullCone.lorentz_flow_measurable3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTransport.lean:53:0: 'QuantyraNullCone.gauge_inverse_transport_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTransport.lean:54:0: 'QuantyraNullCone.gauge_inverse_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2997/3001] Built QuantyraNullCone.LorentzGaugeClass (2.0s)
+info: QuantyraNullCone/LorentzGaugeClass.lean:55:0: 'QuantyraNullCone.gauge_density_normalized3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeClass.lean:56:0: 'QuantyraNullCone.gauge_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeClass.lean:57:0: 'QuantyraNullCone.gauge_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2998/3001] Built QuantyraNullCone.LorentzOrderLaws (3.2s)
+info: QuantyraNullCone/LorentzOrderLaws.lean:53:0: 'QuantyraNullCone.gauge_sample_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:54:0: 'QuantyraNullCone.gauge_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:55:0: 'QuantyraNullCone.gauge_unlabeled_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2999/3001] Built QuantyraNullCone.LorentzIsometry (2.0s)
+info: QuantyraNullCone/LorentzIsometry.lean:40:0: 'QuantyraNullCone.gauge_metric_isometry3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIsometry.lean:41:0: 'QuantyraNullCone.higher_dimensional_gauge_counterexample3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3000/3001] Built QuantyraNullCone (2.8s)
+Build completed successfully (3001 jobs).
+TERMINAL_EXIT=0

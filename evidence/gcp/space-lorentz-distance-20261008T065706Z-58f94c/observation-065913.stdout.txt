@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/LorentzChronology.lean:100:0: 'QuantyraNullCone.lorentz_flow_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2732/2735] Built QuantyraNullCone.LorentzGaugeLipschitz (7.4s)
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:116:0: 'QuantyraNullCone.closed_lorentz_coordinate_square_difference3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:117:0: 'QuantyraNullCone.gauge_denominator_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:118:0: 'QuantyraNullCone.reciprocal_cube_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:119:0: 'QuantyraNullCone.gauge_density_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2733/2735] Building QuantyraNullCone.LorentzSpatialDistance (3.5s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/QuantyraNullCone/LorentzSpatialDistance.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzSpatialDistance.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzSpatialDistance.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/.lake/build/ir/QuantyraNullCone/LorentzSpatialDistance.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-distance-20261008T065706Z-58f94c/source/.lake/build/ir/QuantyraNullCone/LorentzSpatialDistance.setup.json --json
+error: QuantyraNullCone/LorentzSpatialDistance.lean:35:62: unsolved goals
+⊢ 1 / 2 + √(![1 / 2, 0, 0] 2 ^ 2) < 1
+error: QuantyraNullCone/LorentzSpatialDistance.lean:38:69: unsolved goals
+⊢ 1 < (9999 / 10000 / (39601 / 40000 - 1 / 10000 * ![1 / 2, 0, 0] 2 ^ 2)) ^ 3
+info: QuantyraNullCone/LorentzSpatialDistance.lean:83:0: 'QuantyraNullCone.gauge_density_spatial_invariant3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:84:0: 'QuantyraNullCone.gauge_anchor_density_gt3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:85:0: 'QuantyraNullCone.gauge_o2_distance_positive3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [2734/2735] Built QuantyraNullCone.LorentzVolume (4.1s)
+info: QuantyraNullCone/LorentzVolume.lean:112:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:113:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:114:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- QuantyraNullCone.LorentzDerivative
+- QuantyraNullCone.LorentzSpatialDistance
+error: build failed
+TERMINAL_EXIT=1

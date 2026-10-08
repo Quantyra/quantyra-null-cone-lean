@@ -1,0 +1,163 @@
+ℹ [2723/2738] Built QuantyraNullCone.LorentzDiamond (3.7s)
+info: QuantyraNullCone/LorentzDiamond.lean:106:0: 'QuantyraNullCone.spatial_radius_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:107:0: 'QuantyraNullCone.closed_lorentz_diamond_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:108:0: 'QuantyraNullCone.chronological3_irreflexive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:109:0: 'QuantyraNullCone.continuous_spatial_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDiamond.lean:110:0: 'QuantyraNullCone.sampledOrder3_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2724/2738] Built QuantyraNullCone.LorentzFlow (3.4s)
+info: QuantyraNullCone/LorentzFlow.lean:85:0: 'QuantyraNullCone.lorentz_flow_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:86:0: 'QuantyraNullCone.spatial_radius_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:87:0: 'QuantyraNullCone.flow_denominator_null_factors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:88:0: 'QuantyraNullCone.closed_lorentz_null_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:89:0: 'QuantyraNullCone.flow_denominator_lower3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:90:0: 'QuantyraNullCone.flow_denominator_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlow.lean:91:0: 'QuantyraNullCone.flow_factor_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2725/2738] Built QuantyraNullCone.LorentzMeasures (3.7s)
+info: QuantyraNullCone/LorentzMeasures.lean:78:0: 'QuantyraNullCone.lorentz_norm_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:79:0: 'QuantyraNullCone.isCompact_closedLorentzDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:80:0: 'QuantyraNullCone.flat_diamond3_ae_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:81:0: 'QuantyraNullCone.InDensityClass3.integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:82:0: 'QuantyraNullCone.InDensityClass3.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMeasures.lean:83:0: 'QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2726/2738] Built QuantyraNullCone.LorentzInverse (3.1s)
+info: QuantyraNullCone/LorentzInverse.lean:53:0: 'QuantyraNullCone.flow_inverse_denominator_identity3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:54:0: 'QuantyraNullCone.flow_inverse_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:55:0: 'QuantyraNullCone.flow_inverse_factor3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:56:0: 'QuantyraNullCone.lorentz_flow_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:57:0: 'QuantyraNullCone.lorentz_flow_inverse_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2727/2738] Built QuantyraNullCone.LorentzPreservation (3.7s)
+info: QuantyraNullCone/LorentzPreservation.lean:122:0: 'QuantyraNullCone.null_map_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:123:0: 'QuantyraNullCone.null_map_strict_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:124:0: 'QuantyraNullCone.lorentz_null_plus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:125:0: 'QuantyraNullCone.lorentz_null_minus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:126:0: 'QuantyraNullCone.lorentz_flow_preserves_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:127:0: 'QuantyraNullCone.lorentz_flow_preserves_open3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:128:0: 'QuantyraNullCone.lorentz_flow_image3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPreservation.lean:129:0: 'QuantyraNullCone.lorentz_flow_injectiveOn3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2728/2738] Built QuantyraNullCone.LorentzGaugeBounds (4.2s)
+info: QuantyraNullCone/LorentzGaugeBounds.lean:84:0: 'QuantyraNullCone.flow_denominator_upper3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeBounds.lean:85:0: 'QuantyraNullCone.gauge_density_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeBounds.lean:86:0: 'QuantyraNullCone.gauge_density_smooth3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2729/2738] Built QuantyraNullCone.LorentzVolumeCoordinates (4.3s)
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:68:0: 'QuantyraNullCone.split_lorentz_volume_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:69:0: 'QuantyraNullCone.split_lorentz_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:70:0: 'QuantyraNullCone.split_lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolumeCoordinates.lean:71:0: 'QuantyraNullCone.lorentz_diamond_volume_slices3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2730/2738] Built QuantyraNullCone.LorentzDerivative (6.2s)
+info: QuantyraNullCone/LorentzDerivative.lean:95:0: 'QuantyraNullCone.hasFDerivAt_flow_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDerivative.lean:96:0: 'QuantyraNullCone.hasFDerivAt_flow_numerator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDerivative.lean:97:0: 'QuantyraNullCone.hasFDerivAt_lorentz_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2731/2738] Built QuantyraNullCone.LorentzGaugeLipschitz (7.6s)
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:116:0: 'QuantyraNullCone.closed_lorentz_coordinate_square_difference3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:117:0: 'QuantyraNullCone.gauge_denominator_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:118:0: 'QuantyraNullCone.reciprocal_cube_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:119:0: 'QuantyraNullCone.gauge_density_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2732/2738] Built QuantyraNullCone.LorentzChronology (8.2s)
+info: QuantyraNullCone/LorentzChronology.lean:96:0: 'QuantyraNullCone.chronological_iff_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:97:0: 'QuantyraNullCone.lorentz_flow_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:98:0: 'QuantyraNullCone.continuousOn_flow_time_parameter3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:99:0: 'QuantyraNullCone.lorentz_flow_chronological_forward3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:100:0: 'QuantyraNullCone.lorentz_flow_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2733/2738] Built QuantyraNullCone.LorentzSpatialDistance (4.3s)
+info: QuantyraNullCone/LorentzSpatialDistance.lean:84:0: 'QuantyraNullCone.gauge_density_spatial_invariant3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:85:0: 'QuantyraNullCone.gauge_anchor_density_gt3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:86:0: 'QuantyraNullCone.gauge_o2_distance_positive3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2734/2738] Built QuantyraNullCone.LorentzVolume (4.7s)
+info: QuantyraNullCone/LorentzVolume.lean:112:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:113:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:114:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2735/2738] Built QuantyraNullCone.LorentzFlat (2.9s)
+info: QuantyraNullCone/LorentzFlat.lean:40:0: 'QuantyraNullCone.flat_diamond_measure_mass3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:41:0: 'QuantyraNullCone.flat_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:42:0: 'QuantyraNullCone.sampledOrder3_flow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2736/2738] Built QuantyraNullCone.LorentzJacobian (6.7s)
+info: QuantyraNullCone/LorentzJacobian.lean:61:0: 'QuantyraNullCone.lorentz_flow_derivative_matrix3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:62:0: 'QuantyraNullCone.lorentz_flow_derivative_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:63:0: 'QuantyraNullCone.lorentz_flow_derivative_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2737/2738] Building QuantyraNullCone.LorentzTransport (4.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/QuantyraNullCone/LorentzTransport.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTransport.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTransport.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/.lake/build/ir/QuantyraNullCone/LorentzTransport.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-lorentz-class-20261008T070346Z-92b0c7/source/.lake/build/ir/QuantyraNullCone/LorentzTransport.setup.json --json
+error: QuantyraNullCone/LorentzTransport.lean:20:83: `fun_prop` was unable to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨0, ⋯⟩`
+
+Issues:
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun a_1 => flowDenominator3 a a_1`
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun p => flowDenominator3 a p`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a_1 =>
+  ![(1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 1, (1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 2]`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c2c3 => Matrix.vecCons c2c3.1 c2c3.2 ⟨0, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨0, ⋯⟩`
+error: QuantyraNullCone/LorentzTransport.lean:20:83: `fun_prop` was unable to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨1, ⋯⟩`
+
+Issues:
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun a_1 => flowDenominator3 a a_1`
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun p => flowDenominator3 a p`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a_1 =>
+  ![(1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 1, (1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 2]`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c2c3 => Matrix.vecCons c2c3.1 c2c3.2 ⟨1, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨1, ⋯⟩`
+error: QuantyraNullCone/LorentzTransport.lean:20:83: `fun_prop` was unable to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨2, ⋯⟩`
+
+Issues:
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun a_1 => flowDenominator3 a a_1`
+  No theorems found for `QuantyraNullCone.flowDenominator3` in order to prove `Measurable fun p => flowDenominator3 a p`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a2a3 => Matrix.vecCons a2a3.1 a2a3.2`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun a_1 =>
+  ![(1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 1, (1 - a ^ 2) / flowDenominator3 a a_1 * a_1.ofLp 2]`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c2c3 => Matrix.vecCons c2c3.1 c2c3.2 ⟨2, ⋯⟩`
+  No theorems found for `Matrix.vecCons` in order to prove `Measurable fun c =>
+  ![((c.ofLp 0 + a) * (1 + a * c.ofLp 0) - a * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)) /
+        ((1 + a * c.ofLp 0) ^ 2 - a ^ 2 * (c.ofLp 1 ^ 2 + c.ofLp 2 ^ 2)),
+      (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 1, (1 - a ^ 2) / flowDenominator3 a c * c.ofLp 2]
+    ⟨2, ⋯⟩`
+warning: QuantyraNullCone/LorentzTransport.lean:19:29: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵[̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲ Matrix.cons_val_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzTransport.lean:19:51: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.cons_val_zero, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵Matrix.cons_val_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzTransport.lean:19:72: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.cons_val_zero, Matrix.cons_val_one,̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: QuantyraNullCone/LorentzTransport.lean:52:0: 'QuantyraNullCone.lorentz_flow_measurable3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTransport.lean:53:0: 'QuantyraNullCone.gauge_inverse_transport_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTransport.lean:54:0: 'QuantyraNullCone.gauge_inverse_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTransport

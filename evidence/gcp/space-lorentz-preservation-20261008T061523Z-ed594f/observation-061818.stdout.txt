@@ -1,0 +1,28 @@
+1
+case h.«1»
+a : ℝ
+p : LorentzPoint3
+hD : flowDenominator3 a p ≠ 0
+hA : 1 - a ^ 2 ≠ 0
+⊢ (lorentzFlow3 (-a) (lorentzFlow3 a p)).ofLp ((fun i => i) ⟨1, ⋯⟩) = p.ofLp ((fun i => i) ⟨1, ⋯⟩)
+error: QuantyraNullCone/LorentzInverse.lean:41:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (lorentzFlow3 ?a ?p).ofLp 2
+in the target expression
+  (lorentzFlow3 (-a) (lorentzFlow3 a p)).ofLp ((fun i => i) ⟨2, ⋯⟩) = p.ofLp ((fun i => i) ⟨2, ⋯⟩)
+
+case h.«2»
+a : ℝ
+p : LorentzPoint3
+hD : flowDenominator3 a p ≠ 0
+hA : 1 - a ^ 2 ≠ 0
+⊢ (lorentzFlow3 (-a) (lorentzFlow3 a p)).ofLp ((fun i => i) ⟨2, ⋯⟩) = p.ofLp ((fun i => i) ⟨2, ⋯⟩)
+info: QuantyraNullCone/LorentzInverse.lean:48:0: 'QuantyraNullCone.flow_inverse_denominator_identity3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:49:0: 'QuantyraNullCone.flow_inverse_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:50:0: 'QuantyraNullCone.flow_inverse_factor3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:51:0: 'QuantyraNullCone.lorentz_flow_inverse3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:52:0: 'QuantyraNullCone.lorentz_flow_inverse_closed3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzInverse
+error: build failed
+TERMINAL_EXIT=1

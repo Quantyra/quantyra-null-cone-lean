@@ -1,0 +1,7 @@
+{
+  "run": "space-lorentz-flow-20261008T060418Z-f138e4",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzFlow",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

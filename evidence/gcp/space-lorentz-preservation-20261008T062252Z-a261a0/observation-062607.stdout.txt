@@ -1,0 +1,28 @@
+1
+              (1 + p.ofLp 0 * a * 4 - p.ofLp 0 * a ^ 3 * spatialSquared3 p * 4 + p.ofLp 0 ^ 2 * a ^ 2 * 6 -
+                          p.ofLp 0 ^ 2 * a ^ 4 * spatialSquared3 p * 2 +
+                        p.ofLp 0 ^ 3 * a ^ 3 * 4 +
+                      p.ofLp 0 ^ 4 * a ^ 4 -
+                    a ^ 2 * spatialSquared3 p * 2 +
+                  a ^ 4 * spatialSquared3 p ^ 2)⁻¹ *
+            2 +
+        a ^ 5 * spatialSquared3 p ^ 3 *
+          (1 + p.ofLp 0 * a * 2 + p.ofLp 0 ^ 2 * a ^ 2 - a ^ 2 * spatialSquared3 p)⁻¹ ^ 2 -
+      a ^ 7 * spatialSquared3 p ^ 2 *
+        (1 + p.ofLp 0 * a * 4 - p.ofLp 0 * a ^ 3 * spatialSquared3 p * 4 + p.ofLp 0 ^ 2 * a ^ 2 * 6 -
+                    p.ofLp 0 ^ 2 * a ^ 4 * spatialSquared3 p * 2 +
+                  p.ofLp 0 ^ 3 * a ^ 3 * 4 +
+                p.ofLp 0 ^ 4 * a ^ 4 -
+              a ^ 2 * spatialSquared3 p * 2 +
+            a ^ 4 * spatialSquared3 p ^ 2)⁻¹ =
+    p.ofLp 0 - p.ofLp 0 * a ^ 2 * 2 + p.ofLp 0 * a ^ 4
+info: QuantyraNullCone/LorentzInverse.lean:53:0: 'QuantyraNullCone.flow_inverse_denominator_identity3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:54:0: 'QuantyraNullCone.flow_inverse_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:55:0: 'QuantyraNullCone.flow_inverse_factor3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:56:0: 'QuantyraNullCone.lorentz_flow_inverse3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInverse.lean:57:0: 'QuantyraNullCone.lorentz_flow_inverse_closed3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzInverse
+error: build failed
+TERMINAL_EXIT=1

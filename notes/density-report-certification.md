@@ -1,6 +1,6 @@
 # Executable density certificates and full-report coverage
 
-S024 integration, 2026-10-07 local date (2026-10-08 UTC). Final exact-source GCP acceptance passed; focused delivery and supplementary CI are pending. This campaign connects the previously accepted actual cell restrictions to the executable rational LP and full density-report probability. It preserves the original density class, observed directed order and split-DKW calibration.
+S024 integration, 2026-10-07 local date (2026-10-08 UTC). Final exact-source GCP acceptance, focused delivery and supplementary CI are complete. This campaign connects the previously accepted actual cell restrictions to the executable rational LP and full density-report probability. It preserves the original density class, observed directed order and split-DKW calibration.
 
 `DensityLPIndex.lean` connects the row-major rational representation to actual real cell means through `finProdFinEquiv`, exact finite sum identities and row/column/prefix indicators. `DensityLPModel.lean` defines the runtime row enumeration: row equalities then column equalities; each ascending corner prefix followed by its negative; each valid horizontal neighbor then vertical neighbor, each followed by its negative. Integer counts include grid ties. An exact model checker rejects any supplied coefficient or right side that differs from this canonical model; dimensions are enforced by finite types.
 
@@ -27,6 +27,8 @@ Authoritative acceptance: `space-density-report-acceptance-20261008T054425Z-0ff6
 | Actual cell restrictions, dual residuals, all-point expansion and histogram/fallback | Actual density foundations plus `density_LP_feasible`, `density_LP_dual_sound`, `density_bands_checked` |
 | Executable representation and checker boundary | Canonical runtime matrices/counts/flattening, checked rational fields and matching Lean/Python fixtures; no whole-program claim |
 | Complete statistical integration | `checked_density_report_coverage`, the no-accuracy/no-feasibility-premise example in `checks/Audit.lean`, fixed-calibration/fallback branches |
-| Final verification and honest practical scope | Fresh root/type/axiom receipt, preserved full-range density limitation; delivery/CI closeout pending |
+| Final verification and honest practical scope | Fresh root/type/axiom receipt, preserved full-range density limitation; delivery/CI closeout complete |
 
-Remaining to-do list: focused S024 delivery and supplementary CI closeout; S025.
+Source/evidence commit `488338a80a293848874661aeb0e6c161b28893a7` is pushed. Supplementary [proof/manuscript CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267263), [literature CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267270) and [Python CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267294) all passed. After collection and a successful check for other Lean/Lake work, the task-started VM was verified TERMINATED. Shutdown/final-state logs and [delivery receipt](../evidence/gcp/space-density-report-acceptance-20261008T054425Z-0ff64c/delivery-closeout.json) are retained. This closeout changes documentation/evidence only; captured proof/check/config bytes retain their accepted identities. All S024 requirements are fulfilled; the [S025 contract](higher-dimensional-proof-contract.md) remains an unexecuted certification target.
+
+Remaining to-do list: S025.

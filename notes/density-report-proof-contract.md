@@ -29,4 +29,4 @@ Define full-report success as a predicate of the finite observed `OrderCode`. It
 
 Retain matching Lean/Python representation fixtures, nonzero dual residual and adversarial/fallback tests as supplementary evidence. Complete fresh GCP root/type/axiom acceptance for the integrated main theorem, focused source/evidence pushes, supplementary CI and stopped-instance closeout before marking S024 complete. S025 remains a separate genuine 2+1 geometric/measure campaign.
 
-Remaining to-do list: S024 delivery/CI closeout; S025.
+Remaining to-do list: S025.

@@ -1,0 +1,29 @@
+{
+  "accepted_proof_commit": "488338a80a293848874661aeb0e6c161b28893a7",
+  "supplementary_ci": [
+    {
+      "conclusion": "success",
+      "databaseId": 37734267294,
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267294",
+      "workflowName": "Verify finite-data certificates"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37734267270,
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267270",
+      "workflowName": "Verify literature manuscript"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37734267263,
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37734267263",
+      "workflowName": "Verify proofs and manuscript"
+    }
+  ],
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "scope": "complete S024 mathematical/report certification; S025 not certified"
+}

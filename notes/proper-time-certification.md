@@ -14,4 +14,6 @@ The [development ledger](../evidence/gcp/proper-time-development-index.json) ret
 
 Original proofs and DOI artifacts remain preserved. Certification concerns the encoded geometric stability bound; it adds no curvature, dynamics, practical-density or priority claim. Finite-data S024 and higher-dimensional S025 remain uncertified.
 
-Remaining to-do list: focused S023 delivery and supplementary CI; complete S024-S025.
+Source/evidence commit `3ee6aae231d0ca211a21110f43bb8daa51c817ad` is pushed. [Proof/manuscript CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37708809955), [literature CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37708809961) and [finite-data CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37708810020) all passed. Task-started VM was verified TERMINATED after acceptance collection.
+
+Remaining to-do list: none for S023; complete S024-S025.

@@ -14,4 +14,6 @@ The [development ledger](../evidence/gcp/logarithmic-development-index.json) ret
 
 This enlarges main-branch software certification, preserving the original inverse and all immutable DOI artifacts. Manuscript 0.3.1 describes its historical scope. Certification establishes the encoded bound, not priority, optimality, practical inference or new physics. Proper time, current finite-data guarantees and the higher-dimensional counterexample remain uncertified.
 
-Remaining to-do list: focused delivery and supplementary CI for S022; complete S023-S025 under the selected four-story goal.
+Source/evidence commit `678c9c953f81e3ed0f5393603a84a48a1910a857` is pushed. [Supplementary proof/manuscript CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37706983942), [literature CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37706983934) and [finite-data CI](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37706983950) all passed. Final cloud state is TERMINATED. Transfer progress whitespace remains preserved in raw logs.
+
+Remaining to-do list: none for S022; complete S023-S025 under the selected four-story goal.

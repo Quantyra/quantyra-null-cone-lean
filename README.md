@@ -8,7 +8,7 @@ Lean 4 proof software and a preprint by **Daniel Eric Fredriksen, Quantyra Inc.*
 
 [Research and exact-proof navigation](RESEARCH.md) · [Contribute an error, prior-work report or test](CONTRIBUTING.md) · [Observed community evidence](notes/community-evidence.md) · [Finite-data CLI](tools/FINITE_DATA.md).
 
-**Read the [preprint PDF](manuscript/finite-causal-order-reconstruction.pdf)** or its [TeX source](manuscript/finite-causal-order-reconstruction.tex). [Integrity and reproducibility](INTEGRITY.md) Â· [Citation metadata](CITATION.cff) Â· [Zenodo metadata](.zenodo.json) Â· [Changelog](CHANGELOG.md).
+**Review the [unpublished 0.4.0 PDF](manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.pdf)** reflecting completed certification, or read the [published 0.3.1 PDF](manuscript/deposit/v0.3.1/finite-causal-order-reconstruction.pdf). [Revision evidence](manuscript/revisions/v0.4.0/README.md) | [Paper portfolio](notes/manuscript-portfolio.md) | [Integrity](INTEGRITY.md). Root-level manuscript files preserve the historical 0.3.0 baseline.
 
 ## Result and verification scope
 

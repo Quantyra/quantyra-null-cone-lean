@@ -1,0 +1,49 @@
+{
+  "state": "unpublished_review_candidate",
+  "version": "0.4.0",
+  "reviewed_utc": "2026-10-08T19:59:17.483181+00:00",
+  "pages": 10,
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "visual_findings": "All ten pages inspected in rendered contact sheets. No clipping or overlap; draft/baseline DOI distinction on page 1, updated formal claims on pages 7-9, limitations and references on pages 9-10 checked.",
+  "compiler": "Tectonic 0.17.0",
+  "build_exit": 0,
+  "reference_or_layout_warnings": false,
+  "compiler_notice": "Nonfatal Fontconfig configuration notice; rendered fonts visually checked.",
+  "all_seven_mathematical_statements_unchanged": true,
+  "baseline_pdf_and_zip_preserved": true,
+  "accepted_proof_check_config_hashes_verified": 109,
+  "proof_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "gcp_run": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+  "audited_exports": 295,
+  "new_lean_invocations": 0,
+  "new_doi_publication": false,
+  "files": {
+    "finite-causal-order-reconstruction.tex": "37c0658888faf69d8662cfd0b9494d7f837fcc972094f24f41c0fd348e19fb95",
+    "finite-causal-order-reconstruction.pdf": "3d9abcbcfb59128aab80b79f3fbbeaa050c438ac79d700281b1c51aa49c46a09",
+    "tex-build.log": "3cd27f5e0e180f24f3c8235f27f80b5c96046f953b392197b92fe9590c5e5500",
+    "prepare_revision.py": "ed6228d9b29d3640a99012331afbda76b5e63677510f28cb42692a97bbba5ed8"
+  },
+  "page_render_sha256": {
+    "page-01.png": "faee2157bc2f807b8fba4e9dd8b6b84f6ba5466771fc72b310f91a571da6b45f",
+    "page-02.png": "4cccc5943960caa92c528c27607a43057c6c9c5051065a00492c1072ebc18725",
+    "page-03.png": "c068dc07123086740f582b7ec092b42590a888475be7789f589892aa847d727c",
+    "page-04.png": "58df1430d72962b5b5254f7cae7b612da021dbcf94a73773dd85bae6a0deeb21",
+    "page-05.png": "8bbb1619fcd9ec1a4e8bb46f12199bf4b9057578210cfef863605c4713d3772d",
+    "page-06.png": "1fd5a4ce29e44c4c1fd368c346810aed734b46d9a9222c8fb43c6ed0a9bcb505",
+    "page-07.png": "cb7ac8db68fd68fcb92fba4412c008c75ac243ef996a36dda566f9bba577cba7",
+    "page-08.png": "8300f8f23a987225675a4789d48cd06a4939efccabfc0d9c2c74d2e76fdb3f3e",
+    "page-09.png": "da72efcf77515bd4a43ac09e88239ae7786a2772a017c6532d6ae785c1408bd8",
+    "page-10.png": "b84a7e64b8fbe56d8d5b06fedc80efe9654d9335e0e8fd6c809af89e2f619f28"
+  }
+}

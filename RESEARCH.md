@@ -1,5 +1,7 @@
 # Proofs and research navigation
 
+Current unpublished manuscript candidate: [0.4.0 PDF](manuscript/revisions/v0.4.0/finite-causal-order-reconstruction.pdf), reflecting completed certification; [review evidence](manuscript/revisions/v0.4.0/README.md) and [separate-paper decisions](notes/manuscript-portfolio.md). Latest published version remains 0.3.1. Older manuscript entries below identify historical artifacts.
+
 - Published manuscript [0.3.0, DOI 10.5281/zenodo.23214579](https://doi.org/10.5281/zenodo.23214579); preserved [PDF](manuscript/finite-causal-order-reconstruction.pdf), [TeX](manuscript/finite-causal-order-reconstruction.tex) and [publication receipt](manuscript/deposit/v0.3.0/published-record.json).
 - [Unpublished literature revision](manuscript/working/README.md) credits the full Winkler comparison; it has no separate DOI.
 - Exact finite statement: [Bridges.lean](QuantyraNullCone/Bridges.lean), `finite_realizer_rank_rigidity_specified`, one global swap before both universal interior rank bounds.

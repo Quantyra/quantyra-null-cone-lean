@@ -1,0 +1,7 @@
+{
+  "run": "space-density-cell-geometry-20261008T042713Z-35c68b",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.DensityCellTranslations",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

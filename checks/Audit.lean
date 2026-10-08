@@ -394,3 +394,66 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
     1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
       (QuantyraNullCone.cdfReportCoverage rho q eM eJ report) :=
   h.checked_cdf_report_or_fallback hn hc report
+
+#check QuantyraNullCone.square_cell_volume
+#print axioms QuantyraNullCone.square_cell_volume
+#check QuantyraNullCone.InDensityClass.cell_mean_integral
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_integral
+#check QuantyraNullCone.InDensityClass.cell_mean_bounds
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_bounds
+#check QuantyraNullCone.InDensityClass.cell_mean_CDF
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_CDF
+#check QuantyraNullCone.cell_chord_distance
+#print axioms QuantyraNullCone.cell_chord_distance
+#check QuantyraNullCone.cell_chord_integral
+#print axioms QuantyraNullCone.cell_chord_integral
+#check QuantyraNullCone.cell_majorant_integral
+#print axioms QuantyraNullCone.cell_majorant_integral
+#check QuantyraNullCone.InDensityClass.cell_mean_point_bias
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_point_bias
+#check QuantyraNullCone.InDensityClass.cell_mean_horizontal
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_horizontal
+#check QuantyraNullCone.InDensityClass.cell_mean_transpose
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_transpose
+#check QuantyraNullCone.InDensityClass.cell_mean_vertical
+#print axioms QuantyraNullCone.InDensityClass.cell_mean_vertical
+#check QuantyraNullCone.InDensityClass.grid_cell_bounds
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_bounds
+#check QuantyraNullCone.sum_rectangle_differences
+#print axioms QuantyraNullCone.sum_rectangle_differences
+#check QuantyraNullCone.InDensityClass.grid_cell_prefix
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_prefix
+#check QuantyraNullCone.InDensityClass.grid_cell_row_fin
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_row_fin
+#check QuantyraNullCone.InDensityClass.grid_cell_column_fin
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_column_fin
+#check QuantyraNullCone.InDensityClass.grid_cell_horizontal
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_horizontal
+#check QuantyraNullCone.InDensityClass.grid_cell_vertical
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_vertical
+#check QuantyraNullCone.InDensityClass.grid_cell_point_bias
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_point_bias
+#check QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction
+#check QuantyraNullCone.histogram_cell_corner
+#print axioms QuantyraNullCone.histogram_cell_corner
+#check QuantyraNullCone.InDensityClass.histogram_cell_error
+#print axioms QuantyraNullCone.InDensityClass.histogram_cell_error
+#check QuantyraNullCone.InDensityClass.histogram_point_error
+#print axioms QuantyraNullCone.InDensityClass.histogram_point_error
+#check QuantyraNullCone.InDensityClass.grid_cell_feasible
+#print axioms QuantyraNullCone.InDensityClass.grid_cell_feasible
+
+example {rho : QuantyraNullCone.DiamondPoint → ℝ}
+    (h : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k)
+    (F : ℝ → ℝ → ℝ) {a : ℝ}
+    (hCDF : ∀ s t : ℝ, |F s t - QuantyraNullCone.populationCDF rho s t| ≤ a) :
+    QuantyraNullCone.DensityCellFeasible k F a (QuantyraNullCone.densityGridCellMean rho k) :=
+  h.grid_cell_feasible hk F hCDF
+
+example {rho : QuantyraNullCone.DiamondPoint → ℝ}
+    (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ}
+    (hk : 0 < k) (hi : i < k) (hj : j < k) {p : QuantyraNullCone.DiamondPoint}
+    (hp : p ∈ QuantyraNullCone.closedSquareCell ((i : ℝ) / k) ((j : ℝ) / k) (1 / k)) :
+    |QuantyraNullCone.densityGridCellMean rho k i j - rho p| ≤ 2 / (k : ℝ) :=
+  h.grid_cell_point_bias hk hi hj hp

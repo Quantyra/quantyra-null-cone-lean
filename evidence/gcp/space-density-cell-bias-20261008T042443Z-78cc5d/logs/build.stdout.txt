@@ -1,0 +1,106 @@
+ℹ [2574/2609] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2575/2609] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2576/2609] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2683/2684] Built QuantyraNullCone.DensityCells (3.1s)
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2684/2684] Building QuantyraNullCone.DensityCellBias (3.1s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/QuantyraNullCone/DensityCellBias.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/.lake/build/lib/lean/QuantyraNullCone/DensityCellBias.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/.lake/build/lib/lean/QuantyraNullCone/DensityCellBias.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/.lake/build/ir/QuantyraNullCone/DensityCellBias.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-bias-20261008T042443Z-78cc5d/source/.lake/build/ir/QuantyraNullCone/DensityCellBias.setup.json --json
+error: QuantyraNullCone/DensityCellBias.lean:8:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+error: QuantyraNullCone/DensityCellBias.lean:19:4: No goals to be solved
+error: QuantyraNullCone/DensityCellBias.lean:20:29: Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_left ?m.82
+of type
+  ∀ (a : ?m.76), ?m.80 * a ≤ ?m.81 * a
+error: QuantyraNullCone/DensityCellBias.lean:20:25: Application type mismatch: The argument
+  hw
+has type
+  0 < w
+but is expected to have type
+  ?m.80 ≤ ?m.81
+in the application
+  mul_le_mul_left hw
+error: QuantyraNullCone/DensityCellBias.lean:31:38: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_id
+has type
+  ∀ (a b : ℝ), IntervalIntegrable id ?m.81 a b
+but is expected to have type
+  IntervalIntegrable ?m.74 ?m.76 ?m.72 ?m.73
+in the application
+  intervalIntegral.integral_sub (Continuous.intervalIntegrable continuous_id)
+error: QuantyraNullCone/DensityCellBias.lean:36:36: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_const
+has type
+  ∀ (a b : ℝ), IntervalIntegrable (fun x => ?m.107) ?m.110 a b
+but is expected to have type
+  IntervalIntegrable ?m.100 ?m.102 ?m.98 ?m.99
+in the application
+  intervalIntegral.integral_add (Continuous.intervalIntegrable continuous_const)
+error: QuantyraNullCone/DensityCellBias.lean:29:56: unsolved goals
+a w p : ℝ
+hw : 0 < w
+hShift : ∫ (x : ℝ) in a..a + w, x - a = w ^ 2 / 2
+⊢ ∫ (x : ℝ) in a..a + w, p - a + (1 - 2 * (p - a) / w) * (x - a) = w ^ 2 / 2
+error: QuantyraNullCone/DensityCellBias.lean:43:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'cellChord', which is 'noncomputable'
+error: QuantyraNullCone/DensityCellBias.lean:67:36: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_const
+has type
+  ∀ (a b : ℝ), IntervalIntegrable (fun x => ?m.199) ?m.202 a b
+but is expected to have type
+  IntervalIntegrable ?m.192 ?m.194 ?m.190 ?m.191
+in the application
+  intervalIntegral.integral_add (Continuous.intervalIntegrable continuous_const)
+error: QuantyraNullCone/DensityCellBias.lean:73:34: Application type mismatch: The argument
+  Continuous.intervalIntegrable (Continuous.mul continuous_const (cell_chord_continuous a w p.1))
+has type
+  ∀ (a_1 b : ℝ), IntervalIntegrable ((fun x => ?m.234) * cellChord a w p.1) ?m.247 a_1 b
+but is expected to have type
+  IntervalIntegrable ?m.227 ?m.229 ?m.225 ?m.226
+in the application
+  intervalIntegral.integral_add
+    (Continuous.intervalIntegrable (Continuous.mul continuous_const (cell_chord_continuous a w p.1)))
+error: QuantyraNullCone/DensityCellBias.lean:58:19: unsolved goals
+a c w : ℝ
+hw : 0 < w
+p : DiamondPoint
+hInner :
+  ∀ (x : ℝ), ∫ (y : ℝ) in Set.Ioc c (c + w), cellMajorant a c w p (x, y) = 2 * (w * cellChord a w p.1 x + w ^ 2 / 2)
+⊢ 2 * ∫ (x : ℝ) in a..a + w, w * cellChord a w p.1 x + w ^ 2 / 2 = 2 * w ^ 3
+error: QuantyraNullCone/DensityCellBias.lean:129:45: Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_left ?m.446
+of type
+  ∀ (a : ?m.435), ?m.439 * a ≤ ?m.440 * a
+error: QuantyraNullCone/DensityCellBias.lean:129:25: Application type mismatch: The argument
+  sq_pos_of_pos hw
+has type
+  0 < w ^ 2
+but is expected to have type
+  ?m.439 ≤ ?m.440
+in the application
+  mul_le_mul_left (sq_pos_of_pos hw)
+info: QuantyraNullCone/DensityCellBias.lean:131:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:132:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:133:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:134:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityCellBias

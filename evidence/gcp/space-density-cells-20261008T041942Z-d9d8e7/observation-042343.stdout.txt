@@ -1,0 +1,28 @@
+1
+ℹ [2588/2666] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2589/2666] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2683/2683] Building QuantyraNullCone.DensityCells (52s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/QuantyraNullCone/DensityCells.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/.lake/build/lib/lean/QuantyraNullCone/DensityCells.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/.lake/build/lib/lean/QuantyraNullCone/DensityCells.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/.lake/build/ir/QuantyraNullCone/DensityCells.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/source/.lake/build/ir/QuantyraNullCone/DensityCells.setup.json --json
+error: QuantyraNullCone/DensityCells.lean:41:15: Invalid field `mono_set`: The environment does not contain `And.mono_set`, so it is not possible to project the field `mono_set` from an expression
+  integrable h
+of type
+  AEStronglyMeasurable rho diamondVolume ∧ HasFiniteIntegral rho diamondVolume
+info: QuantyraNullCone/DensityCells.lean:92:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:93:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:94:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:95:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityCells
+error: build failed
+TERMINAL_EXIT=1

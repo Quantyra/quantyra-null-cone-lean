@@ -156,7 +156,31 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              'report_radius_fallback',
              'CDFReport.checked_fallback_good',
              'InDensityClass.cdf_report_fallback_probability',
-             'InDensityClass.checked_cdf_report_or_fallback'):
+             'InDensityClass.checked_cdf_report_or_fallback',
+             'square_cell_volume',
+             'InDensityClass.cell_mean_integral',
+             'InDensityClass.cell_mean_bounds',
+             'InDensityClass.cell_mean_CDF',
+             'cell_chord_distance',
+             'cell_chord_integral',
+             'cell_majorant_integral',
+             'InDensityClass.cell_mean_point_bias',
+             'InDensityClass.cell_mean_horizontal',
+             'InDensityClass.cell_mean_transpose',
+             'InDensityClass.cell_mean_vertical',
+             'InDensityClass.grid_cell_bounds',
+             'sum_rectangle_differences',
+             'InDensityClass.grid_cell_prefix',
+             'InDensityClass.grid_cell_row_fin',
+             'InDensityClass.grid_cell_column_fin',
+             'InDensityClass.grid_cell_horizontal',
+             'InDensityClass.grid_cell_vertical',
+             'InDensityClass.grid_cell_point_bias',
+             'InDensityClass.grid_cell_prefix_restriction',
+             'histogram_cell_corner',
+             'InDensityClass.histogram_cell_error',
+             'InDensityClass.histogram_point_error',
+             'InDensityClass.grid_cell_feasible'):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' "
                      rf"(?:depends on axioms:|does not depend on any axioms)", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")

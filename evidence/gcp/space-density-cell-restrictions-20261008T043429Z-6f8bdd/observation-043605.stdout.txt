@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/DensityCellRestrictions.lean:47:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i, ?f ↑i
+in the target expression
+  ∑ i, densityGridCellMean rho k ↑i ↑j = ↑k
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+k : ℕ
+hk : 0 < k
+j : Fin k
+⊢ ∑ i, densityGridCellMean rho k ↑i ↑j = ↑k
+info: QuantyraNullCone/DensityCellRestrictions.lean:99:0: 'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:100:0: 'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:101:0: 'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:102:0: 'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:103:0: 'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:104:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityCellRestrictions
+error: build failed
+TERMINAL_EXIT=1

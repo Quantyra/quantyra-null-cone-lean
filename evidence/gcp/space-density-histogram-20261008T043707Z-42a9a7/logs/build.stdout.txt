@@ -1,0 +1,55 @@
+ℹ [2574/2581] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2575/2581] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2576/2581] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2683/2689] Replayed QuantyraNullCone.Transpose
+info: QuantyraNullCone/Transpose.lean:79:0: 'QuantyraNullCone.InDensityClass.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:80:0: 'QuantyraNullCone.diamondVolume_transpose_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:81:0: 'QuantyraNullCone.densityMeasure_transpose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:82:0: 'QuantyraNullCone.populationCDF_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:83:0: 'QuantyraNullCone.coefficientDeviation_transpose_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2684/2689] Built QuantyraNullCone.DensityCells (2.9s)
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2685/2689] Built QuantyraNullCone.DensityCellTranslations (2.9s)
+info: QuantyraNullCone/DensityCellTranslations.lean:79:0: 'QuantyraNullCone.InDensityClass.cell_mean_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:80:0: 'QuantyraNullCone.InDensityClass.cell_mean_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:81:0: 'QuantyraNullCone.InDensityClass.cell_mean_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2686/2689] Built QuantyraNullCone.DensityCellBias (3.4s)
+info: QuantyraNullCone/DensityCellBias.lean:138:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:139:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:140:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:141:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2687/2689] Built QuantyraNullCone.DensityCellGrid (2.7s)
+info: QuantyraNullCone/DensityCellGrid.lean:92:0: 'QuantyraNullCone.InDensityClass.grid_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:93:0: 'QuantyraNullCone.sum_rectangle_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:94:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2688/2689] Built QuantyraNullCone.DensityCellRestrictions (2.8s)
+info: QuantyraNullCone/DensityCellRestrictions.lean:99:0: 'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:100:0: 'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:101:0: 'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:102:0: 'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:103:0: 'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:104:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2689/2689] Built QuantyraNullCone.DensityHistogram (3.2s)
+info: QuantyraNullCone/DensityHistogram.lean:80:0: 'QuantyraNullCone.histogram_cell_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:81:0: 'QuantyraNullCone.InDensityClass.histogram_cell_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:82:0: 'QuantyraNullCone.InDensityClass.histogram_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2689 jobs).

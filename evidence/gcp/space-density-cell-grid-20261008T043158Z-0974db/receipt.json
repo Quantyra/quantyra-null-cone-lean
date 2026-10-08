@@ -1,0 +1,7 @@
+{
+  "run": "space-density-cell-grid-20261008T043158Z-0974db",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.DensityCellGrid",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

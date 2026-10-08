@@ -1,0 +1,68 @@
+ℹ [2575/2688] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2576/2688] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2577/2688] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2683/2688] Replayed QuantyraNullCone.Transpose
+info: QuantyraNullCone/Transpose.lean:79:0: 'QuantyraNullCone.InDensityClass.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:80:0: 'QuantyraNullCone.diamondVolume_transpose_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:81:0: 'QuantyraNullCone.densityMeasure_transpose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:82:0: 'QuantyraNullCone.populationCDF_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:83:0: 'QuantyraNullCone.coefficientDeviation_transpose_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2684/2688] Built QuantyraNullCone.DensityCells (2.0s)
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2685/2688] Built QuantyraNullCone.DensityCellTranslations (2.9s)
+info: QuantyraNullCone/DensityCellTranslations.lean:79:0: 'QuantyraNullCone.InDensityClass.cell_mean_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:80:0: 'QuantyraNullCone.InDensityClass.cell_mean_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:81:0: 'QuantyraNullCone.InDensityClass.cell_mean_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2686/2688] Built QuantyraNullCone.DensityCellBias (3.4s)
+info: QuantyraNullCone/DensityCellBias.lean:138:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:139:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:140:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:141:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2687/2688] Built QuantyraNullCone.DensityCellGrid (2.7s)
+info: QuantyraNullCone/DensityCellGrid.lean:92:0: 'QuantyraNullCone.InDensityClass.grid_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:93:0: 'QuantyraNullCone.sum_rectangle_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:94:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2688/2688] Building QuantyraNullCone.DensityCellRestrictions (2.6s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/QuantyraNullCone/DensityCellRestrictions.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/.lake/build/lib/lean/QuantyraNullCone/DensityCellRestrictions.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/.lake/build/lib/lean/QuantyraNullCone/DensityCellRestrictions.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/.lake/build/ir/QuantyraNullCone/DensityCellRestrictions.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cell-restrictions-20261008T043429Z-6f8bdd/source/.lake/build/ir/QuantyraNullCone/DensityCellRestrictions.setup.json --json
+error: QuantyraNullCone/DensityCellRestrictions.lean:47:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i, ?f ↑i
+in the target expression
+  ∑ i, densityGridCellMean rho k ↑i ↑j = ↑k
+
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+k : ℕ
+hk : 0 < k
+j : Fin k
+⊢ ∑ i, densityGridCellMean rho k ↑i ↑j = ↑k
+info: QuantyraNullCone/DensityCellRestrictions.lean:99:0: 'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:100:0: 'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:101:0: 'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:102:0: 'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:103:0: 'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:104:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityCellRestrictions

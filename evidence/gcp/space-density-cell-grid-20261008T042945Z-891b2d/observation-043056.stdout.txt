@@ -1,0 +1,28 @@
+1
+p : DiamondPoint
+x : ℝ
+⊢ 2 * ∫ (x_1 : ℝ) in c..c + w, cellChord a w p.1 (x, x_1).1 + cellChord c w p.2 (x, x_1).2 =
+    2 * (w * cellChord a w p.1 x + w ^ 2 / 2)
+error: QuantyraNullCone/DensityCellBias.lean:73:4: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ℝ) in a..a + w, ((fun x => ?m.242) * cellChord a w p.1) x + ?m.266 ∂?m.269
+in the target expression
+  2 * ∫ (x : ℝ) in a..a + w, w * cellChord a w p.1 x + w ^ 2 / 2 = 2 * w ^ 3
+
+a c w : ℝ
+hw : 0 < w
+p : DiamondPoint
+hInner :
+  ∀ (x : ℝ), ∫ (y : ℝ) in Set.Ioc c (c + w), cellMajorant a c w p (x, y) = 2 * (w * cellChord a w p.1 x + w ^ 2 / 2)
+⊢ 2 * ∫ (x : ℝ) in a..a + w, w * cellChord a w p.1 x + w ^ 2 / 2 = 2 * w ^ 3
+info: QuantyraNullCone/DensityCellBias.lean:132:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:133:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:134:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:135:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityCellBias
+error: build failed
+TERMINAL_EXIT=1

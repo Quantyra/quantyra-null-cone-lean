@@ -1,0 +1,4 @@
+1408 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/run.sh
+1410 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/logs/runner.stdout.txt
+1411 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-cells-20261008T041942Z-d9d8e7/logs/runner.stderr.txt
+1460 lake build QuantyraNullCone.DensityCells

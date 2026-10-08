@@ -1,0 +1,51 @@
+{
+  "runs": [
+    {
+      "run": "space-density-cells-20261008T041942Z-d9d8e7",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-cell-bias-20261008T042443Z-78cc5d",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-cell-geometry-20261008T042713Z-35c68b",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-density-cell-grid-20261008T042945Z-891b2d",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-cell-grid-20261008T043158Z-0974db",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-density-cell-restrictions-20261008T043429Z-6f8bdd",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-histogram-20261008T043707Z-42a9a7",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-density-foundation-acceptance-20261008T044039Z-811777",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-foundation-acceptance-20261008T044259Z-178ba7",
+      "kind": "density-foundation-acceptance",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "scope": "actual density cell/point and conditional histogram foundations; executable LP/full density-report and S025 incomplete"
+}

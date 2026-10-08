@@ -1,0 +1,19 @@
+{
+  "source_commit": "3199ca6e901f13b712f36ad82d52d6b9a7dc3481",
+  "scope": "universal analytic likelihood barrier; S024 incomplete",
+  "proof_manuscript_ci": {
+    "run": 37717875395,
+    "result": "success"
+  },
+  "literature_ci": {
+    "run": 37717875424,
+    "result": "success"
+  },
+  "python_ci": {
+    "run": 37717875397,
+    "result": "success"
+  },
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "evidence_closeout_scope": "docs/evidence only; proof/check/config bytes retain exact accepted identities"
+}

@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2929/2935] Built QuantyraNullCone.DKWUniformGrid (2.7s)
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2930/2935] Built QuantyraNullCone.DKWUniform (3.4s)
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2931/2935] Built QuantyraNullCone.DKWClass (2.5s)
+info: QuantyraNullCone/DKWClass.lean:73:0: 'QuantyraNullCone.InDensityClass.coordinate_sample_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:74:0: 'QuantyraNullCone.InDensityClass.fst_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:75:0: 'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:76:0: 'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2932/2935] Built QuantyraNullCone.SplitProbability (2.9s)
+info: QuantyraNullCone/SplitProbability.lean:95:0: 'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:96:0: 'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:97:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2933/2935] Built QuantyraNullCone.SplitCalibration (2.8s)
+info: QuantyraNullCone/SplitCalibration.lean:81:0: 'QuantyraNullCone.split_exponential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:82:0: 'QuantyraNullCone.InDensityClass.checked_split_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:83:0: 'QuantyraNullCone.InDensityClass.checked_split_accuracy_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [2934/2935] Built QuantyraNullCone (2.4s)
+Build completed successfully (2935 jobs).
+TERMINAL_EXIT=0

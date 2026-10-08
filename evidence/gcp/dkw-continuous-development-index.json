@@ -1,0 +1,51 @@
+{
+  "runs": [
+    {
+      "run": "space-dkw-quantization-20261008T030446Z-d54629",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-uniform-grid-20261008T031017Z-9410c1",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-uniform-grid-20261008T031303Z-391fa1",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-dkw-uniform-20261008T031724Z-402e10",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-class-20261008T032235Z-cbaf9c",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-split-probability-20261008T032737Z-83829d",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-space-split-probability-20261008T033617Z-0daa19",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-split-calibration-20261008T033751Z-384513",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-dkw-continuous-acceptance-20261008T033940Z-8b2f81",
+      "kind": "continuous-acceptance",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "scope": "continuous uniform/original-K DKW and exact rational split-checker soundness; report/density/S025 incomplete"
+}

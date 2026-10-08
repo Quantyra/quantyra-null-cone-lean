@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/SplitProbability.lean:47:91: Type mismatch
+  LT.lt.le ?m.182
+has type
+  ?m.180 ≤ ?m.181
+but is expected to have type
+  x✝ ∈
+    {w |
+      e ≤
+        |empiricalCDF (fun i => (w i).1) (fun i => (w i).2) (↑↑jk.1 / ↑q) (↑↑jk.2 / ↑q) -
+            populationCDF rho (↑↑jk.1 / ↑q) (↑↑jk.2 / ↑q)|}
+info: QuantyraNullCone/SplitProbability.lean:90:0: 'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:91:0: 'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:92:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.SplitProbability
+error: build failed
+TERMINAL_EXIT=1

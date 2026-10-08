@@ -1,0 +1,30 @@
+1297 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/run.sh
+1299 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/logs/runner.stdout.txt
+1300 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/logs/runner.stderr.txt
+1349 lake build QuantyraNullCone.DKWQuantization
+1537 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/source/QuantyraNullCone/DKWQuantization.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/source/.lake/build/lib/lean/QuantyraNullCone/DKWQuantization.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/source/.lake/build/lib/lean/QuantyraNullCone/DKWQuantization.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/source/.lake/build/ir/QuantyraNullCone/DKWQuantization.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-quantization-20261008T030446Z-d54629/source/.lake/build/ir/QuantyraNullCone/DKWQuantization.setup.json --json
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2139/2180] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2645/2649] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2646/2649] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2647/2649] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [2648/2649] Built Mathlib.MeasureTheory.Function.Floor (25s)

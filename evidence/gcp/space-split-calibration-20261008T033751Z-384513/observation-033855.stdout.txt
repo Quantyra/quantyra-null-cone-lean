@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/DKWClass.lean:75:0: 'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:76:0: 'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2912/2913] Built QuantyraNullCone.SplitProbability (2.0s)
+info: QuantyraNullCone/SplitProbability.lean:95:0: 'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:96:0: 'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:97:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2913/2913] Built QuantyraNullCone.SplitCalibration (2.0s)
+info: QuantyraNullCone/SplitCalibration.lean:23:67: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: QuantyraNullCone/SplitCalibration.lean:23:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/SplitCalibration.lean:23:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/SplitCalibration.lean:76:0: 'QuantyraNullCone.split_exponential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:77:0: 'QuantyraNullCone.InDensityClass.checked_split_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:78:0: 'QuantyraNullCone.InDensityClass.checked_split_accuracy_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (2913 jobs).
+TERMINAL_EXIT=0

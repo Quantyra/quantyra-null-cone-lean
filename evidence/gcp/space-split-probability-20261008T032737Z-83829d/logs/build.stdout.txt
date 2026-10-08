@@ -1,0 +1,122 @@
+ℹ [2121/2290] Replayed QuantyraNullCone.DKWBarrier
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2122/2290] Replayed QuantyraNullCone.DKWRoots
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2123/2290] Replayed QuantyraNullCone.DKWPinsker
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2125/2290] Replayed QuantyraNullCone.DKWDifferential
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2129/2290] Replayed QuantyraNullCone.DKWLikelihood
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2131/2290] Replayed QuantyraNullCone.DKWBins
+info: QuantyraNullCone/DKWBins.lean:167:0: 'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBins.lean:168:0: 'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2132/2290] Replayed QuantyraNullCone.DKWMaximal
+info: QuantyraNullCone/DKWMaximal.lean:183:0: 'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2133/2290] Replayed QuantyraNullCone.DKWFiniteCDF
+info: QuantyraNullCone/DKWFiniteCDF.lean:118:0: 'QuantyraNullCone.finite_bin_deviation_likelihood' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteCDF.lean:119:0: 'QuantyraNullCone.finite_bin_upper_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2134/2290] Replayed QuantyraNullCone.DKWFiniteTail
+info: QuantyraNullCone/DKWFiniteTail.lean:156:0: 'QuantyraNullCone.finite_bin_reflect_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteTail.lean:157:0: 'QuantyraNullCone.finite_bin_two_sided_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2135/2290] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [2136/2290] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2137/2290] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2138/2290] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2139/2290] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2644/2690] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2645/2690] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2646/2690] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2649/2690] Replayed QuantyraNullCone.Sampling
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2671/2690] Replayed QuantyraNullCone.Coordinates
+info: QuantyraNullCone/Coordinates.lean:90:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:91:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:92:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2906/2911] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2907/2911] Built QuantyraNullCone.DKWQuantization (2.0s)
+info: QuantyraNullCone/DKWQuantization.lean:154:0: 'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2908/2911] Built QuantyraNullCone.DKWUniformGrid (2.7s)
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2909/2911] Built QuantyraNullCone.DKWUniform (3.4s)
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2910/2911] Built QuantyraNullCone.DKWClass (2.6s)
+info: QuantyraNullCone/DKWClass.lean:73:0: 'QuantyraNullCone.InDensityClass.coordinate_sample_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:74:0: 'QuantyraNullCone.InDensityClass.fst_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:75:0: 'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:76:0: 'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2911/2911] Building QuantyraNullCone.SplitProbability (5.8s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/QuantyraNullCone/SplitProbability.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/.lake/build/lib/lean/QuantyraNullCone/SplitProbability.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/.lake/build/lib/lean/QuantyraNullCone/SplitProbability.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/.lake/build/ir/QuantyraNullCone/SplitProbability.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-probability-20261008T032737Z-83829d/source/.lake/build/ir/QuantyraNullCone/SplitProbability.setup.json --json
+error: QuantyraNullCone/SplitProbability.lean:47:91: Type mismatch
+  LT.lt.le ?m.182
+has type
+  ?m.180 ≤ ?m.181
+but is expected to have type
+  x✝ ∈
+    {w |
+      e ≤
+        |empiricalCDF (fun i => (w i).1) (fun i => (w i).2) (↑↑jk.1 / ↑q) (↑↑jk.2 / ↑q) -
+            populationCDF rho (↑↑jk.1 / ↑q) (↑↑jk.2 / ↑q)|}
+info: QuantyraNullCone/SplitProbability.lean:90:0: 'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:91:0: 'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:92:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.SplitProbability

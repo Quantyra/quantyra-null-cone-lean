@@ -1,0 +1,28 @@
+1
+of type
+  ∀ ⦃t : Set ℝ⦄, MeasurableSet t → MeasurableSet ((fun x => marginalCDF x (↑↑k / ↑q) - ↑↑k / ↑q) ⁻¹' t)
+error: QuantyraNullCone/DKWUniformGrid.lean:58:21: Application type mismatch: The argument
+  hSub
+has type
+  ∀ᵐ (w : Fin n → ℝ) ∂uniformSampleMeasure n, w ∈ uniformGridBad n q e → Q w ∈ E
+but is expected to have type
+  ?m.127 ≤ᶠ[ae (uniformSampleMeasure n)] Q ⁻¹' ?m.121
+in the application
+  measure_mono_ae hSub
+error: QuantyraNullCone/DKWUniformGrid.lean:45:45: unsolved goals
+n q : ℕ
+e : ℝ
+hn : 0 < n
+hq : 0 < q
+he : 0 ≤ e
+E : Finset (BinProfile n q) := finiteBinAbsDeviation e
+Q : (Fin n → ℝ) → BinProfile n q := uniformQuantizedProfile q hq
+hSub : ∀ᵐ (w : Fin n → ℝ) ∂uniformSampleMeasure n, w ∈ uniformGridBad n q e → Q w ∈ E
+⊢ (uniformSampleMeasure n).real (uniformGridBad n q e) ≤ 2 * Real.exp (-2 * ↑n * e ^ 2)
+info: QuantyraNullCone/DKWUniformGrid.lean:68:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:69:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWUniformGrid
+error: build failed
+TERMINAL_EXIT=1

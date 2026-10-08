@@ -1,0 +1,7 @@
+{
+  "run": "space-dkw-uniform-grid-20261008T031303Z-391fa1",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.DKWUniformGrid",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

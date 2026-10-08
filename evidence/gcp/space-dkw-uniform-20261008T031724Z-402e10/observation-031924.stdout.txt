@@ -1,0 +1,28 @@
+1
+  n : ℕ
+  e : ℝ
+  hn : 0 < n
+  he : 0 ≤ e
+  C : ℝ := 2 * Real.exp (-2 * ↑n * e ^ 2)
+  hC : 0 ≤ C
+  hBound : ∀ (m : ℕ), (uniformSampleMeasure n) (uniformGridBad n (2 ^ m) e) ≤ ENNReal.ofReal C
+  hMass : (uniformSampleMeasure n) (uniformBad n e) ≤ ENNReal.ofReal C
+  ⊢ ENNReal.ofReal C ≠ sorry
+Remaining goals after safe rules:
+  n : ℕ
+  e : ℝ
+  hn : 0 < n
+  he : 0 ≤ e
+  C : ℝ := 2 * Real.exp (-2 * ↑n * e ^ 2)
+  hC : 0 ≤ C
+  hBound : ∀ (m : ℕ), (uniformSampleMeasure n) (uniformGridBad n (2 ^ m) e) ≤ ENNReal.ofReal C
+  hMass : (uniformSampleMeasure n) (uniformBad n e) ≤ ENNReal.ofReal C
+  ⊢ ENNReal.ofReal C ≠ sorry
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWUniform
+error: build failed
+TERMINAL_EXIT=1

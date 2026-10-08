@@ -1,0 +1,30 @@
+5752 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/run.sh
+5754 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/logs/runner.stdout.txt
+5755 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/logs/runner.stderr.txt
+5804 lake build QuantyraNullCone.SplitCalibration
+5885 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/source/QuantyraNullCone/DKWUniform.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/source/.lake/build/lib/lean/QuantyraNullCone/DKWUniform.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/source/.lake/build/lib/lean/QuantyraNullCone/DKWUniform.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/source/.lake/build/ir/QuantyraNullCone/DKWUniform.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-split-calibration-20261008T033751Z-384513/source/.lake/build/ir/QuantyraNullCone/DKWUniform.setup.json --json
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2671/2821] Replayed QuantyraNullCone.Coordinates
+info: QuantyraNullCone/Coordinates.lean:90:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:91:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:92:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2906/2913] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2907/2913] Replayed QuantyraNullCone.FiniteCalibration
+info: QuantyraNullCone/FiniteCalibration.lean:84:0: 'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:85:0: 'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:86:0: 'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:87:0: 'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:88:0: 'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2908/2913] Built QuantyraNullCone.DKWQuantization (2.9s)
+info: QuantyraNullCone/DKWQuantization.lean:154:0: 'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2909/2913] Built QuantyraNullCone.DKWUniformGrid (2.7s)
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -119,7 +119,25 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "finite_bin_deviation_likelihood",
              "finite_bin_upper_DKW",
              "finite_bin_reflect_CDF",
-             "finite_bin_two_sided_DKW"):
+             "finite_bin_two_sided_DKW",
+             'uniform_ceil_bin_grid_iff',
+             'uniform_quantized_profile_real_mass',
+             'uniform_quantized_CDF',
+             'uniform_grid_bad_measurable',
+             'uniform_grid_DKW',
+             'uniform_bad_dyadic_union',
+             'uniform_DKW',
+             'uniform_DKW_actual_population',
+             'InDensityClass.coordinate_sample_uniform',
+             'InDensityClass.fst_DKW',
+             'InDensityClass.snd_DKW',
+             'InDensityClass.split_marginal_failure',
+             'InDensityClass.split_joint_grid_failure',
+             'InDensityClass.split_confidence_failure',
+             'InDensityClass.split_accuracy_probability',
+             'split_exponential_upper',
+             'InDensityClass.checked_split_calibration',
+             'InDensityClass.checked_split_accuracy_probability'):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' "
                      rf"(?:depends on axioms:|does not depend on any axioms)", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")

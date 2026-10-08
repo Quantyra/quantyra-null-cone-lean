@@ -294,3 +294,55 @@ example {n : ℕ} {rows : Fin n → Fin n → Bool}
       |(QuantyraNullCone.rank (L.aligned swap).second i : ℝ) -
         (QuantyraNullCone.rank R.second i : ℝ)| ≤ QuantyraNullCone.unresolvedDegree rows trace i :=
   L.checked_forcing_rank_bounds R anchor trace hAccept
+
+#check QuantyraNullCone.uniform_ceil_bin_grid_iff
+#print axioms QuantyraNullCone.uniform_ceil_bin_grid_iff
+#check QuantyraNullCone.uniform_quantized_profile_real_mass
+#print axioms QuantyraNullCone.uniform_quantized_profile_real_mass
+#check QuantyraNullCone.uniform_quantized_CDF
+#print axioms QuantyraNullCone.uniform_quantized_CDF
+#check QuantyraNullCone.uniform_grid_bad_measurable
+#print axioms QuantyraNullCone.uniform_grid_bad_measurable
+#check QuantyraNullCone.uniform_grid_DKW
+#print axioms QuantyraNullCone.uniform_grid_DKW
+#check QuantyraNullCone.uniform_bad_dyadic_union
+#print axioms QuantyraNullCone.uniform_bad_dyadic_union
+#check QuantyraNullCone.uniform_DKW
+#print axioms QuantyraNullCone.uniform_DKW
+#check QuantyraNullCone.uniform_DKW_actual_population
+#print axioms QuantyraNullCone.uniform_DKW_actual_population
+#check QuantyraNullCone.InDensityClass.coordinate_sample_uniform
+#print axioms QuantyraNullCone.InDensityClass.coordinate_sample_uniform
+#check QuantyraNullCone.InDensityClass.fst_DKW
+#print axioms QuantyraNullCone.InDensityClass.fst_DKW
+#check QuantyraNullCone.InDensityClass.snd_DKW
+#print axioms QuantyraNullCone.InDensityClass.snd_DKW
+#check QuantyraNullCone.InDensityClass.split_marginal_failure
+#print axioms QuantyraNullCone.InDensityClass.split_marginal_failure
+#check QuantyraNullCone.InDensityClass.split_joint_grid_failure
+#print axioms QuantyraNullCone.InDensityClass.split_joint_grid_failure
+#check QuantyraNullCone.InDensityClass.split_confidence_failure
+#print axioms QuantyraNullCone.InDensityClass.split_confidence_failure
+#check QuantyraNullCone.InDensityClass.split_accuracy_probability
+#print axioms QuantyraNullCone.InDensityClass.split_accuracy_probability
+#check QuantyraNullCone.split_exponential_upper
+#print axioms QuantyraNullCone.split_exponential_upper
+#check QuantyraNullCone.InDensityClass.checked_split_calibration
+#print axioms QuantyraNullCone.InDensityClass.checked_split_calibration
+#check QuantyraNullCone.InDensityClass.checked_split_accuracy_probability
+#print axioms QuantyraNullCone.InDensityClass.checked_split_accuracy_probability
+
+example {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+    (QuantyraNullCone.uniformSampleMeasure n).real {w | ∃ t : ℝ,
+      e < |QuantyraNullCone.marginalCDF w t -
+        QuantyraNullCone.uniform01Measure.real (Set.Iic t)|} ≤
+      2 * Real.exp (-2 * (n : ℝ) * e ^ 2) :=
+  QuantyraNullCone.uniform_DKW_actual_population hn he
+
+example {rho : QuantyraNullCone.DiamondPoint → ℝ}
+    (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n)
+    {eM eJ bM bJ delta : ℚ}
+    (hc : QuantyraNullCone.checkSplitCalibration n q eM eJ bM bJ delta = true) :
+    1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
+      (QuantyraNullCone.splitCalibrationBad rho n q eM eJ)ᶜ :=
+  h.checked_split_accuracy_probability hn hc

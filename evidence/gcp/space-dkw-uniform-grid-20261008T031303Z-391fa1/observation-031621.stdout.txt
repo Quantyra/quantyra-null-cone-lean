@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2646/2651] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2647/2651] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2650/2651] Built QuantyraNullCone.DKWQuantization (3.0s)
+info: QuantyraNullCone/DKWQuantization.lean:154:0: 'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2651/2651] Built QuantyraNullCone.DKWUniformGrid (2.7s)
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2651 jobs).
+TERMINAL_EXIT=0

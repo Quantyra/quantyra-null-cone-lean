@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2674/2676] Built QuantyraNullCone.DKWUniformGrid (2.0s)
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2675/2676] Built QuantyraNullCone.DKWUniform (3.7s)
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2676/2676] Building QuantyraNullCone.DKWClass (3.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/QuantyraNullCone/DKWClass.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/.lake/build/lib/lean/QuantyraNullCone/DKWClass.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/.lake/build/lib/lean/QuantyraNullCone/DKWClass.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/.lake/build/ir/QuantyraNullCone/DKWClass.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-class-20261008T032235Z-cbaf9c/source/.lake/build/ir/QuantyraNullCone/DKWClass.setup.json --json
+error: QuantyraNullCone/DKWClass.lean:22:21: Failed to rewrite using equation theorems for `coordinateSample`
+info: QuantyraNullCone/DKWClass.lean:72:0: 'QuantyraNullCone.InDensityClass.coordinate_sample_uniform' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:73:0: 'QuantyraNullCone.InDensityClass.fst_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:74:0: 'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:75:0: 'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWClass
+error: build failed
+TERMINAL_EXIT=1

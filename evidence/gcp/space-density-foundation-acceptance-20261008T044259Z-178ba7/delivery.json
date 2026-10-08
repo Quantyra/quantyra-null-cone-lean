@@ -1,0 +1,19 @@
+{
+  "source_commit": "939952be52b006b63b6d1a0c66328345ddf3c56e",
+  "scope": "actual density cell/point and conditional histogram foundations; S024 executable LP/full density-report and S025 incomplete",
+  "proof_manuscript_ci": {
+    "run": 37729096611,
+    "result": "success"
+  },
+  "literature_ci": {
+    "run": 37729096696,
+    "result": "success"
+  },
+  "python_ci": {
+    "run": 37729096572,
+    "result": "success"
+  },
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "evidence_closeout_scope": "docs/evidence only; accepted proof/check/config bytes unchanged"
+}

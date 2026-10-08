@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "run": "space-finite-calibration-20261008T005749Z-feb73e",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-finite-calibration-20261008T010324Z-be8332",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-finite-forcing-20261008T004833Z-45a275",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-finite-forcing-20261008T005356Z-7686a0",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-finite-foundation-20261008T010920Z-ddbfc1",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-finite-foundation-acceptance-20261008T012230Z-80b6d2",
+      "kind": "partial-foundation-acceptance",
+      "exit": 1
+    },
+    {
+      "run": "space-finite-foundation-acceptance-20261008T013118Z-3c4c18",
+      "kind": "partial-foundation-acceptance",
+      "exit": 1
+    },
+    {
+      "run": "space-finite-foundation-acceptance-20261008T014007Z-80886d",
+      "kind": "partial-foundation-acceptance",
+      "exit": 0
+    },
+    {
+      "run": "space-finite-lp-20261008T003843Z-7989a8",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-finite-lp-20261008T004345Z-2e6159",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-finite-positions-20261008T011450Z-41de97",
+      "kind": "development",
+      "exit": 1
+    }
+  ],
+  "local_lean_invocations": 0,
+  "task_started_instance_in_run": "space-finite-lp-20261008T003843Z-7989a8",
+  "scope": "partial deterministic foundation; sharp DKW coverage and density suite remain open"
+}

@@ -1,0 +1,56 @@
+{
+  "rows_bitmasks": [
+    0,
+    4,
+    0
+  ],
+  "first_permutation": [
+    0,
+    1,
+    2
+  ],
+  "second_permutation": [
+    1,
+    2,
+    0
+  ],
+  "forcing_certificate": {
+    "anchor": [
+      0,
+      1
+    ],
+    "forcing_tree": [
+      [
+        [
+          0,
+          1
+        ],
+        null
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "class_edges": 2,
+    "unresolved_degrees": [
+      0,
+      0,
+      0
+    ],
+    "trim_cutoff": 0,
+    "trim_budget": "0"
+  },
+  "invalid_parent_rejected": true,
+  "LP_residual_lower": "-1/2",
+  "rounded_failure": "666666666667/2000000000000",
+  "local_lean_invocations": 0,
+  "status": "Actual Python checker and eight Lean fixture propositions passed",
+  "gcp_run": "space-finite-foundation-acceptance-20261008T014007Z-80886d"
+}

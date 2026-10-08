@@ -1,0 +1,70 @@
+{
+  "status": "Numerical diagnostic only, not universal proof or Lean certification",
+  "points_per_epsilon": 10000,
+  "cases": [
+    {
+      "epsilon": 0.001,
+      "stationary_p": 0.49966666660745485,
+      "lambda": 0.0020026702267318124,
+      "sampled_minimum_F": 2.00000044444466e-06,
+      "target": 2e-06
+    },
+    {
+      "epsilon": 0.01,
+      "stationary_p": 0.49666660740402724,
+      "lambda": 0.020270267835264377,
+      "sampled_minimum_F": 0.00020000444468149664,
+      "target": 0.0002
+    },
+    {
+      "epsilon": 0.05,
+      "stationary_p": 0.4833259153242784,
+      "lambda": 0.10714115405560512,
+      "sampled_minimum_F": 0.005002781487990715,
+      "target": 0.005000000000000001
+    },
+    {
+      "epsilon": 0.1,
+      "stationary_p": 0.4666070662538041,
+      "lambda": 0.23073749526927478,
+      "sampled_minimum_F": 0.020044683157952936,
+      "target": 0.020000000000000004
+    },
+    {
+      "epsilon": 0.25,
+      "stationary_p": 0.41570605723790943,
+      "lambda": 0.7478448395875343,
+      "sampled_minimum_F": 0.12679665350638558,
+      "target": 0.125
+    },
+    {
+      "epsilon": 0.49,
+      "stationary_p": 0.3285253530310006,
+      "lambda": 2.7001016846375503,
+      "sampled_minimum_F": 0.5097896788821825,
+      "target": 0.48019999999999996
+    },
+    {
+      "epsilon": 0.5,
+      "stationary_p": 0.32461976220281896,
+      "lambda": 2.8509483524490733,
+      "sampled_minimum_F": 0.5322979088919999,
+      "target": 0.5
+    },
+    {
+      "epsilon": 0.7,
+      "stationary_p": 0.23710015112542399,
+      "lambda": 11.128802573052582,
+      "sampled_minimum_F": 1.1308920012583665,
+      "target": 0.9799999999999999
+    },
+    {
+      "epsilon": 0.8,
+      "stationary_p": 0.18017494132992168,
+      "lambda": 40.35297011289193,
+      "sampled_minimum_F": 1.5864313242980237,
+      "target": 1.2800000000000002
+    }
+  ],
+  "local_lean_invocations": 0
+}

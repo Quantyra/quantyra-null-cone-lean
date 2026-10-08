@@ -1,0 +1,7 @@
+{
+  "run": "space-finite-foundation-20261008T010920Z-ddbfc1",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.FiniteFoundation",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

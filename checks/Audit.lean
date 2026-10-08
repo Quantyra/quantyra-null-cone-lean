@@ -200,3 +200,49 @@ example {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
       130 * ((Real.log (N : ℝ) / N) ^ (1 / 6 : ℝ) +
         QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N) :=
   hR.proper_time_logarithmic_unlabeled hS hN
+
+#check QuantyraNullCone.residual_box_bound
+#check QuantyraNullCone.finite_lp_weak_duality
+#check QuantyraNullCone.rationalDual_checker_sound
+#check QuantyraNullCone.Realizer.originalForceStep_sound
+#check QuantyraNullCone.Realizer.checkForcingTrace_sound
+#check QuantyraNullCone.Realizer.forcing_trace_global_alignment
+#check QuantyraNullCone.Realizer.checked_forcing_rank_bounds
+#check QuantyraNullCone.negative_exp_upper_512
+#check QuantyraNullCone.negative_exp_upper_rational
+#check QuantyraNullCone.roundFailureQ_upper
+#check QuantyraNullCone.roundFailureQ_le_budget
+#check QuantyraNullCone.rounded_split_failure_budget
+#check QuantyraNullCone.finite_grid_CDF
+#check QuantyraNullCone.normalized_rank_coordinate_error_general
+#check QuantyraNullCone.checked_trimmed_CDF
+#check QuantyraNullCone.rank_position_eq
+#check QuantyraNullCone.checkedPositionRealizer_ranks
+#print axioms QuantyraNullCone.residual_box_bound
+#print axioms QuantyraNullCone.finite_lp_weak_duality
+#print axioms QuantyraNullCone.rationalDual_checker_sound
+#print axioms QuantyraNullCone.Realizer.originalForceStep_sound
+#print axioms QuantyraNullCone.Realizer.checkForcingTrace_sound
+#print axioms QuantyraNullCone.Realizer.forcing_trace_global_alignment
+#print axioms QuantyraNullCone.Realizer.checked_forcing_rank_bounds
+#print axioms QuantyraNullCone.negative_exp_upper_512
+#print axioms QuantyraNullCone.negative_exp_upper_rational
+#print axioms QuantyraNullCone.roundFailureQ_upper
+#print axioms QuantyraNullCone.roundFailureQ_le_budget
+#print axioms QuantyraNullCone.rounded_split_failure_budget
+#print axioms QuantyraNullCone.finite_grid_CDF
+#print axioms QuantyraNullCone.normalized_rank_coordinate_error_general
+#print axioms QuantyraNullCone.checked_trimmed_CDF
+#print axioms QuantyraNullCone.rank_position_eq
+#print axioms QuantyraNullCone.checkedPositionRealizer_ranks
+
+example {n : ℕ} {rows : Fin n → Fin n → Bool}
+    (L R : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows))
+    (anchor : QuantyraNullCone.FiniteArc n) (trace : List (QuantyraNullCone.ForcingEntry n))
+    (hAccept : QuantyraNullCone.checkForcingTrace rows anchor trace = true) :
+    ∃ swap : Bool, ∀ i : Fin n,
+      |(QuantyraNullCone.rank (L.aligned swap).first i : ℝ) -
+        (QuantyraNullCone.rank R.first i : ℝ)| ≤ QuantyraNullCone.unresolvedDegree rows trace i ∧
+      |(QuantyraNullCone.rank (L.aligned swap).second i : ℝ) -
+        (QuantyraNullCone.rank R.second i : ℝ)| ≤ QuantyraNullCone.unresolvedDegree rows trace i :=
+  L.checked_forcing_rank_bounds R anchor trace hAccept

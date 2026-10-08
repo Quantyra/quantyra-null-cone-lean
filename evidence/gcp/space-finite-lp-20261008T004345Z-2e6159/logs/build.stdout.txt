@@ -1,0 +1,5 @@
+ℹ [982/982] Built QuantyraNullCone.FiniteLP (3.6s)
+info: QuantyraNullCone/FiniteLP.lean:112:0: 'QuantyraNullCone.residual_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:113:0: 'QuantyraNullCone.finite_lp_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:114:0: 'QuantyraNullCone.rationalDual_checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (982 jobs).

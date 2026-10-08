@@ -1,0 +1,27 @@
+1
+info: QuantyraNullCone/ProperTime.lean:404:0: 'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:405:0: 'QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:406:0: 'QuantyraNullCone.FutureCurve.length_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:407:0: 'QuantyraNullCone.InDensityClass.proper_time_conformalDistance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:408:0: 'QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2911/2917] Built QuantyraNullCone.FiniteForcing (6.7s)
+info: QuantyraNullCone/FiniteForcing.lean:111:0: 'QuantyraNullCone.Realizer.originalForceStep_sound' does not depend on any axioms
+info: QuantyraNullCone/FiniteForcing.lean:112:0: 'QuantyraNullCone.Realizer.checkForcingTrace_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:206:0: 'QuantyraNullCone.Realizer.forcing_trace_global_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:323:0: 'QuantyraNullCone.Realizer.checked_forcing_rank_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2912/2917] Built QuantyraNullCone.FinitePositions (1.8s)
+info: QuantyraNullCone/FinitePositions.lean:61:0: 'QuantyraNullCone.rank_position_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FinitePositions.lean:62:0: 'QuantyraNullCone.checkedPositionRealizer_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2913/2917] Built QuantyraNullCone.FiniteCDF (3.4s)
+info: QuantyraNullCone/FiniteCDF.lean:79:0: 'QuantyraNullCone.finite_grid_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:80:0: 'QuantyraNullCone.normalized_rank_coordinate_error_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:152:0: 'QuantyraNullCone.checked_trimmed_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2914/2917] Built QuantyraNullCone.FiniteFoundation (2.5s)
+✔ [2915/2917] Built QuantyraNullCone.FiniteFixtures (3.8s)
+✔ [2916/2917] Built QuantyraNullCone (2.7s)
+Build completed successfully (2917 jobs).
+TERMINAL_EXIT=1

@@ -32,4 +32,6 @@ All development/acceptance Lean, Lake and transitive Lean commands execute on GC
 
 Finish each story with focused verified commits/pushes and accurate scope documents. Existing DOI artifacts remain immutable; a later manuscript version can advertise enlarged formal coverage after actual acceptance. Certification establishes correctness of encoded statements, not originality, optimality, practical inference or new physics. No specialist-review/adoption gate applies.
 
-Remaining to-do list: deliver accepted S023; execute finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).
+S023 delivery is complete. [S024's deterministic foundations](finite-foundation-certification.md) have partial exact-source GCP acceptance with 107 audited exports; the sharp statistical coverage and density certificate suite remain open.
+
+Remaining to-do list: finish finite-data S024 and gauge-counterexample S025. See [S022 acceptance](logarithmic-certification.md) and [S023 acceptance](proper-time-certification.md).

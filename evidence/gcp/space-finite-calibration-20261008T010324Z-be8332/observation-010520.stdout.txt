@@ -1,0 +1,22 @@
+1
+✖ [1904/1904] Building QuantyraNullCone.FiniteCalibration (3.2s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/QuantyraNullCone/FiniteCalibration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/.lake/build/lib/lean/QuantyraNullCone/FiniteCalibration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/.lake/build/lib/lean/QuantyraNullCone/FiniteCalibration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/.lake/build/ir/QuantyraNullCone/FiniteCalibration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T010324Z-be8332/source/.lake/build/ir/QuantyraNullCone/FiniteCalibration.setup.json --json
+error: QuantyraNullCone/FiniteCalibration.lean:62:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?m.76 / ↑budget.den * ↑budget.den
+in the target expression
+  (fun x => x * ↑budget.den) (↑budget.num / ↑budget.den) = (fun x => x * ↑budget.den) budget
+
+budget : ℚ
+hDen : ↑budget.den ≠ 0
+hNumDen : (fun x => x * ↑budget.den) (↑budget.num / ↑budget.den) = (fun x => x * ↑budget.den) budget
+⊢ ↑(budget.num * 10 ^ 12) = budget * ↑(10 ^ 12 * budget.den)
+info: QuantyraNullCone/FiniteCalibration.lean:82:0: 'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:83:0: 'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:84:0: 'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:85:0: 'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:86:0: 'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.FiniteCalibration
+error: build failed
+TERMINAL_EXIT=1

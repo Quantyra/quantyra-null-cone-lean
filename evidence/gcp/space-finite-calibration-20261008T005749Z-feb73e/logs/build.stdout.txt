@@ -1,0 +1,27 @@
+✖ [1904/1904] Building QuantyraNullCone.FiniteCalibration (16s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/QuantyraNullCone/FiniteCalibration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/.lake/build/lib/lean/QuantyraNullCone/FiniteCalibration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/.lake/build/lib/lean/QuantyraNullCone/FiniteCalibration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/.lake/build/ir/QuantyraNullCone/FiniteCalibration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-finite-calibration-20261008T005749Z-feb73e/source/.lake/build/ir/QuantyraNullCone/FiniteCalibration.setup.json --json
+error: QuantyraNullCone/FiniteCalibration.lean:26:24: unsolved goals
+case e_x
+t : ℝ
+ht : 0 ≤ t
+hBase : 0 < 1 + t / 512
+hLe : 1 + t / 512 ≤ Real.exp (t / 512)
+⊢ 512 * (t / 512) = t
+info: QuantyraNullCone/FiniteCalibration.lean:64:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/FiniteCalibration.lean:58:62: unsolved goals
+budget : ℚ
+hDen : ↑budget.den ≠ 0
+⊢ ↑budget.num * ↑budget.den = ↑budget.num * ↑(↑budget.num * (↑budget.den)⁻¹).den
+info: QuantyraNullCone/FiniteCalibration.lean:81:0: 'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:82:0: 'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:83:0: 'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:84:0: 'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:85:0: 'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.FiniteCalibration

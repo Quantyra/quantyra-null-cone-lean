@@ -1,0 +1,7 @@
+{
+  "run": "space-finite-forcing-20261008T004833Z-45a275",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.FiniteForcing",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

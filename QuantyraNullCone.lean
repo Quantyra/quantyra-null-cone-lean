@@ -24,6 +24,8 @@ import QuantyraNullCone.Unlabeled
 import QuantyraNullCone.LogGridRate
 import QuantyraNullCone.ImprovedInverse
 import QuantyraNullCone.ProperTime
+import QuantyraNullCone.FiniteFoundation
+import QuantyraNullCone.FiniteFixtures
 
 /-!
 Quantyra finite-order reconstruction.
@@ -39,4 +41,6 @@ for both actual labeled directed-order laws and their unlabeled isomorphism clas
 Iid exchangeability and the exact labeled/unlabeled TV equivalence are proved.
 The logarithmic-grid all-N inverse and actual absolutely continuous proper-time
 comparison are proved, including one global orientation for every endpoint pair.
+Finite-data forcing/rank, LP residual checking, rounding and conditional CDF
+foundations are proved; DKW coverage and cell/point/histogram guarantees remain open.
 -/

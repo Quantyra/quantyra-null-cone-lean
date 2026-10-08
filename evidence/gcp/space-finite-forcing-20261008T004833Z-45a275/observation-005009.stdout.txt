@@ -1,0 +1,18 @@
+0
+ℹ [979/983] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [980/983] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [981/983] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [982/983] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [983/983] Built QuantyraNullCone.FiniteForcing (6.2s)
+info: QuantyraNullCone/FiniteForcing.lean:111:0: 'QuantyraNullCone.Realizer.originalForceStep_sound' does not depend on any axioms
+info: QuantyraNullCone/FiniteForcing.lean:112:0: 'QuantyraNullCone.Realizer.checkForcingTrace_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (983 jobs).
+TERMINAL_EXIT=0

@@ -1,0 +1,7 @@
+{
+  "run": "space-finite-lp-20261008T004345Z-2e6159",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.FiniteLP",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

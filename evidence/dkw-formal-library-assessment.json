@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "purpose": "Search for a proved theorem matching sharp two-sided DKW, constant 2 and exponent -2*n*epsilon^2",
+  "repositories": [
+    {
+      "url": "https://github.com/Robby955/FormalSLT",
+      "commit": "5e41e98ed3e1c270efe3089a4eb86ee6dd920995",
+      "toolchain": "4.32.2",
+      "search_result": "No Dvoretzky/Kiefer/Wolfowitz/DKW name match in Lean/Markdown sources"
+    },
+    {
+      "url": "https://github.com/YuanheZ/lean-stat-learning-theory",
+      "commit": "d0f506f0a695018265dccb33bcb05e2f5ca1c876",
+      "toolchain": "4.32.0",
+      "search_result": "No matching name found"
+    },
+    {
+      "url": "https://github.com/StatLean/Stat-Lean",
+      "commit": "86b3823f77fc2b0f5a9923f85b588a4f8a65f94c",
+      "toolchain": "4.29.1",
+      "mathlib": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+      "inspected_sources": [
+        "StatLean/HypothesisTesting/ForMathlib/DKWUniform.lean",
+        "StatLean/MultipleTesting/ForMathlib/EmpiricalProcessSup.lean"
+      ],
+      "result": "First explicitly proves 4*exp(-d^2/16), second n*exp(-2*n*u^2); neither matches required sharp DKW. No external theorem imported.",
+      "source_sha256": {
+        "StatLean/HypothesisTesting/ForMathlib/DKWUniform.lean": "d1032b394d9fccfc56657342f344b4ead6a04e05cd62f62f52efa78c9e12735e",
+        "StatLean/MultipleTesting/ForMathlib/EmpiricalProcessSup.lean": "d953f671e9a372edb363c9b0978f052b4b793a61eb7e73545cc57f2a0d62af6f"
+      }
+    }
+  ],
+  "local_lean_invocations": 0,
+  "scope": "Read-only primary-source search; not evidence that no sharp formalization exists anywhere"
+}

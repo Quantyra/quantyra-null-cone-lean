@@ -1,0 +1,27 @@
+0
+ℹ [2897/2902] Replayed QuantyraNullCone.OrderSelector
+info: QuantyraNullCone/OrderSelector.lean:100:0: 'QuantyraNullCone.chronological_realizer_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:101:0: 'QuantyraNullCone.selectedCDF_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:102:0: 'QuantyraNullCone.InDensityClass.orderCDFGood_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2898/2902] Built QuantyraNullCone.FiniteCalibration (2.9s)
+info: QuantyraNullCone/FiniteCalibration.lean:84:0: 'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:85:0: 'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:86:0: 'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:87:0: 'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:88:0: 'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2899/2902] Built QuantyraNullCone.FiniteLP (4.1s)
+info: QuantyraNullCone/FiniteLP.lean:112:0: 'QuantyraNullCone.residual_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:113:0: 'QuantyraNullCone.finite_lp_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:114:0: 'QuantyraNullCone.rationalDual_checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2900/2902] Built QuantyraNullCone.FiniteForcing (6.0s)
+info: QuantyraNullCone/FiniteForcing.lean:111:0: 'QuantyraNullCone.Realizer.originalForceStep_sound' does not depend on any axioms
+info: QuantyraNullCone/FiniteForcing.lean:112:0: 'QuantyraNullCone.Realizer.checkForcingTrace_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:206:0: 'QuantyraNullCone.Realizer.forcing_trace_global_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:323:0: 'QuantyraNullCone.Realizer.checked_forcing_rank_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2901/2902] Built QuantyraNullCone.FiniteCDF (19s)
+info: QuantyraNullCone/FiniteCDF.lean:79:0: 'QuantyraNullCone.finite_grid_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:80:0: 'QuantyraNullCone.normalized_rank_coordinate_error_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:152:0: 'QuantyraNullCone.checked_trimmed_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2902/2902] Built QuantyraNullCone.FiniteFoundation (2.7s)
+Build completed successfully (2902 jobs).
+TERMINAL_EXIT=0

@@ -1,0 +1,28 @@
+1
+hpLo : (1 - e) / 2 ≤ dkwLargeRootUpper e
+hpHi : dkwLargeRootUpper e ≤ 1 / 2
+hpEnd : dkwLargeRootUpper e < 1 - e
+p : ℝ := dkwLargeRootUpper e
+s : ℝ := (1 - e) / 2 * Real.exp (-4 / (1 - e))
+hs : 0 < s
+hp : 0 < p
+hp1 : 0 < 1 - p
+hDen : 1 - p - e = s
+hProd : Real.exp (4 / (1 - e)) * s = (1 - e) / 2
+hRatio : Real.exp (4 / (1 - e)) ≤ e / s
+hLog : 4 / (1 - e) ≤ Real.log (1 + e / s)
+hFirst : 0 ≤ Real.log (1 + e / p)
+hLowerDen : e * ((1 - e) / 2) ≤ p * (1 - p)
+hPenalty : e / (p * (1 - p)) ≤ 2 / (1 - e)
+hExtra : 0 ≤ 2 / (1 - e)
+a✝ : Real.log (1 + e / p) + Real.log (1 + e / s) - e / (p * (1 - p)) < 0
+⊢ False
+failed
+info: QuantyraNullCone/DKWRoots.lean:55:0: Error in Linarith.normalizeDenominatorsLHS: Expr.rewrite may not produce subgoals.
+info: QuantyraNullCone/DKWRoots.lean:111:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWPinsker
+- QuantyraNullCone.DKWRoots
+error: build failed
+TERMINAL_EXIT=1

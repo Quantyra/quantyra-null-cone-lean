@@ -1,0 +1,30 @@
+4964 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/run.sh
+4966 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/logs/runner.stdout.txt
+4967 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/logs/runner.stderr.txt
+5016 lake build QuantyraNullCone
+5153 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/source/QuantyraNullCone.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/source/.lake/build/lib/lean/QuantyraNullCone.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/source/.lake/build/lib/lean/QuantyraNullCone.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/source/.lake/build/ir/QuantyraNullCone.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-acceptance-20261008T022033Z-1e119b/source/.lake/build/ir/QuantyraNullCone.setup.json --json
+ℹ [2913/2924] Replayed QuantyraNullCone.FiniteCDF
+info: QuantyraNullCone/FiniteCDF.lean:79:0: 'QuantyraNullCone.finite_grid_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:80:0: 'QuantyraNullCone.normalized_rank_coordinate_error_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:152:0: 'QuantyraNullCone.checked_trimmed_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2916/2924] Built QuantyraNullCone.DKWBarrier (4.4s)
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2917/2924] Built QuantyraNullCone.DKWPinsker (3.7s)
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2918/2924] Built QuantyraNullCone.DKWRoots (6.0s)
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2919/2924] Built QuantyraNullCone.DKWAnalytic (2.5s)
+ℹ [2920/2924] Built QuantyraNullCone.DKWDifferential (3.3s)
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2921/2924] Built QuantyraNullCone.DKWShape (3.2s)
+ℹ [2922/2924] Built QuantyraNullCone.DKWLikelihood (3.4s)
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]

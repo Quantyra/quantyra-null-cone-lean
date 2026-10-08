@@ -1,0 +1,28 @@
+1
+case h.e'_9
+lambda t : ℝ
+hL : 0 < lambda
+ht : 0 < t
+htn : t ≠ 0
+hTL : t + lambda ≠ 0
+hLT : lambda + t ≠ 0
+hArg : 1 + lambda / t ≠ 0
+h : HasDerivAt ((fun x => 1) + (fun x => lambda) / id) (0 + (0 * id t - lambda * 1) / id t ^ 2) t
+⊢ -(lambda * id t ^ 2) =
+    -(lambda * t ^ 2 * (((fun x => 1) + (fun x => lambda) / id) t)⁻¹) -
+      lambda ^ 2 * t * (((fun x => 1) + (fun x => lambda) / id) t)⁻¹
+warning: QuantyraNullCone/DKWDifferential.lean:45:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DKWDifferential.lean:84:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWDifferential
+error: build failed
+TERMINAL_EXIT=1

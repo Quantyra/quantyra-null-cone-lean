@@ -29,5 +29,11 @@
       "run": 37715221226,
       "result": "success"
     }
+  },
+  "later_instance_observation": {
+    "date": "2026-10-08 UTC",
+    "state": "TERMINATED",
+    "evidence": "continuation-instance-state.stdout.txt",
+    "scope": "observed before the new analytic campaign; shutdown actor not inferred"
   }
 }

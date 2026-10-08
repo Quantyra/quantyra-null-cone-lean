@@ -133,3 +133,9 @@ Remaining to-do list: deliver S022 and complete S023-S025.
 [Proper-time certification](proper-time-certification.md) records exact-source GCP run `space-propertime-acceptance-20261008T003208Z-4a6684`: 2910 root-build jobs, 90 exact-type/axiom audits, exit zero, no warnings or added axioms. Actual AC curves, FTC derivative integrals, Cauchy-Schwarz, length/supremum comparison and global transpose transport are proved.
 
 Remaining to-do list: deliver S023; complete S024-S025.
+
+## S024 partial deterministic and analytic acceptance
+
+S022 and S023 delivery is complete. [Finite-data foundations](finite-foundation-certification.md) record the 107-export acceptance of forcing/rank, position, rational dual, rounding and conditional CDF proofs. [Sharp-DKW analytic certification](dkw-analytic-certification.md) adds the universal likelihood barrier, proved stationary parameter, Bernoulli Pinsker and actual derivative/shape arguments. Exact-source run `space-dkw-analytic-acceptance-20261008T022033Z-1e119b` passed the 2924-job root build and 115 exact-type/axiom audits with zero warnings or added axioms. Statistical DKW coverage and the cell/point/histogram/report suite remain open; S024 is not complete.
+
+Remaining to-do list: sharp probability coverage, actual density/report guarantees and full S024 delivery; S025.

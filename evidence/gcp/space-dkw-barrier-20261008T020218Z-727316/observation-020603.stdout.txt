@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/DKWBarrier.lean:50:35: unsolved goals
+e : ℝ
+he : 0 < e
+heHalf : e < 1 / 2
+ha : 0 < 1 + e / (1 / 2)
+hb : 0 < 1 + e / (1 - 1 / 2 - e)
+hd : 1 - 2 * e ≠ 0
+hd' : 1 - 1 / 2 - e ≠ 0
+⊢ 1 + e * (1 - e * 2)⁻¹ * 2 = (1 - e * 2)⁻¹
+warning: QuantyraNullCone/DKWBarrier.lean:67:5: unused variable `hp`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QuantyraNullCone/DKWBarrier.lean:78:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/DKWBarrier.lean:94:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DKWBarrier.lean:103:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:104:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:105:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:106:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWBarrier
+error: build failed
+TERMINAL_EXIT=1

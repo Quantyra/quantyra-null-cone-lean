@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "run": "space-dkw-analytic-20261008T020805Z-66d294",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-analytic-20261008T021048Z-9b4131",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-analytic-20261008T021502Z-d69444",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-dkw-analytic-20261008T021835Z-acd8c9",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-dkw-analytic-acceptance-20261008T022033Z-1e119b",
+      "kind": "analytic-acceptance",
+      "exit": 0
+    },
+    {
+      "run": "space-dkw-barrier-20261008T020218Z-727316",
+      "kind": "development",
+      "exit": 1
+    }
+  ],
+  "local_lean_invocations": 0,
+  "task_started_instance_in_run": "space-dkw-barrier-20261008T020218Z-727316",
+  "scope": "universal analytic likelihood barrier; probability DKW and other S024/S025 obligations remain open",
+  "instance_final_state": "TERMINATED"
+}

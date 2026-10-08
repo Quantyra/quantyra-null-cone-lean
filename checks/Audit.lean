@@ -236,6 +236,28 @@ example {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.rank_position_eq
 #print axioms QuantyraNullCone.checkedPositionRealizer_ranks
 
+#check QuantyraNullCone.dkw_log_ratio_lower
+#check QuantyraNullCone.dkw_log_ratio_upper
+#check QuantyraNullCone.dkw_stationarity_root
+#check QuantyraNullCone.dkw_bernoulli_pinsker
+#check QuantyraNullCone.dkw_likelihood_hasDerivAt
+#check QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt
+#check QuantyraNullCone.dkw_likelihood_stationary_value_lower
+#check QuantyraNullCone.dkw_sharp_likelihood_barrier
+#print axioms QuantyraNullCone.dkw_log_ratio_lower
+#print axioms QuantyraNullCone.dkw_log_ratio_upper
+#print axioms QuantyraNullCone.dkw_stationarity_root
+#print axioms QuantyraNullCone.dkw_bernoulli_pinsker
+#print axioms QuantyraNullCone.dkw_likelihood_hasDerivAt
+#print axioms QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt
+#print axioms QuantyraNullCone.dkw_likelihood_stationary_value_lower
+#print axioms QuantyraNullCone.dkw_sharp_likelihood_barrier
+
+example {e : ℝ} (he : 0 < e) (he1 : e < 1) :
+    ∃ lambda : ℝ, 0 < lambda ∧ ∀ t : ℝ, 0 < t → t ≤ 1 - e →
+      2 * e ^ 2 ≤ QuantyraNullCone.dkwLikelihoodBarrier e lambda t :=
+  QuantyraNullCone.dkw_sharp_likelihood_barrier he he1
+
 example {n : ℕ} {rows : Fin n → Fin n → Bool}
     (L R : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows))
     (anchor : QuantyraNullCone.FiniteArc n) (trace : List (QuantyraNullCone.ForcingEntry n))

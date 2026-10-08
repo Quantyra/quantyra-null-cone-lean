@@ -101,7 +101,15 @@ for name in ("finite_realizer_rank_rigidity", "finite_realizer_rank_rigidity_spe
              "normalized_rank_coordinate_error_general",
              "checked_trimmed_CDF",
              "rank_position_eq",
-             "checkedPositionRealizer_ranks"):
+             "checkedPositionRealizer_ranks",
+             "dkw_log_ratio_lower",
+             "dkw_log_ratio_upper",
+             "dkw_stationarity_root",
+             "dkw_bernoulli_pinsker",
+             "dkw_likelihood_hasDerivAt",
+             "dkw_likelihood_derivative_hasDerivAt",
+             "dkw_likelihood_stationary_value_lower",
+             "dkw_sharp_likelihood_barrier"):
     if not re.search(rf"'QuantyraNullCone\.{re.escape(name)}' "
                      rf"(?:depends on axioms:|does not depend on any axioms)", result.stdout):
         sys.exit(f"Missing final theorem dependency report: {name}")

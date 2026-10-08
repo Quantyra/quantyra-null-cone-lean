@@ -1,0 +1,41 @@
+✖ [2122/2123] Building QuantyraNullCone.DKWBarrier (4.4s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/QuantyraNullCone/DKWBarrier.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/.lake/build/lib/lean/QuantyraNullCone/DKWBarrier.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/.lake/build/lib/lean/QuantyraNullCone/DKWBarrier.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/.lake/build/ir/QuantyraNullCone/DKWBarrier.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T020805Z-66d294/source/.lake/build/ir/QuantyraNullCone/DKWBarrier.setup.json --json
+info: QuantyraNullCone/DKWBarrier.lean:39:8: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/DKWBarrier.lean:37:29: unsolved goals
+e : ℝ
+he : 0 < e
+he1 : e < 1
+hd : 1 - e ≠ 0
+hd2 : 1 - e ^ 2 ≠ 0
+hPlus : 1 + e ≠ 0
+h1 : 1 + e / ((1 - e) / 2) = (1 + e) / (1 - e)
+h2 : 1 - (1 - e) / 2 - e = (1 - e) / 2
+⊢ -(e ^ 2 * (1 + e)⁻¹ * 4) + (1 + e)⁻¹ * 4 = 4 - e * 4
+info: QuantyraNullCone/DKWBarrier.lean:59:8: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/DKWBarrier.lean:54:35: unsolved goals
+e : ℝ
+he : 0 < e
+heHalf : e < 1 / 2
+ha : 0 < 1 + e / (1 / 2)
+hb : 0 < 1 + e / (1 - 1 / 2 - e)
+hd : 1 - 2 * e ≠ 0
+hd' : 1 - 1 / 2 - e ≠ 0
+hd'' : 1 - e * 2 ≠ 0
+⊢ 1 - e * 2 + e * (1 - e * 2)⁻¹ * 2 - e ^ 2 * (1 - e * 2)⁻¹ * 4 = 1
+info: QuantyraNullCone/DKWBarrier.lean:108:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:109:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:110:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:111:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWBarrier

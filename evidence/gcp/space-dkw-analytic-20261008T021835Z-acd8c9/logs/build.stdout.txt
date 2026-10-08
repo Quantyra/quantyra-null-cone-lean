@@ -1,0 +1,25 @@
+ℹ [2124/2130] Built QuantyraNullCone.DKWBarrier (4.4s)
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2125/2130] Built QuantyraNullCone.DKWPinsker (3.6s)
+warning: QuantyraNullCone/DKWPinsker.lean:41:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2126/2130] Built QuantyraNullCone.DKWRoots (5.0s)
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2127/2130] Built QuantyraNullCone.DKWAnalytic (2.5s)
+ℹ [2128/2130] Built QuantyraNullCone.DKWDifferential (3.2s)
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2129/2130] Built QuantyraNullCone.DKWShape (3.2s)
+ℹ [2130/2130] Built QuantyraNullCone.DKWLikelihood (3.4s)
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2130 jobs).

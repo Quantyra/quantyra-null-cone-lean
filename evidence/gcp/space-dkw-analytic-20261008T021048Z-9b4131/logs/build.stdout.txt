@@ -1,0 +1,97 @@
+⚠ [2122/2125] Built QuantyraNullCone.DKWBarrier (4.5s)
+warning: QuantyraNullCone/DKWBarrier.lean:34:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2123/2125] Building QuantyraNullCone.DKWPinsker (3.7s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/QuantyraNullCone/DKWPinsker.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean/QuantyraNullCone/DKWPinsker.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean/QuantyraNullCone/DKWPinsker.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/ir/QuantyraNullCone/DKWPinsker.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/ir/QuantyraNullCone/DKWPinsker.setup.json --json
+warning: QuantyraNullCone/DKWPinsker.lean:26:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DKWPinsker.lean:40:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/DKWPinsker.lean:30:81: unsolved goals
+case h.e'_9
+p q : ℝ
+hp : 0 < p
+hp1 : p < 1
+hq : 0 < q
+hq1 : q < 1
+hP : 1 - p ≠ 0
+hQ : 1 - q ≠ 0
+hLog1 : q / p ≠ 0
+hLog2 : (1 - q) / (1 - p) ≠ 0
+hA : HasDerivAt (fun y => Real.log (id y / p)) (1 / p / (id q / p)) q
+hB : HasDerivAt (fun y => Real.log ((1 - id y) / (1 - p))) (-1 / (1 - p) / ((1 - id q) / (1 - p))) q
+hC : HasDerivAt (fun y => 4 * (id y - p)) (4 * 1) q
+⊢ 1 - q * 4 + q ^ 2 * 4 =
+    -(q * 4) + q * (id q)⁻¹ + q * (1 - id q)⁻¹ + q ^ 2 * 4 - q ^ 2 * (id q)⁻¹ - q ^ 2 * (1 - id q)⁻¹
+info: QuantyraNullCone/DKWPinsker.lean:82:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [2124/2125] Building QuantyraNullCone.DKWRoots (5.8s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/QuantyraNullCone/DKWRoots.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean/QuantyraNullCone/DKWRoots.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/lib/lean/QuantyraNullCone/DKWRoots.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/ir/QuantyraNullCone/DKWRoots.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-dkw-analytic-20261008T021048Z-9b4131/source/.lake/build/ir/QuantyraNullCone/DKWRoots.setup.json --json
+error: QuantyraNullCone/DKWRoots.lean:46:32: not a positivity goal
+error: QuantyraNullCone/DKWRoots.lean:79:4: Tactic `assumption` failed
+
+e : ℝ
+heHalf : 1 / 2 ≤ e
+he1 : e < 1
+he : 0 < e
+hE : 0 < 1 - e
+hpLo : (1 - e) / 2 ≤ dkwLargeRootUpper e
+hpHi : dkwLargeRootUpper e ≤ 1 / 2
+hpEnd : dkwLargeRootUpper e < 1 - e
+p : ℝ := dkwLargeRootUpper e
+s : ℝ := (1 - e) / 2 * Real.exp (-4 / (1 - e))
+hs : 0 < s
+hp : 0 < p
+hp1 : 0 < 1 - p
+hDen : 1 - p - e = s
+hProd : Real.exp (4 / (1 - e)) * s = (1 - e) / 2
+hRatio : Real.exp (4 / (1 - e)) ≤ e / s
+h : 4 / (1 - e) ≤ Real.log (e / s)
+⊢ 4 / (1 - e) ≤ Real.log (1 + e / s)
+error: QuantyraNullCone/DKWRoots.lean:96:2: linarith failed to find a contradiction
+case h
+e : ℝ
+heHalf : 1 / 2 ≤ e
+he1 : e < 1
+he : 0 < e
+hE : 0 < 1 - e
+hpLo : (1 - e) / 2 ≤ dkwLargeRootUpper e
+hpHi : dkwLargeRootUpper e ≤ 1 / 2
+hpEnd : dkwLargeRootUpper e < 1 - e
+p : ℝ := dkwLargeRootUpper e
+s : ℝ := (1 - e) / 2 * Real.exp (-4 / (1 - e))
+hs : 0 < s
+hp : 0 < p
+hp1 : 0 < 1 - p
+hDen : 1 - p - e = s
+hProd : Real.exp (4 / (1 - e)) * s = (1 - e) / 2
+hRatio : Real.exp (4 / (1 - e)) ≤ e / s
+hLog : 4 / (1 - e) ≤ Real.log (1 + e / s)
+hFirst : 0 ≤ Real.log (1 + e / p)
+hLowerDen : e * ((1 - e) / 2) ≤ p * (1 - p)
+hPenalty : e / (p * (1 - p)) ≤ 2 / (1 - e)
+hExtra : 0 ≤ 2 / (1 - e)
+a✝ : Real.log (1 + e / p) + Real.log (1 + e / s) - e / (p * (1 - p)) < 0
+⊢ False
+failed
+info: QuantyraNullCone/DKWRoots.lean:55:0: Error in Linarith.normalizeDenominatorsLHS: Expr.rewrite may not produce subgoals.
+info: QuantyraNullCone/DKWRoots.lean:111:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DKWPinsker
+- QuantyraNullCone.DKWRoots

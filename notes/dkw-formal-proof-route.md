@@ -20,7 +20,7 @@ The intended barrier is F(t)>=2e^2 for 0<t<=1-e. At t=p, F equals Bernoulli rela
 
 `F(1-e)=log(1+e^2/((1-e)*(1-p)))>=log((1+e^2)/(1-e^2))>=2e^2`.
 
-Each analytic step still needs a universal Lean proof. The [nine numerical diagnostics](../evidence/dkw-barrier-design-check.json) are supporting falsification checks only. They do not certify the barrier.
+The analytic steps now have [exact-source GCP acceptance](dkw-analytic-certification.md). `DKWLikelihood.lean` proves the full universal barrier with only `0<e<1` as hypotheses, choosing one positive lambda before all thresholds. The [nine numerical diagnostics](../evidence/dkw-barrier-design-check.json) remain supporting falsification checks only; the accepted proof does not rely on them.
 
 ## Finite probability construction
 
@@ -32,4 +32,6 @@ Within a revealed parent atom at k+1, an unrevealed bin is uniform on 1..k+1, so
 
 Quantize actual uniform points with the ceiling bin map and prove its iid law and grid-count identity; zero endpoints are null. Dyadic grids are nested and dense, so continuity of probability gives the real-threshold one-sided bound. Reflection x->1-x and a union bound give sharp two-sided DKW. Finally transport each actual-K sample-coordinate vector to the uniform product law; dependence between the two coordinates of a sampled point is permitted. Both marginal events and the existing joint-grid Hoeffding event combine by a union bound.
 
-Remaining to-do list: analytic barrier, finite martingale/Doob construction, quantization/dense-grid/reflection, actual-K transport, then complete split-DKW coverage and the other S024/S025 obligations.
+An equivalent finite maximal-bound route may avoid conditional-expectation infrastructure: on each revealed atom at threshold k, compute the conditional mean of terminal M(1) directly by a product of finite sums. Each unresolved coordinate contributes `1+lambda*q/k`; a resolved coordinate contributes one. Partition the crossing event by its first crossing threshold, show each part is a union of revealed atoms, and sum the exact terminal identities over those disjoint parts. Nonnegativity and terminal mean one then give the same Ville/Doob bound. This remains a proof obligation, and preserves the same sharp target.
+
+Remaining to-do list: finite likelihood/maximal construction, quantization/dense-grid/reflection, actual-K transport, then complete split-DKW coverage and the other S024/S025 obligations.

@@ -1,0 +1,28 @@
+1
+but is expected to have type
+  ∀ (s t : ℝ), |populationCDF rho s t - populationCDF sigma s t| ≤ 348 * √8 * √(Real.log ↑n / ↑n)
+in the application
+  logarithmic_coefficient_rate_of_cdf hR hS hnTwo hDirect
+error: QuantyraNullCone/ImprovedInverse.lean:86:6: Type mismatch
+  hSwap s t
+has type
+  |populationCDF rho s t - populationCDF sigma t s| ≤ 348 * ↑n ^ (-1 / 4)
+but is expected to have type
+  |populationCDF rho s t - populationCDF sigma t s| ≤ 348 * √8 * √(Real.log ↑n / ↑n)
+info: QuantyraNullCone/ImprovedInverse.lean:135:0: 'QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:136:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:137:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ImprovedInverse
+error: build failed
+TERMINAL_EXIT=1

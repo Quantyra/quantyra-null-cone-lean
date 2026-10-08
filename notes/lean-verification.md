@@ -121,3 +121,9 @@ Remaining to-do list: final delivery and scope completion audit.
 The full original-observable proof and requirement audit are committed and pushed at `b7d762acc9c10ca881f8366f545f3998b0528448`. [Supplementary hosted checks](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37622943270) passed both jobs, including the root/type/axiom audit, all existing finite/grid sanity checks and manuscript compilation. Exact proof/check/build-configuration bytes match the authoritative GCP capture, with sixty-eight export reports and no compiler warnings. Fresh public manuscript PDF/source identities and software DOI/version were verified; S014's high-precision check passed. The task-started GCP instance is TERMINATED. Final planning closeout records S012-S014 completion and supersedes development-stage delivery to-do lists.
 
 Remaining to-do list: none for S012-S014.
+
+## S022 logarithmic inverse acceptance
+
+The [S022 acceptance record](logarithmic-certification.md) supersedes earlier prose-only descriptions of the logarithmic bound for current software. Exact-source GCP run `space-loggrid-acceptance-20261008T000726Z-1e4d11` passed the 2909-job root build and 78 exact-type/axiom audits with no warnings or added axioms. Original proofs and published artifacts remain preserved.
+
+Remaining to-do list: deliver S022 and complete S023-S025.

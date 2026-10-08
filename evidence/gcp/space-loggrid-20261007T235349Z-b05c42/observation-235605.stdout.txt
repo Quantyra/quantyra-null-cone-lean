@@ -1,0 +1,28 @@
+1
+ Classical.choice,
+ Quot.sound]
+ℹ [2894/2897] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2895/2897] Replayed QuantyraNullCone.GoodSamples
+info: QuantyraNullCone/GoodSamples.lean:88:0: 'QuantyraNullCone.InDensityClass.sample_good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GoodSamples.lean:89:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability_grid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2896/2897] Replayed QuantyraNullCone.ProbabilityRate
+info: QuantyraNullCone/ProbabilityRate.lean:142:0: 'QuantyraNullCone.grid_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:143:0: 'QuantyraNullCone.fourth_root_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:144:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2897/2897] Building QuantyraNullCone.LogGridRate (4.9s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/QuantyraNullCone/LogGridRate.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/.lake/build/lib/lean/QuantyraNullCone/LogGridRate.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/.lake/build/lib/lean/QuantyraNullCone/LogGridRate.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/.lake/build/ir/QuantyraNullCone/LogGridRate.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-loggrid-20261007T235349Z-b05c42/source/.lake/build/ir/QuantyraNullCone/LogGridRate.setup.json --json
+error: QuantyraNullCone/LogGridRate.lean:128:47: No goals to be solved
+error: QuantyraNullCone/LogGridRate.lean:137:47: No goals to be solved
+info: QuantyraNullCone/LogGridRate.lean:148:0: 'QuantyraNullCone.log_large_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:149:0: 'QuantyraNullCone.logarithmic_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:150:0: 'QuantyraNullCone.logarithmic_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LogGridRate
+error: build failed
+TERMINAL_EXIT=1

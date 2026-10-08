@@ -1,0 +1,7 @@
+{
+  "run": "space-loggrid-20261007T234643Z-695530",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LogGridRate",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

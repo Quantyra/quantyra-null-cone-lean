@@ -136,3 +136,32 @@ import QuantyraNullCone
 #print axioms QuantyraNullCone.InDensityClass.unlabeledFiniteLawDiscrepancy_eq
 #print axioms QuantyraNullCone.InDensityClass.full_inverse_unlabeled
 #print axioms QuantyraNullCone.InDensityClass.all_unlabeled_law_identifiability
+
+#check QuantyraNullCone.log_large_bounds
+#check QuantyraNullCone.logarithmic_grid_data
+#check QuantyraNullCone.logarithmic_grid_failure
+#check QuantyraNullCone.logarithmic_grid_reciprocal
+#check QuantyraNullCone.InDensityClass.logarithmic_reconstruction_probability
+#check QuantyraNullCone.InDensityClass.logarithmic_orderCDFGood_probability
+#check QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV
+#check QuantyraNullCone.logarithmic_small_sample_lower
+#check QuantyraNullCone.InDensityClass.full_inverse_logarithmic
+#check QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled
+#print axioms QuantyraNullCone.log_large_bounds
+#print axioms QuantyraNullCone.logarithmic_grid_data
+#print axioms QuantyraNullCone.logarithmic_grid_failure
+#print axioms QuantyraNullCone.logarithmic_grid_reciprocal
+#print axioms QuantyraNullCone.InDensityClass.logarithmic_reconstruction_probability
+#print axioms QuantyraNullCone.InDensityClass.logarithmic_orderCDFGood_probability
+#print axioms QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV
+#print axioms QuantyraNullCone.logarithmic_small_sample_lower
+#print axioms QuantyraNullCone.InDensityClass.full_inverse_logarithmic
+#print axioms QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled
+
+example {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+    (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma)
+    {N : ℕ} (hN : 2 ≤ N) :
+    QuantyraNullCone.conformalDistance rho sigma ≤
+      130 * ((Real.log (N : ℝ) / N) ^ (1 / 6 : ℝ) +
+        QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N) :=
+  hR.full_inverse_logarithmic_unlabeled hS hN

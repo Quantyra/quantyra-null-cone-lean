@@ -1,0 +1,27 @@
+0
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Unlabeled.lean:135:0: 'QuantyraNullCone.InDensityClass.full_inverse_unlabeled' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Unlabeled.lean:136:0: 'QuantyraNullCone.InDensityClass.all_unlabeled_law_identifiability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2906/2907] Built QuantyraNullCone.LogGridRate (5.4s)
+info: QuantyraNullCone/LogGridRate.lean:201:0: 'QuantyraNullCone.log_large_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:202:0: 'QuantyraNullCone.logarithmic_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:203:0: 'QuantyraNullCone.logarithmic_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:204:0: 'QuantyraNullCone.InDensityClass.logarithmic_reconstruction_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LogGridRate.lean:205:0: 'QuantyraNullCone.InDensityClass.logarithmic_orderCDFGood_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2907/2907] Built QuantyraNullCone.ImprovedInverse (3.4s)
+info: QuantyraNullCone/ImprovedInverse.lean:134:0: 'QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:135:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:136:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (2907 jobs).
+TERMINAL_EXIT=0

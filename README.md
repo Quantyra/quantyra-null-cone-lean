@@ -16,14 +16,14 @@ The original inverse estimate and all-size identifiability are **Lean verified f
 
 ```text
 d_conf(rho, sigma) <= 100 (N^(-1/12) + Delta_N(rho, sigma)), N >= 2.
-Improved prose bound: d_conf <= 130 ((log N / N)^(1/6) + Delta_N).
+Improved Lean verified bound: d_conf <= 130 ((log N / N)^(1/6) + Delta_N).
 ```
 
 The class comprises smooth densities on the square between `1/2` and `3/2`, with uniform marginals and Euclidean Lipschitz constant at most two. `Delta_N` compares iid finite causal-order laws; `d_conf` compares density coefficients in supremum norm modulo one global axis exchange. Equal laws at every size imply equality of the densities on the square up to that exchange. Observations contain only the directed order, without latent coordinates or rankings; time reversal is not included in the quotient.
 
 The formal proof includes finite realizer rank rigidity, normalization, cumulative reconstruction, occupancy/concentration, density interpolation, an order-only selector, TV separation, transpose transport, iid exchangeability and exact equality of labeled/unlabeled TV and `Delta_N`. Final statements are in [InverseRate.lean](QuantyraNullCone/InverseRate.lean), [Identifiability.lean](QuantyraNullCone/Identifiability.lean) and [Unlabeled.lean](QuantyraNullCone/Unlabeled.lean). The [verification notes](notes/lean-verification.md) map all stages to their source and retained GCP evidence.
 
-The logarithmic-grid improvement and proper-time consequence remain prose proofs. Their Lean formalization is optional future work. Originality remains provisional; constants are conservative and no practical sample budget or optimal exponent is claimed. Quantyra follows open-source, decentralized informal feedback and downstream testing; specialist review is not a publication gate.
+The logarithmic-grid improvement is now GCP verified in [LogGridRate.lean](QuantyraNullCone/LogGridRate.lean) and [ImprovedInverse.lean](QuantyraNullCone/ImprovedInverse.lean), including the exact constant 130, small-sample and high-TV cases, and actual unlabeled laws. The proper-time consequence remains a prose proof; its certification is active under S023. [Acceptance evidence](notes/logarithmic-certification.md) records the enlarged software scope, which postdates manuscript 0.3.1. Originality remains provisional; constants are conservative and no practical sample budget or optimal exponent is claimed. Quantyra follows open-source, decentralized informal feedback and downstream testing; specialist review is not a publication gate.
 
 The [full Winkler comparison](notes/winkler-full-text-comparison.md) now establishes earlier coordinate-forcing and stronger flat-model rank recovery precedents. [Manuscript 0.3.1](https://doi.org/10.5281/zenodo.23225029) credits those results; earlier published artifacts and the historical working draft remain intact. Next research is scoped in [finite-data estimation](notes/finite-data-follow-up-scope.md). The [higher-dimensional feasibility check](notes/higher-dimensional-feasibility.md) rejects a naive coordinate-density extension through an explicit conformal-gauge counterexample and records the reopening requirements.
 

@@ -21,6 +21,8 @@ import QuantyraNullCone.Identifiability
 import QuantyraNullCone.Exchangeability
 import QuantyraNullCone.QuotientTV
 import QuantyraNullCone.Unlabeled
+import QuantyraNullCone.LogGridRate
+import QuantyraNullCone.ImprovedInverse
 
 /-!
 Quantyra finite-order reconstruction.

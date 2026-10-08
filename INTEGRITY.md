@@ -20,6 +20,7 @@ The finite formal result is `QuantyraNullCone.finite_realizer_rank_rigidity_spec
 | `d_conf <= 100 (N^(-1/12) + Delta_N)` | `manuscript/finite-causal-order-reconstruction.tex`, `notes/finite-order-rate.md` | GCP verified in `InverseRate.lean` for actual labeled directed-order laws, every N>=2, only original K; `Unlabeled.lean` proves the same bound for actual directed-order isomorphism classes |
 | All-law coefficient identifiability on the square under one global identity/transpose | `Identifiability.lean` | GCP verified from equality of every labeled iid directed-order law; no assumed coefficient equality |
 | Iid relabeling invariance, exact labeled/unlabeled TV/Delta equivalence, quotient-law inverse and identifiability | `Exchangeability.lean`, `QuotientTV.lean`, `Unlabeled.lean` | GCP verified from actual K and iid laws; quotient is directed-order isomorphism, without time-dual identification |
+| `d_conf <=130 ((log N/N)^(1/6)+Delta_N)` | `LogGridRate.lean`, `ImprovedInverse.lean` | GCP verified from original K for all N>=2, actual labeled/unlabeled laws; [acceptance](notes/logarithmic-certification.md) |
 | Proper-time comparison | Manuscript and `notes/observable-and-time-audit.md` | Prose consequence; formalization is separately selectable |
 | Originality and significance | `notes/novelty-search.md`, `notes/winkler-full-text-comparison.md` | Provisional; earlier forcing and stronger flat-model recovery credited; no priority certificate |
 

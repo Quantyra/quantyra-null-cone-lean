@@ -1,6 +1,6 @@
 # Genuine 2+1 conformal gauge counterexample
 
-S025, 2026-10-07 local date (2026-10-08 UTC). Exact-source GCP acceptance passed. The result formalizes the negative feasibility argument; it does not reopen a higher-dimensional inverse program or establish new physical nonidentifiability. Delivery and supplementary CI closeout follow the proof acceptance.
+S025, 2026-10-07 local date (2026-10-08 UTC). Exact-source GCP acceptance, focused proof delivery, supplementary CI and instance cleanup are complete. The result formalizes the negative feasibility argument; it does not reopen a higher-dimensional inverse program or establish new physical nonidentifiability. The source/evidence commit is `74c1f743d085c63b45ac2bf30008ad5d29b98fbc`, pushed to main.
 
 The model uses `EuclideanSpace ℝ (Fin 3)`, actual spatial radius `sqrt(x²+y²)`, diamond `|t|+radius<1`, and strict future Lorentzian chronology. It proves chronology irreflexivity/transitivity and observable measurability. Actual Euclidean volume is computed by a measure-preserving time/spatial decomposition, spatial-ball cross-sections and integration: V=2π/3. The flat sampling measure, with-density measures, finite iid products and directed-order pushforwards are actual measures. Their normalization is derived.
 
@@ -20,4 +20,6 @@ Authoritative acceptance: `space-lorentz-acceptance-20261008T071627Z-221cd8`, pr
 
 Manuscript 0.3.1 and its frozen DOI payload retain their identities. This software certification postdates the published PDF. Originality, optimality, useful practical density resolution and new physical dynamics are separate claims. Open-source informal feedback and downstream testing remain the review workflow; no specialist-review or adoption gate is introduced.
 
-Remaining to-do list: focused source/evidence delivery, supplementary CI, task-owned VM cleanup and planning closeout.
+All three supplementary workflows passed: [proof/manuscript](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109869), [literature](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109692) and [finite-data](https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109829). The campaign started the VM from TERMINATED. After collection and a successful no-other-Lean/Lake-work check, it was stopped and verified TERMINATED. Raw shutdown/final-state records and the [delivery receipt](../evidence/gcp/space-lorentz-acceptance-20261008T071627Z-221cd8/delivery-closeout.json) are retained. This documentation/evidence closeout preserves all accepted proof/check/config bytes. All S025 requirements are fulfilled.
+
+Remaining to-do list: none.

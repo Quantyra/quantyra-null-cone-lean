@@ -1,0 +1,48 @@
+{
+  "story": "S025",
+  "status": "complete",
+  "proof_evidence_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "proof_commit_pushed": true,
+  "acceptance_run": "space-lorentz-acceptance-20261008T071627Z-221cd8",
+  "compile_host": "GCP",
+  "root_build_jobs": 3001,
+  "audited_exports": 295,
+  "new_audited_exports": 76,
+  "warnings": 0,
+  "added_axioms": 0,
+  "all_supplementary_workflows_passed": true,
+  "supplementary_only": true,
+  "ci_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 37743109829,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify finite-data certificates",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109829"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37743109692,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify literature manuscript",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109692"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37743109869,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify proofs and manuscript",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109869"
+    }
+  ],
+  "current_captured_source_hashes_preserved": true,
+  "local_lean_lake_invocations": 0,
+  "owned_instance_final_state": "TERMINATED",
+  "no_other_lean_work_before_stop": true,
+  "published_v031_pdf_sha256": "79431d68fd6a45c297c060557a44bb43ddcef86c5fe0a081a4ce05ee27b71639",
+  "published_v031_zip_sha256": "a830b8968d2abc174fe24a096fd86b1b25a0e73af85b7826c99967f37bf11bf4",
+  "remaining_todo": []
+}

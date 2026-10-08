@@ -1,0 +1,32 @@
+{
+  "observed_utc": "2026-10-08T07:31:07.365814+00:00",
+  "source_commit": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+  "authoritative_compute": "GCP",
+  "supplementary_only": true,
+  "workflows": [
+    {
+      "conclusion": "success",
+      "databaseId": 37743109829,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify finite-data certificates",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109829"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37743109692,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify literature manuscript",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109692"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 37743109869,
+      "headSha": "74c1f743d085c63b45ac2bf30008ad5d29b98fbc",
+      "name": "Verify proofs and manuscript",
+      "status": "completed",
+      "url": "https://github.com/Quantyra/quantyra-null-cone-lean/actions/runs/37743109869"
+    }
+  ]
+}

@@ -27,4 +27,4 @@ The transported density is spatially radial. Define the O(2) action on the spati
 
 The authoritative gate remains fresh GCP exact-source root/type/axiom acceptance, no added axioms or admitted proofs, retained failures and source/dependency hashes, focused delivery, supplementary checks and task-owned VM cleanup. The published PDF/DOI remains frozen. This target establishes neither a new physical nonidentifiability result nor a higher-dimensional inverse rate.
 
-Remaining to-do list: focused S025 delivery, supplementary CI and cleanup closeout.
+Remaining to-do list: none for the four-story certification plan.

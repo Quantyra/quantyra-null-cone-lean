@@ -156,4 +156,8 @@ Remaining to-do list: S025.
 
 [Full counterexample certification](higher-dimensional-certification.md) records `space-lorentz-acceptance-20261008T071627Z-221cd8`: 3001 root jobs and 295 exact-type/axiom audits, adding 76 selected exports with zero warnings or added axioms. It proves the actual 2+1 Euclidean diamond volume, genuine future chronology, smooth Cartesian automorphism and inverse, actual derivative/Jacobian, transported density-class membership, actual iid coupling and every labeled/unlabeled finite directed-order law equality. Positive coordinate distance modulo all spatial O(2) accompanies the derived geometric isometry. The zero-hypothesis main theorem assumes neither density normalization nor measure transport/law equality. Every development and acceptance Lean invocation ran on GCP; 18 captures preserve 16 failed attempts, one clean targeted development build and final acceptance. Published 0.3.1 artifacts remain frozen; higher-dimensional inverse rates and new physical nonidentifiability are not claimed.
 
-Remaining to-do list: focused S025 delivery, supplementary CI and cleanup closeout.
+Remaining to-do list: none for the four-story certification plan.
+
+S025 focused source/evidence commit `74c1f743d085c63b45ac2bf30008ad5d29b98fbc` is pushed; all three supplementary workflows passed and the task-owned VM is verified TERMINATED. The documentation/evidence closeout preserves every accepted proof/check/config identity. All four selected certification stories are complete.
+
+Remaining to-do list: none for the selected certification plan.

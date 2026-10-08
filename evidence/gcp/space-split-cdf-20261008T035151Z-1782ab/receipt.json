@@ -1,0 +1,7 @@
+{
+  "run": "space-split-cdf-20261008T035151Z-1782ab",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.SplitCDF",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

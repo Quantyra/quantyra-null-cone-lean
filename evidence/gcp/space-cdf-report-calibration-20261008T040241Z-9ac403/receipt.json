@@ -1,0 +1,7 @@
+{
+  "run": "space-cdf-report-calibration-20261008T040241Z-9ac403",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.CDFReportCalibration",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

@@ -1,0 +1,15 @@
+{
+  "tests_run": 16,
+  "errors": 0,
+  "failures": 0,
+  "result": "success",
+  "elapsed_seconds": 4.36449670791626,
+  "python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "supplementary Python tests; no Lean compilation",
+  "source": {
+    "tools/finite_data_core.py": "7f3b74d093aa278e36a3e2adbc7a2748543f507fe5df572c8cccd4e2bbf574ec",
+    "tools/finite_data.py": "2475407f13d2e9570300b9ef0d320062104444c3b9565b75243f450b2d5f279d",
+    "tools/finite_data_lp.py": "b17326b94be8a3557ec986a4b165559665d416f6bebf3c58c46b47c2c08680a0",
+    "tools/test_finite_data.py": "b090f021abe4edd53ae91dd961b5f753c24452b1106a3f120953d2f8d8258bf3"
+  }
+}

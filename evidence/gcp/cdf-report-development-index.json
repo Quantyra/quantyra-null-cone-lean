@@ -1,0 +1,46 @@
+{
+  "runs": [
+    {
+      "run": "space-split-cdf-20261008T035151Z-1782ab",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-cdf-report-20261008T035534Z-a0ccc0",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-cdf-encoding-20261008T035830Z-474872",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-cdf-report-calibration-20261008T040104Z-5c03be",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-cdf-report-calibration-20261008T040241Z-9ac403",
+      "kind": "development",
+      "exit": 0
+    },
+    {
+      "run": "space-cdf-report-acceptance-20261008T040533Z-f79074",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-cdf-report-acceptance-20261008T040725Z-895a5b",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-cdf-report-acceptance-20261008T040931Z-049367",
+      "kind": "cdf-report-acceptance",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "scope": "order-only CDF report probability/encoding/fallback; density suite and S025 incomplete"
+}

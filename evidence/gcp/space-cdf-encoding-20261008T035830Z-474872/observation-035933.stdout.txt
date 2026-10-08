@@ -1,0 +1,28 @@
+1
+hJ : 0 ≤ eJ
+report : OrderCode n → CDFReport n
+this : IsProbabilityMeasure (sampleMeasure rho n) := sample_isProbabilityMeasure h n
+hSub : (cdfReportCoverage rho q eM eJ report)ᶜ ≤ᶠ[ae (sampleMeasure rho n)] splitCalibrationBad rho n q ↑eM ↑eJ
+hMono :
+  ((sampleMeasure rho n) (cdfReportCoverage rho q eM eJ report)ᶜ).toReal ≤
+    ((sampleMeasure rho n) (splitCalibrationBad rho n q ↑eM ↑eJ)).toReal
+hFailure :
+  ((sampleMeasure rho n) (cdfReportCoverage rho q eM eJ report)ᶜ).toReal ≤ ↑(splitRoundedFailureQ n q eM eJ bM bJ)
+⊢ 1 - ↑(splitRoundedFailureQ n q eM eJ bM bJ) ≤ (sampleMeasure rho n).real (cdfReportCoverage rho q eM eJ report)
+info: QuantyraNullCone/CDFReport.lean:159:0: 'QuantyraNullCone.CDFReport.checked_rankCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:160:0: 'QuantyraNullCone.CDFReport.radius_one_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:161:0: 'QuantyraNullCone.CDFReport.checked_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:162:0: 'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:163:0: 'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:164:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.CDFReport
+error: build failed
+TERMINAL_EXIT=1

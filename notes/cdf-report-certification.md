@@ -1,0 +1,31 @@
+# Order-only CDF report certification: partial S024
+
+2026-10-07 local date (2026-10-08 UTC). The current split-DKW CDF certificate now has proved checker soundness and actual original-K coverage, including its representation and deterministic radius-one fallback. Density guarantees remain open.
+
+`SplitCDF.lean` discharges the empirical accuracy premises of `checked_trimmed_CDF` from actual split-event membership. Original-K samples lie in the square and have injective coordinates almost everywhere. On the accuracy event, every accepted original-graph forcing trace and every realizer has one global orientation controlling every cutoff and every real threshold. No assumed target CDF accuracy replaces probability.
+
+`CDFReport.lean` defines finite decoded positions, anchor/trace, cutoff and rational radius. Its checker validates the position realizer, forcing trace, positive confidence mesh, nonnegative tolerances and reported radius. The exact radius is
+
+`min(1, min(1, (tailCount+2*cutoff)/n) + 2*epsilonM + epsilonJ + 2/q)`.
+
+Both caps match the runtime. The proof derives their validity from the uncapped simultaneous theorem and the deterministic CDF error bound of one. The cutoff and certificate may be selected from the observed order. One orientation covers the resulting report at all real thresholds.
+
+Success is explicitly a predicate of the finite `OrderCode`, pulled back by the proved measurable `sampledOrder`. Thus the event remains measurable despite quantifying over all real thresholds. Under actual original-K sampling, the probability of an accepted output being incorrect is at most the exact capped, outward-rounded split failure value. With an accepted fixed calibration, it is at most delta. Rejected certificates make no output claim. This is an unconditional failure bound for a certificate procedure; it is not a conditional-on-acceptance coverage assertion.
+
+`CDFReportEncoding.lean` proves the exact list-index inverse from a vertex permutation to zero-based positions and then the one-based formal rank identity. It also proves that runtime integer corner tests `k*rank<=p*n` count exactly the inclusive real CDF at p/k, including ties and endpoints. The normalized count equals its rational representation. The density estimation grid k is distinct from the confidence mesh q. An empty forcing trace ignores its anchor; a missing runtime anchor can be filled by any valid pair without changing the check.
+
+`CDFReportCalibration.lean` proves the budget-search fallback: if the fixed calibration cost is at least one, every accepted report has radius at least one and succeeds deterministically. `checkSplitCalibrationOrFallback` accepts either this branch or the exact rational budget checker. The proof covers the runtime's epsilon=1 search endpoint without falsely assuming its probability budgets passed. It derives probability one for the deterministic branch.
+
+The Python verifier now additionally checks split fields independently of the search: tolerances/mesh/budgets, exact exponential upper functions, outward rounding, total failure and allocation. A nontrivial radius must satisfy both probability budgets; the radius-one branch allows a weak budget only with exact fields. Recomputing the selected calibration still ensures it depends only on n and delta. The [supplementary test receipt](../evidence/finite-data/cdf-report-tests-20261008.json) records 16 passing tests and exact software hashes. Standard-library-only verification of both retained report methods passed.
+
+A density fallback verifier gap found during this work is fixed: fallback cell bands, as well as point bands, must retain the full [1/2,3/2] range. Altering any of the four fields is rejected. This software fix does not certify the remaining density mathematics.
+
+`CDFReportFixtures.lean` supplies eight kernel-checked examples, using exact decision or proved algebraic simplification, without native_decide. A matching Python fixture checks the nontrivial permutation inverse, inclusive tie and both boundary counts. The software tests also reject a fabricated, exactly rounded, over-budget nontrivial calibration and accept its legitimate deterministic fallback, then reject corrupted rounding.
+
+Authoritative acceptance: `space-cdf-report-acceptance-20261008T040931Z-049367`, GCP project `quantyra-lean-cert-20260915`, instance `quantyra-lean-builder-01`, zone `us-central1-a`. Root build: 2940 jobs, 162 exact-type/axiom audits, exit zero with no warnings or added axioms. The [receipt](../evidence/gcp/space-cdf-report-acceptance-20261008T040931Z-049367/receipt.json), immutable source/dependency hashes and raw logs preserve exact acceptance. Lean 4.30.0 and all nine dependency pins remain unchanged. Local Lean invocations: zero. Python software hashes/tests are supplementary evidence, distinct from the captured Lean/check/config inputs.
+
+The [development ledger](../evidence/gcp/cdf-report-development-index.json) retains eight captures, including five failed attempts, a clean accuracy-to-CDF development build and a successful warning-bearing encoding/fallback build. The first capture retains a boot-time preflight SSH failure and its successful same-input submission; no remote job was restarted following a timeout. Published manuscripts and DOI artifacts remain preserved.
+
+The next density campaign must prove actual cell feasibility for the rational LP: box restrictions, marginal row/column sums, CDF-prefix restrictions and adjacent-mean Lipschitz bounds. It must then establish the all-point 2/k expansion, rounded histogram error `8*a*k^2+4*eta*k^2+2/k`, caps/fallbacks and faithful density-report matrices/fields under the same orientation. These claims remain uncertified; full-range practical bands remain uninformative.
+
+Remaining to-do list: actual cell feasibility, all-point expansion, histogram error and density fallbacks; full density report representation/coverage; final S024 acceptance and delivery; S025.

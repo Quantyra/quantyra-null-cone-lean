@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/CDFReportFixtures.lean:22:73: Tactic `decide` failed for proposition
+  reportRadiusQ cdfFixtureChain cdfFixtureReport 1 0 0 = 1
+because its `Decidable` instance
+  instDecidableEqRat (reportRadiusQ cdfFixtureChain cdfFixtureReport 1 0 0) 1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqBool`, `instDecidableEqRat`, `Bool.decEq`, `Int.decEq`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Rat.instDecidableLe`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    (Decidable.rec (fun h => (fun x => min 1 (reportTrimRawQ cdfFixtureChain cdfFixtureReport) + 2 * 0 + 0 + 2 / ↑1) h)
+        (fun h => (fun x => 1) h)
+        (Rat.instDecidableLe 1 (min 1 (reportTrimRawQ cdfFixtureChain cdfFixtureReport) + 2 * 0 + 0 + 2 / ↑1))).num,
+    ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.CDFReportFixtures
+error: build failed
+TERMINAL_EXIT=1

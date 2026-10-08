@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/CDFReportEncoding.lean:19:23: Invalid field `get_idxOf`: The environment does not contain `List.Pairwise.get_idxOf`, so it is not possible to project the field `get_idxOf` from an expression
+  hNodup
+of type
+  List.Pairwise (fun x1 x2 => x1 ≠ x2) (List.ofFn permutation)
+error: QuantyraNullCone/CDFReportEncoding.lean:22:12: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  min n.pred ↑j
+in the target expression
+  min (n - 1) ↑j = ↑j
+
+case h
+n : ℕ
+hn : 0 < n
+permutation : Fin n → Fin n
+hPerm : Function.Injective permutation
+j : Fin n
+hNodup : (List.ofFn permutation).Nodup
+hIdx : List.idxOf (permutation j) (List.ofFn permutation) = ↑j
+⊢ min (n - 1) ↑j = ↑j
+info: QuantyraNullCone/CDFReportEncoding.lean:80:0: 'QuantyraNullCone.permutation_positions_inverse' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:81:0: 'QuantyraNullCone.permutation_rank_decode' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:82:0: 'QuantyraNullCone.CDFReport.corner_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:83:0: 'QuantyraNullCone.CDFReport.corner_CDF_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.CDFReportEncoding
+error: build failed
+TERMINAL_EXIT=1

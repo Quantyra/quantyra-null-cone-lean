@@ -1,0 +1,3 @@
+inputs.tar.gz             | 4 kB |   4.0 kB/s | ETA: 00:00:21 |   4%inputs.tar.gz             | 91 kB |  91.9 kB/s | ETA: 00:00:00 | 100%
+capture-manifest.json     | 4 kB |   4.0 kB/s | ETA: 00:00:01 |  34%capture-manifest.json     | 11 kB |  11.6 kB/s | ETA: 00:00:00 | 100%
+run.sh                    | 2 kB |   2.1 kB/s | ETA: 00:00:00 | 100%

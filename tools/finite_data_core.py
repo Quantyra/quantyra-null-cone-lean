@@ -271,6 +271,38 @@ def calibration_radius(cal, method):
     raise ValueError('unknown calibration method')
 
 
+def verify_split_calibration_fields(n, cal):
+    """Check exact split fields independently of the calibration search.
+
+    This mirrors the proved rational calibration/fallback predicates. It does
+    not certify the Python runtime or the calibration parameter search.
+    """
+    if type(n) is not int or n < 1 or cal['method'] != 'split-dkw':
+        raise ValueError('invalid split calibration sample/method')
+    q = F(cal['q'])
+    delta = F(cal['requested_delta'])
+    if q.denominator != 1 or q < 1 or not 0 < delta < 1:
+        raise ValueError('invalid split mesh/delta')
+    raw_values, budgets, rounded = [], [], []
+    for name, prefactor in [('marginal', F(4)), ('joint', 2*(q+1)**2)]:
+        epsilon, budget = F(cal[name+'_epsilon']), F(cal[name+'_budget'])
+        if epsilon < 0 or budget <= 0:
+            raise ValueError('invalid split tolerance/budget')
+        raw = min(F(1), prefactor*exp_negative_upper(2*n*epsilon**2))
+        upper = _round_failure_upper(raw, budget)
+        if F(cal[name+'_failure_upper']) != upper:
+            raise ValueError('incorrect rounded split failure')
+        raw_values.append(raw)
+        budgets.append(budget)
+        rounded.append(upper)
+    if sum(budgets) != delta or F(cal['failure_upper']) != min(F(1), sum(rounded)):
+        raise ValueError('incorrect split allocation/total failure')
+    if calibration_radius(cal, 'split-dkw') < 1 and any(
+            raw > budget for raw, budget in zip(raw_values, budgets)):
+        raise ValueError('nontrivial split calibration exceeds its budget')
+    return True
+
+
 def corner_counts(first, second, k):
     x, y = ranks(first), ranks(second)
     n = len(x)

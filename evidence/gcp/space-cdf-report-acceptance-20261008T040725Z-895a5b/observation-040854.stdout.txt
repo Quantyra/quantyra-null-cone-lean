@@ -1,0 +1,28 @@
+1
+    checkCDFReport cdfFixtureChain
+      (let __src := cdfFixtureReport;
+      { first := __src.first, second := __src.second, anchor := __src.anchor, trace := __src.trace,
+        cutoff := __src.cutoff, radius := 0 })
+      100 0 0,
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/CDFReportFixtures.lean:21:90: Tactic `decide` failed for proposition
+  checkSplitCalibrationOrFallback 1 1 0 0 (1 / 40) (1 / 40) (1 / 20) = true
+because its `Decidable` instance
+  instDecidableEqBool (checkSplitCalibrationOrFallback 1 1 0 0 (1 / 40) (1 / 40) (1 / 20)) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Int.decLt`, `Int.decNonneg`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match checkSplitCalibrationOrFallback 1 1 0 0 (1 / 40) (1 / 40) (1 / 20), true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.CDFReportFixtures
+error: build failed
+TERMINAL_EXIT=1

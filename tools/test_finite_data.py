@@ -8,7 +8,8 @@ from fractions import Fraction as F
 from itertools import permutations, combinations
 from finite_data_core import (order_rows, realizer, ranks, certify_realizer,
                               forcing_certificate, verify_forcing_certificate,
-                              calibration, calibration_radius, exp_negative_upper, InvalidOrder)
+                              calibration, calibration_radius, exp_negative_upper, InvalidOrder,
+                              verify_split_calibration_fields, _round_failure_upper, corner_counts)
 from finite_data_lp import model, solve, verify_bounds, dual_lower_bound
 from finite_data import estimate, verify_report
 from benchmark_finite_data import cdf_errors, truth_cell_ranges
@@ -39,6 +40,16 @@ def brute_realizers(rows):
         y = ranks(second)
         if all(second_relation[u][v] == (y[u] < y[v]) for u in range(n) for v in range(n)):
             yield list(first), second
+
+
+class CDFEncodingTests(unittest.TestCase):
+    def test_lean_permutation_and_inclusive_corner_fixtures(self):
+        # Matches CDFReportFixtures.lean; vertex 2 is at zero-based position 0.
+        self.assertEqual([value-1 for value in ranks([2, 0, 1])], [1, 2, 0])
+        counts = corner_counts([0, 1, 2], [0, 1, 2], 3)
+        self.assertEqual(counts[1][1], 1)  # exact grid tie is included
+        self.assertEqual(counts[0][3], 0)
+        self.assertEqual(counts[3][3], 3)
 
 
 class RealizerTests(unittest.TestCase):
@@ -106,6 +117,12 @@ class LPTests(unittest.TestCase):
         self.assertEqual(report['bands']['point_upper'], [F(3, 2)]*4)
         self.assertEqual(report['bands']['histogram_error_upper'], 1)
         self.assertTrue(verify_report(json.loads(json.dumps(report, default=str))))
+        for field, value in [('cell_lower', F(1)), ('cell_upper', F(1)),
+                             ('point_lower', F(1)), ('point_upper', F(1))]:
+            changed = copy.deepcopy(report)
+            changed['bands'][field][0] = value
+            with self.assertRaisesRegex(ValueError, 'whole density range'):
+                verify_report(changed)
 
     def test_continuum_diagnostics_include_one_sided_limits(self):
         report = {'input': {'n': 4}, 'first': [0, 1, 2, 3], 'second': [0, 1, 2, 3]}
@@ -229,6 +246,31 @@ class LPTests(unittest.TestCase):
         for method, delta in [('unknown', F(1, 20)), ('split-dkw', F(0)), ('split-dkw', F(1))]:
             with self.assertRaises(ValueError):
                 calibration(64, delta, method)
+
+    def test_independent_split_checker_rejects_nontrivial_budget_failure(self):
+        # A fabricated low-radius calibration has exact rounding but fails its
+        # claimed probability budgets; checking rounding alone is insufficient.
+        n, q, epsilon, budget = 1, 100, F(1, 10), F(1, 40)
+        marginal = min(F(1), 4*exp_negative_upper(2*n*epsilon**2))
+        joint = min(F(1), 2*(q+1)**2*exp_negative_upper(2*n*epsilon**2))
+        rounded_m, rounded_j = (_round_failure_upper(raw, budget) for raw in (marginal, joint))
+        cal = {'method': 'split-dkw', 'q': q, 'requested_delta': 2*budget,
+               'marginal_epsilon': epsilon, 'joint_epsilon': epsilon,
+               'marginal_budget': budget, 'joint_budget': budget,
+               'marginal_failure_upper': rounded_m, 'joint_failure_upper': rounded_j,
+               'failure_upper': min(F(1), rounded_m+rounded_j)}
+        with self.assertRaisesRegex(ValueError, 'exceeds its budget'):
+            verify_split_calibration_fields(n, cal)
+        # Raising the joint tolerance forces radius one; exact but over-budget
+        # calibration is then sound as a deterministic fallback.
+        cal['joint_epsilon'] = F(1)
+        raw = min(F(1), 2*(q+1)**2*exp_negative_upper(2*n))
+        cal['joint_failure_upper'] = _round_failure_upper(raw, budget)
+        cal['failure_upper'] = min(F(1), rounded_m+cal['joint_failure_upper'])
+        self.assertTrue(verify_split_calibration_fields(n, cal))
+        cal['joint_failure_upper'] -= F(1, 10**12)
+        with self.assertRaisesRegex(ValueError, 'rounded split failure'):
+            verify_split_calibration_fields(n, cal)
 
 
 if __name__ == '__main__':

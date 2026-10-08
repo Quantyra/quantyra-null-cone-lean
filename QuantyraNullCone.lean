@@ -28,6 +28,7 @@ import QuantyraNullCone.FiniteFoundation
 import QuantyraNullCone.FiniteFixtures
 import QuantyraNullCone.DKWFiniteTail
 import QuantyraNullCone.SplitCalibration
+import QuantyraNullCone.CDFReportFixtures
 
 /-!
 Quantyra finite-order reconstruction.
@@ -47,6 +48,8 @@ Finite-data forcing/rank, LP residual checking, rounding and conditional CDF
 foundations and the sharp-DKW analytic likelihood barrier are proved. Finite-bin
 likelihood, maximal and sharp counting-law tail bounds are proved separately;
 continuous uniform and original-K marginal DKW, joint-grid failure and exact
-rational split-calibration checker soundness are proved. Full report integration
-and cell/point/histogram guarantees remain open.
+rational split-calibration checker soundness are proved. The order-only CDF
+report checker, integer corner/permutation encoding, measurable coverage and
+deterministic radius-one fallback are proved. Density report integration and
+cell/point/histogram guarantees remain open.
 -/

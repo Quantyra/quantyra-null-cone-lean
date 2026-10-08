@@ -1,0 +1,30 @@
+5561 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/run.sh
+5563 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/logs/runner.stdout.txt
+5564 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/logs/runner.stderr.txt
+5613 lake build QuantyraNullCone
+5721 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/source/QuantyraNullCone/CDFReportCalibration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/source/.lake/build/lib/lean/QuantyraNullCone/CDFReportCalibration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/source/.lake/build/lib/lean/QuantyraNullCone/CDFReportCalibration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/source/.lake/build/ir/QuantyraNullCone/CDFReportCalibration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-cdf-report-acceptance-20261008T040931Z-049367/source/.lake/build/ir/QuantyraNullCone/CDFReportCalibration.setup.json --json
+info: QuantyraNullCone/SplitProbability.lean:97:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2933/2940] Built QuantyraNullCone.SplitCalibration (2.0s)
+info: QuantyraNullCone/SplitCalibration.lean:114:0: 'QuantyraNullCone.split_exponential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:115:0: 'QuantyraNullCone.InDensityClass.checked_split_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:116:0: 'QuantyraNullCone.InDensityClass.checked_split_accuracy_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:117:0: 'QuantyraNullCone.InDensityClass.split_rounded_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:118:0: 'QuantyraNullCone.checked_split_rounded_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2934/2940] Built QuantyraNullCone.SplitCDF (2.8s)
+info: QuantyraNullCone/SplitCDF.lean:109:0: 'QuantyraNullCone.empirical_CDF_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCDF.lean:110:0: 'QuantyraNullCone.InDensityClass.CDF_radius_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCDF.lean:111:0: 'QuantyraNullCone.InDensityClass.split_checked_sample_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2935/2940] Built QuantyraNullCone.CDFReport (3.7s)
+info: QuantyraNullCone/CDFReport.lean:161:0: 'QuantyraNullCone.CDFReport.checked_rankCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:162:0: 'QuantyraNullCone.CDFReport.radius_one_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:163:0: 'QuantyraNullCone.CDFReport.checked_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:164:0: 'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:165:0: 'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:166:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2936/2940] Built QuantyraNullCone.CDFReportEncoding (2.7s)
+info: QuantyraNullCone/CDFReportEncoding.lean:82:0: 'QuantyraNullCone.permutation_positions_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:83:0: 'QuantyraNullCone.permutation_rank_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:84:0: 'QuantyraNullCone.CDFReport.corner_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:85:0: 'QuantyraNullCone.CDFReport.corner_CDF_rational' depends on axioms: [propext, Classical.choice, Quot.sound]

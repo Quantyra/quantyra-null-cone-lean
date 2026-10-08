@@ -132,8 +132,9 @@ def solve(lp):
 def verify_bounds(lp, result):
     k = lp['k']
     if result['status'] != 'certified_outer_bounds':
-        if ([F(v) for v in result['point_lower']] != [LOW]*(k*k) or
-                [F(v) for v in result['point_upper']] != [HIGH]*(k*k)):
+        if any([F(v) for v in result[name]] != [endpoint]*(k*k)
+               for name, endpoint in [('cell_lower', LOW), ('cell_upper', HIGH),
+                                      ('point_lower', LOW), ('point_upper', HIGH)]):
             raise ValueError('fallback must retain the whole density range')
         return True
     proved = {}

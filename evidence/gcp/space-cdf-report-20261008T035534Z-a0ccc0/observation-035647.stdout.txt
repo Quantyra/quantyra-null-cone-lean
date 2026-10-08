@@ -1,0 +1,28 @@
+1
+rho : DiamondPoint → ℝ
+h : InDensityClass rho
+n q : ℕ
+hn : 0 < n
+eM eJ bM bJ delta : ℚ
+hCal : checkSplitCalibration n q eM eJ bM bJ delta = true
+report : OrderCode n → CDFReport n
+hc : 0 ≤ eM ∧ 0 ≤ eJ ∧ splitMarginRawQ n eM ≤ bM ∧ splitJointRawQ n q eJ ≤ bJ ∧ bM + bJ = delta
+hBudget : ↑(splitRoundedFailureQ n q eM eJ bM bJ) ≤ ↑delta
+⊢ 1 - ↑delta ≤ (sampleMeasure rho n).real (cdfReportCoverage rho q eM eJ report)
+info: QuantyraNullCone/CDFReport.lean:159:0: 'QuantyraNullCone.CDFReport.checked_rankCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:160:0: 'QuantyraNullCone.CDFReport.radius_one_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:161:0: 'QuantyraNullCone.CDFReport.checked_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:162:0: 'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:163:0: 'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:164:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.CDFReport
+error: build failed
+TERMINAL_EXIT=1

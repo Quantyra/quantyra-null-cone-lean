@@ -346,3 +346,51 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
     1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
       (QuantyraNullCone.splitCalibrationBad rho n q eM eJ)ᶜ :=
   h.checked_split_accuracy_probability hn hc
+
+#check QuantyraNullCone.InDensityClass.split_rounded_failure
+#print axioms QuantyraNullCone.InDensityClass.split_rounded_failure
+#check QuantyraNullCone.checked_split_rounded_budget
+#print axioms QuantyraNullCone.checked_split_rounded_budget
+#check QuantyraNullCone.empirical_CDF_bounds
+#print axioms QuantyraNullCone.empirical_CDF_bounds
+#check QuantyraNullCone.InDensityClass.CDF_radius_one
+#print axioms QuantyraNullCone.InDensityClass.CDF_radius_one
+#check QuantyraNullCone.InDensityClass.split_checked_sample_CDF
+#print axioms QuantyraNullCone.InDensityClass.split_checked_sample_CDF
+#check QuantyraNullCone.CDFReport.checked_rankCDF
+#print axioms QuantyraNullCone.CDFReport.checked_rankCDF
+#check QuantyraNullCone.CDFReport.radius_one_good
+#print axioms QuantyraNullCone.CDFReport.radius_one_good
+#check QuantyraNullCone.CDFReport.checked_good
+#print axioms QuantyraNullCone.CDFReport.checked_good
+#check QuantyraNullCone.cdf_report_coverage_measurable
+#print axioms QuantyraNullCone.cdf_report_coverage_measurable
+#check QuantyraNullCone.InDensityClass.cdf_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.cdf_report_coverage
+#check QuantyraNullCone.InDensityClass.checked_cdf_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.checked_cdf_report_coverage
+#check QuantyraNullCone.permutation_positions_inverse
+#print axioms QuantyraNullCone.permutation_positions_inverse
+#check QuantyraNullCone.permutation_rank_decode
+#print axioms QuantyraNullCone.permutation_rank_decode
+#check QuantyraNullCone.CDFReport.corner_CDF
+#print axioms QuantyraNullCone.CDFReport.corner_CDF
+#check QuantyraNullCone.CDFReport.corner_CDF_rational
+#print axioms QuantyraNullCone.CDFReport.corner_CDF_rational
+#check QuantyraNullCone.report_radius_fallback
+#print axioms QuantyraNullCone.report_radius_fallback
+#check QuantyraNullCone.CDFReport.checked_fallback_good
+#print axioms QuantyraNullCone.CDFReport.checked_fallback_good
+#check QuantyraNullCone.InDensityClass.cdf_report_fallback_probability
+#print axioms QuantyraNullCone.InDensityClass.cdf_report_fallback_probability
+#check QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback
+#print axioms QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback
+
+example {rho : QuantyraNullCone.DiamondPoint → ℝ}
+    (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n)
+    {eM eJ bM bJ delta : ℚ}
+    (hc : QuantyraNullCone.checkSplitCalibrationOrFallback n q eM eJ bM bJ delta = true)
+    (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+    1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
+      (QuantyraNullCone.cdfReportCoverage rho q eM eJ report) :=
+  h.checked_cdf_report_or_fallback hn hc report

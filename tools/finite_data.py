@@ -5,7 +5,8 @@ import sys
 from fractions import Fraction as F
 from pathlib import Path
 from finite_data_core import (order_rows, realizer, certify_realizer, confidence,
-                              corner_counts, verify_forcing_certificate, calibration, calibration_radius)
+                              corner_counts, verify_forcing_certificate, calibration, calibration_radius,
+                              verify_split_calibration_fields)
 from finite_data_lp import model, solve, verify_bounds
 
 
@@ -51,6 +52,8 @@ def verify_report(report):
     method = report.get('calibration_method', 'grid')
     expected_cal = calibration(len(rows), F(report['delta']), method)
     actual_cal = conf['calibration']
+    if method == 'split-dkw':
+        verify_split_calibration_fields(len(rows), actual_cal)
     for key, value in expected_cal.items():
         if (actual_cal[key] != value if isinstance(value, str) else F(actual_cal[key]) != value):
             raise ValueError('incorrect confidence calibration')

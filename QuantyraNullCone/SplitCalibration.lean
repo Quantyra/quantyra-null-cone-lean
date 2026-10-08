@@ -11,6 +11,10 @@ def splitMarginRawQ (n : ℕ) (e : ℚ) : ℚ :=
 def splitJointRawQ (n q : ℕ) (e : ℚ) : ℚ :=
   min 1 (2 * (q + 1 : ℚ) ^ 2 * negativeExpUpperQ (2 * n * e ^ 2))
 
+def splitRoundedFailureQ (n q : ℕ) (eM eJ bM bJ : ℚ) : ℚ :=
+  min 1 (roundFailureQ (10 ^ 12 * bM.den) (splitMarginRawQ n eM) +
+    roundFailureQ (10 ^ 12 * bJ.den) (splitJointRawQ n q eJ))
+
 /-- Exact check of a fixed, pre-data split calibration. -/
 def checkSplitCalibration (n q : ℕ) (eM eJ bM bJ delta : ℚ) : Bool :=
   decide (0 ≤ eM ∧ 0 ≤ eJ ∧ splitMarginRawQ n eM ≤ bM ∧
@@ -47,6 +51,35 @@ theorem InDensityClass.split_joint_rational_failure {rho : DiamondPoint → ℝ}
       (by positivity : (0 : ℝ) ≤ 2 * ((q : ℝ) + 1) ^ 2))
   simpa [splitJointRawQ] using le_min (measureReal_le_one (μ := sampleMeasure rho n)) hBound
 
+/-- The precise capped and rounded failure value displayed by the split report. -/
+theorem InDensityClass.split_rounded_failure {rho : DiamondPoint → ℝ}
+    (h : InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ : ℚ}
+    (hM : 0 ≤ eM) (hJ : 0 ≤ eJ) :
+    (sampleMeasure rho n).real (splitCalibrationBad rho n q eM eJ) ≤
+      (splitRoundedFailureQ n q eM eJ bM bJ : ℝ) := by
+  letI : IsProbabilityMeasure (sampleMeasure rho n) := h.sample_isProbabilityMeasure n
+  have hm := roundFailureQ_upper (Nat.mul_pos (by norm_num : 0 < 10 ^ 12) bM.den_pos)
+    (splitMarginRawQ n eM)
+  have hj := roundFailureQ_upper (Nat.mul_pos (by norm_num : 0 < 10 ^ 12) bJ.den_pos)
+    (splitJointRawQ n q eJ)
+  have hmR : (splitMarginRawQ n eM : ℝ) ≤
+      (roundFailureQ (10 ^ 12 * bM.den) (splitMarginRawQ n eM) : ℝ) := by exact_mod_cast hm
+  have hjR : (splitJointRawQ n q eJ : ℝ) ≤
+      (roundFailureQ (10 ^ 12 * bJ.den) (splitJointRawQ n q eJ) : ℝ) := by exact_mod_cast hj
+  have hSum := (measureReal_union_le (μ := sampleMeasure rho n) _ _).trans
+    ((add_le_add (h.split_margin_rational_failure hn hM)
+      (h.split_joint_rational_failure hn hJ)).trans (add_le_add hmR hjR))
+  simpa [splitRoundedFailureQ] using
+    le_min (measureReal_le_one (μ := sampleMeasure rho n)) hSum
+
+theorem checked_split_rounded_budget {n q : ℕ} {eM eJ bM bJ delta : ℚ}
+    (hCheck : checkSplitCalibration n q eM eJ bM bJ delta = true) :
+    splitRoundedFailureQ n q eM eJ bM bJ ≤ delta := by
+  have hc : 0 ≤ eM ∧ 0 ≤ eJ ∧ splitMarginRawQ n eM ≤ bM ∧
+      splitJointRawQ n q eJ ≤ bJ ∧ bM + bJ = delta := of_decide_eq_true hCheck
+  exact (min_le_right _ _).trans
+    (rounded_split_failure_budget hc.2.2.1 hc.2.2.2.1 hc.2.2.2.2)
+
 /-- An accepted rational certificate bounds the actual original-K sample failure.
     The parameters are fixed before drawing the sample. -/
 theorem InDensityClass.checked_split_calibration {rho : DiamondPoint → ℝ}
@@ -81,5 +114,7 @@ theorem InDensityClass.checked_split_accuracy_probability {rho : DiamondPoint �
 #print axioms split_exponential_upper
 #print axioms InDensityClass.checked_split_calibration
 #print axioms InDensityClass.checked_split_accuracy_probability
+#print axioms InDensityClass.split_rounded_failure
+#print axioms checked_split_rounded_budget
 
 end QuantyraNullCone

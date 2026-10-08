@@ -1,0 +1,28 @@
+1
+
+k : ℕ
+cell : ℕ → ℕ → ℝ
+i : Fin k
+⊢ ∑ j, (fun ij => if ij.2 = i then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) = ∑ j, cell ↑j ↑i
+error: QuantyraNullCone/DensityLPIndex.lean:76:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ j, ?f (densityCellPair j)
+in the target expression
+  ∑ j, (fun ij => if ↑ij.1 < p ∧ ↑ij.2 < q then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) =
+    ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, cell i j
+
+k p q : ℕ
+hp : p ≤ k
+hq : q ≤ k
+cell : ℕ → ℕ → ℝ
+⊢ ∑ j, (fun ij => if ↑ij.1 < p ∧ ↑ij.2 < q then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) =
+    ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, cell i j
+info: QuantyraNullCone/DensityLPIndex.lean:84:0: 'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:85:0: 'QuantyraNullCone.density_row_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:86:0: 'QuantyraNullCone.density_column_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:87:0: 'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:88:0: 'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityLPIndex
+error: build failed
+TERMINAL_EXIT=1

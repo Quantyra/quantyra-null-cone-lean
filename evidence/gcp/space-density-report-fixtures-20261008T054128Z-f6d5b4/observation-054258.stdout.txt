@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/DensityReportCoverage.lean:124:0: 'QuantyraNullCone.InDensityClass.checked_density_report_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [2942/2942] Built QuantyraNullCone.DensityReportFixtures (15s)
+warning: QuantyraNullCone/DensityReportFixtures.lean:26:512: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/DensityReportFixtures.lean:32:642: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/DensityReportFixtures.lean:46:529: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/DensityReportFixtures.lean:53:659: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/DensityReportFixtures.lean:182:0: 'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:183:0: 'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:184:0: 'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:185:0: 'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:186:0: 'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:187:0: 'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:188:0: 'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:189:0: 'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2942 jobs).
+TERMINAL_EXIT=0

@@ -1,6 +1,6 @@
-# Remaining density matrix and report proof contract
+# Density matrix and report proof contract
 
-S024 after [actual density foundations](density-foundation-certification.md). The following are implementation obligations, not certified conclusions. Retain the original estimator and full-class guarantee; do not replace the main theorem by assumed primal feasibility or already-correct density bands.
+S024 after [actual density foundations](density-foundation-certification.md). The following integration obligations are now discharged by [full density-report certification](density-report-certification.md); this contract preserves the selected target and claim boundary. Retain the original estimator and full-class guarantee; do not replace the main theorem by assumed primal feasibility or already-correct density bands.
 
 ## Actual matrix representation
 
@@ -29,4 +29,4 @@ Define full-report success as a predicate of the finite observed `OrderCode`. It
 
 Retain matching Lean/Python representation fixtures, nonzero dual residual and adversarial/fallback tests as supplementary evidence. Complete fresh GCP root/type/axiom acceptance for the integrated main theorem, focused source/evidence pushes, supplementary CI and stopped-instance closeout before marking S024 complete. S025 remains a separate genuine 2+1 geometric/measure campaign.
 
-Remaining to-do list: exact matrix/flattening representation and actual dual instantiation; complete density field/fallback checker; one-orientation measurable full-report probability; final S024 acceptance/delivery; S025.
+Remaining to-do list: S024 delivery/CI closeout; S025.

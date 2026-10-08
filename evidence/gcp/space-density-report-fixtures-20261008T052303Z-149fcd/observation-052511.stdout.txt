@@ -1,0 +1,28 @@
+1
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := 0, fallback := __src.fallback }),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+info: QuantyraNullCone/DensityReportFixtures.lean:86:0: 'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:87:0: 'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:88:0: 'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:89:0: 'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:90:0: 'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:91:0: 'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:92:0: 'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:93:0: 'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityReportFixtures
+error: build failed
+TERMINAL_EXIT=1

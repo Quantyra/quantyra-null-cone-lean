@@ -1,0 +1,209 @@
+ℹ [2623/2692] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2624/2692] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2625/2692] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2676/2692] Replayed QuantyraNullCone.Transpose
+info: QuantyraNullCone/Transpose.lean:79:0: 'QuantyraNullCone.InDensityClass.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:80:0: 'QuantyraNullCone.diamondVolume_transpose_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:81:0: 'QuantyraNullCone.densityMeasure_transpose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:82:0: 'QuantyraNullCone.populationCDF_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:83:0: 'QuantyraNullCone.coefficientDeviation_transpose_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2677/2692] Replayed QuantyraNullCone.FiniteLP
+info: QuantyraNullCone/FiniteLP.lean:112:0: 'QuantyraNullCone.residual_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:113:0: 'QuantyraNullCone.finite_lp_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:114:0: 'QuantyraNullCone.rationalDual_checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2685/2692] Replayed QuantyraNullCone.DensityCells
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2686/2692] Replayed QuantyraNullCone.DensityCellBias
+info: QuantyraNullCone/DensityCellBias.lean:138:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:139:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:140:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:141:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2687/2692] Replayed QuantyraNullCone.DensityCellTranslations
+info: QuantyraNullCone/DensityCellTranslations.lean:79:0: 'QuantyraNullCone.InDensityClass.cell_mean_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:80:0: 'QuantyraNullCone.InDensityClass.cell_mean_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:81:0: 'QuantyraNullCone.InDensityClass.cell_mean_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2688/2692] Replayed QuantyraNullCone.DensityCellGrid
+info: QuantyraNullCone/DensityCellGrid.lean:92:0: 'QuantyraNullCone.InDensityClass.grid_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:93:0: 'QuantyraNullCone.sum_rectangle_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:94:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2689/2692] Replayed QuantyraNullCone.DensityCellRestrictions
+info: QuantyraNullCone/DensityCellRestrictions.lean:99:0: 'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:100:0: 'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:101:0: 'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:102:0: 'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:103:0: 'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:104:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2690/2692] Replayed QuantyraNullCone.DensityHistogram
+info: QuantyraNullCone/DensityHistogram.lean:80:0: 'QuantyraNullCone.histogram_cell_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:81:0: 'QuantyraNullCone.InDensityClass.histogram_cell_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:82:0: 'QuantyraNullCone.InDensityClass.histogram_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2691/2692] Replayed QuantyraNullCone.DensityFeasibility
+info: QuantyraNullCone/DensityFeasibility.lean:38:0: 'QuantyraNullCone.InDensityClass.grid_cell_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2692/2692] Building QuantyraNullCone.DensityLPIndex (39s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/QuantyraNullCone/DensityLPIndex.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/.lake/build/lib/lean/QuantyraNullCone/DensityLPIndex.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/.lake/build/lib/lean/QuantyraNullCone/DensityLPIndex.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/.lake/build/ir/QuantyraNullCone/DensityLPIndex.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-lp-index-20261008T045152Z-791fb6/source/.lake/build/ir/QuantyraNullCone/DensityLPIndex.setup.json --json
+error: QuantyraNullCone/DensityLPIndex.lean:15:2: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - d ≤ -1
+  a ≥ 0
+  a - c ≥ 1
+where
+ a := ↑↑ij.1 * ↑k
+ b := ↑↑ij.2
+ c := ↑k * ↑↑ij.1
+ d := ↑k
+error: QuantyraNullCone/DensityLPIndex.lean:52:36: Unknown constant `Rat.cast_ite`
+error: QuantyraNullCone/DensityLPIndex.lean:53:2: 'change' tactic failed, pattern
+  ∑ j, (fun ij => if ij.1 = i then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) = ?m.50
+is not definitionally equal to target
+  ∑ x, ↑(if (densityCellPair x).1 = i then 1 else 0) * densityCellVector cell x = ∑ j, cell ↑i ↑j
+warning: QuantyraNullCone/DensityLPIndex.lean:52:50: This simp argument is unused:
+  Rat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [densityRowCoefficient, Rat.cast_ite, Rat.cast_o̵n̵e̵,̵ ̵R̵a̵t̵.̵c̵a̵s̵t̵_̵zero, ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:52:64: This simp argument is unused:
+  Rat.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [densityRowCoefficient, Rat.cast_ite, Rat.cast_one, R̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:52:79: This simp argument is unused:
+  ite_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityRowCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, i̵t̵e̵_̵m̵u̵l̵,̵ ̵one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:52:88: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityRowCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, o̵n̵e̵_̵m̵u̵l̵,̵ ̵zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:52:97: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityRowCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, one_mul,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/DensityLPIndex.lean:61:39: Unknown constant `Rat.cast_ite`
+error: QuantyraNullCone/DensityLPIndex.lean:62:2: 'change' tactic failed, pattern
+  ∑ j, (fun ij => if ij.2 = i then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) = ?m.50
+is not definitionally equal to target
+  ∑ x, ↑(if (densityCellPair x).2 = i then 1 else 0) * densityCellVector cell x = ∑ j, cell ↑j ↑i
+warning: QuantyraNullCone/DensityLPIndex.lean:61:53: This simp argument is unused:
+  Rat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [densityColumnCoefficient, Rat.cast_ite, Rat.cast_o̵n̵e̵,̵ ̵R̵a̵t̵.̵c̵a̵s̵t̵_̵zero, ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:61:67: This simp argument is unused:
+  Rat.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [densityColumnCoefficient, Rat.cast_ite, Rat.cast_one, R̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:61:82: This simp argument is unused:
+  ite_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityColumnCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, i̵t̵e̵_̵m̵u̵l̵,̵ ̵one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:61:91: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityColumnCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, o̵n̵e̵_̵m̵u̵l̵,̵ ̵zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:61:100: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityColumnCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, one_mul,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/DensityLPIndex.lean:70:39: Unknown constant `Rat.cast_ite`
+error: QuantyraNullCone/DensityLPIndex.lean:71:2: 'change' tactic failed, pattern
+  ∑ j, (fun ij => if ↑ij.1 < p ∧ ↑ij.2 < q then cell ↑ij.1 ↑ij.2 else 0) (densityCellPair j) = ?m.64
+is not definitionally equal to target
+  ∑ x, ↑(if ↑(densityCellPair x).1 < p ∧ ↑(densityCellPair x).2 < q then 1 else 0) * densityCellVector cell x =
+    ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, cell i j
+warning: QuantyraNullCone/DensityLPIndex.lean:70:53: This simp argument is unused:
+  Rat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_o̵n̵e̵,̵ ̵R̵a̵t̵.̵c̵a̵s̵t̵_̵zero, ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:70:67: This simp argument is unused:
+  Rat.cast_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, R̵a̵t̵.̵c̵a̵s̵t̵_̵z̵e̵r̵o̵,̵ ̵ite_mul, one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:70:82: This simp argument is unused:
+  ite_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, i̵t̵e̵_̵m̵u̵l̵,̵ ̵one_mul, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:70:91: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, o̵n̵e̵_̵m̵u̵l̵,̵ ̵zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:70:100: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, one_mul,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/DensityLPIndex.lean:78:67: unsolved goals
+k : ℕ
+x : Fin (k * k) → ℝ
+target : Fin (k * k)
+⊢ ∑ x_1, ↑(if x_1 = target then 1 else 0) * x x_1 = x target
+info: QuantyraNullCone/DensityLPIndex.lean:81:0: 'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:82:0: 'QuantyraNullCone.density_row_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:83:0: 'QuantyraNullCone.density_column_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:84:0: 'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:85:0: 'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityLPIndex

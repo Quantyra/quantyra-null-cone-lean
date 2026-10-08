@@ -1,0 +1,28 @@
+1
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+error: QuantyraNullCone/DensityReportFixtures.lean:53:2: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+error: QuantyraNullCone/DensityReportFixtures.lean:66:2: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+error: QuantyraNullCone/DensityReportFixtures.lean:133:8: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+info: QuantyraNullCone/DensityReportFixtures.lean:181:0: 'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:182:0: 'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:183:0: 'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:184:0: 'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:185:0: 'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:186:0: 'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:187:0: 'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:188:0: 'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityReportFixtures
+error: build failed
+TERMINAL_EXIT=1

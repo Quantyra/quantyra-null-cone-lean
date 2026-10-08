@@ -1,0 +1,7 @@
+{
+  "run": "space-density-report-fixtures-20261008T054128Z-f6d5b4",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.DensityReportFixtures",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

@@ -1,0 +1,18 @@
+{
+  "verification_host": "local Python only; supplementary",
+  "lean_invocations": 0,
+  "tests": 17,
+  "result": "success",
+  "test_command": "unittest discover -s tools -p test_finite_data.py",
+  "source_sha256_LF": {
+    "tools/test_finite_data.py": "62332d7d201ad4a44b8b86fc86979d7204d47a868e923e4e915382faed1ce8ae",
+    "tools/finite_data.py": "2475407f13d2e9570300b9ef0d320062104444c3b9565b75243f450b2d5f279d",
+    "tools/finite_data_lp.py": "b17326b94be8a3557ec986a4b165559665d416f6bebf3c58c46b47c2c08680a0",
+    "tools/finite_data_core.py": "7f3b74d093aa278e36a3e2adbc7a2748543f507fe5df572c8cccd4e2bbf574ec"
+  },
+  "recorded_utc": "2026-10-08T05:23:44.158622+00:00",
+  "retained_report_verification": {
+    "cli-smoke-report.json": "success: standard library only",
+    "cli-split-dkw-report.json": "success: standard library only"
+  }
+}

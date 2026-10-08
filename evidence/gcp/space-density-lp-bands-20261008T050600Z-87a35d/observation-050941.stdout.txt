@@ -1,0 +1,28 @@
+1
+Hint: Try rewriting with `QuantyraNullCone.densityEqualityCoefficient.eq_def`
+error: QuantyraNullCone/DensityLPFeasible.lean:113:69: Type mismatch
+  (hBox j).left
+has type
+  1 / 2 ≤ densityCellVector (densityGridCellMean rho k) j
+but is expected to have type
+  ↑((fun x => 1 / 2) j) ≤ densityCellVector (densityGridCellMean rho k) j
+error: QuantyraNullCone/DensityLPFeasible.lean:113:91: Type mismatch
+  (hBox j).right
+has type
+  densityCellVector (densityGridCellMean rho k) j ≤ 3 / 2
+but is expected to have type
+  densityCellVector (densityGridCellMean rho k) j ≤ ↑((fun x => 3 / 2) j)
+info: QuantyraNullCone/DensityLPFeasible.lean:115:0: 'QuantyraNullCone.DensityCellFeasible.inequality_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPFeasible.lean:116:0: 'QuantyraNullCone.InDensityClass.density_LP_feasible' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityLPFeasible.lean:117:0: 'QuantyraNullCone.InDensityClass.density_LP_dual_sound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityLPFeasible
+error: build failed
+TERMINAL_EXIT=1

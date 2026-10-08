@@ -16,3 +16,5 @@ The result is restricted theoretical geometry. It establishes no new physical dy
 Current S022 acceptance adds the exact labeled/unlabeled logarithmic inverse in [ImprovedInverse.lean](QuantyraNullCone/ImprovedInverse.lean). The root audit now checks 78 exports. Earlier receipts and publication scope remain historical.
 
 S023 [proper-time acceptance](notes/proper-time-certification.md) adds actual curve/supremum comparison and both inverse-law consequences. The current root audit checks 90 exports.
+
+S024 [full density-report acceptance](notes/density-report-certification.md) connects the canonical rational LP, checked density fields and actual original-K probability under one orientation. The current root audit checks 219 exports. Its guarantee bounds accepted-output failure unconditionally; whole-Python-runtime verification and informative practical density resolution are separate claims. S025 remains uncertified.

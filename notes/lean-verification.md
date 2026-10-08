@@ -145,3 +145,9 @@ Remaining to-do list: sharp probability coverage, actual density/report guarante
 [Finite-grid certification](dkw-finite-certification.md) records exact-source GCP run `space-dkw-finite-acceptance-20261008T025036Z-645562`: 2928 root-build jobs and 125 exact-type/axiom reports, exit zero with no warnings or added axioms. Cartesian revealed-atom identities, terminal mean, a direct first-crossing Ville bound, the sharp one-sided likelihood/CDF consequence, exact bin reflection and the two-sided all-nonnegative-tolerance counting-law bound are proved. The theorem's left side is cardinal divided by q^n. Uniform continuous quantization/law and the dense-grid/actual-K transport remain unproved, so this does not complete S024.
 
 Remaining to-do list: continuous uniform and actual-K DKW/coverage transport; density/report suite; full S024 acceptance and delivery; S025.
+
+## S024 complete density-report acceptance
+
+[Integrated density-report certification](density-report-certification.md) records `space-density-report-acceptance-20261008T054425Z-0ff64c`: 2955 root jobs, 219 exact-type/axiom audits, zero warnings or added axioms. The canonical runtime LP is connected to actual original-K cell means and instantiated rational dual checks. Reported cell/point bands, histogram residual/error and conservative fallback are checked under one orientation. Actual full-report probability uses only original K, n>0 and an accepted fixed calibration-or-fallback check; no accuracy or primal-feasibility premise remains in the main theorem. Matching Lean/Python representation and adversarial fixtures are retained. This closes the earlier mathematical integration obligations and preserves the practical full-range limitation. Focused delivery/CI closeout is pending.
+
+Remaining to-do list: S024 delivery/CI closeout; S025.

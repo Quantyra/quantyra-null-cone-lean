@@ -457,3 +457,110 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
     (hp : p ∈ QuantyraNullCone.closedSquareCell ((i : ℝ) / k) ((j : ℝ) / k) (1 / k)) :
     |QuantyraNullCone.densityGridCellMean rho k i j - rho p| ≤ 2 / (k : ℝ) :=
   h.grid_cell_point_bias hk hi hj hp
+
+#check QuantyraNullCone.density_cell_flat_value
+#print axioms QuantyraNullCone.density_cell_flat_value
+
+#check QuantyraNullCone.density_row_sum
+#print axioms QuantyraNullCone.density_row_sum
+
+#check QuantyraNullCone.density_column_sum
+#print axioms QuantyraNullCone.density_column_sum
+
+#check QuantyraNullCone.density_prefix_sum
+#print axioms QuantyraNullCone.density_prefix_sum
+
+#check QuantyraNullCone.density_objective_sum
+#print axioms QuantyraNullCone.density_objective_sum
+
+#check QuantyraNullCone.check_density_LP_model_sound
+#print axioms QuantyraNullCone.check_density_LP_model_sound
+
+#check QuantyraNullCone.DensityCellFeasible.inequality_matrix
+#print axioms QuantyraNullCone.DensityCellFeasible.inequality_matrix
+
+#check QuantyraNullCone.InDensityClass.density_LP_feasible
+#print axioms QuantyraNullCone.InDensityClass.density_LP_feasible
+
+#check QuantyraNullCone.InDensityClass.density_LP_dual_sound
+#print axioms QuantyraNullCone.InDensityClass.density_LP_dual_sound
+
+#check QuantyraNullCone.InDensityClass.density_cell_dual_bounds
+#print axioms QuantyraNullCone.InDensityClass.density_cell_dual_bounds
+
+#check QuantyraNullCone.InDensityClass.density_point_dual_bounds
+#print axioms QuantyraNullCone.InDensityClass.density_point_dual_bounds
+
+#check QuantyraNullCone.density_histogram_violation_nonneg
+#print axioms QuantyraNullCone.density_histogram_violation_nonneg
+
+#check QuantyraNullCone.density_histogram_violation_corner
+#print axioms QuantyraNullCone.density_histogram_violation_corner
+
+#check QuantyraNullCone.density_histogram_corner_cast
+#print axioms QuantyraNullCone.density_histogram_corner_cast
+
+#check QuantyraNullCone.density_histogram_flat_value
+#print axioms QuantyraNullCone.density_histogram_flat_value
+
+#check QuantyraNullCone.density_histogram_box
+#print axioms QuantyraNullCone.density_histogram_box
+
+#check QuantyraNullCone.density_histogram_corners
+#print axioms QuantyraNullCone.density_histogram_corners
+
+#check QuantyraNullCone.InDensityClass.density_bands_checked
+#print axioms QuantyraNullCone.InDensityClass.density_bands_checked
+
+#check QuantyraNullCone.CDFReport.good_oriented_density
+#print axioms QuantyraNullCone.CDFReport.good_oriented_density
+
+#check QuantyraNullCone.InDensityClass.density_report_checked
+#print axioms QuantyraNullCone.InDensityClass.density_report_checked
+
+#check QuantyraNullCone.InDensityClass.density_report_radius_one
+#print axioms QuantyraNullCone.InDensityClass.density_report_radius_one
+
+#check QuantyraNullCone.density_report_coverage_measurable
+#print axioms QuantyraNullCone.density_report_coverage_measurable
+
+#check QuantyraNullCone.InDensityClass.density_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.density_report_coverage
+
+#check QuantyraNullCone.InDensityClass.density_report_fallback_probability
+#print axioms QuantyraNullCone.InDensityClass.density_report_fallback_probability
+
+#check QuantyraNullCone.InDensityClass.checked_density_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.checked_density_report_coverage
+
+#check QuantyraNullCone.density_fixture_matrix
+#print axioms QuantyraNullCone.density_fixture_matrix
+
+#check QuantyraNullCone.density_fixture_equalities
+#print axioms QuantyraNullCone.density_fixture_equalities
+
+#check QuantyraNullCone.density_fixture_right
+#print axioms QuantyraNullCone.density_fixture_right
+
+#check QuantyraNullCone.density_fixture_dimensions
+#print axioms QuantyraNullCone.density_fixture_dimensions
+
+#check QuantyraNullCone.density_fixture_residual
+#print axioms QuantyraNullCone.density_fixture_residual
+
+#check QuantyraNullCone.density_fixture_dual_bound
+#print axioms QuantyraNullCone.density_fixture_dual_bound
+
+#check QuantyraNullCone.density_fixture_checked
+#print axioms QuantyraNullCone.density_fixture_checked
+
+#check QuantyraNullCone.density_fixture_fallback_checked
+#print axioms QuantyraNullCone.density_fixture_fallback_checked
+
+example {rho : QuantyraNullCone.DiamondPoint → ℝ}
+    (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n)
+    {eM eJ bM bJ delta : ℚ}
+    (hc : QuantyraNullCone.checkSplitCalibrationOrFallback n q eM eJ bM bJ delta = true) :
+    1 - (delta : ℝ) ≤ (QuantyraNullCone.sampleMeasure rho n).real
+      (QuantyraNullCone.densityReportCoverage (n := n) rho q eM eJ) :=
+  h.checked_density_report_coverage hn hc

@@ -1,0 +1,30 @@
+5031 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/run.sh
+5033 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/logs/runner.stdout.txt
+5034 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/logs/runner.stderr.txt
+5083 lake build QuantyraNullCone.DensityReportFixtures
+5165 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/source/QuantyraNullCone/DensityLPFeasible.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/source/.lake/build/lib/lean/QuantyraNullCone/DensityLPFeasible.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/source/.lake/build/lib/lean/QuantyraNullCone/DensityLPFeasible.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/source/.lake/build/ir/QuantyraNullCone/DensityLPFeasible.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052127Z-d146e9/source/.lake/build/ir/QuantyraNullCone/DensityLPFeasible.setup.json --json
+info: QuantyraNullCone/CDFReport.lean:164:0: 'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:165:0: 'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:166:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2932/2942] Replayed QuantyraNullCone.CDFReportEncoding
+info: QuantyraNullCone/CDFReportEncoding.lean:82:0: 'QuantyraNullCone.permutation_positions_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:83:0: 'QuantyraNullCone.permutation_rank_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:84:0: 'QuantyraNullCone.CDFReport.corner_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:85:0: 'QuantyraNullCone.CDFReport.corner_CDF_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2933/2942] Replayed QuantyraNullCone.CDFReportCalibration
+info: QuantyraNullCone/CDFReportCalibration.lean:64:0: 'QuantyraNullCone.report_radius_fallback' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:65:0: 'QuantyraNullCone.CDFReport.checked_fallback_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:66:0: 'QuantyraNullCone.InDensityClass.cdf_report_fallback_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:67:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2935/2942] Built QuantyraNullCone.DensityLPIndex (3.3s)
+info: QuantyraNullCone/DensityLPIndex.lean:85:0: 'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:86:0: 'QuantyraNullCone.density_row_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:87:0: 'QuantyraNullCone.density_column_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:88:0: 'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:89:0: 'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2936/2942] Built QuantyraNullCone.DensityLPModel (5.1s)
+info: QuantyraNullCone/DensityLPModel.lean:109:0: 'QuantyraNullCone.check_density_LP_model_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

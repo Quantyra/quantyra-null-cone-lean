@@ -1,0 +1,28 @@
+1
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, o̵n̵e̵_̵m̵u̵l̵,̵ ̵zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/DensityLPIndex.lean:70:100: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [densityPrefixCoefficient, Rat.cast_ite, Rat.cast_one, Rat.cast_zero, ite_mul, one_mul,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/DensityLPIndex.lean:78:67: unsolved goals
+k : ℕ
+x : Fin (k * k) → ℝ
+target : Fin (k * k)
+⊢ ∑ x_1, ↑(if x_1 = target then 1 else 0) * x x_1 = x target
+info: QuantyraNullCone/DensityLPIndex.lean:81:0: 'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:82:0: 'QuantyraNullCone.density_row_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:83:0: 'QuantyraNullCone.density_column_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:84:0: 'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:85:0: 'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityLPIndex
+error: build failed
+TERMINAL_EXIT=1

@@ -1,0 +1,32 @@
+# Executable density certificates and full-report coverage
+
+S024 integration, 2026-10-07 local date (2026-10-08 UTC). Final exact-source GCP acceptance passed; focused delivery and supplementary CI are pending. This campaign connects the previously accepted actual cell restrictions to the executable rational LP and full density-report probability. It preserves the original density class, observed directed order and split-DKW calibration.
+
+`DensityLPIndex.lean` connects the row-major rational representation to actual real cell means through `finProdFinEquiv`, exact finite sum identities and row/column/prefix indicators. `DensityLPModel.lean` defines the runtime row enumeration: row equalities then column equalities; each ascending corner prefix followed by its negative; each valid horizontal neighbor then vertical neighbor, each followed by its negative. Integer counts include grid ties. An exact model checker rejects any supplied coefficient or right side that differs from this canonical model; dimensions are enforced by finite types.
+
+`DensityLPFeasible.lean` proves every canonical matrix restriction for the actual original-K cell means from CDF quality. The actual primal vector, its boxes, uniform row/column sums, adjacency restrictions and prefixes are derived. `density_LP_dual_sound` then instantiates the rational weak-duality theorem with that vector. It includes exact box corrections for arbitrary nonzero residuals; no stationarity, optimality or solver success is required.
+
+`DensityLPBands.lean` uses the positive and negative coordinate objectives to obtain the reported clipped cell bounds. Expansion by 2/k and clipping to [1/2,3/2] give bounds for every point of each closed cell, including corners and boundaries.
+
+`DensityReportData.lean` defines typed rational report fields and a finite maximum of exact histogram corner excesses, including zero. Its cast and count identities connect the executable finite sums to the mathematical histogram CDF. The checker enforces coefficient boxes, the exact excess and either checked dual-derived bounds or the conservative fallback. Fallback requires all four cell/point arrays to retain [1/2,3/2] and histogram error one. Certified histogram error is exactly `min(1,8*a*k^2+4*eta*k^2+2/k)`; rounded histogram coefficients need not satisfy uniform margins or primal feasibility.
+
+`DensityReportBands.lean` proves all accepted fields on the CDF-quality event. `DensityReportCoverage.lean` converts the CDF orientation to either rho or its transpose and uses that same density for every reported field. One orientation applies simultaneously to the CDF, every cell interval, every point interval and histogram error.
+
+The main export, `InDensityClass.checked_density_report_coverage`, requires only original-K membership, n>0 and an accepted fixed split-calibration-or-fallback check. It concludes actual iid sample probability at least 1-delta for the event that **every accepted decoded report on that observed order is correct**. It assumes neither CDF accuracy nor primal feasibility. Solver choices, cutoff, estimator grid and certificates may depend on the observed order. Calibration q, tolerances and probability budgets are fixed before sampling. The success event is measurable through the finite observed order code even though it quantifies over all reports and all real points. The radius-one calibration fallback has probability one.
+
+This is an unconditional bound on accepted-output failure. It does not give coverage conditional on acceptance, certify a data-selected calibration budget, prove whole-Python-runtime correctness or make full-range density bands informative. The negative practical-density result remains unchanged. Manuscript 0.3.1 and its frozen DOI payload are preserved; the enlarged formal software scope postdates that PDF. The genuine 2+1 counterexample remains S025.
+
+`DensityReportFixtures.lean` and the matching Python test retain all 26 inequalities and four equalities at k=2, exact right sides, a nonzero residual `[5/3,-2/15,0,1/5]` and dual bound -11/15, positive-multiplier rejection, altered matrix/right-side rejection, certified fields, full-report fallback and altered fallback field rejection. The local Python suite passed 17 tests; its source hashes are retained in [supplementary evidence](../evidence/finite-data/density-report-supplementary.json). Local Lean invocations: zero.
+
+Authoritative acceptance: `space-density-report-acceptance-20261008T054425Z-0ff64c`, project `quantyra-lean-cert-20260915`, instance `quantyra-lean-builder-01`, zone `us-central1-a`. The root build passed 2955 jobs; all 219 exact-type/axiom reports passed with zero warnings or added axioms. Lean 4.30.0 and all nine dependency pins are unchanged. The [receipt](../evidence/gcp/space-density-report-acceptance-20261008T054425Z-0ff64c/receipt.json), source/dependency identities before and after verification, raw logs and [development ledger](../evidence/gcp/density-report-development-index.json) retain 13 immutable captures: 11 failed attempts, one successful warning-bearing fixture build and final clean acceptance. No remote job was restarted on an observation timeout.
+
+| S024 requirement | Accepted evidence |
+| --- | --- |
+| Original-graph forcing and one global rank budget | Earlier finite forcing/position acceptance, imported and reaudited |
+| Sharp DKW, actual-K probability and exact split rounding | Earlier analytic, finite counting, continuous transport and CDF report acceptance, imported and reaudited |
+| Actual cell restrictions, dual residuals, all-point expansion and histogram/fallback | Actual density foundations plus `density_LP_feasible`, `density_LP_dual_sound`, `density_bands_checked` |
+| Executable representation and checker boundary | Canonical runtime matrices/counts/flattening, checked rational fields and matching Lean/Python fixtures; no whole-program claim |
+| Complete statistical integration | `checked_density_report_coverage`, the no-accuracy/no-feasibility-premise example in `checks/Audit.lean`, fixed-calibration/fallback branches |
+| Final verification and honest practical scope | Fresh root/type/axiom receipt, preserved full-range density limitation; delivery/CI closeout pending |
+
+Remaining to-do list: focused S024 delivery and supplementary CI closeout; S025.

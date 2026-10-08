@@ -1,0 +1,71 @@
+{
+  "runs": [
+    {
+      "run": "space-density-lp-bands-20261008T050254Z-2fb012",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-lp-bands-20261008T050600Z-87a35d",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-lp-feasible-20261008T045817Z-794fcd",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-lp-index-20261008T045152Z-791fb6",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-20261008T051648Z-b63654",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-acceptance-20261008T054425Z-0ff64c",
+      "kind": "density-report-acceptance",
+      "exit": 0
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T051945Z-cea826",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T052127Z-d146e9",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T052303Z-149fcd",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T052859Z-71c128",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T053334Z-20ab65",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T053609Z-3c429b",
+      "kind": "development",
+      "exit": 1
+    },
+    {
+      "run": "space-density-report-fixtures-20261008T054128Z-f6d5b4",
+      "kind": "development",
+      "exit": 0
+    }
+  ],
+  "local_lean_invocations": 0,
+  "scope": "S024 full density-report matrix, dual, band/fallback and actual probability integration"
+}

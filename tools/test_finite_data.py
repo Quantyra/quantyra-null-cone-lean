@@ -43,6 +43,38 @@ def brute_realizers(rows):
 
 
 class CDFEncodingTests(unittest.TestCase):
+    def test_lean_density_matrix_residual_and_band_fixtures(self):
+        # Literal expectations match DensityReportFixtures.lean, including row order.
+        counts = corner_counts([0, 1, 2], [0, 1, 2], 2)
+        self.assertEqual(counts, [[0, 0, 0], [0, 1, 1], [0, 1, 3]])
+        lp = model(counts, 3, F(1, 10))
+        expected_a = [
+            [0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0], [0,0,0,0],
+            [0,0,0,0], [0,0,0,0], [1,0,0,0], [-1,0,0,0], [1,1,0,0], [-1,-1,0,0],
+            [0,0,0,0], [0,0,0,0], [1,0,1,0], [-1,0,-1,0], [1,1,1,1], [-1,-1,-1,-1],
+            [1,0,-1,0], [-1,0,1,0], [1,-1,0,0], [-1,1,0,0],
+            [0,1,0,-1], [0,-1,0,1], [0,0,1,-1], [0,0,-1,1]]
+        expected_b = ([F(2, 5)]*8 + [F(26, 15), F(-14, 15)]*2 + [F(2, 5)]*2 +
+                      [F(26, 15), F(-14, 15), F(22, 5), F(-18, 5)] + [F(1)]*8)
+        self.assertEqual(lp['A'], expected_a)
+        self.assertEqual(lp['b'], expected_b)
+        self.assertEqual(lp['E'], [[1,1,0,0], [0,0,1,1], [1,0,1,0], [0,1,0,1]])
+        self.assertEqual(lp['d'], [F(2)]*4)
+        y, z, c = [F(0)]*26, [F(1, 3), 0, 0, F(-1, 5)], [1, 0, 0, 0]
+        y[8] = F(-1)
+        residual = [F(c[j])-sum(row[j]*v for row, v in zip(lp['A'], y))-
+                    sum(row[j]*v for row, v in zip(lp['E'], z)) for j in range(4)]
+        self.assertEqual(residual, [F(5, 3), F(-2, 15), 0, F(1, 5)])
+        self.assertEqual(dual_lower_bound(lp, c, y, z), F(-11, 15))
+        # All corner excesses are checked, including zero/full prefixes.
+        excess = max([F(0)] + [abs(F(p*q, 4)-F(counts[p][q], 3))-F(1, 10)
+                              for p in range(3) for q in range(3)])
+        self.assertEqual(excess, F(1, 15))
+        self.assertEqual(min(F(1), 8*F(1, 10)*4+4*excess*4+F(2, 2)), 1)
+        y[8] = F(1)
+        with self.assertRaises(ValueError):
+            dual_lower_bound(lp, c, y, z)
+
     def test_lean_permutation_and_inclusive_corner_fixtures(self):
         # Matches CDFReportFixtures.lean; vertex 2 is at zero-based position 0.
         self.assertEqual([value-1 for value in ranks([2, 0, 1])], [1, 2, 0])

@@ -1,0 +1,28 @@
+1
+⊢ (∀ (cell : Fin (densityFixtureFallbackReport.grid * densityFixtureFallbackReport.grid)),
+      1 / 2 ≤ densityFixtureFallbackReport.bands.histogram cell ∧
+        densityFixtureFallbackReport.bands.histogram cell ≤ 3 / 2) ∧
+    densityFixtureFallbackReport.bands.cornerExcess =
+        densityHistogramViolationQ densityFixtureFallbackCDF densityFixtureFallbackReport.bands.histogram ∧
+      (densityFixtureFallbackReport.bands.fallback = true ∧
+          (∀ (cell : Fin (densityFixtureFallbackReport.grid * densityFixtureFallbackReport.grid)),
+              densityFixtureFallbackReport.bands.cellLower cell = 1 / 2 ∧
+                densityFixtureFallbackReport.bands.cellUpper cell = 3 / 2 ∧
+                  densityFixtureFallbackReport.bands.pointLower cell = 1 / 2 ∧
+                    densityFixtureFallbackReport.bands.pointUpper cell = 3 / 2) ∧
+            densityFixtureFallbackReport.bands.histogramError = 1 ∨
+        densityFixtureFallbackReport.bands.fallback = false ∧
+          DensityBandsCertifiedFields densityFixtureFallbackCDF densityFixtureFallbackReport.bands)
+info: QuantyraNullCone/DensityReportFixtures.lean:161:0: 'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:162:0: 'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:163:0: 'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:164:0: 'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:165:0: 'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:166:0: 'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:167:0: 'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:168:0: 'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityReportFixtures
+error: build failed
+TERMINAL_EXIT=1

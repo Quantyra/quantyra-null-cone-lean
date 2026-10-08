@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/DensityReportBands.lean:23:6: mod_cast has type
+  (1 : ℚ) / 2 ≤ H (densityCellFlat (⟨i, hi⟩, ⟨j, hj⟩))
+but is expected to have type
+  (1 : ℝ) / 2 ≤ ↑(H (densityCellFlat (⟨i, hi⟩, ⟨j, hj⟩)))
+error: QuantyraNullCone/DensityReportBands.lean:24:6: mod_cast has type
+  H (densityCellFlat (⟨i, hi⟩, ⟨j, hj⟩)) ≤ 3 / 2
+but is expected to have type
+  ↑(H (densityCellFlat (⟨i, hi⟩, ⟨j, hj⟩))) ≤ 3 / 2
+error: QuantyraNullCone/DensityReportBands.lean:72:8: mod_cast has type
+  (1 : ℚ) / 2 ≤ B.histogram cell
+but is expected to have type
+  (1 : ℝ) / 2 ≤ ↑(B.histogram cell)
+error: QuantyraNullCone/DensityReportBands.lean:73:8: mod_cast has type
+  B.histogram cell ≤ 3 / 2
+but is expected to have type
+  ↑(B.histogram cell) ≤ 3 / 2
+info: QuantyraNullCone/DensityReportBands.lean:95:0: 'QuantyraNullCone.density_histogram_box' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportBands.lean:96:0: 'QuantyraNullCone.density_histogram_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportBands.lean:97:0: 'QuantyraNullCone.InDensityClass.density_bands_checked' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityReportBands
+error: build failed
+TERMINAL_EXIT=1

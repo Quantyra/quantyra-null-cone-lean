@@ -30,6 +30,7 @@ import QuantyraNullCone.DKWFiniteTail
 import QuantyraNullCone.SplitCalibration
 import QuantyraNullCone.CDFReportFixtures
 import QuantyraNullCone.DensityFeasibility
+import QuantyraNullCone.DensityReportFixtures
 
 /-!
 Quantyra finite-order reconstruction.
@@ -53,5 +54,6 @@ rational split-calibration checker soundness are proved. The order-only CDF
 report checker, integer corner/permutation encoding, measurable coverage and
 deterministic radius-one fallback are proved. Actual cell mean restrictions,
 all-point expansion and conditional rounded-histogram error are proved. The
-executable LP matrix and full density report probability bridges remain open.
+executable LP matrix, rational density report checker and actual full-report
+probability guarantee are connected under one shared density orientation.
 -/

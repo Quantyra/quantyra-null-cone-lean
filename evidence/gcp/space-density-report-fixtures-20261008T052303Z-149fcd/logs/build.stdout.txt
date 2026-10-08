@@ -1,0 +1,521 @@
+ℹ [2574/2627] Replayed QuantyraNullCone.Measures
+info: QuantyraNullCone/Measures.lean:62:0: 'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Measures.lean:63:0: 'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2575/2627] Replayed QuantyraNullCone.DensityCDF
+info: QuantyraNullCone/DensityCDF.lean:246:0: 'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:247:0: 'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCDF.lean:248:0: 'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2576/2627] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2682/2705] Replayed QuantyraNullCone.DensityCells
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2683/2705] Replayed QuantyraNullCone.DensityCellBias
+info: QuantyraNullCone/DensityCellBias.lean:138:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:139:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:140:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:141:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2684/2705] Replayed QuantyraNullCone.Transpose
+info: QuantyraNullCone/Transpose.lean:79:0: 'QuantyraNullCone.InDensityClass.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:80:0: 'QuantyraNullCone.diamondVolume_transpose_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:81:0: 'QuantyraNullCone.densityMeasure_transpose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:82:0: 'QuantyraNullCone.populationCDF_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Transpose.lean:83:0: 'QuantyraNullCone.coefficientDeviation_transpose_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2685/2705] Replayed QuantyraNullCone.DensityCellTranslations
+info: QuantyraNullCone/DensityCellTranslations.lean:79:0: 'QuantyraNullCone.InDensityClass.cell_mean_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:80:0: 'QuantyraNullCone.InDensityClass.cell_mean_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellTranslations.lean:81:0: 'QuantyraNullCone.InDensityClass.cell_mean_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2686/2705] Replayed QuantyraNullCone.DensityCellGrid
+info: QuantyraNullCone/DensityCellGrid.lean:92:0: 'QuantyraNullCone.InDensityClass.grid_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:93:0: 'QuantyraNullCone.sum_rectangle_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellGrid.lean:94:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2687/2705] Replayed QuantyraNullCone.DensityCellRestrictions
+info: QuantyraNullCone/DensityCellRestrictions.lean:99:0: 'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:100:0: 'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:101:0: 'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:102:0: 'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:103:0: 'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellRestrictions.lean:104:0: 'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2688/2705] Replayed QuantyraNullCone.DensityHistogram
+info: QuantyraNullCone/DensityHistogram.lean:80:0: 'QuantyraNullCone.histogram_cell_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:81:0: 'QuantyraNullCone.InDensityClass.histogram_cell_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityHistogram.lean:82:0: 'QuantyraNullCone.InDensityClass.histogram_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2689/2705] Replayed QuantyraNullCone.DensityFeasibility
+info: QuantyraNullCone/DensityFeasibility.lean:38:0: 'QuantyraNullCone.InDensityClass.grid_cell_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2690/2705] Replayed QuantyraNullCone.FiniteLP
+info: QuantyraNullCone/FiniteLP.lean:112:0: 'QuantyraNullCone.residual_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:113:0: 'QuantyraNullCone.finite_lp_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteLP.lean:114:0: 'QuantyraNullCone.rationalDual_checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2691/2705] Replayed QuantyraNullCone.DKWBarrier
+info: QuantyraNullCone/DKWBarrier.lean:119:0: 'QuantyraNullCone.dkw_stationarity_center_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:120:0: 'QuantyraNullCone.dkw_stationarity_half_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:121:0: 'QuantyraNullCone.dkw_barrier_endpoint_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBarrier.lean:122:0: 'QuantyraNullCone.dkw_barrier_endpoint_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2692/2705] Replayed QuantyraNullCone.DKWRoots
+info: QuantyraNullCone/DKWRoots.lean:113:0: 'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2693/2705] Replayed QuantyraNullCone.DKWPinsker
+info: QuantyraNullCone/DKWPinsker.lean:83:0: 'QuantyraNullCone.dkw_bernoulli_adjusted_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:84:0: 'QuantyraNullCone.dkw_bernoulli_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWPinsker.lean:85:0: 'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2695/2705] Replayed QuantyraNullCone.DKWDifferential
+info: QuantyraNullCone/DKWDifferential.lean:85:0: 'QuantyraNullCone.dkw_likelihood_log_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:86:0: 'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:87:0: 'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWDifferential.lean:88:0: 'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2696/2705] Replayed QuantyraNullCone.Realizer
+info: QuantyraNullCone/Realizer.lean:130:0: 'QuantyraNullCone.Realizer.five_edge_forcing' does not depend on any axioms
+info: QuantyraNullCone/Realizer.lean:131:0: 'QuantyraNullCone.Realizer.global_orientation' does not depend on any axioms
+ℹ [2697/2705] Replayed QuantyraNullCone.Grid
+info: QuantyraNullCone/Grid.lean:119:0: 'QuantyraNullCone.occupied_grid_global_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2699/2759] Replayed QuantyraNullCone.DKWLikelihood
+info: QuantyraNullCone/DKWLikelihood.lean:69:0: 'QuantyraNullCone.dkw_likelihood_derivative_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWLikelihood.lean:70:0: 'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2700/2759] Replayed QuantyraNullCone.DKWBins
+info: QuantyraNullCone/DKWBins.lean:167:0: 'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWBins.lean:168:0: 'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2701/2759] Replayed QuantyraNullCone.DKWMaximal
+info: QuantyraNullCone/DKWMaximal.lean:183:0: 'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2702/2759] Replayed QuantyraNullCone.DKWFiniteCDF
+info: QuantyraNullCone/DKWFiniteCDF.lean:118:0: 'QuantyraNullCone.finite_bin_deviation_likelihood' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteCDF.lean:119:0: 'QuantyraNullCone.finite_bin_upper_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2703/2759] Replayed QuantyraNullCone.DKWFiniteTail
+info: QuantyraNullCone/DKWFiniteTail.lean:156:0: 'QuantyraNullCone.finite_bin_reflect_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWFiniteTail.lean:157:0: 'QuantyraNullCone.finite_bin_two_sided_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2704/2759] Replayed QuantyraNullCone.Counts
+info: QuantyraNullCone/Counts.lean:62:0: 'QuantyraNullCone.abs_rank_sub_le_disagreements' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2705/2759] Replayed QuantyraNullCone.Bridges
+info: QuantyraNullCone/Bridges.lean:233:0: 'QuantyraNullCone.verticalStrip_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:234:0: 'QuantyraNullCone.comparisons_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:235:0: 'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Bridges.lean:236:0: 'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2706/2759] Replayed QuantyraNullCone.Cumulative
+info: QuantyraNullCone/Cumulative.lean:222:0: 'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Cumulative.lean:223:0: 'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2707/2759] Replayed QuantyraNullCone.GridAccuracy
+info: QuantyraNullCone/GridAccuracy.lean:324:0: 'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:325:0: 'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:326:0: 'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GridAccuracy.lean:327:0: 'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2709/2759] Replayed QuantyraNullCone.DKWQuantization
+info: QuantyraNullCone/DKWQuantization.lean:154:0: 'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2711/2759] Replayed QuantyraNullCone.DKWUniformGrid
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2712/2759] Replayed QuantyraNullCone.DKWUniform
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2713/2759] Replayed QuantyraNullCone.Sampling
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2730/2759] Replayed QuantyraNullCone.Coordinates
+info: QuantyraNullCone/Coordinates.lean:90:0: 'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:91:0: 'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Coordinates.lean:92:0: 'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2731/2759] Replayed QuantyraNullCone.DKWClass
+info: QuantyraNullCone/DKWClass.lean:73:0: 'QuantyraNullCone.InDensityClass.coordinate_sample_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:74:0: 'QuantyraNullCone.InDensityClass.fst_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:75:0: 'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWClass.lean:76:0: 'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2920/2942] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2921/2942] Replayed QuantyraNullCone.SplitProbability
+info: QuantyraNullCone/SplitProbability.lean:95:0: 'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:96:0: 'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitProbability.lean:97:0: 'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2922/2942] Replayed QuantyraNullCone.FiniteCalibration
+info: QuantyraNullCone/FiniteCalibration.lean:84:0: 'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:85:0: 'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:86:0: 'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:87:0: 'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCalibration.lean:88:0: 'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2923/2942] Replayed QuantyraNullCone.SplitCalibration
+info: QuantyraNullCone/SplitCalibration.lean:114:0: 'QuantyraNullCone.split_exponential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:115:0: 'QuantyraNullCone.InDensityClass.checked_split_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:116:0: 'QuantyraNullCone.InDensityClass.checked_split_accuracy_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:117:0: 'QuantyraNullCone.InDensityClass.split_rounded_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCalibration.lean:118:0: 'QuantyraNullCone.checked_split_rounded_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2924/2942] Replayed QuantyraNullCone.FiniteForcing
+info: QuantyraNullCone/FiniteForcing.lean:111:0: 'QuantyraNullCone.Realizer.originalForceStep_sound' does not depend on any axioms
+info: QuantyraNullCone/FiniteForcing.lean:112:0: 'QuantyraNullCone.Realizer.checkForcingTrace_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:206:0: 'QuantyraNullCone.Realizer.forcing_trace_global_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteForcing.lean:323:0: 'QuantyraNullCone.Realizer.checked_forcing_rank_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2925/2942] Replayed QuantyraNullCone.GoodSamples
+info: QuantyraNullCone/GoodSamples.lean:88:0: 'QuantyraNullCone.InDensityClass.sample_good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/GoodSamples.lean:89:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability_grid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2926/2942] Replayed QuantyraNullCone.ProbabilityRate
+info: QuantyraNullCone/ProbabilityRate.lean:142:0: 'QuantyraNullCone.grid_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:143:0: 'QuantyraNullCone.fourth_root_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProbabilityRate.lean:144:0: 'QuantyraNullCone.InDensityClass.reconstruction_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2927/2942] Replayed QuantyraNullCone.OrderSelector
+info: QuantyraNullCone/OrderSelector.lean:100:0: 'QuantyraNullCone.chronological_realizer_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:101:0: 'QuantyraNullCone.selectedCDF_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OrderSelector.lean:102:0: 'QuantyraNullCone.InDensityClass.orderCDFGood_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2928/2942] Replayed QuantyraNullCone.FiniteCDF
+info: QuantyraNullCone/FiniteCDF.lean:79:0: 'QuantyraNullCone.finite_grid_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:80:0: 'QuantyraNullCone.normalized_rank_coordinate_error_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FiniteCDF.lean:152:0: 'QuantyraNullCone.checked_trimmed_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2929/2942] Replayed QuantyraNullCone.FinitePositions
+info: QuantyraNullCone/FinitePositions.lean:61:0: 'QuantyraNullCone.rank_position_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/FinitePositions.lean:62:0: 'QuantyraNullCone.checkedPositionRealizer_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2930/2942] Replayed QuantyraNullCone.SplitCDF
+info: QuantyraNullCone/SplitCDF.lean:109:0: 'QuantyraNullCone.empirical_CDF_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCDF.lean:110:0: 'QuantyraNullCone.InDensityClass.CDF_radius_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SplitCDF.lean:111:0: 'QuantyraNullCone.InDensityClass.split_checked_sample_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2931/2942] Replayed QuantyraNullCone.CDFReport
+info: QuantyraNullCone/CDFReport.lean:161:0: 'QuantyraNullCone.CDFReport.checked_rankCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:162:0: 'QuantyraNullCone.CDFReport.radius_one_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:163:0: 'QuantyraNullCone.CDFReport.checked_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:164:0: 'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:165:0: 'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReport.lean:166:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2932/2942] Replayed QuantyraNullCone.CDFReportEncoding
+info: QuantyraNullCone/CDFReportEncoding.lean:82:0: 'QuantyraNullCone.permutation_positions_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:83:0: 'QuantyraNullCone.permutation_rank_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:84:0: 'QuantyraNullCone.CDFReport.corner_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportEncoding.lean:85:0: 'QuantyraNullCone.CDFReport.corner_CDF_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2933/2942] Replayed QuantyraNullCone.CDFReportCalibration
+info: QuantyraNullCone/CDFReportCalibration.lean:64:0: 'QuantyraNullCone.report_radius_fallback' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:65:0: 'QuantyraNullCone.CDFReport.checked_fallback_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:66:0: 'QuantyraNullCone.InDensityClass.cdf_report_fallback_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/CDFReportCalibration.lean:67:0: 'QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2935/2942] Built QuantyraNullCone.DensityLPIndex (10s)
+info: QuantyraNullCone/DensityLPIndex.lean:85:0: 'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:86:0: 'QuantyraNullCone.density_row_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:87:0: 'QuantyraNullCone.density_column_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:88:0: 'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPIndex.lean:89:0: 'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2936/2942] Built QuantyraNullCone.DensityLPModel (15s)
+info: QuantyraNullCone/DensityLPModel.lean:109:0: 'QuantyraNullCone.check_density_LP_model_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2937/2942] Built QuantyraNullCone.DensityLPFeasible (9.0s)
+info: QuantyraNullCone/DensityLPFeasible.lean:118:0: 'QuantyraNullCone.DensityCellFeasible.inequality_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPFeasible.lean:119:0: 'QuantyraNullCone.InDensityClass.density_LP_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPFeasible.lean:120:0: 'QuantyraNullCone.InDensityClass.density_LP_dual_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2938/2942] Built QuantyraNullCone.DensityLPBands (11s)
+info: QuantyraNullCone/DensityLPBands.lean:80:0: 'QuantyraNullCone.InDensityClass.density_cell_dual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityLPBands.lean:81:0: 'QuantyraNullCone.InDensityClass.density_point_dual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2939/2942] Built QuantyraNullCone.DensityReportData (8.6s)
+info: QuantyraNullCone/DensityReportData.lean:101:0: 'QuantyraNullCone.density_histogram_violation_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportData.lean:102:0: 'QuantyraNullCone.density_histogram_violation_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportData.lean:103:0: 'QuantyraNullCone.density_histogram_corner_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportData.lean:104:0: 'QuantyraNullCone.density_histogram_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2940/2942] Built QuantyraNullCone.DensityReportBands (9.3s)
+info: QuantyraNullCone/DensityReportBands.lean:95:0: 'QuantyraNullCone.density_histogram_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportBands.lean:96:0: 'QuantyraNullCone.density_histogram_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportBands.lean:97:0: 'QuantyraNullCone.InDensityClass.density_bands_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2941/2942] Built QuantyraNullCone.DensityReportCoverage (6.2s)
+info: QuantyraNullCone/DensityReportCoverage.lean:118:0: 'QuantyraNullCone.CDFReport.good_oriented_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:119:0: 'QuantyraNullCone.InDensityClass.density_report_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:120:0: 'QuantyraNullCone.InDensityClass.density_report_radius_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:121:0: 'QuantyraNullCone.density_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:122:0: 'QuantyraNullCone.InDensityClass.density_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:123:0: 'QuantyraNullCone.InDensityClass.density_report_fallback_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityReportCoverage.lean:124:0: 'QuantyraNullCone.InDensityClass.checked_density_report_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✖ [2942/2942] Building QuantyraNullCone.DensityReportFixtures (7.2s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/QuantyraNullCone/DensityReportFixtures.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/.lake/build/lib/lean/QuantyraNullCone/DensityReportFixtures.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/.lake/build/lib/lean/QuantyraNullCone/DensityReportFixtures.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/.lake/build/ir/QuantyraNullCone/DensityReportFixtures.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-density-report-fixtures-20261008T052303Z-149fcd/source/.lake/build/ir/QuantyraNullCone/DensityReportFixtures.setup.json --json
+error: QuantyraNullCone/DensityReportFixtures.lean:22:77: Tactic `decide` failed for proposition
+  (List.ofFn fun i => List.ofFn (densityLP_A 2 i)) = densityFixtureA
+because its `Decidable` instance
+  instDecidableEqList (List.ofFn fun i => List.ofFn (densityLP_A 2 i)) densityFixtureA
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableEqRat`, `Bool.decEq`, `Int.decEq`, `Int.instDecidableEq`, `List.hasDecEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((densityCellObjective (densityCellFlat (densityNeighborStart ⟨↑((fun i => i) ⟨0, ⋯⟩), ⋯⟩, (fun i => i) ⟨0, ⋯⟩))
+            ⟨0, ⋯⟩).sub
+        (densityCellObjective (densityCellFlat (densityNeighborEnd ⟨↑((fun i => i) ⟨0, ⋯⟩), ⋯⟩, (fun i => i) ⟨0, ⋯⟩))
+          ⟨0, ⋯⟩)).num,
+    ↑1 with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:27:100: Tactic `decide` failed for proposition
+  List.ofFn (densityLP_b densityFixtureCDF 2) = densityFixtureB
+because its `Decidable` instance
+  instDecidableEqList (List.ofFn (densityLP_b densityFixtureCDF 2)) densityFixtureB
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqRat`, `Bool.decEq`, `Int.decEq`, `Int.instDecidableEq`, `Nat.decLe`, `Nat.decLt`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((↑2 ^ 2).mul
+        (↑(reportLPCounts densityFixtureCDF 2 ((fun i => i) ⟨0, ⋯⟩) ((fun i => i) ⟨0, ⋯⟩)) / ↑3 +
+          densityFixtureCDF.radius)).num,
+    (Rat.mul 2 (Rat.inv 5)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:38:106: Tactic `decide` failed for proposition
+  List.ofFn
+      (rationalResidual (densityLP_A 2) (densityLP_E 2) (densityCellObjective 0) densityFixtureY densityFixtureZ) =
+    [5 / 3, -2 / 15, 0, 1 / 5]
+because its `Decidable` instance
+  instDecidableEqList
+    (List.ofFn
+      (rationalResidual (densityLP_A 2) (densityLP_E 2) (densityCellObjective 0) densityFixtureY densityFixtureZ))
+    [5 / 3, -2 / 15, 0, 1 / 5]
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableEqList`, `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((densityCellObjective 0 ⟨0, ⋯⟩ - ∑ i, densityLP_A 2 i ⟨0, ⋯⟩ * densityFixtureY i).sub
+        (∑ i, densityLP_E 2 i ⟨0, ⋯⟩ * densityFixtureZ i)).num,
+    (Rat.mul 5 (Rat.inv 3)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:42:53: Tactic `decide` failed for proposition
+  densityLPDualLower densityFixtureCDF 2 (densityCellObjective 0) densityFixtureY densityFixtureZ = -11 / 15
+because its `Decidable` instance
+  instDecidableEqRat (densityLPDualLower densityFixtureCDF 2 (densityCellObjective 0) densityFixtureY densityFixtureZ)
+    (-11 / 15)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableEqRat`, `Int.decEq`, `Int.instDecidableEq`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((∑ i, densityLP_b densityFixtureCDF 2 i * densityFixtureY i + ∑ i, densityLP_d 2 i * densityFixtureZ i).add
+        (∑ j,
+          min
+            (rationalResidual (densityLP_A 2) (densityLP_E 2) (densityCellObjective 0) densityFixtureY densityFixtureZ
+                j *
+              (fun x => 1 / 2) j)
+            (rationalResidual (densityLP_A 2) (densityLP_E 2) (densityCellObjective 0) densityFixtureY densityFixtureZ
+                j *
+              (fun x => 3 / 2) j))).num,
+    ((-11).mul (Rat.inv 15)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:51:105: Tactic `decide` failed for proposition
+  checkDensityLPModel densityFixtureCDF 2 (densityLP_A 2) (densityLP_E 2)
+      (fun i => if ↑i = 18 then 0 else densityLP_b densityFixtureCDF 2 i) (densityLP_d 2) =
+    false
+because its `Decidable` instance
+  instDecidableEqBool
+    (checkDensityLPModel densityFixtureCDF 2 (densityLP_A 2) (densityLP_E 2)
+      (fun i => if ↑i = 18 then 0 else densityLP_b densityFixtureCDF 2 i) (densityLP_d 2))
+    false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqRat`, `Bool.decEq`, `Int.decEq`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityLPModel densityFixtureCDF 2 (densityLP_A 2) (densityLP_E 2)
+      (fun i => if ↑i = 18 then 0 else densityLP_b densityFixtureCDF 2 i) (densityLP_d 2),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:66:103: Tactic `decide` failed for proposition
+  checkDensityBands densityFixtureCDF densityFixtureBands = true
+because its `Decidable` instance
+  instDecidableEqBool (checkDensityBands densityFixtureCDF densityFixtureBands) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match checkDensityBands densityFixtureCDF densityFixtureBands, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:75:87: Tactic `decide` failed for proposition
+  checkDensityReport cdfFixtureChain densityFixtureFallbackReport 1 0 0 = true
+because its `Decidable` instance
+  instDecidableEqBool (checkDensityReport cdfFixtureChain densityFixtureFallbackReport 1 0 0) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqFin`, `instDecidableEqNat`, `instDecidableNot`, `Bool.decEq`, `Fin.decLt`, `Fintype.decidableInjectiveFintype`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `List.decidableBAll`, `List.instDecidablePairwise`, `List.nodupDecidable`, `Multiset.nodupDecidable`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match checkDensityReport cdfFixtureChain densityFixtureFallbackReport 1 0 0, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:78:79: Tactic `decide` failed for proposition
+  checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := fun x => 3 / 4, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }) =
+    false
+because its `Decidable` instance
+  instDecidableEqBool
+    (checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := fun x => 3 / 4, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }))
+    false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := fun x => 3 / 4, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:80:77: Tactic `decide` failed for proposition
+  checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := fun x => 2, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }) =
+    false
+because its `Decidable` instance
+  instDecidableEqBool
+    (checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := fun x => 2, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }))
+    false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := fun x => 2, cornerExcess := __src.cornerExcess,
+        histogramError := __src.histogramError, fallback := __src.fallback }),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:82:74: Tactic `decide` failed for proposition
+  checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := 1 / 10,
+        histogramError := __src.histogramError, fallback := __src.fallback }) =
+    false
+because its `Decidable` instance
+  instDecidableEqBool
+    (checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := 1 / 10,
+        histogramError := __src.histogramError, fallback := __src.fallback }))
+    false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := 1 / 10,
+        histogramError := __src.histogramError, fallback := __src.fallback }),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+error: QuantyraNullCone/DensityReportFixtures.lean:84:73: Tactic `decide` failed for proposition
+  checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := 0, fallback := __src.fallback }) =
+    false
+because its `Decidable` instance
+  instDecidableEqBool
+    (checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := 0, fallback := __src.fallback }))
+    false
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Int.decEq`, `Int.decLe`, `Int.decLt`, `Int.decNonneg`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, and `Rat.instDecidableLe`, reduction got stuck at the `Decidable` instance
+  match
+    checkDensityBands densityFixtureFallbackCDF
+      (let __src := densityFixtureFallbackBands;
+      { dual := __src.dual, cellLower := __src.cellLower, cellUpper := __src.cellUpper, pointLower := __src.pointLower,
+        pointUpper := __src.pointUpper, histogram := __src.histogram, cornerExcess := __src.cornerExcess,
+        histogramError := 0, fallback := __src.fallback }),
+    false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+info: QuantyraNullCone/DensityReportFixtures.lean:86:0: 'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:87:0: 'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:88:0: 'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:89:0: 'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:90:0: 'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:91:0: 'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:92:0: 'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityReportFixtures.lean:93:0: 'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DensityReportFixtures

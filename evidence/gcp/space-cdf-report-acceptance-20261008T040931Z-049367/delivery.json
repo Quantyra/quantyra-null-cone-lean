@@ -1,0 +1,19 @@
+{
+  "source_commit": "c2065f7f548cde6fb7384c10c9a7fa716d17a406",
+  "scope": "actual order-only CDF report coverage/encoding/fallback; S024 density suite and S025 incomplete",
+  "proof_manuscript_ci": {
+    "run": 37726419203,
+    "result": "success"
+  },
+  "literature_ci": {
+    "run": 37726419227,
+    "result": "success"
+  },
+  "python_ci": {
+    "run": 37726419217,
+    "result": "success"
+  },
+  "instance_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "evidence_closeout_scope": "docs/evidence only; accepted proof/check/config and tested Python bytes unchanged"
+}

@@ -1,6 +1,6 @@
 # Remaining sharp-DKW finite probability contract
 
-S024 implementation contract after [analytic acceptance](dkw-analytic-certification.md). The finite-bin counting-law and first-crossing statements below now have [exact-source GCP acceptance](dkw-finite-certification.md). Uniform continuous quantization, dense-grid, actual-K marginal/joint-grid transport and exact rational split-checker soundness now have [GCP acceptance](dkw-continuous-certification.md). Full report integration remains open. The target remains the actual sharp two-sided `2*exp(-2*n*e^2)` under iid uniform sampling, and then the existing original-K split-DKW coverage. A weaker union bound is not a replacement.
+S024 implementation contract after [analytic acceptance](dkw-analytic-certification.md). The finite-bin counting-law and first-crossing statements below now have [exact-source GCP acceptance](dkw-finite-certification.md). Uniform continuous quantization, dense-grid, actual-K marginal/joint-grid transport and exact rational split-checker soundness now have [GCP acceptance](dkw-continuous-certification.md). Order-only CDF report integration now has [GCP acceptance](cdf-report-certification.md); density-report integration remains open. The target remains the actual sharp two-sided `2*exp(-2*n*e^2)` under iid uniform sampling, and then the existing original-K split-DKW coverage. A weaker union bound is not a replacement.
 
 ## Finite bins and likelihood
 
@@ -42,4 +42,4 @@ Start with `volume.restrict(Ioc 0 1)` so supported points are positive almost ev
 
 For the dense limit, define the actual finite-grid sample events at q=2^m. Prove inclusion of each grid in its successor by index k->2k. On supported samples, every strict real-threshold deviation occurs on one sufficiently fine grid: use empirical monotonicity, a bracket of width at most 1/q and the positive gap above e, approaching from above for the upper tail and below for the lower tail. This proves the needed countable-union event identity and measurability before taking its probability. These mathematical transport contracts are now proved. The real-valued ceiling map is noncomputable in Lean; no runtime verification of Python quantization is claimed.
 
-Remaining to-do list: connect actual accuracy events to checked all-cutoff CDF/report representations; density cell/point/histogram and conservative fallbacks; final S024 acceptance; S025.
+Remaining to-do list: actual density cell/point/histogram, conservative fallbacks and full density report integration; final S024 acceptance; S025.

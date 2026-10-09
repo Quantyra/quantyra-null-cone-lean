@@ -1,0 +1,28 @@
+1
+hcd : c ≤ d
+hd : d ≤ 1
+this : IsProbabilityMeasure (densityMeasure rho) := isProbabilityMeasure h
+R : Set (ℝ × ℝ) := Set.Ioc a b ×ˢ Set.Ioc c d
+hRM : MeasurableSet R
+hSub : R ⊆ diamond
+hVol : diamondVolume R = ENNReal.ofReal ((b - a) * (d - c))
+hArea : 0 ≤ (b - a) * (d - c)
+hlo : ENNReal.ofReal (1 / 2) * ENNReal.ofReal ((b - a) * (d - c)) ≤ (densityMeasure rho) R
+hhi : (densityMeasure rho) R ≤ ENNReal.ofReal (3 / 2) * ENNReal.ofReal ((b - a) * (d - c))
+hloR : (ENNReal.ofReal (1 / 2) * ENNReal.ofReal ((b - a) * (d - c))).toReal ≤ ((densityMeasure rho) R).toReal
+⊢ ¬ENNReal.ofReal (3 / 2) * ENNReal.ofReal ((b - a) * (d - c)) = ⊤
+info: QuantyraNullCone/DegreeMass.lean:114:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_bounds' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:115:0: 'QuantyraNullCone.InDensityClass.populationCDF_lower' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:116:0: 'QuantyraNullCone.InDensityClass.northeastCDF_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:117:0: 'QuantyraNullCone.deep_point_degree_retained' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeMass
+error: build failed
+TERMINAL_EXIT=1

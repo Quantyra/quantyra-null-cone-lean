@@ -34,3 +34,5 @@ manuscript/conformal-gauge/deposit/v0.1.0/*.json text eol=lf
 manuscript/conformal-gauge/deposit/v0.1.0/*.log -text
 checks/publish_conformal_gauge.py text eol=lf
 checks/test_conformal_gauge_publication.py text eol=lf
+evidence/gcp/space-degree-*/** -text
+evidence/gcp/space-small-mass-*/** -text

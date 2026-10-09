@@ -1,0 +1,28 @@
+1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QuantyraNullCone/DegreeFilter.lean:60:70: This simp argument is unused:
+  and_comm
+
+Hint: Omit it from the simp argument list.
+  simp [predecessors, Chronological, A, B, cumulativeCount, not_le,̵ ̵a̵n̵d̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/DegreeFilter.lean:116:6: mod_cast has type
+  (Finset.univ \ cumulativeCount w (1 - 4 * r)).card + (cumulativeCount w (1 - 4 * r)).card = Finset.univ.card
+but is expected to have type
+  (Finset.univ \ cumulativeCount w (1 - 4 * r)).card + (cumulativeCount w (1 - 4 * r)).card = n
+info: QuantyraNullCone/DegreeFilter.lean:192:0: 'QuantyraNullCone.chronological_predecessor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:193:0: 'QuantyraNullCone.chronological_predecessor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:194:0: 'QuantyraNullCone.chronological_successor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:195:0: 'QuantyraNullCone.chronological_successor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:196:0: 'QuantyraNullCone.degree_retained_interior' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:197:0: 'QuantyraNullCone.degree_retained_coordinate_rigidity' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeFilter
+error: build failed
+TERMINAL_EXIT=1

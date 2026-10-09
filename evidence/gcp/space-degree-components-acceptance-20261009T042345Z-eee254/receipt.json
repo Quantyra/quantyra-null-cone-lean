@@ -1,0 +1,11 @@
+{
+  "run": "space-degree-components-acceptance-20261009T042345Z-eee254",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone",
+  "acceptance": true,
+  "audited_exports": 328,
+  "owned_warnings": 0,
+  "dependency_identities_before_and_after": true,
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

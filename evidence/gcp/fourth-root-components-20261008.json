@@ -1,0 +1,105 @@
+{
+  "story": "S032",
+  "status": "component_acceptance_only",
+  "full_endpoints_certified": false,
+  "accepted_run": "space-degree-components-acceptance-20261009T042345Z-eee254",
+  "build_jobs": 3008,
+  "audited_exports": 328,
+  "new_exports": 33,
+  "source_files_verified_against_worktree": 118,
+  "baseline_proof_manuscript_study_files_preserved": 391,
+  "attempts": [
+    {
+      "run": "space-degree-filter-20261009T035558Z-128d08",
+      "target": "QuantyraNullCone.DegreeFilter",
+      "exit": 1,
+      "started_utc": "2026-10-09T03:57:18Z",
+      "finished_utc": "2026-10-09T03:58:34Z",
+      "capture_sha256": "8c983c4dc17b556644e77d0aef6b8ba9d8395e0b19be412427f7086df7d856a2",
+      "inputs_sha256": "8e97e29e0a868f15b89b927bd23ca23d9b5c7a82b1c9672c981a17c3ff6932a7",
+      "evidence_archive_sha256": "be5ac95c72d749bda757ecc48a61a69076ada02db19f83b3c8e283d6aeb339a6"
+    },
+    {
+      "run": "space-degree-mass-20261009T035943Z-e19491",
+      "target": "QuantyraNullCone.DegreeMass",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:00:14Z",
+      "finished_utc": "2026-10-09T04:00:26Z",
+      "capture_sha256": "8779ea3150aad72e02698c0ea4f41e8c88fbfc389cf48d8af532b5106395a366",
+      "inputs_sha256": "2599469d72c23612976de21a0bee0977ac7e84a52bbbb651acfcdca1b6ab9e60",
+      "evidence_archive_sha256": "d4ed043b74d14f993113feb99b18b4983cc73f2e9f1281db05a9647981f00c75"
+    },
+    {
+      "run": "space-degree-cells-20261009T040421Z-26c605",
+      "target": "QuantyraNullCone.DegreeCells",
+      "exit": 0,
+      "started_utc": "2026-10-09T04:04:54Z",
+      "finished_utc": "2026-10-09T04:05:10Z",
+      "capture_sha256": "47dbf8f806125874b95f02d4bef3af72f2b7ff45d84195df0f9e9658fddd70f4",
+      "inputs_sha256": "9767a7ff076439a5960a62bdff1ee5bfd9e32b24fa456c8ef301ec43c42feb42",
+      "evidence_archive_sha256": "5a7236a19dd4e2cf7e1431e5d7421e6aeddc9ff7f68ab4529a745dedcd6086e3"
+    },
+    {
+      "run": "space-small-mass-20261009T041040Z-fa2f4f",
+      "target": "QuantyraNullCone.SmallMassConcentration",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:11:30Z",
+      "finished_utc": "2026-10-09T04:11:50Z",
+      "capture_sha256": "9301e7f68b40849ea61c2a10a66b0a5ca0dd59ad99873b117c30aa4054038ffd",
+      "inputs_sha256": "596b9b7aa025e8e036678c50269e85e930a99cded61d47d99c1a2fdfb64fa1e1",
+      "evidence_archive_sha256": "aa50f2e7ed83cd1f271f6af6b1f4412a78a66c1508863edd33bf4dd9d98e8e90"
+    },
+    {
+      "run": "space-small-mass-repair-20261009T041359Z-71197f",
+      "target": "QuantyraNullCone.SmallMassConcentration",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:15:01Z",
+      "finished_utc": "2026-10-09T04:15:21Z",
+      "capture_sha256": "96f56975a4864de534cff06d94c7c9cb794620450aaac19874d2bcfcf6f114f2",
+      "inputs_sha256": "747493dbcffd47e912e3eef53bb9eafe142d89653b99149c8e068dd90ab64d53",
+      "evidence_archive_sha256": "bad1a36215c1613a0e7ee0b95ff81cdc55b94a1ffbdde4399873d65b8934078e"
+    },
+    {
+      "run": "space-degree-probability-20261009T041709Z-115283",
+      "target": "QuantyraNullCone",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:18:03Z",
+      "finished_utc": "2026-10-09T04:18:24Z",
+      "capture_sha256": "aa4192c12e900965b8edbc04ed7f6a0b97975295ef8a286380354a2755cfac0d",
+      "inputs_sha256": "06a37c948979ccc9d756da5790dc4dcde33fcb21ff5366077d8c917d4e05b547",
+      "evidence_archive_sha256": "83a6b2e5097c9f44baf5bee0ab55cc3269d91c6fe973710a374ce65055f89cac"
+    },
+    {
+      "run": "space-degree-event-20261009T042057Z-ef0bbc",
+      "target": "QuantyraNullCone",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:21:41Z",
+      "finished_utc": "2026-10-09T04:22:07Z",
+      "capture_sha256": "b39838a4bb8a61b23f8a74a67352b7bd314cadca9d64935c3fe2a5c938837d80",
+      "inputs_sha256": "759237ba5aa2eb1917afb6de0cae87ea4d86a74596a20ceca95a26cf4c9b48b5",
+      "evidence_archive_sha256": "16f79bab5bcc083a244f18ec3ff9c1e5feae0d536f1294bd25b3d5eb3a459f24"
+    },
+    {
+      "run": "space-degree-components-acceptance-20261009T042345Z-eee254",
+      "target": "QuantyraNullCone",
+      "exit": 0,
+      "started_utc": "2026-10-09T04:24:36Z",
+      "finished_utc": "2026-10-09T04:25:11Z",
+      "capture_sha256": "b812989413e5c08881087965163da80e596f59db19144c2b2de738808bc56aef",
+      "inputs_sha256": "07c126cbc108afa3d3e9fd7e8d8a8fc65f497fd8b098c3e4bb5aeb0a03cae763",
+      "evidence_archive_sha256": "b314c7bf7adc9a63def3cdeca5d8c45bff7ba96cd1fc0bd6ba6b22aece1a68cc"
+    }
+  ],
+  "failed_attempts_retained": 6,
+  "local_lean_invocations": 0,
+  "remaining": [
+    "actual shifted grid and observable histogram",
+    "floor, scale, clamping and fallback bounds",
+    "measurable unlabeled-order selector and full upper guarantee",
+    "same-class lower bound and testing",
+    "actual-law distance corollary",
+    "final S032 acceptance and S033 manuscript decision"
+  ],
+  "task_owned_instance_final_state": "TERMINATED",
+  "ownership_source": "space-degree-filter-20261009T035558Z-128d08/instance-ownership.json"
+}

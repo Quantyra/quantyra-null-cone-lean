@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/DegreeCellBias.lean:129:0: 'QuantyraNullCone.diamondVolume_probability' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:130:0: 'QuantyraNullCone.InDensityClass.mass_gap_ceiling' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:131:0: 'QuantyraNullCone.diamond_square_cell_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:132:0: 'QuantyraNullCone.InDensityClass.shifted_square_mass_gaps' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:133:0: 'QuantyraNullCone.InDensityClass.shifted_cell_mean_error' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:134:0: 'QuantyraNullCone.density_clip_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:135:0: 'QuantyraNullCone.InDensityClass.shifted_cell_point_error' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+ℹ [3006/3008] Built QuantyraNullCone.DegreeProbability (6.8s)
+info: QuantyraNullCone/DegreeProbability.lean:132:0: 'QuantyraNullCone.InDensityClass.sample_good_and_small_mass_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeProbability.lean:133:0: 'QuantyraNullCone.degree_event_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeProbability.lean:134:0: 'QuantyraNullCone.InDensityClass.degree_event_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- QuantyraNullCone.DegreeCellBias
+error: build failed
+TERMINAL_EXIT=1

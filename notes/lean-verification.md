@@ -161,3 +161,9 @@ Remaining to-do list: none for the four-story certification plan.
 S025 focused source/evidence commit `74c1f743d085c63b45ac2bf30008ad5d29b98fbc` is pushed; all three supplementary workflows passed and the task-owned VM is verified TERMINATED. The documentation/evidence closeout preserves every accepted proof/check/config identity. All four selected certification stories are complete.
 
 Remaining to-do list: none for the selected certification plan.
+
+## S032 first component acceptance ? 2026-10-08
+
+[Fourth-root certification](fourth-root-certification.md) records `space-degree-components-acceptance-20261009T042345Z-eee254`: 3008 root jobs and 328 exact-type/axiom audits, with 33 new exports and zero warnings or added axioms. Original-K degree filtering and deep-point retention supply one-orientation shifted-cell counts. Actual iid fixed-mass concentration and a union argument give a 19/20 sample event under explicit grid/rectangle parameters. Shell mass, cell-average bias and clipping give the conditional cell-point error. Eight immutable GCP attempts retain six failures, one development success and final component acceptance. This is a partial milestone: no full fourth-root upper/lower/law endpoint is yet certified.
+
+Remaining to-do list: actual shifted grid/histogram and parameter/floor/clamping/fallback bounds; measurable unlabeled selector and full upper guarantee; same-class lower bound; actual-law corollary; final S032 acceptance; S033 manuscript reassessment.

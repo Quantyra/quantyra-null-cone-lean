@@ -1,0 +1,7 @@
+{
+  "run": "space-degree-cells-20261009T040421Z-26c605",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.DegreeCells",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

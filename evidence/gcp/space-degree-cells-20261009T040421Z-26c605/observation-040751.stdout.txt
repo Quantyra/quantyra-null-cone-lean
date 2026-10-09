@@ -1,0 +1,27 @@
+0
+ℹ [2898/2901] Replayed QuantyraNullCone.DensityInterpolation
+info: QuantyraNullCone/DensityInterpolation.lean:196:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:197:0: 'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DensityInterpolation.lean:198:0: 'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2899/2901] Built QuantyraNullCone.DegreeFilter (4.2s)
+info: QuantyraNullCone/DegreeFilter.lean:194:0: 'QuantyraNullCone.chronological_predecessor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:195:0: 'QuantyraNullCone.chronological_predecessor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:196:0: 'QuantyraNullCone.chronological_successor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:197:0: 'QuantyraNullCone.chronological_successor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:198:0: 'QuantyraNullCone.degree_retained_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeFilter.lean:199:0: 'QuantyraNullCone.degree_retained_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2900/2901] Built QuantyraNullCone.DegreeMass (4.1s)
+info: QuantyraNullCone/DegreeMass.lean:114:0: 'QuantyraNullCone.InDensityClass.rectangle_mass_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:115:0: 'QuantyraNullCone.InDensityClass.populationCDF_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:116:0: 'QuantyraNullCone.InDensityClass.northeastCDF_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMass.lean:117:0: 'QuantyraNullCone.deep_point_degree_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2901/2901] Built QuantyraNullCone.DegreeCells (3.0s)
+info: QuantyraNullCone/DegreeCells.lean:101:0: 'QuantyraNullCone.eroded_rectangle_recovered' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:102:0: 'QuantyraNullCone.recovered_rectangle_expanded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:103:0: 'QuantyraNullCone.retained_rectangle_count_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:104:0: 'QuantyraNullCone.Realizer.rankPoint_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:105:0: 'QuantyraNullCone.degree_filtered_cell_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2901 jobs).
+TERMINAL_EXIT=0

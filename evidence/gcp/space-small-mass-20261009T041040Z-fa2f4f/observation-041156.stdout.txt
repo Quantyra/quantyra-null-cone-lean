@@ -1,0 +1,28 @@
+1
+  AEStronglyMeasurable (fun q => Real.exp (z * (Y q - p))) μ
+but is expected to have type
+  AEStronglyMeasurable ?m.347 (?m.342 i)
+in the application
+  integral_comp_eval (Integrable.aestronglyMeasurable (hIntBase z))
+error: QuantyraNullCone/SmallMassConcentration.lean:51:31: Application type mismatch: The argument
+  hMGF t htAbs
+has type
+  mgf (∑ i, X i) P t ≤ Real.exp (↑n * p * t ^ 2)
+but is expected to have type
+  mgf (fun ω => ∑ i, X i ω) P t ≤ ?m.493
+in the application
+  mul_le_mul_of_nonneg_left (hMGF t htAbs)
+info: QuantyraNullCone/SmallMassConcentration.lean:130:0: 'QuantyraNullCone.iid_indicator_chernoff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/SmallMassConcentration.lean:131:0: 'QuantyraNullCone.InDensityClass.small_mass_count_concentration' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/SmallMassConcentration.lean:132:0: 'QuantyraNullCone.InDensityClass.small_mass_family_failure' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.SmallMassConcentration
+error: build failed
+TERMINAL_EXIT=1

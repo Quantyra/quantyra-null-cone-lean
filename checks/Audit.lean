@@ -794,3 +794,133 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 
 #check QuantyraNullCone.lorentz_diamond_volume_slices3
 #print axioms QuantyraNullCone.lorentz_diamond_volume_slices3
+
+-- S032 deterministic filter, cell error and fixed-mass concentration.
+
+#check QuantyraNullCone.chronological_predecessor_count
+#print axioms QuantyraNullCone.chronological_predecessor_count
+
+
+#check QuantyraNullCone.chronological_predecessor_fraction
+#print axioms QuantyraNullCone.chronological_predecessor_fraction
+
+
+#check QuantyraNullCone.chronological_successor_count
+#print axioms QuantyraNullCone.chronological_successor_count
+
+
+#check QuantyraNullCone.chronological_successor_fraction
+#print axioms QuantyraNullCone.chronological_successor_fraction
+
+
+#check QuantyraNullCone.degree_retained_interior
+#print axioms QuantyraNullCone.degree_retained_interior
+
+
+#check QuantyraNullCone.degree_retained_coordinate_rigidity
+#print axioms QuantyraNullCone.degree_retained_coordinate_rigidity
+
+
+#check QuantyraNullCone.InDensityClass.densityMeasure_ceiling
+#print axioms QuantyraNullCone.InDensityClass.densityMeasure_ceiling
+
+
+#check QuantyraNullCone.InDensityClass.rectangle_mass_bounds
+#print axioms QuantyraNullCone.InDensityClass.rectangle_mass_bounds
+
+
+#check QuantyraNullCone.InDensityClass.populationCDF_lower
+#print axioms QuantyraNullCone.InDensityClass.populationCDF_lower
+
+
+#check QuantyraNullCone.InDensityClass.northeastCDF_lower
+#print axioms QuantyraNullCone.InDensityClass.northeastCDF_lower
+
+
+#check QuantyraNullCone.deep_point_degree_retained
+#print axioms QuantyraNullCone.deep_point_degree_retained
+
+
+#check QuantyraNullCone.eroded_rectangle_recovered
+#print axioms QuantyraNullCone.eroded_rectangle_recovered
+
+
+#check QuantyraNullCone.recovered_rectangle_expanded
+#print axioms QuantyraNullCone.recovered_rectangle_expanded
+
+
+#check QuantyraNullCone.retained_rectangle_count_sandwich
+#print axioms QuantyraNullCone.retained_rectangle_count_sandwich
+
+
+#check QuantyraNullCone.Realizer.rankPoint_swap
+#print axioms QuantyraNullCone.Realizer.rankPoint_swap
+
+
+#check QuantyraNullCone.degree_filtered_cell_counts
+#print axioms QuantyraNullCone.degree_filtered_cell_counts
+
+
+#check QuantyraNullCone.exp_remainder_le_square
+#print axioms QuantyraNullCone.exp_remainder_le_square
+
+
+#check QuantyraNullCone.centered_indicator_exp_integrable
+#print axioms QuantyraNullCone.centered_indicator_exp_integrable
+
+
+#check QuantyraNullCone.indicator_mgf
+#print axioms QuantyraNullCone.indicator_mgf
+
+
+#check QuantyraNullCone.centered_indicator_mgf_le
+#print axioms QuantyraNullCone.centered_indicator_mgf_le
+
+
+#check QuantyraNullCone.iid_indicator_chernoff
+#print axioms QuantyraNullCone.iid_indicator_chernoff
+
+
+#check QuantyraNullCone.InDensityClass.small_mass_count_concentration
+#print axioms QuantyraNullCone.InDensityClass.small_mass_count_concentration
+
+
+#check QuantyraNullCone.InDensityClass.small_mass_family_failure
+#print axioms QuantyraNullCone.InDensityClass.small_mass_family_failure
+
+
+#check QuantyraNullCone.diamondVolume_probability
+#print axioms QuantyraNullCone.diamondVolume_probability
+
+
+#check QuantyraNullCone.InDensityClass.mass_gap_ceiling
+#print axioms QuantyraNullCone.InDensityClass.mass_gap_ceiling
+
+
+#check QuantyraNullCone.diamond_square_cell_real
+#print axioms QuantyraNullCone.diamond_square_cell_real
+
+
+#check QuantyraNullCone.InDensityClass.shifted_square_mass_gaps
+#print axioms QuantyraNullCone.InDensityClass.shifted_square_mass_gaps
+
+
+#check QuantyraNullCone.InDensityClass.shifted_cell_mean_error
+#print axioms QuantyraNullCone.InDensityClass.shifted_cell_mean_error
+
+
+#check QuantyraNullCone.density_clip_error
+#print axioms QuantyraNullCone.density_clip_error
+
+
+#check QuantyraNullCone.InDensityClass.shifted_cell_point_error
+#print axioms QuantyraNullCone.InDensityClass.shifted_cell_point_error
+
+#check QuantyraNullCone.InDensityClass.sample_good_and_small_mass_probability
+#print axioms QuantyraNullCone.InDensityClass.sample_good_and_small_mass_probability
+
+#check QuantyraNullCone.degree_event_failure_budget
+#print axioms QuantyraNullCone.degree_event_failure_budget
+
+#check QuantyraNullCone.InDensityClass.degree_event_probability
+#print axioms QuantyraNullCone.InDensityClass.degree_event_probability

@@ -32,6 +32,8 @@ import QuantyraNullCone.CDFReportFixtures
 import QuantyraNullCone.DensityFeasibility
 import QuantyraNullCone.DensityReportFixtures
 import QuantyraNullCone.LorentzIsometry
+import QuantyraNullCone.DegreeProbability
+import QuantyraNullCone.DegreeCellBias
 
 /-!
 Quantyra finite-order reconstruction.
@@ -63,4 +65,8 @@ transport/class membership and equality of every finite directed order law.
 The explicit conformal gauge has positive coordinate distance modulo spatial O(2),
 while its metric is isometric to the flat metric. This is a coordinate gauge
 obstruction, and does not prove new physical nonidentifiability or inverse rates.
+S032 adds the degree filter, deep-point retention and shifted-cell count/error
+lemmas, together with actual iid fixed-mass concentration. These are components
+of the selected fourth-root certification; the full estimator, scale assembly,
+lower bound and law corollary are not yet exported as certified endpoints.
 -/

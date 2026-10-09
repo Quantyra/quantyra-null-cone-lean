@@ -1,0 +1,88 @@
+{
+  "title": "Finite-sample density reconstruction from a single causal order",
+  "version": "0.2.0",
+  "doi": "10.5281/zenodo.23269373",
+  "proof_commit": "a0b1f6846d6f0b89a94704ed2954645bcac756fd",
+  "reviewed_draft_commit": "a9908d6115def3bec38ebae2ae1656cba54965d7",
+  "mathematical_body_unchanged": true,
+  "source_change_scope": "Title date/status/DOI and publication-status paragraph only",
+  "metadata_sha256": "c30ecdd73ea688ebd0db369f72dd42f3490d301dba9ed705b2f719ec662fea4d",
+  "files": {
+    "manuscript/finite-data/deposit/v0.2.0/build.py": {
+      "sha256": "a8d15c9f265517fa1cd14fd6f5a8415795c5067084dda00b43d1ec58326e5471",
+      "bytes": 2827
+    },
+    "manuscript/finite-data/deposit/v0.2.0/draft-record.json": {
+      "sha256": "2b56f0048a62d716f5b48645940cdcab98e82038f107e43d84eb2009f1f7e2f8",
+      "bytes": 161
+    },
+    "manuscript/finite-data/deposit/v0.2.0/finite-sample-order-density.log": {
+      "sha256": "b0e471484465c5136bda7da9202f5e0d9079f27a27529195693ee5ba049f1482",
+      "bytes": 17553
+    },
+    "manuscript/finite-data/deposit/v0.2.0/finite-sample-order-density.pdf": {
+      "sha256": "2225b8e62d234d0d618f76946286866712fb0a6336f2ecb470a2e94c5fb2ff5c",
+      "bytes": 158044
+    },
+    "manuscript/finite-data/deposit/v0.2.0/finite-sample-order-density.tex": {
+      "sha256": "66f01917381bb26bb4a3099c8a07fcde4f60c0ac8a619b2f83760e7dbe092c34",
+      "bytes": 50713
+    },
+    "manuscript/finite-data/deposit/v0.2.0/formal-map.json": {
+      "sha256": "30082c1fa48bea0637da425dc0c54fe884ec4793f5ba9e4ca5fd75d388d52469",
+      "bytes": 26241
+    },
+    "manuscript/finite-data/deposit/v0.2.0/README.md": {
+      "sha256": "a3c599f2b2a1c6dda64f73d1c3e03deaa64fc0fbad815d2877d164c422c418f4",
+      "bytes": 1056
+    },
+    "manuscript/finite-data/deposit/v0.2.0/review.json": {
+      "sha256": "f4db7e04068a9d1707a78517252cdbfeba65e912237500c52a42c9423d067ac9",
+      "bytes": 5560
+    },
+    "manuscript/finite-data/deposit/v0.2.0/source-verification.json": {
+      "sha256": "d6fcf9a2ea44ada910d09952a18011c575a266fbdb5da32214b5072d777cb001",
+      "bytes": 17763
+    },
+    "manuscript/finite-data/deposit/v0.2.0/tex-build.log": {
+      "sha256": "e2cc2d0fb31bc1742402bc16bb69c6a97258adfb49f5429c11e233fb08747437",
+      "bytes": 611
+    },
+    "manuscript/finite-data/deposit/v0.2.0/verification.md": {
+      "sha256": "f44a0525c4fd262adf16f793362f0a3d8c4b30daf7cfc9c952142f284f1d54da",
+      "bytes": 6674
+    },
+    "manuscript/finite-data/deposit/v0.2.0/verify_sources.py": {
+      "sha256": "7dbddf917a7f458a55b2d9c17d04a6a853b94728452fe31297d6d80bd82bee55",
+      "bytes": 4859
+    },
+    "manuscript/finite-data/deposit/v0.2.0/zenodo-metadata.json": {
+      "sha256": "c30ecdd73ea688ebd0db369f72dd42f3490d301dba9ed705b2f719ec662fea4d",
+      "bytes": 3576
+    },
+    "manuscript/finite-data/publish_version.py": {
+      "sha256": "6cea370b1b7163ff8b124728519f69dfd1d9d90194e4092c0113832797afc70e",
+      "bytes": 13355
+    },
+    "manuscript/finite-data/test_version_publication.py": {
+      "sha256": "901af49e23f10e4414be1e75b73cdcf6170771fc49f00c49c82fa176042e7f23",
+      "bytes": 4717
+    },
+    "manuscript/finite-data/prepare_optimal_rate_release.py": {
+      "sha256": "2937af0c94a116b60243cd05158e248484d0fdd13468c35d0b4628c4d5452949",
+      "bytes": 9774
+    },
+    "checks/zenodo_credentials.py": {
+      "sha256": "87395e7983a7449087565f948801963e46fa480639e8be09d95663ff1ae9f8d3",
+      "bytes": 3599
+    },
+    "LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c",
+      "bytes": 18664
+    }
+  }
+}

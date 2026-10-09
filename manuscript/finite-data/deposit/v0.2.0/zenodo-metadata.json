@@ -1,0 +1,53 @@
+{
+  "title": "Finite-sample density reconstruction from a single causal order",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-09",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra Inc"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "version": "0.2.0",
+  "access_right": "open",
+  "keywords": [
+    "causal order",
+    "density estimation",
+    "copula density",
+    "finite-sample confidence",
+    "partial orders",
+    "Lean 4",
+    "formal verification",
+    "minimax rate",
+    "randomized lower bound"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/a0b1f6846d6f0b89a94704ed2954645bcac756fd",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.23247720",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.23249816",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.23202763",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "software"
+    }
+  ],
+  "description": "<p>We study full-square density estimation from one unlabeled strict directed causal order of n iid events. The original class consists of smooth densities on the unit square in [1/2,3/2], with exact uniform marginals and Euclidean Lipschitz constant at most two. Loss is supremum error modulo one global coordinate exchange.</p><p>The accepted order-only estimator has 95% radius min{1/2,650(log n/n)^(1/4)} for every n at least 2. This revision adds a matching logarithmic lower bound: for n at least 2^64, every eligible estimator, including an arbitrary independent probability-space seed and with the stated success-event measurability, has strict error greater than (log n/n)^(1/4)/8192 with probability at least one half under some original-class density. Together these bounds establish the fixed-confidence minimax rate (log n/n)^(1/4) up to constants. The paper retains the two-point lower bound, actual-law corollary, complete degree-filter proof and band qualification, and adds the admissible many-density construction, testing proof, finite-scale calculation and minimax-radius argument.</p><p>All main endpoints have exact-source Lean 4 acceptance on remote GCP. The manuscript maps 101 exports; the shared library audit contains 508 exact-type/axiom reports and a 3035-job root build, with zero warnings and standard axioms only. Earlier geometric forcing and the established second-moment testing method are attributed. Constants are conservative; the mathematical selector does not establish an efficient practical implementation, and the frozen uninformative pilot is preserved. The lower obstruction already holds with coordinate data. No additional order-information penalty, sharp constant, curvature recovery, physical validation or mathematical-priority claim is made.</p><p>Author: Daniel Eric Fredriksen, Quantyra Inc. Developed with OpenAI Codex assistance. Review is open-source, decentralized and informal, through inspectable proofs and downstream testing. Manuscript materials are CC-BY-4.0; proof software and repository helpers retain Apache-2.0 licensing. This is a new version in the existing finite-data manuscript family, distinct from the reconstruction and coordinate-gauge papers.</p>"
+}

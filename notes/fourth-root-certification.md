@@ -115,3 +115,5 @@ The [ordinary lower proof](finite-data-information-limit.md) retains the confide
 Delivery verifies accepted normalized source bytes against staged Git objects and raw evidence byte-for-byte. The task-owned GCP instance is stopped after evidence collection and a no-other-work process check; its final state is verified TERMINATED in the campaign index. Hosted CI is supplementary and no unobserved CI result is claimed.
 
 Remaining to-do list: S033 bounded literature refresh and concrete manuscript decision. None for the S032 mathematical scope.
+
+Subsequent S033 disposition, 2026-10-08: the [literature-backed manuscript decision](finite-data-manuscript-decision.md) is complete and scopes a separate theory paper. No new PDF or DOI is produced. Remaining to-do list: none for the selected S031–S033 sequence.

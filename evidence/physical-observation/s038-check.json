@@ -1,0 +1,28 @@
+{
+  "story": "S038",
+  "status": "passed",
+  "check_kind": "arithmetic_sanity_not_formal_proof",
+  "rho_range": [
+    "3/4",
+    "5/4"
+  ],
+  "gradient_squared_bound": "1/2",
+  "detection_range": [
+    "3/5",
+    "1"
+  ],
+  "observed_intensity_both_models": "3/4",
+  "physical_interval_volumes": [
+    "1/4",
+    "17/64"
+  ],
+  "detected_interval_mass": "1/4",
+  "proper_time_separation_strict_lower": "sqrt(2)/30",
+  "diagonal_length_numerical_diagnostic": 1.4711057044156952,
+  "selection_bound_cases": 1515,
+  "lean_invocations": 0,
+  "sources": {
+    "checks/check_physical_observation_model.py": "979c95b1b36607e8dabc159f3a97d4599b18ec5d0687f61b1f46c2494897807c",
+    "notes/physical-observation-identifiability.md": "67fe49da5cdfcd68d277f5c7fc3aeef071e2fe348118b3ec4834070bc9984854"
+  }
+}

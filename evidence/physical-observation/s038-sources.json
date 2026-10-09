@@ -1,0 +1,48 @@
+{
+  "story": "S038",
+  "sources": [
+    {
+      "name": "braun-arxiv-v1",
+      "url": "https://arxiv.org/pdf/2507.01907v1",
+      "final_url": "https://arxiv.org/pdf/2507.01907v1",
+      "status": 200,
+      "retrieved_utc": "2026-10-09T18:54:56.031390+00:00",
+      "sha256": "4b315a09d43ca94f56d895b1ae571f5e7510fee1510e2c5a547254895cdf928e",
+      "pages": 16,
+      "format": "PDF",
+      "inspected_pdf_pages": [
+        3,
+        4,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "braun-journal",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6382/ae456c/pdf",
+      "final_url": "https://validate.perfdrive.com/fb803c746e9148689b3984a31fccd902/",
+      "status": 200,
+      "retrieved_utc": "2026-10-09T18:54:59.540858+00:00",
+      "format": "unavailable_pdf"
+    },
+    {
+      "name": "braun-journal-mirror",
+      "url": "https://inspirehep.net/files/532485f95bc081fb1857e27ea6d57d68",
+      "source": "IOP publisher PDF via INSPIRE repository",
+      "doi": "10.1088/1361-6382/ae456c",
+      "retrieved_utc": "2026-10-09T18:55:21.700148+00:00",
+      "status": 200,
+      "sha256": "5477a946875959d9390fbdc5e500ffa195336d0020a84c2f784d5ddbbd32c762",
+      "pages": 15,
+      "format": "PDF",
+      "inspected_pdf_pages": [
+        3,
+        4,
+        12,
+        13
+      ]
+    }
+  ],
+  "redistributed_third_party_pdfs": false,
+  "proof_scope": "Relevant theorem statements and complete order/volume/weighted assembly; dense-map extension not independently reproved"
+}

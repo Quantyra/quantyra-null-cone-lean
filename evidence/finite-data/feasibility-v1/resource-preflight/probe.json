@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "timeout": {
+    "outcome": "timeout",
+    "exit_code": 125,
+    "wall_seconds": 0.26624740002444014,
+    "process_tree_peak_rss_bytes": 11198464,
+    "peak_job_committed_bytes": 6651904,
+    "rss_limit_bytes": 4294967296,
+    "committed_limit_bytes": 4294967296,
+    "wall_limit_seconds": 0.25,
+    "active_process_limit": 1,
+    "poll_seconds": 0.01,
+    "log": "timeout.log"
+  },
+  "memory": {
+    "outcome": "worker_failed",
+    "exit_code": 1,
+    "wall_seconds": 0.20714850001968443,
+    "process_tree_peak_rss_bytes": 13856768,
+    "peak_job_committed_bytes": 275632128,
+    "rss_limit_bytes": 134217728,
+    "committed_limit_bytes": 67108864,
+    "wall_limit_seconds": 600,
+    "active_process_limit": 1,
+    "poll_seconds": 0.01,
+    "log": "memory.log"
+  },
+  "children": {
+    "outcome": "completed",
+    "exit_code": 0,
+    "wall_seconds": 0.21948060000431724,
+    "process_tree_peak_rss_bytes": 13709312,
+    "peak_job_committed_bytes": 8781824,
+    "rss_limit_bytes": 4294967296,
+    "committed_limit_bytes": 4294967296,
+    "wall_limit_seconds": 600,
+    "active_process_limit": 1,
+    "poll_seconds": 0.01,
+    "log": "child.log"
+  },
+  "scope": "job commit/process limits plus 10-ms peak-RSS rejection watchdog; root lifetime peak covers allowed tree because children are prohibited; RSS overshoot is rejected, not represented as a hard instantaneous cap"
+}

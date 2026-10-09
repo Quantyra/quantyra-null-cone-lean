@@ -1,0 +1,29 @@
+test_lean_density_matrix_residual_and_band_fixtures (test_finite_data.CDFEncodingTests.test_lean_density_matrix_residual_and_band_fixtures) ... ok
+test_lean_permutation_and_inclusive_corner_fixtures (test_finite_data.CDFEncodingTests.test_lean_permutation_and_inclusive_corner_fixtures) ... ok
+test_arbitrary_nonstationary_duals_still_bound_feasible_truth (test_finite_data.LPTests.test_arbitrary_nonstationary_duals_still_bound_feasible_truth) ... ok
+test_both_report_methods_and_corrupted_split_calibration (test_finite_data.LPTests.test_both_report_methods_and_corrupted_split_calibration) ... ok
+test_calibration_is_outward_and_valid (test_finite_data.LPTests.test_calibration_is_outward_and_valid) ... ok
+test_continuum_diagnostics_include_one_sided_limits (test_finite_data.LPTests.test_continuum_diagnostics_include_one_sided_limits) ... ok
+test_exact_population_corners_and_corrupted_certificate (test_finite_data.LPTests.test_exact_population_corners_and_corrupted_certificate) ... ok
+test_exact_two_by_two_optima_with_radius (test_finite_data.LPTests.test_exact_two_by_two_optima_with_radius) ... ok
+test_independent_split_checker_rejects_nontrivial_budget_failure (test_finite_data.LPTests.test_independent_split_checker_rejects_nontrivial_budget_failure) ... ok
+test_report_round_trip_and_adversarial_changes (test_finite_data.LPTests.test_report_round_trip_and_adversarial_changes) ... ok
+test_solver_failure_keeps_conservative_coverage (test_finite_data.LPTests.test_solver_failure_keeps_conservative_coverage) ... ok
+test_split_calibration_failure_allocation_and_prior_improvement (test_finite_data.LPTests.test_split_calibration_failure_allocation_and_prior_improvement) ... ok
+test_split_extreme_budget_uses_deterministic_fallback (test_finite_data.LPTests.test_split_extreme_budget_uses_deterministic_fallback) ... ok
+test_all_natural_five_point_posets (test_finite_data.RealizerTests.test_all_natural_five_point_posets) ... ok
+test_exhaustive_five_point_realizers_and_rank_certificate (test_finite_data.RealizerTests.test_exhaustive_five_point_realizers_and_rank_certificate) ... ok
+test_invalid_and_dimension_three (test_finite_data.RealizerTests.test_invalid_and_dimension_three) ... ok
+test_six_point_permutations (test_finite_data.RealizerTests.test_six_point_permutations) ... ok
+test_boundaries_and_empty_erosions (test_finite_data_local_mass.LocalMassTests.test_boundaries_and_empty_erosions) ... ok
+test_calibration_budget_corruption (test_finite_data_local_mass.LocalMassTests.test_calibration_budget_corruption) ... ok
+test_every_small_realizer_has_one_alignment (test_finite_data_local_mass.LocalMassTests.test_every_small_realizer_has_one_alignment) ... ok
+test_finite_binomial_coverage_and_monotonicity (test_finite_data_local_mass.LocalMassTests.test_finite_binomial_coverage_and_monotonicity) ... ok
+test_integer_tail_against_definition (test_finite_data_local_mass.LocalMassTests.test_integer_tail_against_definition) ... ok
+test_report_corruption_rejected (test_finite_data_local_mass.LocalMassTests.test_report_corruption_rejected) ... ok
+test_shared_artifact_hash_and_size_rejection (test_finite_data_local_mass.LocalMassTests.test_shared_artifact_hash_and_size_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 11.605s
+
+OK

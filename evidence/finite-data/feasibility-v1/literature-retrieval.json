@@ -1,0 +1,57 @@
+{
+  "retrieval_date": "2026-10-08",
+  "sources": [
+    {
+      "name": "genest-hal",
+      "url": "https://hal.science/hal-00257425v2/document",
+      "http": 200,
+      "final_url": "https://hal.science/hal-00257425v2/document",
+      "pdf": true,
+      "sha256": "2560175238f191651f2b083ee7526e9907731359b405b79cad9480d485cb3594",
+      "pages": 29
+    },
+    {
+      "name": "genest-citeseer",
+      "url": "https://citeseerx.ist.psu.edu/document?doi=6c2f462cfc2243ffc5f8950f47ad6a7d822d7b81&repid=rep1&type=pdf",
+      "http": 404,
+      "final_url": "https://web.archive.org/web/20251230112235/https://citeseerx.ist.psu.edu//document?doi=6c2f462cfc2243ffc5f8950f47ad6a7d822d7b81&repid=rep1&type=pdf",
+      "pdf": false
+    },
+    {
+      "name": "autin-2010",
+      "url": "https://lepennec.perso.math.cnrs.fr/Reprint/Copula/2010-JMVA-ALPT.pdf",
+      "http": 200,
+      "final_url": "https://lepennec.perso.math.cnrs.fr/Reprint/Copula/2010-JMVA-ALPT.pdf",
+      "pdf": true,
+      "sha256": "df17c58a7198891b344c5276a6dc10927c2823ecfc367788d950a902c5276775",
+      "pages": 23
+    },
+    {
+      "name": "swanepoel-2024",
+      "url": "https://www.journals.ac.za/index.php/sasj/article/download/6437/4034/28206",
+      "http": 200,
+      "final_url": "https://www.journals.ac.za/index.php/sasj/article/download/6437/4034/28206",
+      "pdf": true,
+      "sha256": "7b9a3c729bed7868b86506249329efa942f97d4df2d9d7a9b1bb0848de20d1f5",
+      "pages": 10
+    },
+    {
+      "name": "reeve-2024",
+      "url": "https://arxiv.org/pdf/2403.16651",
+      "http": 200,
+      "final_url": "https://arxiv.org/pdf/2403.16651",
+      "pdf": true,
+      "sha256": "eef2ee7975d2bb8309e871a15f68052cf7c47a76b269b168f5e2244e79d5e30e",
+      "pages": 11
+    },
+    {
+      "name": "seck-2023",
+      "url": "https://arxiv.org/pdf/2303.05627v1",
+      "http": 200,
+      "pdf": true,
+      "pages": 23,
+      "sha256": "b4a242494c80655a4a4d773dfd37051da769e11e671717038fea0006fb68c4fd"
+    }
+  ],
+  "redistribution": "No third-party full text included."
+}

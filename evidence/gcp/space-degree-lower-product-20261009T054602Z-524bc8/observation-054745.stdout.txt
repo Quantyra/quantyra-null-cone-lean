@@ -1,0 +1,28 @@
+1
+
+Hint: Omit it from the simp argument list.
+  simp only [lowerLikelihood, ← Finset.prod_pow, lowerBaseSample, integral_fintype_prod_eq_pow,̵
+  ̵ ̵ ̵ ̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LowerProduct.lean:102:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/LowerProduct.lean:102:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/LowerProduct.lean:104:0: 'QuantyraNullCone.lower_flat_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:105:0: 'QuantyraNullCone.lower_likelihood_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:106:0: 'QuantyraNullCone.lower_likelihood_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:107:0: 'QuantyraNullCone.lower_sample_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:108:0: 'QuantyraNullCone.lower_likelihood_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:109:0: 'QuantyraNullCone.lower_alternative_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:110:0: 'QuantyraNullCone.lower_likelihood_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:111:0: 'QuantyraNullCone.normalized_square_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:112:0: 'QuantyraNullCone.lower_product_divergence_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:113:0: 'QuantyraNullCone.lower_product_divergence_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LowerProduct
+error: build failed
+TERMINAL_EXIT=1

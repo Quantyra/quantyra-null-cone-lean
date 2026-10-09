@@ -1,0 +1,28 @@
+1
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/OddGaussian.lean:34:72: unsolved goals
+case h.e'_9
+t : ℝ
+h :
+  HasDerivAt (id * fun x => Real.exp ((-id ^ 2) x))
+    (1 * Real.exp ((-id ^ 2) t) + id t * (Real.exp ((-id ^ 2) t) * -(↑2 * id t ^ (2 - 1) * 1))) t
+⊢ -(t ^ 2 * Real.exp (-t ^ 2) * 2) + Real.exp (-t ^ 2) = Real.exp ((-id ^ 2) t) - Real.exp ((-id ^ 2) t) * id t ^ 2 * 2
+info: QuantyraNullCone/OddGaussian.lean:100:0: 'QuantyraNullCone.odd_gaussian_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:101:0: 'QuantyraNullCone.odd_gaussian_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:102:0: 'QuantyraNullCone.odd_gaussian_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:103:0: 'QuantyraNullCone.odd_gaussian_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:104:0: 'QuantyraNullCone.odd_gaussian_deriv_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:105:0: 'QuantyraNullCone.odd_gaussian_lipschitz' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:106:0: 'QuantyraNullCone.lower_profile_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:107:0: 'QuantyraNullCone.lower_profile_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:108:0: 'QuantyraNullCone.lower_profile_lipschitz' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:109:0: 'QuantyraNullCone.lower_profile_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:110:0: 'QuantyraNullCone.lower_profile_integral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✔ [2927/2928] Built Mathlib.Analysis.Complex.ExponentialBounds (5.6s)
+Some required targets logged failures:
+- QuantyraNullCone.OddGaussian
+error: build failed
+TERMINAL_EXIT=1

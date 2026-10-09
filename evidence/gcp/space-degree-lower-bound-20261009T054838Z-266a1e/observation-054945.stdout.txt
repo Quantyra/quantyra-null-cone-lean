@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/LowerProduct.lean:70:55: unsolved goals
+X : Type u_1
+inst✝¹ : MeasurableSpace X
+μ : Measure X
+inst✝ : IsProbabilityMeasure μ
+f : X → ℝ
+hf : Integrable f μ
+hf2 : Integrable (fun x => f x ^ 2) μ
+hMean : ∫ (x : X), f x ∂μ = 1
+hEq : (fun x => (f x - 1) ^ 2) = fun x => f x ^ 2 - 2 * f x + 1
+hDiff : Integrable (fun x => f x ^ 2 - 2 * f x) μ
+⊢ ∫ (a : X), f a ^ 2 ∂μ - 2 + 1 = ∫ (a : X), f a ^ 2 ∂μ - 1
+info: QuantyraNullCone/LowerProduct.lean:108:0: 'QuantyraNullCone.lower_flat_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:109:0: 'QuantyraNullCone.lower_likelihood_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:110:0: 'QuantyraNullCone.lower_likelihood_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:111:0: 'QuantyraNullCone.lower_sample_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:112:0: 'QuantyraNullCone.lower_likelihood_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:113:0: 'QuantyraNullCone.lower_alternative_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:114:0: 'QuantyraNullCone.lower_likelihood_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:115:0: 'QuantyraNullCone.normalized_square_integral' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:116:0: 'QuantyraNullCone.lower_product_divergence_identity' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:117:0: 'QuantyraNullCone.lower_product_divergence_bound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LowerProduct
+error: build failed
+TERMINAL_EXIT=1

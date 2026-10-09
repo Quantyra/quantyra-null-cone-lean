@@ -1077,3 +1077,204 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 
 #check QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse
 #print axioms QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse
+
+#check QuantyraNullCone.odd_gaussian_smooth
+#print axioms QuantyraNullCone.odd_gaussian_smooth
+
+#check QuantyraNullCone.odd_gaussian_odd
+#print axioms QuantyraNullCone.odd_gaussian_odd
+
+#check QuantyraNullCone.odd_gaussian_abs_le
+#print axioms QuantyraNullCone.odd_gaussian_abs_le
+
+#check QuantyraNullCone.odd_gaussian_hasDerivAt
+#print axioms QuantyraNullCone.odd_gaussian_hasDerivAt
+
+#check QuantyraNullCone.odd_gaussian_deriv_bound
+#print axioms QuantyraNullCone.odd_gaussian_deriv_bound
+
+#check QuantyraNullCone.odd_gaussian_lipschitz
+#print axioms QuantyraNullCone.odd_gaussian_lipschitz
+
+#check QuantyraNullCone.lower_profile_smooth
+#print axioms QuantyraNullCone.lower_profile_smooth
+
+#check QuantyraNullCone.lower_profile_abs_le
+#print axioms QuantyraNullCone.lower_profile_abs_le
+
+#check QuantyraNullCone.lower_profile_lipschitz
+#print axioms QuantyraNullCone.lower_profile_lipschitz
+
+#check QuantyraNullCone.lower_profile_primitive
+#print axioms QuantyraNullCone.lower_profile_primitive
+
+#check QuantyraNullCone.lower_profile_integral_zero
+#print axioms QuantyraNullCone.lower_profile_integral_zero
+
+#check QuantyraNullCone.lower_alternative_smooth
+#print axioms QuantyraNullCone.lower_alternative_smooth
+
+#check QuantyraNullCone.lower_alternative_deviation
+#print axioms QuantyraNullCone.lower_alternative_deviation
+
+#check QuantyraNullCone.lower_alternative_bounds
+#print axioms QuantyraNullCone.lower_alternative_bounds
+
+#check QuantyraNullCone.lower_alternative_coordinate_lipschitz
+#print axioms QuantyraNullCone.lower_alternative_coordinate_lipschitz
+
+#check QuantyraNullCone.lower_alternative_euclidean_lipschitz
+#print axioms QuantyraNullCone.lower_alternative_euclidean_lipschitz
+
+#check QuantyraNullCone.lower_alternative_transpose
+#print axioms QuantyraNullCone.lower_alternative_transpose
+
+#check QuantyraNullCone.lower_alternative_marginal
+#print axioms QuantyraNullCone.lower_alternative_marginal
+
+#check QuantyraNullCone.lower_flat_in_class
+#print axioms QuantyraNullCone.lower_flat_in_class
+
+#check QuantyraNullCone.lower_alternative_in_class
+#print axioms QuantyraNullCone.lower_alternative_in_class
+
+#check QuantyraNullCone.odd_gaussian_square
+#print axioms QuantyraNullCone.odd_gaussian_square
+
+#check QuantyraNullCone.odd_gaussian_square_sharp
+#print axioms QuantyraNullCone.odd_gaussian_square_sharp
+
+#check QuantyraNullCone.odd_gaussian_product_sharp
+#print axioms QuantyraNullCone.odd_gaussian_product_sharp
+
+#check QuantyraNullCone.lower_alternative_deviation_sharp
+#print axioms QuantyraNullCone.lower_alternative_deviation_sharp
+
+#check QuantyraNullCone.lower_witness_mem
+#print axioms QuantyraNullCone.lower_witness_mem
+
+#check QuantyraNullCone.odd_gaussian_witness_square
+#print axioms QuantyraNullCone.odd_gaussian_witness_square
+
+#check QuantyraNullCone.lower_witness_value
+#print axioms QuantyraNullCone.lower_witness_value
+
+#check QuantyraNullCone.lower_coefficient_separation
+#print axioms QuantyraNullCone.lower_coefficient_separation
+
+#check QuantyraNullCone.lower_quotient_separation
+#print axioms QuantyraNullCone.lower_quotient_separation
+
+#check QuantyraNullCone.lower_separation_strict
+#print axioms QuantyraNullCone.lower_separation_strict
+
+#check QuantyraNullCone.lower_success_disjoint
+#print axioms QuantyraNullCone.lower_success_disjoint
+
+#check QuantyraNullCone.gaussian_second_integrable
+#print axioms QuantyraNullCone.gaussian_second_integrable
+
+#check QuantyraNullCone.odd_gaussian_square_integrable
+#print axioms QuantyraNullCone.odd_gaussian_square_integrable
+
+#check QuantyraNullCone.odd_gaussian_second_moment
+#print axioms QuantyraNullCone.odd_gaussian_second_moment
+
+#check QuantyraNullCone.odd_gaussian_second_moment_sq
+#print axioms QuantyraNullCone.odd_gaussian_second_moment_sq
+
+#check QuantyraNullCone.lower_profile_square_integrable
+#print axioms QuantyraNullCone.lower_profile_square_integrable
+
+#check QuantyraNullCone.lower_profile_total_second_moment
+#print axioms QuantyraNullCone.lower_profile_total_second_moment
+
+#check QuantyraNullCone.lower_profile_truncated_second_moment
+#print axioms QuantyraNullCone.lower_profile_truncated_second_moment
+
+#check QuantyraNullCone.lower_single_point_divergence_identity
+#print axioms QuantyraNullCone.lower_single_point_divergence_identity
+
+#check QuantyraNullCone.lower_single_point_divergence_bound
+#print axioms QuantyraNullCone.lower_single_point_divergence_bound
+
+#check QuantyraNullCone.finite_probability_weight_bound
+#print axioms QuantyraNullCone.finite_probability_weight_bound
+
+#check QuantyraNullCone.finite_seed_event_decomposition
+#print axioms QuantyraNullCone.finite_seed_event_decomposition
+
+#check QuantyraNullCone.finite_seed_event_bound
+#print axioms QuantyraNullCone.finite_seed_event_bound
+
+#check QuantyraNullCone.finite_seed_two_point_lower_bound
+#print axioms QuantyraNullCone.finite_seed_two_point_lower_bound
+
+#check QuantyraNullCone.lower_order_randomized_testing
+#print axioms QuantyraNullCone.lower_order_randomized_testing
+
+#check QuantyraNullCone.lower_bandwidth_bounds
+#print axioms QuantyraNullCone.lower_bandwidth_bounds
+
+#check QuantyraNullCone.lower_bandwidth_budget
+#print axioms QuantyraNullCone.lower_bandwidth_budget
+
+#check QuantyraNullCone.lower_bandwidth_large
+#print axioms QuantyraNullCone.lower_bandwidth_large
+
+#check QuantyraNullCone.lower_TV_budget_strict
+#print axioms QuantyraNullCone.lower_TV_budget_strict
+
+#check QuantyraNullCone.lower_probability_strict
+#print axioms QuantyraNullCone.lower_probability_strict
+
+#check QuantyraNullCone.lower_flat_sample
+#print axioms QuantyraNullCone.lower_flat_sample
+
+#check QuantyraNullCone.lower_likelihood_nonneg
+#print axioms QuantyraNullCone.lower_likelihood_nonneg
+
+#check QuantyraNullCone.lower_likelihood_integrable
+#print axioms QuantyraNullCone.lower_likelihood_integrable
+
+#check QuantyraNullCone.lower_sample_withDensity
+#print axioms QuantyraNullCone.lower_sample_withDensity
+
+#check QuantyraNullCone.lower_likelihood_integral
+#print axioms QuantyraNullCone.lower_likelihood_integral
+
+#check QuantyraNullCone.lower_alternative_square_integrable
+#print axioms QuantyraNullCone.lower_alternative_square_integrable
+
+#check QuantyraNullCone.lower_likelihood_square_integrable
+#print axioms QuantyraNullCone.lower_likelihood_square_integrable
+
+#check QuantyraNullCone.normalized_square_integral
+#print axioms QuantyraNullCone.normalized_square_integral
+
+#check QuantyraNullCone.lower_product_divergence_identity
+#print axioms QuantyraNullCone.lower_product_divergence_identity
+
+#check QuantyraNullCone.lower_product_divergence_bound
+#print axioms QuantyraNullCone.lower_product_divergence_bound
+
+#check QuantyraNullCone.finite_observation_L1_bound
+#print axioms QuantyraNullCone.finite_observation_L1_bound
+
+#check QuantyraNullCone.integral_abs_le_sqrt_second
+#print axioms QuantyraNullCone.integral_abs_le_sqrt_second
+
+#check QuantyraNullCone.lower_sample_real_apply
+#print axioms QuantyraNullCone.lower_sample_real_apply
+
+#check QuantyraNullCone.lower_order_TV_bound
+#print axioms QuantyraNullCone.lower_order_TV_bound
+
+#check QuantyraNullCone.fourth_root_randomized_lower_bound
+#print axioms QuantyraNullCone.fourth_root_randomized_lower_bound
+
+#check QuantyraNullCone.fourth_root_lower_exists
+#print axioms QuantyraNullCone.fourth_root_lower_exists
+
+#check QuantyraNullCone.fourth_root_minimax_obstruction
+#print axioms QuantyraNullCone.fourth_root_minimax_obstruction

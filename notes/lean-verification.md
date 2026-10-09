@@ -172,4 +172,10 @@ Run `space-degree-upper-acceptance-20261009T050655Z-35cee0` passes the full root
 
 The lower construction and randomized testing result remain uncertified. This milestone does not complete S032 or authorize a manuscript claim that the lower endpoint is Lean certified.
 
-Remaining to-do list: same-class lower construction, separation, divergence/data processing and randomized testing; full S032 final acceptance/delivery; then S033 manuscript reassessment.
+The preceding upper milestone is followed by full S032 acceptance below.
+
+## Full fourth-root acceptance (S032)
+
+Run `space-degree-final-acceptance-20261009T055238Z-7ba92d` passes 3027 root jobs and all 446 type/axiom audits, adding 67 lower-bound exports. [The endpoint map](fourth-root-certification.md) and [final index](../evidence/gcp/fourth-root-final-20261008.json) retain all 12 lower-campaign attempts, including 11 failures. All 135 captured proof/check/config files and pinned dependencies are verified before/after; final warnings and added axioms are zero. Original-K alternatives, exact quotient separation, Gaussian moment, actual product likelihood/divergence, order-law data processing and arbitrary-seed testing are assembled into `fourth_root_minimax_obstruction`. The full upper guarantee and actual-law corollary pass in the same root acceptance. The task-owned VM is verified TERMINATED after collection and no-other-work checks.
+
+Remaining to-do list: S033 manuscript reassessment. None for S032 certification.

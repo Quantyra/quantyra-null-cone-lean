@@ -35,6 +35,7 @@ import QuantyraNullCone.LorentzIsometry
 import QuantyraNullCone.DegreeProbability
 import QuantyraNullCone.DegreeCellBias
 import QuantyraNullCone.DegreeLaw
+import QuantyraNullCone.LowerBound
 
 /-!
 Quantyra finite-order reconstruction.
@@ -70,6 +71,11 @@ S032 adds degree trimming, deep-point retention, shifted-cell count/error lemmas
 and actual iid fixed-mass concentration. The full fourth-root upper guarantee
 uses a single measurable estimator of actual unlabeled directed orders, including
 the explicit mesh, full-square clamping and flat-output branches. Its actual-law
-distance corollary follows from the same estimator. The selected lower-bound
-construction and testing argument remain separate outstanding certification work.
+distance corollary follows from the same estimator. Lower-bound components
+construct the original-K alternatives, exact quotient separation, one-point
+Gaussian divergence and testing with arbitrary independent random seeds.
+The actual iid product likelihood, squared divergence identity and data processing
+to unlabeled order laws give the full finite lower risk. For n >= 16 every
+measurable estimator, with arbitrary independent randomization, has strict error
+above n^(-1/4)/6 with probability above 1/4 under an original-class density.
 -/

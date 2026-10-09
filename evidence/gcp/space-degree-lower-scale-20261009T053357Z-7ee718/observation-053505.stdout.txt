@@ -1,0 +1,28 @@
+1
+
+h : ℝ
+hh : 0 < h
+hSmall : h ≤ 1 / 2
+hK : InDensityClass (lowerAlternative h)
+hBdd : BddAbove ((fun p => |lowerFlat p - lowerAlternative h p|) '' diamond)
+hLo :
+  (fun p => |lowerFlat p - lowerAlternative h p|) (lowerWitness h) ≤
+    sSup ((fun p => |lowerFlat p - lowerAlternative h p|) '' diamond)
+hValue : |lowerFlat (lowerWitness h) - lowerAlternative h (lowerWitness h)| = h / Real.exp 1
+⊢ coefficientDeviation lowerFlat (lowerAlternative h) = h / Real.exp 1
+info: QuantyraNullCone/LowerSeparation.lean:116:0: 'QuantyraNullCone.odd_gaussian_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:117:0: 'QuantyraNullCone.odd_gaussian_square_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:118:0: 'QuantyraNullCone.odd_gaussian_product_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:119:0: 'QuantyraNullCone.lower_alternative_deviation_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:120:0: 'QuantyraNullCone.lower_witness_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:121:0: 'QuantyraNullCone.odd_gaussian_witness_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:122:0: 'QuantyraNullCone.lower_witness_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:123:0: 'QuantyraNullCone.lower_coefficient_separation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:124:0: 'QuantyraNullCone.lower_quotient_separation' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:125:0: 'QuantyraNullCone.lower_separation_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:126:0: 'QuantyraNullCone.lower_success_disjoint' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LowerSeparation
+error: build failed
+TERMINAL_EXIT=1

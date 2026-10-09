@@ -1,0 +1,28 @@
+1
+      ∫ (a : DiamondPoint),
+        lowerProfile h a.1 ^ 2 *
+          lowerProfile h a.2 ^ 2 ∂(volume.restrict (Set.Icc 0 1)).prod (volume.restrict (Set.Icc 0 1)) =
+    4 * h ^ 2 * (∫ (x : ℝ) in 0..1, lowerProfile h x ^ 2) ^ 2
+info: QuantyraNullCone/LowerMoments.lean:100:0: 'QuantyraNullCone.gaussian_second_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:101:0: 'QuantyraNullCone.odd_gaussian_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:102:0: 'QuantyraNullCone.odd_gaussian_second_moment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:103:0: 'QuantyraNullCone.odd_gaussian_second_moment_sq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:104:0: 'QuantyraNullCone.lower_profile_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:105:0: 'QuantyraNullCone.lower_profile_total_second_moment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:106:0: 'QuantyraNullCone.lower_profile_truncated_second_moment' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:107:0: 'QuantyraNullCone.lower_single_point_divergence_identity' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:108:0: 'QuantyraNullCone.lower_single_point_divergence_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LowerMoments
+error: build failed
+TERMINAL_EXIT=1

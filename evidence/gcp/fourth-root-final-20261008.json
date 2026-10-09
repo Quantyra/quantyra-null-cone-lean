@@ -1,0 +1,143 @@
+{
+  "story": "S032",
+  "status": "full_fourth_root_accepted",
+  "full_endpoints_certified": true,
+  "upper_certified": true,
+  "actual_law_corollary_certified": true,
+  "lower_certified": true,
+  "accepted_run": "space-degree-final-acceptance-20261009T055238Z-7ba92d",
+  "build_jobs": 3027,
+  "audited_exports": 446,
+  "new_exports": 67,
+  "source_files_verified_against_worktree": 135,
+  "attempts": [
+    {
+      "run": "space-degree-final-acceptance-20261009T055238Z-7ba92d",
+      "target": "QuantyraNullCone",
+      "exit": 0,
+      "started_utc": "2026-10-09T05:53:09Z",
+      "finished_utc": "2026-10-09T05:53:57Z",
+      "capture_sha256": "0ec0c6dc048ea886b5688a5998dc30cd8859b3a2317e8f9aae4ffe8db66aff40",
+      "inputs_sha256": "880125b4f9449704cec0a095997cf3c7b654f54ae7dd1fe0563d648806f281a6",
+      "evidence_archive_sha256": "e43eb63ab7e59f69b8660865764b2e1af52e87c8ccd2fc1dd58d90dfd538cc2a"
+    },
+    {
+      "run": "space-degree-lower-bound-20261009T054838Z-266a1e",
+      "target": "QuantyraNullCone.LowerBound",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:49:06Z",
+      "finished_utc": "2026-10-09T05:49:38Z",
+      "capture_sha256": "85aabcfc19d285cf4d389efb8c75774f372f78575289c83031ae65083953b9d6",
+      "inputs_sha256": "91a9764aa869328572e66428ce54dbec921862dfe31bb808bc778c3d95085db5",
+      "evidence_archive_sha256": "c4927787861aa45d25b7e87d7faf7cab26ea682f2d88f971ecd37ba9bc6bda1a"
+    },
+    {
+      "run": "space-degree-lower-bound-20261009T055026Z-9213e4",
+      "target": "QuantyraNullCone.LowerBound",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:50:55Z",
+      "finished_utc": "2026-10-09T05:51:31Z",
+      "capture_sha256": "29328c176ad5725be8ab31b58ad4731c375bcf50d40ff33f3356d13eb98573ee",
+      "inputs_sha256": "71b9ee502c6c62414e60c73275652051955b806efafc0bd2d3623627eadb176a",
+      "evidence_archive_sha256": "d6081746e2e77f9bd3c6f701bbed5d799e72c355ba628f6046351dd86f743910"
+    },
+    {
+      "run": "space-degree-lower-moments-20261009T052738Z-a43276",
+      "target": "QuantyraNullCone.LowerMoments",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:28:07Z",
+      "finished_utc": "2026-10-09T05:28:20Z",
+      "capture_sha256": "b5cea41aef8a224f13282a21acec31038877a1a5147dd8ed55c3f1fc29ea7b43",
+      "inputs_sha256": "a983b3b7d852ff53ee31fa76ad8814ce6f7e259f0c39f18ce6d5438b5d7eb5a0",
+      "evidence_archive_sha256": "5b8de331b2aef6b8b8aec1596f2888c2362b538dddfd0c37031a3aee84cc2adf"
+    },
+    {
+      "run": "space-degree-lower-moments-20261009T053012Z-59c4b0",
+      "target": "QuantyraNullCone.LowerMoments",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:30:43Z",
+      "finished_utc": "2026-10-09T05:30:56Z",
+      "capture_sha256": "1cee010ed509c8cedeca47fe88999b17b57f71f1f27fb8c30267720af3deb420",
+      "inputs_sha256": "5e7841016c7e88d86030e6bd16c6dcbc38528c9b514a32e340d4f9b356659d62",
+      "evidence_archive_sha256": "c9495d287b163964cd13fbe59c4639b9c31b0a449b5d9da49f543d5c8c12dfd9"
+    },
+    {
+      "run": "space-degree-lower-product-20261009T054602Z-524bc8",
+      "target": "QuantyraNullCone.LowerProduct",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:46:31Z",
+      "finished_utc": "2026-10-09T05:47:04Z",
+      "capture_sha256": "e582e7e9482b57884911aaec50b01b114007655046d87c2bae85ec6c63850f8c",
+      "inputs_sha256": "d3ccbb96b252fcb5c81dca4a3cbbbe552a64a7295cf66a6643c160fbb2747aff",
+      "evidence_archive_sha256": "696b3a86a3c2eb8025a869ea6a8bbe59814c8b8a313a77383c42c93c5148ce1c"
+    },
+    {
+      "run": "space-degree-lower-profile-20261009T051915Z-064e80",
+      "target": "QuantyraNullCone.OddGaussian",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:21:39Z",
+      "finished_utc": "2026-10-09T05:23:05Z",
+      "capture_sha256": "dfcbf0c1d1cb6ab8c2ffe30332c469beb7b3d153f94f3fb6286b467fe2a17467",
+      "inputs_sha256": "1966d7ac68b1f8ffdd5fc9c13f598a01909552787d1aefa321eed4693a9f822d",
+      "evidence_archive_sha256": "d12d147985172a98aed417afa31596401fcf4868df6d22937aaf3507473a7f92"
+    },
+    {
+      "run": "space-degree-lower-scale-20261009T053357Z-7ee718",
+      "target": "QuantyraNullCone.LowerScale",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:34:26Z",
+      "finished_utc": "2026-10-09T05:34:42Z",
+      "capture_sha256": "b80885bdc59a21dbd764908cf9c929b00067f9f090569ad0356855920cf53f69",
+      "inputs_sha256": "fc4bc29a8cc26ca4fee74638c44adc377df1839a05893c1097fafebb030961e8",
+      "evidence_archive_sha256": "3f8a9ddb2d4a816f4fed397ef4083742e75b51635b8cc33fe707afde56bd6265"
+    },
+    {
+      "run": "space-degree-lower-scale-20261009T053616Z-d4ab2d",
+      "target": "QuantyraNullCone.LowerScale",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:36:45Z",
+      "finished_utc": "2026-10-09T05:37:06Z",
+      "capture_sha256": "761143b93d1b239f8ade3787316828e96c8b069c1c921b22355bc6705bcd9d96",
+      "inputs_sha256": "4fbdd02bb22563be451b5042ced31b57416ee4ed28b8f79070eb708f7ddd1ce0",
+      "evidence_archive_sha256": "b4e6a44bf611eaa9f4759d18dbf72239832a69930dced0e1ebf736284a81d504"
+    },
+    {
+      "run": "space-degree-lower-scale-20261009T054231Z-6a1db2",
+      "target": "QuantyraNullCone.LowerScale",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:43:01Z",
+      "finished_utc": "2026-10-09T05:43:25Z",
+      "capture_sha256": "3cabeefb031b33dbc17d89c4e5358b528bd8df1c799c78060897f7954dce2ffd",
+      "inputs_sha256": "78c5405935e7c113c38366e066be46ba3ad93ebbfa02696a6d8a42c12574bdc2",
+      "evidence_archive_sha256": "eae39ba63ddcb08ea96951424d08884753361f80f535bdb49efdaea5be7357ca"
+    },
+    {
+      "run": "space-degree-lower-scale-20261009T054400Z-432692",
+      "target": "QuantyraNullCone.LowerScale",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:44:29Z",
+      "finished_utc": "2026-10-09T05:44:57Z",
+      "capture_sha256": "54d4a59204eab41deb4ed81de19c8b34f704a003a1518f32f972a86b6413e1e4",
+      "inputs_sha256": "6959f2da15d449f9b1680d3578652063f8971e7d9ec7ff8c103f0bbb0473749d",
+      "evidence_archive_sha256": "1e6a4a2943af8f8ad398a1d1743919752be90ca7987ba16e9a19a8a02c457392"
+    },
+    {
+      "run": "space-degree-lower-separation-20261009T052506Z-cb6ae4",
+      "target": "QuantyraNullCone.LowerSeparation",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:25:43Z",
+      "finished_utc": "2026-10-09T05:25:53Z",
+      "capture_sha256": "ff9425110f4d29775f3d2f2c1f6abc844c4f956bd615868e392fc46e6d4c3216",
+      "inputs_sha256": "59ebf0860fc594389e131498e6b7ccd2dd24ee79f0eb200549ea89a43887628b",
+      "evidence_archive_sha256": "fd2c5d7723e94ae913cc086782724cec98f73ef595eed8d343781483a1e03422"
+    }
+  ],
+  "failed_attempts_retained": 11,
+  "local_lean_invocations": 0,
+  "remaining": [
+    "S032 focused Git delivery",
+    "S033 literature refresh and manuscript decision"
+  ],
+  "task_owned_instance_final_state": "TERMINATED",
+  "ownership_source": "space-degree-lower-profile-20261009T051915Z-064e80/instance-ownership.json"
+}

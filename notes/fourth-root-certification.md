@@ -1,6 +1,6 @@
 # Fourth-root finite-data certification campaign
 
-S032, selected 2026-10-08 under the goal "complete steps 1-3". Baseline `436e36a05b4234870200871bd1adc8c082163c7f`. **The full upper guarantee and actual-law corollary have GCP acceptance; the lower bound remains uncertified and S032 is active.** The complete ordinary arguments remain in [the upper proof](finite-data-interior-degree-rate.md) and [the lower proof](finite-data-information-limit.md), with their [audit](finite-data-feasibility-proof-audit.md). S031's completed pilot and its negative practical disposition are preserved.
+S032, selected 2026-10-08 under the goal "complete steps 1-3". Baseline `436e36a05b4234870200871bd1adc8c082163c7f`. **All three selected endpoints now pass together on GCP: full upper guarantee, actual-law corollary and full randomized lower bound.** Final acceptance is recorded below; historical component milestones retain their original scope. The complete ordinary arguments remain in [the upper proof](finite-data-interior-degree-rate.md) and [the lower proof](finite-data-information-limit.md), with their [audit](finite-data-feasibility-proof-audit.md). S031's completed pilot and its negative practical disposition are preserved.
 
 ## Frozen mathematical endpoints
 
@@ -80,7 +80,7 @@ The exact statements in the audit define the accepted scope. The selector uses f
 
 Delivery checks compare all captured proof/check/config bytes with staged Git objects and preserve every raw attempt file byte-for-byte. Existing proof modules, manuscript artifacts and frozen study data are unchanged; the public root/check surface extends the library with eight new modules. The task-owned instance is verified TERMINATED after full terminal evidence collection and a process preflight showing no other work. Local Lean/Lake invocations remain zero.
 
-## Remaining lower-bound proof order
+## Lower-bound proof order at the upper milestone (now discharged)
 
 The selected lower endpoint retains the exact alternatives and finite inequality in [the ordinary lower proof](finite-data-information-limit.md). It is not replaced by a conditional testing lemma or a stronger density class.
 
@@ -91,4 +91,27 @@ The selected lower endpoint retains the exact alternatives and finite inequality
 
 Every step needs exact-source GCP acceptance, with root type/axiom exports and retained diagnostics. After the full upper/lower/law requirements are met, S033 refreshes the bounded primary-source comparison and records a concrete third-manuscript decision. Neither a new manuscript nor publication is automatic.
 
-Remaining to-do list: original-K lower construction, divergence and randomized testing; full S032 acceptance/delivery; then S033 literature refresh and manuscript decision.
+The preceding work order is discharged by the final acceptance below.
+
+## Full S032 acceptance, 2026-10-08
+
+Run **`space-degree-final-acceptance-20261009T055238Z-7ba92d`** passes **3027 root-build jobs and 446 exact-type/axiom audits**, including **67 new lower-bound exports** (151 S032 additions in total). The [receipt](../evidence/gcp/space-degree-final-acceptance-20261009T055238Z-7ba92d/receipt.json), [exact statements and dependencies](../evidence/gcp/space-degree-final-acceptance-20261009T055238Z-7ba92d/logs/audit.stdout.txt), [source capture](../evidence/gcp/space-degree-final-acceptance-20261009T055238Z-7ba92d/capture-manifest.json) and [final campaign index](../evidence/gcp/fourth-root-final-20261008.json) are authoritative. All 135 source/check/config identities and pinned dependencies pass before/after checks. There are zero warnings and no dependencies beyond `propext`, `Classical.choice` and `Quot.sound`. Twelve lower-campaign attempts retain their immutable inputs and full terminal logs, including eleven failures. Initial SSH boot trouble is also retained. All Lean execution was remote GCP.
+
+| Module / principal theorem | Accepted statement and scope |
+| --- | --- |
+| `OddGaussian`, `LowerAlternatives.lower_alternative_in_class` | Globally smooth odd-Gaussian profiles; exact zero marginal perturbations; original range and Euclidean Lipschitz 2. Both alternatives belong to the original K for `0<h<=1/2`. |
+| `LowerSeparation.lower_quotient_separation`, `lower_success_disjoint` | Exact quotient separation `h/exp(1)`, attained at an in-square witness. The closed radius-h/6 success sets are disjoint for arbitrary function outputs under one global identity/transpose. |
+| `LowerMoments.lower_single_point_divergence_bound` | Integration by parts proves the whole-line second moment; truncation and product integration give the single-point squared-likelihood bound `pi*h^4/8`. |
+| `LowerProduct.lower_sample_withDensity`, `lower_product_divergence_identity` | The actual iid alternative sample measure has likelihood equal to the product of the one-point densities against the uniform sample law. Exact product identity and exponential upper bound are proved. |
+| `LowerDataProcessing.lower_order_TV_bound` | Finite measurable observation contracts L1. Applied to the actual map from samples to directed-order isomorphism classes, TV is at most `sqrt(exp(n*pi*h^4/8)-1)/2`. |
+| `LowerTesting`, `LowerScale` | Arbitrary independent seed probability spaces preserve the finite-event discrepancy bound. With `h=min(1/2,n^(-1/4))`, `n*h^4<=1` and the resulting finite risk lower bound is strictly greater than 1/4. |
+| `LowerBound.fourth_root_randomized_lower_bound` | For all n>=1, maximum strict-error risk over the two explicit alternatives at radius h/6 is at least `(1-sqrt(exp(n*pi*h^4/8)-1)/2)/2`. Success-event measurability is explicit. |
+| `LowerBound.fourth_root_lower_exists`, `fourth_root_minimax_obstruction` | An original-K density attains at least the finite bound. For n>=16, every estimator with measurable success events, including any independent randomization, has strict error greater than n^(-1/4)/6 with probability greater than 1/4 under some original-K density. Output membership in K is not assumed. |
+
+The root acceptance checks these lower results together with the previously accepted upper estimator and law corollary. Deterministic finite-order estimators are included by choosing a one-point random seed; the formal theorem allows any output function with measurable success events. No product-likelihood identity, coordinate observation, independent suborder or stronger density class is left as an endpoint premise.
+
+The [ordinary lower proof](finite-data-information-limit.md) retains the confidence-band distinction: random widths imply a bound on coverage failure **plus** the probability of excessive width; occasional narrow reports and coverage conditional on acceptance are not ruled out. This is an ordinary consequence of the accepted estimator theorem, not a separately claimed Lean theorem about a band implementation. The lower result transfers a coordinate-data obstruction and establishes no additional order-specific information cost. The logarithmic gap and conservative constants remain. The frozen pilot, both manuscript families and their published artifacts are unchanged.
+
+Delivery verifies accepted normalized source bytes against staged Git objects and raw evidence byte-for-byte. The task-owned GCP instance is stopped after evidence collection and a no-other-work process check; its final state is verified TERMINATED in the campaign index. Hosted CI is supplementary and no unobserved CI result is claimed.
+
+Remaining to-do list: S033 bounded literature refresh and concrete manuscript decision. None for the S032 mathematical scope.

@@ -1,0 +1,28 @@
+1
+has type
+  ∀ (a b : ℝ), IntervalIntegrable (lowerProfile h) ?m.41 a b
+but is expected to have type
+  IntervalIntegrable (lowerProfile h) volume ?m.21 ?m.22
+in the application
+  intervalIntegral.integral_eq_sub_of_hasDerivAt (fun x x_1 => lower_profile_primitive hh x)
+    (Continuous.intervalIntegrable (ContDiff.continuous (lower_profile_smooth h)))
+error: QuantyraNullCone/OddGaussian.lean:90:49: unsolved goals
+h : ℝ
+hh : h ≠ 0
+⊢ ∫ (x : ℝ) in 0..1, lowerProfile h x = 0
+info: QuantyraNullCone/OddGaussian.lean:97:0: 'QuantyraNullCone.odd_gaussian_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:98:0: 'QuantyraNullCone.odd_gaussian_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:99:0: 'QuantyraNullCone.odd_gaussian_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:100:0: 'QuantyraNullCone.odd_gaussian_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:101:0: 'QuantyraNullCone.odd_gaussian_deriv_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:102:0: 'QuantyraNullCone.odd_gaussian_lipschitz' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:103:0: 'QuantyraNullCone.lower_profile_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:104:0: 'QuantyraNullCone.lower_profile_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:105:0: 'QuantyraNullCone.lower_profile_lipschitz' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:106:0: 'QuantyraNullCone.lower_profile_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:107:0: 'QuantyraNullCone.lower_profile_integral_zero' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.OddGaussian
+error: build failed
+TERMINAL_EXIT=1

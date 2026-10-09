@@ -1,0 +1,22 @@
+{
+  "version": "s040-s041-pilot-1",
+  "status": "frozen before execution",
+  "date_utc": "2026-10-09",
+  "target": "normalized volume of one independently fixed marked chronological interval",
+  "delta": "1/20",
+  "sizes": [0, 64, 256, 1024],
+  "physical_probabilities": ["1/100", "1/10", "1/4", "1/2", "9/10"],
+  "retention_ratios": ["1", "11/10", "5/4", "3/2", "2"],
+  "retention_patterns": ["uniform", "lower_in_interval", "higher_in_interval"],
+  "replications_per_cell": 2000,
+  "seed": 41040009,
+  "integer_endpoint_denominator": 65536,
+  "methods": ["exact_tail_certified_binomial", "analytic_hoeffding", "no_data", "binomial_ignoring_bias_diagnostic"],
+  "paired": "one count sample per replicate is shared by all methods; no-data needs no sample; bias-ignoring output is deliberately misspecified when R>1",
+  "coverage_audit": "sum the binomial probabilities over all counts, as a numerical audit in addition to the universal ordinary theorem; retain exact rational coverage for n<=64 on all rational parameter cells",
+  "metrics": ["coverage", "mean_width", "95th_percentile_width", "mean_absolute_error_of_count_fraction", "integer_tail_certificate_failures", "endpoint_adjustments", "elapsed_seconds", "peak_python_traced_bytes"],
+  "known_geometry_checks": "independent uniform samples in the unit null square and the smooth density 1+(2u-1)(2v-1)/4; fixed anchors (0,0),(1/2,1/2); exact targets 1/4 and 17/64; retained n=1024; 200 trials each for uniform retention and compensating detector; seed+1",
+  "resource_ceiling": {"elapsed_seconds": 900, "peak_python_traced_bytes": 536870912},
+  "decision": {"continue": "every rational endpoint certificate passes; exact rational audit has coverage>=19/20; no numerical coverage below .95-1e-10; at n=1024,R<=5/4 every prespecified cell has mean physical interval width<=1/5 and <=analytic comparator; total resource ceiling passes", "narrow": "validity passes but width gate fails for some nuisance range; report the maximal tested passing range without retuning the experiment", "stop": "unrepaired coverage/certificate failure, incorrect observed flags, or resource ceiling failure"},
+  "limits": "This controlled probability/geometry study does not validate a real detector; S044 needs its own withheld simulation protocol. Monte Carlo fluctuations are not coverage proof. No post hoc sample size or seed change is allowed in this pilot. Preserve failed execution attempts."
+}

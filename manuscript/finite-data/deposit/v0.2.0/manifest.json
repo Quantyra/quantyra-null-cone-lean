@@ -37,8 +37,8 @@
       "bytes": 1056
     },
     "manuscript/finite-data/deposit/v0.2.0/review.json": {
-      "sha256": "f4db7e04068a9d1707a78517252cdbfeba65e912237500c52a42c9423d067ac9",
-      "bytes": 5560
+      "sha256": "78bbbc356c93c5c83ad31d5f3bda08c50b74decec7999e199a9ad29186d96462",
+      "bytes": 5443
     },
     "manuscript/finite-data/deposit/v0.2.0/source-verification.json": {
       "sha256": "d6fcf9a2ea44ada910d09952a18011c575a266fbdb5da32214b5072d777cb001",
@@ -69,8 +69,8 @@
       "bytes": 4717
     },
     "manuscript/finite-data/prepare_optimal_rate_release.py": {
-      "sha256": "2937af0c94a116b60243cd05158e248484d0fdd13468c35d0b4628c4d5452949",
-      "bytes": 9774
+      "sha256": "f23091e011803be1d54ae91ec213e4ae6091d2d1cf5530fa2a28e77f4c05cd55",
+      "bytes": 10144
     },
     "checks/zenodo_credentials.py": {
       "sha256": "87395e7983a7449087565f948801963e46fa480639e8be09d95663ff1ae9f8d3",

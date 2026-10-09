@@ -102,6 +102,12 @@ def prepare_source():
 
 def bundle():
     assert not (PACKAGE/'published-record.json').exists(), 'Published payload is immutable'
+    # Match the publication package's LF Git attributes before hashing.
+    # Preserve raw compiler logs byte-for-byte under their -text attribute.
+    for path in PACKAGE.iterdir():
+        if path.is_file() and path.suffix in {'.json','.md','.py','.tex'}:
+            data=path.read_bytes()
+            if b'\r\n' in data:path.write_bytes(data.replace(b'\r\n',b'\n'))
     reservation=read(PACKAGE/'draft-record.json')
     original=subprocess.check_output(['git','show',f'{REVIEWED}:{(BASE/(STEM+".tex")).relative_to(ROOT).as_posix()}'],cwd=ROOT).decode('utf-8')
     assert (PACKAGE/(STEM+'.tex')).read_text(encoding='utf-8')==publication_source(original,reservation['doi'])

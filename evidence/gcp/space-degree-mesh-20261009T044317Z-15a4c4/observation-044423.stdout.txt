@@ -1,0 +1,28 @@
+1
+hNumerator : 0 < 1 - 16 * h
+⊢ ↑⌊√↑m⌋₊ * (1 - 16 * √(1 / ↑m)) / ↑⌊√↑m⌋₊ = 1 - 16 * √(1 / ↑m)
+error: QuantyraNullCone/DegreeMesh.lean:78:55: linarith failed to find a contradiction
+case h
+h w : ℝ
+hh : 0 < h
+hhSmall : h ≤ 1 / 256
+hLow : 15 / 16 * h ≤ w
+hHigh : w ≤ 2 * h
+hw : 0 < w
+hRatio : 32 * h ^ 2 / w ≤ 512 / 15 * h
+hRatio0 : 0 ≤ 32 * h ^ 2 / w
+hRatioSq : (32 * h ^ 2 / w) ^ 2 ≤ (512 / 15 * h) ^ 2
+hSqSmall : h * h ≤ h * (1 / 256)
+a✝ : 3072 / 15 * h < 6 * (32 * h ^ 2) / w
+⊢ False
+failed
+info: QuantyraNullCone/DegreeMesh.lean:131:0: 'QuantyraNullCone.degree_inner_mesh_data' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:132:0: 'QuantyraNullCone.degree_mesh_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:133:0: 'QuantyraNullCone.degree_histogram_constant' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:134:0: 'QuantyraNullCone.InDensityClass.square_mass_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:135:0: 'QuantyraNullCone.InDensityClass.shifted_inner_cell_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeMesh
+error: build failed
+TERMINAL_EXIT=1

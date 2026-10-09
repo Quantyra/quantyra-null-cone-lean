@@ -1,0 +1,1984 @@
+QuantyraNullCone.chronological3_transitive {p q r : QuantyraNullCone.LorentzPoint3}
+  (hpq : QuantyraNullCone.chronological3 p q) (hqr : QuantyraNullCone.chronological3 q r) :
+  QuantyraNullCone.chronological3 p r
+'QuantyraNullCone.chronological3_transitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.finite_realizer_rank_rigidity {n m : ℕ} {u v : Fin n → ℝ} {r : ℝ} (hn : 0 < n) (hm : 16 ≤ m)
+  (hr : 0 < r) (hmr : ↑m * r = 1) (uDistinct : Function.Injective u) (vDistinct : Function.Injective v)
+  (occ : QuantyraNullCone.GridOccupied u v m r) (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+  (margin : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF v t - t| ≤ 2 * r)
+  (boundaryBound : ↑(QuantyraNullCone.boundary u v r).card ≤ 20 * r * ↑n) :
+  ∃ swap,
+    ∀ (i : Fin n),
+      QuantyraNullCone.Interior u v r i →
+        |↑(QuantyraNullCone.rank (L.aligned swap).first i) - ↑(QuantyraNullCone.rank (fun x y => u x < u y) i)| ≤
+            30 * r * ↑n ∧
+          |↑(QuantyraNullCone.rank (L.aligned swap).second i) - ↑(QuantyraNullCone.rank (fun x y => v x < v y) i)| ≤
+            30 * r * ↑n
+QuantyraNullCone.finite_realizer_rank_rigidity_specified {n m : ℕ} {u v : Fin n → ℝ} {r : ℝ} (hn : 1 ≤ n) (hm : 16 ≤ m)
+  (rValue : r = 1 / ↑m) (_inUnit : ∀ (i : Fin n), 0 < u i ∧ u i < 1 ∧ 0 < v i ∧ v i < 1)
+  (uDistinct : Function.Injective u) (vDistinct : Function.Injective v)
+  (_noGridLines : ∀ (i : Fin n) (k : ℕ), u i ≠ ↑k * r ∧ v i ≠ ↑k * r) (occ : QuantyraNullCone.GridOccupied u v m r)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+  (_marginU : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF u t - t| ≤ 2 * r)
+  (marginV : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF v t - t| ≤ 2 * r)
+  (boundaryFraction : ↑(QuantyraNullCone.boundary u v r).card / ↑n ≤ 20 * r) :
+  ∃ swap,
+    ∀ (i : Fin n),
+      QuantyraNullCone.Interior u v r i →
+        |↑(QuantyraNullCone.rank (L.aligned swap).first i) - ↑(QuantyraNullCone.rank (fun x y => u x < u y) i)| ≤
+            30 * r * ↑n ∧
+          |↑(QuantyraNullCone.rank (L.aligned swap).second i) - ↑(QuantyraNullCone.rank (fun x y => v x < v y) i)| ≤
+            30 * r * ↑n
+QuantyraNullCone.finite_realizer_coordinate_rigidity {n m : ℕ} {u v : Fin n → ℝ} {r : ℝ} (hn : 0 < n) (hm : 16 ≤ m)
+  (hr : 0 < r) (hmr : ↑m * r = 1) (uDistinct : Function.Injective u) (vDistinct : Function.Injective v)
+  (occ : QuantyraNullCone.GridOccupied u v m r) (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+  (marginU : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF u t - t| ≤ 2 * r)
+  (marginV : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF v t - t| ≤ 2 * r)
+  (boundaryBound : ↑(QuantyraNullCone.boundary u v r).card ≤ 20 * r * ↑n) :
+  ∃ swap,
+    ∀ (i : Fin n),
+      QuantyraNullCone.Interior u v r i →
+        |↑(QuantyraNullCone.rank (L.aligned swap).first i) / ↑n - u i| ≤ 32 * r ∧
+          |↑(QuantyraNullCone.rank (L.aligned swap).second i) / ↑n - v i| ≤ 32 * r
+QuantyraNullCone.finite_realizer_cumulative_error {n m : ℕ} {u v : Fin n → ℝ} {r : ℝ} (hn : 0 < n) (hm : 16 ≤ m)
+  (hr : 0 < r) (hmr : ↑m * r = 1) (uDistinct : Function.Injective u) (vDistinct : Function.Injective v)
+  (occ : QuantyraNullCone.GridOccupied u v m r) (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+  (marginU : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF u t - t| ≤ 2 * r)
+  (marginV : ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → |QuantyraNullCone.marginalCDF v t - t| ≤ 2 * r)
+  (boundaryBound : ↑(QuantyraNullCone.boundary u v r).card ≤ 20 * r * ↑n) (F : ℝ → ℝ → ℝ)
+  (thresholdStability : ∀ (s t s' t' : ℝ), |F s t - F s' t'| ≤ |s - s'| + |t - t'|)
+  (latentAccuracy : ∀ (s t : ℝ), |QuantyraNullCone.empiricalCDF u v s t - F s t| ≤ 3 * r) :
+  ∃ swap,
+    ∀ (s t : ℝ),
+      |QuantyraNullCone.empiricalCDF (fun i => ↑(QuantyraNullCone.rank (L.aligned swap).first i) / ↑n)
+              (fun i => ↑(QuantyraNullCone.rank (L.aligned swap).second i) / ↑n) s t -
+            F s t| ≤
+        87 * r
+QuantyraNullCone.sampledOrder_measurable (n : ℕ) : Measurable QuantyraNullCone.sampledOrder
+QuantyraNullCone.InDensityClass.densityMeasure_univ {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) : (QuantyraNullCone.densityMeasure rho) Set.univ = 1
+QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n : ℕ) :
+  MeasureTheory.IsProbabilityMeasure (QuantyraNullCone.orderLaw rho n)
+QuantyraNullCone.InDensityClass.uMarginal_mass {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {S : Set ℝ} (hS : MeasurableSet S) :
+  (QuantyraNullCone.densityMeasure rho) (Prod.fst ⁻¹' S) = MeasureTheory.volume (S ∩ Set.Icc 0 1)
+QuantyraNullCone.InDensityClass.vMarginal_mass {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {T : Set ℝ} (hT : MeasurableSet T) :
+  (QuantyraNullCone.densityMeasure rho) (Prod.snd ⁻¹' T) = MeasureTheory.volume (T ∩ Set.Icc 0 1)
+QuantyraNullCone.InDensityClass.populationCDF_thresholdStability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (s t s' t' : ℝ) :
+  |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF rho s' t'| ≤ |s - s'| + |t - t'|
+QuantyraNullCone.InDensityClass.populationCDF_u_one {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {s : ℝ} (hs0 : 0 ≤ s) (hs1 : s ≤ 1) :
+  QuantyraNullCone.populationCDF rho s 1 = s
+QuantyraNullCone.InDensityClass.populationCDF_one_v {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :
+  QuantyraNullCone.populationCDF rho 1 t = t
+QuantyraNullCone.grid_marginal_accuracy_uniform {n m : ℕ} {w : Fin n → ℝ} {r : ℝ} (hr : 0 < r) (hmr : ↑m * r = 1)
+  (hGrid : QuantyraNullCone.GridMarginalAccuracy w m r) (t : ℝ) (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :
+  |QuantyraNullCone.marginalCDF w t - t| ≤ 2 * r
+QuantyraNullCone.boundary_card_le_of_grid_marginals {n m : ℕ} (hn : 0 < n) (hm : 16 ≤ m) (u v : Fin n → ℝ) {r : ℝ}
+  (hmr : ↑m * r = 1) (hU : QuantyraNullCone.GridMarginalAccuracy u m r)
+  (hV : QuantyraNullCone.GridMarginalAccuracy v m r) : ↑(QuantyraNullCone.boundary u v r).card ≤ 20 * r * ↑n
+QuantyraNullCone.grid_vertices_empiricalCDF {n m : ℕ} {u v : Fin n → ℝ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  {r : ℝ} (hK : QuantyraNullCone.InDensityClass rho) (hr : 0 < r) (hmr : ↑m * r = 1)
+  (hU : ∀ (i : Fin n), 0 ≤ u i ∧ u i ≤ 1) (hV : ∀ (i : Fin n), 0 ≤ v i ∧ v i ≤ 1)
+  (hGrid : QuantyraNullCone.GridVertexAccuracy u v rho m r) (s t : ℝ) :
+  |QuantyraNullCone.empiricalCDF u v s t - QuantyraNullCone.populationCDF rho s t| ≤ 3 * r
+QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices {n m : ℕ} {u v : Fin n → ℝ}
+  {rho : QuantyraNullCone.DiamondPoint → ℝ} {r : ℝ} (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n)
+  (hm : 16 ≤ m) (hr : 0 < r) (hmr : ↑m * r = 1) (hU : ∀ (i : Fin n), 0 ≤ u i ∧ u i ≤ 1)
+  (hV : ∀ (i : Fin n), 0 ≤ v i ∧ v i ≤ 1) (uDistinct : Function.Injective u) (vDistinct : Function.Injective v)
+  (occ : QuantyraNullCone.GridOccupied u v m r) (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+  (hGrid : QuantyraNullCone.GridVertexAccuracy u v rho m r) :
+  ∃ swap,
+    ∀ (s t : ℝ),
+      |QuantyraNullCone.empiricalCDF (fun i => ↑(QuantyraNullCone.rank (L.aligned swap).first i) / ↑n)
+              (fun i => ↑(QuantyraNullCone.rank (L.aligned swap).second i) / ↑n) s t -
+            QuantyraNullCone.populationCDF rho s t| ≤
+        87 * r
+'QuantyraNullCone.finite_realizer_rank_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_realizer_rank_rigidity_specified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_realizer_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_realizer_cumulative_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.sampledOrder_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.uMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.vMarginal_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.populationCDF_thresholdStability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.populationCDF_u_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.populationCDF_one_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.grid_marginal_accuracy_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.boundary_card_le_of_grid_marginals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.grid_vertices_empiricalCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_realizer_cumulative_error_of_grid_vertices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.sample_ae_mem_diamond {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n : ℕ) :
+  ∀ᵐ (sample : Fin n → QuantyraNullCone.DiamondPoint) ∂QuantyraNullCone.sampleMeasure rho n,
+    ∀ (i : Fin n), sample i ∈ QuantyraNullCone.diamond
+QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n m : ℕ) (r : ℝ) :
+  ∀ᵐ (sample : Fin n → QuantyraNullCone.DiamondPoint) ∂QuantyraNullCone.sampleMeasure rho n,
+    ∀ (i : Fin n) (k : Fin (m + 1)), (sample i).1 ≠ ↑↑k * r ∧ (sample i).2 ≠ ↑↑k * r
+QuantyraNullCone.InDensityClass.gridCell_mass_lower {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {j k m : ℕ} {r : ℝ} (hj : j < m) (hk : k < m) (hr : 0 < r)
+  (hmr : ↑m * r = 1) : r ^ 2 / 2 ≤ ((QuantyraNullCone.densityMeasure rho) (QuantyraNullCone.openGridCell j k r)).toReal
+QuantyraNullCone.InDensityClass.sample_misses_le_exp {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n : ℕ) {S : Set QuantyraNullCone.DiamondPoint} (hS : MeasurableSet S) :
+  ((QuantyraNullCone.sampleMeasure rho n) {sample | ∀ (i : Fin n), sample i ∉ S}).toReal ≤
+    Real.exp (-↑n * ((QuantyraNullCone.densityMeasure rho) S).toReal)
+QuantyraNullCone.InDensityClass.grid_occupancy_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n m : ℕ) {r : ℝ} (hr : 0 < r) (hmr : ↑m * r = 1) :
+  ((QuantyraNullCone.sampleMeasure rho n)
+        {sample | ¬QuantyraNullCone.GridOccupied (fun i => (sample i).1) (fun i => (sample i).2) m r}).toReal ≤
+    ↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2)
+QuantyraNullCone.InDensityClass.fst_map_uniform {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) :
+  MeasureTheory.Measure.map Prod.fst (QuantyraNullCone.densityMeasure rho) = QuantyraNullCone.unitUniform
+QuantyraNullCone.InDensityClass.snd_map_uniform {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) :
+  MeasureTheory.Measure.map Prod.snd (QuantyraNullCone.densityMeasure rho) = QuantyraNullCone.unitUniform
+QuantyraNullCone.InDensityClass.sample_coordinates_injective {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n : ℕ) :
+  ∀ᵐ (sample : Fin n → QuantyraNullCone.DiamondPoint) ∂QuantyraNullCone.sampleMeasure rho n,
+    (Function.Injective fun i => (sample i).1) ∧ Function.Injective fun i => (sample i).2
+QuantyraNullCone.InDensityClass.indicator_concentration {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) {S : Set QuantyraNullCone.DiamondPoint}
+  (hS : MeasurableSet S) {r : ℝ} (hr : 0 ≤ r) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        r ≤ |(∑ i, S.indicator (fun x => 1) (sample i)) / ↑n - ((QuantyraNullCone.densityMeasure rho) S).toReal|} ≤
+    2 * Real.exp (-2 * ↑n * r ^ 2)
+QuantyraNullCone.InDensityClass.empiricalCDF_concentration {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (s t : ℝ) {r : ℝ} (hr : 0 ≤ r) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        r ≤
+          |QuantyraNullCone.empiricalCDF (fun i => (sample i).1) (fun i => (sample i).2) s t -
+              QuantyraNullCone.populationCDF rho s t|} ≤
+    2 * Real.exp (-2 * ↑n * r ^ 2)
+QuantyraNullCone.InDensityClass.grid_vertices_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (m : ℕ) {r : ℝ} (hr : 0 ≤ r) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      {sample | ¬QuantyraNullCone.GridVertexAccuracy (fun i => (sample i).1) (fun i => (sample i).2) rho m r} ≤
+    2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2)
+QuantyraNullCone.InDensityClass.sample_good_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n m : ℕ} (hn : 0 < n) {r : ℝ} (hr : 0 < r) (hmr : ↑m * r = 1) :
+  1 - (↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2)) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real {sample | QuantyraNullCone.SampleGood rho m r sample}
+QuantyraNullCone.InDensityClass.reconstruction_probability_grid {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n m : ℕ} (hn : 0 < n) (hm : 16 ≤ m) {r : ℝ} (hr : 0 < r)
+  (hmr : ↑m * r = 1) :
+  1 - (↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2)) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real {sample | QuantyraNullCone.SampleCDFReconstructed rho (87 * r) sample}
+QuantyraNullCone.grid_failure_bound {n m : ℕ} {x r : ℝ} (hx : 16 ≤ x) (hmx : ↑m ≤ x) (hmr : ↑m * r = 1)
+  (hPower : x ^ 4 = ↑n) : ↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2) ≤ 3 / 32
+QuantyraNullCone.fourth_root_grid_data {n : ℕ} (hn : 65536 ≤ n) :
+  have x := √√↑n;
+  have m := ⌊x⌋₊;
+  have r := 1 / ↑m;
+  16 ≤ x ∧ 16 ≤ m ∧ 0 < r ∧ ↑m * r = 1 ∧ ↑m ≤ x ∧ x ^ 4 = ↑n ∧ 87 * r ≤ 174 / x
+QuantyraNullCone.InDensityClass.reconstruction_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 65536 ≤ n) :
+  9 / 10 ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample | QuantyraNullCone.SampleCDFReconstructed rho (174 * ↑n ^ (-1 / 4)) sample}
+'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.fst_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.snd_map_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_coordinates_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_good_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.reconstruction_probability_grid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.grid_failure_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.fourth_root_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.reconstruction_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.rectangle_mass_cdf {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a b c d : ℝ} (hab : a ≤ b) (hcd : c ≤ d) :
+  (QuantyraNullCone.densityMeasure rho).real (Set.Ioc a b ×ˢ Set.Ioc c d) =
+    QuantyraNullCone.populationCDF rho b d - QuantyraNullCone.populationCDF rho a d -
+        QuantyraNullCone.populationCDF rho b c +
+      QuantyraNullCone.populationCDF rho a c
+QuantyraNullCone.InDensityClass.coefficientDeviation_attained {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  ∃ p ∈ QuantyraNullCone.diamond, QuantyraNullCone.coefficientDeviation rho sigma = |rho p - sigma p|
+QuantyraNullCone.InDensityClass.coefficient_interpolation {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {epsilon : ℝ}
+  (hCDF : ∀ (s t : ℝ), |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF sigma s t| ≤ epsilon) :
+  QuantyraNullCone.coefficientDeviation rho sigma ^ 3 ≤ 2048 * epsilon
+'QuantyraNullCone.InDensityClass.rectangle_mass_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.coefficientDeviation_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.coefficient_interpolation' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_realizer_exists {n : ℕ} {u v : Fin n → ℝ} (hu : Function.Injective u)
+  (hv : Function.Injective v) : Nonempty (QuantyraNullCone.Realizer (QuantyraNullCone.Chronological u v))
+QuantyraNullCone.selectedCDF_measurable (n : ℕ) (s t : ℝ) : Measurable fun code => QuantyraNullCone.selectedCDF code s t
+QuantyraNullCone.InDensityClass.orderCDFGood_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 65536 ≤ n) :
+  9 / 10 ≤ (QuantyraNullCone.orderLaw rho n).real {code | QuantyraNullCone.OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code}
+QuantyraNullCone.finite_probability_event_bound.{u_1} {α : Type u_1} [Fintype α] [MeasurableSpace α]
+  [MeasurableSingletonClass α] (μ ν : MeasureTheory.Measure α) [MeasureTheory.IsProbabilityMeasure μ]
+  [MeasureTheory.IsProbabilityMeasure ν] (S : Set α) : μ.real S - ν.real S ≤ 1 / 2 * ∑ x, |μ.real {x} - ν.real {x}|
+QuantyraNullCone.InDensityClass.orderLawTV_event_bound {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) (n : ℕ)
+  (S : Set (QuantyraNullCone.OrderCode n)) :
+  (QuantyraNullCone.orderLaw rho n).real S - (QuantyraNullCone.orderLaw sigma n).real S ≤
+    QuantyraNullCone.orderLawTV rho sigma n
+QuantyraNullCone.InDensityClass.orderCDFGood_intersects {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 65536 ≤ n)
+  (hTV : QuantyraNullCone.orderLawTV rho sigma n < 4 / 5) :
+  ∃ code,
+    QuantyraNullCone.OrderCDFGood rho (174 * ↑n ^ (-1 / 4)) code ∧
+      QuantyraNullCone.OrderCDFGood sigma (174 * ↑n ^ (-1 / 4)) code
+QuantyraNullCone.InDensityClass.populationCDF_orbit_of_orderLawTV {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 65536 ≤ n)
+  (hTV : QuantyraNullCone.orderLawTV rho sigma n < 4 / 5) :
+  (∀ (s t : ℝ),
+      |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF sigma s t| ≤ 348 * ↑n ^ (-1 / 4)) ∨
+    ∀ (s t : ℝ),
+      |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF sigma t s| ≤ 348 * ↑n ^ (-1 / 4)
+'QuantyraNullCone.chronological_realizer_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.selectedCDF_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderCDFGood_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_probability_event_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderLawTV_event_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderCDFGood_intersects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.transpose {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) : QuantyraNullCone.InDensityClass (QuantyraNullCone.transposeDensity rho)
+QuantyraNullCone.diamondVolume_transpose_preserving :
+  MeasureTheory.MeasurePreserving QuantyraNullCone.transposePoint QuantyraNullCone.diamondVolume
+    QuantyraNullCone.diamondVolume
+QuantyraNullCone.densityMeasure_transpose_apply (rho : QuantyraNullCone.DiamondPoint → ℝ)
+  {S : Set QuantyraNullCone.DiamondPoint} (hS : MeasurableSet S) :
+  (QuantyraNullCone.densityMeasure (QuantyraNullCone.transposeDensity rho)) S =
+    (QuantyraNullCone.densityMeasure rho) (QuantyraNullCone.transposePoint ⁻¹' S)
+QuantyraNullCone.populationCDF_transpose (rho : QuantyraNullCone.DiamondPoint → ℝ) (s t : ℝ) :
+  QuantyraNullCone.populationCDF (QuantyraNullCone.transposeDensity rho) s t = QuantyraNullCone.populationCDF rho t s
+QuantyraNullCone.coefficientDeviation_transpose_both (rho sigma : QuantyraNullCone.DiamondPoint → ℝ) :
+  QuantyraNullCone.coefficientDeviation (QuantyraNullCone.transposeDensity rho)
+      (QuantyraNullCone.transposeDensity sigma) =
+    QuantyraNullCone.coefficientDeviation rho sigma
+QuantyraNullCone.InDensityClass.coefficientDeviation_bounds {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  0 ≤ QuantyraNullCone.coefficientDeviation rho sigma ∧ QuantyraNullCone.coefficientDeviation rho sigma ≤ 1
+QuantyraNullCone.InDensityClass.conformalDistance_bounds {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  0 ≤ QuantyraNullCone.conformalDistance rho sigma ∧ QuantyraNullCone.conformalDistance rho sigma ≤ 1
+QuantyraNullCone.orderLawTV_le_finiteLawDiscrepancy (rho sigma : QuantyraNullCone.DiamondPoint → ℝ) {k N : ℕ}
+  (hk : 2 ≤ k) (hN : k ≤ N) :
+  QuantyraNullCone.orderLawTV rho sigma k ≤ QuantyraNullCone.finiteLawDiscrepancy rho sigma N
+QuantyraNullCone.InDensityClass.conformalDistance_of_small_TV {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 65536 ≤ n)
+  (hTV : QuantyraNullCone.orderLawTV rho sigma n < 4 / 5) :
+  QuantyraNullCone.conformalDistance rho sigma ≤ 100 * ↑n ^ (-1 / 12)
+QuantyraNullCone.InDensityClass.full_inverse {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  QuantyraNullCone.conformalDistance rho sigma ≤
+    100 * (↑N ^ (-1 / 12) + QuantyraNullCone.finiteLawDiscrepancy rho sigma N)
+QuantyraNullCone.InDensityClass.coefficientDeviation_zero_iff {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  QuantyraNullCone.coefficientDeviation rho sigma = 0 ↔ ∀ p ∈ QuantyraNullCone.diamond, rho p = sigma p
+QuantyraNullCone.InDensityClass.conformalDistance_zero_iff {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  QuantyraNullCone.conformalDistance rho sigma = 0 ↔
+    (∀ p ∈ QuantyraNullCone.diamond, rho p = sigma p) ∨
+      ∀ p ∈ QuantyraNullCone.diamond, rho p = QuantyraNullCone.transposeDensity sigma p
+QuantyraNullCone.InDensityClass.all_law_identifiability {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma)
+  (hLaw : ∀ (n : ℕ), 2 ≤ n → QuantyraNullCone.orderLaw rho n = QuantyraNullCone.orderLaw sigma n) :
+  (∀ p ∈ QuantyraNullCone.diamond, rho p = sigma p) ∨
+    ∀ p ∈ QuantyraNullCone.diamond, rho p = QuantyraNullCone.transposeDensity sigma p
+'QuantyraNullCone.InDensityClass.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.diamondVolume_transpose_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.densityMeasure_transpose_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.populationCDF_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.coefficientDeviation_transpose_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.coefficientDeviation_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.conformalDistance_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.orderLawTV_le_finiteLawDiscrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.conformalDistance_of_small_TV' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.full_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.coefficientDeviation_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.conformalDistance_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.all_law_identifiability' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.sampledOrder_strict_partial_order {n : ℕ} (sample : Fin n → QuantyraNullCone.DiamondPoint) :
+  (∀ (i : Fin n), ¬QuantyraNullCone.CodeRelation (QuantyraNullCone.sampledOrder sample) i i) ∧
+    ∀ (i j k : Fin n),
+      QuantyraNullCone.CodeRelation (QuantyraNullCone.sampledOrder sample) i j →
+        QuantyraNullCone.CodeRelation (QuantyraNullCone.sampledOrder sample) j k →
+          QuantyraNullCone.CodeRelation (QuantyraNullCone.sampledOrder sample) i k
+QuantyraNullCone.InDensityClass.sample_relabel_preserving {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (π : Equiv.Perm (Fin n)) :
+  MeasureTheory.MeasurePreserving (⇑(QuantyraNullCone.relabelSample π)) (QuantyraNullCone.sampleMeasure rho n)
+    (QuantyraNullCone.sampleMeasure rho n)
+QuantyraNullCone.InDensityClass.orderLaw_exchangeable {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (π : Equiv.Perm (Fin n)) :
+  MeasureTheory.Measure.map (QuantyraNullCone.relabelOrder π) (QuantyraNullCone.orderLaw rho n) =
+    QuantyraNullCone.orderLaw rho n
+QuantyraNullCone.InDensityClass.orderLaw_singleton_relabel {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (π : Equiv.Perm (Fin n)) (code : QuantyraNullCone.OrderCode n) :
+  (QuantyraNullCone.orderLaw rho n) {QuantyraNullCone.relabelOrder π code} = (QuantyraNullCone.orderLaw rho n) {code}
+QuantyraNullCone.abs_sum_of_constant.{u_1} {α : Type u_1} (s : Finset α) (g : α → ℝ)
+  (hConst : ∀ x ∈ s, ∀ y ∈ s, g x = g y) : |∑ x ∈ s, g x| = ∑ x ∈ s, |g x|
+QuantyraNullCone.finite_map_L1_of_fiber_constant.{u_1, u_2} {α : Type u_1} {β : Type u_2} [Fintype α] [Fintype β]
+  [MeasurableSpace α] [MeasurableSingletonClass α] [MeasurableSpace β] [MeasurableSingletonClass β]
+  (μ ν : MeasureTheory.Measure α) [MeasureTheory.IsFiniteMeasure μ] [MeasureTheory.IsFiniteMeasure ν] (f : α → β)
+  (hμ : ∀ (x y : α), f x = f y → μ.real {x} = μ.real {y}) (hν : ∀ (x y : α), f x = f y → ν.real {x} = ν.real {y}) :
+  ∑ b, |(MeasureTheory.Measure.map f μ).real {b} - (MeasureTheory.Measure.map f ν).real {b}| =
+    ∑ x, |μ.real {x} - ν.real {x}|
+QuantyraNullCone.forgetOrderLabels_eq_iff {n : ℕ} (code other : QuantyraNullCone.OrderCode n) :
+  QuantyraNullCone.forgetOrderLabels code = QuantyraNullCone.forgetOrderLabels other ↔
+    ∃ π, QuantyraNullCone.relabelOrder π code = other
+QuantyraNullCone.InDensityClass.unlabeledOrderLaw_isProbabilityMeasure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) (n : ℕ) :
+  MeasureTheory.IsProbabilityMeasure (QuantyraNullCone.unlabeledOrderLaw rho n)
+QuantyraNullCone.InDensityClass.orderLaw_fiber_constant {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (code other : QuantyraNullCone.OrderCode n)
+  (hEq : QuantyraNullCone.forgetOrderLabels code = QuantyraNullCone.forgetOrderLabels other) :
+  (QuantyraNullCone.orderLaw rho n).real {code} = (QuantyraNullCone.orderLaw rho n).real {other}
+QuantyraNullCone.InDensityClass.unlabeledOrderLawTV_eq {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) (n : ℕ) :
+  QuantyraNullCone.unlabeledOrderLawTV rho sigma n = QuantyraNullCone.orderLawTV rho sigma n
+QuantyraNullCone.InDensityClass.unlabeledFiniteLawDiscrepancy_eq {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) (N : ℕ) :
+  QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N = QuantyraNullCone.finiteLawDiscrepancy rho sigma N
+QuantyraNullCone.InDensityClass.full_inverse_unlabeled {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  QuantyraNullCone.conformalDistance rho sigma ≤
+    100 * (↑N ^ (-1 / 12) + QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N)
+QuantyraNullCone.InDensityClass.all_unlabeled_law_identifiability {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma)
+  (hLaw : ∀ (n : ℕ), 2 ≤ n → QuantyraNullCone.unlabeledOrderLaw rho n = QuantyraNullCone.unlabeledOrderLaw sigma n) :
+  (∀ p ∈ QuantyraNullCone.diamond, rho p = sigma p) ∨
+    ∀ p ∈ QuantyraNullCone.diamond, rho p = QuantyraNullCone.transposeDensity sigma p
+'QuantyraNullCone.sampledOrder_strict_partial_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.sample_relabel_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderLaw_exchangeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.orderLaw_singleton_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.abs_sum_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_map_L1_of_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.forgetOrderLabels_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.unlabeledOrderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.orderLaw_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.unlabeledOrderLawTV_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.unlabeledFiniteLawDiscrepancy_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.full_inverse_unlabeled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.all_unlabeled_law_identifiability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.log_large_bounds {n : ℕ} (hn : 65536 ≤ n) : 1 ≤ Real.log ↑n ∧ 2048 * Real.log ↑n ≤ ↑n
+QuantyraNullCone.logarithmic_grid_data {n : ℕ} (hn : 65536 ≤ n) :
+  have x := √(↑n / (8 * Real.log ↑n));
+  have m := ⌊x⌋₊;
+  have r := 1 / ↑m;
+  16 ≤ m ∧ 0 < r ∧ ↑m * r = 1 ∧ ↑m ^ 2 ≤ ↑n / (8 * Real.log ↑n) ∧ 87 * r ≤ 174 / x
+QuantyraNullCone.logarithmic_grid_failure {n m : ℕ} (hn : 65536 ≤ n) (hm : 16 ≤ m) {r : ℝ} (hmr : ↑m * r = 1)
+  (hmSq : ↑m ^ 2 ≤ ↑n / (8 * Real.log ↑n)) :
+  ↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2) ≤ 1 / 10
+QuantyraNullCone.logarithmic_grid_reciprocal {n : ℕ} (hn : 2 ≤ n) :
+  1 / √(↑n / (8 * Real.log ↑n)) = √8 * √(Real.log ↑n / ↑n)
+QuantyraNullCone.InDensityClass.logarithmic_reconstruction_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 65536 ≤ n) :
+  9 / 10 ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample | QuantyraNullCone.SampleCDFReconstructed rho (174 * √8 * √(Real.log ↑n / ↑n)) sample}
+QuantyraNullCone.InDensityClass.logarithmic_orderCDFGood_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 65536 ≤ n) :
+  9 / 10 ≤
+    (QuantyraNullCone.orderLaw rho n).real
+      {code | QuantyraNullCone.OrderCDFGood rho (174 * √8 * √(Real.log ↑n / ↑n)) code}
+QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV
+  {rho sigma : QuantyraNullCone.DiamondPoint → ℝ} (hR : QuantyraNullCone.InDensityClass rho)
+  (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 65536 ≤ n)
+  (hTV : QuantyraNullCone.orderLawTV rho sigma n < 4 / 5) :
+  (∀ (s t : ℝ),
+      |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF sigma s t| ≤
+        348 * √8 * √(Real.log ↑n / ↑n)) ∨
+    ∀ (s t : ℝ),
+      |QuantyraNullCone.populationCDF rho s t - QuantyraNullCone.populationCDF sigma t s| ≤
+        348 * √8 * √(Real.log ↑n / ↑n)
+QuantyraNullCone.logarithmic_small_sample_lower {n : ℕ} (hn : 2 ≤ n) (hSmall : n < 65536) :
+  1 ≤ 130 * (Real.log ↑n / ↑n) ^ (1 / 6)
+QuantyraNullCone.InDensityClass.full_inverse_logarithmic {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  QuantyraNullCone.conformalDistance rho sigma ≤
+    130 * ((Real.log ↑N / ↑N) ^ (1 / 6) + QuantyraNullCone.finiteLawDiscrepancy rho sigma N)
+QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  QuantyraNullCone.conformalDistance rho sigma ≤
+    130 * ((Real.log ↑N / ↑N) ^ (1 / 6) + QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N)
+'QuantyraNullCone.log_large_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.logarithmic_grid_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.logarithmic_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.logarithmic_grid_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.logarithmic_reconstruction_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.logarithmic_orderCDFGood_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.logarithmic_small_sample_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.full_inverse_logarithmic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.sqrt_coefficient_lipschitz {a b : ℝ} (ha : 1 / 2 ≤ a) (hb : 1 / 2 ≤ b) :
+  |√(2 * a) - √(2 * b)| ≤ |a - b|
+QuantyraNullCone.FutureCurve.integral_derivU {p q : QuantyraNullCone.DiamondPoint}
+  (c : QuantyraNullCone.FutureCurve p q) : ∫ (t : ℝ), deriv c.u t ∂QuantyraNullCone.curveMeasure = q.1 - p.1
+QuantyraNullCone.FutureCurve.integral_derivV {p q : QuantyraNullCone.DiamondPoint}
+  (c : QuantyraNullCone.FutureCurve p q) : ∫ (t : ℝ), deriv c.v t ∂QuantyraNullCone.curveMeasure = q.2 - p.2
+QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz {p q : QuantyraNullCone.DiamondPoint}
+  (c : QuantyraNullCone.FutureCurve p q) :
+  ∫ (t : ℝ), c.weight t ∂QuantyraNullCone.curveMeasure ≤ √(q.1 - p.1) * √(q.2 - p.2)
+QuantyraNullCone.FutureCurve.integrable_length {p q : QuantyraNullCone.DiamondPoint}
+  (c : QuantyraNullCone.FutureCurve p q) {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) :
+  MeasureTheory.Integrable (fun t => √(2 * rho (c.point t) * deriv c.u t * deriv c.v t)) QuantyraNullCone.curveMeasure
+QuantyraNullCone.FutureCurve.length_difference {p q : QuantyraNullCone.DiamondPoint}
+  (c : QuantyraNullCone.FutureCurve p q) {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  |c.length rho - c.length sigma| ≤ QuantyraNullCone.coefficientDeviation rho sigma
+QuantyraNullCone.timeSeparation_empty (rho : QuantyraNullCone.DiamondPoint → ℝ) (p q : QuantyraNullCone.DiamondPoint)
+  [IsEmpty (QuantyraNullCone.FutureCurve p q)] : QuantyraNullCone.timeSeparation rho p q = 0
+QuantyraNullCone.InDensityClass.timeSeparation_difference {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma)
+  (p q : QuantyraNullCone.DiamondPoint) :
+  |QuantyraNullCone.timeSeparation rho p q - QuantyraNullCone.timeSeparation sigma p q| ≤
+    QuantyraNullCone.coefficientDeviation rho sigma
+QuantyraNullCone.InDensityClass.timeSeparation_transpose {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (p q : QuantyraNullCone.DiamondPoint) :
+  QuantyraNullCone.timeSeparation (QuantyraNullCone.transposeDensity rho) p q =
+    QuantyraNullCone.timeSeparation rho (QuantyraNullCone.transposePoint p) (QuantyraNullCone.transposePoint q)
+QuantyraNullCone.InDensityClass.proper_time_conformalDistance {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) :
+  ∃ swap,
+    ∀ (p q : QuantyraNullCone.DiamondPoint),
+      |QuantyraNullCone.timeSeparation rho p q -
+            QuantyraNullCone.timeSeparation sigma (QuantyraNullCone.alignedPoint swap p)
+              (QuantyraNullCone.alignedPoint swap q)| ≤
+        QuantyraNullCone.conformalDistance rho sigma
+QuantyraNullCone.InDensityClass.proper_time_inverse_unlabeled {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  ∃ swap,
+    ∀ (p q : QuantyraNullCone.DiamondPoint),
+      |QuantyraNullCone.timeSeparation rho p q -
+            QuantyraNullCone.timeSeparation sigma (QuantyraNullCone.alignedPoint swap p)
+              (QuantyraNullCone.alignedPoint swap q)| ≤
+        100 * (↑N ^ (-1 / 12) + QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N)
+QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {N : ℕ} (hN : 2 ≤ N) :
+  ∃ swap,
+    ∀ (p q : QuantyraNullCone.DiamondPoint),
+      |QuantyraNullCone.timeSeparation rho p q -
+            QuantyraNullCone.timeSeparation sigma (QuantyraNullCone.alignedPoint swap p)
+              (QuantyraNullCone.alignedPoint swap q)| ≤
+        130 * ((Real.log ↑N / ↑N) ^ (1 / 6) + QuantyraNullCone.unlabeledFiniteLawDiscrepancy rho sigma N)
+'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.FutureCurve.integral_derivU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.FutureCurve.integral_derivV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.FutureCurve.integrable_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.FutureCurve.length_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.timeSeparation_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.timeSeparation_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.timeSeparation_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.InDensityClass.proper_time_conformalDistance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.proper_time_inverse_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.residual_box_bound {r x L U : ℝ} (hL : L ≤ x) (hU : x ≤ U) : min (r * L) (r * U) ≤ r * x
+QuantyraNullCone.finite_lp_weak_duality {n m k : ℕ} (A : Fin m → Fin n → ℝ) (E : Fin k → Fin n → ℝ) (b : Fin m → ℝ)
+  (d : Fin k → ℝ) (c x L U : Fin n → ℝ) (y : Fin m → ℝ) (z : Fin k → ℝ) (hA : ∀ (i : Fin m), ∑ j, A i j * x j ≤ b i)
+  (hE : ∀ (i : Fin k), ∑ j, E i j * x j = d i) (hY : ∀ (i : Fin m), y i ≤ 0) (hL : ∀ (j : Fin n), L j ≤ x j)
+  (hU : ∀ (j : Fin n), x j ≤ U j) :
+  ∑ i, b i * y i + ∑ i, d i * z i +
+      ∑ j, min ((c j - ∑ i, A i j * y i - ∑ i, E i j * z i) * L j) ((c j - ∑ i, A i j * y i - ∑ i, E i j * z i) * U j) ≤
+    ∑ j, c j * x j
+QuantyraNullCone.rationalDual_checker_sound {n m k : ℕ} (A : Fin m → Fin n → ℚ) (E : Fin k → Fin n → ℚ) (b : Fin m → ℚ)
+  (d : Fin k → ℚ) (c L U : Fin n → ℚ) (y : Fin m → ℚ) (z : Fin k → ℚ) (x : Fin n → ℝ)
+  (hValid : QuantyraNullCone.rationalDualValid y = true) (hA : ∀ (i : Fin m), ∑ j, ↑(A i j) * x j ≤ ↑(b i))
+  (hE : ∀ (i : Fin k), ∑ j, ↑(E i j) * x j = ↑(d i)) (hL : ∀ (j : Fin n), ↑(L j) ≤ x j)
+  (hU : ∀ (j : Fin n), x j ≤ ↑(U j)) : ↑(QuantyraNullCone.rationalDualLower A E b d c L U y z) ≤ ∑ j, ↑(c j) * x j
+QuantyraNullCone.Realizer.originalForceStep_sound {n : ℕ} {rows : Fin n → Fin n → Bool}
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows)) (parent arc : QuantyraNullCone.FiniteArc n)
+  (h : QuantyraNullCone.originalForceStep rows parent arc = true) :
+  L.opposite parent.1 parent.2 ↔ L.opposite arc.1 arc.2
+QuantyraNullCone.Realizer.checkForcingTrace_sound {n : ℕ} {rows : Fin n → Fin n → Bool}
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows)) (anchor : QuantyraNullCone.FiniteArc n)
+  (trace : List (QuantyraNullCone.ForcingEntry n))
+  (hAccept : QuantyraNullCone.checkForcingTrace rows anchor trace = true) (arc : QuantyraNullCone.FiniteArc n) :
+  arc ∈ List.map Prod.fst trace → (L.opposite arc.1 arc.2 ↔ L.opposite anchor.1 anchor.2)
+QuantyraNullCone.Realizer.forcing_trace_global_alignment {n : ℕ} {rows : Fin n → Fin n → Bool}
+  (L R : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows)) (anchor : QuantyraNullCone.FiniteArc n)
+  (trace : List (QuantyraNullCone.ForcingEntry n))
+  (hAccept : QuantyraNullCone.checkForcingTrace rows anchor trace = true) :
+  ∃ swap, ∀ arc ∈ List.map Prod.fst trace, (L.aligned swap).opposite arc.1 arc.2 ↔ R.opposite arc.1 arc.2
+QuantyraNullCone.Realizer.checked_forcing_rank_bounds {n : ℕ} {rows : Fin n → Fin n → Bool}
+  (L R : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows)) (anchor : QuantyraNullCone.FiniteArc n)
+  (trace : List (QuantyraNullCone.ForcingEntry n))
+  (hAccept : QuantyraNullCone.checkForcingTrace rows anchor trace = true) :
+  ∃ swap,
+    ∀ (i : Fin n),
+      |↑(QuantyraNullCone.rank (L.aligned swap).first i) - ↑(QuantyraNullCone.rank R.first i)| ≤
+          ↑(QuantyraNullCone.unresolvedDegree rows trace i) ∧
+        |↑(QuantyraNullCone.rank (L.aligned swap).second i) - ↑(QuantyraNullCone.rank R.second i)| ≤
+          ↑(QuantyraNullCone.unresolvedDegree rows trace i)
+QuantyraNullCone.negative_exp_upper_512 {t : ℝ} (ht : 0 ≤ t) : Real.exp (-t) ≤ 1 / (1 + t / 512) ^ 512
+QuantyraNullCone.negative_exp_upper_rational {t : ℚ} (ht : 0 ≤ t) :
+  Real.exp (-↑t) ≤ ↑(QuantyraNullCone.negativeExpUpperQ t)
+QuantyraNullCone.roundFailureQ_upper {D : ℕ} (hD : 0 < D) (raw : ℚ) : raw ≤ QuantyraNullCone.roundFailureQ D raw
+QuantyraNullCone.roundFailureQ_le_budget {raw budget : ℚ} (hRaw : raw ≤ budget) :
+  QuantyraNullCone.roundFailureQ (10 ^ 12 * budget.den) raw ≤ budget
+QuantyraNullCone.rounded_split_failure_budget {rawM rawJ budgetM budgetJ delta : ℚ} (hM : rawM ≤ budgetM)
+  (hJ : rawJ ≤ budgetJ) (hSplit : budgetM + budgetJ = delta) :
+  QuantyraNullCone.roundFailureQ (10 ^ 12 * budgetM.den) rawM +
+      QuantyraNullCone.roundFailureQ (10 ^ 12 * budgetJ.den) rawJ ≤
+    delta
+QuantyraNullCone.finite_grid_CDF {n q : ℕ} {u v : Fin n → ℝ} {rho : QuantyraNullCone.DiamondPoint → ℝ} {r eta : ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hr : 0 < r) (hqr : ↑q * r = 1) (hEta : 0 ≤ eta)
+  (hU : ∀ (i : Fin n), 0 ≤ u i ∧ u i ≤ 1) (hV : ∀ (i : Fin n), 0 ≤ v i ∧ v i ≤ 1)
+  (hGrid :
+    ∀ (j k : ℕ),
+      j ≤ q →
+        k ≤ q →
+          |QuantyraNullCone.empiricalCDF u v (↑j * r) (↑k * r) - QuantyraNullCone.populationCDF rho (↑j * r) (↑k * r)| ≤
+            eta)
+  (s t : ℝ) : |QuantyraNullCone.empiricalCDF u v s t - QuantyraNullCone.populationCDF rho s t| ≤ eta + 2 * r
+QuantyraNullCone.normalized_rank_coordinate_error_general {n : ℕ} (hn : 0 < n) {w : Fin n → ℝ}
+  (distinct : Function.Injective w) {L : Fin n → Fin n → Prop} {i : Fin n} {budget epsilon : ℝ}
+  (hRank : |↑(QuantyraNullCone.rank L i) - ↑(QuantyraNullCone.rank (fun x y => w x < w y) i)| ≤ budget)
+  (hMargin : |QuantyraNullCone.marginalCDF w (w i) - w i| ≤ epsilon) :
+  |↑(QuantyraNullCone.rank L i) / ↑n - w i| ≤ budget / ↑n + epsilon
+QuantyraNullCone.checked_trimmed_CDF {n q : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n) (rows : Fin n → Fin n → Bool) (u v : Fin n → ℝ)
+  (hu : Function.Injective u) (hv : Function.Injective v)
+  (hRows : ∀ (i j : Fin n), QuantyraNullCone.rowRelation rows i j ↔ QuantyraNullCone.Chronological u v i j)
+  (hU : ∀ (i : Fin n), 0 ≤ u i ∧ u i ≤ 1) (hV : ∀ (i : Fin n), 0 ≤ v i ∧ v i ≤ 1)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation rows)) (anchor : QuantyraNullCone.FiniteArc n)
+  (trace : List (QuantyraNullCone.ForcingEntry n))
+  (hAccept : QuantyraNullCone.checkForcingTrace rows anchor trace = true) {epsilonM epsilonJ r : ℝ} (hM : 0 ≤ epsilonM)
+  (hJ : 0 ≤ epsilonJ) (hr : 0 < r) (hqr : ↑q * r = 1)
+  (hMU : ∀ (i : Fin n), |QuantyraNullCone.marginalCDF u (u i) - u i| ≤ epsilonM)
+  (hMV : ∀ (i : Fin n), |QuantyraNullCone.marginalCDF v (v i) - v i| ≤ epsilonM)
+  (hGrid :
+    ∀ (j k : ℕ),
+      j ≤ q →
+        k ≤ q →
+          |QuantyraNullCone.empiricalCDF u v (↑j * r) (↑k * r) - QuantyraNullCone.populationCDF rho (↑j * r) (↑k * r)| ≤
+            epsilonJ) :
+  ∃ swap,
+    ∀ (cutoff : ℕ) (s t : ℝ),
+      |(L.aligned swap).rankCDF s t - QuantyraNullCone.populationCDF rho s t| ≤
+        ↑(QuantyraNullCone.trimTailCount rows trace cutoff) / ↑n + 2 * ↑cutoff / ↑n + 2 * epsilonM + epsilonJ + 2 * r
+QuantyraNullCone.rank_position_eq {n : ℕ} (positions : Fin n → Fin n) (hInjective : Function.Injective positions)
+  (i : Fin n) : QuantyraNullCone.rank (fun j k => positions j < positions k) i = ↑(positions i) + 1
+QuantyraNullCone.checkedPositionRealizer_ranks {n : ℕ} (rows : Fin n → Fin n → Bool) (x y : Fin n → Fin n)
+  (hAccept : QuantyraNullCone.checkPositionRealizer rows x y = true) (i : Fin n) :
+  QuantyraNullCone.rank (QuantyraNullCone.checkedPositionRealizer rows x y hAccept).first i = ↑(x i) + 1 ∧
+    QuantyraNullCone.rank (QuantyraNullCone.checkedPositionRealizer rows x y hAccept).second i = ↑(y i) + 1
+'QuantyraNullCone.residual_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_lp_weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.rationalDual_checker_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.Realizer.originalForceStep_sound' does not depend on any axioms
+'QuantyraNullCone.Realizer.checkForcingTrace_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.Realizer.forcing_trace_global_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.Realizer.checked_forcing_rank_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.negative_exp_upper_512' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.negative_exp_upper_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.roundFailureQ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.roundFailureQ_le_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.rounded_split_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_grid_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.normalized_rank_coordinate_error_general' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.checked_trimmed_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.rank_position_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.checkedPositionRealizer_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.dkw_log_ratio_lower {z : ℝ} (hz : 0 ≤ z) (hz1 : z < 1) : 2 * z ≤ Real.log ((1 + z) / (1 - z))
+QuantyraNullCone.dkw_log_ratio_upper {z : ℝ} (hz : 0 ≤ z) (hz1 : z < 1) :
+  Real.log ((1 + z) / (1 - z)) ≤ 2 * z / (1 - z ^ 2)
+QuantyraNullCone.dkw_stationarity_root {e : ℝ} (he : 0 < e) (he1 : e < 1) :
+  ∃ p, (1 - e) / 2 ≤ p ∧ p ≤ 1 / 2 ∧ p < 1 - e ∧ QuantyraNullCone.dkwStationarity e p = 0
+QuantyraNullCone.dkw_bernoulli_pinsker {p q : ℝ} (hp : 0 < p) (hpq : p ≤ q) (hq1 : q < 1) :
+  2 * (q - p) ^ 2 ≤ q * Real.log (q / p) + (1 - q) * Real.log ((1 - q) / (1 - p))
+QuantyraNullCone.dkw_likelihood_hasDerivAt {e lambda t : ℝ} (hL : 0 < lambda) (ht : 0 < t) :
+  HasDerivAt (QuantyraNullCone.dkwLikelihoodBarrier e lambda) (QuantyraNullCone.dkwLikelihoodDerivative e lambda t) t
+QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt {e lambda t : ℝ} (hL : 0 < lambda) (ht : 0 < t) :
+  HasDerivAt (QuantyraNullCone.dkwLikelihoodDerivative e lambda) (QuantyraNullCone.dkwLikelihoodSecond e lambda t) t
+QuantyraNullCone.dkw_likelihood_stationary_value_lower {e p : ℝ} (he : 0 < e) (hp : 0 < p) (hpe : p < 1 - e) :
+  2 * e ^ 2 ≤ QuantyraNullCone.dkwLikelihoodBarrier e (e / (1 - p - e)) p
+QuantyraNullCone.dkw_sharp_likelihood_barrier {e : ℝ} (he : 0 < e) (he1 : e < 1) :
+  ∃ lambda, 0 < lambda ∧ ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ QuantyraNullCone.dkwLikelihoodBarrier e lambda t
+'QuantyraNullCone.dkw_log_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_log_ratio_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_stationarity_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_bernoulli_pinsker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_likelihood_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_likelihood_derivative_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_likelihood_stationary_value_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.dkw_sharp_likelihood_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.finite_bin_atom_card {n q k : ℕ} (hkq : k ≤ q) (x : QuantyraNullCone.BinProfile n q) :
+  (QuantyraNullCone.finiteBinAtom k x).card = k ^ QuantyraNullCone.finiteBinCount x k
+QuantyraNullCone.finite_bin_atom_likelihood_identity {n q k : ℕ} (hk : 0 < k) (hkq : k ≤ q) (lambda : ℝ)
+  (x : QuantyraNullCone.BinProfile n q) :
+  ∑ y ∈ QuantyraNullCone.finiteBinAtom k x, QuantyraNullCone.finiteBinLikelihood lambda 1 y =
+    ↑(QuantyraNullCone.finiteBinAtom k x).card * QuantyraNullCone.finiteBinLikelihood lambda k x
+QuantyraNullCone.finite_bin_terminal_sum {n q : ℕ} {lambda : ℝ} (hq : 0 < q) (hL : 0 < lambda) :
+  ∑ x, QuantyraNullCone.finiteBinLikelihood lambda 1 x = ↑q ^ n
+QuantyraNullCone.finite_bin_reveal_count {n q k j : ℕ} {x y : QuantyraNullCone.BinProfile n q}
+  (h : QuantyraNullCone.finiteBinReveal k x = QuantyraNullCone.finiteBinReveal k y) (hkj : k ≤ j) :
+  QuantyraNullCone.finiteBinCount x j = QuantyraNullCone.finiteBinCount y j
+QuantyraNullCone.finite_bin_invariant_terminal_sum {n q k : ℕ} (hk : 0 < k) (hkq : k ≤ q) (lambda : ℝ)
+  (E : Finset (QuantyraNullCone.BinProfile n q))
+  (hE :
+    ∀ (x y : QuantyraNullCone.BinProfile n q),
+      QuantyraNullCone.finiteBinReveal k x = QuantyraNullCone.finiteBinReveal k y → (x ∈ E ↔ y ∈ E)) :
+  ∑ x ∈ E, QuantyraNullCone.finiteBinLikelihood lambda 1 x = ∑ x ∈ E, QuantyraNullCone.finiteBinLikelihood lambda k x
+QuantyraNullCone.finite_bin_likelihood_maximal {n q : ℕ} {lambda B : ℝ} (hq : 0 < q) (hL : 0 < lambda) (hB : 0 < B) :
+  ↑(QuantyraNullCone.finiteBinCrossing lambda B).card / ↑q ^ n ≤ 1 / B
+QuantyraNullCone.finite_bin_deviation_likelihood {n q k : ℕ} {e lambda : ℝ} (hn : 0 < n) (hq : 0 < q) (hk : 0 < k)
+  (hL : 0 < lambda) (x : QuantyraNullCone.BinProfile n q)
+  (hBarrier : ∀ (t : ℝ), 0 < t → t ≤ 1 - e → 2 * e ^ 2 ≤ QuantyraNullCone.dkwLikelihoodBarrier e lambda t)
+  (hBad : e < QuantyraNullCone.finiteBinCDF x k - ↑k / ↑q) :
+  Real.exp (2 * ↑n * e ^ 2) < QuantyraNullCone.finiteBinLikelihood lambda k x
+QuantyraNullCone.finite_bin_upper_DKW {n q : ℕ} {e : ℝ} (hn : 0 < n) (hq : 0 < q) (he : 0 < e) (he1 : e < 1) :
+  ↑(QuantyraNullCone.finiteBinUpperDeviation e).card / ↑q ^ n ≤ Real.exp (-2 * ↑n * e ^ 2)
+QuantyraNullCone.finite_bin_reflect_CDF {n q k : ℕ} (hn : 0 < n) (hq : 0 < q) (hkq : k ≤ q)
+  (x : QuantyraNullCone.BinProfile n q) :
+  QuantyraNullCone.finiteBinCDF (QuantyraNullCone.finiteBinReflect x) (q - k) - ↑(q - k) / ↑q =
+    ↑k / ↑q - QuantyraNullCone.finiteBinCDF x k
+QuantyraNullCone.finite_bin_two_sided_DKW {n q : ℕ} {e : ℝ} (hn : 0 < n) (hq : 0 < q) (he : 0 ≤ e) :
+  ↑(QuantyraNullCone.finiteBinAbsDeviation e).card / ↑q ^ n ≤ 2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.finite_bin_atom_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_atom_likelihood_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_reveal_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_invariant_terminal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_likelihood_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_deviation_likelihood' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_upper_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_reflect_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantyraNullCone.finite_bin_two_sided_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_ceil_bin_grid_iff {q k : ℕ} (hq : 0 < q) {x : ℝ} (hx : x ∈ Set.Ioc 0 1) :
+  ↑(QuantyraNullCone.uniformCeilBin q hq x) < k ↔ x ≤ ↑k / ↑q
+'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_quantized_profile_real_mass {n q : ℕ} (hq : 0 < q)
+  (E : Finset (QuantyraNullCone.BinProfile n q)) :
+  (MeasureTheory.Measure.map (QuantyraNullCone.uniformQuantizedProfile q hq)
+          (QuantyraNullCone.uniformSampleMeasure n)).real
+      ↑E =
+    ↑E.card / ↑q ^ n
+'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_quantized_CDF {n q k : ℕ} (hq : 0 < q) (w : Fin n → ℝ)
+  (hw : ∀ (i : Fin n), w i ∈ Set.Ioc 0 1) :
+  QuantyraNullCone.finiteBinCDF (QuantyraNullCone.uniformQuantizedProfile q hq w) k =
+    QuantyraNullCone.marginalCDF w (↑k / ↑q)
+'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_grid_bad_measurable (n q : ℕ) (e : ℝ) : MeasurableSet (QuantyraNullCone.uniformGridBad n q e)
+'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_grid_DKW {n q : ℕ} {e : ℝ} (hn : 0 < n) (hq : 0 < q) (he : 0 ≤ e) :
+  (QuantyraNullCone.uniformSampleMeasure n).real (QuantyraNullCone.uniformGridBad n q e) ≤
+    2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_bad_dyadic_union {n : ℕ} (hn : 0 < n) (e : ℝ) :
+  QuantyraNullCone.uniformBad n e = ⋃ m, QuantyraNullCone.uniformGridBad n (2 ^ m) e
+'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_DKW {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.uniformSampleMeasure n).real (QuantyraNullCone.uniformBad n e) ≤ 2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.uniform_DKW_actual_population {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.uniformSampleMeasure n).real
+      {w | ∃ t, e < |QuantyraNullCone.marginalCDF w t - QuantyraNullCone.uniform01Measure.real (Set.Iic t)|} ≤
+    2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.coordinate_sample_uniform {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {f : QuantyraNullCone.DiamondPoint → ℝ} (hf : Measurable f)
+  (hLaw : MeasureTheory.Measure.map f (QuantyraNullCone.densityMeasure rho) = QuantyraNullCone.unitUniform) (n : ℕ) :
+  MeasureTheory.Measure.map (QuantyraNullCone.coordinateSample f) (QuantyraNullCone.sampleMeasure rho n) =
+    QuantyraNullCone.uniformSampleMeasure n
+'QuantyraNullCone.InDensityClass.coordinate_sample_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.fst_DKW {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      (QuantyraNullCone.coordinateSample Prod.fst ⁻¹' QuantyraNullCone.uniformBad n e) ≤
+    2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.InDensityClass.fst_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.snd_DKW {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      (QuantyraNullCone.coordinateSample Prod.snd ⁻¹' QuantyraNullCone.uniformBad n e) ≤
+    2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.InDensityClass.snd_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.split_marginal_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.sampleMarginalBad n e) ≤ 4 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.InDensityClass.split_marginal_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.split_joint_grid_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} {e : ℝ} (hn : 0 < n) (he : 0 ≤ e) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.sampleJointGridBad rho n q e) ≤
+    2 * (↑q + 1) ^ 2 * Real.exp (-2 * ↑n * e ^ 2)
+'QuantyraNullCone.InDensityClass.split_joint_grid_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.split_confidence_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} {epsilonM epsilonJ : ℝ} (hn : 0 < n) (hM : 0 ≤ epsilonM)
+  (hJ : 0 ≤ epsilonJ) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.splitCalibrationBad rho n q epsilonM epsilonJ) ≤
+    4 * Real.exp (-2 * ↑n * epsilonM ^ 2) + 2 * (↑q + 1) ^ 2 * Real.exp (-2 * ↑n * epsilonJ ^ 2)
+'QuantyraNullCone.InDensityClass.split_confidence_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.split_accuracy_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} {epsilonM epsilonJ : ℝ} (hn : 0 < n) (hM : 0 ≤ epsilonM)
+  (hJ : 0 ≤ epsilonJ) :
+  1 - (4 * Real.exp (-2 * ↑n * epsilonM ^ 2) + 2 * (↑q + 1) ^ 2 * Real.exp (-2 * ↑n * epsilonJ ^ 2)) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.splitCalibrationBad rho n q epsilonM epsilonJ)ᶜ
+'QuantyraNullCone.InDensityClass.split_accuracy_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.split_exponential_upper (n : ℕ) (e : ℚ) :
+  Real.exp (-2 * ↑n * ↑e ^ 2) ≤ ↑(QuantyraNullCone.negativeExpUpperQ (2 * ↑n * e ^ 2))
+'QuantyraNullCone.split_exponential_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.checked_split_calibration {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ delta : ℚ}
+  (hCheck : QuantyraNullCone.checkSplitCalibration n q eM eJ bM bJ delta = true) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.splitCalibrationBad rho n q ↑eM ↑eJ) ≤ ↑delta
+'QuantyraNullCone.InDensityClass.checked_split_calibration' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.checked_split_accuracy_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ delta : ℚ}
+  (hCheck : QuantyraNullCone.checkSplitCalibration n q eM eJ bM bJ delta = true) :
+  1 - ↑delta ≤ (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.splitCalibrationBad rho n q ↑eM ↑eJ)ᶜ
+'QuantyraNullCone.InDensityClass.checked_split_accuracy_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.split_rounded_failure {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ : ℚ} (hM : 0 ≤ eM) (hJ : 0 ≤ eJ) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.splitCalibrationBad rho n q ↑eM ↑eJ) ≤
+    ↑(QuantyraNullCone.splitRoundedFailureQ n q eM eJ bM bJ)
+'QuantyraNullCone.InDensityClass.split_rounded_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.checked_split_rounded_budget {n q : ℕ} {eM eJ bM bJ delta : ℚ}
+  (hCheck : QuantyraNullCone.checkSplitCalibration n q eM eJ bM bJ delta = true) :
+  QuantyraNullCone.splitRoundedFailureQ n q eM eJ bM bJ ≤ delta
+'QuantyraNullCone.checked_split_rounded_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.empirical_CDF_bounds {n : ℕ} (hn : 0 < n) (u v : Fin n → ℝ) (s t : ℝ) :
+  0 ≤ QuantyraNullCone.empiricalCDF u v s t ∧ QuantyraNullCone.empiricalCDF u v s t ≤ 1
+'QuantyraNullCone.empirical_CDF_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.CDF_radius_one {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (u v : Fin n → ℝ) (s t : ℝ) :
+  |QuantyraNullCone.empiricalCDF u v s t - QuantyraNullCone.populationCDF rho s t| ≤ 1
+'QuantyraNullCone.InDensityClass.CDF_radius_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.split_checked_sample_CDF {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) (hq : 0 < q) {eM eJ : ℝ} (hM : 0 ≤ eM) (hJ : 0 ≤ eJ)
+  (w : Fin n → QuantyraNullCone.DiamondPoint) (hSquare : ∀ (i : Fin n), w i ∈ QuantyraNullCone.diamond)
+  (hu : Function.Injective fun i => (w i).1) (hv : Function.Injective fun i => (w i).2)
+  (hGood : w ∉ QuantyraNullCone.splitCalibrationBad rho n q eM eJ)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.rowRelation (QuantyraNullCone.sampledOrder w)))
+  (anchor : QuantyraNullCone.FiniteArc n) (trace : List (QuantyraNullCone.ForcingEntry n))
+  (hAccept : QuantyraNullCone.checkForcingTrace (QuantyraNullCone.sampledOrder w) anchor trace = true) :
+  ∃ swap,
+    ∀ (cutoff : ℕ) (s t : ℝ),
+      |(L.aligned swap).rankCDF s t - QuantyraNullCone.populationCDF rho s t| ≤
+        ↑(QuantyraNullCone.trimTailCount (QuantyraNullCone.sampledOrder w) trace cutoff) / ↑n + 2 * ↑cutoff / ↑n +
+              2 * eM +
+            eJ +
+          2 / ↑q
+'QuantyraNullCone.InDensityClass.split_checked_sample_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.checked_rankCDF {n : ℕ} (rows : QuantyraNullCone.OrderCode n)
+  (R : QuantyraNullCone.CDFReport n) (hPos : QuantyraNullCone.checkPositionRealizer rows R.first R.second = true) :
+  (QuantyraNullCone.checkedPositionRealizer rows R.first R.second hPos).rankCDF = R.cdf
+'QuantyraNullCone.CDFReport.checked_rankCDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.radius_one_good {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (R : QuantyraNullCone.CDFReport n)
+  (hRadius : 1 ≤ R.radius) : R.Good rho
+'QuantyraNullCone.CDFReport.radius_one_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.checked_good {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ : ℚ}
+  (w : Fin n → QuantyraNullCone.DiamondPoint) (hSquare : ∀ (i : Fin n), w i ∈ QuantyraNullCone.diamond)
+  (hu : Function.Injective fun i => (w i).1) (hv : Function.Injective fun i => (w i).2)
+  (hGood : w ∉ QuantyraNullCone.splitCalibrationBad rho n q ↑eM ↑eJ) (R : QuantyraNullCone.CDFReport n)
+  (hCheck : QuantyraNullCone.checkCDFReport (QuantyraNullCone.sampledOrder w) R q eM eJ = true) : R.Good rho
+'QuantyraNullCone.CDFReport.checked_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.cdf_report_coverage_measurable {n : ℕ} (rho : QuantyraNullCone.DiamondPoint → ℝ) (q : ℕ) (eM eJ : ℚ)
+  (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+  MeasurableSet (QuantyraNullCone.cdfReportCoverage rho q eM eJ report)
+'QuantyraNullCone.cdf_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cdf_report_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ : ℚ} (hM : 0 ≤ eM) (hJ : 0 ≤ eJ)
+  (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+  1 - ↑(QuantyraNullCone.splitRoundedFailureQ n q eM eJ bM bJ) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.cdfReportCoverage rho q eM eJ report)
+'QuantyraNullCone.InDensityClass.cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.checked_cdf_report_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ delta : ℚ}
+  (hCal : QuantyraNullCone.checkSplitCalibration n q eM eJ bM bJ delta = true)
+  (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+  1 - ↑delta ≤ (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.cdfReportCoverage rho q eM eJ report)
+'QuantyraNullCone.InDensityClass.checked_cdf_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.permutation_positions_inverse {n : ℕ} (hn : 0 < n) (permutation : Fin n → Fin n)
+  (hPerm : Function.Injective permutation) (j : Fin n) :
+  QuantyraNullCone.permutationPositions hn permutation (permutation j) = j
+'QuantyraNullCone.permutation_positions_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.permutation_rank_decode {n : ℕ} (hn : 0 < n) (permutation : Fin n → Fin n)
+  (hPerm : Function.Injective permutation) (j : Fin n) :
+  QuantyraNullCone.rank
+      (fun u v =>
+        QuantyraNullCone.permutationPositions hn permutation u < QuantyraNullCone.permutationPositions hn permutation v)
+      (permutation j) =
+    ↑j + 1
+'QuantyraNullCone.permutation_rank_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.corner_CDF {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n) (p q : ℕ) :
+  R.cdf (↑p / ↑k) (↑q / ↑k) = ↑(QuantyraNullCone.reportCornerCount R k p q) / ↑n
+'QuantyraNullCone.CDFReport.corner_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.corner_CDF_rational {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (p q : ℕ) : R.cdf (↑p / ↑k) (↑q / ↑k) = ↑(↑(QuantyraNullCone.reportCornerCount R k p q) / ↑n)
+'QuantyraNullCone.CDFReport.corner_CDF_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.report_radius_fallback {n : ℕ} (rows : QuantyraNullCone.OrderCode n) (R : QuantyraNullCone.CDFReport n)
+  {q : ℕ} {eM eJ : ℚ} (hCost : 1 ≤ QuantyraNullCone.splitRadiusQ q eM eJ) :
+  QuantyraNullCone.reportRadiusQ rows R q eM eJ = 1
+'QuantyraNullCone.report_radius_fallback' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.checked_fallback_good {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ : ℚ} (rows : QuantyraNullCone.OrderCode n)
+  (R : QuantyraNullCone.CDFReport n) (hCost : 1 ≤ QuantyraNullCone.splitRadiusQ q eM eJ)
+  (hCheck : QuantyraNullCone.checkCDFReport rows R q eM eJ = true) : R.Good rho
+'QuantyraNullCone.CDFReport.checked_fallback_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cdf_report_fallback_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ : ℚ}
+  (hCost : 1 ≤ QuantyraNullCone.splitRadiusQ q eM eJ)
+  (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.cdfReportCoverage rho q eM eJ report) = 1
+'QuantyraNullCone.InDensityClass.cdf_report_fallback_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ delta : ℚ}
+  (hCal : QuantyraNullCone.checkSplitCalibrationOrFallback n q eM eJ bM bJ delta = true)
+  (report : QuantyraNullCone.OrderCode n → QuantyraNullCone.CDFReport n) :
+  1 - ↑delta ≤ (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.cdfReportCoverage rho q eM eJ report)
+'QuantyraNullCone.InDensityClass.checked_cdf_report_or_fallback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.square_cell_volume {a c w : ℝ} (hw : 0 ≤ w) :
+  (MeasureTheory.volume.prod MeasureTheory.volume) (QuantyraNullCone.squareCell a c w) = ENNReal.ofReal (w ^ 2)
+'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_integral {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 ≤ w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hcw : c + w ≤ 1) :
+  QuantyraNullCone.densityCellMean rho a c w = (∫ (x : ℝ) in a..a + w, ∫ (y : ℝ) in c..c + w, rho (x, y)) / w ^ 2
+'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_bounds {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 < w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hcw : c + w ≤ 1) :
+  1 / 2 ≤ QuantyraNullCone.densityCellMean rho a c w ∧ QuantyraNullCone.densityCellMean rho a c w ≤ 3 / 2
+'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_CDF {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 ≤ w) :
+  QuantyraNullCone.densityCellMean rho a c w =
+    (QuantyraNullCone.populationCDF rho (a + w) (c + w) - QuantyraNullCone.populationCDF rho a (c + w) -
+          QuantyraNullCone.populationCDF rho (a + w) c +
+        QuantyraNullCone.populationCDF rho a c) /
+      w ^ 2
+'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.cell_chord_distance {a w p x : ℝ} (hw : 0 < w) (hp : p ∈ Set.Icc a (a + w))
+  (hx : x ∈ Set.Icc a (a + w)) : |x - p| ≤ QuantyraNullCone.cellChord a w p x
+'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.cell_chord_integral {a w p : ℝ} (hw : 0 < w) :
+  ∫ (x : ℝ) in a..a + w, QuantyraNullCone.cellChord a w p x = w ^ 2 / 2
+'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.cell_majorant_integral {a c w : ℝ} (hw : 0 < w) (p : QuantyraNullCone.DiamondPoint) :
+  ∫ (q : ℝ × ℝ) in QuantyraNullCone.squareCell a c w,
+      QuantyraNullCone.cellMajorant a c w p q ∂MeasureTheory.volume.prod MeasureTheory.volume =
+    2 * w ^ 3
+'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_point_bias {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 < w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hcw : c + w ≤ 1) {p : QuantyraNullCone.DiamondPoint} (hp : p ∈ QuantyraNullCone.closedSquareCell a c w) :
+  |QuantyraNullCone.densityCellMean rho a c w - rho p| ≤ 2 * w
+'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_horizontal {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 < w) (ha : 0 ≤ a) (hc : 0 ≤ c) (ha2w : a + w + w ≤ 1)
+  (hcw : c + w ≤ 1) :
+  |QuantyraNullCone.densityCellMean rho (a + w) c w - QuantyraNullCone.densityCellMean rho a c w| ≤ 2 * w
+'QuantyraNullCone.InDensityClass.cell_mean_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_transpose {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 ≤ w) :
+  QuantyraNullCone.densityCellMean (QuantyraNullCone.transposeDensity rho) a c w =
+    QuantyraNullCone.densityCellMean rho c a w
+'QuantyraNullCone.InDensityClass.cell_mean_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.cell_mean_vertical {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 < w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hc2w : c + w + w ≤ 1) :
+  |QuantyraNullCone.densityCellMean rho a (c + w) w - QuantyraNullCone.densityCellMean rho a c w| ≤ 2 * w
+'QuantyraNullCone.InDensityClass.cell_mean_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_bounds {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i < k) (hj : j < k) :
+  1 / 2 ≤ QuantyraNullCone.densityGridCellMean rho k i j ∧ QuantyraNullCone.densityGridCellMean rho k i j ≤ 3 / 2
+'QuantyraNullCone.InDensityClass.grid_cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.sum_rectangle_differences (F : ℕ → ℕ → ℝ) (p q : ℕ) :
+  ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, (F (i + 1) (j + 1) - F i (j + 1) - F (i + 1) j + F i j) =
+    F p q - F 0 q - F p 0 + F 0 0
+'QuantyraNullCone.sum_rectangle_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_prefix {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k p q : ℕ} (hk : 0 < k) (hp : p ≤ k) (hq : q ≤ k) :
+  ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, QuantyraNullCone.densityGridCellMean rho k i j =
+    ↑k ^ 2 * QuantyraNullCone.populationCDF rho (↑p / ↑k) (↑q / ↑k)
+'QuantyraNullCone.InDensityClass.grid_cell_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_row_fin {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k) (i : Fin k) :
+  ∑ j, QuantyraNullCone.densityGridCellMean rho k ↑i ↑j = ↑k
+'QuantyraNullCone.InDensityClass.grid_cell_row_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_column_fin {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k) (j : Fin k) :
+  ∑ i, QuantyraNullCone.densityGridCellMean rho k ↑i ↑j = ↑k
+'QuantyraNullCone.InDensityClass.grid_cell_column_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_horizontal {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i + 1 < k) (hj : j < k) :
+  |QuantyraNullCone.densityGridCellMean rho k (i + 1) j - QuantyraNullCone.densityGridCellMean rho k i j| ≤ 2 / ↑k
+'QuantyraNullCone.InDensityClass.grid_cell_horizontal' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_vertical {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i < k) (hj : j + 1 < k) :
+  |QuantyraNullCone.densityGridCellMean rho k i (j + 1) - QuantyraNullCone.densityGridCellMean rho k i j| ≤ 2 / ↑k
+'QuantyraNullCone.InDensityClass.grid_cell_vertical' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_point_bias {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i < k) (hj : j < k)
+  {p : QuantyraNullCone.DiamondPoint} (hp : p ∈ QuantyraNullCone.closedSquareCell (↑i / ↑k) (↑j / ↑k) (1 / ↑k)) :
+  |QuantyraNullCone.densityGridCellMean rho k i j - rho p| ≤ 2 / ↑k
+'QuantyraNullCone.InDensityClass.grid_cell_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k p q : ℕ} (hk : 0 < k) (hp : p ≤ k) (hq : q ≤ k) (F : ℝ → ℝ → ℝ)
+  {radius : ℝ} (hAccuracy : |F (↑p / ↑k) (↑q / ↑k) - QuantyraNullCone.populationCDF rho (↑p / ↑k) (↑q / ↑k)| ≤ radius) :
+  ↑k ^ 2 * (F (↑p / ↑k) (↑q / ↑k) - radius) ≤
+      ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, QuantyraNullCone.densityGridCellMean rho k i j ∧
+    ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, QuantyraNullCone.densityGridCellMean rho k i j ≤
+      ↑k ^ 2 * (F (↑p / ↑k) (↑q / ↑k) + radius)
+'QuantyraNullCone.InDensityClass.grid_cell_prefix_restriction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.histogram_cell_corner {k : ℕ} (hk : 0 < k) (coefficient : ℕ → ℕ → ℝ) (i j : ℕ) :
+  coefficient i j =
+    ↑k ^ 2 *
+      (QuantyraNullCone.histogramGridCDF coefficient k (i + 1) (j + 1) -
+            QuantyraNullCone.histogramGridCDF coefficient k i (j + 1) -
+          QuantyraNullCone.histogramGridCDF coefficient k (i + 1) j +
+        QuantyraNullCone.histogramGridCDF coefficient k i j)
+'QuantyraNullCone.histogram_cell_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.histogram_cell_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i < k) (hj : j < k) (coefficient : ℕ → ℕ → ℝ)
+  (F : ℝ → ℝ → ℝ) {a eta : ℝ} (hAccuracy : ∀ (s t : ℝ), |F s t - QuantyraNullCone.populationCDF rho s t| ≤ a)
+  (hCorners :
+    ∀ (p q : ℕ),
+      p ≤ k → q ≤ k → |QuantyraNullCone.histogramGridCDF coefficient k p q - F (↑p / ↑k) (↑q / ↑k)| ≤ a + eta) :
+  |coefficient i j - QuantyraNullCone.densityGridCellMean rho k i j| ≤ 4 * ↑k ^ 2 * (2 * a + eta)
+'QuantyraNullCone.InDensityClass.histogram_cell_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.histogram_point_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k i j : ℕ} (hk : 0 < k) (hi : i < k) (hj : j < k) (coefficient : ℕ → ℕ → ℝ)
+  (F : ℝ → ℝ → ℝ) {a eta : ℝ} (hBox : ∀ (u v : ℕ), u < k → v < k → 1 / 2 ≤ coefficient u v ∧ coefficient u v ≤ 3 / 2)
+  (hAccuracy : ∀ (s t : ℝ), |F s t - QuantyraNullCone.populationCDF rho s t| ≤ a)
+  (hCorners :
+    ∀ (u v : ℕ),
+      u ≤ k → v ≤ k → |QuantyraNullCone.histogramGridCDF coefficient k u v - F (↑u / ↑k) (↑v / ↑k)| ≤ a + eta)
+  {p : QuantyraNullCone.DiamondPoint} (hp : p ∈ QuantyraNullCone.closedSquareCell (↑i / ↑k) (↑j / ↑k) (1 / ↑k)) :
+  |coefficient i j - rho p| ≤ min 1 (8 * a * ↑k ^ 2 + 4 * eta * ↑k ^ 2 + 2 / ↑k)
+'QuantyraNullCone.InDensityClass.histogram_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.grid_cell_feasible {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k) (F : ℝ → ℝ → ℝ) {radius : ℝ}
+  (hAccuracy : ∀ (s t : ℝ), |F s t - QuantyraNullCone.populationCDF rho s t| ≤ radius) :
+  QuantyraNullCone.DensityCellFeasible k F radius (QuantyraNullCone.densityGridCellMean rho k)
+'QuantyraNullCone.InDensityClass.grid_cell_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_cell_flat_value {k : ℕ} (ij : Fin k × Fin k) :
+  ↑(QuantyraNullCone.densityCellFlat ij) = ↑ij.1 * k + ↑ij.2
+'QuantyraNullCone.density_cell_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_row_sum {k : ℕ} (cell : ℕ → ℕ → ℝ) (i : Fin k) :
+  ∑ j, ↑(QuantyraNullCone.densityRowCoefficient i j) * QuantyraNullCone.densityCellVector cell j = ∑ j, cell ↑i ↑j
+'QuantyraNullCone.density_row_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_column_sum {k : ℕ} (cell : ℕ → ℕ → ℝ) (i : Fin k) :
+  ∑ j, ↑(QuantyraNullCone.densityColumnCoefficient i j) * QuantyraNullCone.densityCellVector cell j = ∑ j, cell ↑j ↑i
+'QuantyraNullCone.density_column_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_prefix_sum {k p q : ℕ} (hp : p ≤ k) (hq : q ≤ k) (cell : ℕ → ℕ → ℝ) :
+  ∑ j, ↑(QuantyraNullCone.densityPrefixCoefficient p q j) * QuantyraNullCone.densityCellVector cell j =
+    ∑ i ∈ Finset.range p, ∑ j ∈ Finset.range q, cell i j
+'QuantyraNullCone.density_prefix_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_objective_sum {k : ℕ} (x : Fin (k * k) → ℝ) (target : Fin (k * k)) :
+  ∑ j, ↑(QuantyraNullCone.densityCellObjective target j) * x j = x target
+'QuantyraNullCone.density_objective_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.check_density_LP_model_sound {n k : ℕ} (R : QuantyraNullCone.CDFReport n)
+  (A : Fin (QuantyraNullCone.densityInequalityRows k).length → Fin (k * k) → ℚ)
+  (E : Fin (QuantyraNullCone.densityEqualityRows k).length → Fin (k * k) → ℚ)
+  (b : Fin (QuantyraNullCone.densityInequalityRows k).length → ℚ)
+  (d : Fin (QuantyraNullCone.densityEqualityRows k).length → ℚ)
+  (h : QuantyraNullCone.checkDensityLPModel R k A E b d = true) :
+  A = QuantyraNullCone.densityLP_A k ∧
+    E = QuantyraNullCone.densityLP_E k ∧ b = QuantyraNullCone.densityLP_b R k ∧ d = QuantyraNullCone.densityLP_d k
+'QuantyraNullCone.check_density_LP_model_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.DensityCellFeasible.inequality_matrix {k n : ℕ} {F : ℝ → ℝ → ℝ} {radius : ℚ} {cell : ℕ → ℕ → ℝ}
+  (h : QuantyraNullCone.DensityCellFeasible k F (↑radius) cell) (counts : Fin (k + 1) → Fin (k + 1) → ℕ)
+  (hCounts : ∀ (p q : Fin (k + 1)), ↑(counts p q) / ↑n = F (↑↑p / ↑k) (↑↑q / ↑k))
+  (row : QuantyraNullCone.DensityInequalityRow k) :
+  ∑ j, ↑(QuantyraNullCone.densityInequalityCoefficient row j) * QuantyraNullCone.densityCellVector cell j ≤
+    ↑(QuantyraNullCone.densityInequalityRight n counts radius row)
+'QuantyraNullCone.DensityCellFeasible.inequality_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_LP_feasible {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (hAccuracy : ∀ (s t : ℝ), |R.cdf s t - QuantyraNullCone.populationCDF rho s t| ≤ ↑R.radius) :
+  (∀ (i : Fin (QuantyraNullCone.densityInequalityRows k).length),
+      ∑ j,
+          ↑(QuantyraNullCone.densityLP_A k i j) *
+            QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) j ≤
+        ↑(QuantyraNullCone.densityLP_b R k i)) ∧
+    (∀ (i : Fin (QuantyraNullCone.densityEqualityRows k).length),
+        ∑ j,
+            ↑(QuantyraNullCone.densityLP_E k i j) *
+              QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) j =
+          ↑(QuantyraNullCone.densityLP_d k i)) ∧
+      ∀ (j : Fin (k * k)),
+        1 / 2 ≤ QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) j ∧
+          QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) j ≤ 3 / 2
+'QuantyraNullCone.InDensityClass.density_LP_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_LP_dual_sound {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (hAccuracy : ∀ (s t : ℝ), |R.cdf s t - QuantyraNullCone.populationCDF rho s t| ≤ ↑R.radius) (c : Fin (k * k) → ℚ)
+  (y : Fin (QuantyraNullCone.densityInequalityRows k).length → ℚ)
+  (z : Fin (QuantyraNullCone.densityEqualityRows k).length → ℚ) (hValid : QuantyraNullCone.rationalDualValid y = true) :
+  ↑(QuantyraNullCone.densityLPDualLower R k c y z) ≤
+    ∑ j, ↑(c j) * QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) j
+'QuantyraNullCone.InDensityClass.density_LP_dual_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_cell_dual_bounds {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (hAccuracy : ∀ (s t : ℝ), |R.cdf s t - QuantyraNullCone.populationCDF rho s t| ≤ ↑R.radius)
+  (D : QuantyraNullCone.DensityDualPair k) (hValid : QuantyraNullCone.checkDensityDualPair D = true)
+  (cell : Fin (k * k)) :
+  ↑(QuantyraNullCone.densityCellLowerQ R D cell) ≤
+      QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) cell ∧
+    QuantyraNullCone.densityCellVector (QuantyraNullCone.densityGridCellMean rho k) cell ≤
+      ↑(QuantyraNullCone.densityCellUpperQ R D cell)
+'QuantyraNullCone.InDensityClass.density_cell_dual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_point_dual_bounds {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (hAccuracy : ∀ (s t : ℝ), |R.cdf s t - QuantyraNullCone.populationCDF rho s t| ≤ ↑R.radius)
+  (D : QuantyraNullCone.DensityDualPair k) (hValid : QuantyraNullCone.checkDensityDualPair D = true)
+  (cell : Fin (k * k)) {p : QuantyraNullCone.DiamondPoint}
+  (hp :
+    p ∈
+      QuantyraNullCone.closedSquareCell (↑↑(QuantyraNullCone.densityCellPair cell).1 / ↑k)
+        (↑↑(QuantyraNullCone.densityCellPair cell).2 / ↑k) (1 / ↑k)) :
+  ↑(QuantyraNullCone.densityPointLowerQ R D cell) ≤ rho p ∧ rho p ≤ ↑(QuantyraNullCone.densityPointUpperQ R D cell)
+'QuantyraNullCone.InDensityClass.density_point_dual_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_violation_nonneg {n k : ℕ} (R : QuantyraNullCone.CDFReport n) (H : Fin (k * k) → ℚ) :
+  0 ≤ QuantyraNullCone.densityHistogramViolationQ R H
+'QuantyraNullCone.density_histogram_violation_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_violation_corner {n k : ℕ} (R : QuantyraNullCone.CDFReport n) (H : Fin (k * k) → ℚ)
+  (p q : Fin (k + 1)) :
+  |QuantyraNullCone.densityHistogramCornerQ H ↑p ↑q - ↑(QuantyraNullCone.reportLPCounts R k p q) / ↑n| ≤
+    R.radius + QuantyraNullCone.densityHistogramViolationQ R H
+'QuantyraNullCone.density_histogram_violation_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_corner_cast {k : ℕ} (H : Fin (k * k) → ℚ) (p q : ℕ) :
+  ↑(QuantyraNullCone.densityHistogramCornerQ H p q) =
+    QuantyraNullCone.histogramGridCDF (QuantyraNullCone.densityHistogramReal H) k p q
+'QuantyraNullCone.density_histogram_corner_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_flat_value {k : ℕ} (H : Fin (k * k) → ℚ) (cell : Fin (k * k)) :
+  QuantyraNullCone.densityHistogramReal H ↑(QuantyraNullCone.densityCellPair cell).1
+      ↑(QuantyraNullCone.densityCellPair cell).2 =
+    ↑(H cell)
+'QuantyraNullCone.density_histogram_flat_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_box {k : ℕ} (H : Fin (k * k) → ℚ)
+  (hBox : ∀ (cell : Fin (k * k)), 1 / 2 ≤ H cell ∧ H cell ≤ 3 / 2) (i j : ℕ) :
+  i < k →
+    j < k → 1 / 2 ≤ QuantyraNullCone.densityHistogramReal H i j ∧ QuantyraNullCone.densityHistogramReal H i j ≤ 3 / 2
+'QuantyraNullCone.density_histogram_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_histogram_corners {n k : ℕ} (hn : 0 < n) (hk : 0 < k) (R : QuantyraNullCone.CDFReport n)
+  (H : Fin (k * k) → ℚ) {eta : ℚ} (hEta : eta = QuantyraNullCone.densityHistogramViolationQ R H) (p q : ℕ) :
+  p ≤ k →
+    q ≤ k →
+      |QuantyraNullCone.histogramGridCDF (QuantyraNullCone.densityHistogramReal H) k p q - R.cdf (↑p / ↑k) (↑q / ↑k)| ≤
+        ↑R.radius + ↑eta
+'QuantyraNullCone.density_histogram_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_bands_checked {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n k : ℕ} (hn : 0 < n) (R : QuantyraNullCone.CDFReport n)
+  (B : QuantyraNullCone.DensityBands k)
+  (hAccuracy : ∀ (s t : ℝ), |R.cdf s t - QuantyraNullCone.populationCDF rho s t| ≤ ↑R.radius)
+  (hCheck : QuantyraNullCone.checkDensityBands R B = true) : QuantyraNullCone.DensityBandsGood rho B
+'QuantyraNullCone.InDensityClass.density_bands_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.CDFReport.good_oriented_density {n : ℕ} (R : QuantyraNullCone.CDFReport n)
+  {rho : QuantyraNullCone.DiamondPoint → ℝ} (hGood : R.Good rho) :
+  ∃ swap,
+    ∀ (s t : ℝ),
+      |R.cdf s t - QuantyraNullCone.populationCDF (QuantyraNullCone.densityReportTruth rho swap) s t| ≤ ↑R.radius
+'QuantyraNullCone.CDFReport.good_oriented_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_report_checked {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (R : QuantyraNullCone.DensityReport n)
+  (hCDF : R.cdf.Good rho) (hBands : QuantyraNullCone.checkDensityBands R.cdf R.bands = true) : R.Good rho
+'QuantyraNullCone.InDensityClass.density_report_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_report_radius_one {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) (R : QuantyraNullCone.DensityReport n)
+  (hRadius : 1 ≤ R.cdf.radius) (hBands : QuantyraNullCone.checkDensityBands R.cdf R.bands = true) : R.Good rho
+'QuantyraNullCone.InDensityClass.density_report_radius_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_report_coverage_measurable {n : ℕ} (rho : QuantyraNullCone.DiamondPoint → ℝ) (q : ℕ)
+  (eM eJ : ℚ) : MeasurableSet (QuantyraNullCone.densityReportCoverage rho q eM eJ)
+'QuantyraNullCone.density_report_coverage_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_report_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ : ℚ} (hM : 0 ≤ eM) (hJ : 0 ≤ eJ) :
+  1 - ↑(QuantyraNullCone.splitRoundedFailureQ n q eM eJ bM bJ) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.densityReportCoverage rho q eM eJ)
+'QuantyraNullCone.InDensityClass.density_report_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.density_report_fallback_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ : ℚ}
+  (hCost : 1 ≤ QuantyraNullCone.splitRadiusQ q eM eJ) :
+  (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.densityReportCoverage rho q eM eJ) = 1
+'QuantyraNullCone.InDensityClass.density_report_fallback_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.checked_density_report_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {n q : ℕ} (hn : 0 < n) {eM eJ bM bJ delta : ℚ}
+  (hCal : QuantyraNullCone.checkSplitCalibrationOrFallback n q eM eJ bM bJ delta = true) :
+  1 - ↑delta ≤ (QuantyraNullCone.sampleMeasure rho n).real (QuantyraNullCone.densityReportCoverage rho q eM eJ)
+'QuantyraNullCone.InDensityClass.checked_density_report_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.density_fixture_matrix :
+  (List.ofFn fun i => List.ofFn (QuantyraNullCone.densityLP_A 2 i)) = QuantyraNullCone.densityFixtureA
+'QuantyraNullCone.density_fixture_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_equalities :
+  (List.ofFn fun i => List.ofFn (QuantyraNullCone.densityLP_E 2 i)) = QuantyraNullCone.densityFixtureE
+'QuantyraNullCone.density_fixture_equalities' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_right :
+  List.ofFn (QuantyraNullCone.densityLP_b QuantyraNullCone.densityFixtureCDF 2) = QuantyraNullCone.densityFixtureB
+'QuantyraNullCone.density_fixture_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_dimensions :
+  (QuantyraNullCone.densityInequalityRows 2).length = 26 ∧ (QuantyraNullCone.densityEqualityRows 2).length = 4
+'QuantyraNullCone.density_fixture_dimensions' depends on axioms: [propext, Quot.sound]
+QuantyraNullCone.density_fixture_residual :
+  List.ofFn
+      (QuantyraNullCone.rationalResidual (QuantyraNullCone.densityLP_A 2) (QuantyraNullCone.densityLP_E 2)
+        (QuantyraNullCone.densityCellObjective 0) QuantyraNullCone.densityFixtureY QuantyraNullCone.densityFixtureZ) =
+    [5 / 3, -2 / 15, 0, 1 / 5]
+'QuantyraNullCone.density_fixture_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_dual_bound :
+  QuantyraNullCone.densityLPDualLower QuantyraNullCone.densityFixtureCDF 2 (QuantyraNullCone.densityCellObjective 0)
+      QuantyraNullCone.densityFixtureY QuantyraNullCone.densityFixtureZ =
+    -11 / 15
+'QuantyraNullCone.density_fixture_dual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_checked :
+  QuantyraNullCone.checkDensityBands QuantyraNullCone.densityFixtureCDF QuantyraNullCone.densityFixtureBands = true
+'QuantyraNullCone.density_fixture_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_fixture_fallback_checked :
+  QuantyraNullCone.checkDensityReport QuantyraNullCone.cdfFixtureChain QuantyraNullCone.densityFixtureFallbackReport 1 0
+      0 =
+    true
+'QuantyraNullCone.density_fixture_fallback_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_iff_square3 (p q : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.chronological3 p q ↔ QuantyraNullCone.lorentzSquare3 (q - p) < 0 ∧ 0 < q.ofLp 0 - p.ofLp 0
+'QuantyraNullCone.chronological_iff_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_separation3 (a : ℝ) (p q : QuantyraNullCone.LorentzPoint3)
+  (hp : QuantyraNullCone.flowDenominator3 a p ≠ 0) (hq : QuantyraNullCone.flowDenominator3 a q ≠ 0) :
+  QuantyraNullCone.lorentzSquare3 (QuantyraNullCone.lorentzFlow3 a q - QuantyraNullCone.lorentzFlow3 a p) =
+    QuantyraNullCone.flowFactor3 a p * QuantyraNullCone.flowFactor3 a q * QuantyraNullCone.lorentzSquare3 (q - p)
+'QuantyraNullCone.lorentz_flow_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.continuousOn_flow_time_parameter3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  ContinuousOn (fun s => (QuantyraNullCone.lorentzFlow3 (a * s) p).ofLp 0) (Set.Icc 0 1)
+'QuantyraNullCone.continuousOn_flow_time_parameter3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_chronological_forward3 {a : ℝ} (ha : |a| < 1) {p q : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (hq : q ∈ QuantyraNullCone.closedLorentzDiamond3)
+  (hChron : QuantyraNullCone.chronological3 p q) :
+  QuantyraNullCone.chronological3 (QuantyraNullCone.lorentzFlow3 a p) (QuantyraNullCone.lorentzFlow3 a q)
+'QuantyraNullCone.lorentz_flow_chronological_forward3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_chronological_iff3 {a : ℝ} (ha : |a| < 1) {p q : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (hq : q ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  QuantyraNullCone.chronological3 (QuantyraNullCone.lorentzFlow3 a p) (QuantyraNullCone.lorentzFlow3 a q) ↔
+    QuantyraNullCone.chronological3 p q
+'QuantyraNullCone.lorentz_flow_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.hasFDerivAt_flow_denominator3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3) :
+  HasFDerivAt (QuantyraNullCone.flowDenominator3 a) (QuantyraNullCone.flowDenominatorDerivative3 a p) p
+'QuantyraNullCone.hasFDerivAt_flow_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.hasFDerivAt_flow_numerator3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3) :
+  HasFDerivAt (QuantyraNullCone.flowTimeNumerator3 a) (QuantyraNullCone.flowNumeratorDerivative3 a p) p
+'QuantyraNullCone.hasFDerivAt_flow_numerator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.hasFDerivAt_lorentz_flow3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  HasFDerivAt (QuantyraNullCone.lorentzFlow3 a) (QuantyraNullCone.lorentzFlowDerivative3 a p) p
+'QuantyraNullCone.hasFDerivAt_lorentz_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.spatial_radius_sq3 (p : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.spatialRadius3 p ^ 2 = QuantyraNullCone.spatialSquared3 p
+'QuantyraNullCone.spatial_radius_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.closed_lorentz_diamond_bounds3 {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) : |p.ofLp 0| ≤ 1 ∧ QuantyraNullCone.spatialRadius3 p ≤ 1
+'QuantyraNullCone.closed_lorentz_diamond_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological3_irreflexive (p : QuantyraNullCone.LorentzPoint3) : ¬QuantyraNullCone.chronological3 p p
+'QuantyraNullCone.chronological3_irreflexive' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.continuous_spatial_radius3 : Continuous QuantyraNullCone.spatialRadius3
+'QuantyraNullCone.continuous_spatial_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.sampledOrder3_measurable (n : ℕ) : Measurable QuantyraNullCone.sampledOrder3
+'QuantyraNullCone.sampledOrder3_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flat_diamond_measure_mass3 : QuantyraNullCone.flatDiamondMeasure3 Set.univ = 1
+'QuantyraNullCone.flat_diamond_measure_mass3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flat_density_class3 : QuantyraNullCone.InDensityClass3 QuantyraNullCone.flatDensity3
+'QuantyraNullCone.flat_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.sampledOrder3_flow_eq {a : ℝ} (ha : |a| < 1) {n : ℕ} (w : Fin n → QuantyraNullCone.LorentzPoint3)
+  (hw : ∀ (i : Fin n), w i ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  (QuantyraNullCone.sampledOrder3 fun i => QuantyraNullCone.lorentzFlow3 a (w i)) = QuantyraNullCone.sampledOrder3 w
+'QuantyraNullCone.sampledOrder3_flow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_zero3 (p : QuantyraNullCone.LorentzPoint3) : QuantyraNullCone.lorentzFlow3 0 p = p
+'QuantyraNullCone.lorentz_flow_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.spatial_radius_flow3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.spatialRadius3 (QuantyraNullCone.lorentzFlow3 a p) =
+    |QuantyraNullCone.flowFactor3 a p| * QuantyraNullCone.spatialRadius3 p
+'QuantyraNullCone.spatial_radius_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_denominator_null_factors3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.flowDenominator3 a p =
+    (1 + a * (p.ofLp 0 + QuantyraNullCone.spatialRadius3 p)) * (1 + a * (p.ofLp 0 - QuantyraNullCone.spatialRadius3 p))
+'QuantyraNullCone.flow_denominator_null_factors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.closed_lorentz_null_bounds3 {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  |p.ofLp 0 + QuantyraNullCone.spatialRadius3 p| ≤ 1 ∧ |p.ofLp 0 - QuantyraNullCone.spatialRadius3 p| ≤ 1
+'QuantyraNullCone.closed_lorentz_null_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_denominator_lower3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) : (1 - |a|) ^ 2 ≤ QuantyraNullCone.flowDenominator3 a p
+'QuantyraNullCone.flow_denominator_lower3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_denominator_pos3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) : 0 < QuantyraNullCone.flowDenominator3 a p
+'QuantyraNullCone.flow_denominator_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_factor_pos3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) : 0 < QuantyraNullCone.flowFactor3 a p
+'QuantyraNullCone.flow_factor_pos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_denominator_upper3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) : QuantyraNullCone.flowDenominator3 a p ≤ (1 + |a|) ^ 2
+'QuantyraNullCone.flow_denominator_upper3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_bounds3 {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  1 / 2 ≤ QuantyraNullCone.gaugeDensity3 p ∧ QuantyraNullCone.gaugeDensity3 p ≤ 3 / 2
+'QuantyraNullCone.gauge_density_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_smooth3 :
+  ContDiffOn ℝ ⊤ QuantyraNullCone.gaugeDensity3 QuantyraNullCone.gaugeSmoothDomain3
+'QuantyraNullCone.gauge_density_smooth3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_normalized3 :
+  ∫ (p : QuantyraNullCone.LorentzPoint3), QuantyraNullCone.gaugeDensity3 p ∂QuantyraNullCone.flatDiamondMeasure3 = 1
+'QuantyraNullCone.gauge_density_normalized3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_class3 : QuantyraNullCone.InDensityClass3 QuantyraNullCone.gaugeDensity3
+'QuantyraNullCone.gauge_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_forward_transport3 :
+  MeasureTheory.Measure.map (QuantyraNullCone.lorentzFlow3 QuantyraNullCone.gaugeParameter3)
+      QuantyraNullCone.flatDiamondMeasure3 =
+    QuantyraNullCone.densityMeasure3 QuantyraNullCone.gaugeDensity3
+'QuantyraNullCone.gauge_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.closed_lorentz_coordinate_square_difference3 {p q : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (hq : q ∈ QuantyraNullCone.closedLorentzDiamond3) (i : Fin 3) :
+  |p.ofLp i ^ 2 - q.ofLp i ^ 2| ≤ 2 * ‖p - q‖
+'QuantyraNullCone.closed_lorentz_coordinate_square_difference3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.gauge_denominator_lipschitz3 {p q : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (hq : q ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  |QuantyraNullCone.flowDenominator3 (-QuantyraNullCone.gaugeParameter3) p -
+        QuantyraNullCone.flowDenominator3 (-QuantyraNullCone.gaugeParameter3) q| ≤
+    3 / 100 * ‖p - q‖
+'QuantyraNullCone.gauge_denominator_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.reciprocal_cube_lipschitz3 {d e c : ℝ} (hd : 9 / 10 ≤ d ∧ d ≤ 11 / 10) (he : 9 / 10 ≤ e ∧ e ≤ 11 / 10)
+  (hc : 0 ≤ c ∧ c ≤ 1) : |c / d ^ 3 - c / e ^ 3| ≤ 7 * |d - e|
+'QuantyraNullCone.reciprocal_cube_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_lipschitz3 {p q : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (hq : q ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  |QuantyraNullCone.gaugeDensity3 p - QuantyraNullCone.gaugeDensity3 q| ≤ 2 * ‖p - q‖
+'QuantyraNullCone.gauge_density_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_inverse_denominator_identity3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  QuantyraNullCone.flowDenominator3 (-a) (QuantyraNullCone.lorentzFlow3 a p) * QuantyraNullCone.flowDenominator3 a p =
+    (1 - a ^ 2) ^ 2
+'QuantyraNullCone.flow_inverse_denominator_identity3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_inverse_denominator3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  QuantyraNullCone.flowDenominator3 (-a) (QuantyraNullCone.lorentzFlow3 a p) =
+    (1 - a ^ 2) ^ 2 / QuantyraNullCone.flowDenominator3 a p
+'QuantyraNullCone.flow_inverse_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flow_inverse_factor3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) (hA : 1 - a ^ 2 ≠ 0) :
+  QuantyraNullCone.flowFactor3 (-a) (QuantyraNullCone.lorentzFlow3 a p) * QuantyraNullCone.flowFactor3 a p = 1
+'QuantyraNullCone.flow_inverse_factor3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_inverse3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) (hA : 1 - a ^ 2 ≠ 0) :
+  QuantyraNullCone.lorentzFlow3 (-a) (QuantyraNullCone.lorentzFlow3 a p) = p
+'QuantyraNullCone.lorentz_flow_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_inverse_closed3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  QuantyraNullCone.lorentzFlow3 (-a) (QuantyraNullCone.lorentzFlow3 a p) = p
+'QuantyraNullCone.lorentz_flow_inverse_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_metric_isometry3 {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) (u v : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.densityMetric3 QuantyraNullCone.gaugeDensity3 p u v =
+    QuantyraNullCone.densityMetric3 QuantyraNullCone.flatDensity3
+      (QuantyraNullCone.lorentzFlow3 (-QuantyraNullCone.gaugeParameter3) p)
+      ((QuantyraNullCone.lorentzFlowDerivative3 (-QuantyraNullCone.gaugeParameter3) p) u)
+      ((QuantyraNullCone.lorentzFlowDerivative3 (-QuantyraNullCone.gaugeParameter3) p) v)
+'QuantyraNullCone.gauge_metric_isometry3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.higher_dimensional_gauge_counterexample3 :
+  QuantyraNullCone.InDensityClass3 QuantyraNullCone.flatDensity3 ∧
+    QuantyraNullCone.InDensityClass3 QuantyraNullCone.gaugeDensity3 ∧
+      (∀ (n : ℕ),
+          QuantyraNullCone.orderLaw3 QuantyraNullCone.gaugeDensity3 n =
+            QuantyraNullCone.orderLaw3 QuantyraNullCone.flatDensity3 n) ∧
+        (∀ (n : ℕ),
+            QuantyraNullCone.unlabeledOrderLaw3 QuantyraNullCone.gaugeDensity3 n =
+              QuantyraNullCone.unlabeledOrderLaw3 QuantyraNullCone.flatDensity3 n) ∧
+          0 < QuantyraNullCone.gaugeO2Distance3 ∧
+            ∀ p ∈ QuantyraNullCone.closedLorentzDiamond3,
+              ∀ (u v : QuantyraNullCone.LorentzPoint3),
+                QuantyraNullCone.densityMetric3 QuantyraNullCone.gaugeDensity3 p u v =
+                  QuantyraNullCone.densityMetric3 QuantyraNullCone.flatDensity3
+                    (QuantyraNullCone.lorentzFlow3 (-QuantyraNullCone.gaugeParameter3) p)
+                    ((QuantyraNullCone.lorentzFlowDerivative3 (-QuantyraNullCone.gaugeParameter3) p) u)
+                    ((QuantyraNullCone.lorentzFlowDerivative3 (-QuantyraNullCone.gaugeParameter3) p) v)
+'QuantyraNullCone.higher_dimensional_gauge_counterexample3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_derivative_matrix3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  ↑(QuantyraNullCone.lorentzFlowDerivative3 a p) = (Matrix.toLpLin 2 2) (QuantyraNullCone.lorentzFlowMatrix3 a p)
+'QuantyraNullCone.lorentz_flow_derivative_matrix3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_derivative_det3 (a : ℝ) (p : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  (QuantyraNullCone.lorentzFlowDerivative3 a p).det = QuantyraNullCone.flowFactor3 a p ^ 3
+'QuantyraNullCone.lorentz_flow_derivative_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_derivative_bilinear3 (a : ℝ) (p u v : QuantyraNullCone.LorentzPoint3)
+  (hD : QuantyraNullCone.flowDenominator3 a p ≠ 0) :
+  QuantyraNullCone.lorentzBilinear3 ((QuantyraNullCone.lorentzFlowDerivative3 a p) u)
+      ((QuantyraNullCone.lorentzFlowDerivative3 a p) v) =
+    QuantyraNullCone.flowFactor3 a p ^ 2 * QuantyraNullCone.lorentzBilinear3 u v
+'QuantyraNullCone.lorentz_flow_derivative_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_norm_sq3 (p : QuantyraNullCone.LorentzPoint3) :
+  ‖p‖ ^ 2 = p.ofLp 0 ^ 2 + QuantyraNullCone.spatialSquared3 p
+'QuantyraNullCone.lorentz_norm_sq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.isCompact_closedLorentzDiamond3 : IsCompact QuantyraNullCone.closedLorentzDiamond3
+'QuantyraNullCone.isCompact_closedLorentzDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.flat_diamond3_ae_mem :
+  ∀ᵐ (p : QuantyraNullCone.LorentzPoint3) ∂QuantyraNullCone.flatDiamondMeasure3,
+    p ∈ QuantyraNullCone.closedLorentzDiamond3
+'QuantyraNullCone.flat_diamond3_ae_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass3.integrable {rho : QuantyraNullCone.LorentzPoint3 → ℝ}
+  (h : QuantyraNullCone.InDensityClass3 rho) : MeasureTheory.Integrable rho QuantyraNullCone.flatDiamondMeasure3
+'QuantyraNullCone.InDensityClass3.integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass3.densityMeasure_univ {rho : QuantyraNullCone.LorentzPoint3 → ℝ}
+  (h : QuantyraNullCone.InDensityClass3 rho) : (QuantyraNullCone.densityMeasure3 rho) Set.univ = 1
+'QuantyraNullCone.InDensityClass3.densityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure {rho : QuantyraNullCone.LorentzPoint3 → ℝ}
+  (h : QuantyraNullCone.InDensityClass3 rho) (n : ℕ) :
+  MeasureTheory.IsProbabilityMeasure (QuantyraNullCone.orderLaw3 rho n)
+'QuantyraNullCone.InDensityClass3.orderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.gauge_sample_forward_transport3 (n : ℕ) :
+  MeasureTheory.Measure.map (QuantyraNullCone.lorentzSampleFlow3 QuantyraNullCone.gaugeParameter3)
+      (QuantyraNullCone.sampleMeasure3 QuantyraNullCone.flatDensity3 n) =
+    QuantyraNullCone.sampleMeasure3 QuantyraNullCone.gaugeDensity3 n
+'QuantyraNullCone.gauge_sample_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_order_laws_equal3 (n : ℕ) :
+  QuantyraNullCone.orderLaw3 QuantyraNullCone.gaugeDensity3 n =
+    QuantyraNullCone.orderLaw3 QuantyraNullCone.flatDensity3 n
+'QuantyraNullCone.gauge_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_unlabeled_order_laws_equal3 (n : ℕ) :
+  QuantyraNullCone.unlabeledOrderLaw3 QuantyraNullCone.gaugeDensity3 n =
+    QuantyraNullCone.unlabeledOrderLaw3 QuantyraNullCone.flatDensity3 n
+'QuantyraNullCone.gauge_unlabeled_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.null_map_bounds3 {a z : ℝ} (ha : |a| < 1) (hz : |z| ≤ 1) : |QuantyraNullCone.nullMap3 a z| ≤ 1
+'QuantyraNullCone.null_map_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.null_map_strict_bounds3 {a z : ℝ} (ha : |a| < 1) (hz : |z| < 1) : |QuantyraNullCone.nullMap3 a z| < 1
+'QuantyraNullCone.null_map_strict_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_null_plus3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  (QuantyraNullCone.lorentzFlow3 a p).ofLp 0 + QuantyraNullCone.spatialRadius3 (QuantyraNullCone.lorentzFlow3 a p) =
+    QuantyraNullCone.nullMap3 a (p.ofLp 0 + QuantyraNullCone.spatialRadius3 p)
+'QuantyraNullCone.lorentz_null_plus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_null_minus3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  (QuantyraNullCone.lorentzFlow3 a p).ofLp 0 - QuantyraNullCone.spatialRadius3 (QuantyraNullCone.lorentzFlow3 a p) =
+    QuantyraNullCone.nullMap3 a (p.ofLp 0 - QuantyraNullCone.spatialRadius3 p)
+'QuantyraNullCone.lorentz_null_minus3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_preserves_closed3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.closedLorentzDiamond3) :
+  QuantyraNullCone.lorentzFlow3 a p ∈ QuantyraNullCone.closedLorentzDiamond3
+'QuantyraNullCone.lorentz_flow_preserves_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_preserves_open3 {a : ℝ} (ha : |a| < 1) {p : QuantyraNullCone.LorentzPoint3}
+  (hp : p ∈ QuantyraNullCone.lorentzDiamond3) : QuantyraNullCone.lorentzFlow3 a p ∈ QuantyraNullCone.lorentzDiamond3
+'QuantyraNullCone.lorentz_flow_preserves_open3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_image3 {a : ℝ} (ha : |a| < 1) :
+  QuantyraNullCone.lorentzFlow3 a '' QuantyraNullCone.lorentzDiamond3 = QuantyraNullCone.lorentzDiamond3
+'QuantyraNullCone.lorentz_flow_image3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_injectiveOn3 {a : ℝ} (ha : |a| < 1) :
+  Set.InjOn (QuantyraNullCone.lorentzFlow3 a) QuantyraNullCone.lorentzDiamond3
+'QuantyraNullCone.lorentz_flow_injectiveOn3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_smooth3 (a : ℝ) :
+  ContDiffOn ℝ ⊤ (QuantyraNullCone.lorentzFlow3 a) (QuantyraNullCone.flowSmoothDomain3 a)
+'QuantyraNullCone.lorentz_flow_smooth3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_smooth_automorphism3 {a : ℝ} (ha : |a| < 1) :
+  Set.BijOn (QuantyraNullCone.lorentzFlow3 a) QuantyraNullCone.closedLorentzDiamond3
+      QuantyraNullCone.closedLorentzDiamond3 ∧
+    (∃ U, IsOpen U ∧ QuantyraNullCone.closedLorentzDiamond3 ⊆ U ∧ ContDiffOn ℝ ⊤ (QuantyraNullCone.lorentzFlow3 a) U) ∧
+      (∀ p ∈ QuantyraNullCone.closedLorentzDiamond3,
+          QuantyraNullCone.lorentzFlow3 (-a) (QuantyraNullCone.lorentzFlow3 a p) = p) ∧
+        ∀ p ∈ QuantyraNullCone.closedLorentzDiamond3,
+          ∀ q ∈ QuantyraNullCone.closedLorentzDiamond3,
+            QuantyraNullCone.chronological3 (QuantyraNullCone.lorentzFlow3 a p) (QuantyraNullCone.lorentzFlow3 a q) ↔
+              QuantyraNullCone.chronological3 p q
+'QuantyraNullCone.lorentz_flow_smooth_automorphism3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_density_spatial_invariant3 (R : QuantyraNullCone.SpatialO2)
+  (p : QuantyraNullCone.LorentzPoint3) :
+  QuantyraNullCone.gaugeDensity3 (QuantyraNullCone.spatialAction3 R p) = QuantyraNullCone.gaugeDensity3 p
+'QuantyraNullCone.gauge_density_spatial_invariant3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_anchor_density_gt3 : 1 < QuantyraNullCone.gaugeDensity3 QuantyraNullCone.gaugeAnchor3
+'QuantyraNullCone.gauge_anchor_density_gt3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_o2_distance_positive3 : 0 < QuantyraNullCone.gaugeO2Distance3
+'QuantyraNullCone.gauge_o2_distance_positive3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_flow_measurable3 (a : ℝ) : Measurable (QuantyraNullCone.lorentzFlow3 a)
+'QuantyraNullCone.lorentz_flow_measurable3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_inverse_transport_volume3 :
+  MeasureTheory.Measure.map (QuantyraNullCone.lorentzFlow3 (-QuantyraNullCone.gaugeParameter3))
+      ((MeasureTheory.volume.restrict QuantyraNullCone.lorentzDiamond3).withDensity fun p =>
+        ENNReal.ofReal (QuantyraNullCone.gaugeDensity3 p)) =
+    MeasureTheory.volume.restrict QuantyraNullCone.lorentzDiamond3
+'QuantyraNullCone.gauge_inverse_transport_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.gauge_inverse_transport3 :
+  MeasureTheory.Measure.map (QuantyraNullCone.lorentzFlow3 (-QuantyraNullCone.gaugeParameter3))
+      (QuantyraNullCone.densityMeasure3 QuantyraNullCone.gaugeDensity3) =
+    QuantyraNullCone.flatDiamondMeasure3
+'QuantyraNullCone.gauge_inverse_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.integrable_lorentz_slice_area3 :
+  MeasureTheory.Integrable QuantyraNullCone.lorentzSliceArea3 MeasureTheory.volume
+'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.integral_lorentz_slice_area3 :
+  ∫ (t : ℝ), QuantyraNullCone.lorentzSliceArea3 t = QuantyraNullCone.lorentzVolume3
+'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_diamond_volume3 :
+  MeasureTheory.volume QuantyraNullCone.lorentzDiamond3 = ENNReal.ofReal QuantyraNullCone.lorentzVolume3
+'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.split_lorentz_volume_preserving3 :
+  MeasureTheory.MeasurePreserving (⇑QuantyraNullCone.splitLorentzEquiv3) MeasureTheory.volume MeasureTheory.volume
+'QuantyraNullCone.split_lorentz_volume_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.split_lorentz_radius3 (p : QuantyraNullCone.LorentzPoint3) :
+  ‖(QuantyraNullCone.splitLorentzEquiv3 p).2‖ = QuantyraNullCone.spatialRadius3 p
+'QuantyraNullCone.split_lorentz_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.split_lorentz_diamond_volume3 :
+  MeasureTheory.volume QuantyraNullCone.lorentzDiamond3 =
+    (MeasureTheory.volume.prod MeasureTheory.volume) QuantyraNullCone.splitLorentzDiamond3
+'QuantyraNullCone.split_lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.lorentz_diamond_volume_slices3 :
+  MeasureTheory.volume QuantyraNullCone.lorentzDiamond3 =
+    ∫⁻ (t : ℝ), ENNReal.ofReal (1 - |t|) ^ 2 * ENNReal.ofReal Real.pi
+'QuantyraNullCone.lorentz_diamond_volume_slices3' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_predecessor_count {n : ℕ} {u v : Fin n → ℝ} (hu : Function.Injective u)
+  (hv : Function.Injective v) (i : Fin n) :
+  (QuantyraNullCone.rectangleCount u v (u i) (v i)).card =
+    (QuantyraNullCone.predecessors (QuantyraNullCone.Chronological u v) i).card + 1
+'QuantyraNullCone.chronological_predecessor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_predecessor_fraction {n : ℕ} {u v : Fin n → ℝ} (hu : Function.Injective u)
+  (hv : Function.Injective v) (i : Fin n) :
+  ↑(QuantyraNullCone.predecessors (QuantyraNullCone.Chronological u v) i).card / ↑n =
+    QuantyraNullCone.empiricalCDF u v (u i) (v i) - 1 / ↑n
+'QuantyraNullCone.chronological_predecessor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_successor_count {n : ℕ} (u v : Fin n → ℝ) (i : Fin n) :
+  (QuantyraNullCone.predecessors (fun x y => QuantyraNullCone.Chronological u v y x) i).card +
+        (QuantyraNullCone.cumulativeCount u (u i)).card +
+      (QuantyraNullCone.cumulativeCount v (v i)).card =
+    n + (QuantyraNullCone.rectangleCount u v (u i) (v i)).card
+'QuantyraNullCone.chronological_successor_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.chronological_successor_fraction {n : ℕ} (hn : 0 < n) (u v : Fin n → ℝ) (i : Fin n) :
+  ↑(QuantyraNullCone.predecessors (fun x y => QuantyraNullCone.Chronological u v y x) i).card / ↑n =
+    1 - QuantyraNullCone.marginalCDF u (u i) - QuantyraNullCone.marginalCDF v (v i) +
+      QuantyraNullCone.empiricalCDF u v (u i) (v i)
+'QuantyraNullCone.chronological_successor_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_retained_interior {n : ℕ} (hn : 0 < n) {u v : Fin n → ℝ} {r : ℝ} (hr : 0 < r)
+  (huLow : QuantyraNullCone.marginalCDF u (4 * r) ≤ 5 * r) (hvLow : QuantyraNullCone.marginalCDF v (4 * r) ≤ 5 * r)
+  (huHigh : 1 - QuantyraNullCone.marginalCDF u (1 - 4 * r) ≤ 5 * r)
+  (hvHigh : 1 - QuantyraNullCone.marginalCDF v (1 - 4 * r) ≤ 5 * r) {i : Fin n}
+  (hi : QuantyraNullCone.DegreeRetained (QuantyraNullCone.Chronological u v) r i) : QuantyraNullCone.Interior u v r i
+'QuantyraNullCone.degree_retained_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_retained_coordinate_rigidity {n m : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n) (hm : 16 ≤ m) {r : ℝ} (hr : 0 < r) (hmr : ↑m * r = 1)
+  {sample : Fin n → QuantyraNullCone.DiamondPoint} (hg : QuantyraNullCone.SampleGood rho m r sample)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological (fun i => (sample i).1) fun i => (sample i).2)) :
+  ∃ swap,
+    ∀ (i : Fin n),
+      QuantyraNullCone.DegreeRetained (QuantyraNullCone.Chronological (fun j => (sample j).1) fun j => (sample j).2) r
+          i →
+        |↑(QuantyraNullCone.rank (L.aligned swap).first i) / ↑n - (sample i).1| ≤ 32 * r ∧
+          |↑(QuantyraNullCone.rank (L.aligned swap).second i) / ↑n - (sample i).2| ≤ 32 * r
+'QuantyraNullCone.degree_retained_coordinate_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.densityMeasure_ceiling {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) :
+  QuantyraNullCone.densityMeasure rho ≤ ENNReal.ofReal (3 / 2) • QuantyraNullCone.diamondVolume
+'QuantyraNullCone.InDensityClass.densityMeasure_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.rectangle_mass_bounds {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {a b c d : ℝ} (ha : 0 ≤ a) (hab : a ≤ b) (hb : b ≤ 1) (hc : 0 ≤ c)
+  (hcd : c ≤ d) (hd : d ≤ 1) :
+  (b - a) * (d - c) / 2 ≤ (QuantyraNullCone.densityMeasure rho).real (Set.Ioc a b ×ˢ Set.Ioc c d) ∧
+    (QuantyraNullCone.densityMeasure rho).real (Set.Ioc a b ×ˢ Set.Ioc c d) ≤ 3 / 2 * (b - a) * (d - c)
+'QuantyraNullCone.InDensityClass.rectangle_mass_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.populationCDF_lower {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {s t : ℝ} (hs0 : 0 ≤ s) (hs1 : s ≤ 1) (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :
+  s * t / 2 ≤ QuantyraNullCone.populationCDF rho s t
+'QuantyraNullCone.InDensityClass.populationCDF_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.northeastCDF_lower {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (h : QuantyraNullCone.InDensityClass rho) {s t : ℝ} (hs0 : 0 ≤ s) (hs1 : s ≤ 1) (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :
+  (1 - s) * (1 - t) / 2 ≤ 1 - s - t + QuantyraNullCone.populationCDF rho s t
+'QuantyraNullCone.InDensityClass.northeastCDF_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.deep_point_degree_retained {n m : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n) {r h : ℝ} (hr : 0 < r) (hh : 0 ≤ h) (hSquare : h ^ 2 = r)
+  (hmr : ↑m * r = 1) (hnr : 1 / ↑n ≤ r) {sample : Fin n → QuantyraNullCone.DiamondPoint}
+  (hg : QuantyraNullCone.SampleGood rho m r sample) (i : Fin n)
+  (hi : 7 * h ≤ (sample i).1 ∧ (sample i).1 ≤ 1 - 7 * h ∧ 7 * h ≤ (sample i).2 ∧ (sample i).2 ≤ 1 - 7 * h) :
+  QuantyraNullCone.DegreeRetained (QuantyraNullCone.Chronological (fun j => (sample j).1) fun j => (sample j).2) r i
+'QuantyraNullCone.deep_point_degree_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.eroded_rectangle_recovered {a b c d s : ℝ} {p q : QuantyraNullCone.DiamondPoint}
+  (he : QuantyraNullCone.CoordinateError s p q)
+  (hq : q ∈ QuantyraNullCone.countRectangle (a + s) (b - s) (c + s) (d - s)) :
+  p ∈ QuantyraNullCone.countRectangle a b c d
+'QuantyraNullCone.eroded_rectangle_recovered' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.recovered_rectangle_expanded {a b c d s : ℝ} {p q : QuantyraNullCone.DiamondPoint}
+  (he : QuantyraNullCone.CoordinateError s p q) (hp : p ∈ QuantyraNullCone.countRectangle a b c d) :
+  q ∈ QuantyraNullCone.countRectangle (a - s) (b + s) (c - s) (d + s)
+'QuantyraNullCone.recovered_rectangle_expanded' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.retained_rectangle_count_sandwich {n : ℕ} {keep : Fin n → Prop}
+  {recovered truth : Fin n → QuantyraNullCone.DiamondPoint} {a b c d s : ℝ}
+  (hAcc : ∀ (i : Fin n), keep i → QuantyraNullCone.CoordinateError s (recovered i) (truth i))
+  (hKeep : ∀ (i : Fin n), truth i ∈ QuantyraNullCone.countRectangle (a + s) (b - s) (c + s) (d - s) → keep i) :
+  (QuantyraNullCone.pointsIn truth (QuantyraNullCone.countRectangle (a + s) (b - s) (c + s) (d - s))).card ≤
+      (QuantyraNullCone.retainedPointsIn keep recovered (QuantyraNullCone.countRectangle a b c d)).card ∧
+    (QuantyraNullCone.retainedPointsIn keep recovered (QuantyraNullCone.countRectangle a b c d)).card ≤
+      (QuantyraNullCone.pointsIn truth (QuantyraNullCone.countRectangle (a - s) (b + s) (c - s) (d + s))).card
+'QuantyraNullCone.retained_rectangle_count_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.rankPoint_swap {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (i : Fin n) : L.swap.rankPoint i = QuantyraNullCone.transposePoint (L.rankPoint i)
+'QuantyraNullCone.Realizer.rankPoint_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_filtered_cell_counts {n m : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n) (hm : 16 ≤ m) {r h : ℝ} (hr : 0 < r) (hh : 0 ≤ h)
+  (hSquare : h ^ 2 = r) (hmr : ↑m * r = 1) (hnr : 1 / ↑n ≤ r) {sample : Fin n → QuantyraNullCone.DiamondPoint}
+  (hg : QuantyraNullCone.SampleGood rho m r sample)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological (fun i => (sample i).1) fun i => (sample i).2)) :
+  ∃ swap,
+    ∀ (a b c d : ℝ),
+      7 * h ≤ a + 32 * r →
+        b - 32 * r ≤ 1 - 7 * h →
+          7 * h ≤ c + 32 * r →
+            d - 32 * r ≤ 1 - 7 * h →
+              (QuantyraNullCone.pointsIn sample
+                      (QuantyraNullCone.countRectangle (a + 32 * r) (b - 32 * r) (c + 32 * r) (d - 32 * r))).card ≤
+                  (QuantyraNullCone.retainedPointsIn
+                      (QuantyraNullCone.DegreeRetained
+                        (QuantyraNullCone.Chronological (fun i => (sample i).1) fun i => (sample i).2) r)
+                      (L.aligned swap).rankPoint (QuantyraNullCone.countRectangle a b c d)).card ∧
+                (QuantyraNullCone.retainedPointsIn
+                      (QuantyraNullCone.DegreeRetained
+                        (QuantyraNullCone.Chronological (fun i => (sample i).1) fun i => (sample i).2) r)
+                      (L.aligned swap).rankPoint (QuantyraNullCone.countRectangle a b c d)).card ≤
+                  (QuantyraNullCone.pointsIn sample
+                      (QuantyraNullCone.countRectangle (a - 32 * r) (b + 32 * r) (c - 32 * r) (d + 32 * r))).card
+'QuantyraNullCone.degree_filtered_cell_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.exp_remainder_le_square {t : ℝ} (ht : |t| ≤ 1) : Real.exp t - 1 - t ≤ t ^ 2
+'QuantyraNullCone.exp_remainder_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.centered_indicator_exp_integrable.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]
+  {μ : MeasureTheory.Measure Ω} [MeasureTheory.IsFiniteMeasure μ] {S : Set Ω} (hS : MeasurableSet S) (p t : ℝ) :
+  MeasureTheory.Integrable (fun q => Real.exp (t * (S.indicator (fun x => 1) q - p))) μ
+'QuantyraNullCone.centered_indicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.indicator_mgf.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {S : Set Ω} (hS : MeasurableSet S) (t : ℝ) :
+  ProbabilityTheory.mgf (S.indicator fun x => 1) μ t = 1 + μ.real S * (Real.exp t - 1)
+'QuantyraNullCone.indicator_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.centered_indicator_mgf_le.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {S : Set Ω} (hS : MeasurableSet S) {t : ℝ} (ht : |t| ≤ 1) :
+  ProbabilityTheory.mgf (fun q => S.indicator (fun x => 1) q - μ.real S) μ t ≤ Real.exp (μ.real S * t ^ 2)
+'QuantyraNullCone.centered_indicator_mgf_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.iid_indicator_chernoff.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
+  [MeasureTheory.IsProbabilityMeasure μ] {n : ℕ} (hn : 0 < n) {S : Set Ω} (hS : MeasurableSet S) {t : ℝ} (ht0 : 0 ≤ t)
+  (ht1 : t ≤ 1) (eps : ℝ) :
+  (MeasureTheory.Measure.pi fun x => μ).real
+      {sample | eps ≤ |(∑ i, S.indicator (fun x => 1) (sample i)) / ↑n - μ.real S|} ≤
+    2 * Real.exp (↑n * μ.real S * t ^ 2 - ↑n * t * eps)
+'QuantyraNullCone.iid_indicator_chernoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.small_mass_count_concentration {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) {S : Set QuantyraNullCone.DiamondPoint}
+  (hS : MeasurableSet S) {h : ℝ} (hh0 : 0 ≤ h) (hh4 : h ≤ 4)
+  (hp : (QuantyraNullCone.densityMeasure rho).real S ≤ 8 * h ^ 2) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        4 * h ^ 3 ≤ |↑(QuantyraNullCone.pointsIn sample S).card / ↑n - (QuantyraNullCone.densityMeasure rho).real S|} ≤
+    2 * Real.exp (-↑n * h ^ 4 / 2)
+'QuantyraNullCone.InDensityClass.small_mass_count_concentration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.InDensityClass.small_mass_family_failure.{u_1} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 0 < n) {ι : Type u_1} [Fintype ι]
+  (sets : ι → Set QuantyraNullCone.DiamondPoint) (hSets : ∀ (i : ι), MeasurableSet (sets i)) {h : ℝ} (hh0 : 0 ≤ h)
+  (hh4 : h ≤ 4) (hp : ∀ (i : ι), (QuantyraNullCone.densityMeasure rho).real (sets i) ≤ 8 * h ^ 2) :
+  (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        ∃ i,
+          4 * h ^ 3 ≤
+            |↑(QuantyraNullCone.pointsIn sample (sets i)).card / ↑n -
+                (QuantyraNullCone.densityMeasure rho).real (sets i)|} ≤
+    2 * ↑(Fintype.card ι) * Real.exp (-↑n * h ^ 4 / 2)
+'QuantyraNullCone.InDensityClass.small_mass_family_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.diamondVolume_probability : MeasureTheory.IsProbabilityMeasure QuantyraNullCone.diamondVolume
+'QuantyraNullCone.diamondVolume_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.mass_gap_ceiling {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {A B : Set QuantyraNullCone.DiamondPoint} (hAB : A ⊆ B)
+  (hA : MeasurableSet A) :
+  (QuantyraNullCone.densityMeasure rho).real B - (QuantyraNullCone.densityMeasure rho).real A ≤
+    3 / 2 * (QuantyraNullCone.diamondVolume.real B - QuantyraNullCone.diamondVolume.real A)
+'QuantyraNullCone.InDensityClass.mass_gap_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.diamond_square_cell_real {a c w : ℝ} (hw : 0 ≤ w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hcw : c + w ≤ 1) : QuantyraNullCone.diamondVolume.real (QuantyraNullCone.squareCell a c w) = w ^ 2
+'QuantyraNullCone.diamond_square_cell_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.shifted_square_mass_gaps {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {a c w s : ℝ} (hs : 0 ≤ s) (hws : 2 * s ≤ w) (ha : 0 ≤ a - s)
+  (hc : 0 ≤ c - s) (haw : a + w + s ≤ 1) (hcw : c + w + s ≤ 1) :
+  (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell a c w) -
+        (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a + s) (c + s) (w - 2 * s)) ≤
+      6 * w * s + 6 * s ^ 2 ∧
+    (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a - s) (c - s) (w + 2 * s)) -
+        (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell a c w) ≤
+      6 * w * s + 6 * s ^ 2
+'QuantyraNullCone.InDensityClass.shifted_square_mass_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.shifted_cell_mean_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {a c w s recovered minus plus eps : ℝ} (hw : 0 < w) (hs : 0 ≤ s)
+  (hws : 2 * s ≤ w) (ha : 0 ≤ a - s) (hc : 0 ≤ c - s) (haw : a + w + s ≤ 1) (hcw : c + w + s ≤ 1)
+  (hSandwich : minus ≤ recovered ∧ recovered ≤ plus)
+  (hMinus :
+    |minus - (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a + s) (c + s) (w - 2 * s))| ≤
+      eps)
+  (hPlus :
+    |plus - (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a - s) (c - s) (w + 2 * s))| ≤
+      eps) :
+  |recovered / w ^ 2 - QuantyraNullCone.densityCellMean rho a c w| ≤ 6 * s / w + 6 * (s / w) ^ 2 + eps / w ^ 2
+'QuantyraNullCone.InDensityClass.shifted_cell_mean_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_clip_error {x y : ℝ} (hy : 1 / 2 ≤ y ∧ y ≤ 3 / 2) : |max (1 / 2) (min (3 / 2) x) - y| ≤ |x - y|
+'QuantyraNullCone.density_clip_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.shifted_cell_point_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {a c w s recovered minus plus eps : ℝ} (hw : 0 < w) (hs : 0 ≤ s)
+  (hws : 2 * s ≤ w) (ha : 0 ≤ a - s) (hc : 0 ≤ c - s) (haw : a + w + s ≤ 1) (hcw : c + w + s ≤ 1)
+  (hSandwich : minus ≤ recovered ∧ recovered ≤ plus)
+  (hMinus :
+    |minus - (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a + s) (c + s) (w - 2 * s))| ≤
+      eps)
+  (hPlus :
+    |plus - (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell (a - s) (c - s) (w + 2 * s))| ≤ eps)
+  {p : QuantyraNullCone.DiamondPoint} (hp : p ∈ QuantyraNullCone.closedSquareCell a c w) :
+  |max (1 / 2) (min (3 / 2) (recovered / w ^ 2)) - rho p| ≤ 6 * s / w + 6 * (s / w) ^ 2 + eps / w ^ 2 + 2 * w
+'QuantyraNullCone.InDensityClass.shifted_cell_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.sample_good_and_small_mass_probability.{u_1} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n m : ℕ} (hn : 0 < n) {r h : ℝ} (hr : 0 < r) (hmr : ↑m * r = 1)
+  {ι : Type u_1} [Fintype ι] (sets : ι → Set QuantyraNullCone.DiamondPoint) (hSets : ∀ (i : ι), MeasurableSet (sets i))
+  (hh0 : 0 ≤ h) (hh4 : h ≤ 4) (hp : ∀ (i : ι), (QuantyraNullCone.densityMeasure rho).real (sets i) ≤ 8 * h ^ 2) :
+  1 -
+      (↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2) +
+        2 * ↑(Fintype.card ι) * Real.exp (-↑n * h ^ 4 / 2)) ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        QuantyraNullCone.SampleGood rho m r sample ∧
+          ∀ (i : ι),
+            |↑(QuantyraNullCone.pointsIn sample (sets i)).card / ↑n -
+                  (QuantyraNullCone.densityMeasure rho).real (sets i)| ≤
+              4 * h ^ 3}
+'QuantyraNullCone.InDensityClass.sample_good_and_small_mass_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.degree_event_failure_budget {n m q : ℕ} (hn : 65536 ≤ n) (hm : 16 ≤ m) {r : ℝ} (hmr : ↑m * r = 1)
+  (hmSq : ↑m ^ 2 ≤ ↑n / (8 * Real.log ↑n)) (hq : ↑q ≤ 4 * ↑n) :
+  ↑m ^ 2 * Real.exp (-↑n * r ^ 2 / 2) + 2 * (↑m + 1) ^ 2 * Real.exp (-2 * ↑n * r ^ 2) +
+      2 * ↑q * Real.exp (-↑n * r ^ 2 / 2) ≤
+    1 / 20
+'QuantyraNullCone.degree_event_failure_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.degree_event_probability.{u_1} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n m : ℕ} (hn : 65536 ≤ n) (hm : 16 ≤ m) {r h : ℝ} (hr : 0 < r)
+  (hmr : ↑m * r = 1) (hh0 : 0 ≤ h) (hh4 : h ≤ 4) (hSquare : h ^ 2 = r) (hmSq : ↑m ^ 2 ≤ ↑n / (8 * Real.log ↑n))
+  {ι : Type u_1} [Fintype ι] (sets : ι → Set QuantyraNullCone.DiamondPoint) (hSets : ∀ (i : ι), MeasurableSet (sets i))
+  (hp : ∀ (i : ι), (QuantyraNullCone.densityMeasure rho).real (sets i) ≤ 8 * h ^ 2) (hq : ↑(Fintype.card ι) ≤ 4 * ↑n) :
+  19 / 20 ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample |
+        QuantyraNullCone.SampleGood rho m r sample ∧
+          ∀ (i : ι),
+            |↑(QuantyraNullCone.pointsIn sample (sets i)).card / ↑n -
+                  (QuantyraNullCone.densityMeasure rho).real (sets i)| ≤
+              4 * h ^ 3}
+'QuantyraNullCone.InDensityClass.degree_event_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_clamp_bounds {H : ℝ} (hH : H ≤ 1 / 2) (x : ℝ) :
+  H ≤ QuantyraNullCone.innerClamp H x ∧ QuantyraNullCone.innerClamp H x ≤ 1 - H
+'QuantyraNullCone.inner_clamp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_clamp_displacement {H x : ℝ} (hH0 : 0 ≤ H) (hH : H ≤ 1 / 2) (hx : x ∈ Set.Icc 0 1) :
+  |QuantyraNullCone.innerClamp H x - x| ≤ H
+'QuantyraNullCone.inner_clamp_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_clamp_point_mem {H : ℝ} (hH0 : 0 ≤ H) (hH : H ≤ 1 / 2) (p : QuantyraNullCone.DiamondPoint) :
+  QuantyraNullCone.innerClampPoint H p ∈ QuantyraNullCone.diamond
+'QuantyraNullCone.inner_clamp_point_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.inner_clamp_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {H : ℝ} (hH0 : 0 ≤ H) (hH : H ≤ 1 / 2) {p : QuantyraNullCone.DiamondPoint}
+  (hp : p ∈ QuantyraNullCone.diamond) : |rho (QuantyraNullCone.innerClampPoint H p) - rho p| ≤ 3 * H
+'QuantyraNullCone.InDensityClass.inner_clamp_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_cell_index_lt {k : ℕ} (hk : 0 < k) (H w x : ℝ) : QuantyraNullCone.innerCellIndex k H w x < k
+'QuantyraNullCone.inner_cell_index_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_cell_location {k : ℕ} (_hk : 0 < k) {H w : ℝ} (hw : 0 < w) (hkw : ↑k * w = 1 - 2 * H) {i : ℕ}
+  (hi : i < k) : H ≤ H + ↑i * w ∧ H + ↑i * w + w ≤ 1 - H
+'QuantyraNullCone.inner_cell_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_cell_index_location {k : ℕ} (hk : 0 < k) {H w x : ℝ} (hw : 0 < w) (hkw : ↑k * w = 1 - 2 * H)
+  (hx : x ∈ Set.Icc H (1 - H)) :
+  H + ↑(QuantyraNullCone.innerCellIndex k H w x) * w ≤ x ∧ x ≤ H + ↑(QuantyraNullCone.innerCellIndex k H w x) * w + w
+'QuantyraNullCone.inner_cell_index_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.inner_histogram_measurable (k : ℕ) (H w : ℝ) (values : ℕ → ℕ → ℝ) :
+  Measurable (QuantyraNullCone.innerHistogram k H w values)
+'QuantyraNullCone.inner_histogram_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.inner_histogram_error {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k) {H w E : ℝ} (hH0 : 0 ≤ H) (hH : H ≤ 1 / 2)
+  (hw : 0 < w) (hkw : ↑k * w = 1 - 2 * H) (values : ℕ → ℕ → ℝ)
+  (hCell :
+    ∀ (i j : ℕ),
+      i < k → j < k → ∀ q ∈ QuantyraNullCone.closedSquareCell (H + ↑i * w) (H + ↑j * w) w, |values i j - rho q| ≤ E)
+  {p : QuantyraNullCone.DiamondPoint} (hp : p ∈ QuantyraNullCone.diamond) :
+  |QuantyraNullCone.innerHistogram k H w values p - rho p| ≤ E + 3 * H
+'QuantyraNullCone.InDensityClass.inner_histogram_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.degreeHistogram_measurable {n : ℕ} {R : Fin n → Fin n → Prop}
+  (L : QuantyraNullCone.Realizer R) (r : ℝ) (k : ℕ) (H w : ℝ) : Measurable (L.degreeHistogram r k H w)
+'QuantyraNullCone.Realizer.degreeHistogram_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.degreeHistogram_bounds {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (r : ℝ) (k : ℕ) (H w : ℝ) (p : QuantyraNullCone.DiamondPoint) :
+  1 / 2 ≤ L.degreeHistogram r k H w p ∧ L.degreeHistogram r k H w p ≤ 3 / 2
+'QuantyraNullCone.Realizer.degreeHistogram_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.degreeCellValue_swap {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (r H w : ℝ) (i j : ℕ) : L.swap.degreeCellValue r H w i j = L.degreeCellValue r H w j i
+'QuantyraNullCone.Realizer.degreeCellValue_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.degreeHistogram_swap {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (r : ℝ) (k : ℕ) (H w : ℝ) (p : QuantyraNullCone.DiamondPoint) :
+  L.swap.degreeHistogram r k H w p = L.degreeHistogram r k H w (QuantyraNullCone.transposePoint p)
+'QuantyraNullCone.Realizer.degreeHistogram_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_histogram_error {n m k : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) (hn : 0 < n) (hm : 16 ≤ m) (hk : 0 < k) {r h H w eps : ℝ} (hr : 0 < r)
+  (hh : 0 ≤ h) (hSquare : h ^ 2 = r) (hmr : ↑m * r = 1) (hnr : 1 / ↑n ≤ r) (hH0 : 0 ≤ H) (hH : H ≤ 1 / 2) (hw : 0 < w)
+  (hkw : ↑k * w = 1 - 2 * H) (hShift : 2 * (32 * r) ≤ w) (hDeep : 7 * h ≤ H - 32 * r)
+  {sample : Fin n → QuantyraNullCone.DiamondPoint} (hg : QuantyraNullCone.SampleGood rho m r sample)
+  (hAccuracy : QuantyraNullCone.InnerCountAccuracy rho k H w (32 * r) eps sample)
+  (L : QuantyraNullCone.Realizer (QuantyraNullCone.Chronological (fun i => (sample i).1) fun i => (sample i).2)) :
+  ∃ swap,
+    ∀ p ∈ QuantyraNullCone.diamond,
+      |(L.aligned swap).degreeHistogram r k H w p - rho p| ≤
+        6 * (32 * r) / w + 6 * (32 * r / w) ^ 2 + eps / w ^ 2 + 2 * w + 3 * H
+'QuantyraNullCone.degree_histogram_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_inner_mesh_data {m : ℕ} (hm : 65536 ≤ m) :
+  have r := 1 / ↑m;
+  have h := √r;
+  have k := ⌊√↑m⌋₊;
+  have w := (1 - 16 * h) / ↑k;
+  0 < r ∧
+    0 < h ∧
+      h ^ 2 = r ∧
+        ↑m * r = 1 ∧ h ≤ 1 / 256 ∧ 0 < k ∧ ↑k ^ 2 ≤ ↑m ∧ 0 < w ∧ ↑k * w = 1 - 16 * h ∧ 15 / 16 * h ≤ w ∧ w ≤ 2 * h
+'QuantyraNullCone.degree_inner_mesh_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_mesh_margins {h r w : ℝ} (hh : 0 < h) (hhSmall : h ≤ 1 / 256) (hSquare : h ^ 2 = r)
+  (hWidth : 15 / 16 * h ≤ w) : 0 ≤ 8 * h ∧ 8 * h ≤ 1 / 2 ∧ 0 < w ∧ 2 * (32 * r) ≤ w ∧ 7 * h ≤ 8 * h - 32 * r
+'QuantyraNullCone.degree_mesh_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_histogram_constant {h w : ℝ} (hh : 0 < h) (hhSmall : h ≤ 1 / 256) (hLow : 15 / 16 * h ≤ w)
+  (hHigh : w ≤ 2 * h) : 6 * (32 * h ^ 2) / w + 6 * (32 * h ^ 2 / w) ^ 2 + 4 * h ^ 3 / w ^ 2 + 2 * w + 24 * h ≤ 270 * h
+'QuantyraNullCone.degree_histogram_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.square_mass_upper {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {a c w : ℝ} (hw : 0 ≤ w) (ha : 0 ≤ a) (hc : 0 ≤ c) (haw : a + w ≤ 1)
+  (hcw : c + w ≤ 1) : (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.squareCell a c w) ≤ 3 / 2 * w ^ 2
+'QuantyraNullCone.InDensityClass.square_mass_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.shifted_inner_cell_mass {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {k : ℕ} (hk : 0 < k) {h r w : ℝ} (hh : 0 < h) (hhSmall : h ≤ 1 / 256)
+  (hSquare : h ^ 2 = r) (hkw : ↑k * w = 1 - 16 * h) (hLow : 15 / 16 * h ≤ w) (hHigh : w ≤ 2 * h) (expand : Bool)
+  {i j : ℕ} (hi : i < k) (hj : j < k) :
+  (QuantyraNullCone.densityMeasure rho).real (QuantyraNullCone.shiftedInnerCell expand (8 * h) w (32 * r) i j) ≤
+    8 * h ^ 2
+'QuantyraNullCone.InDensityClass.shifted_inner_cell_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.degree_histogram_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n m : ℕ} (hn : 65536 ≤ n) (hm : 65536 ≤ m)
+  (hmSq : ↑m ^ 2 ≤ ↑n / (8 * Real.log ↑n)) :
+  have r := 1 / ↑m;
+  have h := √r;
+  have k := ⌊√↑m⌋₊;
+  have w := (1 - 16 * h) / ↑k;
+  19 / 20 ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample | QuantyraNullCone.SampleDegreeReconstructed rho r k (8 * h) w (270 * h) sample}
+'QuantyraNullCone.InDensityClass.degree_histogram_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.degree_logarithmic_mesh_large {n : ℕ} (hn : 2 ≤ n) (hm : 65536 ≤ ⌊√(↑n / (8 * Real.log ↑n))⌋₊) :
+  65536 ≤ n ∧ ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊ ^ 2 ≤ ↑n / (8 * Real.log ↑n)
+'QuantyraNullCone.degree_logarithmic_mesh_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 2 ≤ n) (hm : 65536 ≤ ⌊√(↑n / (8 * Real.log ↑n))⌋₊) :
+  have m := ⌊√(↑n / (8 * Real.log ↑n))⌋₊;
+  have r := 1 / ↑m;
+  have h := √r;
+  have k := ⌊√↑m⌋₊;
+  have w := (1 - 16 * h) / ↑k;
+  19 / 20 ≤
+    (QuantyraNullCone.sampleMeasure rho n).real
+      {sample | QuantyraNullCone.SampleDegreeReconstructed rho r k (8 * h) w (270 * h) sample}
+'QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.degree_rate_fourth_power {n : ℕ} (hn : 2 ≤ n) :
+  (650 * (Real.log ↑n / ↑n) ^ (1 / 4)) ^ 4 = 650 ^ 4 * (Real.log ↑n / ↑n)
+'QuantyraNullCone.degree_rate_fourth_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_large_mesh_rate {n : ℕ} (hn : 2 ≤ n) (hm : 65536 ≤ QuantyraNullCone.degreeOuterMesh n) :
+  270 * √(1 / ↑(QuantyraNullCone.degreeOuterMesh n)) ≤ 650 * (Real.log ↑n / ↑n) ^ (1 / 4)
+'QuantyraNullCone.degree_large_mesh_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_small_mesh_flat_radius {n : ℕ} (hn : 2 ≤ n) (hm : QuantyraNullCone.degreeOuterMesh n < 65536) :
+  1 / 2 ≤ 650 * (Real.log ↑n / ↑n) ^ (1 / 4)
+'QuantyraNullCone.degree_small_mesh_flat_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_flat_radius {n : ℕ} (hn : 2 ≤ n) (hUse : ¬QuantyraNullCone.DegreeUseHistogram n) :
+  QuantyraNullCone.degreeRadius n = 1 / 2
+'QuantyraNullCone.degree_flat_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_active_radius {n : ℕ} (hn : 2 ≤ n) (hUse : QuantyraNullCone.DegreeUseHistogram n) :
+  270 * √(1 / ↑(QuantyraNullCone.degreeOuterMesh n)) ≤ QuantyraNullCone.degreeRadius n
+'QuantyraNullCone.degree_active_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.predecessors_reindex_card {n : ℕ} (π : Equiv.Perm (Fin n)) (R : Fin n → Fin n → Prop) (i : Fin n) :
+  (QuantyraNullCone.predecessors (fun a b => R (π a) (π b)) i).card = (QuantyraNullCone.predecessors R (π i)).card
+'QuantyraNullCone.predecessors_reindex_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.rank_reindex {n : ℕ} (π : Equiv.Perm (Fin n)) (R : Fin n → Fin n → Prop) (i : Fin n) :
+  QuantyraNullCone.rank (fun a b => R (π a) (π b)) i = QuantyraNullCone.rank R (π i)
+'QuantyraNullCone.rank_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_retained_reindex {n : ℕ} (π : Equiv.Perm (Fin n)) (R : Fin n → Fin n → Prop) (r : ℝ)
+  (i : Fin n) :
+  QuantyraNullCone.DegreeRetained (fun a b => R (π a) (π b)) r i ↔ QuantyraNullCone.DegreeRetained R r (π i)
+'QuantyraNullCone.degree_retained_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.rankPoint_reindex {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (π : Equiv.Perm (Fin n)) (i : Fin n) : (L.reindex π).rankPoint i = L.rankPoint (π i)
+'QuantyraNullCone.Realizer.rankPoint_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.aligned_reindex {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (π : Equiv.Perm (Fin n)) (b : Bool) : (L.reindex π).aligned b = (L.aligned b).reindex π
+'QuantyraNullCone.Realizer.aligned_reindex' depends on axioms: [Quot.sound]
+QuantyraNullCone.Realizer.degreeCellValue_reindex {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (π : Equiv.Perm (Fin n)) (r H w : ℝ) (i j : ℕ) : (L.reindex π).degreeCellValue r H w i j = L.degreeCellValue r H w i j
+'QuantyraNullCone.Realizer.degreeCellValue_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.Realizer.degreeHistogram_reindex {n : ℕ} {R : Fin n → Fin n → Prop} (L : QuantyraNullCone.Realizer R)
+  (π : Equiv.Perm (Fin n)) (r : ℝ) (k : ℕ) (H w : ℝ) (p : QuantyraNullCone.DiamondPoint) :
+  (L.reindex π).degreeHistogram r k H w p = L.degreeHistogram r k H w p
+'QuantyraNullCone.Realizer.degreeHistogram_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.code_degree_reconstructed_sample {n : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ} {r H w E : ℝ}
+  {k : ℕ} {sample : Fin n → QuantyraNullCone.DiamondPoint}
+  (h : QuantyraNullCone.SampleDegreeReconstructed rho r k H w E sample) :
+  QuantyraNullCone.CodeDegreeReconstructed rho r k H w E (QuantyraNullCone.sampledOrder sample)
+'QuantyraNullCone.code_degree_reconstructed_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.code_realizer_relabel {n : ℕ} {code : QuantyraNullCone.OrderCode n}
+  (h : Nonempty (QuantyraNullCone.Realizer (QuantyraNullCone.CodeRelation code))) (π : Equiv.Perm (Fin n)) :
+  Nonempty (QuantyraNullCone.Realizer (QuantyraNullCone.CodeRelation (QuantyraNullCone.relabelOrder π code)))
+'QuantyraNullCone.code_realizer_relabel' depends on axioms: [Quot.sound]
+QuantyraNullCone.CodeDegreeReconstructed.relabel {n : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ} {r H w E : ℝ} {k : ℕ}
+  {code : QuantyraNullCone.OrderCode n} (h : QuantyraNullCone.CodeDegreeReconstructed rho r k H w E code)
+  (π : Equiv.Perm (Fin n)) :
+  QuantyraNullCone.CodeDegreeReconstructed rho r k H w E (QuantyraNullCone.relabelOrder π code)
+'QuantyraNullCone.CodeDegreeReconstructed.relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.selectedDegreeDensity_query_measurable {n : ℕ} (code : QuantyraNullCone.UnlabeledOrderCode n) :
+  Measurable (QuantyraNullCone.selectedDegreeDensity code)
+'QuantyraNullCone.selectedDegreeDensity_query_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.selectedDegreeDensity_measurable (n : ℕ) (p : QuantyraNullCone.DiamondPoint) :
+  Measurable fun code => QuantyraNullCone.selectedDegreeDensity code p
+'QuantyraNullCone.selectedDegreeDensity_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.selectedDegreeDensity_function_measurable (n : ℕ) : Measurable QuantyraNullCone.selectedDegreeDensity
+'QuantyraNullCone.selectedDegreeDensity_function_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.selectedDegreeDensity_bounds {n : ℕ} (code : QuantyraNullCone.UnlabeledOrderCode n)
+  (p : QuantyraNullCone.DiamondPoint) :
+  1 / 2 ≤ QuantyraNullCone.selectedDegreeDensity code p ∧ QuantyraNullCone.selectedDegreeDensity code p ≤ 3 / 2
+'QuantyraNullCone.selectedDegreeDensity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.densityEstimateGood_measurable {n : ℕ} (rho : QuantyraNullCone.DiamondPoint → ℝ) (E : ℝ) :
+  MeasurableSet {code | QuantyraNullCone.DensityEstimateGood rho E (QuantyraNullCone.selectedDegreeDensity code)}
+'QuantyraNullCone.densityEstimateGood_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.DensityEstimateGood.mono {rho f : QuantyraNullCone.DiamondPoint → ℝ} {E F : ℝ}
+  (h : QuantyraNullCone.DensityEstimateGood rho E f) (hEF : E ≤ F) : QuantyraNullCone.DensityEstimateGood rho F f
+'QuantyraNullCone.DensityEstimateGood.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.degree_reconstruction_quotient {n : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ} {r H w E : ℝ} {k : ℕ}
+  {code : QuantyraNullCone.OrderCode n} (hR : QuantyraNullCone.CodeDegreeReconstructed rho r k H w E code)
+  (hL : Nonempty (QuantyraNullCone.Realizer (QuantyraNullCone.CodeRelation code))) :
+  QuantyraNullCone.CodeDegreeReconstructed rho r k H w E (Quotient.out (QuantyraNullCone.forgetOrderLabels code)) ∧
+    Nonempty
+      (QuantyraNullCone.Realizer
+        (QuantyraNullCone.CodeRelation (Quotient.out (QuantyraNullCone.forgetOrderLabels code))))
+'QuantyraNullCone.degree_reconstruction_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.reconstructed_selected_degree {n : ℕ} {rho : QuantyraNullCone.DiamondPoint → ℝ} {E : ℝ}
+  (hUse : QuantyraNullCone.DegreeUseHistogram n) {sample : Fin n → QuantyraNullCone.DiamondPoint}
+  (hu : Function.Injective fun i => (sample i).1) (hv : Function.Injective fun i => (sample i).2)
+  (hR :
+    QuantyraNullCone.SampleDegreeReconstructed rho (1 / ↑(QuantyraNullCone.degreeOuterMesh n))
+      ⌊√↑(QuantyraNullCone.degreeOuterMesh n)⌋₊ (8 * √(1 / ↑(QuantyraNullCone.degreeOuterMesh n)))
+      ((1 - 16 * √(1 / ↑(QuantyraNullCone.degreeOuterMesh n))) / ↑⌊√↑(QuantyraNullCone.degreeOuterMesh n)⌋₊) E sample) :
+  QuantyraNullCone.DensityEstimateGood rho E
+    (QuantyraNullCone.selectedDegreeDensity (QuantyraNullCone.forgetOrderLabels (QuantyraNullCone.sampledOrder sample)))
+'QuantyraNullCone.reconstructed_selected_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.fourth_root_density_estimation {rho : QuantyraNullCone.DiamondPoint → ℝ}
+  (hK : QuantyraNullCone.InDensityClass rho) {n : ℕ} (hn : 2 ≤ n) :
+  19 / 20 ≤
+    (QuantyraNullCone.unlabeledOrderLaw rho n).real
+      {code |
+        QuantyraNullCone.DensityEstimateGood rho (QuantyraNullCone.degreeRadius n)
+          (QuantyraNullCone.selectedDegreeDensity code)}
+'QuantyraNullCone.InDensityClass.fourth_root_density_estimation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QuantyraNullCone.fourth_root_order_only_estimator {n : ℕ} (hn : 2 ≤ n) :
+  ∃ estimate,
+    Measurable estimate ∧
+      (∀ (code : QuantyraNullCone.UnlabeledOrderCode n), Measurable (estimate code)) ∧
+        (∀ (code : QuantyraNullCone.UnlabeledOrderCode n) (p : QuantyraNullCone.DiamondPoint),
+            1 / 2 ≤ estimate code p ∧ estimate code p ≤ 3 / 2) ∧
+          ∀ (rho : QuantyraNullCone.DiamondPoint → ℝ),
+            QuantyraNullCone.InDensityClass rho →
+              19 / 20 ≤
+                (QuantyraNullCone.unlabeledOrderLaw rho n).real
+                  {code |
+                    QuantyraNullCone.DensityEstimateGood rho (min (1 / 2) (650 * (Real.log ↑n / ↑n) ^ (1 / 4)))
+                      (estimate code)}
+'QuantyraNullCone.fourth_root_order_only_estimator' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.density_estimate_common_orbit {rho sigma f : QuantyraNullCone.DiamondPoint → ℝ} {E : ℝ}
+  (hR : QuantyraNullCone.DensityEstimateGood rho E f) (hS : QuantyraNullCone.DensityEstimateGood sigma E f) :
+  (∀ p ∈ QuantyraNullCone.diamond, |rho p - sigma p| ≤ 2 * E) ∨
+    ∀ p ∈ QuantyraNullCone.diamond, |rho p - QuantyraNullCone.transposeDensity sigma p| ≤ 2 * E
+'QuantyraNullCone.density_estimate_common_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.degree_estimate_intersects {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 2 ≤ n)
+  (hTV : QuantyraNullCone.unlabeledOrderLawTV rho sigma n < 9 / 10) :
+  ∃ code,
+    QuantyraNullCone.DensityEstimateGood rho (QuantyraNullCone.degreeRadius n)
+        (QuantyraNullCone.selectedDegreeDensity code) ∧
+      QuantyraNullCone.DensityEstimateGood sigma (QuantyraNullCone.degreeRadius n)
+        (QuantyraNullCone.selectedDegreeDensity code)
+'QuantyraNullCone.InDensityClass.degree_estimate_intersects' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.degree_distance_small_TV {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 2 ≤ n)
+  (hTV : QuantyraNullCone.unlabeledOrderLawTV rho sigma n < 9 / 10) :
+  QuantyraNullCone.conformalDistance rho sigma ≤ 2 * QuantyraNullCone.degreeRadius n
+'QuantyraNullCone.InDensityClass.degree_distance_small_TV' depends on axioms: [propext, Classical.choice, Quot.sound]
+QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse {rho sigma : QuantyraNullCone.DiamondPoint → ℝ}
+  (hR : QuantyraNullCone.InDensityClass rho) (hS : QuantyraNullCone.InDensityClass sigma) {n : ℕ} (hn : 2 ≤ n) :
+  QuantyraNullCone.conformalDistance rho sigma ≤
+    min 1 (1300 * (Real.log ↑n / ↑n) ^ (1 / 4) + 10 / 9 * QuantyraNullCone.unlabeledOrderLawTV rho sigma n)
+'QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PASS: proof sources and final Lean dependency reports

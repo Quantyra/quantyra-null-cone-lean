@@ -1,0 +1,28 @@
+1
+    (sampleMeasure rho n).real
+      {sample |
+        SampleGood rho m (1 / ↑m) sample ∧
+          ∀ (i : Bool × Fin k × Fin k),
+            |↑(pointsIn sample (sets i)).card / ↑n - (densityMeasure rho).real (sets i)| ≤ 4 * √(1 / ↑m) ^ 3}
+this : IsProbabilityMeasure (sampleMeasure rho n) := ⋯
+⊢ autoParam
+    ((sampleMeasure rho n)
+        {sample |
+          SampleDegreeReconstructed rho (1 / ↑m) ⌊√↑m⌋₊ (8 * √(1 / ↑m)) ((1 - 16 * √(1 / ↑m)) / ↑⌊√↑m⌋₊)
+            (270 * √(1 / ↑m)) sample} ≠
+      ⊤)
+    measureReal_mono._auto_1
+info: QuantyraNullCone/DegreeHistogramProbability.lean:108:0: 'QuantyraNullCone.InDensityClass.degree_histogram_probability' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeHistogramProbability.lean:109:0: 'QuantyraNullCone.degree_logarithmic_mesh_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogramProbability.lean:110:0: 'QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeHistogramProbability
+error: build failed
+TERMINAL_EXIT=1

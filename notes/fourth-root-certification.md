@@ -1,6 +1,6 @@
 # Fourth-root finite-data certification campaign
 
-S032, selected 2026-10-08 under the goal "complete steps 1-3". Baseline `436e36a05b4234870200871bd1adc8c082163c7f`. **Translation underway; full endpoints are not yet certified.** The complete ordinary arguments remain in [the upper proof](finite-data-interior-degree-rate.md) and [the lower proof](finite-data-information-limit.md), with their [audit](finite-data-feasibility-proof-audit.md). S031's completed pilot and its negative practical disposition are preserved.
+S032, selected 2026-10-08 under the goal "complete steps 1-3". Baseline `436e36a05b4234870200871bd1adc8c082163c7f`. **The full upper guarantee and actual-law corollary have GCP acceptance; the lower bound remains uncertified and S032 is active.** The complete ordinary arguments remain in [the upper proof](finite-data-interior-degree-rate.md) and [the lower proof](finite-data-information-limit.md), with their [audit](finite-data-feasibility-proof-audit.md). S031's completed pilot and its negative practical disposition are preserved.
 
 ## Frozen mathematical endpoints
 
@@ -55,6 +55,40 @@ The second route assessment finds the concentration and cell-error steps suffici
 
 Supplementary delivery checks verify UTF-8/no unfinished proof tokens, Python checker syntax, current local links and checkpoint JSON. All 391 baseline proof-module, manuscript and frozen-study files are preserved; only the root import/audit surface and new proof modules extend the formal library. No numerical experiment or published artifact is changed. The task-owned instance is stopped after terminal evidence collection and a no-other-work preflight; the campaign index records its final state.
 
+## Histogram assembly underway
+
+The next stage uses the accepted component revision `e728230b12d19dbb95100f15d4dca9d76df00509`. The whole-square estimator clamps both query coordinates into `[H,1-H]` and selects index `min(floor((x-H)/w),k-1)` in each coordinate. This fixes internal query edges to the cell on their right and the upper edge to the last cell. Counts remain on Ioc cells. This harmless convention differs from the prose's query tie convention; the same error holds on every closed cell, so all points and the exact endpoint constants are preserved. The coordinatewise common index convention also commutes with transpose.
+
+`InnerHistogram` proves index coverage, measurable output and a `3H` Euclidean-Lipschitz clamping penalty. `DegreeHistogram` defines the actual observed-degree/rank histogram, proves clipping bounds and transpose transport, and composes the accepted count and cell-error lemmas. The next parameter discharge uses `m>=65536`, `h=sqrt(1/m)`, `k=floor(sqrt(m))`, `H=8h` and `w=(1-16h)/k`: `h<=1/256`, `15h/16<=w<=2h`, `2s<=w`, `H-s>=7h`, fixed shifted mass <=8h² and the displayed cell error plus `24h` <=270h. This is the existing complete ordinary argument being translated, not an extra recovery hypothesis. These new files remain development work until their own exact-source acceptance.
+
 Every Lean/Lake invocation runs on project `quantyra-lean-cert-20260915`, instance `quantyra-lean-builder-01`, zone `us-central1-a`. The instance was observed TERMINATED at selection. Each attempt uses a unique captured source directory, pinned Lean 4.30.0/mathlib/dependencies, one compiler and retained terminal diagnostics. No workstation Lean compilation is permitted. Historical captures and published manuscripts remain intact.
 
-Remaining to-do list: actual shifted grid and observable histogram; floor/scale/clamping/fallback bounds; measurable selection on actual unlabeled orders and full upper guarantee; same-class lower construction/divergence/testing; actual-law corollary; final S032 acceptance/delivery; then S033 manuscript reassessment.
+## Full upper and actual-law acceptance
+
+GCP run **`space-degree-upper-acceptance-20261009T050655Z-35cee0`** passes the complete root build (**3016 jobs**) and **379 exact-type/axiom audits, including 51 new exports**. The [receipt](../evidence/gcp/space-degree-upper-acceptance-20261009T050655Z-35cee0/receipt.json), [full audit](../evidence/gcp/space-degree-upper-acceptance-20261009T050655Z-35cee0/logs/audit.stdout.txt) and [campaign index](../evidence/gcp/fourth-root-upper-20261008.json) retain the exact accepted source/dependency identities and all seven attempts, including six compiler failures. All 126 captured source/check/config files are verified before and after execution; pinned dependency revisions and clean source states are also verified before and after. There are no warnings or added axioms; only `propext`, `Classical.choice` and `Quot.sound` occur. These new files supersede the development-only status in the histogram assembly record above.
+
+| Export | Accepted endpoint or role |
+| --- | --- |
+| `fourth_root_order_only_estimator` | For every n>=2, there exists one measurable estimator on actual directed-order isomorphism classes, independent of rho. Every output is measurable and lies in [1/2,3/2]. For every original-K rho, its full closed-square error under one global identity/transpose is at most `min(1/2,650(log n/n)^(1/4))` with probability at least 19/20. |
+| `InDensityClass.fourth_root_density_estimation` | The preceding probability bound for the explicitly defined `selectedDegreeDensity`, under the actual `unlabeledOrderLaw`. It assumes neither a good sample event nor observed coordinate orders. |
+| `InDensityClass.fourth_root_actual_law_inverse` | For two original-K densities and n>=2, `d_conf <= min(1,1300(log n/n)^(1/4)+(10/9)TV)`, using their actual single-n unlabeled-order laws. No law-estimation hypothesis is introduced. |
+| `DegreeHistogramProbability` / `DegreeRateNumbers` | Discharge the actual shifted-rectangle probability budget, integer floors, explicit logarithmic mesh and all flat-output cases. |
+| `DegreeRelabel` / `DegreeEstimator` | Prove degree/rank-count invariance under vertex relabeling, transport reconstruction to a canonical quotient representative, and use almost-sure coordinate injectivity to obtain a realizer on actual samples. |
+| `InnerHistogram` / `DegreeHistogram` / `DegreeMesh` | Prove query coverage, full-square clamping, output measurability and bounds, transpose transport, mesh margins and the complete `270h` deterministic estimate. |
+
+The exact statements in the audit define the accepted scope. The selector uses finite classical choices; this theorem does not assert an efficient implementation. The practical pilot remains uninformative, the constants are conservative, and the logarithmic minimax gap remains open. The lower construction/testing proof is still ordinary mathematics only, so full S032 completion and S033's manuscript decision remain outstanding. Neither published manuscript is changed.
+
+Delivery checks compare all captured proof/check/config bytes with staged Git objects and preserve every raw attempt file byte-for-byte. Existing proof modules, manuscript artifacts and frozen study data are unchanged; the public root/check surface extends the library with eight new modules. The task-owned instance is verified TERMINATED after full terminal evidence collection and a process preflight showing no other work. Local Lean/Lake invocations remain zero.
+
+## Remaining lower-bound proof order
+
+The selected lower endpoint retains the exact alternatives and finite inequality in [the ordinary lower proof](finite-data-information-limit.md). It is not replaced by a conditional testing lemma or a stronger density class.
+
+1. Prove the odd-Gaussian profile `f(t)=t exp(-t^2)` is smooth, bounded by 1/2 in absolute value, and has derivative bounded by one. Scaling and an exact zero integral on the symmetric interval give the two uniform marginals. Derive the Euclidean Lipschitz condition and the original-K bounds for `rho_1=1+2h a_h(u)a_h(v)`, for `0<h<=1/2`; `rho_0=1` is the other admissible density.
+2. Prove transpose invariance and the explicit in-square separation witness at coordinates `1/2+h/sqrt(2)`. Establish quotient distance `h/e>h/3`, including `e<3`, so the two closed success sets at radius `h/6` are disjoint. This must hold for arbitrary estimator outputs, not only outputs in K.
+3. Derive the Gaussian second moment, the exact single-point squared-likelihood integral and its upper bound `pi*h^4/8`. Multiply likelihood ratios under the actual iid product measure. Prove the event/total-variation bound for its pushforward to actual unlabeled orders, retaining the explicit finite expression `sqrt(exp(n*pi*h^4/8)-1)/2`.
+4. Prove the strict-error testing reduction, including arbitrary measurable independent random seeds. A direct route integrates finite-observation event sections over the seed measure; it must establish that adjoining the seed cannot increase the relevant event discrepancy. Discharge `h=min(1/2,n^(-1/4))`, `n*h^4<=1`, the strict 1/4 probability bound and the `n>=16` specialization. Preserve the separate consequence for random-width bands.
+
+Every step needs exact-source GCP acceptance, with root type/axiom exports and retained diagnostics. After the full upper/lower/law requirements are met, S033 refreshes the bounded primary-source comparison and records a concrete third-manuscript decision. Neither a new manuscript nor publication is automatic.
+
+Remaining to-do list: original-K lower construction, divergence and randomized testing; full S032 acceptance/delivery; then S033 literature refresh and manuscript decision.

@@ -1,0 +1,28 @@
+1
+hn : 2 ≤ n
+hm : 65536 ≤ degreeOuterMesh n
+hnLarge : 65536 ≤ n
+right✝ : ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊ ^ 2 ≤ ↑n / (8 * Real.log ↑n)
+left✝³ : 16 ≤ ⌊√(↑n / (8 * Real.log ↑n))⌋₊
+left✝² : 0 < 1 / ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊
+left✝¹ : ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊ * (1 / ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊) = 1
+left✝ : ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊ ^ 2 ≤ ↑n / (8 * Real.log ↑n)
+hRate : 87 * (1 / ↑⌊√(↑n / (8 * Real.log ↑n))⌋₊) ≤ 174 / √(↑n / (8 * Real.log ↑n))
+x : ℝ := √(↑n / (8 * Real.log ↑n))
+m : ℕ := degreeOuterMesh n
+hmPos : 0 < ↑m
+hnPos : 0 < ↑n
+hLog : 0 < Real.log ↑n
+hRec : 1 / ↑m ≤ 2 / x
+hRecSq : (1 / ↑m) ^ 2 ≤ (2 / x) ^ 2
+⊢ 2 ^ 2 * 8 = 32
+info: QuantyraNullCone/DegreeRateNumbers.lean:96:0: 'QuantyraNullCone.degree_rate_fourth_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeRateNumbers.lean:97:0: 'QuantyraNullCone.degree_large_mesh_rate' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeRateNumbers.lean:98:0: 'QuantyraNullCone.degree_small_mesh_flat_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeRateNumbers.lean:99:0: 'QuantyraNullCone.degree_flat_radius' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeRateNumbers.lean:100:0: 'QuantyraNullCone.degree_active_radius' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeRateNumbers
+error: build failed
+TERMINAL_EXIT=1

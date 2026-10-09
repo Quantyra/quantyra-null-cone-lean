@@ -1,0 +1,95 @@
+{
+  "story": "S032",
+  "status": "upper_and_actual_law_accepted_lower_pending",
+  "full_endpoints_certified": false,
+  "upper_certified": true,
+  "actual_law_corollary_certified": true,
+  "lower_certified": false,
+  "accepted_run": "space-degree-upper-acceptance-20261009T050655Z-35cee0",
+  "build_jobs": 3016,
+  "audited_exports": 379,
+  "new_exports": 51,
+  "source_files_verified_against_worktree": 126,
+  "attempts": [
+    {
+      "run": "space-degree-estimator-20261009T045531Z-a02597",
+      "target": "QuantyraNullCone.DegreeEstimator",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:57:36Z",
+      "finished_utc": "2026-10-09T04:58:04Z",
+      "capture_sha256": "5c6cfd33976afb9f00a1cbfa7d1d3749bec17f591e219a116fe711000325ed85",
+      "inputs_sha256": "eef47ff9ab77df422bd1796891f3c83d95fa9f48430a9d58e698d618c34fc198",
+      "evidence_archive_sha256": "e53cc2ceb476ffd070678875c99f813d874a22c83b1fea13a74dc42c30b7c7cd"
+    },
+    {
+      "run": "space-degree-histogram-20261009T043537Z-101bcf",
+      "target": "QuantyraNullCone.InnerHistogram",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:38:41Z",
+      "finished_utc": "2026-10-09T04:40:31Z",
+      "capture_sha256": "e6c35364c78653a99b52f7acbd8c2f1ef7ba3c05cd1eacd44fbf0123fbc8bdb2",
+      "inputs_sha256": "eb32fd10fd27de25248535e25afdc11785c175057f5c4806e98a2bfff1410c23",
+      "evidence_archive_sha256": "f516619d4e4ab6025c1e324418cae8486fa0657c23b2767400853637a613062d"
+    },
+    {
+      "run": "space-degree-law-20261009T045940Z-a08052",
+      "target": "QuantyraNullCone.DegreeLaw",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:01:18Z",
+      "finished_utc": "2026-10-09T05:01:50Z",
+      "capture_sha256": "1cf865c7610bd171e2280a089b1b92693996753ed7f0397b2dd928f256a7bc96",
+      "inputs_sha256": "a0eee5c8b8d65fba604234b93dfc18ac3dbeb1bde86d311650db8462a1f7c54c",
+      "evidence_archive_sha256": "39de8fc7108852d42647cab84a56e2ccdbcdb184f92decaf16e40bb75ba4e401"
+    },
+    {
+      "run": "space-degree-mesh-20261009T044317Z-15a4c4",
+      "target": "QuantyraNullCone.DegreeMesh",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:43:51Z",
+      "finished_utc": "2026-10-09T04:44:11Z",
+      "capture_sha256": "ed98391eb5b4148ccfd5c0e3d87d170b040939a462d447afc4f5a25654c0657c",
+      "inputs_sha256": "2e654ef9a88e3dbe907a65c17dc823f6a0fa00bb015226cb2e1baf48d4829589",
+      "evidence_archive_sha256": "991de2113c0200d4e8fbea77a63b41ce37dc367d29d4297193d7582ce6d47d83"
+    },
+    {
+      "run": "space-degree-rate-20261009T044717Z-2a21d6",
+      "target": "QuantyraNullCone.DegreeRateNumbers",
+      "exit": 1,
+      "started_utc": "2026-10-09T04:47:49Z",
+      "finished_utc": "2026-10-09T04:48:14Z",
+      "capture_sha256": "79a37594588d5c4bd566414f6bcdd9ef3c1a0b5713ff7f493b19d31c2953b013",
+      "inputs_sha256": "c27e77e869b98a23f10e808f12b26fabae678f93a31a33f1774b423658a03c43",
+      "evidence_archive_sha256": "53ecef4287ed27bc39255ba601e82110d5765a4134d8574a45051debaad26552"
+    },
+    {
+      "run": "space-degree-upper-acceptance-20261009T050306Z-034aee",
+      "target": "QuantyraNullCone",
+      "exit": 1,
+      "started_utc": "2026-10-09T05:04:09Z",
+      "finished_utc": "2026-10-09T05:04:47Z",
+      "capture_sha256": "2ec0fcd8da88e68e07fd7aeee261e1976320c4e7ab16f99edd5e031ee53b680f",
+      "inputs_sha256": "82ff59704d1f0662e47cfdbc32c34365fe86bf7ecd285ad06b73b7e251bd70a2",
+      "evidence_archive_sha256": "7f2779633c0853137c3648f1c23b0bf8c06d31dda7a1c0213f02a4715723c222"
+    },
+    {
+      "run": "space-degree-upper-acceptance-20261009T050655Z-35cee0",
+      "target": "QuantyraNullCone",
+      "exit": 0,
+      "started_utc": "2026-10-09T05:07:53Z",
+      "finished_utc": "2026-10-09T05:08:38Z",
+      "capture_sha256": "4a4c0cfda23174cb36ce84c3112c4392f8ecfd177f5dc5d5ec60c57de329fcc0",
+      "inputs_sha256": "a3ae8988b9407b7ec70def950f648cd4f514b5230dab88c421f4a111e4d74370",
+      "evidence_archive_sha256": "5b05f376f80e6a27347b20d86cbd0971854320f8a2e7f3292e372ef091f93747"
+    }
+  ],
+  "failed_attempts_retained": 6,
+  "local_lean_invocations": 0,
+  "remaining": [
+    "original-K lower alternatives and quotient separation",
+    "product divergence, actual-order data processing and randomized testing lower bound",
+    "full S032 final acceptance and delivery",
+    "S033 literature refresh and manuscript decision"
+  ],
+  "task_owned_instance_final_state": "TERMINATED",
+  "ownership_source": "space-degree-histogram-20261009T043537Z-101bcf/instance-ownership.json"
+}

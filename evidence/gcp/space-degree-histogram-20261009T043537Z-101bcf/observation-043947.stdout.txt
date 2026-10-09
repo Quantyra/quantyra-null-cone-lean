@@ -1,0 +1,30 @@
+1412 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/run.sh
+1414 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/logs/runner.stdout.txt
+1415 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/logs/runner.stderr.txt
+1464 lake build QuantyraNullCone.InnerHistogram
+1522 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/source/QuantyraNullCone/InnerHistogram.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/source/.lake/build/lib/lean/QuantyraNullCone/InnerHistogram.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/source/.lake/build/lib/lean/QuantyraNullCone/InnerHistogram.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/source/.lake/build/ir/QuantyraNullCone/InnerHistogram.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-histogram-20261009T043537Z-101bcf/source/.lake/build/ir/QuantyraNullCone/InnerHistogram.setup.json --json
+info: QuantyraNullCone/DegreeMass.lean:117:0: 'QuantyraNullCone.deep_point_degree_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2901/2906] Replayed QuantyraNullCone.DegreeCells
+info: QuantyraNullCone/DegreeCells.lean:101:0: 'QuantyraNullCone.eroded_rectangle_recovered' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:102:0: 'QuantyraNullCone.recovered_rectangle_expanded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:103:0: 'QuantyraNullCone.retained_rectangle_count_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:104:0: 'QuantyraNullCone.Realizer.rankPoint_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCells.lean:105:0: 'QuantyraNullCone.degree_filtered_cell_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2902/2906] Replayed QuantyraNullCone.DensityCells
+info: QuantyraNullCone/DensityCells.lean:101:0: 'QuantyraNullCone.square_cell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:102:0: 'QuantyraNullCone.InDensityClass.cell_mean_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:103:0: 'QuantyraNullCone.InDensityClass.cell_mean_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCells.lean:104:0: 'QuantyraNullCone.InDensityClass.cell_mean_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2903/2906] Replayed QuantyraNullCone.DensityCellBias
+info: QuantyraNullCone/DensityCellBias.lean:138:0: 'QuantyraNullCone.cell_chord_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:139:0: 'QuantyraNullCone.cell_chord_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:140:0: 'QuantyraNullCone.cell_majorant_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DensityCellBias.lean:141:0: 'QuantyraNullCone.InDensityClass.cell_mean_point_bias' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2904/2906] Replayed QuantyraNullCone.DegreeCellBias
+info: QuantyraNullCone/DegreeCellBias.lean:132:0: 'QuantyraNullCone.diamondVolume_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:133:0: 'QuantyraNullCone.InDensityClass.mass_gap_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:134:0: 'QuantyraNullCone.diamond_square_cell_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:135:0: 'QuantyraNullCone.InDensityClass.shifted_square_mass_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:136:0: 'QuantyraNullCone.InDensityClass.shifted_cell_mean_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:137:0: 'QuantyraNullCone.density_clip_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeCellBias.lean:138:0: 'QuantyraNullCone.InDensityClass.shifted_cell_point_error' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,28 @@
+1
+hq : 0 ≤ (x - H) / w
+hFloor : ↑⌊(x - H) / w⌋₊ ≤ (x - H) / w
+hiFloor : ↑(innerCellIndex k H w x) ≤ ↑⌊(x - H) / w⌋₊
+hLower : ↑(innerCellIndex k H w x) * w ≤ x - H
+hf : ¬⌊(x - H) / w⌋₊ < k
+hi : innerCellIndex k H w x = k - 1
+hkR : ↑(k - 1) + 1 = ↑k
+a✝ : H + ↑(k - 1) * w + w < x
+⊢ False
+failed
+info: QuantyraNullCone/InnerHistogram.lean:134:0: 'QuantyraNullCone.inner_clamp_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:135:0: 'QuantyraNullCone.inner_clamp_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:136:0: 'QuantyraNullCone.inner_clamp_point_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:137:0: 'QuantyraNullCone.InDensityClass.inner_clamp_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:138:0: 'QuantyraNullCone.inner_cell_index_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:139:0: 'QuantyraNullCone.inner_cell_location' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:140:0: 'QuantyraNullCone.inner_cell_index_location' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:141:0: 'QuantyraNullCone.inner_histogram_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:142:0: 'QuantyraNullCone.InDensityClass.inner_histogram_error' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.InnerHistogram
+error: build failed
+TERMINAL_EXIT=1

@@ -166,4 +166,10 @@ Remaining to-do list: none for the selected certification plan.
 
 [Fourth-root certification](fourth-root-certification.md) records `space-degree-components-acceptance-20261009T042345Z-eee254`: 3008 root jobs and 328 exact-type/axiom audits, with 33 new exports and zero warnings or added axioms. Original-K degree filtering and deep-point retention supply one-orientation shifted-cell counts. Actual iid fixed-mass concentration and a union argument give a 19/20 sample event under explicit grid/rectangle parameters. Shell mass, cell-average bias and clipping give the conditional cell-point error. Eight immutable GCP attempts retain six failures, one development success and final component acceptance. This is a partial milestone: no full fourth-root upper/lower/law endpoint is yet certified.
 
-Remaining to-do list: actual shifted grid/histogram and parameter/floor/clamping/fallback bounds; measurable unlabeled selector and full upper guarantee; same-class lower bound; actual-law corollary; final S032 acceptance; S033 manuscript reassessment.
+## S032 full upper and actual-law acceptance - 2026-10-08
+
+Run `space-degree-upper-acceptance-20261009T050655Z-35cee0` passes the full root (3016 jobs) and all 379 exact-type/axiom audits, including 51 new exports. The [campaign and endpoint map](fourth-root-certification.md) and [immutable attempt index](../evidence/gcp/fourth-root-upper-20261008.json) retain six failed builds plus acceptance. All 126 captured source/check/config files and pinned dependency identities pass before/after checks; there are no warnings or added axioms. The accepted endpoints construct one measurable estimator of actual unlabeled orders with original-K 19/20 full-square coverage at the stated fourth-root radius for all n>=2, and derive the actual-law distance corollary. The task-owned VM is verified TERMINATED after collection and a no-other-work preflight. All Lean/Lake execution is on GCP.
+
+The lower construction and randomized testing result remain uncertified. This milestone does not complete S032 or authorize a manuscript claim that the lower endpoint is Lean certified.
+
+Remaining to-do list: same-class lower construction, separation, divergence/data processing and randomized testing; full S032 final acceptance/delivery; then S033 manuscript reassessment.

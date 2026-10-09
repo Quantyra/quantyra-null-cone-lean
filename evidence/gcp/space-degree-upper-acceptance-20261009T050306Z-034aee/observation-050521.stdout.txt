@@ -1,0 +1,28 @@
+1
+✖ [3013/3016] Building QuantyraNullCone.DegreeEstimator (3.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/QuantyraNullCone/DegreeEstimator.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/.lake/build/lib/lean/QuantyraNullCone/DegreeEstimator.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/.lake/build/lib/lean/QuantyraNullCone/DegreeEstimator.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/.lake/build/ir/QuantyraNullCone/DegreeEstimator.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050306Z-034aee/source/.lake/build/ir/QuantyraNullCone/DegreeEstimator.setup.json --json
+error: QuantyraNullCone/DegreeEstimator.lean:74:4: Type mismatch
+  (relabelOrderEquiv π).left_inv ?m.55
+has type
+  (relabelOrderEquiv π).invFun ((relabelOrderEquiv π).toFun ?m.55) = ?m.55
+but is expected to have type
+  relabelOrder (Equiv.symm π) (relabelOrder π (Quotient.out (forgetOrderLabels code))) =
+    Quotient.out (forgetOrderLabels (relabelOrder π (Quotient.out (forgetOrderLabels code))))
+info: QuantyraNullCone/DegreeEstimator.lean:156:0: 'QuantyraNullCone.selectedDegreeDensity_query_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:157:0: 'QuantyraNullCone.selectedDegreeDensity_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:158:0: 'QuantyraNullCone.selectedDegreeDensity_function_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:159:0: 'QuantyraNullCone.selectedDegreeDensity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:160:0: 'QuantyraNullCone.densityEstimateGood_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:161:0: 'QuantyraNullCone.DensityEstimateGood.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:162:0: 'QuantyraNullCone.degree_reconstruction_quotient' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:163:0: 'QuantyraNullCone.reconstructed_selected_degree' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:164:0: 'QuantyraNullCone.InDensityClass.fourth_root_density_estimation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:165:0: 'QuantyraNullCone.fourth_root_order_only_estimator' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.DegreeEstimator
+error: build failed
+TERMINAL_EXIT=1

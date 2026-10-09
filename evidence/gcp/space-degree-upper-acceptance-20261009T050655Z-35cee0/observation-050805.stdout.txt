@@ -1,0 +1,30 @@
+5357 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/run.sh
+5359 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/logs/runner.stdout.txt
+5360 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/logs/runner.stderr.txt
+5409 lake build QuantyraNullCone
+5514 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/source/QuantyraNullCone/DegreeRateNumbers.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/source/.lake/build/lib/lean/QuantyraNullCone/DegreeRateNumbers.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/source/.lake/build/lib/lean/QuantyraNullCone/DegreeRateNumbers.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/source/.lake/build/ir/QuantyraNullCone/DegreeRateNumbers.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-degree-upper-acceptance-20261009T050655Z-35cee0/source/.lake/build/ir/QuantyraNullCone/DegreeRateNumbers.setup.json --json
+info: QuantyraNullCone/InnerHistogram.lean:139:0: 'QuantyraNullCone.inner_cell_index_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:140:0: 'QuantyraNullCone.inner_cell_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:141:0: 'QuantyraNullCone.inner_cell_index_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:142:0: 'QuantyraNullCone.inner_histogram_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/InnerHistogram.lean:143:0: 'QuantyraNullCone.InDensityClass.inner_histogram_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3016] Built QuantyraNullCone.DegreeHistogram (4.6s)
+info: QuantyraNullCone/DegreeHistogram.lean:105:0: 'QuantyraNullCone.Realizer.degreeHistogram_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogram.lean:106:0: 'QuantyraNullCone.Realizer.degreeHistogram_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogram.lean:107:0: 'QuantyraNullCone.Realizer.degreeCellValue_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogram.lean:108:0: 'QuantyraNullCone.Realizer.degreeHistogram_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogram.lean:109:0: 'QuantyraNullCone.degree_histogram_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3009/3016] Built QuantyraNullCone.DegreeMesh (6.0s)
+info: QuantyraNullCone/DegreeMesh.lean:136:0: 'QuantyraNullCone.degree_inner_mesh_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:137:0: 'QuantyraNullCone.degree_mesh_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:138:0: 'QuantyraNullCone.degree_histogram_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:139:0: 'QuantyraNullCone.InDensityClass.square_mass_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeMesh.lean:140:0: 'QuantyraNullCone.InDensityClass.shifted_inner_cell_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3010/3016] Built QuantyraNullCone.DegreeHistogramProbability (5.7s)
+info: QuantyraNullCone/DegreeHistogramProbability.lean:109:0: 'QuantyraNullCone.InDensityClass.degree_histogram_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeHistogramProbability.lean:110:0: 'QuantyraNullCone.degree_logarithmic_mesh_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeHistogramProbability.lean:111:0: 'QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

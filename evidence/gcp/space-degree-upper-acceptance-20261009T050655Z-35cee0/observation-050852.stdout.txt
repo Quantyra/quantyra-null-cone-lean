@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/DegreeRelabel.lean:105:0: 'QuantyraNullCone.code_degree_reconstructed_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeRelabel.lean:106:0: 'QuantyraNullCone.code_realizer_relabel' depends on axioms: [Quot.sound]
+info: QuantyraNullCone/DegreeRelabel.lean:107:0: 'QuantyraNullCone.CodeDegreeReconstructed.relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3013/3016] Built QuantyraNullCone.DegreeEstimator (3.0s)
+info: QuantyraNullCone/DegreeEstimator.lean:158:0: 'QuantyraNullCone.selectedDegreeDensity_query_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:159:0: 'QuantyraNullCone.selectedDegreeDensity_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:160:0: 'QuantyraNullCone.selectedDegreeDensity_function_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:161:0: 'QuantyraNullCone.selectedDegreeDensity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:162:0: 'QuantyraNullCone.densityEstimateGood_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:163:0: 'QuantyraNullCone.DensityEstimateGood.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:164:0: 'QuantyraNullCone.degree_reconstruction_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:165:0: 'QuantyraNullCone.reconstructed_selected_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:166:0: 'QuantyraNullCone.InDensityClass.fourth_root_density_estimation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:167:0: 'QuantyraNullCone.fourth_root_order_only_estimator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3014/3016] Built QuantyraNullCone.DegreeLaw (3.3s)
+info: QuantyraNullCone/DegreeLaw.lean:92:0: 'QuantyraNullCone.density_estimate_common_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:93:0: 'QuantyraNullCone.InDensityClass.degree_estimate_intersects' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:94:0: 'QuantyraNullCone.InDensityClass.degree_distance_small_TV' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:95:0: 'QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3015/3016] Built QuantyraNullCone (2.7s)
+Build completed successfully (3016 jobs).
+TERMINAL_EXIT=0

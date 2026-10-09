@@ -924,3 +924,156 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 
 #check QuantyraNullCone.InDensityClass.degree_event_probability
 #print axioms QuantyraNullCone.InDensityClass.degree_event_probability
+
+#check QuantyraNullCone.inner_clamp_bounds
+#print axioms QuantyraNullCone.inner_clamp_bounds
+
+#check QuantyraNullCone.inner_clamp_displacement
+#print axioms QuantyraNullCone.inner_clamp_displacement
+
+#check QuantyraNullCone.inner_clamp_point_mem
+#print axioms QuantyraNullCone.inner_clamp_point_mem
+
+#check QuantyraNullCone.InDensityClass.inner_clamp_error
+#print axioms QuantyraNullCone.InDensityClass.inner_clamp_error
+
+#check QuantyraNullCone.inner_cell_index_lt
+#print axioms QuantyraNullCone.inner_cell_index_lt
+
+#check QuantyraNullCone.inner_cell_location
+#print axioms QuantyraNullCone.inner_cell_location
+
+#check QuantyraNullCone.inner_cell_index_location
+#print axioms QuantyraNullCone.inner_cell_index_location
+
+#check QuantyraNullCone.inner_histogram_measurable
+#print axioms QuantyraNullCone.inner_histogram_measurable
+
+#check QuantyraNullCone.InDensityClass.inner_histogram_error
+#print axioms QuantyraNullCone.InDensityClass.inner_histogram_error
+
+#check QuantyraNullCone.Realizer.degreeHistogram_measurable
+#print axioms QuantyraNullCone.Realizer.degreeHistogram_measurable
+
+#check QuantyraNullCone.Realizer.degreeHistogram_bounds
+#print axioms QuantyraNullCone.Realizer.degreeHistogram_bounds
+
+#check QuantyraNullCone.Realizer.degreeCellValue_swap
+#print axioms QuantyraNullCone.Realizer.degreeCellValue_swap
+
+#check QuantyraNullCone.Realizer.degreeHistogram_swap
+#print axioms QuantyraNullCone.Realizer.degreeHistogram_swap
+
+#check QuantyraNullCone.degree_histogram_error
+#print axioms QuantyraNullCone.degree_histogram_error
+
+#check QuantyraNullCone.degree_inner_mesh_data
+#print axioms QuantyraNullCone.degree_inner_mesh_data
+
+#check QuantyraNullCone.degree_mesh_margins
+#print axioms QuantyraNullCone.degree_mesh_margins
+
+#check QuantyraNullCone.degree_histogram_constant
+#print axioms QuantyraNullCone.degree_histogram_constant
+
+#check QuantyraNullCone.InDensityClass.square_mass_upper
+#print axioms QuantyraNullCone.InDensityClass.square_mass_upper
+
+#check QuantyraNullCone.InDensityClass.shifted_inner_cell_mass
+#print axioms QuantyraNullCone.InDensityClass.shifted_inner_cell_mass
+
+#check QuantyraNullCone.InDensityClass.degree_histogram_probability
+#print axioms QuantyraNullCone.InDensityClass.degree_histogram_probability
+
+#check QuantyraNullCone.degree_logarithmic_mesh_large
+#print axioms QuantyraNullCone.degree_logarithmic_mesh_large
+
+#check QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability
+#print axioms QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability
+
+#check QuantyraNullCone.degree_rate_fourth_power
+#print axioms QuantyraNullCone.degree_rate_fourth_power
+
+#check QuantyraNullCone.degree_large_mesh_rate
+#print axioms QuantyraNullCone.degree_large_mesh_rate
+
+#check QuantyraNullCone.degree_small_mesh_flat_radius
+#print axioms QuantyraNullCone.degree_small_mesh_flat_radius
+
+#check QuantyraNullCone.degree_flat_radius
+#print axioms QuantyraNullCone.degree_flat_radius
+
+#check QuantyraNullCone.degree_active_radius
+#print axioms QuantyraNullCone.degree_active_radius
+
+#check QuantyraNullCone.predecessors_reindex_card
+#print axioms QuantyraNullCone.predecessors_reindex_card
+
+#check QuantyraNullCone.rank_reindex
+#print axioms QuantyraNullCone.rank_reindex
+
+#check QuantyraNullCone.degree_retained_reindex
+#print axioms QuantyraNullCone.degree_retained_reindex
+
+#check QuantyraNullCone.Realizer.rankPoint_reindex
+#print axioms QuantyraNullCone.Realizer.rankPoint_reindex
+
+#check QuantyraNullCone.Realizer.aligned_reindex
+#print axioms QuantyraNullCone.Realizer.aligned_reindex
+
+#check QuantyraNullCone.Realizer.degreeCellValue_reindex
+#print axioms QuantyraNullCone.Realizer.degreeCellValue_reindex
+
+#check QuantyraNullCone.Realizer.degreeHistogram_reindex
+#print axioms QuantyraNullCone.Realizer.degreeHistogram_reindex
+
+#check QuantyraNullCone.code_degree_reconstructed_sample
+#print axioms QuantyraNullCone.code_degree_reconstructed_sample
+
+#check QuantyraNullCone.code_realizer_relabel
+#print axioms QuantyraNullCone.code_realizer_relabel
+
+#check QuantyraNullCone.CodeDegreeReconstructed.relabel
+#print axioms QuantyraNullCone.CodeDegreeReconstructed.relabel
+
+#check QuantyraNullCone.selectedDegreeDensity_query_measurable
+#print axioms QuantyraNullCone.selectedDegreeDensity_query_measurable
+
+#check QuantyraNullCone.selectedDegreeDensity_measurable
+#print axioms QuantyraNullCone.selectedDegreeDensity_measurable
+
+#check QuantyraNullCone.selectedDegreeDensity_function_measurable
+#print axioms QuantyraNullCone.selectedDegreeDensity_function_measurable
+
+#check QuantyraNullCone.selectedDegreeDensity_bounds
+#print axioms QuantyraNullCone.selectedDegreeDensity_bounds
+
+#check QuantyraNullCone.densityEstimateGood_measurable
+#print axioms QuantyraNullCone.densityEstimateGood_measurable
+
+#check QuantyraNullCone.DensityEstimateGood.mono
+#print axioms QuantyraNullCone.DensityEstimateGood.mono
+
+#check QuantyraNullCone.degree_reconstruction_quotient
+#print axioms QuantyraNullCone.degree_reconstruction_quotient
+
+#check QuantyraNullCone.reconstructed_selected_degree
+#print axioms QuantyraNullCone.reconstructed_selected_degree
+
+#check QuantyraNullCone.InDensityClass.fourth_root_density_estimation
+#print axioms QuantyraNullCone.InDensityClass.fourth_root_density_estimation
+
+#check QuantyraNullCone.fourth_root_order_only_estimator
+#print axioms QuantyraNullCone.fourth_root_order_only_estimator
+
+#check QuantyraNullCone.density_estimate_common_orbit
+#print axioms QuantyraNullCone.density_estimate_common_orbit
+
+#check QuantyraNullCone.InDensityClass.degree_estimate_intersects
+#print axioms QuantyraNullCone.InDensityClass.degree_estimate_intersects
+
+#check QuantyraNullCone.InDensityClass.degree_distance_small_TV
+#print axioms QuantyraNullCone.InDensityClass.degree_distance_small_TV
+
+#check QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse
+#print axioms QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "inner_side_lower_factor": true,
+    "expanded_depth_factor": true,
+    "erosion_nonempty": true,
+    "rectangle_variance_factor": true,
+    "predecessor_retention_margin": true,
+    "successor_retention_margin": true,
+    "bernstein_exponent_factor": true,
+    "bernstein_log_exponent": true,
+    "cell_average_error_constant": true,
+    "quadratic_strip_to_linear": true,
+    "sqrt_two_upper": true,
+    "whole_square_error_constant": true,
+    "all_n_rate_constant": true,
+    "small_mesh_fallback_constant": true,
+    "probability_at_smallest_comparison_n": true,
+    "TV_large_branch": true
+  },
+  "note_sha256": "20f4cc7f7b6fc68cab948557bdf7b208d7251b0bc6f0da3f207c66328cec7b82",
+  "scope": "Exact arithmetic of displayed constants only. Not Lean certification, a statistical experiment, an implementation, or independent proof review."
+}

@@ -1,0 +1,13 @@
+{
+  "outcome": "completed",
+  "exit_code": 0,
+  "wall_seconds": 22.292807099991478,
+  "process_tree_peak_rss_bytes": 272060416,
+  "peak_job_committed_bytes": 264679424,
+  "rss_limit_bytes": 4294967296,
+  "committed_limit_bytes": 4294967296,
+  "wall_limit_seconds": 600,
+  "active_process_limit": 1,
+  "poll_seconds": 0.01,
+  "log": "prepare.log"
+}

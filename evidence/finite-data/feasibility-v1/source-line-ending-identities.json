@@ -1,0 +1,84 @@
+{
+  "source_commit": "9b040c5452ba87e57cb33228a07267020cc9359c",
+  "identities": {
+    "tools/finite_data.py": {
+      "original_bytes_sha256": "2475407f13d2e9570300b9ef0d320062104444c3b9565b75243f450b2d5f279d",
+      "git_blob_sha256": "2475407f13d2e9570300b9ef0d320062104444c3b9565b75243f450b2d5f279d",
+      "lf_normalized_sha256": "2475407f13d2e9570300b9ef0d320062104444c3b9565b75243f450b2d5f279d",
+      "original_equals_git_blob": true
+    },
+    "tools/finite_data_core.py": {
+      "original_bytes_sha256": "7f3b74d093aa278e36a3e2adbc7a2748543f507fe5df572c8cccd4e2bbf574ec",
+      "git_blob_sha256": "7f3b74d093aa278e36a3e2adbc7a2748543f507fe5df572c8cccd4e2bbf574ec",
+      "lf_normalized_sha256": "7f3b74d093aa278e36a3e2adbc7a2748543f507fe5df572c8cccd4e2bbf574ec",
+      "original_equals_git_blob": true
+    },
+    "tools/finite_data_lp.py": {
+      "original_bytes_sha256": "b17326b94be8a3557ec986a4b165559665d416f6bebf3c58c46b47c2c08680a0",
+      "git_blob_sha256": "b17326b94be8a3557ec986a4b165559665d416f6bebf3c58c46b47c2c08680a0",
+      "lf_normalized_sha256": "b17326b94be8a3557ec986a4b165559665d416f6bebf3c58c46b47c2c08680a0",
+      "original_equals_git_blob": true
+    },
+    "tools/benchmark_finite_data.py": {
+      "original_bytes_sha256": "97b9c72b7bb6502ce67787c500d8e8d27e5454853446485961d3446395b0bb47",
+      "git_blob_sha256": "97b9c72b7bb6502ce67787c500d8e8d27e5454853446485961d3446395b0bb47",
+      "lf_normalized_sha256": "97b9c72b7bb6502ce67787c500d8e8d27e5454853446485961d3446395b0bb47",
+      "original_equals_git_blob": true
+    },
+    "tools/finite_data_local_mass.py": {
+      "original_bytes_sha256": "f7244e0a1336b815d7c8f709bfd8a9d614d1b3edca6124a9393b12bbc3384d77",
+      "git_blob_sha256": "f7244e0a1336b815d7c8f709bfd8a9d614d1b3edca6124a9393b12bbc3384d77",
+      "lf_normalized_sha256": "f7244e0a1336b815d7c8f709bfd8a9d614d1b3edca6124a9393b12bbc3384d77",
+      "original_equals_git_blob": true
+    },
+    "tools/test_finite_data_local_mass.py": {
+      "original_bytes_sha256": "cfa331ea999dcfeafb09eef726e37e4f205468b1fa8cdabdb822862d126b2c6b",
+      "git_blob_sha256": "cfa331ea999dcfeafb09eef726e37e4f205468b1fa8cdabdb822862d126b2c6b",
+      "lf_normalized_sha256": "cfa331ea999dcfeafb09eef726e37e4f205468b1fa8cdabdb822862d126b2c6b",
+      "original_equals_git_blob": true
+    },
+    "tools/finite_data_resource.py": {
+      "original_bytes_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+      "git_blob_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+      "lf_normalized_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+      "original_equals_git_blob": true
+    },
+    "tools/run_finite_data_feasibility.py": {
+      "original_bytes_sha256": "f3849b848271fc2ef7f6baa2f4b04cd3177d9d24ca3adb406ef6a4b0f39dc14a",
+      "git_blob_sha256": "f3849b848271fc2ef7f6baa2f4b04cd3177d9d24ca3adb406ef6a4b0f39dc14a",
+      "lf_normalized_sha256": "f3849b848271fc2ef7f6baa2f4b04cd3177d9d24ca3adb406ef6a4b0f39dc14a",
+      "original_equals_git_blob": true
+    },
+    "notes/finite-data-local-mass-feasibility.md": {
+      "original_bytes_sha256": "b40eddc6b54d5ee5485d4294f9221b9bff3f9bc0146667b86449cf56d7dc2d05",
+      "git_blob_sha256": "b40eddc6b54d5ee5485d4294f9221b9bff3f9bc0146667b86449cf56d7dc2d05",
+      "lf_normalized_sha256": "b40eddc6b54d5ee5485d4294f9221b9bff3f9bc0146667b86449cf56d7dc2d05",
+      "original_equals_git_blob": true
+    },
+    "notes/finite-data-feasibility-comparison.md": {
+      "original_bytes_sha256": "cae20867d157ff43373d7c96740deb70101d13d73cfd06442cc0136b258d0292",
+      "git_blob_sha256": "cae20867d157ff43373d7c96740deb70101d13d73cfd06442cc0136b258d0292",
+      "lf_normalized_sha256": "cae20867d157ff43373d7c96740deb70101d13d73cfd06442cc0136b258d0292",
+      "original_equals_git_blob": true
+    },
+    "notes/finite-data-information-limit.md": {
+      "original_bytes_sha256": "eeb92ca81bbae0b27212d2354e5528f7d911a6b9d9906fc2748ade3f8e56b439",
+      "git_blob_sha256": "eeb92ca81bbae0b27212d2354e5528f7d911a6b9d9906fc2748ade3f8e56b439",
+      "lf_normalized_sha256": "eeb92ca81bbae0b27212d2354e5528f7d911a6b9d9906fc2748ade3f8e56b439",
+      "original_equals_git_blob": true
+    },
+    "notes/finite-data-feasibility-prerequisites.md": {
+      "original_bytes_sha256": "dafa9a03781a313efda50ea528e934d630d19df5dfcdd07fbff2a9a20c34df12",
+      "git_blob_sha256": "dafa9a03781a313efda50ea528e934d630d19df5dfcdd07fbff2a9a20c34df12",
+      "lf_normalized_sha256": "dafa9a03781a313efda50ea528e934d630d19df5dfcdd07fbff2a9a20c34df12",
+      "original_equals_git_blob": true
+    },
+    "notes/finite-data-feasibility-protocol.json": {
+      "original_bytes_sha256": "14dd9bd81f7b73dd8ae57f73047f8ad715631cb64ae68376ec7bf2c4697475f3",
+      "git_blob_sha256": "14dd9bd81f7b73dd8ae57f73047f8ad715631cb64ae68376ec7bf2c4697475f3",
+      "lf_normalized_sha256": "14dd9bd81f7b73dd8ae57f73047f8ad715631cb64ae68376ec7bf2c4697475f3",
+      "original_equals_git_blob": true
+    }
+  },
+  "scope": "Original execution bytes remain authoritative. LF-normalized identities permit reproducibility on checkouts with a different Git core.autocrlf setting; only CRLF-to-LF conversion is allowed."
+}

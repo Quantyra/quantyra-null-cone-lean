@@ -1,0 +1,49 @@
+{
+  "runs": [
+    {
+      "method": "bernstein",
+      "outcome": "completed",
+      "exit_code": 0,
+      "wall_seconds": 1.598846400011098,
+      "process_tree_peak_rss_bytes": 58540032,
+      "peak_job_committed_bytes": 576815104,
+      "rss_limit_bytes": 4294967296,
+      "committed_limit_bytes": 4294967296,
+      "wall_limit_seconds": 600,
+      "active_process_limit": 1,
+      "poll_seconds": 0.01,
+      "log": "postflight-bernstein.log"
+    },
+    {
+      "method": "binomial",
+      "outcome": "completed",
+      "exit_code": 0,
+      "wall_seconds": 1.545031600020593,
+      "process_tree_peak_rss_bytes": 58847232,
+      "peak_job_committed_bytes": 577036288,
+      "rss_limit_bytes": 4294967296,
+      "committed_limit_bytes": 4294967296,
+      "wall_limit_seconds": 600,
+      "active_process_limit": 1,
+      "poll_seconds": 0.01,
+      "log": "postflight-binomial.log"
+    },
+    {
+      "method": "split-dkw",
+      "outcome": "completed",
+      "exit_code": 0,
+      "wall_seconds": 2.1907973999914248,
+      "process_tree_peak_rss_bytes": 58646528,
+      "peak_job_committed_bytes": 576864256,
+      "rss_limit_bytes": 4294967296,
+      "committed_limit_bytes": 4294967296,
+      "wall_limit_seconds": 600,
+      "active_process_limit": 1,
+      "poll_seconds": 0.01,
+      "log": "postflight-split-dkw.log"
+    }
+  ],
+  "passed": true,
+  "standard_library_only": true,
+  "numerical_dependencies_added": false
+}

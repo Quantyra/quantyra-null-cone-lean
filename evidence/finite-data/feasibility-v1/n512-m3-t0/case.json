@@ -1,0 +1,9 @@
+{
+  "index": 3,
+  "family": "asymmetric",
+  "coefficient": "-1/4",
+  "formula": "rho(u,v)=1+c*(2*u-1)*(6*v*v-6*v+1)",
+  "n": 512,
+  "seed": 2026152003000,
+  "trial_index": 0
+}

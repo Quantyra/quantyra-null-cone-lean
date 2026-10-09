@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "distribution": "numpy-2.5.3.dist-info",
+      "record_sha256": "c5ce86b3b0ba891e98587da9af2701eeb58d3ae7d9196249c0c12b99680c8195",
+      "hashed_files_checked": 946,
+      "unhashed_entries_skipped": 408,
+      "errors": [
+        {
+          "path": "../../bin/f2py.exe",
+          "error": "missing"
+        },
+        {
+          "path": "../../bin/numpy-config.exe",
+          "error": "missing"
+        }
+      ]
+    },
+    {
+      "distribution": "scipy-1.18.1.dist-info",
+      "record_sha256": "3a8419cc8ebfe34c7db81a05638274eccc57f0e9899998eee7fcf53a61f29c06",
+      "hashed_files_checked": 1536,
+      "unhashed_entries_skipped": 989,
+      "errors": []
+    }
+  ],
+  "passed": false,
+  "elapsed_seconds": 73.92020719998982,
+  "scope": "Installed files with wheel RECORD hashes, including native binaries; unhashed entries such as generated pyc files are reported separately."
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "local_links_checked": 152,
+  "missing_links": [],
+  "campaign_json_files_parsed": 103,
+  "terminal_manifest_references_verified": true,
+  "ordinary_rate_arithmetic_checks": 16,
+  "pre_pilot_tests": 24,
+  "pilot_orders": 10,
+  "accepted_reports": 30,
+  "LP_witness_pairs": 20,
+  "confirmation_samples": 0,
+  "new_lean_invocations": 0,
+  "source_preservation_receipt": "accepted-source-preservation.json",
+  "scope": "Delivery checks supplement the frozen per-worker checks and aggregate audit; no new statistical sample or formal proof acceptance."
+}

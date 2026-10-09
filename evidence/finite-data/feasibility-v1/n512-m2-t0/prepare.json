@@ -1,0 +1,12 @@
+{
+  "sample_seconds": 0.002626300003612414,
+  "order_construction_seconds": 0.07537619999493472,
+  "order": {
+    "path": "order.json.gz",
+    "sha256_json": "cea48a67914ae1fda979a52f13c7f7790aabeae5434911e56b126c6c99414994",
+    "uncompressed_bytes": 699102,
+    "sha256_gzip": "c458b40c33cf658dfb16d865ca44bc11f6f9b755fa7777c8bba4345a6563c915",
+    "compressed_bytes": 179302
+  },
+  "latent_points_sha256": "66c3cccf61ee0cb72e5fadefd1be56cc2f570ddcaa03ad6a99b3df5038721785"
+}

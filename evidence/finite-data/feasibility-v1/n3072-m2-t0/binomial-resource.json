@@ -1,0 +1,13 @@
+{
+  "outcome": "completed",
+  "exit_code": 0,
+  "wall_seconds": 191.4303390000132,
+  "process_tree_peak_rss_bytes": 1896235008,
+  "peak_job_committed_bytes": 1885515776,
+  "rss_limit_bytes": 4294967296,
+  "committed_limit_bytes": 4294967296,
+  "wall_limit_seconds": 600,
+  "active_process_limit": 1,
+  "poll_seconds": 0.01,
+  "log": "binomial.log"
+}

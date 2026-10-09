@@ -1,0 +1,20 @@
+{
+  "passed_after_target_install_path_resolution": true,
+  "importable_hashed_files_checked": 2482,
+  "relocated_launchers": [
+    {
+      "record_path": "../../bin/f2py.exe",
+      "actual_target_install_path": "bin/f2py.exe",
+      "hash_and_size_match": true,
+      "sha256": "b89b8f5c1f7566af28a6852f9ebd95da56acca459fcb66151f6c83e3b4f8ca2c"
+    },
+    {
+      "record_path": "../../bin/numpy-config.exe",
+      "actual_target_install_path": "bin/numpy-config.exe",
+      "hash_and_size_match": true,
+      "sha256": "828d5bc89e746300d0ce154c8e46fc6358eaa7cf3d3628c7b6bb01de67e4d373"
+    }
+  ],
+  "original_audit_sha256": "94cffa7d5ec8da1fae66e1a829b99a328d5c3e62385d00e5090bc938ee4679aa",
+  "explanation": "The pip target installation places these two unused command launchers under site-packages/bin; wheel RECORD retains a different relative scripts path. All 2482 present hashed package files matched, and both launchers also match at their actual locations. No dependency files were changed. Generated unhashed entries remain outside this hash claim."
+}

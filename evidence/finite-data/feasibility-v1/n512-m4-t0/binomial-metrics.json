@@ -1,0 +1,45 @@
+{
+  "maximum_point_band_width": "1",
+  "mean_point_band_width": "1",
+  "fraction_cells_with_point_band_width_at_most_0_90": "0",
+  "certified_global_error_for_the_actual_output_estimator": "1/2",
+  "actual_supremum_error_in_each_global_orientation": [
+    "1/4",
+    "1/4"
+  ],
+  "all_guarantees_hold_in_one_global_orientation": true,
+  "coverage_each_orientation": [
+    true,
+    true
+  ],
+  "mass_coverage_each_orientation": [
+    true,
+    true
+  ],
+  "cdf_error_each_orientation": null,
+  "solver_status": "certified_outer_bounds",
+  "fallback_or_rejection_reason": null,
+  "no_data_comparator": {
+    "width": "1",
+    "histogram": "1",
+    "error_radius": "1/2"
+  },
+  "method": "binomial",
+  "certificate_check_passed": true,
+  "estimation_seconds": 9.250621199986199,
+  "estimation_includes_internal_check": true,
+  "verification_seconds": 1.338687999988906,
+  "diagnostic_seconds": 0.03174209999269806,
+  "serialization_seconds": 2.014044899988221,
+  "order_construction_seconds": 0.06378720002248883,
+  "input_order_sha256": "2d88f528cb8fd6e8a683100d38d10f99224ad40efc64411a16ea13d630e6c8f7",
+  "certificate": {
+    "path": "binomial.json.gz",
+    "sha256_json": "be357696c0c2295f5ac99b998ac1be3592bcfef970865ee42bdba309cf7acc1d",
+    "uncompressed_bytes": 206700,
+    "sha256_gzip": "bccf9d8e74d4af19bb03e5ec1fa2d0901a143108a3f9a3ccb829f012e428b3fc",
+    "compressed_bytes": 4284
+  },
+  "certificate_bytes": 1482745,
+  "certificate_bytes_scope": "envelope plus shared forcing certificate; input order recorded separately"
+}

@@ -1,0 +1,48 @@
+{
+  "maximum_point_band_width": "1",
+  "mean_point_band_width": "1",
+  "fraction_cells_with_point_band_width_at_most_0_90": "0",
+  "certified_global_error_for_the_actual_output_estimator": "1",
+  "actual_supremum_error_in_each_global_orientation": [
+    "1/2",
+    "1/2"
+  ],
+  "all_guarantees_hold_in_one_global_orientation": true,
+  "coverage_each_orientation": [
+    true,
+    true
+  ],
+  "mass_coverage_each_orientation": [
+    null,
+    null
+  ],
+  "cdf_error_each_orientation": [
+    0.027227417165704537,
+    0.027227417165704537
+  ],
+  "solver_status": "certified_outer_bounds",
+  "fallback_or_rejection_reason": null,
+  "no_data_comparator": {
+    "width": "1",
+    "histogram": "1",
+    "error_radius": "1/2"
+  },
+  "method": "split-dkw",
+  "certificate_check_passed": true,
+  "estimation_seconds": 10.890198300010525,
+  "estimation_includes_internal_check": true,
+  "verification_seconds": 1.7287705999915488,
+  "diagnostic_seconds": 0.054020200012018904,
+  "serialization_seconds": 2.4424947000225075,
+  "order_construction_seconds": 0.05843720000120811,
+  "input_order_sha256": "a7c445606380345c3ece8ec3c0694cc9374a38817edc45d46ca1dd7c6306abec",
+  "certificate": {
+    "path": "split-dkw.json.gz",
+    "sha256_json": "2e3dbd7d049554f83365588300d2f5cc464f699ee0885e3734e1389a3d5c9e7b",
+    "uncompressed_bytes": 222604,
+    "sha256_gzip": "8bc30414edfe4dced55d7a798b49b8acda2d8804abaeb2901390b49e1a1c7326",
+    "compressed_bytes": 4126
+  },
+  "certificate_bytes": 1654514,
+  "certificate_bytes_scope": "envelope plus shared forcing certificate; input order recorded separately"
+}

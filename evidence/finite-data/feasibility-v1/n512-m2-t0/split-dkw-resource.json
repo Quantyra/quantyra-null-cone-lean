@@ -1,0 +1,13 @@
+{
+  "outcome": "completed",
+  "exit_code": 0,
+  "wall_seconds": 29.663116499985335,
+  "process_tree_peak_rss_bytes": 122298368,
+  "peak_job_committed_bytes": 643522560,
+  "rss_limit_bytes": 4294967296,
+  "committed_limit_bytes": 4294967296,
+  "wall_limit_seconds": 600,
+  "active_process_limit": 1,
+  "poll_seconds": 0.01,
+  "log": "split-dkw.log"
+}

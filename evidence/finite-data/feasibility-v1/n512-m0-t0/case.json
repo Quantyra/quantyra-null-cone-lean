@@ -1,0 +1,9 @@
+{
+  "index": 0,
+  "family": "flat",
+  "coefficient": "0",
+  "formula": "rho(u,v)=1",
+  "n": 512,
+  "seed": 2026152000000,
+  "trial_index": 0
+}

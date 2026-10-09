@@ -1,0 +1,45 @@
+{
+  "maximum_point_band_width": "1",
+  "mean_point_band_width": "1",
+  "fraction_cells_with_point_band_width_at_most_0_90": "0",
+  "certified_global_error_for_the_actual_output_estimator": "1/2",
+  "actual_supremum_error_in_each_global_orientation": [
+    "0",
+    "0"
+  ],
+  "all_guarantees_hold_in_one_global_orientation": true,
+  "coverage_each_orientation": [
+    true,
+    true
+  ],
+  "mass_coverage_each_orientation": [
+    true,
+    true
+  ],
+  "cdf_error_each_orientation": null,
+  "solver_status": "certified_outer_bounds",
+  "fallback_or_rejection_reason": null,
+  "no_data_comparator": {
+    "width": "1",
+    "histogram": "1",
+    "error_radius": "1/2"
+  },
+  "method": "bernstein",
+  "certificate_check_passed": true,
+  "estimation_seconds": 13.162610799976392,
+  "estimation_includes_internal_check": true,
+  "verification_seconds": 2.4103453000134323,
+  "diagnostic_seconds": 0.026814899989403784,
+  "serialization_seconds": 3.6022129000048153,
+  "order_construction_seconds": 0.06711820000782609,
+  "input_order_sha256": "f0afe5d4931ad970b8f9e834be19e9ca35ca1808bd4e4d4848cd106fbb32890d",
+  "certificate": {
+    "path": "bernstein.json.gz",
+    "sha256_json": "74c5893f03ee787ba8b3eef27081ef7c69ffa4f88678bd00b4cc2bc07ec9455e",
+    "uncompressed_bytes": 206761,
+    "sha256_gzip": "859bb5c23e431334b53f69497d3897d97c9a9651a9e10d94b9bcac79b73fc8e9",
+    "compressed_bytes": 4242
+  },
+  "certificate_bytes": 1496893,
+  "certificate_bytes_scope": "envelope plus shared forcing certificate; input order recorded separately"
+}

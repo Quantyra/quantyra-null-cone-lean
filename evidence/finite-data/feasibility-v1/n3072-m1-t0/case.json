@@ -1,0 +1,9 @@
+{
+  "index": 1,
+  "family": "fgm",
+  "coefficient": "-1/2",
+  "formula": "rho(u,v)=1+c*(2*u-1)*(2*v-1)",
+  "n": 3072,
+  "seed": 2026408001000,
+  "trial_index": 0
+}

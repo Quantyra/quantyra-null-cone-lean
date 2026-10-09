@@ -36,3 +36,8 @@ checks/publish_conformal_gauge.py text eol=lf
 checks/test_conformal_gauge_publication.py text eol=lf
 evidence/gcp/space-degree-*/** -text
 evidence/gcp/space-small-mass-*/** -text
+manuscript/finite-data/*.tex text eol=lf
+manuscript/finite-data/*.md text eol=lf
+manuscript/finite-data/*.json text eol=lf
+manuscript/finite-data/*.py text eol=lf
+manuscript/finite-data/*.log -text

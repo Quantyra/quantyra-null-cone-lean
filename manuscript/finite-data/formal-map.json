@@ -1,0 +1,290 @@
+{
+  "manuscript": "finite-sample-order-density.tex",
+  "proof_commit": "6752732882862bc848c7a96722a7660456d6da38",
+  "preservation_baseline": "0cba197cbef0397209d40ebced29c9dc720573c7",
+  "gcp_run": "space-degree-final-acceptance-20261009T055238Z-7ba92d",
+  "claims": [
+    {
+      "tex_label": "thm:upper",
+      "scope": "Uniform measurable estimator; all n>=2; original K; one global orientation",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeEstimator.lean",
+          "name": "QuantyraNullCone.fourth_root_order_only_estimator",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeEstimator.lean",
+          "name": "QuantyraNullCone.InDensityClass.fourth_root_density_estimation",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:grid",
+      "scope": "Geometric event and grid interpolation",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/GoodSamples.lean",
+          "name": "QuantyraNullCone.InDensityClass.sample_good_probability",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:rank",
+      "scope": "Earlier geometric dependency, reproduced with attribution",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/Cumulative.lean",
+          "name": "QuantyraNullCone.finite_realizer_coordinate_rigidity",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:deep",
+      "scope": "Strict counts, retained interior and complete deep retention",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeFilter.lean",
+          "name": "QuantyraNullCone.chronological_predecessor_fraction",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeFilter.lean",
+          "name": "QuantyraNullCone.chronological_successor_fraction",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeFilter.lean",
+          "name": "QuantyraNullCone.degree_retained_coordinate_rigidity",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeMass.lean",
+          "name": "QuantyraNullCone.deep_point_degree_retained",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:sandwich",
+      "scope": "One alignment for all eroded/recovered/expanded cells",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeCells.lean",
+          "name": "QuantyraNullCone.degree_filtered_cell_counts",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeMesh.lean",
+          "name": "QuantyraNullCone.degree_inner_mesh_data",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeMesh.lean",
+          "name": "QuantyraNullCone.degree_mesh_margins",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:concentration",
+      "scope": "Actual iid small-mass Chernoff bound and union event",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/BernoulliMGF.lean",
+          "name": "QuantyraNullCone.centered_indicator_mgf_le",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/SmallMassConcentration.lean",
+          "name": "QuantyraNullCone.InDensityClass.small_mass_count_concentration",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/SmallMassConcentration.lean",
+          "name": "QuantyraNullCone.InDensityClass.small_mass_family_failure",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:bias",
+      "scope": "Clipped cell error, full-square query coverage and exact constant",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeCellBias.lean",
+          "name": "QuantyraNullCone.InDensityClass.shifted_cell_point_error",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/InnerHistogram.lean",
+          "name": "QuantyraNullCone.InDensityClass.inner_clamp_error",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeHistogram.lean",
+          "name": "QuantyraNullCone.degree_histogram_error",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeMesh.lean",
+          "name": "QuantyraNullCone.degree_histogram_constant",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "sec:upperproof",
+      "scope": "Probability, relabeling, query measurability and all flat branches",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeHistogramProbability.lean",
+          "name": "QuantyraNullCone.InDensityClass.logarithmic_degree_histogram_probability",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeRateNumbers.lean",
+          "name": "QuantyraNullCone.degree_flat_radius",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeRateNumbers.lean",
+          "name": "QuantyraNullCone.degree_active_radius",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeEstimator.lean",
+          "name": "QuantyraNullCone.degree_reconstruction_quotient",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeEstimator.lean",
+          "name": "QuantyraNullCone.selectedDegreeDensity_query_measurable",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/DegreeEstimator.lean",
+          "name": "QuantyraNullCone.selectedDegreeDensity_function_measurable",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "cor:law",
+      "scope": "Single-n actual unlabeled-order-law inverse; not a TV estimator",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/DegreeLaw.lean",
+          "name": "QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:alternatives",
+      "scope": "Original-K membership and exact transpose-quotient separation",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LowerAlternatives.lean",
+          "name": "QuantyraNullCone.lower_flat_in_class",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerAlternatives.lean",
+          "name": "QuantyraNullCone.lower_alternative_in_class",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerSeparation.lean",
+          "name": "QuantyraNullCone.lower_quotient_separation",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerSeparation.lean",
+          "name": "QuantyraNullCone.lower_success_disjoint",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "lem:divergence",
+      "scope": "Gaussian moment, actual product likelihood and data processing",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LowerMoments.lean",
+          "name": "QuantyraNullCone.odd_gaussian_second_moment_sq",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerMoments.lean",
+          "name": "QuantyraNullCone.lower_single_point_divergence_bound",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerProduct.lean",
+          "name": "QuantyraNullCone.lower_product_divergence_identity",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerProduct.lean",
+          "name": "QuantyraNullCone.lower_product_divergence_bound",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerDataProcessing.lean",
+          "name": "QuantyraNullCone.lower_order_TV_bound",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    },
+    {
+      "tex_label": "thm:lower",
+      "scope": "Independent random seed, explicit finite strict-error risk and n>=16",
+      "exports": [
+        {
+          "file": "QuantyraNullCone/LowerTesting.lean",
+          "name": "QuantyraNullCone.finite_seed_event_bound",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerTesting.lean",
+          "name": "QuantyraNullCone.lower_order_randomized_testing",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerBound.lean",
+          "name": "QuantyraNullCone.fourth_root_randomized_lower_bound",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerBound.lean",
+          "name": "QuantyraNullCone.fourth_root_lower_exists",
+          "audit_kind": "selected_type_and_axiom_report"
+        },
+        {
+          "file": "QuantyraNullCone/LowerBound.lean",
+          "name": "QuantyraNullCone.fourth_root_minimax_obstruction",
+          "audit_kind": "selected_type_and_axiom_report"
+        }
+      ]
+    }
+  ],
+  "ordinary_consequences": [
+    {
+      "tex_label": "eq:band",
+      "scope": "Random-width coverage-failure plus large-width bound; no separate Lean band export"
+    }
+  ],
+  "correspondence_notes": [
+    "Success is the all-point predicate DensityEstimateGood / LowerEstimateSuccess, one global transpose, on the closed square.",
+    "Finite classical choices in selectedDegreeDensity; enumeration is an equivalent specification because every realizer is covered.",
+    "Prose intersects SampleGood with additional probability-one boundary avoidance; it does not strengthen the probabilistic endpoint.",
+    "Concentration uses the certified MGF route, 8/n^3 rectangle union budget, not the earlier 4/n^5 Bernstein budget.",
+    "Query edges use clamped floor/min indices; count cells are Ioc. Error holds on closures.",
+    "The lower theorem assumes success-event measurability and permits arbitrary outputs and independent seed spaces.",
+    "Rank recovery is earlier work, not a new result of this manuscript."
+  ]
+}

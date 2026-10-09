@@ -1,0 +1,856 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{pdftitle={Finite-sample density reconstruction from a single causal order},pdfauthor={Daniel Eric Fredriksen},pdfkeywords={partial order, density estimation, copula, finite sample, Lean}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\K}{\mathcal K}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\dc}{d_{\mathrm{conf}}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\norm}[1]{\lVert #1\rVert_{\infty,D}}
+\title{Finite-sample density reconstruction\\from a single causal order}
+\author{Daniel Eric Fredriksen\\Quantyra Inc.\\
+\url{https://github.com/Quantyra/quantyra-null-cone-lean}}
+\date{8 October 2026\\Version 0.1.0 --- unpublished manuscript}
+\begin{document}
+\maketitle
+\begin{abstract}
+We observe only the isomorphism class of the strict coordinatewise order
+of $n$ independent points in the unit square. Their unknown density is
+smooth, lies between $1/2$ and $3/2$, has uniform marginals, and is
+Euclidean Lipschitz with constant at most two. We construct one measurable
+order-only estimator whose full-square supremum error, modulo one global
+coordinate exchange, is at most
+$\min\{1/2,650(\log n/n)^{1/4}\}$ with probability at least $19/20$,
+uniformly over this class and for every $n\ge2$.
+The principal reduction uses observed predecessor and successor counts:
+every retained point has reliable reconstructed coordinates, while every
+point in a sufficiently deep cell is retained. This removes a global
+discarded-mass penalty from local density estimation. We also obtain a
+finite inverse bound for the actual order laws. Smooth marginal-preserving
+Gaussian alternatives give, for $n\ge16$, a strict-error probability
+greater than $1/4$ at radius $n^{-1/4}/6$ for every estimator, including
+independent randomization. The upper, law and lower endpoints are
+Lean-certified. The lower bound already holds with coordinate data;
+the logarithmic gap, efficient computation and useful practical
+calibration remain unresolved.
+\end{abstract}
+
+\section{Experiment, results and contribution}
+\label{sec:results}
+Let $D=[0,1]^2$. The class $\K$ consists of functions smooth on an open
+neighborhood of $D$ satisfying, for $x,y\in D$ and $u,v\in[0,1]$,
+\begin{align}
+ \tfrac12\le\rho(x)\le\tfrac32,\qquad
+ |\rho(x)-\rho(y)|&\le2|x-y|_2, \label{eq:class}\\
+ \int_0^1\rho(u,t)\dd t&=1,\qquad
+ \int_0^1\rho(t,v)\dd t=1. \nonumber
+\end{align}
+The norm in the Lipschitz condition is Euclidean. In particular
+$Q_\rho(\dd u\dd v)=\rho(u,v)\dd u\dd v$ on $D$ is a probability measure.
+Every density is smooth, but no common bound on higher derivatives is
+assumed. Uniform marginals fix the coordinate gauge.
+
+From $Z_i=(U_i,V_i)$, $1\le i\le n$, drawn independently from $Q_\rho$,
+we observe the directed relation
+\[
+ i\prec j\quad\Longleftrightarrow\quad U_i<U_j\ \hbox{and}\ V_i<V_j
+\]
+only up to vertex relabeling. Write $\mathcal O_n$ for this finite
+observation space and $\pi_n^\rho$ for its actual pushforward law.
+One may include all directed Boolean relation codes in $\mathcal O_n$
+and give invalid codes a fixed fallback; this agrees with the formal
+implementation. No coordinate order, rank, embedding or extra sample
+is observed. The direction is retained: time reversal is not quotiented.
+
+Let $T(u,v)=(v,u)$ and $G=\{\mathrm{id},T\}$. For bounded functions put
+\[
+ L(b,\rho)=\min_{S\in G}\norm{b-\rho\circ S},\qquad
+ \dc(\rho,\sigma)=L(\rho,\sigma).
+\]
+All norms are over the full closed square. One $S$ must work at every
+point. More generally, success at radius $a$ means
+\begin{equation}\label{eq:success}
+ \exists S\in G\ \ \forall x\in D,\quad |b(x)-\rho(Sx)|\le a.
+\end{equation}
+For unbounded outputs we use this definition directly (or an extended
+supremum), avoiding any boundedness assumption in the lower theorem.
+Total variation is $\TV(P,Q)=\sup_A|P(A)-Q(A)|$.
+
+\begin{theorem}[One-order upper guarantee]\label{thm:upper}
+For every integer $n\ge2$ there exists a measurable estimator
+$\widehat\rho_n:\mathcal O_n\to\{b:D\to[1/2,3/2]\}$, independent of
+$\rho$, whose outputs are measurable functions, such that for every
+$\rho\in\K$,
+\begin{equation}\label{eq:upper}
+ \pi_n^\rho\{L(\widehat\rho_n,\rho)\le R_n\}\ge\frac{19}{20},
+ \qquad R_n=\min\left\{\frac12,650\left(\frac{\log n}{n}\right)^{1/4}\right\}.
+\end{equation}
+\end{theorem}
+The finite observation space makes the estimator and its deterministic
+success events measurable. The construction below also establishes
+measurability in the query point. Outputs need not be smooth, integrate
+to one or have uniform marginals; \emph{density estimator} refers to the
+target being estimated, not membership of the output in $\K$.
+
+\begin{corollary}[Actual-law inverse]\label{cor:law}
+For $\rho,\sigma\in\K$ and $n\ge2$,
+\begin{equation}\label{eq:law}
+ \dc(\rho,\sigma)\le
+ \min\left\{1,\,
+ 1300\left(\frac{\log n}{n}\right)^{1/4}
+       +\frac{10}{9}\TV(\pi_n^\rho,\pi_n^\sigma)\right\}.
+\end{equation}
+\end{corollary}
+This compares two probability laws; it is not an estimator of their
+total variation from a single observed order.
+
+\begin{theorem}[Finite randomized lower bound]\label{thm:lower}
+For $n\ge1$ set
+\[
+ h=\min\{1/2,n^{-1/4}\},\quad f(t)=t e^{-t^2},\quad
+ a_h(x)=f((x-1/2)/h),
+\]
+and $\rho_0=1$, $\rho_1(u,v)=1+2h a_h(u)a_h(v)$.
+These two densities belong to $\K$. For any estimator from
+$\mathcal O_n$, including an arbitrary independent probability-space
+random seed, assume the two success events \eqref{eq:success} at radius
+$h/6$ are measurable. Then
+\begin{equation}\label{eq:lower}
+ \max_{i=0,1}\Pr_{\rho_i}\{L(\widehat\rho,\rho_i)>h/6\}
+ \ \ge\ \frac{1-B_n}{2}\ >\ \frac14,\qquad
+ B_n=\frac12\sqrt{\exp(n\pi h^4/8)-1}.
+\end{equation}
+In particular, for $n\ge16$, every estimator with measurable success
+events for all $\rho\in\K$ has, under some $\rho\in\K$, error strictly
+greater than $n^{-1/4}/6$ with probability strictly greater than $1/4$.
+\end{theorem}
+For randomized estimators, measurability of evaluation at each point
+alone need not imply measurability of an uncountable simultaneous
+success event. The explicit success-event assumption is therefore part
+of the theorem. Deterministic estimators on $\mathcal O_n$ satisfy it.
+
+The bounds match the polynomial exponent, leaving a logarithmic gap.
+They do not establish an exact minimax rate. The lower proof applies
+even to full coordinate observations, so it establishes no additional
+information cost of observing only order.
+
+\subsection{Relation to earlier work}
+The geometric input is the occupied-grid realizer theorem in the
+author's reconstruction paper \cite{Reconstruction}. For completeness,
+Section~\ref{sec:geometry} repeats its forcing argument and probability
+calibration. Coordinate-pattern forcing is earlier work: Winkler's
+1985 Theorem~7 and his dimension-two analysis
+\cite{Winkler1985,Winkler} are direct precedents. In the independent
+uniform-permutation model, Winkler's Lemmas~2.2--2.6 and Theorem~4.3
+give stronger typical rank rigidity, up to a global axis exchange.
+Nonconstant members of $\K$ do not give independent coordinate
+permutations, so that flat-model conclusion is not imported here.
+
+Copula density estimation from coordinate data or paired empirical
+ranks is also established. Genest, Masiello and Tribouley
+\cite{Genest} analyze wavelet estimators in integrated quadratic and
+pointwise expected loss. Autin, Le Pennec and Tribouley \cite{Autin}
+study adaptive thresholding and quadratic risk. These are distinct
+observation and loss specifications from a finite-confidence,
+order-only supremum bound.
+
+The published Seck--Mamane result \cite{SeckMamane}, Theorem~1
+(p.~40), concerns rank-based wavelets and almost-sure uniform
+convergence under wavelet and Besov conditions. Its smoothness
+condition is $(d+2)/2<t<N+1$; with
+$2^{j_n}\asymp(n/\log n)^{1/(2t+d)}$, its displayed rate is
+\[
+ \left(\frac{2^{\,2(1+d)j_n}\log\log n}{n}\right)^{1/2}.
+\]
+Remark~3 (p.~43) distinguishes this from the optimal oracle rate.
+The published theorem differs from the earlier 2023 preprint, so we
+use the published statement. Swanepoel, Seck and Mamane \cite{Swanepoel}
+obtain an almost-sure supremum rate via joint and marginal density
+estimates and quantiles, with their own Besov, support and positive
+marginal assumptions. Neither almost-sure statement is converted
+here into a uniform finite $95\%$ radius. Smoothness of each $\rho$
+does not supply uniform higher-regularity norms over $\K$.
+
+Braun's qualitative reconstruction results \cite{Braun} concern
+all-size chronology laws under stated geometric hypotheses, with
+dimension at least three. The present fixed-gauge, two-dimensional
+statistical experiment does not extend those theorems or settle
+general spacetime reconstruction. The separate coordinate-gauge
+paper \cite{Gauge} exhibits a higher-dimensional obstruction to a
+proposed gauge; it is a different manuscript and result.
+
+The candidate contribution here is the degree-filter/deep-cell
+reduction in Section~\ref{sec:filter}, composed with geometric
+recovery to obtain \eqref{eq:upper}, and its exact formal verification.
+Histogram bias, Chernoff bounds, likelihood products and two-point
+testing are standard methods. The bounded primary-source comparison
+found no inspected theorem with the full experiment, class, quotient
+and confidence specification of Theorem~\ref{thm:upper}; this is a
+provisional priority assessment, not an exhaustive absence claim.
+
+\section{Geometric recovery on a finite-probability event}
+\label{sec:geometry}
+Fix $m\ge16$, $r=1/m$. Let $E$ require every open grid cell of side $r$
+to be occupied, and the empirical anchored distribution function
+$C_n(s,t)=n^{-1}\#\{i:U_i\le s,V_i\le t\}$ to differ from its population
+version $C(s,t)$ by at most $r$ at each grid vertex.
+We also intersect with the probability-one event of distinct
+coordinates in $(0,1)$ and no coordinate on any grid line.
+The latter restrictions do not change any probability bounds.
+
+\begin{lemma}[Grid probability and interpolation]\label{lem:grid}
+Uniformly over $\rho\in\K$,
+\begin{equation}\label{eq:geometricfailure}
+ \Pr_\rho(E^c)\le m^2 e^{-nr^2/2}+2(m+1)^2e^{-2nr^2}.
+\end{equation}
+On $E$ the two marginal empirical errors at arbitrary thresholds in
+$[0,1]$ are at most $2r$, the joint error is at most $3r$, and the
+fraction of points outside $J=[4r,1-4r]^2$ is at most $20r$.
+\end{lemma}
+\begin{proof}
+Every cell has probability at least $r^2/2$, so its empty probability
+is at most $(1-r^2/2)^n\le e^{-nr^2/2}$.
+At a fixed grid vertex, Hoeffding's inequality \cite{Hoeffding}
+gives a two-tail probability at most $2e^{-2nr^2}$. A union bound
+proves \eqref{eq:geometricfailure}. For clarity, the bounded-variable
+MGF behind this step is
+$\mathbb E e^{t(X-\mathbb EX)}\le e^{t^2/8}$ for $0\le X\le1$:
+the second derivative of its log MGF is the variance under exponential
+tilting, at most $1/4$, and the value and first derivative at zero
+vanish. Independence, Markov's inequality and $t=4r$ yield one tail
+$e^{-2nr^2}$; use $-t$ for the other.
+
+At grid thresholds, each marginal is an anchored rectangle with the
+other threshold $1$, so its error is at most $r$. Monotonicity and
+uniform marginals add at most $r$ between adjacent grid thresholds.
+For the joint CDF, enlarge or shrink the rectangle to a grid vertex.
+The population difference is at most $2r$ because it lies in two
+marginal strips. Adding the vertex error gives $3r$.
+Each of the four marginal tails beyond $4r$ and $1-4r$ has empirical
+mass at most $5r$. Their union contains all points outside $J$.
+\end{proof}
+
+A realizer is a pair of strict total orders whose intersection is
+$\prec$. Its inclusive rank is
+$\rank_L(i)=1+\#\{j:L(j,i)\}$. Distinct latent coordinates supply a
+realizer, although neither latent total order is observed.
+
+\begin{lemma}[Earlier realizer rigidity]\label{lem:rank}
+On $E$, every realizer has one global exchange of its two orders
+after which, for every $Z_i\in J$,
+\begin{equation}\label{eq:rank}
+ \left|\frac{\rank_{L_1}(i)}n-U_i\right|\le32r,\qquad
+ \left|\frac{\rank_{L_2}(i)}n-V_i\right|\le32r.
+\end{equation}
+\end{lemma}
+\begin{proof}
+This is the finite theorem of \cite{Reconstruction}; we give its
+argument to specify the dependency. For incomparable $x,y$ write
+$Q(x,y)$ when $L_1(x,y)$ and $L_2(y,x)$. The relation $Q$ is
+transitive. If incomparability edges $xy,xz$ share $x$ and $y,z$
+are comparable, their orientations at $x$ agree; otherwise a
+two-edge $Q$ path would make $y,z$ incomparable.
+
+Occupancy provides
+\begin{align*}
+ A&\in(r,2r)\times(1-2r,1-r),\\
+ B&\in(1-2r,1-r)\times(r,2r),\\
+ W&\in(1-r,1)\times(1-3r,1-2r).
+\end{align*}
+For interior incomparable points $x,y$ with $u_x<u_y$ and
+$v_x-v_y\ge3r$, choose an open grid row inside $(v_y,v_x)$.
+Explicitly, $k=\lfloor v_y/r\rfloor+1$ has $kr>v_y$ and
+$(k+1)r\le v_y+2r<v_x$; interior membership makes this row admissible.
+The first cell in that row supplies $z$ with $0<u_z<r$.
+The incomparability edges
+\[
+ xy,\quad zy,\quad Ay,\quad AW,\quad AB
+\]
+have comparable opposite endpoints at each step:
+$z\prec x$, $z\prec A$, $y\prec W$, $B\prec W$.
+Thus $Q(x,y)$ has the same truth value as $Q(A,B)$.
+Exchanging the two orders once makes $Q(A,B)$ agree with increasing
+latent $u$. All such separated interior incomparable pairs then
+agree with the latent realizer; comparable pairs already agree.
+
+For a fixed interior point $Z_i$, a rank disagreement can therefore
+involve only a point outside $J$ or one in $|V_j-V_i|<3r$.
+The latter strip has empirical mass at most
+$6r+4r=10r$ by Lemma~\ref{lem:grid}; both endpoints lie in $[0,1]$.
+There are at most $30rn$ possible disagreements, bounding each
+rank difference by $30rn$. Finally, the inclusive true rank divided
+by $n$ equals the marginal empirical CDF at the point and is within
+$2r$ of its coordinate. This proves \eqref{eq:rank}.
+\end{proof}
+The orientation can depend on the sample and realizer. It is a single
+choice for all retained points and all subsequent queries.
+
+\section{Observed degrees and the deep-cell reduction}
+\label{sec:filter}
+Let $h=\sqrt r$ and retain precisely
+\begin{equation}\label{eq:filter}
+ I=\{i:d_i^->6rn,\ d_i^+>6rn\},
+\end{equation}
+where $d_i^-=\#\{j:j\prec i\}$ and $d_i^+=\#\{j:i\prec j\}$.
+These counts use only the observed relation.
+
+\begin{lemma}[Two inclusions]\label{lem:deep}
+If $E$ holds and $1/n\le r$, then
+\[
+ \{i:Z_i\in[7h,1-7h]^2\}\ \subseteq\ I\
+ \subseteq\ \{i:Z_i\in J\}.
+\]
+\end{lemma}
+\begin{proof}
+If $U_i<4r$ or $V_i<4r$, all predecessors are in the corresponding
+empirical lower marginal tail, of mass at most $5r$.
+If $U_i>1-4r$ or $V_i>1-4r$, all successors lie in an upper tail
+of mass at most $5r$. Such points fail \eqref{eq:filter}.
+
+For the converse use the exact strict-count identities
+\begin{align}
+ d_i^-/n&=C_n(U_i,V_i)-1/n,\label{eq:self}\\
+ d_i^+/n&=1-F_{U,n}(U_i)-F_{V,n}(V_i)+C_n(U_i,V_i).
+ \label{eq:successor}
+\end{align}
+Coordinate injectivity makes the self-subtraction in \eqref{eq:self}
+exact; inclusion-exclusion gives \eqref{eq:successor}.
+At a deep point, southwest and northeast population rectangle
+masses are each at least $(7h)^2/2=49r/2$, by the lower density bound.
+The first empirical rectangle differs by at most $3r$, and the
+second by at most $2r+2r+3r=7r$. Consequently
+\[
+ d_i^-/n\ge49r/2-3r-1/n\ge41r/2>6r,\quad
+ d_i^+/n\ge49r/2-7r=35r/2>6r.
+\]
+No independence of degrees or retained points is used.
+\end{proof}
+
+Now suppose $m\ge65536$ and define
+\begin{equation}\label{eq:parameters}
+ k=\lfloor\sqrt m\rfloor,\quad H=8h,\quad s=32r,\quad
+ w=\frac{1-2H}{k}.
+\end{equation}
+Partition the inner square into $k^2$ cells of side $w$, using
+intervals $(a,a+w]$ for counts. For a fixed realizer let
+$q_i=(\rank_{L_1}(i)/n,\rank_{L_2}(i)/n)$ and set
+\begin{equation}\label{eq:histogram}
+ b_R=\frac{\#\{i\in I:q_i\in R\}}{nw^2}.
+\end{equation}
+The denominator is the original $n$, not the number retained.
+For $R=(a,a+w]\times(c,c+w]$, write
+\[
+ R^-=(a+s,a+w-s]\times(c+s,c+w-s],\qquad
+ R^+=(a-s,a+w+s]\times(c-s,c+w+s].
+\]
+Fixed boundary lines are null for latent points. These half-open
+conventions also make the deterministic inclusions below valid at
+their relevant endpoints.
+
+\begin{lemma}[Mesh and cell sandwich]\label{lem:sandwich}
+The parameters \eqref{eq:parameters} satisfy
+\begin{equation}\label{eq:mesh}
+ 0<h\le\frac1{256},\quad \frac{15}{16}h\le w\le2h,\quad
+ 2s\le\frac h4<w,\quad H-s\ge\frac{63}8h>7h.
+\end{equation}
+If $E$ holds and $1/n\le r$, one $S\in G$ simultaneously gives,
+for every cell,
+\begin{equation}\label{eq:sandwich}
+ \frac{N(SR^-)}n\le
+ \frac{\#\{i\in I:q_i\in R\}}n\le
+ \frac{N(SR^+)}n,
+\end{equation}
+where $N(A)=\#\{i:Z_i\in A\}$.
+\end{lemma}
+\begin{proof}
+We have $\sqrt m/2\le k\le\sqrt m$, $k^2\le m$ and
+$15/16\le1-16h<1$, giving the width inequalities.
+The other bounds follow from $s=32h^2$ and $h\le1/256$.
+Every expanded cell, including its closure, lies in
+$[7h,1-7h]^2$ by the final margin bound.
+
+Fix the one alignment in Lemma~\ref{lem:rank}; equivalently
+$|q_i-SZ_i|_\infty\le s$ for every retained point.
+If $SZ_i\in R^-$, Lemma~\ref{lem:deep} retains $i$, and its coordinate
+error places $q_i$ in $R$. If $q_i\in R$ and $i$ is retained, the same
+error puts $SZ_i$ in $R^+$. These implications prove
+\eqref{eq:sandwich}. Both squares and the degree filter are invariant
+under transpose, so the same $S$ works throughout.
+\end{proof}
+This is the key reduction: local true points are all retained.
+There is no global discarded-count term divided by the cell area.
+
+\section{Local concentration and full-square estimation}
+\label{sec:upperproof}
+\begin{lemma}[Small-mass concentration]\label{lem:concentration}
+For independent Bernoulli variables of common mean $p\le8h^2$,
+where $0<h\le4$, their average $\overline X$ satisfies
+\begin{equation}\label{eq:chernoff}
+ \Pr\{|\overline X-p|>4h^3\}\le2e^{-nh^4/2}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+For $|t|\le1$, the exponential series gives
+$e^t-1-t\le t^2\sum_{j\ge2}1/j!\le t^2$.
+Here $e<3$, as also shown in Section~\ref{sec:lowerproof}.
+Thus
+\[
+ \mathbb E e^{t(X-p)}
+ =e^{-tp}\{1+p(e^t-1)\}
+ \le e^{p(e^t-1-t)}\le e^{pt^2}.
+\]
+Multiply these MGFs, apply Markov's inequality and choose $t=h/4$.
+The exponent for tolerance $4h^3$ is at most
+$-n(h/4)(4h^3)+n(8h^2)(h/4)^2=-nh^4/2$.
+The same calculation with $-t$ proves the other tail.
+\end{proof}
+
+The family of rectangles $SR^\pm$, over every cell and both $S\in G$,
+is fixed before sampling. Each member satisfies
+\begin{equation}\label{eq:mass}
+ Q_\rho(SR^\pm)\le\tfrac32(w+2s)^2
+ \le\tfrac32(9h/4)^2=\tfrac{243}{32}h^2<8h^2.
+\end{equation}
+Counting the two signs and two orientations gives at most $4k^2$
+rectangles. Let $F$ be the event that all their empirical masses
+are within $\varepsilon=4h^3$ of their true masses. Then
+\begin{equation}\label{eq:localfailure}
+ \Pr(F^c)\le8k^2e^{-nh^4/2}.
+\end{equation}
+Some rectangles duplicate one another under transpose; counting both
+orientations is the conservative bound used by the formal proof.
+We do not assume that recovered points are independent, or that $E$
+and $F$ are independent.
+
+\begin{lemma}[Cell error and boundary extension]\label{lem:bias}
+With $m\ge65536$ and $1/n\le r$, on $E\cap F$, clip each $b_R$ to
+$[1/2,3/2]$. Clamp each query coordinate into $[H,1-H]$ and return
+the clipped value of a cell whose closure contains the clamped point.
+This gives, under the same $S$, a full-square error at most $270h$.
+\end{lemma}
+\begin{proof}
+Put $\rho^S=\rho\circ S$ and $p_R=\int_R\rho^S$.
+The expansion shell has area $4ws+4s^2$, so its mass is at most
+$6ws+6s^2$. The contraction loss is no larger.
+The count sandwich and event $F$ give
+\begin{equation}\label{eq:cell}
+ |b_R-p_R/w^2|\le 6s/w+6(s/w)^2+4h^3/w^2.
+\end{equation}
+At every point $y$ in the closed cell, the difference between
+$\rho^S(y)$ and its cell average is at most $2w$.
+Indeed, for a uniform point $X$ in the cell,
+$\mathbb E|X-y|_2^2\le2w^2/3$, with the largest value at a corner;
+Cauchy--Schwarz and the Euclidean Lipschitz constant give
+$2\mathbb E|X-y|_2\le2w$.
+
+Clipping cannot increase error relative to a number in $[1/2,3/2]$.
+Clamping moves a query point by at most $\sqrt2 H$, so its density
+cost is at most $2\sqrt2H<3H=24h$. Using \eqref{eq:mesh} in
+\eqref{eq:cell}, we obtain respectively
+\[
+ 6s/w\le\frac{3072}{15}h,\quad
+ 6(s/w)^2\le\frac{6144}{225}h,\quad
+ 4h^3/w^2\le\frac{1024}{225}h .
+\]
+The sum of these three constants is $53248/225$.
+Adding $2w\le4h$ and $24h$ gives
+$(59548/225)h<270h$, uniformly on the closed square.
+\end{proof}
+
+To fix the query convention exactly, set
+\[
+ j(x)=\min\left\{\left\lfloor\frac{\operatorname{clamp}_{[H,1-H]}(x)-H}{w}
+                    \right\rfloor,k-1\right\}.
+\]
+Use cell $(j(u),j(v))$. Internal query edges select the cell to their
+right, while count cells are open on the left and closed on the right.
+Lemma~\ref{lem:bias} holds on each cell closure, so this distinction
+does not affect any query, including corners. The coordinatewise
+convention commutes with transpose. Finite cell selection and clamping
+also prove query measurability.
+
+\subsection{The selector and every sample-size branch}
+For $n\ge2$, let
+\begin{equation}\label{eq:outermesh}
+ x_n=\sqrt{\frac{n}{8\log n}},\qquad m=\lfloor x_n\rfloor .
+\end{equation}
+If $m<65536$, return the flat function $1$. Otherwise put $h=m^{-1/2}$.
+If $270h\ge1/2$, again return $1$. These decisions depend only on $n$.
+In the remaining branch use the construction above.
+
+Choose once, on the finite space $\mathcal O_n$, one labeled
+representative of each isomorphism class and one realizer whenever
+one exists. Finite enumeration is one possible specification; the Lean
+selector uses finite classical choices. Return $1$ if there is no
+realizer. On actual samples there is a realizer almost surely.
+Relabeling permutes the predecessor and successor sets and the rank
+counts, so the construction transports to the selected representative.
+The proofs hold for every realizer, with its own single global
+alignment. Thus the choice uses no unknown $\rho$, and the guarantee
+descends to the actual unlabeled observation. No efficient algorithm
+for making these choices is asserted.
+
+\begin{proof}[Proof of Theorem~\ref{thm:upper}]
+In the active branch $m\ge65536$, and
+\[
+ nr^2=n/m^2\ge8\log n,\quad
+ m^2\le n/8,\quad n\ge4m^2,\quad 1/n\le r.
+\]
+Here $n\ge4m^2$ follows first from $\log n\ge\log2>1/2$;
+this implies $n\ge4$ in this branch, hence $\log n>1$ and $m^2\le n/8$.
+Since $(m+1)^2\le4m^2$, Lemma~\ref{lem:grid} gives
+\begin{equation}\label{eq:finalgeometric}
+ \Pr(E^c)\le\frac1{8n^3}+\frac1{n^{15}}.
+\end{equation}
+Also $h^4=r^2$, $k^2\le m\le n$, so \eqref{eq:localfailure} gives
+$\Pr(F^c)\le8/n^3$. Already for $n\ge8$,
+\[
+ \frac1{8n^3}+\frac1{n^{15}}+\frac8{n^3}<\frac1{20}.
+\]
+Lemma~\ref{lem:bias} consequently supplies the $270h$ radius with
+probability at least $19/20$. This is the certified intermediate
+Chernoff budget, not the sharper Bernstein budget of an earlier
+working derivation.
+
+For $m\ge65536$, $\lfloor x_n\rfloor\ge x_n/2$, whence
+\[
+ 270h\le270\sqrt2\,8^{1/4}
+        \left(\frac{\log n}{n}\right)^{1/4}
+ <650\left(\frac{\log n}{n}\right)^{1/4}.
+\]
+The numerical comparison is $32\cdot270^4<650^4$.
+In the active branch $270h<1/2$ as well, giving the minimum in
+\eqref{eq:upper}.
+
+If $m\ge65536$ but $270h\ge1/2$, the same scale comparison gives
+$R_n=1/2$. If $m<65536$, then $x_n<65536$ and
+\[
+ 650\left(\frac{\log n}{n}\right)^{1/4}
+ >\frac{650}{8^{1/4}\,256}>\frac12,
+\]
+so again $R_n=1/2$. In both fallback branches the flat function has
+error at most $1/2$ deterministically, by \eqref{eq:class}.
+This covers every $n\ge2$ and completes the selector proof.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:law}]
+Let $A_\rho,A_\sigma$ be the two success sets of the same estimator
+at radius $R_n$, and put $\delta=\TV(\pi_n^\rho,\pi_n^\sigma)$.
+Under $\pi_n^\sigma$, their intersection has probability at least
+$19/20-\delta+19/20-1=9/10-\delta$.
+If $\delta<9/10$, this intersection is nonempty. At any observation
+in it, the two global alignments and the triangle inequality imply
+$\dc(\rho,\sigma)\le2R_n\le1300(\log n/n)^{1/4}$.
+If $\delta\ge9/10$, the class bounds give
+$\dc(\rho,\sigma)\le1\le(10/9)\delta$.
+In all cases $\dc\le1$, yielding \eqref{eq:law}.
+\end{proof}
+
+\section{Smooth alternatives and testing}
+\label{sec:lowerproof}
+\begin{lemma}[Original-class membership and separation]\label{lem:alternatives}
+For $0<h\le1/2$, the two alternatives in Theorem~\ref{thm:lower}
+belong to $\K$, are invariant under transpose, and have
+$\dc(\rho_0,\rho_1)=h/e>h/3$.
+\end{lemma}
+\begin{proof}
+The profile $f(t)=te^{-t^2}$ is smooth and odd, with
+\[
+ \sup|f|=\frac1{\sqrt{2e}}<\frac12,\qquad
+ f'(t)=(1-2t^2)e^{-t^2},\qquad \sup|f'|\le1.
+\]
+The first maximum occurs at $|t|=1/\sqrt2$. For the derivative,
+on $t^2\le1/2$ the bound is immediate; on $t^2\ge1/2$ the maximum
+of $(2t^2-1)e^{-t^2}$ is $2e^{-3/2}<1$, at $t^2=3/2$.
+Since $a_h(1-x)=-a_h(x)$, its integral on $[0,1]$ vanishes exactly.
+Consequently both marginal integrals of $\rho_1$ equal one.
+Also $|\rho_1-1|\le h/2\le1/4$, and each partial derivative has
+magnitude at most $2\sup|f'|\sup|f|\le1$.
+The Euclidean gradient bound $\sqrt2<2$, integrated along segments
+in $D$, proves \eqref{eq:class}. Smoothness holds on all of $\R^2$.
+
+Both densities are transpose invariant. At
+$u=v=1/2+h/\sqrt2$, which lies in $D$, the deviation is $h/e$.
+The profile maximum bounds the deviation everywhere by the same
+number, proving exact quotient separation.
+Finally $e<3$: for $j\ge2$, $j!\ge2^{j-1}$, with strict inequality
+for $j\ge3$, so $\sum_{j\ge2}1/j!<1$. Thus $h/e>h/3$.
+\end{proof}
+
+\begin{lemma}[Likelihood product and order data processing]\label{lem:divergence}
+For the alternatives above and every $n\ge1$,
+\[
+ \TV(\pi_n^{\rho_0},\pi_n^{\rho_1})
+ \le\frac12\sqrt{\exp(n\pi h^4/8)-1}.
+\]
+\end{lemma}
+\begin{proof}
+With $Q_0$ uniform on $D$,
+\[
+ c:=\chi^2(Q_1,Q_0)
+ =\int_D(\rho_1-1)^2
+ =4h^2\left(\int_0^1 a_h(x)^2\dd x\right)^2
+ \le\frac{\pi}{8}h^4.
+\]
+To check the constant, substitute $t=(x-1/2)/h$ and enlarge the
+nonnegative integral to the real line:
+\[
+ \int_{\R}t^2e^{-2t^2}\dd t=\frac14\sqrt{\frac\pi2},
+ \qquad
+ \left(\int_{\R}t^2e^{-2t^2}\dd t\right)^2=\frac\pi{32}.
+\]
+Indeed, squaring the Gaussian integral and using polar coordinates
+gives $\int_\R e^{-2t^2}\dd t=\sqrt{\pi/2}$.
+Integrating the derivative of $te^{-2t^2}$ on expanding symmetric
+intervals, whose boundary term tends to zero, gives the factor $1/4$.
+
+The actual likelihood ratio of $Q_1^{\otimes n}$ against
+$Q_0^{\otimes n}$ is $W(z_1,\ldots,z_n)=\prod_i\rho_1(z_i)$.
+Fubini, $\int\rho_1=1$ and $\int\rho_1^2=1+c$ give
+\[
+ \int W=1,\qquad \int W^2=(1+c)^n,\qquad
+ \int(W-1)^2=(1+c)^n-1\le e^{n\pi h^4/8}-1.
+\]
+Therefore Cauchy--Schwarz gives
+$\TV(Q_0^{\otimes n},Q_1^{\otimes n})
+=\frac12\int|W-1|\le\frac12\sqrt{\int(W-1)^2}$.
+The sampled directed relation is a finite collection of strict Borel
+inequalities; passing to an isomorphism class is a finite map.
+Pulling back an order event proves that its probability difference
+cannot exceed coordinate-data TV. This proves the claim for the
+actual unlabeled order laws.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:lower}]
+Set $r_*=h/6$. By Lemma~\ref{lem:alternatives}, the closed success
+sets at radius $r_*$ for $\rho_0,\rho_1$ are disjoint:
+otherwise the triangle inequality after composing their global
+alignments would give $\dc(\rho_0,\rho_1)\le2r_*=h/3$.
+This argument applies to arbitrary outputs; it uses only the two
+all-point success inequalities.
+
+Write $P_i=\pi_n^{\rho_i}$. If a seed has probability law $\xi$,
+independent of the observation under either hypothesis, every
+measurable event $A\subseteq\mathcal O_n\times\Omega$ has
+\[
+ |(P_0\otimes\xi)(A)-(P_1\otimes\xi)(A)|
+ \le\int |P_0(A_\omega)-P_1(A_\omega)|\dd\xi(\omega)
+ \le\TV(P_0,P_1).
+\]
+Sections are measurable and the sum over the finite observation
+space justifies the integral without additional output regularity.
+Decide hypothesis zero exactly on its success event $A$.
+Under zero the test error is strict estimation failure; under one,
+disjointness makes test error a subset of strict estimation failure.
+The sum of these two risks is at least
+\[
+ (P_0\otimes\xi)(A^c)+(P_1\otimes\xi)(A)
+ =1-\{(P_0\otimes\xi)(A)-(P_1\otimes\xi)(A)\}
+ \ge1-B_n.
+\]
+Their maximum is therefore at least $(1-B_n)/2$.
+
+For the selected $h$, $nh^4\le1$: if $n\le16$ use $h=1/2$;
+if $n\ge16$ use $h=n^{-1/4}$. Since $\pi<4$ and
+$e^{1/2}<2$, we have $B_n<1/2$. The latter exponential inequality
+also follows from $e<3<4$. Thus the finite lower bound is strictly
+greater than $1/4$. Both alternatives are in $\K$, and for $n\ge16$
+the radius is exactly $n^{-1/4}/6$, proving the final assertion.
+\end{proof}
+
+\subsection{What follows for confidence bands}
+Suppose measurable simultaneous bands $[\ell(x),u(x)]$ have
+$\ell\le u$, with coverage meaning containment of $\rho\circ S$ at
+every $x\in D$ for one $S\in G$. Assume the relevant band and midpoint
+success events are measurable. If the maximum width
+$W=\sup_D(u-\ell)$ is at most $2r_*$ on every output, coverage implies
+midpoint loss at most $r_*$. Such a band cannot have uniform $95\%$
+coverage at this width. If the width is random, the valid implication is
+\begin{equation}\label{eq:band}
+ \max_{i=0,1}\left[
+ \Pr_{\rho_i}\{\text{coverage fails}\}
+ +\Pr_{\rho_i}\{W>2r_*\}\right]\ge\frac{1-B_n}{2}.
+\end{equation}
+Indeed midpoint failure is contained in the union of these two
+events, and Theorem~\ref{thm:lower} applies to the midpoint.
+This does not exclude occasional narrow reports or assert anything
+about coverage conditional on accepting a report. Equation~\eqref{eq:band}
+is a written consequence, not a separately exported Lean band theorem.
+
+\section{Formal verification and reproducibility}
+\label{sec:formal}
+All three main endpoints have exact-source remote GCP acceptance.
+Declarations below live in namespace \path{QuantyraNullCone}; a prefix
+\path{InDensityClass} indicates its namespace within that root.
+The companion \path{formal-map.json} supplies full identifiers, source
+paths and the retained exact-type/axiom evidence.
+
+\begin{description}
+\item[Upper theorem.]
+\path{fourth_root_order_only_estimator} and
+\path{InDensityClass.fourth_root_density_estimation} in
+\path{DegreeEstimator.lean} prove Theorem~\ref{thm:upper} and its
+concrete selector instance. The estimator is quantified before the
+unknown density, and no good-event hypothesis remains in the endpoint.
+\item[Geometric and local reduction.]
+\path{Cumulative.lean} supplies earlier coordinate rigidity.
+\path{DegreeFilter.lean}, \path{DegreeMass.lean} and
+\path{DegreeCells.lean} prove the strict-count identities,
+deep retention and one-orientation count sandwich.
+\path{BernoulliMGF.lean}, \path{SmallMassConcentration.lean} and
+\path{DegreeProbability.lean} supply the actual iid concentration.
+\item[Histogram and all-$n$ assembly.]
+\path{DegreeCellBias.lean}, \path{InnerHistogram.lean},
+\path{DegreeHistogram.lean} and \path{DegreeMesh.lean} prove
+shell bounds, query coverage, clipping, clamping and the $270h$ constant.
+\path{DegreeHistogramProbability.lean},
+\path{DegreeRateNumbers.lean} and \path{DegreeRelabel.lean} discharge
+mesh probabilities, flat branches and relabeling.
+\item[Actual-law corollary.]
+\path{InDensityClass.fourth_root_actual_law_inverse} in
+\path{DegreeLaw.lean} proves Corollary~\ref{cor:law}.
+\item[Lower theorem.]
+\path{fourth_root_randomized_lower_bound},
+\path{fourth_root_lower_exists} and
+\path{fourth_root_minimax_obstruction} in \path{LowerBound.lean}
+give the finite two-alternative inequality, the existential full-class
+form and the $n\ge16$ consequence. Dependencies are
+\path{OddGaussian.lean}, \path{LowerAlternatives.lean},
+\path{LowerSeparation.lean}, \path{LowerMoments.lean},
+\path{LowerTesting.lean}, \path{LowerScale.lean},
+\path{LowerProduct.lean} and \path{LowerDataProcessing.lean}.
+The success-event hypotheses and independent seed are explicit.
+\end{description}
+
+The proof/evidence revision is
+\href{https://github.com/Quantyra/quantyra-null-cone-lean/tree/6752732882862bc848c7a96722a7660456d6da38}{\path{6752732882862bc848c7a96722a7660456d6da38}}.
+Lean~4.30.0 and mathlib revision
+\path{c5ea00351c28e24afc9f0f84379aa41082b1188f} are pinned.
+Authoritative GCP run
+\path{space-degree-final-acceptance-20261009T055238Z-7ba92d}
+completed 3027 root-build jobs and 446 selected exact-type/axiom
+audits with zero warnings. These counts cover the library, not
+446 results asserted by this paper. All 135 captured proof/check/config
+identities and pinned dependencies were verified before and after
+execution. The audited axioms are only \path{propext},
+\path{Classical.choice} and \path{Quot.sound}. Immutable inputs,
+failed attempts and raw diagnostics remain in the repository's
+\path{evidence/gcp} tree; its \path{fourth-root-final-20261008.json}
+indexes final acceptance. Every Lean/Lake invocation ran on GCP.
+
+Manuscript preparation preserves those accepted bytes and invokes no
+new Lean build. The companion \path{verify_sources.py} checks the
+current and cited-commit hashes against the retained capture and audits;
+this byte check does not replace the manual statement-to-prose review.
+\path{build.py} compiles this source with Tectonic~0.17.0 and renders
+every PDF page with PyMuPDF for inspection. The package records the
+PDF hash, page review and compiler diagnostics.
+Formal checking establishes the encoded statements, not mathematical
+priority, model adequacy or practical efficiency.
+
+\section{Interpretation, practical limits and provenance}
+\label{sec:limits}
+The result separates existence of a uniformly valid procedure from
+useful finite-sample performance. The chosen selector is active only
+when $270/\sqrt m<1/2$, requiring $m>291600$ with
+$m=\lfloor\sqrt{n/(8\log n)}\rfloor$. The displayed constant is
+therefore deliberately conservative. It offers no practical density
+resolution at the tested sample sizes.
+
+The separately frozen feasibility study \cite{Study} examined ten
+orders across five models at $n=512$ and $3072$, producing thirty
+validated report envelopes over three reporting methods. Every density
+band had full width one. Twenty exact LP witness pairs documented
+the corner limitation. Forty preparation/method runs stayed within
+the frozen 600-second and 4-GiB caps; the eighty conditional confirmation
+samples were not generated. The degree-filter estimator of this paper
+was not implemented or piloted as an additional method. Those results
+support neither practical success of this construction nor a
+contradiction of its asymptotic guarantee.
+
+At $n=3072$, the lower forbidden radius is approximately $0.0224$,
+far below the study's practical target radius $0.45$.
+It cannot explain full-width pilot bands or show that the practical
+target is impossible. Better constants, efficient observable
+reconstruction, improved boundary calibration and a sharp logarithmic
+lower bound remain separate research tasks. A multi-alternative
+construction would be needed to investigate the missing logarithm.
+No additional order-information penalty or higher-dimensional
+reconstruction theorem is proved.
+
+This is a third, separate manuscript family in the shared proof
+repository. The reconstruction paper \cite{Reconstruction} addresses
+inverse laws and proper time; the gauge paper \cite{Gauge} addresses
+an explicit higher-dimensional coordinate obstruction. Their published
+artifacts and the frozen study are preserved. This version is an
+unpublished manuscript with no assigned manuscript DOI.
+
+The work was developed with OpenAI Codex assistance under Daniel Eric
+Fredriksen's research direction. AI-assisted derivation, formalization
+and writing are disclosed. Review follows an open-source,
+decentralized and informal workflow: inspectable proofs, reproducible
+evidence, downstream use, tests and versioned corrections. Specialist
+review and adoption are not prerequisites. Actual feedback must be
+distinguished from anticipated uptake. This manuscript and its
+companion artifacts are CC-BY-4.0; the proof library is Apache-2.0.
+
+\begin{thebibliography}{99}
+\bibitem{Reconstruction} D. E. Fredriksen,
+\emph{Quantitative reconstruction from finite causal orders in a conformal
+diamond}, version 0.4.0 (2026).
+\url{https://doi.org/10.5281/zenodo.23247720}.
+\bibitem{Winkler1985} P. Winkler, \emph{Random orders},
+Order \textbf{1}, 317--331 (1985).
+\url{https://doi.org/10.1007/BF00582738}.
+\bibitem{Winkler} P. Winkler, \emph{Random orders of dimension 2},
+Order \textbf{7}, 329--339 (PDF dated 1991; publisher metadata 1990).
+\url{https://doi.org/10.1007/BF00383197}.
+\bibitem{Genest} C. Genest, E. Masiello and K. Tribouley,
+\emph{Estimating copula densities through wavelets},
+Insurance: Mathematics and Economics \textbf{44}(2), 170--181 (2009).
+\url{https://doi.org/10.1016/j.insmatheco.2008.07.006}.
+\bibitem{Autin} F. Autin, E. Le Pennec and K. Tribouley,
+\emph{Thresholding methods to estimate copula density},
+Journal of Multivariate Analysis \textbf{101}, 200--222 (2010).
+\url{https://lepennec.perso.math.cnrs.fr/Reprint/Copula/2010-JMVA-ALPT.pdf}.
+\bibitem{SeckMamane} C. T. Seck and S. Mamane,
+\emph{Strong uniform convergence rates of the linear wavelet estimator
+of a multivariate copula density}, South African Statistical Journal
+\textbf{58}(1), 35--56 (2024).
+\url{https://doi.org/10.37920/sasj.2024.58.1.3}.
+\bibitem{Swanepoel} J. Swanepoel, C. T. Seck and S. Mamane,
+\emph{A new wavelet estimator of multivariate copula densities based on
+Sklar's theorem, with optimal strong uniform convergence rate},
+South African Statistical Journal \textbf{58}(2), 99--108 (2024).
+\url{https://doi.org/10.37920/sasj.2024.58.2.2}.
+\bibitem{Braun} M. Braun, \emph{Spacetime reconstruction by order and
+number}, arXiv:2507.01907v1 (2025).
+\url{https://arxiv.org/abs/2507.01907v1}.
+\bibitem{Gauge} D. E. Fredriksen,
+\emph{A certified coordinate-gauge obstruction for causal-order
+reconstruction in a $2+1$ diamond}, version 0.1.0 (2026).
+\url{https://doi.org/10.5281/zenodo.23249816}.
+\bibitem{Hoeffding} W. Hoeffding,
+\emph{Probability inequalities for sums of bounded random variables},
+Journal of the American Statistical Association \textbf{58}(301),
+13--30 (1963).
+\url{https://doi.org/10.1080/01621459.1963.10500830}.
+\bibitem{Study} D. E. Fredriksen, \emph{Finite-data feasibility study:
+frozen results and decision} (2026), repository revision
+\path{0cba197cbef0397209d40ebced29c9dc720573c7}.
+\url{https://github.com/Quantyra/quantyra-null-cone-lean/blob/0cba197cbef0397209d40ebced29c9dc720573c7/notes/finite-data-feasibility-results.md}.
+\end{thebibliography}
+\end{document}

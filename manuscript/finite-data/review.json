@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "version": "0.1.0",
+  "publication_status": "unpublished_no_manuscript_doi",
+  "reviewed_at_utc": "2026-10-09T06:45:14.173832+00:00",
+  "review_kind": "Agent visual and mathematical correspondence review; no independent specialist review claimed",
+  "pages": 12,
+  "all_pages_visually_reviewed": true,
+  "page_reviews": [
+    {
+      "page": 1,
+      "render_sha256": "f646b476e6c98dcd59a50ef590f2ad525890bd19af8325fd08d8fb18fc017a54",
+      "finding": "Title, version/status, abstract and original density class; fonts and equations clear."
+    },
+    {
+      "page": 2,
+      "render_sha256": "d0a6ae6d3ea25c7b488c01aca32763741a122175392c1c500d928b65a943905c",
+      "finding": "Upper/law/lower endpoint quantifiers, minima, strict failure and seed-measurability qualification checked."
+    },
+    {
+      "page": 3,
+      "render_sha256": "12a0f2ce177bee5899983e86073a074fc66cee96cd12714688d295369cfd8537",
+      "finding": "Prior-work comparison including published Seck-Mamane rate and original geometric event; citations resolve."
+    },
+    {
+      "page": 4,
+      "render_sha256": "92914bf61e542423d1b0ca3275fdfab98a725cfdcc5738a5cf70fdd5ea5353b3",
+      "finding": "Grid probability and earlier forcing argument; anchor coordinates, global orientation and rank formula checked."
+    },
+    {
+      "page": 5,
+      "render_sha256": "e445f5b4016b11bcd10043a8bf39ff2ebb25012a288fe1e832611e98b5ae6e48",
+      "finding": "Rank proof conclusion, strict degree identities, deep inclusions and cell parameters; all formulas fit."
+    },
+    {
+      "page": 6,
+      "render_sha256": "9105c0e1b684b40de8ef05c57eaab54658cbcf7fb6301554514d99aa50859a6e",
+      "finding": "Cell sandwich, mesh margins and fixed-family concentration, including both orientations; corrected fixed-family wording checked."
+    },
+    {
+      "page": 7,
+      "render_sha256": "c69b71f01362ce43c25f12cb9b009ede70eb66b849e7f73949a58423dec55d2a",
+      "finding": "Cell-average constants, clipping/clamping, query convention and measurable selector; no formula clipping."
+    },
+    {
+      "page": 8,
+      "render_sha256": "3ebbb0548a8f09531ba1fe64779401172a9c56541d513ba8dfd608bf79a65101",
+      "finding": "Probability and flat branches, actual-law proof and Gaussian class membership; inequality endpoints checked."
+    },
+    {
+      "page": 9,
+      "render_sha256": "d13a9ada9878fee5cadd74d0f6df6526d609880324d5784840c12244e9c23621",
+      "finding": "Separation, Gaussian moment, product likelihood, data processing, seed integration and strict risk; formulas legible."
+    },
+    {
+      "page": 10,
+      "render_sha256": "53fe42c67a791fa9bcd89d395a9e5c719f8f2528a798e224bceade5f5924b3d3",
+      "finding": "Random-width-band qualification and formal theorem map; code identifiers wrap within margins."
+    },
+    {
+      "page": 11,
+      "render_sha256": "591ebb504a907fc22e5b4f55332bb0b8637ce868bf0079f63cd2c44ff969ec48",
+      "finding": "Exact GCP provenance, reproducibility, frozen pilot limits and authorship/license; all text visible."
+    },
+    {
+      "page": 12,
+      "render_sha256": "8fc2c5e75329909a4023932281c1cdc95f4eca227bfd6272ee4c90691b679930",
+      "finding": "All eleven bibliography entries and wrapped URLs checked; no unresolved citations."
+    }
+  ],
+  "artifact_sha256": {
+    "build.py": "f8b340cff3c9fb1389d4ba54bcf4e803f863767b4ca2d9fcc33162d1f10a6b0a",
+    "finite-sample-order-density.log": "dbda242aa99a22d1737ffb6a91cdc7ee19f6e67aa229e2ebe7d568fd35c178d0",
+    "finite-sample-order-density.pdf": "5ef260bdf405889853abb323dc4453b238b2a36c4421f715885adadc3099dafa",
+    "finite-sample-order-density.tex": "35d99485a4498ac8f8287792d3f3a4f1d55eed27f161464744991d872ff0efd6",
+    "formal-map.json": "4e1dac4485300ec429f6b295184b1b53a5fda6c32413403924b2ab043ea1c517",
+    "README.md": "50a3d8ad4e69df641b5e427ba36d40f5c58153b1e864b1e344ad941df8e88efe",
+    "source-verification.json": "156a0e21a963d095cd0d495a00f291f06daea44c4a4566ae0fe10463b764a478",
+    "tex-build.log": "ab5ff6b27a6ea331812f12bfcbd01396f75a0b061f8ab599e775f2617726bfc5",
+    "verification.md": "883edea293f05d6810576d92e761faaa8ae3f8d01ce92bc0e58f16b118d8607e",
+    "verify_sources.py": "886a9c21f0adcd1e1db0c03d840b4eb55df4116a86d22d60ac36a288995dc5ab"
+  },
+  "tex_labels_checked": 39,
+  "tex_references_checked": 35,
+  "bibliography_entries_checked": 11,
+  "exact_rational_arithmetic_checks": {
+    "histogram_terms": true,
+    "whole_square_constant": true,
+    "rate_fourth_powers": true,
+    "rectangle_mass": true,
+    "deep_predecessor": true,
+    "deep_successor": true,
+    "failure_budget_n8": true,
+    "active_mesh_threshold": true
+  },
+  "compiler": "Tectonic 0.17.0",
+  "python": "3.13.7",
+  "pymupdf": "1.28.2",
+  "latex_layout_missing_glyph_and_reference_warnings": [],
+  "nonfatal_environment_notice": "Fontconfig default configuration missing; every rendered page inspected with correct text/math fonts",
+  "formal_map_and_proof_audit": "verification.md",
+  "new_lean_invocations": 0,
+  "new_gcp_jobs": 0,
+  "new_experiment_runs": 0,
+  "new_publication_actions": 0,
+  "scope_remaining_todo": []
+}

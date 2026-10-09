@@ -1404,3 +1404,53 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.many_event_likelihood_sum_le
 #check QuantyraNullCone.many_event_failure_exists
 #print axioms QuantyraNullCone.many_event_failure_exists
+
+-- S040/S041: generic marked count and bounded-retention composition.
+#check QuantyraNullCone.iid_indicator_hoeffding
+#print axioms QuantyraNullCone.iid_indicator_hoeffding
+#check QuantyraNullCone.marked_interval_code_measurable
+#print axioms QuantyraNullCone.marked_interval_code_measurable
+#check QuantyraNullCone.marked_fraction_indicator
+#print axioms QuantyraNullCone.marked_fraction_indicator
+#check QuantyraNullCone.marked_fraction_relabel
+#print axioms QuantyraNullCone.marked_fraction_relabel
+#check QuantyraNullCone.marked_interval_actual_law_hoeffding
+#print axioms QuantyraNullCone.marked_interval_actual_law_hoeffding
+#check QuantyraNullCone.retention_denominators
+#print axioms QuantyraNullCone.retention_denominators
+#check QuantyraNullCone.retention_lower_mono
+#print axioms QuantyraNullCone.retention_lower_mono
+#check QuantyraNullCone.retention_upper_mono
+#print axioms QuantyraNullCone.retention_upper_mono
+#check QuantyraNullCone.retention_mass_identification
+#print axioms QuantyraNullCone.retention_mass_identification
+#check QuantyraNullCone.retention_interval_composition
+#print axioms QuantyraNullCone.retention_interval_composition
+#check QuantyraNullCone.marked_fraction_unit
+#print axioms QuantyraNullCone.marked_fraction_unit
+#check QuantyraNullCone.marked_endpoints_unit
+#print axioms QuantyraNullCone.marked_endpoints_unit
+#check QuantyraNullCone.marked_endpoints_cover
+#print axioms QuantyraNullCone.marked_endpoints_cover
+#check QuantyraNullCone.marked_volume_retention_coverage
+#print axioms QuantyraNullCone.marked_volume_retention_coverage
+#check QuantyraNullCone.retention_integral_bounds
+#print axioms QuantyraNullCone.retention_integral_bounds
+#check QuantyraNullCone.retention_total_positive
+#print axioms QuantyraNullCone.retention_total_positive
+#check QuantyraNullCone.retained_measure_apply
+#print axioms QuantyraNullCone.retained_measure_apply
+#check QuantyraNullCone.retained_measure_probability
+#print axioms QuantyraNullCone.retained_measure_probability
+#check QuantyraNullCone.retained_measure_real_apply
+#print axioms QuantyraNullCone.retained_measure_real_apply
+#check QuantyraNullCone.retained_physical_identification
+#print axioms QuantyraNullCone.retained_physical_identification
+#check QuantyraNullCone.retained_marked_volume_coverage
+#print axioms QuantyraNullCone.retained_marked_volume_coverage
+#check QuantyraNullCone.marked_hoeffding_95
+#print axioms QuantyraNullCone.marked_hoeffding_95
+#check QuantyraNullCone.marked_rational_radius_95
+#print axioms QuantyraNullCone.marked_rational_radius_95
+#check QuantyraNullCone.retained_marked_volume_95
+#print axioms QuantyraNullCone.retained_marked_volume_95

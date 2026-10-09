@@ -1,3 +1,5 @@
+import QuantyraNullCone.MarkedThinning
+import QuantyraNullCone.MarkedVolume
 import QuantyraNullCone.Realizer
 import QuantyraNullCone.Grid
 import QuantyraNullCone.Counts

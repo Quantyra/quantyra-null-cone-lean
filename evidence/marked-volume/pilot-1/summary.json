@@ -1,0 +1,18 @@
+{
+  "elapsed_seconds": 277.10916720000023,
+  "peak_python_traced_bytes": 4774983,
+  "rows": 1200,
+  "exact_rational_rows": 600,
+  "integer_tail_certificate_failures": 0,
+  "endpoint_adjustments": 0,
+  "fallbacks": 0,
+  "validity_pass": true,
+  "width_gate_pass": true,
+  "resource_gate_pass": true,
+  "minimum_valid_coverage": 0.9510711635475115,
+  "minimum_misspecified_coverage": 1.2042762967042672e-19,
+  "maximum_gate_mean_width": 0.17195415469146455,
+  "decision": "continue",
+  "source_hashes_preserved": true,
+  "scope": "controlled sampling and geometry only; no real detector validation"
+}

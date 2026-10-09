@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-10-09T19:39:56.896167+00:00",
+  "source_commit": "a26809cd40554925bdc75d5142f1f03902293118",
+  "source_blobs_and_worktree_match_freeze": true,
+  "exact_interval_certificates": 1348,
+  "adjacent_inward_endpoint_rejections": 2688,
+  "rounding_error_bound_per_endpoint": "<=1/65536 relative to exact Clopper-Pearson root",
+  "exact_rational_valid_coverage_rows": 450,
+  "geometry_coverage_recomputed_from_counts": true,
+  "new_samples": 0,
+  "float_quantile_calls": 0,
+  "elapsed_seconds": 32.10293009999805,
+  "passed": true
+}

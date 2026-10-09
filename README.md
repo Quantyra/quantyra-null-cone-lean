@@ -1,5 +1,8 @@
 # Quantitative reconstruction from finite causal orders
 
+2026-10-09 marked-volume progress: the [frozen pilot passes](notes/marked-volume-pilot-result.md), and the [analytic retained-volume bound has GCP acceptance](notes/marked-volume-formal-map.md), including exact rational 95% calibration. S040/S041 remain active: exact-binomial inversion, the thinning-process bridge and the complete confounding endpoint still need certification. Remaining to-do list: those proof bridges plus S039, S042-S044 and S046 in the planning roadmap.
+
+
 [![Verify proofs and manuscript](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml/badge.svg)](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23202762.svg)](https://doi.org/10.5281/zenodo.23202762)

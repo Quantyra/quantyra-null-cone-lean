@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "run": "space-marked-volume-calibration-20261009T193939Z-b7f4f7",
+  "audited_exports": 532,
+  "new_exports": [
+    "QuantyraNullCone.iid_indicator_hoeffding",
+    "QuantyraNullCone.marked_interval_code_measurable",
+    "QuantyraNullCone.marked_fraction_indicator",
+    "QuantyraNullCone.marked_fraction_relabel",
+    "QuantyraNullCone.marked_interval_actual_law_hoeffding",
+    "QuantyraNullCone.retention_denominators",
+    "QuantyraNullCone.retention_lower_mono",
+    "QuantyraNullCone.retention_upper_mono",
+    "QuantyraNullCone.retention_mass_identification",
+    "QuantyraNullCone.retention_interval_composition",
+    "QuantyraNullCone.marked_fraction_unit",
+    "QuantyraNullCone.marked_endpoints_unit",
+    "QuantyraNullCone.marked_endpoints_cover",
+    "QuantyraNullCone.marked_volume_retention_coverage",
+    "QuantyraNullCone.retention_integral_bounds",
+    "QuantyraNullCone.retention_total_positive",
+    "QuantyraNullCone.retained_measure_apply",
+    "QuantyraNullCone.retained_measure_probability",
+    "QuantyraNullCone.retained_measure_real_apply",
+    "QuantyraNullCone.retained_physical_identification",
+    "QuantyraNullCone.retained_marked_volume_coverage",
+    "QuantyraNullCone.marked_hoeffding_95",
+    "QuantyraNullCone.marked_rational_radius_95",
+    "QuantyraNullCone.retained_marked_volume_95"
+  ],
+  "root_build_jobs": 3037,
+  "accepted_source_count": 147,
+  "all_current_and_staged_source_hashes_match": true,
+  "baseline_preserved_except_allowed_integration": "bd2c1a4dff9c98abdec48b39d42cefe52aa4cbc5",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "raw_log_sha256": {
+    "capture-manifest.json": "40b91bed8ee2ac312fc7c3a6420ddd69b098455c9ad53b34b6c3cdc2f23f6417",
+    "receipt.json": "ff4810deca646026c7d3f9301e6753162f2d3f8e173dc28f8f03e3db8747df27",
+    "logs/build.stdout.txt": "b8fb62370c1e9129d00a85d99bbc3503facbb585a40bbe3326b01abe402f7a21",
+    "logs/audit.stdout.txt": "aaeaa1081574e775ef4efec40adf6b0d91c043ebc589c1d25fa2a6fe273d2f7d"
+  },
+  "limits": [
+    "exact-binomial count-law/inversion not yet formalized",
+    "process-level iid thinning/Poisson bridge not yet formalized",
+    "complete S038 confounding endpoint not yet formalized",
+    "Python execution semantics are tested, not Lean compiled"
+  ]
+}

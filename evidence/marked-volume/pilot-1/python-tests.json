@@ -1,0 +1,8 @@
+{
+  "command": "python checks/test_marked_volume.py (with the frozen numpy/scipy site-packages available)",
+  "test_methods": 5,
+  "result": "OK",
+  "elapsed_seconds": 26.692,
+  "source_sha256": "170ff918eeb89c2ff52c218ffbbc68e4111bce1b9c534c75dc7b694a7883dc8f",
+  "scope": "local Python tests; no Lean invocation"
+}

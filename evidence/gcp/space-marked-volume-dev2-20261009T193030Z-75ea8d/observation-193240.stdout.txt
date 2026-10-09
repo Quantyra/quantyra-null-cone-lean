@@ -1,0 +1,28 @@
+1
+ Classical.choice,
+ Quot.sound]
+ℹ [2582/2641] Replayed QuantyraNullCone.Sampling
+info: QuantyraNullCone/Sampling.lean:178:0: 'QuantyraNullCone.InDensityClass.sample_ae_mem_diamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:179:0: 'QuantyraNullCone.InDensityClass.sample_ae_no_grid_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:180:0: 'QuantyraNullCone.InDensityClass.gridCell_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:181:0: 'QuantyraNullCone.InDensityClass.sample_misses_le_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Sampling.lean:182:0: 'QuantyraNullCone.InDensityClass.grid_occupancy_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2893/2894] Replayed QuantyraNullCone.Concentration
+info: QuantyraNullCone/Concentration.lean:140:0: 'QuantyraNullCone.InDensityClass.indicator_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:141:0: 'QuantyraNullCone.InDensityClass.empiricalCDF_concentration' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Concentration.lean:142:0: 'QuantyraNullCone.InDensityClass.grid_vertices_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2894/2894] Building QuantyraNullCone.MarkedVolume (5.0s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/QuantyraNullCone/MarkedVolume.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/.lake/build/lib/lean/QuantyraNullCone/MarkedVolume.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/.lake/build/lib/lean/QuantyraNullCone/MarkedVolume.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/.lake/build/ir/QuantyraNullCone/MarkedVolume.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-marked-volume-dev2-20261009T193030Z-75ea8d/source/.lake/build/ir/QuantyraNullCone/MarkedVolume.setup.json --json
+error: QuantyraNullCone/MarkedVolume.lean:260:33: Application type mismatch: The argument
+  hsmall
+has type
+  code ∉ {code | r ≤ |markedFraction code - mu.real (markedIntervalSet C p q)|}
+but is expected to have type
+  ¬?m.167 ≤ ?m.166
+in the application
+  lt_of_not_ge hsmall
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.MarkedVolume
+error: build failed
+TERMINAL_EXIT=1

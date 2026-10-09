@@ -56,3 +56,11 @@ manuscript/finite-data/deposit/v0.2.0/*.md text eol=lf
 manuscript/finite-data/deposit/v0.2.0/*.json text eol=lf
 manuscript/finite-data/deposit/v0.2.0/*.py text eol=lf
 manuscript/finite-data/deposit/v0.2.0/*.log -text whitespace=-blank-at-eol
+
+evidence/gcp/space-marked-volume-*/** -text -whitespace
+evidence/marked-volume/** -text -whitespace
+QuantyraNullCone/Marked*.lean text eol=lf
+QuantyraNullCone/MarkedVolume.lean whitespace=-blank-at-eof
+notes/marked-volume* text eol=lf
+tools/*marked_volume.py text eol=lf
+checks/test_marked_volume.py text eol=lf

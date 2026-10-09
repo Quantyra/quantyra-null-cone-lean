@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-09T19:27:20.727998+00:00",
+  "sources": {
+    "notes/marked-volume-protocol.json": "de908e54abc290adc87cd4fa50788842599d2a12acca9270482fb27097590c6d",
+    "notes/marked-volume-finite-data.md": "f56ffded1a2ed7239bd01b055f90fb525cdaf9694534d92c1cab7bf52013b5ab",
+    "tools/marked_volume.py": "ee989e40647b89d00ff9cf4b9c557b91b02ec487bcdead6cb5017711eb1309a6",
+    "tools/benchmark_marked_volume.py": "5e2786010404bb56e79c5d8a251eccc8aefe08c14eefbe8cbcc836486bfe073f",
+    "checks/test_marked_volume.py": "170ff918eeb89c2ff52c218ffbbc68e4111bce1b9c534c75dc7b694a7883dc8f"
+  },
+  "parent_commit": "a26809cd40554925bdc75d5142f1f03902293118",
+  "python": "3.13.7",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+}

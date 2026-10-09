@@ -1,0 +1,6 @@
+{
+  "lastStartTimestamp": "2026-10-09T12:23:59.206-07:00",
+  "lastStopTimestamp": "2026-10-09T12:45:15.414-07:00",
+  "name": "quantyra-lean-builder-01",
+  "status": "TERMINATED"
+}

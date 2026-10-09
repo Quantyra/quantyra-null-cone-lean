@@ -1,6 +1,6 @@
 # Quantitative reconstruction from finite causal orders
 
-2026-10-09 marked-volume progress: the [frozen pilot passes](notes/marked-volume-pilot-result.md), and the [exact-binomial physical-volume guarantee now has GCP acceptance](notes/binomial-certification.md). The full audit covers 577 exports, including the count law, tail inversion, integer report arithmetic and actual marked geometry. S040's thinning-process and complete confounding endpoints remain open. Remaining to-do list: those S040 bridges plus S039, S042-S044 and S046 in the planning roadmap.
+2026-10-09 marked-volume progress: the [frozen pilot passes](notes/marked-volume-pilot-result.md), and the [exact-binomial physical-volume guarantee now has GCP acceptance](notes/binomial-certification.md). The full audit covers 577 exports, including the count law, tail inversion, integer report arithmetic and actual marked geometry. The [ordinary thinning-process and full confounding proofs](notes/independent-thinning-process.md) now connect the generated experiment to that retained iid law; their GCP certification remains open. Remaining to-do list: S040 certification and decision audit plus S039, S042-S044 and S046 in the planning roadmap.
 
 
 [![Verify proofs and manuscript](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml/badge.svg)](https://github.com/Quantyra/quantyra-null-cone-lean/actions/workflows/verify.yml)

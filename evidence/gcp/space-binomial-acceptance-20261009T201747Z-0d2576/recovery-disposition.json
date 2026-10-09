@@ -1,0 +1,12 @@
+{
+  "prior_run": "space-binomial-acceptance-20261009T201747Z-0d2576",
+  "replacement_run": "space-binomial-recovery-acceptance-20261009T213645Z-07b480",
+  "reason": "exact remote workspace absent after restored access and recorded VM restart; no Lean/Lake process found",
+  "remote_inspection": "recovery-inspect-20261009T213530Z.stdout.txt",
+  "prior_vm_state": "TERMINATED",
+  "restarted_for_task": true,
+  "ownership": "recovery-ownership-20261009T213530Z.json",
+  "captured_source_count": 154,
+  "identical_source_and_dependency_snapshots": true,
+  "replacement_launch_pid": 1546
+}

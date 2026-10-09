@@ -1,0 +1,28 @@
+1
+hsub :
+  {k | ¬(L k ≤ p ∧ p ≤ U k)} ⊆
+    {k | (binomialCountLaw n p).real (Set.Ici k) ≤ delta / 2} ∪
+      {k | (binomialCountLaw n p).real (Set.Iic k) ≤ delta / 2}
+⊢ 0 ≤ ?m.344
+error: QuantyraNullCone/BinomialCalibration.lean:109:17: unsolved goals
+n : ℕ
+p delta : ℝ
+hp : p ∈ Set.Icc 0 1
+hd : 0 ≤ delta
+L U : Fin (n + 1) → ℝ
+hL : ∀ (k : Fin (n + 1)), L k ∈ Set.Icc 0 1
+hU : ∀ (k : Fin (n + 1)), U k ∈ Set.Icc 0 1
+hcL : ∀ (k : Fin (n + 1)), L k = 0 ∨ binomialUpperTail n k (L k) ≤ delta / 2
+hcU : ∀ (k : Fin (n + 1)), U k = 1 ∨ binomialLowerTail n k (U k) ≤ delta / 2
+hsub :
+  {k | ¬(L k ≤ p ∧ p ≤ U k)} ⊆
+    {k | (binomialCountLaw n p).real (Set.Ici k) ≤ delta / 2} ∪
+      {k | (binomialCountLaw n p).real (Set.Iic k) ≤ delta / 2}
+⊢ (binomialCountLaw n p).real {k | (binomialCountLaw n p).real (Set.Ici k) ≤ delta / 2} +
+      (binomialCountLaw n p).real {k | (binomialCountLaw n p).real (Set.Iic k) ≤ delta / 2} ≤
+    delta
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.BinomialCalibration
+error: build failed
+TERMINAL_EXIT=1

@@ -1,0 +1,28 @@
+1
+heq : {i | c i = true} = {i | d i = true}
+hci : c i = true
+hdi : d i = false
+⊢ False
+error: QuantyraNullCone/BinomialObservation.lean:150:8: Unknown constant `ENNReal.toReal_injective`
+error: QuantyraNullCone/BinomialObservation.lean:151:2: No goals to be solved
+error: QuantyraNullCone/BinomialObservation.lean:165:89: unsolved goals
+case h₂
+n : ℕ
+k : Fin (n + 1)
+p q : ℝ
+hpq : p ≤ q
+⊢ autoParam ((Measure.pi fun x => uniform01Measure) (membershipCode (Set.Iic q) ⁻¹' boundedBitCount ⁻¹' Set.Ici k) ≠ ⊤)
+    measureReal_mono._auto_1
+error: QuantyraNullCone/BinomialObservation.lean:178:89: unsolved goals
+case h₂
+n : ℕ
+k : Fin (n + 1)
+p q : ℝ
+hpq : p ≤ q
+⊢ autoParam ((Measure.pi fun x => uniform01Measure) (membershipCode (Set.Iic p) ⁻¹' boundedBitCount ⁻¹' Set.Iic k) ≠ ⊤)
+    measureReal_mono._auto_1
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.BinomialObservation
+error: build failed
+TERMINAL_EXIT=1

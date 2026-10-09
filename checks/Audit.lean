@@ -1454,3 +1454,95 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.marked_rational_radius_95
 #check QuantyraNullCone.retained_marked_volume_95
 #print axioms QuantyraNullCone.retained_marked_volume_95
+
+-- Exact-binomial marked-volume observation and executable report contract.
+#check QuantyraNullCone.binomial_mass_integer_identity
+#print axioms QuantyraNullCone.binomial_mass_integer_identity
+#check QuantyraNullCone.binomial_upper_integer_identity
+#print axioms QuantyraNullCone.binomial_upper_integer_identity
+#check QuantyraNullCone.binomial_lower_integer_identity
+#print axioms QuantyraNullCone.binomial_lower_integer_identity
+#check QuantyraNullCone.binomial_upper_integer_check
+#print axioms QuantyraNullCone.binomial_upper_integer_check
+#check QuantyraNullCone.binomial_lower_integer_check
+#print axioms QuantyraNullCone.binomial_lower_integer_check
+#check QuantyraNullCone.binomial_numerator_recurrence
+#print axioms QuantyraNullCone.binomial_numerator_recurrence
+#check QuantyraNullCone.binomial_numerator_division
+#print axioms QuantyraNullCone.binomial_numerator_division
+#check QuantyraNullCone.binomial_report_check_sound
+#print axioms QuantyraNullCone.binomial_report_check_sound
+#check QuantyraNullCone.binomial_no_data_valid
+#print axioms QuantyraNullCone.binomial_no_data_valid
+#check QuantyraNullCone.finite_measure_event_sum
+#print axioms QuantyraNullCone.finite_measure_event_sum
+#check QuantyraNullCone.binomial_upper_tail_identity
+#print axioms QuantyraNullCone.binomial_upper_tail_identity
+#check QuantyraNullCone.binomial_lower_tail_identity
+#print axioms QuantyraNullCone.binomial_lower_tail_identity
+#check QuantyraNullCone.finite_upper_tail_pvalue
+#print axioms QuantyraNullCone.finite_upper_tail_pvalue
+#check QuantyraNullCone.finite_lower_tail_pvalue
+#print axioms QuantyraNullCone.finite_lower_tail_pvalue
+#check QuantyraNullCone.binomial_tail_interval_coverage
+#print axioms QuantyraNullCone.binomial_tail_interval_coverage
+#check QuantyraNullCone.binomial_mass_rat_cast
+#print axioms QuantyraNullCone.binomial_mass_rat_cast
+#check QuantyraNullCone.binomial_upper_rat_cast
+#print axioms QuantyraNullCone.binomial_upper_rat_cast
+#check QuantyraNullCone.binomial_lower_rat_cast
+#print axioms QuantyraNullCone.binomial_lower_rat_cast
+#check QuantyraNullCone.binomial_report_coverage
+#print axioms QuantyraNullCone.binomial_report_coverage
+#check QuantyraNullCone.marked_binomial_report_coverage
+#print axioms QuantyraNullCone.marked_binomial_report_coverage
+#check QuantyraNullCone.retained_binomial_report_coverage
+#print axioms QuantyraNullCone.retained_binomial_report_coverage
+#check QuantyraNullCone.binomial_zero_sample_fixture
+#print axioms QuantyraNullCone.binomial_zero_sample_fixture
+#check QuantyraNullCone.binomial_one_sample_fixture
+#print axioms QuantyraNullCone.binomial_one_sample_fixture
+#check QuantyraNullCone.binomial_bad_report_rejected
+#print axioms QuantyraNullCone.binomial_bad_report_rejected
+#check QuantyraNullCone.binomial_reversed_report_rejected
+#print axioms QuantyraNullCone.binomial_reversed_report_rejected
+#check QuantyraNullCone.null_interval_rectangle
+#print axioms QuantyraNullCone.null_interval_rectangle
+#check QuantyraNullCone.null_interval_measurable
+#print axioms QuantyraNullCone.null_interval_measurable
+#check QuantyraNullCone.bit_count_relabel
+#print axioms QuantyraNullCone.bit_count_relabel
+#check QuantyraNullCone.bounded_bit_count_relabel
+#print axioms QuantyraNullCone.bounded_bit_count_relabel
+#check QuantyraNullCone.marked_fraction_bit_count
+#print axioms QuantyraNullCone.marked_fraction_bit_count
+#check QuantyraNullCone.InDensityClass.marked_binomial_coverage
+#print axioms QuantyraNullCone.InDensityClass.marked_binomial_coverage
+#check QuantyraNullCone.InDensityClass.retained_marked_binomial_coverage
+#print axioms QuantyraNullCone.InDensityClass.retained_marked_binomial_coverage
+#check QuantyraNullCone.membership_code_measurable
+#print axioms QuantyraNullCone.membership_code_measurable
+#check QuantyraNullCone.membership_law_probability
+#print axioms QuantyraNullCone.membership_law_probability
+#check QuantyraNullCone.bit_count_le
+#print axioms QuantyraNullCone.bit_count_le
+#check QuantyraNullCone.membership_law_atom
+#print axioms QuantyraNullCone.membership_law_atom
+#check QuantyraNullCone.bit_count_fiber_card
+#print axioms QuantyraNullCone.bit_count_fiber_card
+#check QuantyraNullCone.membership_count_probability
+#print axioms QuantyraNullCone.membership_count_probability
+#check QuantyraNullCone.membership_count_atom
+#print axioms QuantyraNullCone.membership_count_atom
+#check QuantyraNullCone.binomial_count_atom
+#print axioms QuantyraNullCone.binomial_count_atom
+#check QuantyraNullCone.membership_count_eq_binomial
+#print axioms QuantyraNullCone.membership_count_eq_binomial
+#check QuantyraNullCone.threshold_count_mono
+#print axioms QuantyraNullCone.threshold_count_mono
+#check QuantyraNullCone.binomial_upper_tail_mono
+#print axioms QuantyraNullCone.binomial_upper_tail_mono
+#check QuantyraNullCone.binomial_lower_tail_antitone
+#print axioms QuantyraNullCone.binomial_lower_tail_antitone
+#check QuantyraNullCone.marked_count_eq_binomial
+#print axioms QuantyraNullCone.marked_count_eq_binomial

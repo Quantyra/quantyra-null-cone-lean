@@ -64,3 +64,7 @@ QuantyraNullCone/MarkedVolume.lean whitespace=-blank-at-eof
 notes/marked-volume* text eol=lf
 tools/*marked_volume.py text eol=lf
 checks/test_marked_volume.py text eol=lf
+evidence/gcp/space-binomial-*/** -text -whitespace
+evidence/binomial/** -text -whitespace
+QuantyraNullCone/Binomial*.lean text eol=lf
+notes/binomial*.md text eol=lf

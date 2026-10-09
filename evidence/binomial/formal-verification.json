@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "run": "space-binomial-recovery-acceptance-20261009T213645Z-07b480",
+  "audited_exports": 577,
+  "new_exports_by_module": {
+    "BinomialArithmetic": [
+      "QuantyraNullCone.binomial_mass_integer_identity",
+      "QuantyraNullCone.binomial_upper_integer_identity",
+      "QuantyraNullCone.binomial_lower_integer_identity",
+      "QuantyraNullCone.binomial_upper_integer_check",
+      "QuantyraNullCone.binomial_lower_integer_check",
+      "QuantyraNullCone.binomial_numerator_recurrence",
+      "QuantyraNullCone.binomial_numerator_division",
+      "QuantyraNullCone.binomial_report_check_sound",
+      "QuantyraNullCone.binomial_no_data_valid"
+    ],
+    "BinomialCalibration": [
+      "QuantyraNullCone.finite_measure_event_sum",
+      "QuantyraNullCone.binomial_upper_tail_identity",
+      "QuantyraNullCone.binomial_lower_tail_identity",
+      "QuantyraNullCone.finite_upper_tail_pvalue",
+      "QuantyraNullCone.finite_lower_tail_pvalue",
+      "QuantyraNullCone.binomial_tail_interval_coverage",
+      "QuantyraNullCone.binomial_mass_rat_cast",
+      "QuantyraNullCone.binomial_upper_rat_cast",
+      "QuantyraNullCone.binomial_lower_rat_cast",
+      "QuantyraNullCone.binomial_report_coverage",
+      "QuantyraNullCone.marked_binomial_report_coverage",
+      "QuantyraNullCone.retained_binomial_report_coverage"
+    ],
+    "BinomialFixtures": [
+      "QuantyraNullCone.binomial_zero_sample_fixture",
+      "QuantyraNullCone.binomial_one_sample_fixture",
+      "QuantyraNullCone.binomial_bad_report_rejected",
+      "QuantyraNullCone.binomial_reversed_report_rejected"
+    ],
+    "BinomialGeometry": [
+      "QuantyraNullCone.null_interval_rectangle",
+      "QuantyraNullCone.null_interval_measurable",
+      "QuantyraNullCone.bit_count_relabel",
+      "QuantyraNullCone.bounded_bit_count_relabel",
+      "QuantyraNullCone.marked_fraction_bit_count",
+      "QuantyraNullCone.InDensityClass.marked_binomial_coverage",
+      "QuantyraNullCone.InDensityClass.retained_marked_binomial_coverage"
+    ],
+    "BinomialObservation": [
+      "QuantyraNullCone.membership_code_measurable",
+      "QuantyraNullCone.membership_law_probability",
+      "QuantyraNullCone.bit_count_le",
+      "QuantyraNullCone.membership_law_atom",
+      "QuantyraNullCone.bit_count_fiber_card",
+      "QuantyraNullCone.membership_count_probability",
+      "QuantyraNullCone.membership_count_atom",
+      "QuantyraNullCone.binomial_count_atom",
+      "QuantyraNullCone.membership_count_eq_binomial",
+      "QuantyraNullCone.threshold_count_mono",
+      "QuantyraNullCone.binomial_upper_tail_mono",
+      "QuantyraNullCone.binomial_lower_tail_antitone",
+      "QuantyraNullCone.marked_count_eq_binomial"
+    ]
+  },
+  "root_build_jobs": 3042,
+  "accepted_source_count": 154,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "874b1157788cd1869c32d84cfa20ae96164d4481",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "2e091e50a2aa1e1ecd3e6fee480f4421c6871b390d612c63c30b51057b7815d6",
+    "receipt.json": "c9b80f4b878b5d44421fc19b0c81a61a9ade9b70f8537ba61d35a48b4a7265c0",
+    "cleanup.json": "5c51eceb38790145cc79a9467f85a193287b55651ee861095d0fa87488c4fe96",
+    "input-archive.json": "8a5b8e15d52bd55d6f301b677b0d15fc5c05ca62547d11eedbf36ffef4ab3d42",
+    "run.sh": "2f47d26d70b55d6ba2f7f7fe67cf40c8dde418fb01c91f5eec1792c0d9daece8",
+    "logs/build.stdout.txt": "daa5c2d67662cd9eb5af69e36df8c941f713e06d298d851bf053057dba36c8d8",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "75c543701c1114698f45c7ab00e8f63551ae7d0be0a1f0993a4f9d7074077ea5",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "independent thinning to conditional iid process bridge remains S040",
+    "complete S038 confounding endpoint remains S040",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

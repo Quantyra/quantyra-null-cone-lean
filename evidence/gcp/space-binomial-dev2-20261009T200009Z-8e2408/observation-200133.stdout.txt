@@ -1,0 +1,28 @@
+1
+Hint: Omit it from the simp argument list.
+  simp [binomialUpperTailQ, binomialUpperTail,̵ ̵b̵i̵n̵o̵m̵i̵a̵l̵_̵m̵a̵s̵s̵_̵r̵a̵t̵_̵c̵a̵s̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/BinomialCalibration.lean:128:70: unsolved goals
+n : ℕ
+k : Fin (n + 1)
+p : ℚ
+⊢ ∑ i, ↑(if i ≤ k then binomialMassQ n (↑i) p else 0) = ∑ j, if j ≤ k then binomialMass n ↑j ↑p else 0
+warning: QuantyraNullCone/BinomialCalibration.lean:129:47: This simp argument is unused:
+  binomial_mass_rat_cast
+
+Hint: Omit it from the simp argument list.
+  simp [binomialLowerTailQ, binomialLowerTail,̵ ̵b̵i̵n̵o̵m̵i̵a̵l̵_̵m̵a̵s̵s̵_̵r̵a̵t̵_̵c̵a̵s̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/BinomialCalibration.lean:168:58: typeclass instance problem is stuck
+  IsZeroOrProbabilityMeasure ?m.56
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, and third type arguments to `IsZeroOrProbabilityMeasure` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.BinomialCalibration
+error: build failed
+TERMINAL_EXIT=1

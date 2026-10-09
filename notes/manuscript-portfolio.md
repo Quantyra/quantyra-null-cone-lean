@@ -1,6 +1,6 @@
 # Manuscript portfolio after certification
 
-2026-10-08, S026 portfolio decision, updated through S029. Both the reconstruction paper and the separate 2+1 manuscript are published in independent Zenodo families.
+2026-10-08, S026 portfolio decision, updated through S030. Both the reconstruction paper and the separate 2+1 manuscript are published in independent Zenodo families. The next finite-data feasibility study is now scoped; its execution and any third manuscript remain unstarted.
 
 | Work | Decision | Reason and boundary |
 | --- | --- | --- |
@@ -18,4 +18,6 @@ S028 manuscript update, 2026-10-08: the [separate 2+1 PDF](../manuscript/conform
 
 S029 publication update, 2026-10-08: the DOI-bearing 2+1 edition is published in independent family `23249815`. [Publication verification](../manuscript/conformal-gauge/PUBLICATION.md) records the frozen package, public hashes, DOI resolution and preservation of earlier records. Its complete mathematical body is unchanged from the reviewed S028 draft; no new Lean execution was needed.
 
-Remaining to-do list: a contribution/scope decision and drafting for any finite-data paper, deferred. None for S028 preparation or S029 publication.
+S030 scope update, 2026-10-08: [the bounded feasibility study](finite-data-feasibility-study.md) freezes the original observation/class/loss, local-mass confidence and lower-bound questions, literature comparison, evaluation/resource protocol and continue/pivot rules. Proposed S031 will determine whether there is a substantive next contribution. This is a research scope, not a decision to draft or publish a finite-data paper.
+
+Remaining to-do list: proposed S031 feasibility execution and its research decision; manuscript drafting remains deferred. None for S028 preparation, S029 publication or S030 scoping.

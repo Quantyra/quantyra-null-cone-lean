@@ -8,6 +8,8 @@ Lean 4 proof software and two published preprints by **Daniel Eric Fredriksen, Q
 
 [Research and exact-proof navigation](RESEARCH.md) · [Contribute an error, prior-work report or test](CONTRIBUTING.md) · [Observed community evidence](notes/community-evidence.md) · [Finite-data CLI](tools/FINITE_DATA.md).
 
+Next research is [scoped as a bounded finite-data feasibility study](notes/finite-data-feasibility-study.md): useful confidence bounds from one order and information limits in the original density class. The [evaluation protocol](notes/finite-data-feasibility-protocol.json) and [literature comparison queue](notes/finite-data-feasibility-literature.md) are specified; execution is proposed, not started. No new theorem, experiment or third manuscript is claimed by this scope.
+
 **Read the [published 0.4.0 PDF](https://zenodo.org/records/23247720/files/finite-causal-order-reconstruction.pdf?download=1)** reflecting completed certification. [DOI](https://doi.org/10.5281/zenodo.23247720) | [Source and publication evidence](manuscript/deposit/v0.4.0/README.md) | [Historical review candidate](manuscript/revisions/v0.4.0/README.md) | [Paper portfolio](notes/manuscript-portfolio.md) | [Integrity](INTEGRITY.md). Root-level manuscript files preserve the historical 0.3.0 baseline.
 
 ## Result and verification scope

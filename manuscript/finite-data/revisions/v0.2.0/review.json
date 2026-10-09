@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "version": "0.2.0",
+  "publication_status": "unpublished_working_revision",
+  "reviewed_at_utc": "2026-10-09T17:22:29.388141+00:00",
+  "review_kind": "Agent mathematical correspondence and all-page visual review; open-source informal workflow; no independent specialist review claimed",
+  "pages": 16,
+  "all_pages_visually_reviewed": true,
+  "page_reviews": [
+    {
+      "page": 1,
+      "render_sha256": "987811c477e6d9e321344dd4d6cb9769d4a98ae980b01a5db8e0af5ba04ecc55",
+      "finding": "Title, unpublished 0.2.0 status, logarithmic abstract and unchanged original-K conditions; fonts and superscripts clear."
+    },
+    {
+      "page": 2,
+      "render_sha256": "82fe6f0ec7f76afe5ff4c05c599b4fe58a378a8091dab4b2e75846f08503b661",
+      "finding": "Loss and all-point success convention, upper/law/two-point bounds and measurability qualification; equations fit."
+    },
+    {
+      "page": 3,
+      "render_sha256": "f9f567533656978a1fa08b6a959fafe6c238edb0861bd6e69fd2fdcd1d4493dd",
+      "finding": "New logarithmic theorem and minimax corollary: n>=2^64, 1/8192, failure>=1/2, arbitrary independent seed and rate interpretation checked."
+    },
+    {
+      "page": 4,
+      "render_sha256": "1d1d97a964e551877787e1c8ae25082e0a8152824f50bfc52a28a0255d77195b",
+      "finding": "Prior-method attribution including Guntuboyina Example II.8 and geometric probability proof; references resolve."
+    },
+    {
+      "page": 5,
+      "render_sha256": "32d3d9940a4343f3658cb53f964f7f9ef96fafd2697cda8afba86f55e092f4fd",
+      "finding": "Earlier realizer forcing, one global orientation and degree-filter definition; coordinate equations and proof text legible."
+    },
+    {
+      "page": 6,
+      "render_sha256": "fef23e57ff9426abb452f8233cf48db6c1de79983da06234af7ceee1cb0bb86a",
+      "finding": "Strict degree identities, mesh parameters, eroded/expanded cells and complete deep retention; no clipping."
+    },
+    {
+      "page": 7,
+      "render_sha256": "1f268c7f465b8f0a82c32b5d479c7fb2f948912d81572dc0b82a6bc95a252997",
+      "finding": "Fixed-family concentration and cell-average/boundary proof; constants, squared terms and inequalities checked."
+    },
+    {
+      "page": 8,
+      "render_sha256": "5bf42240b784b991ee392e9a7a1cb83de115a61798dcdb965ee03b95ccab14e8",
+      "finding": "Clamped query convention, selector and large-sample upper branch; formulas fit and probabilities remain explicit."
+    },
+    {
+      "page": 9,
+      "render_sha256": "e93282fefb9fde9b4f348b092bedf8f258a1e06e415277a71682f089bd1c0fac",
+      "finding": "Flat branches, actual-law proof, two-point Gaussian construction and moment calculation; no layout defects."
+    },
+    {
+      "page": 10,
+      "render_sha256": "ac9e79f5d7801e17a9aea6a3bf0e9ebe42f02932eb18636d9432eea254a4a177",
+      "finding": "Product likelihood, independent seed, strict two-point risk and qualified random-width-band consequence; event notation clear."
+    },
+    {
+      "page": 11,
+      "render_sha256": "6114045c351b09e09e6db209689a5ac4a0c8cd3d369d8dbac9d51c6d7a2b2f56",
+      "finding": "New centered profiles, exact mean, variance bound, peak/tail estimates and admissible packing; all integrals and signs inspected."
+    },
+    {
+      "page": 12,
+      "render_sha256": "dd72bca3480da83b82b216440951a7753cd83de8205ab81c3cf3fd0857b2153c",
+      "finding": "Diagonal separation, true iid/seed likelihood moments, summed-indicator testing and scale statement; formulas legible."
+    },
+    {
+      "page": 13,
+      "render_sha256": "3852a93da6ce0274c84bdf1f87a9909537c77dba5eb3f9718ea0d1df259aa148",
+      "finding": "Explicit finite scale, actual order-map pullback, strict-error endpoint and infimum proof; exact constants and measurability checked."
+    },
+    {
+      "page": 14,
+      "render_sha256": "c4bcbb0f093a5fa1c96855ad1ab759434259a2c8cb104065a5a666bb47e7f57e",
+      "finding": "Formal theorem map, proof commit, GCP run/counts, standard axioms and practical-limit start; long code names wrap inside margins."
+    },
+    {
+      "page": 15,
+      "render_sha256": "7c19c7d8fdf0d468d6bf2bc1cdd6400c4e3c1ade18b4e2d9bd73b1b067270ea3",
+      "finding": "Preserved pilot limitation, unchanged published DOI versus unpublished revision, AI assistance/review philosophy and bibliography start."
+    },
+    {
+      "page": 16,
+      "render_sha256": "fbf794356bc6a22f1079e53a73b7bc29b9fd0dc78e239132a78a9cd252b55d7f",
+      "finding": "Remaining bibliography including version-specific Guntuboyina reference and frozen-study commit URL; links wrap cleanly."
+    }
+  ],
+  "artifact_sha256": {
+    "build.py": "3277d2fc36de35ceaec80a8a0c02f4d905597592d231160103288c03d1754dc2",
+    "finite-sample-order-density.log": "0bf5b677b7223fa52460277ba5e76bb89dccd68b46fb2195c09d05ba89dac068",
+    "finite-sample-order-density.pdf": "9e2da6eab626135c08abe89793f6d5b94360cb7d092a06e349fee1507448b137",
+    "finite-sample-order-density.tex": "4bde2e22450004a22164441bc47e9c586a877410a884e8e5aee34e368515aec9",
+    "formal-map.json": "30082c1fa48bea0637da425dc0c54fe884ec4793f5ba9e4ca5fd75d388d52469",
+    "README.md": "1e90c08bbc0581ac29a0549a476b6f3bc6f52c02ab600091ff4c237987224c3d",
+    "source-verification.json": "d6fcf9a2ea44ada910d09952a18011c575a266fbdb5da32214b5072d777cb001",
+    "tex-build.log": "c61ee6221068a7c192d8b1ed80aa90b616ef2e61175c781b71420cbae9cfb086",
+    "verification.md": "f44a0525c4fd262adf16f793362f0a3d8c4b30daf7cfc9c952142f284f1d54da",
+    "verify_sources.py": "7dbddf917a7f458a55b2d9c17d04a6a853b94728452fe31297d6d80bd82bee55"
+  },
+  "tex_labels_checked": 54,
+  "tex_references_checked": 52,
+  "bibliography_entries_checked": 12,
+  "exact_rational_arithmetic_checks": {
+    "histogram_terms": true,
+    "whole_square_constant": true,
+    "rate_fourth_powers": true,
+    "rectangle_mass": true,
+    "deep_predecessor": true,
+    "deep_successor": true,
+    "failure_budget_n8": true,
+    "active_mesh_threshold": true,
+    "center_spacing_to_bandwidth": true,
+    "own_profile_peak": true,
+    "other_profile_tail": true,
+    "separation": true,
+    "moment_exponent_denominator": true,
+    "target_radius_denominator": true,
+    "log_threshold": true,
+    "square_root_budget": true
+  },
+  "compiler": "Tectonic 0.17.0",
+  "python": "3.13.7",
+  "pymupdf": "1.28.2",
+  "latex_layout_missing_glyph_and_reference_warnings": [],
+  "nonfatal_environment_notice": "Fontconfig default configuration unavailable; every rendered page inspected with correct text and math fonts",
+  "formal_map_and_proof_audit": "verification.md",
+  "proof_commit": "a0b1f6846d6f0b89a94704ed2954645bcac756fd",
+  "gcp_run": "space-log-lower-final-acceptance-20261009T171053Z-0c7e20",
+  "mapped_exports": 101,
+  "accepted_source_identities": 143,
+  "retained_audit_reports": 508,
+  "protected_baseline_files": 5444,
+  "local_lean_invocations": 0,
+  "new_lean_invocations_during_manuscript_preparation": 0,
+  "new_experiment_runs": 0,
+  "new_publication_actions": 0,
+  "scope_remaining_todo": []
+}

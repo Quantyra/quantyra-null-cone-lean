@@ -124,4 +124,4 @@ Eight new `LogLower*.lean` modules cover centered profiles and their moments, or
 
 Published payload `ce5496dffcf8c2caa8bcf03adf4756c7282effe6`, accepted proofs `6752732882862bc848c7a96722a7660456d6da38`, and frozen pilot are preserved. All Lean/Lake development and acceptance must run on GCP. The manuscript revision is a separate working edition; no Zenodo write is part of this goal.
 
-Remaining to-do list: reviewed manuscript revision and verified focused delivery under S036; the mathematical and formal endpoints are complete.
+Remaining to-do list: none for S036 proof and certification. The [reviewed manuscript revision](../manuscript/finite-data/revisions/v0.2.0/README.md) and its exact formal map are delivered; Zenodo publication and practical-estimator research are separate follow-ups.

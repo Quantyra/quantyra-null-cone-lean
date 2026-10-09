@@ -37,4 +37,4 @@ Final run: `space-log-lower-final-acceptance-20261009T171053Z-0c7e20`; index: `e
 
 The instance was terminated before this task and started by the first run. Retained live-process checks and cleanup records in the final run document its return to TERMINATED after acceptance. No cache, campaign directory or historical evidence is removed.
 
-Remaining to-do list: reviewed manuscript revision and verified focused delivery under S036.
+Remaining to-do list: none for S036 proof and certification. The [reviewed manuscript revision](../manuscript/finite-data/revisions/v0.2.0/README.md) and its exact formal map are delivered; Zenodo publication and practical-estimator research are separate follow-ups.

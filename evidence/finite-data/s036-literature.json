@@ -1,0 +1,15 @@
+{
+  "retrieved_utc": "2026-10-09T16:50:13.476575+00:00",
+  "url": "https://arxiv.org/html/1002.0042v2",
+  "sha256": "be0e981e58be8ad4fc5ecafbc9e654b94f9b3f013733cbcbfb0d88fcc66f0f3d",
+  "bytes": 704312,
+  "private_filename": "s036-guntuboyina-1002.0042v2.html",
+  "inspected": [
+    "Section I finite packing/testing reduction",
+    "Theorem II.1 and complete proof",
+    "Example II.5, equation (12)",
+    "Example II.8, equation (15), l=2"
+  ],
+  "use": "Established many-hypothesis divergence method; direct second-moment proof written independently for exact randomized success-event formulation",
+  "limit": "No theorem on this exact uniform-marginal density class or order observation is imported; no priority claim"
+}

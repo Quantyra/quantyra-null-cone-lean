@@ -1,0 +1,7 @@
+{
+  "run": "space-log-lower-packing-20261009T165329Z-d31c7f",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LogLowerPacking",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

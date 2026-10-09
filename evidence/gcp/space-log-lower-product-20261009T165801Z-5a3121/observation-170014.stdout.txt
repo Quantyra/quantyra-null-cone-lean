@@ -1,0 +1,28 @@
+1
+  ∫ (z : (Fin n → DiamondPoint) × Ω), logLowerLikelihood h c z.1 ^ 2 ∂(lowerBaseSample n).prod ξ ≤
+    Real.exp (↑n * h ^ 4 / 4)
+
+h : ℝ
+hh : 0 < h
+hSmall : h ≤ 1 / 16
+c : ℝ
+n : ℕ
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+ξ : Measure Ω
+inst✝ : IsProbabilityMeasure ξ
+⊢ ∫ (z : (Fin n → DiamondPoint) × Ω), logLowerLikelihood h c z.1 ^ 2 ∂(lowerBaseSample n).prod ξ ≤
+    Real.exp (↑n * h ^ 4 / 4)
+info: QuantyraNullCone/LogLowerProduct.lean:88:0: 'QuantyraNullCone.log_lower_likelihood_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:89:0: 'QuantyraNullCone.log_lower_likelihood_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:90:0: 'QuantyraNullCone.log_lower_alternative_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:91:0: 'QuantyraNullCone.log_lower_likelihood_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:92:0: 'QuantyraNullCone.log_lower_sample_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:93:0: 'QuantyraNullCone.log_lower_product_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:94:0: 'QuantyraNullCone.log_lower_seed_real_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:95:0: 'QuantyraNullCone.log_lower_seed_second_moment' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LogLowerProduct
+error: build failed
+TERMINAL_EXIT=1

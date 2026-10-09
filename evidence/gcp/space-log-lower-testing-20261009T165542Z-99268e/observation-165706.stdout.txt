@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/LogLowerAlternatives.lean:115:0: 'QuantyraNullCone.log_lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:116:0: 'QuantyraNullCone.log_lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:117:0: 'QuantyraNullCone.log_lower_single_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2958/2959] Built QuantyraNullCone.LogLowerPacking (3.6s)
+info: QuantyraNullCone/LogLowerPacking.lean:127:0: 'QuantyraNullCone.log_lower_bandwidth_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:128:0: 'QuantyraNullCone.log_lower_center_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:129:0: 'QuantyraNullCone.log_lower_centers_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:130:0: 'QuantyraNullCone.log_lower_witness_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:131:0: 'QuantyraNullCone.log_lower_other_profile_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:132:0: 'QuantyraNullCone.log_lower_family_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:133:0: 'QuantyraNullCone.log_lower_family_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:134:0: 'QuantyraNullCone.log_lower_packing_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:135:0: 'QuantyraNullCone.log_lower_success_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2959/2959] Built QuantyraNullCone.LogLowerTesting (3.3s)
+warning: QuantyraNullCone/LogLowerTesting.lean:80:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: QuantyraNullCone/LogLowerTesting.lean:92:0: 'QuantyraNullCone.disjoint_indicator_sum_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerTesting.lean:93:0: 'QuantyraNullCone.many_event_likelihood_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerTesting.lean:94:0: 'QuantyraNullCone.many_event_failure_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2959 jobs).
+TERMINAL_EXIT=0

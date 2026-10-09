@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/LogLowerProfile.lean:131:0: 'QuantyraNullCone.log_lower_gaussian_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:132:0: 'QuantyraNullCone.log_lower_gaussian_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:133:0: 'QuantyraNullCone.log_lower_profile_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:134:0: 'QuantyraNullCone.log_lower_profile_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2956/2957] Built QuantyraNullCone.LogLowerMoments (2.8s)
+info: QuantyraNullCone/LogLowerMoments.lean:63:0: 'QuantyraNullCone.log_lower_raw_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:64:0: 'QuantyraNullCone.log_lower_raw_total_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:65:0: 'QuantyraNullCone.log_lower_gaussian_moment_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:66:0: 'QuantyraNullCone.log_lower_raw_interval_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:67:0: 'QuantyraNullCone.log_lower_profile_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:68:0: 'QuantyraNullCone.log_lower_profile_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2957/2957] Building QuantyraNullCone.LogLowerAlternatives (3.1s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/QuantyraNullCone/LogLowerAlternatives.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/.lake/build/lib/lean/QuantyraNullCone/LogLowerAlternatives.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/.lake/build/lib/lean/QuantyraNullCone/LogLowerAlternatives.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/.lake/build/ir/QuantyraNullCone/LogLowerAlternatives.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-log-lower-alternatives-20261009T165128Z-200e1a/source/.lake/build/ir/QuantyraNullCone/LogLowerAlternatives.setup.json --json
+error: QuantyraNullCone/LogLowerAlternatives.lean:51:37: No goals to be solved
+info: QuantyraNullCone/LogLowerAlternatives.lean:110:0: 'QuantyraNullCone.log_lower_alternative_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:111:0: 'QuantyraNullCone.log_lower_alternative_deviation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:112:0: 'QuantyraNullCone.log_lower_alternative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:113:0: 'QuantyraNullCone.log_lower_alternative_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:114:0: 'QuantyraNullCone.log_lower_alternative_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:115:0: 'QuantyraNullCone.log_lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:116:0: 'QuantyraNullCone.log_lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:117:0: 'QuantyraNullCone.log_lower_single_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LogLowerAlternatives
+error: build failed
+TERMINAL_EXIT=1

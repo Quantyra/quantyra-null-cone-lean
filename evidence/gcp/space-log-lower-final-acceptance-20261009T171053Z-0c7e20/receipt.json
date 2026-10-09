@@ -1,0 +1,11 @@
+{
+  "run": "space-log-lower-final-acceptance-20261009T171053Z-0c7e20",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone",
+  "acceptance": true,
+  "audited_exports": 508,
+  "owned_warnings": 0,
+  "dependency_identities_before_and_after": true,
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

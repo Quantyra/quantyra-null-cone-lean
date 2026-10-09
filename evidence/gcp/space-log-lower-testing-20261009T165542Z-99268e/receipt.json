@@ -1,0 +1,7 @@
+{
+  "run": "space-log-lower-testing-20261009T165542Z-99268e",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LogLowerTesting",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

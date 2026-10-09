@@ -1,0 +1,7 @@
+{
+  "run": "space-log-lower-bound-final-20261009T170638Z-1861c9",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LogLowerBound",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

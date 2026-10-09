@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "final_state": "TERMINATED",
+  "time_utc": "2026-10-09T17:17:53.786765+00:00",
+  "ownership_source": "../space-log-lower-profile-20261009T164705Z-46533a/instance-ownership.json",
+  "final_acceptance_retained": true,
+  "live_processes_inspected": true,
+  "no_other_work_observed": true,
+  "deleted_files_or_caches": false
+}

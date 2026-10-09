@@ -1,0 +1,28 @@
+1
+  logLowerProfile h
+error: QuantyraNullCone/LogLowerProfile.lean:119:40: Application type mismatch: The argument
+  h
+has type
+  |logLowerRaw h✝ c x - logLowerMean h✝ c| ≤ 1 / 16 + h✝ / 2
+of sort `Prop` but is expected to have type
+  ℝ
+of sort `Type` in the application
+  HDiv.hDiv h
+info: QuantyraNullCone/LogLowerProfile.lean:122:0: 'QuantyraNullCone.log_lower_raw_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:123:0: 'QuantyraNullCone.log_lower_profile_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:124:0: 'QuantyraNullCone.log_lower_raw_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:125:0: 'QuantyraNullCone.log_lower_mean_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:126:0: 'QuantyraNullCone.log_lower_mean_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:127:0: 'QuantyraNullCone.log_lower_profile_integral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:128:0: 'QuantyraNullCone.log_lower_profile_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:129:0: 'QuantyraNullCone.log_lower_profile_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:130:0: 'QuantyraNullCone.log_lower_profile_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:131:0: 'QuantyraNullCone.log_lower_gaussian_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:132:0: 'QuantyraNullCone.log_lower_gaussian_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:133:0: 'QuantyraNullCone.log_lower_profile_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:134:0: 'QuantyraNullCone.log_lower_profile_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LogLowerProfile
+error: build failed
+TERMINAL_EXIT=1

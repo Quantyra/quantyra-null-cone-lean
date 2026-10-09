@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-09T17:18:36.285585+00:00",
+  "story": "S036",
+  "gcp_run": "space-log-lower-final-acceptance-20261009T171053Z-0c7e20",
+  "proof_parent": "fe7bf812570bd5f6e5b49c9cd7679f3d9dee496c",
+  "compile_host": "GCP",
+  "project": "quantyra-lean-cert-20260915",
+  "instance": "quantyra-lean-builder-01",
+  "zone": "us-central1-a",
+  "root_build_jobs": 3035,
+  "audited_exports": 508,
+  "new_audited_exports": 62,
+  "captured_identities": 143,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "owned_warnings": 0,
+  "complete_lower_endpoint": true,
+  "fixed_confidence_minimax_radius": true,
+  "lower_constant": "1/8192",
+  "sample_threshold": "2^64",
+  "strict_error_failure_probability": ">=1/2",
+  "upper_radius": "min(1/2,650*(log n/n)^(1/4))",
+  "confidence": "19/20",
+  "density_class_changed": false,
+  "observation_changed": false,
+  "loss_changed": false,
+  "all_attempts": [
+    {
+      "run": "space-log-lower-alternatives-20261009T165128Z-200e1a",
+      "terminal_exit": 1,
+      "warnings": 0,
+      "input_sha256": "d3f5072d6b60d3e361f86d3cf12a0badffb02333a16e872d4b620b58dcf20d8c",
+      "manifest_sha256": "5373eb6e9dc1b20cfd5d1951707d86b5d004e14e2fd470183e87a86069616a6e",
+      "raw_logs": {
+        "logs/build.stderr.txt": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f",
+        "logs/build.stdout.txt": "3d1716814c97b834e538a4b182b6145d5f788e26662f43d8ae194c4ea9176bff",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "4edf2a2da300ae707c53eea0b28e7ba2853f97018020f2c4ae0648b12a106115"
+      }
+    },
+    {
+      "run": "space-log-lower-bound-20261009T170210Z-3da05e",
+      "terminal_exit": 1,
+      "warnings": 0,
+      "input_sha256": "af6bd31d8cabdb9b2b5d8a075bd46b2cfbbc5d9a11b8c7b3727b7b8fe131aae6",
+      "manifest_sha256": "012f5303cb1ce29a14070c3e63d1c244cf1b4599c21db708c62c852bdb37607b",
+      "raw_logs": {
+        "logs/build.stderr.txt": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f",
+        "logs/build.stdout.txt": "c361478a2252ea979d46e4ebca70d91b62bdf41331b37697220dabf9c74fce86",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "4edf2a2da300ae707c53eea0b28e7ba2853f97018020f2c4ae0648b12a106115"
+      }
+    },
+    {
+      "run": "space-log-lower-bound-final-20261009T170638Z-1861c9",
+      "terminal_exit": 0,
+      "warnings": 0,
+      "input_sha256": "7f81afa4c7b035bbb63d547d786a5f2696408f4450a137c054a8a0594daed849",
+      "manifest_sha256": "00c9f40f123dcb5eaf560db189dfa2bc115830e3aeaad41231f5620c09b6b5dd",
+      "raw_logs": {
+        "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/build.stdout.txt": "45b7340c6135946b3ef20f6ab1cc3116d1d558085d03ff5dfd5c3a93e168adac",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "9155a4f7a5fd635b99847f2adf1dc496b8ba4adfa01c62376067c1f43d7315cc"
+      }
+    },
+    {
+      "run": "space-log-lower-final-acceptance-20261009T171053Z-0c7e20",
+      "terminal_exit": 0,
+      "warnings": 0,
+      "input_sha256": "e3a819ea1fb7c36fb80ae9ccdbe931cc31abebf4fc8b89fade99a7c0d952ef66",
+      "manifest_sha256": "a76d1089ed7b9108ae307b7d9759994a6a15817bdfa80811bf5b5d0fbb5a309d",
+      "raw_logs": {
+        "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/audit.stdout.txt": "b42b4e4935e940469bbc340f344f243a03cbbe4742518ccaabc17dc4e3f0998e",
+        "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/build.stdout.txt": "dcb7cdc1920528b0f6331295bc18ecc01ccdaeedae657b693a50a0c7f334334e",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "9155a4f7a5fd635b99847f2adf1dc496b8ba4adfa01c62376067c1f43d7315cc"
+      }
+    },
+    {
+      "run": "space-log-lower-packing-20261009T165329Z-d31c7f",
+      "terminal_exit": 0,
+      "warnings": 2,
+      "input_sha256": "aa18f171f3d6bcb2b4e6e0927883c039565e636ebad766491474e1a60e92c2dd",
+      "manifest_sha256": "e388eb2a0f3c633bdb19810a94d0a894eb3678ccfc3adb40d355786fbfb3d85f",
+      "raw_logs": {
+        "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/build.stdout.txt": "ebefec9faaead6d04c867ef8cb2630f39f0a8ca8048ca68dc457c139b5dab0d8",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "9155a4f7a5fd635b99847f2adf1dc496b8ba4adfa01c62376067c1f43d7315cc"
+      }
+    },
+    {
+      "run": "space-log-lower-product-20261009T165801Z-5a3121",
+      "terminal_exit": 1,
+      "warnings": 0,
+      "input_sha256": "3f3d72abe11307cb6e2e3b7f8b8d0c39f0aefe2a58214293f081fb4767d76acf",
+      "manifest_sha256": "ddc7f2b01e00028550071bed9fbbdc12f67995d1b0148831f6d7f244bd7a1e6e",
+      "raw_logs": {
+        "logs/build.stderr.txt": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f",
+        "logs/build.stdout.txt": "98217c1fad10c3d6a2c04536f1a97938f920874f93f03d9ec0177cf5efe381cd",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "4edf2a2da300ae707c53eea0b28e7ba2853f97018020f2c4ae0648b12a106115"
+      }
+    },
+    {
+      "run": "space-log-lower-profile-20261009T164705Z-46533a",
+      "terminal_exit": 1,
+      "warnings": 0,
+      "input_sha256": "2c9e1534fff52b39a766f6916c9fabc51971daab21ee0f066be9057b1ed23337",
+      "manifest_sha256": "ecdc8bfbeae723b3eeb913b9c92907800b43181f1b802b9ab0ca961d094be085",
+      "raw_logs": {
+        "logs/build.stderr.txt": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f",
+        "logs/build.stdout.txt": "65ab4b3f91c873c121dac5cfd53511a0caabcfc6852c3bfde5f3e363ce5ce2a8",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "4edf2a2da300ae707c53eea0b28e7ba2853f97018020f2c4ae0648b12a106115"
+      }
+    },
+    {
+      "run": "space-log-lower-testing-20261009T165542Z-99268e",
+      "terminal_exit": 0,
+      "warnings": 1,
+      "input_sha256": "c4a3ca0dd43a408ea92688412c68fb7531a3d153c56b03a4d14461c6c3747f22",
+      "manifest_sha256": "16991f811104eb9fba6383d37bd0d3af2e26bad0784beeae82eff176b42a8042",
+      "raw_logs": {
+        "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/build.stdout.txt": "93d6d8f16a6bc32341bb680b73e4802be5999b79ab42928a8cc463548f1a194e",
+        "logs/runner.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "logs/runner.stdout.txt": "9155a4f7a5fd635b99847f2adf1dc496b8ba4adfa01c62376067c1f43d7315cc"
+      }
+    }
+  ],
+  "final_artifact_hashes": {
+    "evidence/gcp/space-log-lower-final-acceptance-20261009T171053Z-0c7e20/receipt.json": "64bdfa720faaab019350b636dc9be3860e2ce1fd06171a7756f9ff706fc97626",
+    "evidence/gcp/space-log-lower-final-acceptance-20261009T171053Z-0c7e20/capture-manifest.json": "a76d1089ed7b9108ae307b7d9759994a6a15817bdfa80811bf5b5d0fbb5a309d",
+    "evidence/gcp/space-log-lower-final-acceptance-20261009T171053Z-0c7e20/run.sh": "6720775ae210cf01fe7589eca8a208fb242da03fe4e5a889c971e8f1e67a8694",
+    "evidence/gcp/space-log-lower-final-acceptance-20261009T171053Z-0c7e20/cleanup.json": "80ab261c38f81d9a34ea0fdb978ed28b9e1be774fb5e86e984bee0aab630303c",
+    "evidence/gcp/space-log-lower-final-acceptance-20261009T171053Z-0c7e20/s036-instance-after-stop.stdout.txt": "ae88953418343d35ebb20544cf68442d8f64c6d7dad444d9386bca7f97143889"
+  },
+  "vm_final_state": "TERMINATED",
+  "local_lean_invocations": 0,
+  "new_pilot_runs": 0,
+  "zenodo_writes": 0
+}

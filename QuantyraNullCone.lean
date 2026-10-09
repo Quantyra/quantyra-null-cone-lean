@@ -36,6 +36,7 @@ import QuantyraNullCone.DegreeProbability
 import QuantyraNullCone.DegreeCellBias
 import QuantyraNullCone.DegreeLaw
 import QuantyraNullCone.LowerBound
+import QuantyraNullCone.LogLowerBound
 
 /-!
 Quantyra finite-order reconstruction.
@@ -78,4 +79,9 @@ The actual iid product likelihood, squared divergence identity and data processi
 to unlabeled order laws give the full finite lower risk. For n >= 16 every
 measurable estimator, with arbitrary independent randomization, has strict error
 above n^(-1/4)/6 with probability above 1/4 under an original-class density.
+S036 closes the logarithmic gap in the same class: for n >= 2^64 every
+eligible independently randomized estimator has strict error above
+(log n/n)^(1/4)/8192 with probability at least 1/2 under some density.
+The certified uniform 95% minimax radius is sandwiched between this lower
+radius and min(1/2,650*(log n/n)^(1/4)), for every probability seed space.
 -/

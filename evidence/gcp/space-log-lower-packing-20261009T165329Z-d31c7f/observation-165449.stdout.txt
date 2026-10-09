@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/LogLowerAlternatives.lean:110:0: 'QuantyraNullCone.log_lower_alternative_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:111:0: 'QuantyraNullCone.log_lower_alternative_deviation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:112:0: 'QuantyraNullCone.log_lower_alternative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:113:0: 'QuantyraNullCone.log_lower_alternative_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:114:0: 'QuantyraNullCone.log_lower_alternative_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:115:0: 'QuantyraNullCone.log_lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:116:0: 'QuantyraNullCone.log_lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:117:0: 'QuantyraNullCone.log_lower_single_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [2958/2958] Built QuantyraNullCone.LogLowerPacking (3.7s)
+warning: QuantyraNullCone/LogLowerPacking.lean:55:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/LogLowerPacking.lean:55:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/LogLowerPacking.lean:125:0: 'QuantyraNullCone.log_lower_bandwidth_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:126:0: 'QuantyraNullCone.log_lower_center_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:127:0: 'QuantyraNullCone.log_lower_centers_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:128:0: 'QuantyraNullCone.log_lower_witness_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:129:0: 'QuantyraNullCone.log_lower_other_profile_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:130:0: 'QuantyraNullCone.log_lower_family_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:131:0: 'QuantyraNullCone.log_lower_family_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:132:0: 'QuantyraNullCone.log_lower_packing_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:133:0: 'QuantyraNullCone.log_lower_success_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2958 jobs).
+TERMINAL_EXIT=0

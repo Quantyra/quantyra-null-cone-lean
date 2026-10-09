@@ -1,0 +1,18 @@
+{
+  "title": "Finite-sample density reconstruction from a single causal order",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-09",
+  "creators": [{"name": "Fredriksen, Daniel Eric", "affiliation": "Quantyra Inc"}],
+  "license": "cc-by-4.0",
+  "version": "0.1.0",
+  "access_right": "open",
+  "keywords": ["causal order", "density estimation", "copula density", "finite-sample confidence", "partial orders", "Lean 4", "formal verification"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/6752732882862bc848c7a96722a7660456d6da38", "relation": "isSupplementedBy", "scheme": "url", "resource_type": "software"},
+    {"identifier": "10.5281/zenodo.23247720", "relation": "references", "scheme": "doi", "resource_type": "publication-preprint"},
+    {"identifier": "10.5281/zenodo.23249816", "relation": "references", "scheme": "doi", "resource_type": "publication-preprint"},
+    {"identifier": "10.5281/zenodo.23202763", "relation": "references", "scheme": "doi", "resource_type": "software"}
+  ],
+  "description": "<p>We observe only the isomorphism class of the strict coordinatewise order of n independent points in the unit square. Their unknown density is smooth, lies between 1/2 and 3/2, has uniform marginals, and is Euclidean Lipschitz with constant at most two. We construct one measurable order-only estimator whose full-square supremum error, modulo one global coordinate exchange, is at most min{1/2,650(log n/n)^(1/4)} with probability at least 19/20, uniformly over this original class and for every n at least 2.</p><p>The main reduction uses observed predecessor and successor counts: every retained point has reliable reconstructed coordinates, while every point needed in sufficiently deep cells is retained. This removes a global discarded-mass penalty from local estimation. The paper gives complete proofs, including attributed earlier geometric forcing, an actual single-n order-law inverse corollary, and smooth marginal-preserving Gaussian alternatives. For n at least 16, every estimator, including independent randomization and with measurable success events, has strict error greater than n^(-1/4)/6 with probability greater than 1/4 under an admissible density. The explicit all-n finite risk and random-width-band qualification are also given.</p><p>The upper, law and randomized lower endpoints have exact-source Lean 4 acceptance on remote GCP. The shared proof library audit covers 446 selected exports; this is not a count of this paper's results. This is a theory result with conservative constants, a selector using finite classical choices and an uninformative frozen practical pilot. The lower bound already holds with coordinate data. The logarithmic gap, efficient implementation and useful practical calibration remain unresolved; no additional order-information cost, exact minimax rate or mathematical priority is claimed.</p><p>Author: Daniel Eric Fredriksen, Quantyra Inc. Developed with OpenAI Codex assistance. Review is open-source, decentralized and informal, through inspectable proofs, reuse and downstream testing. Manuscript: CC-BY-4.0. The source archive includes the reviewed preparation snapshot and publication edition; the separately linked proof software and reused repository publication helpers retain Apache-2.0 licensing. This is a third manuscript family, distinct from the reconstruction and coordinate-gauge papers sharing its proof repository.</p>"
+}

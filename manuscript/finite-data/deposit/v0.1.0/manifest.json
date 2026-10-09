@@ -1,0 +1,120 @@
+{
+  "title": "Finite-sample density reconstruction from a single causal order",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.23265067",
+  "proof_commit": "6752732882862bc848c7a96722a7660456d6da38",
+  "reviewed_draft_commit": "b2678573f937f4fb3322a80006e211d11221535d",
+  "mathematical_body_unchanged": true,
+  "source_change_scope": "Title date/status/DOI and one publication-status sentence only",
+  "metadata_sha256": "b72a24b73c96d544928db9f45e424a6638bc68ac2d5d4ee48399092e4328f836",
+  "files": {
+    "manuscript/finite-data/deposit/v0.1.0/creation-recovery.json": {
+      "sha256": "54de026258c50986776b6e76f0911a56f93c754cb17a59c1f61466ef07a3e76a",
+      "bytes": 1111
+    },
+    "manuscript/finite-data/deposit/v0.1.0/draft-record.json": {
+      "sha256": "58912e8a3df5413588c0835cff0f1cb4f50b792aafb71b12750022060a030a35",
+      "bytes": 193
+    },
+    "manuscript/finite-data/deposit/v0.1.0/finite-sample-order-density.log": {
+      "sha256": "4f7b4c0b02094e0be4e8130f3be1ceace77910ab8e82be6d6b158a9b9604151c",
+      "bytes": 17532
+    },
+    "manuscript/finite-data/deposit/v0.1.0/finite-sample-order-density.pdf": {
+      "sha256": "8fdab8b06e8f89a7cf1d6081d5f469c4c05822cc657058bf8bbdceca5fdeabae",
+      "bytes": 135812
+    },
+    "manuscript/finite-data/deposit/v0.1.0/finite-sample-order-density.tex": {
+      "sha256": "99fcf3e4fb3a618e97d99dedce3cb9e84021efea998871496f3c89d25265549c",
+      "bytes": 39214
+    },
+    "manuscript/finite-data/deposit/v0.1.0/README.md": {
+      "sha256": "0417d874b20ad4d49f592923ea6ed5079d9628a96238f103dba87999f28aa7c1",
+      "bytes": 3606
+    },
+    "manuscript/finite-data/deposit/v0.1.0/review.json": {
+      "sha256": "ef93a02c809fe8b4dddbbd561a55f33caeb8cf9c68b53e717400c7979da2ffac",
+      "bytes": 2783
+    },
+    "manuscript/finite-data/deposit/v0.1.0/tex-build.log": {
+      "sha256": "852f8a48efb6ac8811c5459799c744bd37580f4d0f54e505b78afe2bfa13b558",
+      "bytes": 609
+    },
+    "manuscript/finite-data/deposit/v0.1.0/zenodo-metadata.json": {
+      "sha256": "b72a24b73c96d544928db9f45e424a6638bc68ac2d5d4ee48399092e4328f836",
+      "bytes": 3522
+    },
+    "manuscript/finite-data/finite-sample-order-density.tex": {
+      "sha256": "35d99485a4498ac8f8287792d3f3a4f1d55eed27f161464744991d872ff0efd6",
+      "bytes": 39149
+    },
+    "manuscript/finite-data/finite-sample-order-density.pdf": {
+      "sha256": "5ef260bdf405889853abb323dc4453b238b2a36c4421f715885adadc3099dafa",
+      "bytes": 135193
+    },
+    "manuscript/finite-data/finite-sample-order-density.log": {
+      "sha256": "dbda242aa99a22d1737ffb6a91cdc7ee19f6e67aa229e2ebe7d568fd35c178d0",
+      "bytes": 17532
+    },
+    "manuscript/finite-data/tex-build.log": {
+      "sha256": "ab5ff6b27a6ea331812f12bfcbd01396f75a0b061f8ab599e775f2617726bfc5",
+      "bytes": 581
+    },
+    "manuscript/finite-data/README.md": {
+      "sha256": "50a3d8ad4e69df641b5e427ba36d40f5c58153b1e864b1e344ad941df8e88efe",
+      "bytes": 3468
+    },
+    "manuscript/finite-data/formal-map.json": {
+      "sha256": "4e1dac4485300ec429f6b295184b1b53a5fda6c32413403924b2ab043ea1c517",
+      "bytes": 11136
+    },
+    "manuscript/finite-data/source-verification.json": {
+      "sha256": "156a0e21a963d095cd0d495a00f291f06daea44c4a4566ae0fe10463b764a478",
+      "bytes": 16631
+    },
+    "manuscript/finite-data/verification.md": {
+      "sha256": "883edea293f05d6810576d92e761faaa8ae3f8d01ce92bc0e58f16b118d8607e",
+      "bytes": 5711
+    },
+    "manuscript/finite-data/review.json": {
+      "sha256": "de497ae7958c11d02d825b643c0aaeb8f29f5eb066d5065e8d9ced08a43084cb",
+      "bytes": 5128
+    },
+    "manuscript/finite-data/verify_sources.py": {
+      "sha256": "886a9c21f0adcd1e1db0c03d840b4eb55df4116a86d22d60ac36a288995dc5ab",
+      "bytes": 5138
+    },
+    "manuscript/finite-data/build.py": {
+      "sha256": "f8b340cff3c9fb1389d4ba54bcf4e803f863767b4ca2d9fcc33162d1f10a6b0a",
+      "bytes": 2819
+    },
+    "manuscript/finite-data/publish.py": {
+      "sha256": "0eadd23b720fe05ff6ed50860864b5de757a3de1349eaa5405ae6cf89c35eefb",
+      "bytes": 7856
+    },
+    "manuscript/finite-data/test_publication.py": {
+      "sha256": "85262c27504b0f64e3ba087bd5ffd31ab15ed3c35020530411349611e60d1354",
+      "bytes": 5402
+    },
+    "checks/publish_conformal_gauge.py": {
+      "sha256": "01904f1a6f8c428ea1ba874a13da78268f9d5ba6dc972d54811c6acc090d0260",
+      "bytes": 15513
+    },
+    "checks/publish_manuscript_version.py": {
+      "sha256": "7d83a4dc3c20f689b3a53c1c1cc16a646d235461e73bac1174bf277724176bc4",
+      "bytes": 12867
+    },
+    "checks/zenodo_credentials.py": {
+      "sha256": "87395e7983a7449087565f948801963e46fa480639e8be09d95663ff1ae9f8d3",
+      "bytes": 3599
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "62202e40780cad6d159546cdf74b5b218d07091f6feeca7b1244771ac72cba7c",
+      "bytes": 18664
+    },
+    "LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "S035 independent manuscript record reservation",
+  "credential_route": "Existing in-memory AWS Secrets Manager consumer; direct Zenodo API",
+  "first_listing_attempt": "HTTP 504 before creation",
+  "first_creation_attempt": {
+    "intent_utc": "2026-10-09T14:17:26.258328+00:00",
+    "result": "POST returned HTTP 504; outcome initially uncertain",
+    "automatic_creation_retry": false
+  },
+  "reconciliation": {
+    "matching_title_recovery": "Complete listing returned no matching draft; unresolved intent blocked a second POST",
+    "separate_complete_account_inspection_count": 14,
+    "recent_or_matching_deposits": [],
+    "latest_existing_creation": "2026-10-08T22:36:45.793330+00:00",
+    "disposition": "Two subsequent complete reads found no matching or newly created draft; first intent preserved under an attempt-specific filename before one controlled reservation retry"
+  },
+  "controlled_retry_result": {
+    "reserved_record": 23265067,
+    "doi": "10.5281/zenodo.23265067",
+    "independent_family": "23265066"
+  },
+  "secrets_or_authenticated_response_bodies_retained": false
+}

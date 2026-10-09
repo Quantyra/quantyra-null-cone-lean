@@ -1,0 +1,127 @@
+{
+  "scope": "Public GET verification only; no credential access or publication writes",
+  "finished_utc": "2026-10-09T14:44:01.879907+00:00",
+  "max_attempts_per_url": 4,
+  "events": [
+    {
+      "url": "https://zenodo.org/api/records/23249816",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23249816/files/conformal-gauge-counterexample.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23249816/files/conformal-gauge-counterexample-v0.1.0-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23265067",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23265067/files/finite-sample-order-density.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23265067/files/finite-sample-order-density-v0.1.0-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23206773",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction-v0.2.0-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23206773/files/finite-causal-order-reconstruction.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23214579",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23214579/files/finite-causal-order-reconstruction.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23214579/files/finite-causal-order-reconstruction-v0.3.0-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23225029",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23225029/files/finite-causal-order-reconstruction.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23225029/files/finite-causal-order-reconstruction-v0.3.1-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23247720",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23247720/files/finite-causal-order-reconstruction.pdf/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23247720/files/finite-causal-order-reconstruction-v0.4.0-source.zip/content",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23202763",
+      "attempt": 1,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/api/records/23202763/files/Quantyra/quantyra-null-cone-lean-v0.1.0.zip/content",
+      "attempt": 1,
+      "http_status": 504
+    },
+    {
+      "url": "https://zenodo.org/api/records/23202763/files/Quantyra/quantyra-null-cone-lean-v0.1.0.zip/content",
+      "attempt": 2,
+      "http_status": 200
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23265067",
+      "attempt": 1,
+      "http_status": 504
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23265067",
+      "attempt": 2,
+      "http_status": 200
+    },
+    {
+      "url": "https://zenodo.org/records/23265067/files/finite-sample-order-density.pdf?download=1",
+      "attempt": 1,
+      "http_status": 200
+    }
+  ]
+}

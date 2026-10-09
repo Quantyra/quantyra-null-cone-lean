@@ -1,0 +1,10 @@
+{
+  "url": "https://zenodo.org/records/23265067",
+  "http_status": 200,
+  "checked_utc": "2026-10-09T14:36:26.933646+00:00",
+  "pdf_preview_iframe_urls": [],
+  "pdf_preview_iframe_confirmed": false,
+  "pdf_link_in_html": true,
+  "html_sha256": "9a7874952bec6c87c17b390058dcc8c4a1f7937cc0e30b1fb32cd41b2f4c0717",
+  "prepublication_api_order": "PDF first, source ZIP second; verified by GET of the reserved draft before publication"
+}

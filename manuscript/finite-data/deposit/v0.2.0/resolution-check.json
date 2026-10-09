@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-10-09T19:11:18.382878+00:00",
+  "doi": "10.5281/zenodo.23269373",
+  "published_record": 23269373,
+  "prior_manuscript_downloads": {
+    "23247720": {
+      "finite-causal-order-reconstruction.pdf": {
+        "sha256": "c130dcaa48a416ad3b13bc92de089ee302bd686824d9a4c5725b3ba97d386726",
+        "zenodo_checksum": "md5:eabc2c1a37fa196492229a4329307592"
+      },
+      "finite-causal-order-reconstruction-v0.4.0-source.zip": {
+        "sha256": "4647f513f1e205049f06469a18716a51c676b11dc3f842ca7d26ba01c1164ded",
+        "zenodo_checksum": "md5:c61bdca9360e38d0ada3bb752aca8806"
+      }
+    },
+    "23249816": {
+      "conformal-gauge-counterexample.pdf": {
+        "sha256": "d2b3b36dfd68036be9468f76844a98c8a2627271ca602ee3d445cd6cd7b50a29",
+        "zenodo_checksum": "md5:89cbac005258f8d316d435af49e6d450"
+      },
+      "conformal-gauge-counterexample-v0.1.0-source.zip": {
+        "sha256": "a6f26f3aecaaadcd3d28efdea1eaea625dfc83a204fd926fd89b79306aac4112",
+        "zenodo_checksum": "md5:bb0a56a1eaffdb4d5c116d7e9d7a186e"
+      }
+    }
+  },
+  "doi_resolution": {
+    "status": 200,
+    "final_url": "https://zenodo.org/records/23269373"
+  },
+  "direct_pdf": {
+    "status": 200,
+    "url": "https://zenodo.org/records/23269373/files/finite-sample-order-density.pdf?download=1",
+    "sha256": "2225b8e62d234d0d618f76946286866712fb0a6336f2ecb470a2e94c5fb2ff5c"
+  },
+  "public_file_order": [
+    "finite-sample-order-density.pdf",
+    "finite-sample-order-density-v0.2.0-source.zip"
+  ],
+  "previous_finite_data_downloads_unchanged": true,
+  "new_lean_invocations": 0
+}

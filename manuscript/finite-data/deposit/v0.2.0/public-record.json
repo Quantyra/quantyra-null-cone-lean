@@ -1,0 +1,163 @@
+{
+  "created": "2026-10-09T19:09:11.950010+00:00",
+  "modified": "2026-10-09T19:09:12.381480+00:00",
+  "id": 23269373,
+  "conceptrecid": "23265066",
+  "doi": "10.5281/zenodo.23269373",
+  "conceptdoi": "10.5281/zenodo.23265066",
+  "doi_url": "https://doi.org/10.5281/zenodo.23269373",
+  "metadata": {
+    "title": "Finite-sample density reconstruction from a single causal order",
+    "doi": "10.5281/zenodo.23269373",
+    "publication_date": "2026-10-09",
+    "description": "<p>We study full-square density estimation from one unlabeled strict directed causal order of n iid events. The original class consists of smooth densities on the unit square in [1/2,3/2], with exact uniform marginals and Euclidean Lipschitz constant at most two. Loss is supremum error modulo one global coordinate exchange.</p><p>The accepted order-only estimator has 95% radius min{1/2,650(log n/n)^(1/4)} for every n at least 2. This revision adds a matching logarithmic lower bound: for n at least 2^64, every eligible estimator, including an arbitrary independent probability-space seed and with the stated success-event measurability, has strict error greater than (log n/n)^(1/4)/8192 with probability at least one half under some original-class density. Together these bounds establish the fixed-confidence minimax rate (log n/n)^(1/4) up to constants. The paper retains the two-point lower bound, actual-law corollary, complete degree-filter proof and band qualification, and adds the admissible many-density construction, testing proof, finite-scale calculation and minimax-radius argument.</p><p>All main endpoints have exact-source Lean 4 acceptance on remote GCP. The manuscript maps 101 exports; the shared library audit contains 508 exact-type/axiom reports and a 3035-job root build, with zero warnings and standard axioms only. Earlier geometric forcing and the established second-moment testing method are attributed. Constants are conservative; the mathematical selector does not establish an efficient practical implementation, and the frozen uninformative pilot is preserved. The lower obstruction already holds with coordinate data. No additional order-information penalty, sharp constant, curvature recovery, physical validation or mathematical-priority claim is made.</p><p>Author: Daniel Eric Fredriksen, Quantyra Inc. Developed with OpenAI Codex assistance. Review is open-source, decentralized and informal, through inspectable proofs and downstream testing. Manuscript materials are CC-BY-4.0; proof software and repository helpers retain Apache-2.0 licensing. This is a new version in the existing finite-data manuscript family, distinct from the reconstruction and coordinate-gauge papers.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Fredriksen, Daniel Eric",
+        "affiliation": "Quantyra Inc"
+      }
+    ],
+    "keywords": [
+      "causal order",
+      "density estimation",
+      "copula density",
+      "finite-sample confidence",
+      "partial orders",
+      "Lean 4",
+      "formal verification",
+      "minimax rate",
+      "randomized lower bound"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/Quantyra/quantyra-null-cone-lean/tree/a0b1f6846d6f0b89a94704ed2954645bcac756fd",
+        "relation": "isSupplementedBy",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.23247720",
+        "relation": "references",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.23249816",
+        "relation": "references",
+        "resource_type": "publication-preprint",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.23202763",
+        "relation": "references",
+        "resource_type": "software",
+        "scheme": "doi"
+      }
+    ],
+    "version": "0.2.0",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23265066"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Finite-sample density reconstruction from a single causal order",
+  "links": {
+    "self": "https://zenodo.org/api/records/23269373",
+    "self_html": "https://zenodo.org/records/23269373",
+    "preview_html": "https://zenodo.org/records/23269373?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23269373",
+    "self_doi": "https://doi.org/10.5281/zenodo.23269373",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23269373",
+    "reserve_doi": "https://zenodo.org/api/records/23269373/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23265066",
+    "parent_html": "https://zenodo.org/records/23265066",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23265066",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23265066",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23269373/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23269373/sequence/default",
+    "files": "https://zenodo.org/api/records/23269373/files",
+    "media_files": "https://zenodo.org/api/records/23269373/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23269373:finite-sample-order-density.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/23269373/versions/latest",
+    "latest_html": "https://zenodo.org/records/23269373/latest",
+    "versions": "https://zenodo.org/api/records/23269373/versions",
+    "draft": "https://zenodo.org/api/records/23269373/draft",
+    "access_links": "https://zenodo.org/api/records/23269373/access/links",
+    "access_grants": "https://zenodo.org/api/records/23269373/access/grants",
+    "access_users": "https://zenodo.org/api/records/23269373/access/users",
+    "access_request": "https://zenodo.org/api/records/23269373/access/request",
+    "access": "https://zenodo.org/api/records/23269373/access",
+    "communities": "https://zenodo.org/api/records/23269373/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23269373/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23269373/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23269373/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23269373/quota-increase",
+    "requests": "https://zenodo.org/api/records/23269373/requests"
+  },
+  "updated": "2026-10-09T19:09:12.381480+00:00",
+  "recid": "23269373",
+  "revision": 3,
+  "files": [
+    {
+      "id": "1e89938f-a6a4-4376-8ec5-57f56e57911b",
+      "key": "finite-sample-order-density.pdf",
+      "size": 158044,
+      "checksum": "md5:f4f8355340872dd8228332c0e3a26578",
+      "links": {
+        "self": "https://zenodo.org/api/records/23269373/files/finite-sample-order-density.pdf/content"
+      }
+    },
+    {
+      "id": "1fa12771-67ac-45e1-871d-f025f5d25152",
+      "key": "finite-sample-order-density-v0.2.0-source.zip",
+      "size": 229050,
+      "checksum": "md5:24eabe5efe5ff8ee1dfd0815da40bdf9",
+      "links": {
+        "self": "https://zenodo.org/api/records/23269373/files/finite-sample-order-density-v0.2.0-source.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1655232"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 0,
+    "unique_views": 0,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

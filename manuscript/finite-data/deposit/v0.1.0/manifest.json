@@ -9,8 +9,8 @@
   "metadata_sha256": "b72a24b73c96d544928db9f45e424a6638bc68ac2d5d4ee48399092e4328f836",
   "files": {
     "manuscript/finite-data/deposit/v0.1.0/creation-recovery.json": {
-      "sha256": "54de026258c50986776b6e76f0911a56f93c754cb17a59c1f61466ef07a3e76a",
-      "bytes": 1111
+      "sha256": "0dffd2d0ac433018ec7bf1a545b955b6a9c9a22f44fd6ab13a77392c82bc7a31",
+      "bytes": 1552
     },
     "manuscript/finite-data/deposit/v0.1.0/draft-record.json": {
       "sha256": "58912e8a3df5413588c0835cff0f1cb4f50b792aafb71b12750022060a030a35",
@@ -89,12 +89,12 @@
       "bytes": 2819
     },
     "manuscript/finite-data/publish.py": {
-      "sha256": "0eadd23b720fe05ff6ed50860864b5de757a3de1349eaa5405ae6cf89c35eefb",
-      "bytes": 7856
+      "sha256": "679f30553aabe2271ce91163f7327d16b0a31d4930ac9999d31d26743d8ad49f",
+      "bytes": 7781
     },
     "manuscript/finite-data/test_publication.py": {
-      "sha256": "85262c27504b0f64e3ba087bd5ffd31ab15ed3c35020530411349611e60d1354",
-      "bytes": 5402
+      "sha256": "5e5b31ea64f1d755c9c7947608b182ca9dbc35453cc6aa8b973470493039bc24",
+      "bytes": 5537
     },
     "checks/publish_conformal_gauge.py": {
       "sha256": "01904f1a6f8c428ea1ba874a13da78268f9d5ba6dc972d54811c6acc090d0260",

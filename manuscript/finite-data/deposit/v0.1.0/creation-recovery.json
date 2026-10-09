@@ -19,5 +19,10 @@
     "doi": "10.5281/zenodo.23265067",
     "independent_family": "23265066"
   },
+  "prepublication_file_order_check": {
+    "legacy_sort_endpoint": "PUT /deposit/depositions/23265067/files returned HTTP 405; publication was not submitted",
+    "read_back": "Draft remained unsubmitted, with the PDF already first and source ZIP second; uploaded checksums match",
+    "resolution": "Verify the existing PDF-first order with GET before publication; remove the unsupported sorting call and re-freeze the source archive"
+  },
   "secrets_or_authenticated_response_bodies_retained": false
 }

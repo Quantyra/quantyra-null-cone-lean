@@ -30,16 +30,16 @@ sha, read, save = publication.sha, publication.read, publication.save
 base_authenticated_request = publication.authenticated_request
 
 
-def put_pdf_first(request, record_url, reservation):
-    """Use Zenodo's documented file-order API before irreversible publication."""
+def verify_pdf_first(request, record_url, reservation):
+    """Verify the uploaded PDF is already first before irreversible publication.
+
+    The legacy sort endpoint returned 405 on Zenodo. Upload order already puts
+    this PDF first; verify the actual draft instead of calling that endpoint.
+    """
     draft = request("GET", record_url).json()
     publication.validate_identity(draft, reservation)
-    by_name = {entry["filename"]: entry for entry in draft["files"]}
     names = [publication.STEM + ".pdf", publication.STEM + "-v0.1.0-source.zip"]
-    assert set(by_name) == set(names), "Unexpected publication files"
-    ordered = request("PUT", record_url + "/files",
-                      json=[{"id": by_name[name]["id"]} for name in names]).json()
-    assert [entry["filename"] for entry in ordered] == names
+    assert [entry["filename"] for entry in draft["files"]] == names, "PDF must be first"
 
 
 def authenticated_request():
@@ -50,7 +50,7 @@ def authenticated_request():
             reservation = read(publication.RESERVATION)
             record_url = publication.API + "/deposit/depositions/" + str(reservation["id"])
             assert url == record_url + "/actions/publish"
-            put_pdf_first(request, record_url, reservation)
+            verify_pdf_first(request, record_url, reservation)
         return request(method, url, **kwargs)
     return wrapped
 

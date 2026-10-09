@@ -96,11 +96,13 @@ class PublicationBoundaries(unittest.TestCase):
         archive = {"filename": p.STEM + "-v0.1.0-source.zip", "id": "zip-id"}
         draft = {"id": reservation["id"], "conceptrecid": reservation["conceptrecid"],
                  "metadata": {"title": p.TITLE, "version": "0.1.0", "doi": reservation["doi"]},
-                 "files": [archive, pdf]}
-        request = Mock(side_effect=[Mock(json=lambda: draft), Mock(json=lambda: [pdf, archive])])
-        publish.put_pdf_first(request, p.API + "/deposit/depositions/99999999", reservation)
-        self.assertEqual(request.call_args_list[-1].kwargs["json"],
-                         [{"id": "pdf-id"}, {"id": "zip-id"}])
+                 "files": [pdf, archive]}
+        request = Mock(return_value=Mock(json=lambda: draft))
+        publish.verify_pdf_first(request, p.API + "/deposit/depositions/99999999", reservation)
+        self.assertEqual([call.args[0] for call in request.call_args_list], ["GET"])
+        draft["files"] = [archive, pdf]
+        with self.assertRaisesRegex(AssertionError, "PDF must be first"):
+            publish.verify_pdf_first(request, p.API + "/deposit/depositions/99999999", reservation)
 
 
 if __name__ == "__main__":

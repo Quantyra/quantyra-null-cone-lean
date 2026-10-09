@@ -1,0 +1,7 @@
+{
+  "run": "space-process-coverage-dev10-20261009T234126Z-b76bb2",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.ThinningMixedCoverage",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

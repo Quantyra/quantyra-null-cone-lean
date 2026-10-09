@@ -1604,3 +1604,67 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.retained_subset_law
 #check QuantyraNullCone.detected_count_atom
 #print axioms QuantyraNullCone.detected_count_atom
+
+-- Actual independent generated counts, Poisson law and unconditional physical coverage.
+#check QuantyraNullCone.finite_prefix_measurable
+#print axioms QuantyraNullCone.finite_prefix_measurable
+#check QuantyraNullCone.infinite_iid_prefix_law
+#print axioms QuantyraNullCone.infinite_iid_prefix_law
+#check QuantyraNullCone.generatedStreamLaw_probability
+#print axioms QuantyraNullCone.generatedStreamLaw_probability
+#check QuantyraNullCone.generated_stream_prefix_law
+#print axioms QuantyraNullCone.generated_stream_prefix_law
+#check QuantyraNullCone.stream_retained_count_measurable
+#print axioms QuantyraNullCone.stream_retained_count_measurable
+#check QuantyraNullCone.stream_retained_submeasure_law
+#print axioms QuantyraNullCone.stream_retained_submeasure_law
+#check QuantyraNullCone.nat_product_restriction_map
+#print axioms QuantyraNullCone.nat_product_restriction_map
+#check QuantyraNullCone.randomGeneratedLaw_probability
+#print axioms QuantyraNullCone.randomGeneratedLaw_probability
+#check QuantyraNullCone.mixed_retained_count_measurable
+#print axioms QuantyraNullCone.mixed_retained_count_measurable
+#check QuantyraNullCone.mixed_retained_view_measurable
+#print axioms QuantyraNullCone.mixed_retained_view_measurable
+#check QuantyraNullCone.mixed_retained_submeasure_series
+#print axioms QuantyraNullCone.mixed_retained_submeasure_series
+#check QuantyraNullCone.mixed_retained_count_mass
+#print axioms QuantyraNullCone.mixed_retained_count_mass
+#check QuantyraNullCone.mixed_retained_conditional_law
+#print axioms QuantyraNullCone.mixed_retained_conditional_law
+#check QuantyraNullCone.finite_retained_count_mass
+#print axioms QuantyraNullCone.finite_retained_count_mass
+#check QuantyraNullCone.retention_mean_unit
+#print axioms QuantyraNullCone.retention_mean_unit
+#check QuantyraNullCone.poisson_binomial_term
+#print axioms QuantyraNullCone.poisson_binomial_term
+#check QuantyraNullCone.poisson_binomial_hasSum
+#print axioms QuantyraNullCone.poisson_binomial_hasSum
+#check QuantyraNullCone.poisson_binomial_series
+#print axioms QuantyraNullCone.poisson_binomial_series
+#check QuantyraNullCone.poisson_retained_submeasure_law
+#print axioms QuantyraNullCone.poisson_retained_submeasure_law
+#check QuantyraNullCone.poisson_retained_count_mass
+#print axioms QuantyraNullCone.poisson_retained_count_mass
+#check QuantyraNullCone.poisson_retained_count_law
+#print axioms QuantyraNullCone.poisson_retained_count_law
+#check QuantyraNullCone.measure_eq_sum_nat_fibers
+#print axioms QuantyraNullCone.measure_eq_sum_nat_fibers
+#check QuantyraNullCone.mixed_retained_observable_measurable
+#print axioms QuantyraNullCone.mixed_retained_observable_measurable
+#check QuantyraNullCone.mixed_retained_observable_law
+#print axioms QuantyraNullCone.mixed_retained_observable_law
+#check QuantyraNullCone.poisson_retained_observable_law
+#print axioms QuantyraNullCone.poisson_retained_observable_law
+#check QuantyraNullCone.mixed_retained_count_weights_sum
+#print axioms QuantyraNullCone.mixed_retained_count_weights_sum
+#check QuantyraNullCone.mixed_retained_observable_bound
+#print axioms QuantyraNullCone.mixed_retained_observable_bound
+#check QuantyraNullCone.physical_report_failure_measurable
+#print axioms QuantyraNullCone.physical_report_failure_measurable
+#check QuantyraNullCone.retained_physical_report_failure_bound
+#print axioms QuantyraNullCone.retained_physical_report_failure_bound
+#check QuantyraNullCone.mixed_physical_report_coverage
+#print axioms QuantyraNullCone.mixed_physical_report_coverage
+#check QuantyraNullCone.InDensityClass.mixed_physical_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.mixed_physical_report_coverage

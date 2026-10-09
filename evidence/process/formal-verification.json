@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "run": "space-process-acceptance-20261009T234349Z-57dc8e",
+  "audited_exports": 636,
+  "new_exports_by_module": {
+    "ThinningStream": [
+      "QuantyraNullCone.finite_prefix_measurable",
+      "QuantyraNullCone.infinite_iid_prefix_law",
+      "QuantyraNullCone.generatedStreamLaw_probability",
+      "QuantyraNullCone.generated_stream_prefix_law",
+      "QuantyraNullCone.stream_retained_count_measurable",
+      "QuantyraNullCone.stream_retained_submeasure_law",
+      "QuantyraNullCone.nat_product_restriction_map"
+    ],
+    "ThinningMixture": [
+      "QuantyraNullCone.randomGeneratedLaw_probability",
+      "QuantyraNullCone.mixed_retained_count_measurable",
+      "QuantyraNullCone.mixed_retained_view_measurable",
+      "QuantyraNullCone.mixed_retained_submeasure_series",
+      "QuantyraNullCone.mixed_retained_count_mass",
+      "QuantyraNullCone.mixed_retained_conditional_law"
+    ],
+    "ThinningPoissonMass": [
+      "QuantyraNullCone.finite_retained_count_mass",
+      "QuantyraNullCone.retention_mean_unit",
+      "QuantyraNullCone.poisson_binomial_term",
+      "QuantyraNullCone.poisson_binomial_hasSum",
+      "QuantyraNullCone.poisson_binomial_series"
+    ],
+    "ThinningPoisson": [
+      "QuantyraNullCone.poisson_retained_submeasure_law",
+      "QuantyraNullCone.poisson_retained_count_mass",
+      "QuantyraNullCone.poisson_retained_count_law"
+    ],
+    "ThinningFunctional": [
+      "QuantyraNullCone.measure_eq_sum_nat_fibers",
+      "QuantyraNullCone.mixed_retained_observable_measurable",
+      "QuantyraNullCone.mixed_retained_observable_law",
+      "QuantyraNullCone.poisson_retained_observable_law",
+      "QuantyraNullCone.mixed_retained_count_weights_sum",
+      "QuantyraNullCone.mixed_retained_observable_bound"
+    ],
+    "ThinningMixedCoverage": [
+      "QuantyraNullCone.physical_report_failure_measurable",
+      "QuantyraNullCone.retained_physical_report_failure_bound",
+      "QuantyraNullCone.mixed_physical_report_coverage",
+      "QuantyraNullCone.InDensityClass.mixed_physical_report_coverage"
+    ]
+  },
+  "root_build_jobs": 3070,
+  "accepted_source_count": 167,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "46eeac7a5b995e85a9034f2f9b0be72f273853c5",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "1aa848605c800609c372d4884fd50d42df30c5e44cd48c69ad489e82113d7869",
+    "receipt.json": "1ebce04330d291cf3027731755010c88d4f894eb293a21d9f313c288e4bd1d12",
+    "cleanup.json": "8ae24cb5e59835f7b36b1352a87b210b284c5ab7ec119fb12dd415207b9b35fb",
+    "input-archive.json": "3c242e3416dbe7d5214b187f6bfc72d04ed48b720c2e199f4d7058fb2a3baa7d",
+    "run.sh": "13ea707a546f40caebb5abb8594fde258bdbd3df57f980f04c5302aad57397af",
+    "logs/build.stdout.txt": "b1c44fce24cdc4718f07c4f575104cecd5cb9f3dbc75788b62f0f70adeab6b19",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "7805754067a21439ab4d1ffb83ef38988db459aa2b791df7392079efd4f0bc37",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "sampling until n with almost-sure termination remains S040",
+    "explicit Laplace functional and concrete complete marked-order encoding remain S040",
+    "complete S038 geometric confounding endpoint remains S040",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

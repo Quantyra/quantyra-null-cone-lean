@@ -1,0 +1,68 @@
+1
+inst✝³ : MeasurableSpace Ω
+inst✝² : MeasurableSpace Y
+mu : Measure Ω
+inst✝¹ : IsProbabilityMeasure mu
+q : Measure ℕ
+inst✝ : IsProbabilityMeasure q
+pi : Ω → ℝ
+hpi : Measurable pi
+hInt : Integrable pi mu
+hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1
+hZ : 0 < ∫ (x : Ω), pi x ∂mu
+fallback : Ω
+F : (n : ℕ) → (Fin n → Ω) → Y
+hF : ∀ (n : ℕ), Measurable (F n)
+P : Measure (ℕ × (ℕ → Ω × ℝ)) := randomGeneratedLaw mu q
+hdecomp : P = Measure.sum fun n => P.restrict (mixedRetainedCount pi ⁻¹' {n})
+n : ℕ
+hE : MeasurableSet (mixedRetainedCount pi ⁻¹' {n})
+z : ℕ × (ℕ → Ω × ℝ)
+hz : z ∈ mixedRetainedCount pi ⁻¹' {n}
+hn : mixedRetainedCount pi z = n
+⊢ F (mixedRetainedCount pi z) (mixedRetainedView pi fallback (mixedRetainedCount pi z) z) =
+    F n (mixedRetainedView pi fallback n z)
+error: QuantyraNullCone/ThinningFunctional.lean:67:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (mixedRetainedView pi ?fallback ?n)
+    ((randomGeneratedLaw mu q).restrict {z | mixedRetainedCount pi z = ?n})
+in the target expression
+  Measure.map (F n) (Measure.map (mixedRetainedView pi fallback n) (P.restrict (mixedRetainedCount pi ⁻¹' {n}))) =
+    (randomGeneratedLaw mu q) {z | mixedRetainedCount pi z = n} •
+      Measure.map (F n) (Measure.pi fun x => retainedMeasure mu pi)
+
+Ω : Type u_1
+Y : Type u_2
+inst✝³ : MeasurableSpace Ω
+inst✝² : MeasurableSpace Y
+mu : Measure Ω
+inst✝¹ : IsProbabilityMeasure mu
+q : Measure ℕ
+inst✝ : IsProbabilityMeasure q
+pi : Ω → ℝ
+hpi : Measurable pi
+hInt : Integrable pi mu
+hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1
+hZ : 0 < ∫ (x : Ω), pi x ∂mu
+fallback : Ω
+F : (n : ℕ) → (Fin n → Ω) → Y
+hF : ∀ (n : ℕ), Measurable (F n)
+P : Measure (ℕ × (ℕ → Ω × ℝ)) := randomGeneratedLaw mu q
+hdecomp : P = Measure.sum fun n => P.restrict (mixedRetainedCount pi ⁻¹' {n})
+n : ℕ
+hE : MeasurableSet (mixedRetainedCount pi ⁻¹' {n})
+⊢ Measure.map (F n) (Measure.map (mixedRetainedView pi fallback n) (P.restrict (mixedRetainedCount pi ⁻¹' {n}))) =
+    (randomGeneratedLaw mu q) {z | mixedRetainedCount pi z = n} •
+      Measure.map (F n) (Measure.pi fun x => retainedMeasure mu pi)
+warning: QuantyraNullCone/ThinningFunctional.lean:62:37: This simp argument is unused:
+  hn
+
+Hint: Omit it from the simp argument list.
+  simp [mixedRetainedObservable,̵ ̵h̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/ThinningFunctional.lean:105:37: `mul_le_mul_left'` has been deprecated: Use `mul_le_mul_right` instead
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningFunctional
+error: build failed
+TERMINAL_EXIT=1

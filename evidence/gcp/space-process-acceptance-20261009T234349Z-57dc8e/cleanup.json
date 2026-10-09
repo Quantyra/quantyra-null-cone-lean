@@ -1,0 +1,13 @@
+{
+  "campaign_ownership": {
+    "initial_state": "TERMINATED",
+    "started_for_task": true
+  },
+  "campaign_ownership_run": "space-process-mixture-dev1-20261009T225506Z-725731",
+  "no_other_lean_work": true,
+  "acceptance_collected_before_shutdown": true,
+  "initial_cleanup_state": "RUNNING",
+  "stop_verified": true,
+  "final_state": "TERMINATED",
+  "verified_utc": "2026-10-09T23:49:14.962042+00:00"
+}

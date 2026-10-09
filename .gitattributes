@@ -74,3 +74,5 @@ evidence/thinning/** -text -whitespace
 QuantyraNullCone/Thinning*.lean text eol=lf
 notes/thinning*.md text eol=lf
 notes/physical-volume-calibration-rate.md text eol=lf
+evidence/gcp/space-process-*/** -text -whitespace
+evidence/process/** -text -whitespace

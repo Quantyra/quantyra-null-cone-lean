@@ -1,0 +1,68 @@
+1
+✔ [2953/2956] Built QuantyraNullCone.ThinningPoissonMass (4.2s)
+✔ [2954/2956] Built QuantyraNullCone.ThinningPoisson (2.6s)
+✔ [2955/2956] Built QuantyraNullCone.ThinningFunctional (2.7s)
+✖ [2956/2956] Building QuantyraNullCone.ThinningMixedCoverage (2.5s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/QuantyraNullCone/ThinningMixedCoverage.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/.lake/build/lib/lean/QuantyraNullCone/ThinningMixedCoverage.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/.lake/build/lib/lean/QuantyraNullCone/ThinningMixedCoverage.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/.lake/build/ir/QuantyraNullCone/ThinningMixedCoverage.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev8-20261009T233306Z-6c0d9a/source/.lake/build/ir/QuantyraNullCone/ThinningMixedCoverage.setup.json --json
+error: QuantyraNullCone/ThinningMixedCoverage.lean:45:103: unsolved goals
+case h.e_6.h.h
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+mu : Measure Ω
+inst✝ : IsProbabilityMeasure mu
+pi : Ω → ℝ
+hpi : Measurable pi
+hInt : Integrable pi mu
+a b : ℝ
+ha : 0 < a
+hab : a ≤ b
+hb : b ≤ 1
+hbounds : ∀ (x : Ω), a ≤ pi x ∧ pi x ≤ b
+n : ℕ
+C : Ω → Ω → Prop
+p q : Ω
+hS : MeasurableSet (markedIntervalSet C p q)
+delta : ℚ
+hd : 0 ≤ delta
+L U : Fin (n + 1) → ℚ
+hvalid : BinomialReportValid n delta L U
+this✝ : IsProbabilityMeasure (retainedMeasure mu pi) :=
+  retained_probability_of_channel mu hpi hInt
+    (fun x => ⟨LE.le.trans (LT.lt.le ha) (hbounds x).left, LE.le.trans (hbounds x).right hb⟩)
+    (retention_total_positive mu hInt ha hbounds)
+this : IsProbabilityMeasure (markedIntervalLaw (retainedMeasure mu pi) n C p q) :=
+  Measure.isProbabilityMeasure_map (Measurable.aemeasurable (marked_interval_code_measurable C p q hS))
+h :
+  (markedIntervalLaw (retainedMeasure mu pi) n C p q).real
+      {code |
+        ¬(retentionLower (b / a) ↑(L (boundedBitCount code)) ≤ mu.real (markedIntervalSet C p q) ∧
+            mu.real (markedIntervalSet C p q) ≤ retentionUpper (b / a) ↑(U (boundedBitCount code)))} ≤
+    ↑delta
+sample : Fin n → Ω
+⊢ mu.real (markedIntervalSet C p q) < retentionLower (b / a) ↑(L (boundedBitCount (markedIntervalCode C p q sample))) ∨
+      retentionUpper (b / a) ↑(U (boundedBitCount (markedIntervalCode C p q sample))) <
+        mu.real (markedIntervalSet C p q) ↔
+    retentionLower (b / a) ↑(L (boundedBitCount (markedIntervalCode C p q sample))) ≤
+        mu.real (markedIntervalSet C p q) →
+      retentionUpper (b / a) ↑(U (boundedBitCount (markedIntervalCode C p q sample))) <
+        mu.real (markedIntervalSet C p q)
+error: QuantyraNullCone/ThinningMixedCoverage.lean:53:2: Type mismatch: After simplification, term
+  ENNReal.ofReal_le_ofReal h
+ has type
+  ENNReal.ofReal
+      ((markedIntervalLaw (retainedMeasure mu pi) n C p q).real
+        {code |
+          ¬(retentionLower (b / a) ↑(L (boundedBitCount code)) ≤ mu.real (markedIntervalSet C p q) ∧
+              mu.real (markedIntervalSet C p q) ≤ retentionUpper (b / a) ↑(U (boundedBitCount code)))}) ≤
+    ENNReal.ofReal ↑delta
+but is expected to have type
+  (markedIntervalLaw (retainedMeasure mu pi) n C p q)
+      {code |
+        ¬(retentionLower (b / a) ↑(L (boundedBitCount code)) ≤ mu.real (markedIntervalSet C p q) ∧
+            mu.real (markedIntervalSet C p q) ≤ retentionUpper (b / a) ↑(U (boundedBitCount code)))} ≤
+    ENNReal.ofReal ↑delta
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningMixedCoverage
+error: build failed
+TERMINAL_EXIT=1

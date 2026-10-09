@@ -1,0 +1,2 @@
+Removed archived task development build cache: /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev6-20261009T232428Z-50b82e/source/.lake/build
+Disk: usage(total=206900281344, used=205740138496, free=1143365632)

@@ -1,0 +1,30 @@
+1456 bash /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-mixture-dev1-20261009T225506Z-725731/run.sh
+1458 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-mixture-dev1-20261009T225506Z-725731/logs/runner.stdout.txt
+1459 tee /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-mixture-dev1-20261009T225506Z-725731/logs/runner.stderr.txt
+1508 lake build QuantyraNullCone.ThinningMixture
+1753 /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean/Mathlib/Probability/Kernel/IonescuTulcea/Traj.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean/Mathlib/Probability/Kernel/IonescuTulcea/Traj.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/ir/Mathlib/Probability/Kernel/IonescuTulcea/Traj.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/ir/Mathlib/Probability/Kernel/IonescuTulcea/Traj.setup.json --json
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/Identifiability.lean:91:0: 'QuantyraNullCone.InDensityClass.conformalDistance_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Identifiability.lean:92:0: 'QuantyraNullCone.InDensityClass.all_law_identifiability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2920/2948] Replayed QuantyraNullCone.Exchangeability
+info: QuantyraNullCone/Exchangeability.lean:70:0: 'QuantyraNullCone.InDensityClass.sample_relabel_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:71:0: 'QuantyraNullCone.sampledOrder_strict_partial_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:72:0: 'QuantyraNullCone.InDensityClass.orderLaw_exchangeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:73:0: 'QuantyraNullCone.InDensityClass.orderLaw_singleton_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2921/2948] Replayed QuantyraNullCone.QuotientTV
+info: QuantyraNullCone/QuotientTV.lean:54:0: 'QuantyraNullCone.abs_sum_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/QuotientTV.lean:55:0: 'QuantyraNullCone.finite_map_L1_of_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2932/2948] Built Mathlib.Data.Finset.Pairwise (12s)
+✔ [2933/2948] Built Mathlib.MeasureTheory.Constructions.Projective (13s)
+✔ [2934/2948] Built Mathlib.MeasureTheory.Function.FactorsThrough (13s)
+✔ [2935/2948] Built Mathlib.Probability.Kernel.Integral (13s)
+✔ [2936/2948] Built Mathlib.Probability.Kernel.IonescuTulcea.Maps (14s)
+✔ [2937/2948] Built Mathlib.Probability.Kernel.SetIntegral (2.2s)
+✔ [2938/2948] Built Mathlib.Order.Partition.Finpartition (5.8s)
+✔ [2939/2948] Built Mathlib.Probability.Kernel.IonescuTulcea.PartialTraj (4.3s)
+✔ [2940/2948] Built Mathlib.MeasureTheory.SetSemiring (3.2s)
+✔ [2941/2948] Built Mathlib.MeasureTheory.SetAlgebra (1.8s)
+✔ [2942/2948] Built Mathlib.MeasureTheory.Measure.AddContent (6.5s)
+✔ [2943/2948] Built Mathlib.MeasureTheory.OuterMeasure.OfAddContent (1.0s)
+✔ [2944/2948] Built Mathlib.MeasureTheory.Constructions.ProjectiveFamilyContent (2.1s)

@@ -1,0 +1,28 @@
+1
+✔ [2949/2955] Built Mathlib.Probability.ProbabilityMassFunction.Basic (2.1s)
+✖ [2950/2955] Building QuantyraNullCone.ThinningStream (2.8s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/QuantyraNullCone/ThinningStream.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/.lake/build/lib/lean/QuantyraNullCone/ThinningStream.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/.lake/build/lib/lean/QuantyraNullCone/ThinningStream.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/.lake/build/ir/QuantyraNullCone/ThinningStream.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-poisson-dev2-20261009T230255Z-42aa65/source/.lake/build/ir/QuantyraNullCone/ThinningStream.setup.json --json
+error: QuantyraNullCone/ThinningStream.lean:34:13: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (⇑?m.125 ∘ (Finset.range N).restrict) ?m.118
+in the target expression
+  Measure.map (⇑(MeasurableEquiv.piCongrLeft (fun x => X) e) ∘ (Finset.range N).restrict)
+      (Measure.infinitePi fun x => mu) =
+    Measure.pi fun x => mu
+
+X : Type u_1
+inst✝¹ : MeasurableSpace X
+mu : Measure X
+inst✝ : IsProbabilityMeasure mu
+N : ℕ
+e : ↥(Finset.range N) ≃ Fin N :=
+  { toFun := fun i => ⟨↑i, ⋯⟩, invFun := fun i => ⟨↑i, ⋯⟩, left_inv := ⋯, right_inv := ⋯ }
+hview : finitePrefix N = ⇑(MeasurableEquiv.piCongrLeft (fun x => X) e) ∘ (Finset.range N).restrict
+⊢ Measure.map (⇑(MeasurableEquiv.piCongrLeft (fun x => X) e) ∘ (Finset.range N).restrict)
+      (Measure.infinitePi fun x => mu) =
+    Measure.pi fun x => mu
+error: Lean exited with code 1
+✔ [2952/2955] Built Mathlib.Probability.Distributions.Poisson.Basic (3.7s)
+Some required targets logged failures:
+- QuantyraNullCone.ThinningStream
+error: build failed
+TERMINAL_EXIT=1

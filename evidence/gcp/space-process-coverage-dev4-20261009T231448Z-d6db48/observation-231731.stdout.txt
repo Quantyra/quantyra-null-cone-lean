@@ -1,0 +1,28 @@
+1
+info: QuantyraNullCone/QuotientTV.lean:54:0: 'QuantyraNullCone.abs_sum_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/QuotientTV.lean:55:0: 'QuantyraNullCone.finite_map_L1_of_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2951/2956] Built QuantyraNullCone.ThinningStream (2.8s)
+✔ [2952/2956] Built QuantyraNullCone.ThinningMixture (2.8s)
+✖ [2953/2956] Building QuantyraNullCone.ThinningPoissonMass (23s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/QuantyraNullCone/ThinningPoissonMass.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/.lake/build/lib/lean/QuantyraNullCone/ThinningPoissonMass.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/.lake/build/lib/lean/QuantyraNullCone/ThinningPoissonMass.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/.lake/build/ir/QuantyraNullCone/ThinningPoissonMass.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-process-coverage-dev4-20261009T231448Z-d6db48/source/.lake/build/ir/QuantyraNullCone/ThinningPoissonMass.setup.json --json
+error: QuantyraNullCone/ThinningPoissonMass.lean:28:4: No goals to be solved
+error: QuantyraNullCone/ThinningPoissonMass.lean:30:12: Unknown constant `Set.eq_empty_iff_forall_not_mem.mpr`
+error: QuantyraNullCone/ThinningPoissonMass.lean:31:12: No goals to be solved
+error: QuantyraNullCone/ThinningPoissonMass.lean:60:2: No goals to be solved
+info: QuantyraNullCone/ThinningPoissonMass.lean:78:6: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/ThinningPoissonMass.lean:62:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: QuantyraNullCone/ThinningPoissonMass.lean:86:8: (kernel) unknown constant 'QuantyraNullCone.poisson_binomial_hasSum'
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningPoissonMass
+error: build failed
+TERMINAL_EXIT=1

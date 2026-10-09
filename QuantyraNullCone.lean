@@ -1,3 +1,4 @@
+import QuantyraNullCone.ThinningMixedCoverage
 import QuantyraNullCone.ThinningCoverage
 import QuantyraNullCone.BinomialGeometry
 import QuantyraNullCone.MarkedThinning

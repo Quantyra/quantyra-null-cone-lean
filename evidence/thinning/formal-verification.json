@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "run": "space-thinning-acceptance-20261009T224115Z-70f2d5",
+  "audited_exports": 605,
+  "new_exports_by_module": {
+    "ThinningChannel": [
+      "QuantyraNullCone.retention_event_measurable",
+      "QuantyraNullCone.retention_uniform_cell",
+      "QuantyraNullCone.detected_submeasure",
+      "QuantyraNullCone.detected_event_mass",
+      "QuantyraNullCone.detected_conditional_location",
+      "QuantyraNullCone.retained_probability_of_channel",
+      "QuantyraNullCone.finite_product_conditional",
+      "QuantyraNullCone.finite_product_subset"
+    ],
+    "ThinningCount": [
+      "QuantyraNullCone.finite_fiber_restriction_map",
+      "QuantyraNullCone.finite_fiber_mass_sum",
+      "QuantyraNullCone.restriction_eq_mass_conditional",
+      "QuantyraNullCone.retained_pattern_submeasure_law",
+      "QuantyraNullCone.retained_count_event_measurable",
+      "QuantyraNullCone.retained_count_submeasure_law",
+      "QuantyraNullCone.retained_count_conditional_law"
+    ],
+    "ThinningCoverage": [
+      "QuantyraNullCone.generated_marked_code_measurable",
+      "QuantyraNullCone.generated_retained_marked_law",
+      "QuantyraNullCone.generated_retained_binomial_coverage",
+      "QuantyraNullCone.InDensityClass.generated_retained_binomial_coverage"
+    ],
+    "ThinningSelected": [
+      "QuantyraNullCone.ordered_pattern_view_measurable",
+      "QuantyraNullCone.retained_ordered_view_measurable",
+      "QuantyraNullCone.retention_pattern_fiber",
+      "QuantyraNullCone.ordered_pattern_conditional_law",
+      "QuantyraNullCone.retained_ordered_pattern_law"
+    ],
+    "ThinningSubset": [
+      "QuantyraNullCone.retention_pattern_measurable",
+      "QuantyraNullCone.retained_subset_view_measurable",
+      "QuantyraNullCone.retained_subset_law",
+      "QuantyraNullCone.detected_count_atom"
+    ]
+  },
+  "root_build_jobs": 3047,
+  "accepted_source_count": 160,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "4b3a334f9df5fb30f68fcf437d3dd3059ece7930",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "34b70585360d5f33c86cf36102a5e8d6149e10b9dc2d356f2f21e8f6149051b9",
+    "receipt.json": "e9c84f58a9702be039122f8eb3227a5dc5f86ad4832a32f61bf1052503807914",
+    "cleanup.json": "d514d0c34c91435005715bf3c0e5e61104bd90b9aa34ff4877abe4bcc7cfcc9c",
+    "input-archive.json": "1e926cae0c831b991026648e5ff6bac44dd347571e370445346fbad42b29026d",
+    "run.sh": "0cc2026844255ca5b3ea04c6337a25b9df31ff02384b56e3a6ed6877b23b0705",
+    "logs/build.stdout.txt": "84b900a7d8cdea72007e1d75c0ef5759c8a5877478afd88e0b57ba9973c84f96",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "5bc400359004d472239595bf0ca956d6c3bad523aff6434fb1b514dfd4f085b1",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "independent generated-count mixtures, Poisson process and sampling until n remain S040",
+    "complete S038 geometric confounding endpoint remains S040",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

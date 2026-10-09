@@ -1,0 +1,27 @@
+0
+info: QuantyraNullCone/LogLowerProduct.lean:96:0: 'QuantyraNullCone.log_lower_seed_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3039/3047] Replayed QuantyraNullCone.LogLowerScale
+info: QuantyraNullCone/LogLowerScale.lean:129:0: 'QuantyraNullCone.log_lower_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:130:0: 'QuantyraNullCone.nonneg_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:131:0: 'QuantyraNullCone.log_lower_scale_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:132:0: 'QuantyraNullCone.log_lower_scale_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:133:0: 'QuantyraNullCone.log_lower_scale_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:134:0: 'QuantyraNullCone.log_lower_mesh_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:135:0: 'QuantyraNullCone.log_lower_scale_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:136:0: 'QuantyraNullCone.log_lower_mesh_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:137:0: 'QuantyraNullCone.log_lower_rate_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:138:0: 'QuantyraNullCone.log_lower_target_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3040/3047] Replayed QuantyraNullCone.LogLowerBound
+info: QuantyraNullCone/LogLowerBound.lean:130:0: 'QuantyraNullCone.logarithmic_lower_bound_at_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:131:0: 'QuantyraNullCone.logarithmic_randomized_minimax_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:132:0: 'QuantyraNullCone.logarithmic_uniform_radius_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:133:0: 'QuantyraNullCone.fourth_root_uniform_radius_achievable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:134:0: 'QuantyraNullCone.logarithmic_minimax_radius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3041/3047] Built QuantyraNullCone.ThinningChannel (3.6s)
+✔ [3042/3047] Built QuantyraNullCone.ThinningSubset (3.7s)
+✔ [3043/3047] Built QuantyraNullCone.ThinningSelected (4.9s)
+✔ [3044/3047] Built QuantyraNullCone.ThinningCount (3.8s)
+✔ [3045/3047] Built QuantyraNullCone.ThinningCoverage (3.6s)
+✔ [3046/3047] Built QuantyraNullCone (3.7s)
+Build completed successfully (3047 jobs).
+TERMINAL_EXIT=0

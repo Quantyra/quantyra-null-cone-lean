@@ -1,0 +1,28 @@
+1
+ℹ [2920/2931] Replayed QuantyraNullCone.Exchangeability
+info: QuantyraNullCone/Exchangeability.lean:70:0: 'QuantyraNullCone.InDensityClass.sample_relabel_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:71:0: 'QuantyraNullCone.sampledOrder_strict_partial_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:72:0: 'QuantyraNullCone.InDensityClass.orderLaw_exchangeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/Exchangeability.lean:73:0: 'QuantyraNullCone.InDensityClass.orderLaw_singleton_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2921/2931] Replayed QuantyraNullCone.QuotientTV
+info: QuantyraNullCone/QuotientTV.lean:54:0: 'QuantyraNullCone.abs_sum_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/QuotientTV.lean:55:0: 'QuantyraNullCone.finite_map_L1_of_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2927/2931] Built QuantyraNullCone.ThinningChannel (3.7s)
+✔ [2928/2931] Built QuantyraNullCone.ThinningSubset (3.9s)
+✔ [2929/2931] Built QuantyraNullCone.ThinningSelected (5.3s)
+✔ [2930/2931] Built QuantyraNullCone.ThinningCount (3.8s)
+✖ [2931/2931] Building QuantyraNullCone.ThinningCoverage (3.5s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/QuantyraNullCone/ThinningCoverage.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/.lake/build/lib/lean/QuantyraNullCone/ThinningCoverage.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/.lake/build/lib/lean/QuantyraNullCone/ThinningCoverage.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/.lake/build/ir/QuantyraNullCone/ThinningCoverage.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-thinning-coverage-dev9-20261009T223745Z-f7f244/source/.lake/build/ir/QuantyraNullCone/ThinningCoverage.setup.json --json
+error: QuantyraNullCone/ThinningCoverage.lean:86:49: Application type mismatch: The argument
+  densityMeasure rho
+has type
+  Measure DiamondPoint
+of sort `Type` but is expected to have type
+  InDensityClass ?m.132
+of sort `Prop` in the application
+  @generated_retained_binomial_coverage ?m.132 (densityMeasure rho)
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningCoverage
+error: build failed
+TERMINAL_EXIT=1

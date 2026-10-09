@@ -1,0 +1,6 @@
+{
+  "status": "not_launched",
+  "reason": "boot-time SSH preflight disconnected before upload",
+  "exact_workspace_absent": true,
+  "replacement": "fresh snapshot includes subset law"
+}

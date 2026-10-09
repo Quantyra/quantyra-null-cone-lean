@@ -1546,3 +1546,61 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.binomial_lower_tail_antitone
 #check QuantyraNullCone.marked_count_eq_binomial
 #print axioms QuantyraNullCone.marked_count_eq_binomial
+
+-- Actual independent detection and retained-count coverage.
+#check QuantyraNullCone.retention_event_measurable
+#print axioms QuantyraNullCone.retention_event_measurable
+#check QuantyraNullCone.retention_uniform_cell
+#print axioms QuantyraNullCone.retention_uniform_cell
+#check QuantyraNullCone.detected_submeasure
+#print axioms QuantyraNullCone.detected_submeasure
+#check QuantyraNullCone.detected_event_mass
+#print axioms QuantyraNullCone.detected_event_mass
+#check QuantyraNullCone.detected_conditional_location
+#print axioms QuantyraNullCone.detected_conditional_location
+#check QuantyraNullCone.retained_probability_of_channel
+#print axioms QuantyraNullCone.retained_probability_of_channel
+#check QuantyraNullCone.finite_product_conditional
+#print axioms QuantyraNullCone.finite_product_conditional
+#check QuantyraNullCone.finite_product_subset
+#print axioms QuantyraNullCone.finite_product_subset
+#check QuantyraNullCone.finite_fiber_restriction_map
+#print axioms QuantyraNullCone.finite_fiber_restriction_map
+#check QuantyraNullCone.finite_fiber_mass_sum
+#print axioms QuantyraNullCone.finite_fiber_mass_sum
+#check QuantyraNullCone.restriction_eq_mass_conditional
+#print axioms QuantyraNullCone.restriction_eq_mass_conditional
+#check QuantyraNullCone.retained_pattern_submeasure_law
+#print axioms QuantyraNullCone.retained_pattern_submeasure_law
+#check QuantyraNullCone.retained_count_event_measurable
+#print axioms QuantyraNullCone.retained_count_event_measurable
+#check QuantyraNullCone.retained_count_submeasure_law
+#print axioms QuantyraNullCone.retained_count_submeasure_law
+#check QuantyraNullCone.retained_count_conditional_law
+#print axioms QuantyraNullCone.retained_count_conditional_law
+#check QuantyraNullCone.generated_marked_code_measurable
+#print axioms QuantyraNullCone.generated_marked_code_measurable
+#check QuantyraNullCone.generated_retained_marked_law
+#print axioms QuantyraNullCone.generated_retained_marked_law
+#check QuantyraNullCone.generated_retained_binomial_coverage
+#print axioms QuantyraNullCone.generated_retained_binomial_coverage
+#check QuantyraNullCone.InDensityClass.generated_retained_binomial_coverage
+#print axioms QuantyraNullCone.InDensityClass.generated_retained_binomial_coverage
+#check QuantyraNullCone.ordered_pattern_view_measurable
+#print axioms QuantyraNullCone.ordered_pattern_view_measurable
+#check QuantyraNullCone.retained_ordered_view_measurable
+#print axioms QuantyraNullCone.retained_ordered_view_measurable
+#check QuantyraNullCone.retention_pattern_fiber
+#print axioms QuantyraNullCone.retention_pattern_fiber
+#check QuantyraNullCone.ordered_pattern_conditional_law
+#print axioms QuantyraNullCone.ordered_pattern_conditional_law
+#check QuantyraNullCone.retained_ordered_pattern_law
+#print axioms QuantyraNullCone.retained_ordered_pattern_law
+#check QuantyraNullCone.retention_pattern_measurable
+#print axioms QuantyraNullCone.retention_pattern_measurable
+#check QuantyraNullCone.retained_subset_view_measurable
+#print axioms QuantyraNullCone.retained_subset_view_measurable
+#check QuantyraNullCone.retained_subset_law
+#print axioms QuantyraNullCone.retained_subset_law
+#check QuantyraNullCone.detected_count_atom
+#print axioms QuantyraNullCone.detected_count_atom

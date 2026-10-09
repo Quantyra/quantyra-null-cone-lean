@@ -1,0 +1,28 @@
+1
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/ThinningChannel.lean:78:36: failed to synthesize instance of type class
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/ThinningChannel.lean:78:6: Identifier <missing> not found
+error: QuantyraNullCone/ThinningChannel.lean:113:83: unsolved goals
+case h.e'_3.h.e_3.h
+ι : Type u_1
+Ω : Type u_2
+inst✝² : Fintype ι
+inst✝¹ : MeasurableSpace Ω
+mu : ι → Measure Ω
+inst✝ : ∀ (i : ι), IsProbabilityMeasure (mu i)
+I : Finset ι
+h :
+  Measure.map (Prod.fst ∘ ⇑(MeasurableEquiv.piEquivPiSubtypeProd (fun i => Ω) fun i => i ∈ I)) (Measure.pi mu) =
+    Measure.pi fun i => mu ↑i
+⊢ Finset.Subtype.fintype I = Subtype.fintype fun i => i ∈ I
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningChannel
+error: build failed
+TERMINAL_EXIT=1

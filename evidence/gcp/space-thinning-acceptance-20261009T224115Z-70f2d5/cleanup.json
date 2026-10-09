@@ -1,0 +1,13 @@
+{
+  "campaign_ownership": {
+    "initial_state": "TERMINATED",
+    "started_for_task": true
+  },
+  "campaign_ownership_run": "space-thinning-channel-dev1-20261009T215955Z-ac8acc",
+  "no_other_lean_work": true,
+  "acceptance_collected_before_shutdown": true,
+  "initial_cleanup_state": "RUNNING",
+  "stop_verified": true,
+  "final_state": "TERMINATED",
+  "verified_utc": "2026-10-09T22:47:34.854563+00:00"
+}

@@ -1,0 +1,28 @@
+1
+error: QuantyraNullCone/ThinningChannel.lean:71:31: unsolved goals
+Ω : Type u_1
+inst✝ : MeasurableSpace Ω
+mu : Measure Ω
+pi : Ω → ℝ
+hpi : Measurable pi
+hInt : Integrable pi mu
+hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1
+hZ : 0 < ∫ (x : Ω), pi x ∂mu
+⊢ ((ENNReal.ofReal (∫ (x : Ω), pi x ∂mu))⁻¹ • mu.withDensity fun x => ENNReal.ofReal (pi x)) = retainedMeasure mu pi
+error: QuantyraNullCone/ThinningChannel.lean:101:4: Application type mismatch: The argument
+  measurePreserving_piEquivPiSubtypeProd mu fun i => i ∈ I
+has type
+  MeasurePreserving (⇑(MeasurableEquiv.piEquivPiSubtypeProd (fun i => Ω) fun i => i ∈ I)) (Measure.pi mu)
+    ((@Measure.pi (↥I) (fun i => Ω) (Subtype.fintype fun i => i ∈ I) (fun i => inst✝¹) fun i => mu ↑i).prod
+      (Measure.pi fun i => mu ↑i))
+but is expected to have type
+  MeasurePreserving ?m.60 ?m.77
+    ((@Measure.pi (↥I) (fun i => Ω) (Finset.Subtype.fintype I) (fun i => inst✝¹) fun i => mu ↑i).prod
+      (Measure.pi fun i => mu ↑i))
+in the application
+  MeasurePreserving.comp measurePreserving_fst (measurePreserving_piEquivPiSubtypeProd mu fun i => i ∈ I)
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningChannel
+error: build failed
+TERMINAL_EXIT=1

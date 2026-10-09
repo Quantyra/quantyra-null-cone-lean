@@ -68,3 +68,9 @@ evidence/gcp/space-binomial-*/** -text -whitespace
 evidence/binomial/** -text -whitespace
 QuantyraNullCone/Binomial*.lean text eol=lf
 notes/binomial*.md text eol=lf
+
+evidence/gcp/space-thinning-*/** -text -whitespace
+evidence/thinning/** -text -whitespace
+QuantyraNullCone/Thinning*.lean text eol=lf
+notes/thinning*.md text eol=lf
+notes/physical-volume-calibration-rate.md text eol=lf

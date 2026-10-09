@@ -1,0 +1,28 @@
+1
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+mu : Measure Ω
+inst✝ : IsProbabilityMeasure mu
+pi : Ω → ℝ
+hpi : Measurable pi
+hInt : Integrable pi mu
+hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1
+hZ : 0 < ∫ (x : Ω), pi x ∂mu
+N : ℕ
+I : Finset (Fin N)
+hc : (Measure.pi fun x => mu.prod uniform01Measure) (retentionPattern pi I) ≠ 0
+P : Measure (Ω × ℝ) := mu.prod uniform01Measure
+cells : Fin N → Set (Ω × ℝ) := fun i => if i ∈ I then retentionEvent pi else (retentionEvent pi)ᶜ
+hcells : ∀ (i : Fin N), MeasurableSet (cells i)
+hprod : ∏ i, P (cells i) ≠ 0
+hpos : ∀ (i : Fin N), P (cells i) ≠ 0
+Q : Fin N → Measure (Ω × ℝ) := fun i => P[|cells i]
+this : ∀ (i : Fin N), IsProbabilityMeasure (Q i) := fun i => ProbabilityTheory.cond_isProbabilityMeasure (hpos i)
+hconditional : (Measure.pi fun x => P)[|retentionPattern pi I] = Measure.pi Q
+⊢ Measure.map (retainedSubsetView I) (Measure.pi Q) =
+    Measure.map (fun sample i => (sample i).1) (Measure.map (fun sample i => sample ↑i) (Measure.pi Q))
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ThinningSubset
+error: build failed
+TERMINAL_EXIT=1

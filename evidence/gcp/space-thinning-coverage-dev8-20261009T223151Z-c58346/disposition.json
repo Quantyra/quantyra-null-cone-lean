@@ -1,0 +1,9 @@
+{
+  "status": "infrastructure_failure_before_Lean",
+  "cache_copy_exhausted_remote_disk": true,
+  "lean_build_started": false,
+  "terminal_exit_code_unavailable": true,
+  "empty_exit_marker_preserved": true,
+  "finished_timestamp_unavailable": true,
+  "raw_evidence_collected": true
+}

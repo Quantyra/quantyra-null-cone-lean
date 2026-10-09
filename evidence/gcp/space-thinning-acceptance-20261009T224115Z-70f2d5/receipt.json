@@ -1,0 +1,11 @@
+{
+  "run": "space-thinning-acceptance-20261009T224115Z-70f2d5",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone",
+  "acceptance": true,
+  "audited_exports": 605,
+  "owned_warnings": 0,
+  "dependency_identities_before_and_after": true,
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

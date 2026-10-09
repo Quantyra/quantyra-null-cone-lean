@@ -1,3 +1,4 @@
+import QuantyraNullCone.ThinningCoverage
 import QuantyraNullCone.BinomialGeometry
 import QuantyraNullCone.MarkedThinning
 import QuantyraNullCone.MarkedVolume

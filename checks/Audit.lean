@@ -2000,3 +2000,29 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.zero_sample_marked_law_equal
 #check QuantyraNullCone.no_data_physical_volume_obstruction
 #print axioms QuantyraNullCone.no_data_physical_volume_obstruction
+
+-- Actual 2+1 iid exchangeability and exact finite labeling bridge.
+#check QuantyraNullCone.relabelSample3_apply
+#print axioms QuantyraNullCone.relabelSample3_apply
+#check QuantyraNullCone.sampledOrder3_relabel
+#print axioms QuantyraNullCone.sampledOrder3_relabel
+#check QuantyraNullCone.sample_relabel_preserving3
+#print axioms QuantyraNullCone.sample_relabel_preserving3
+#check QuantyraNullCone.orderLaw3_exchangeable
+#print axioms QuantyraNullCone.orderLaw3_exchangeable
+#check QuantyraNullCone.orderLaw3_singleton_relabel
+#print axioms QuantyraNullCone.orderLaw3_singleton_relabel
+#check QuantyraNullCone.orderLaw3_fiber_constant
+#print axioms QuantyraNullCone.orderLaw3_fiber_constant
+#check QuantyraNullCone.orderLaw3_finite
+#print axioms QuantyraNullCone.orderLaw3_finite
+#check QuantyraNullCone.unlabeledOrderLawTV3_eq
+#print axioms QuantyraNullCone.unlabeledOrderLawTV3_eq
+#check QuantyraNullCone.finite_measure_eq_of_L1_zero
+#print axioms QuantyraNullCone.finite_measure_eq_of_L1_zero
+#check QuantyraNullCone.unlabeledOrderLaw3_eq_iff
+#print axioms QuantyraNullCone.unlabeledOrderLaw3_eq_iff
+#check QuantyraNullCone.InDensityClass3.unlabeledOrderLawTV_eq
+#print axioms QuantyraNullCone.InDensityClass3.unlabeledOrderLawTV_eq
+#check QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff
+#print axioms QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff

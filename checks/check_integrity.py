@@ -26,7 +26,19 @@ for report in reports:
     names = {name.strip() for name in report.split(",") if name.strip()}
     if not names <= ALLOWED:
         sys.exit(f"Unexpected theorem dependencies: {sorted(names - ALLOWED)}")
-for name in ('lower_flat_sample',
+for name in ('relabelSample3_apply',
+             'sampledOrder3_relabel',
+             'sample_relabel_preserving3',
+             'orderLaw3_exchangeable',
+             'orderLaw3_singleton_relabel',
+             'orderLaw3_fiber_constant',
+             'orderLaw3_finite',
+             'unlabeledOrderLawTV3_eq',
+             'finite_measure_eq_of_L1_zero',
+             'unlabeledOrderLaw3_eq_iff',
+             'InDensityClass3.unlabeledOrderLawTV_eq',
+             'InDensityClass3.unlabeledOrderLaw_eq_iff',
+             'lower_flat_sample',
              'lower_likelihood_nonneg',
              'lower_likelihood_integrable',
              'lower_sample_withDensity',

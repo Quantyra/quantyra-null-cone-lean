@@ -1,0 +1,30 @@
+{
+  "id": "S049-balanced-volume-auxiliary-comparison-v1",
+  "date": "2026-10-10",
+  "design": "Secondary comparison using every preserved pilot sample; candidate outcomes already known. No candidate or data tuning. Freeze and push this protocol and implementation before evaluating comparator decisions.",
+  "input_commit": "a348962b9bbd0f1232742223a4bb34650c59d24c",
+  "input_results_sha256": "7b396b59bdf605c0fdf6fcfbc9be9ea042657fdbec72ca9892c09c16b75f7578",
+  "source": "Tudball et al., Biometrika 110 (2023), 485-498, DOI 10.1093/biomet/asac042; main equations (8)-(9), Remarks 1-2; published supplement section 4.2 equation (4)",
+  "source_pdf_sha256": "64a67865d6aa425801f893815cb1e36f47b8c3c4e06dd8fa0d629d74a56a750c",
+  "source_supplement_sha256": "f974c3ff561fb023212132461ca48c30a90d3cfe19cb2ad8febfa19cb24bb516",
+  "author_code_commit": "e0003fa14c6ebb4a2c74106b666439c3bc5cfa73",
+  "target_representations": {"past": [1, 0, 0], "future": [0, 1, 0], "pooled": [0.5, 0.5, 0]},
+  "allocations": {
+    "paper_remark": {"constraint_failure": 0.0125, "objective_tail": 0.0125},
+    "shared_default": {"constraint_failure": 0.025, "objective_tail": 0.0125},
+    "shared_01": {"constraint_failure": 0.01, "objective_tail": 0.02},
+    "shared_04": {"constraint_failure": 0.04, "objective_tail": 0.005}
+  },
+  "allocation_explanation": "Paper Remark 2 with alpha1=alpha2=.025 requests constraint failure alpha1/2=.0125. Author R code uses z_(1-alpha/4) for both a single two-sided constraint and an objective tail, corresponding to shared_default. The same constraint event can be counted once for the two target tails. Fixed sensitivity allocations are separate comparators; never combine their decisions without adjustment.",
+  "variance": "Categorical plug-in second moment minus squared mean, as in supplement equation (4), dividing by n. Author regression R implementation uses unbiased sample variance; it is not a categorical package call.",
+  "optimizer": "Global analytic extrema of Q over the relaxed balance set and [1,R]^3. Compute standard error at that optimizer afterward; do not optimize Q plus or minus standard error.",
+  "empty_set": "Return unresolved and record emptiness separately; also report flag-on-empty sensitivity, taking the more powerful convention for the feasibility comparison. Neither convention is falsely attributed to a successful package call.",
+  "zero_counts": "Return unresolved on zero category or n<2 and report guard frequency; finite multinomial law audit bounds omitted probability. No pilot count is silently discarded.",
+  "decision": "Flag when the computed interval is strictly disjoint from the nominated tolerance band; otherwise unresolved. Same n,R, full marked order and known generated balance; no true detector pattern supplied.",
+  "validity": "Source procedure is asymptotic under regularity conditions. Boundary empty-set and constraint qualification issues must be reported. This study cannot upgrade it to a uniform finite guarantee or declare strongest-method superiority.",
+  "evaluation": "All 128 saved strata, 256 decision rows, all 12 allocation/representation comparators. Report null diagnostics, empty frequencies, both empty conventions, paired differences, and all failures.",
+  "feasibility_gate": "Candidate lower 99% CP power >=.8 and paired family-adjusted Hoeffding improvement >=.1 over every auxiliary comparator under either empty convention, as well as all three original comparators, in at least one biased alternative stratum. This is a secondary screen, not a new confirmatory experiment.",
+  "independent_checks": ["scalar root-finding against analytic ratio interval", "independent SLSQP objective optimization at controlled strictly feasible problems", "symmetry and exact R=1 objective limits", "direct finite-law probabilities for original three passing settings", "hash verification and replay of saved counts"],
+  "next_gate": "If the gain survives, evaluate an exact joint multinomial comparator before closing the best-existing-method requirement; physical observation and calibration remain mandatory.",
+  "scope": "No change to original protocol, counts, results, manuscripts or published artifacts. No Lean run. No physical evidence claimed. Goal remains active."
+}

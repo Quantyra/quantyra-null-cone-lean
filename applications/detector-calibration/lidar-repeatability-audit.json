@@ -1,0 +1,44 @@
+{
+  "result_sha256": "30071b482cff23c01f0f98f3a5904def126525c471bbe82e207105487b5e914b",
+  "audit_executable_sha256": "ce9ffd3ba4dd1ab8fbfef1b199ac0e103f435bc5da7e9678492a543583f536d3",
+  "status": "pass",
+  "scalar_values_checked": 1948,
+  "max_independent_metric_difference": 4.227729277772596e-13,
+  "fit_count": 1600,
+  "successful_fit_count": 1595,
+  "profile_fits_on_bounds": 0,
+  "max_normalized_score": 0.00026018232743616024,
+  "max_gradient_difference": 3.05447741122259e-08,
+  "max_start_delay_span_ns": 7.784339839789212e-05,
+  "comparisons": [
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "best_comparator": "native_joint",
+      "history_fractional_msr_reduction": -0.038602814402923125,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_unsubtracted",
+      "best_comparator": "native_joint",
+      "history_fractional_msr_reduction": -0.038676324268558826,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_min_subtracted",
+      "best_comparator": "guarded",
+      "history_fractional_msr_reduction": -0.06742264095875017,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "best_comparator": "guarded",
+      "history_fractional_msr_reduction": -0.06827029714829025,
+      "development_gate_pass": false
+    }
+  ],
+  "physical_accuracy_validated": false
+}

@@ -1,5 +1,7 @@
 # Manuscript portfolio after certification
 
+S046 disposition, 2026-10-09: [a separate methods/theory manuscript is warranted](physical-volume-manuscript-decision.md) for marked physical volume under bounded detection, combining S040/S041/S046. The [source comparison](physical-volume-selection-comparison.md) includes the purchased Aronow–Lee article and complete supplement. Proposed S048 covers later manuscript preparation; no fourth draft or publication has been created. The portfolio still contains three published manuscript families.
+
 2026-10-08, S026 portfolio decision, updated through S045 publication of the optimal-rate revision. Both the reconstruction paper and the separate 2+1 manuscript are published in independent Zenodo families. The finite-data feasibility study is complete. Full fourth-root certification has GCP acceptance: upper guarantee, actual-law corollary and full randomized lower bound. [S033 reassessment](finite-data-manuscript-decision.md) is complete: a separate theory paper is warranted, with a concrete claim/proof scope and [refreshed literature comparison](finite-data-manuscript-literature-refresh.md). S035 publishes the separate [12-page finite-data theory paper](https://zenodo.org/records/23265067/files/finite-sample-order-density.pdf?download=1), version 0.1.0, at [10.5281/zenodo.23265067](https://doi.org/10.5281/zenodo.23265067); [publication verification](../manuscript/finite-data/PUBLICATION.md).
 
 | Work | Decision | Reason and boundary |

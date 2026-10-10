@@ -1,0 +1,2 @@
+# Preserve third-party source bytes so published checksums survive checkout.
+vendor/18662495/* -text

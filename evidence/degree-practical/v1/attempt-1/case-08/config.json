@@ -1,0 +1,17 @@
+{
+  "name": "asymmetric_positive",
+  "family": "asymmetric",
+  "coefficient": "1/4",
+  "n": 512,
+  "grid": 8,
+  "admitted": true,
+  "replicate": 0,
+  "seed": [
+    39041010,
+    0,
+    0,
+    4,
+    0
+  ],
+  "metamorphic": false
+}

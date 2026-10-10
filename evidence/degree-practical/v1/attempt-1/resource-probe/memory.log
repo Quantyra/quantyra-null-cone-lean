@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; assert sys.stdin.buffer.read(1)==b"G"; a=bytearray(256*1024**2); print(len(a))
+                                                         ~~~~~~~~~^^^^^^^^^^^^^
+MemoryError

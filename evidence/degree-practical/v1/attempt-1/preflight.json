@@ -1,0 +1,40 @@
+{
+  "class_audit": {
+    "fgm": {
+      "maximum_abs_coefficient": "1/2",
+      "gradient_squared_upper": "2",
+      "zero_integrals": true,
+      "density_range_within_K": true
+    },
+    "asymmetric": {
+      "maximum_abs_coefficient": "1/4",
+      "gradient_squared_upper": "5/2",
+      "zero_integrals": true,
+      "density_range_within_K": true
+    },
+    "boundary8": {
+      "maximum_abs_coefficient": "1/8",
+      "gradient_squared_upper": "2",
+      "zero_integrals": true,
+      "density_range_within_K": true
+    },
+    "legendre4": {
+      "maximum_abs_coefficient": "1/16",
+      "gradient_squared_upper": "25/8",
+      "zero_integrals": true,
+      "density_range_within_K": true
+    }
+  },
+  "confirmation_power": {
+    "n": 128,
+    "failure_rejection_threshold": 13,
+    "nominal_coverage": "19/20",
+    "per_stratum_size_budget": "1/40",
+    "actual_test_size": "16423191022997656727197971674560739022168127771380096739873336643106304536440934302141687774610163931207962567822212879834278893741455377832520827432631578871450663/1361129467683753853853498429727072845824000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "power_at_coverage_17_over_20": "1303158880137968891609352198825905611671518181825623832621860588364425873527145872823775081207128767915338901814324970921797253721092680128749355660582257085579359783/1361129467683753853853498429727072845824000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "confirmation_samples_generated": 0
+  },
+  "supported_sizes_audited": 4095,
+  "occupancy_feasible_mesh_cases": 172767,
+  "control_tests": "tools/test_degree_density.py; run and retain below"
+}

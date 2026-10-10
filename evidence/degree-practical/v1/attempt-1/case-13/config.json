@@ -1,0 +1,17 @@
+{
+  "name": "oscillatory",
+  "family": "legendre4",
+  "coefficient": "1/16",
+  "n": 512,
+  "grid": 8,
+  "admitted": true,
+  "replicate": 1,
+  "seed": [
+    39041010,
+    0,
+    0,
+    6,
+    1
+  ],
+  "metamorphic": false
+}

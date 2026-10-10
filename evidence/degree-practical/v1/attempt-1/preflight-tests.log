@@ -1,0 +1,11 @@
+test_all_supported_constants_and_retained_shell_budgets (test_degree_density.DegreeDensityTests.test_all_supported_constants_and_retained_shell_budgets) ... ok
+test_baseline_interface_on_fixed_order (test_degree_density.DegreeDensityTests.test_baseline_interface_on_fixed_order) ... ok
+test_invalid_inputs (test_degree_density.DegreeDensityTests.test_invalid_inputs) ... ok
+test_polynomial_extrema_and_global_orientation (test_degree_density.DegreeDensityTests.test_polynomial_extrema_and_global_orientation) ... ok
+test_report_corruptions (test_degree_density.DegreeDensityTests.test_report_corruptions) ... ok
+test_small_orders_and_relabeling (test_degree_density.DegreeDensityTests.test_small_orders_and_relabeling) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.178s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "name": "flat",
+  "family": "fgm",
+  "coefficient": "0",
+  "n": 512,
+  "grid": 8,
+  "admitted": true,
+  "replicate": 1,
+  "seed": [
+    39041010,
+    0,
+    0,
+    0,
+    1
+  ],
+  "metamorphic": false
+}

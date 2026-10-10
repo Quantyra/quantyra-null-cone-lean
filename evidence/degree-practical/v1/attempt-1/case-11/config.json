@@ -1,0 +1,17 @@
+{
+  "name": "boundary_localized",
+  "family": "boundary8",
+  "coefficient": "1/8",
+  "n": 512,
+  "grid": 8,
+  "admitted": true,
+  "replicate": 1,
+  "seed": [
+    39041010,
+    0,
+    0,
+    5,
+    1
+  ],
+  "metamorphic": false
+}

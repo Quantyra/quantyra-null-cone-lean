@@ -1,0 +1,6 @@
+{
+  "type": "AssertionError",
+  "error": "('case-14', {'outcome': 'timeout', 'exit_code': 125, 'wall_seconds': 600.395130500001, 'process_tree_peak_rss_bytes': 1772720128, 'peak_job_committed_bytes': 1766547456, 'rss_limit_bytes': 4294967296, 'committed_limit_bytes': 4294967296, 'wall_limit_seconds': 600, 'active_process_limit': 1, 'poll_seconds': 0.01, 'log': 'worker.log'})",
+  "completed_cases": 14,
+  "elapsed_seconds": 919.0040324000001
+}

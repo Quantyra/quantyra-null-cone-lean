@@ -6,4 +6,6 @@ Current checkpoint: **the first screen is complete and negative for improvement*
 
 `derivation.md` gives the ordinary renewal argument. `SOURCES.md` records applicable prior work and the limits of the available physical evidence. Code and numerical checks here are not Lean-certified. Every future Lean invocation remains GCP-only and is contingent on useful mathematics and comparative value.
 
-Remaining to-do list: screen finite calibration uncertainty and time-resolved inference against established methods, demonstrate a distinct decision improvement, and validate the surviving method with adequate physical evidence.
+Continuation: the [source screen](../balanced-volume/source-screen.md) identifies stronger established timing methods and redirects the next bounded comparison to observable balance in the original model. The [balanced-volume checkpoint](../balanced-volume/README.md) now records a positive finite pilot against three implemented comparators; a stronger auxiliary-constrained comparison and physical validation remain open. This detector screen stays frozen.
+
+Remaining to-do list: complete the strongest balanced-volume comparison and validate any surviving decision procedure physically.

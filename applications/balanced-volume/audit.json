@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "results_sha256": "7b396b59bdf605c0fdf6fcfbc9be9ea042657fdbec72ca9892c09c16b75f7578",
+  "replayed_decision_rows": 256,
+  "independent_small_count_cases": 11176,
+  "order_observation_controls": 12,
+  "confirmations": [
+    {
+      "sample_key": "s040",
+      "v": 0.25,
+      "R": 1.25,
+      "detector": "future_low",
+      "n": 1024,
+      "nominal": 0.3125,
+      "probabilities": {
+        "past_only": 8.244560344048794e-05,
+        "pooled": 0.5610756595188644,
+        "balanced_marginal": 0.43956732191551073,
+        "balanced_conditional": 0.818778836037233
+      },
+      "sum_probability": 0.9999999999999831,
+      "omitted_marginal_mass": 1.6762600046326732e-14,
+      "numerical_comparison_pad": 1.0001676260004633e-10,
+      "enumerated_states": 161465,
+      "status": "direct finite-law floating-point calculation, not exact rational or formal certification"
+    },
+    {
+      "sample_key": "s053",
+      "v": 0.25,
+      "R": 2.0,
+      "detector": "past_low",
+      "n": 2048,
+      "nominal": 0.3125,
+      "probabilities": {
+        "past_only": 0.7361484131061395,
+        "pooled": 3.255453146126084e-08,
+        "balanced_marginal": 0.624756035062976,
+        "balanced_conditional": 0.9563146123624887
+      },
+      "sum_probability": 0.9999999999999812,
+      "omitted_marginal_mass": 1.6856670390551977e-14,
+      "numerical_comparison_pad": 1.0001685667039056e-10,
+      "enumerated_states": 423379,
+      "status": "direct finite-law floating-point calculation, not exact rational or formal certification"
+    },
+    {
+      "sample_key": "s057",
+      "v": 0.25,
+      "R": 2.0,
+      "detector": "future_low",
+      "n": 2048,
+      "nominal": 0.3125,
+      "probabilities": {
+        "past_only": 0.0,
+        "pooled": 3.2554527272818626e-08,
+        "balanced_marginal": 0.6247560350629751,
+        "balanced_conditional": 0.9563146123624819
+      },
+      "sum_probability": 0.9999999999999836,
+      "omitted_marginal_mass": 1.6403702825826758e-14,
+      "numerical_comparison_pad": 1.0001640370282583e-10,
+      "enumerated_states": 456980,
+      "status": "direct finite-law floating-point calculation, not exact rational or formal certification"
+    }
+  ],
+  "seconds": 35.393300399999134,
+  "goal_complete": false
+}

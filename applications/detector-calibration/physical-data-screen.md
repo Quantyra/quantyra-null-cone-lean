@@ -496,15 +496,71 @@ hash-checked before import. No final-reserve outcomes, Lean/Lake invocation,
 new hardware or publication occurred. This milestone closes the proposed
 recovery-rate correction's development gate negatively, not the full goal.
 
+## Pulse-history diagnostic after freeing signal/background proportions
+
+The [history protocol](lidar-history-protocol.json) and executable were frozen
+at `72b782974c8ef5066ec34f421dce7e67dae42a46`. The first invocation stopped
+at a provenance check, before loading measurement data: the older source
+manifest has CRLF working bytes and an LF Git blob. The loader revision
+`be1b2945e022e0381460f1c51f08c62c58a07f26` accepts only that manifest's
+line-ending normalization, records both hashes, and preserves byte equality
+for the executable and result dependencies. It was pushed before fitting.
+
+The same native-bin exposure construction now uses seven fixed age cells,
+with separate signal and background amplitudes in each. Compare a common
+pulse delay against two delays, below and above 205 ns. This separates the
+earlier multiplicative model's shared signal/background ratio constraint
+from a shared pulse-location constraint. It cannot distinguish actual latency
+changes from other pulse-shape or observation-model errors.
+
+| Pulse / half | Common-delay shift from native hard (mm) | Early minus mature delay equivalent (mm) | Two-delay fitted log-score gain |
+| --- | ---: | ---: | ---: |
+| Subtract minimum / first | -0.044745 | 2.603551 | 108.139752 |
+| Subtract minimum / second | -0.054265 | 2.506523 | 101.891729 |
+| Keep baseline / first | -0.044622 | 2.607404 | 108.142013 |
+| Keep baseline / second | -0.054099 | 2.506465 | 101.597959 |
+
+Freeing proportions alone leaves the common delay **0.517--0.556 mm** from
+the prior guarded fit. The early/mature timing contrast is approximately
+**16.7--17.4 ps**, or **2.51--2.61 mm** in range-equivalent units. The first-half
+two-delay fit also beats the common-delay fit optimized directly on the
+second half by **82.0472** and **81.7164** log units for the two pulse choices.
+The declared development lead gate passes. Both halves were already used in
+development: these are retrospective predictive diagnostics, without a
+physical significance level or accuracy-improvement interpretation.
+
+The extra fitted delay is a useful description of the history discrepancy;
+it is not a diagnosis of this detector. [Polyakov's NIST calibration chapter](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=914455),
+section II.A, explains that recovery can alter detection latency as well as
+efficiency. That established mechanism motivates a physical control; the
+chapter does not calibrate this acquisition or establish our fitted cause.
+
+All eight selected optimizers succeed, with no fitted parameter on the
+declared bounds. Starts agree closely; global optimality is not certified.
+Maximum normalized score is `4.568e-7`; finite-difference score discrepancy
+is below `1.026e-8`. The age partitions agree exactly with their union and
+the synthetic exposure enumeration passes. An independent evaluation using
+the pinned source's row likelihood/score matches all eight new fits within
+`6.985e-10` log units and `6.462e-17` normalized score units. The
+[result](lidar-history-results.json) SHA256 is
+`3f8af0fde13b259ea258e9ec5f7b1ae68a67a7aa721a71b362d6becd539d7adc`;
+the [audit](lidar-history-audit.json) SHA256 is
+`4e0dbf9aba21231d48df87927d8c3417277d7e2a85a6f5da48d19175e3d8bb6e`.
+Both executables take `--cache-dir`, `--upstream-root` and a new `--output`.
+
 ## Next selection gate
 
 The amplitude-only recovery extension has been screened and misses its
 worthwhile-range-effect gate. The remaining specific lead is the larger
-native guarded shift: use the existing development records to distinguish
-changing pulse/background proportions from pulse timing or shape changes with
-detector history. Determine whether the separate low-flux record can supply
-a calibrated reference, or whether an additional acquisition at another
-holdoff is needed as a physical control. These questions must produce a
+native guarded shift now has a repeatable pulse-location discrepancy after
+freeing the proportions. Establish a physical control before adding estimator
+complexity: determine whether the acquisition documentation and a different
+holdoff setting can bound instrument timing changes, and what independent
+reference or calibration is available. A common instrument delay and physical
+time of flight enter as a sum; opposite shifts leave the observed likelihood
+unchanged. The present fits alone therefore cannot certify absolute accuracy.
+A second holdoff acquisition can probe model transfer, but does not by itself
+supply known physical target motion or absolute range. These questions must produce a
 useful ordinary argument and a fair comparison against native joint likelihood,
 native robust one-step, flexible recovery and guarded inference. Do not spend
 the final reserve to rescue the failed recovery-rate correction.

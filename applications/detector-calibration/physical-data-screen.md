@@ -1,6 +1,6 @@
 # Physical evidence selection after the finite comparison
 
-S049, 2026-10-10. The [finite balanced-volume comparison](../balanced-volume/FINITE-REFERENCE-RESULTS.md) parks promotion of the frozen four-tail candidate and retains a better exact reference. Three primary-source leads are inspected below. The newest beam milestone traces the small fixture to its parent record and replays an established association algorithm with the evaluated detector removed from per-event inputs. Physical calibration and a comparative decision benefit remain open. These screens preserve the first negative detector experiment and do not complete the goal.
+S049, 2026-10-10. The [finite balanced-volume comparison](../balanced-volume/FINITE-REFERENCE-RESULTS.md) parks promotion of the frozen four-tail candidate and retains a better exact reference. Three primary-source leads are inspected below. The latest beam check derives the selection/contamination envelope and parks the proposed all-cluster transfer to the complete-reference cohort: at least 15.2% of development clusters cannot be paired one-to-one with that cohort. The exact model also shows how 11.7% contamination can erase the earlier benchmark separation. These are distinct finite-record and model results, not a measured population contamination rate. Physical calibration and a comparative decision benefit remain open; no practical-use claim follows.
 
 ## Cesium lifetime archive: useful physical data, insufficient observation record
 
@@ -89,8 +89,91 @@ python applications/detector-calibration/beam_reference_screen.py --cache-dir PA
 python applications/detector-calibration/beam_reference_rebuild.py --cache-dir PATH_OUTSIDE_REPOSITORY --fetch --output applications/detector-calibration/beam-rebuild-results.json
 ```
 
+### Operational beam-profile feasibility
+
+The [new protocol](beam-profile-protocol.json), [ordinary derivation](beam-profile-bridge.md)
+and [executable](beam_profile_model.py) were pushed at
+`666b9511f62d0de5da8417f0717782a2e71727e3` before this evaluation. The existing
+development subset and reference count were already known; the new raw-DUT3
+cardinality comparison was not. This is a retrospective feasibility check,
+not a new physical experiment or a held-out comparison.
+
+For fixed spatial quadrants, the generated category law is
+`(a,a+d,1-2a-d)`, where `d=1-F_X(x0)-F_Y(y0)`. The model admits relative
+category-retention ratio at most `R`, balance error `|d|<=delta`, and an
+observed-record contamination fraction at most `epsilon`. The derivation
+gives an exact convex lift, a finite rational polygon for the whole continuous
+null set, and sharp endpoints for both conditional category comparisons.
+The linear-fractional transformation is established optimization, not a new
+general statistical method. A conditional exact test would still require
+the stipulated sampling and calibration assumptions.
+
+All **96** exact-rational model cases agree with **1,926** independent
+continuous linear-program checks, including conditional endpoints, support
+values and minimum-contamination sensitivity. The largest numerical
+disagreement is `6.67e-16` and feasibility residual is `4.45e-16` (rounded
+up). These numerical checks support the ordinary proof; neither is Lean
+certification. At zero balance error and contamination the bounds recover
+the earlier pure-thinning formulas exactly.
+
+The earlier alternative's observed law is `(5/19,4/19,10/19)`. A null model
+at `a=9/32` with the same relative retention weights produces exactly that
+law after mixing `20/171` contamination entirely into category C. This is
+about **11.696%**. Under the iid model, the entire categorical sample laws
+then agree for every sample size: any uniformly 5%-valid test of the enlarged
+null must have detection probability at most 5% at that particular
+alternative. This applies to full multinomial tests as well as conditional
+ones. Transferring the earlier test unchanged would turn its 88.453% model
+power into the same false-flag probability at this null witness.
+
+The exact sensitivity calculation, independently checked by continuous LP,
+gives:
+
+| Allowed balance error delta | Minimum contamination making this law null |
+| --- | ---: |
+| 0 | `20/171` = 11.696% |
+| 0.01 | `20/217` = 9.217% |
+| 0.02 | `260/3971` = 6.547% |
+| 0.03 | `140/3819` = 3.666% |
+| 0.04 | `20/3667` = 0.545% |
+| 0.05 | 0 |
+
+The physical record check counts **67,113 DUT3 clusters** in the inspected
+10,000-event subset, using finite x coordinates and positive cluster-hit
+counts; these masks agree for every row. A separate streaming recount from
+finite y coordinates gives the same total. There are **56,907 complete
+reference tuples**, so every partial one-to-one pairing leaves at least
+**10,206 clusters**, or `1134/7457 = 15.207%`, unpaired. This is an exact
+cardinality bound for this record/cohort definition. Off-cohort genuine
+particles can contribute; it is not a detector-noise estimate, a population
+contamination confidence bound or evidence that the physical categorical
+law equals the constructed witness. The finite bound and the model's 11.7%
+overlap threshold must not be conflated into a physical impossibility proof.
+
+**Disposition:** park the direct all-cluster/pure-thinning transfer to the
+complete-reference cohort. Reference-based filtering is unavailable to the
+proposed detector-only operational procedure. Any replacement must justify
+an observable selection rule or a different target cohort, and bound its
+selection, category error, balance and sampling uncertainty before a power
+comparison. Counting clusters, reconstructing references and deriving a
+robust envelope do not supply the goal's comparative benefit. The 102,700
+reserved event outcomes remain uninspected.
+
+[Machine-readable results](beam-profile-results.json) have SHA256
+`7076625fdf5ba657518f730c5c144d7667817171808d88b5d3fc040774295c2a`.
+All three frozen input files match their Git snapshot byte-for-byte. Data
+and reference-result hashes match the earlier provenance record. Reproduce
+with the versions recorded in the result (including SciPy):
+
+```text
+python applications/detector-calibration/beam_profile_model.py --cache-dir PATH_OUTSIDE_REPOSITORY --output applications/detector-calibration/beam-profile-results.json
+```
+
+No reserved response/association outcome, earlier manuscript or Lean source
+was changed or evaluated by this check. No Lean/Lake or GCP run was invoked.
+
 ## Next selection gate
 
 Choose a task for which the observable record, independently known or calibrated target, detector selection uncertainty and useful decision threshold are jointly available. Prefer an existing physical control or withheld calibration run. Specify the strongest applicable inference and decision cost before measuring performance. If a transfer changes the physical target from spacetime volume, state and justify that bridge explicitly. A constructed coordinate order or simulated thinning of physical measurements cannot substitute for detector calibration.
 
-Remaining to-do list: establish a useful physical decision and ordinary comparative argument before further calibration work; validate alignment, trigger, matching and sampling assumptions on separate evidence; then demonstrate the benefit on reserved measurements. The full user goal remains active.
+Remaining to-do list: select a defensible operational cohort and useful physical decision, establish a comparative argument before further calibration engineering, validate its observation/sampling assumptions, then demonstrate the benefit on reserved measurements. The full user goal remains active; validated practical use remains unachieved.

@@ -1,0 +1,3 @@
+Ephemeral task cache already absent; validated and removed only its task link.
+Removed archived task development build cache: /home/dfredriksen_quantyra_org/quantyra-space-runs/space-curve3-dev5-20261010T055203Z-d33534/source/.lake/build
+Disk: usage(total=206900281344, used=206201233408, free=682270720)

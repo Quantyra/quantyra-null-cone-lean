@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n2048-t1_4-r11",
+    "phase": "primary",
+    "n": 2048,
+    "theta": "1/4",
+    "replicate": 11,
+    "seed": [
+      20261010,
+      43,
+      0,
+      1,
+      4,
+      2048,
+      11
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3358,
+    "grid_rejected": 0,
+    "retained": 2048,
+    "unused_accepted": 1310,
+    "proposal_limit": 20480,
+    "batch": 4096
+  },
+  "coordinate_sha256": "6eaa19dc4b9d2336fc178a68846690d048f1aaf8b6a458a30a78b3caf63b8ccb",
+  "coordinate_bytes": 25372,
+  "scalar_oracle_n": 64,
+  "scalar_oracle_count": 590,
+  "report": {
+    "n": 2048,
+    "relations": 493170,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "246585/1048064",
+      "lo": "101313291797985/562949953421312",
+      "hi": "50656645898993/281474976710656",
+      "theta": "202626583595971/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "1331253278071/35184372088832",
+      "radius": "23986521564283298607/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "78848393114685/1125899906842624",
+      "geometric_upper": "47309035868811/4503599627370496",
+      "radius": "23986521564283298607/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.1044156243830821,
+  "continuous_mean_t2": "293/2800",
+  "unordered_pairs_examined": 2096128,
+  "dense_directed_bitmatrix_bytes": 524288,
+  "seconds": {
+    "sampling": 0.0011149999918416142,
+    "save": 0.0061707999993814155,
+    "all_pairs": 0.06089130000327714,
+    "oracle_and_report": 0.003491700001177378,
+    "total": 0.07166879999567755
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "original_freeze": "9d85390e037809d5bd6523fa871b479265e95b0a",
+  "original_evidence": "evidence/geometric-gauge/pair-numerical-v1",
+  "terminal_outcome": "worker_failed",
+  "completed_groups": 0,
+  "case_directories": 0,
+  "samples_generated": 0,
+  "reason": "runpy replaces argv[0] but retained the script path in argv[1]; argparse rejected the path as a mode before calling worker().",
+  "correction": "Pop the script path from argv before runpy, in both execution and audit launchers; add an actual subprocess --help check that draws no samples.",
+  "design_changes": "none; identical parameters, seeds, sample sizes, success thresholds, resource limits and stopping rules",
+  "original_preservation": "All original freeze/source/plan/stdout/resource/terminal files remain unchanged. No original evaluation audit can pass: execution terminated with all 550 cases absent.",
+  "new_action": "Commit and push v2 before any sample generation, require clean matching main, and create a separate immutable v2 run. Do not overwrite or retry v1."
+}

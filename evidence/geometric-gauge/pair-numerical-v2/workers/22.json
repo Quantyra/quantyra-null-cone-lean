@@ -1,0 +1,14 @@
+{
+  "outcome": "completed",
+  "exit_code": 0,
+  "wall_seconds": 67.31139840000833,
+  "process_tree_peak_rss_bytes": 42889216,
+  "peak_job_committed_bytes": 32014336,
+  "rss_limit_bytes": 536870912,
+  "committed_limit_bytes": 1073741824,
+  "wall_limit_seconds": 120,
+  "active_process_limit": 1,
+  "poll_seconds": 0.01,
+  "log": "22.log",
+  "group_id": 22
+}

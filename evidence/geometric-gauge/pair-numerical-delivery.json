@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "raw staged evidence; independent numerical audit; preservation",
+  "raw_staged_files": 1722,
+  "raw_staged_bytes": 12910457,
+  "study_complete": true,
+  "completed_cases": 550,
+  "raw_inventory_files_verified": 1707,
+  "audit_summary_sha256": "8db52a7f1779c1c82057994e13ab0149ac64ab2aa7fe599ded812e1a328fc375",
+  "audit_resource_sha256": "aa84b43be65330780435b85af25f1ae010c74c137e72c2abf4e7af2094a62563",
+  "accepted_proofs_and_manuscripts_preserved": true,
+  "original_pre_data_failure_preserved": true,
+  "note": "Targeted raw-evidence attributes preserve original line endings. All v1 and v2 local evidence bytes match the raw staged blobs; neither run was rewritten."
+}

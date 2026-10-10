@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "cost-n33338-t0_1-r00",
+    "phase": "cost",
+    "n": 33338,
+    "theta": "0",
+    "replicate": 0,
+    "seed": [
+      20261010,
+      43,
+      2,
+      0,
+      1,
+      33338,
+      0
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 36864,
+    "envelope_accepted": 36864,
+    "grid_rejected": 0,
+    "retained": 33338,
+    "unused_accepted": 3526,
+    "proposal_limit": 270800,
+    "batch": 4096
+  },
+  "coordinate_sha256": "68e484a36b8a431aadff81a09d1e280704b4a9af4fd7df6871c0f39375fb67ef",
+  "coordinate_bytes": 405202,
+  "scalar_oracle_n": 64,
+  "scalar_oracle_count": 538,
+  "report": {
+    "n": 33338,
+    "relations": 127440016,
+    "branch": "inverse",
+    "theta": "22985978820829/1125899906842624",
+    "radius": "5800282860360008607/154676129202039685120",
+    "raw": {
+      "u": "127440016/555694453",
+      "lo": "5746494705207/281474976710656",
+      "hi": "11492989410415/562949953421312",
+      "theta": "22985978820829/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "160958010333/17592186044416",
+      "radius": "5800282860360008607/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "1/4",
+      "geometric_upper": "3/80",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "22985978820829/1125899906842624",
+      "geometric_upper": "68957936462487/22517998136852480",
+      "radius": "5800282860360008607/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "22985978820829/1125899906842624",
+      "geometric_upper": "68957936462487/22517998136852480",
+      "radius": "5800282860360008607/154676129202039685120",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.10032372160233129,
+  "continuous_mean_t2": "1/10",
+  "unordered_pairs_examined": 555694453,
+  "dense_directed_bitmatrix_bytes": 138927781,
+  "seconds": {
+    "sampling": 0.02554890001192689,
+    "save": 0.08969539999088738,
+    "all_pairs": 12.014604099997086,
+    "oracle_and_report": 0.0029609000048367307,
+    "total": 12.132809300004737
+  }
+}

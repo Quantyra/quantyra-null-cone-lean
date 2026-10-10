@@ -1,9 +1,22 @@
-# Restricted confidence theorem: current checkpoint
+# Restricted geometry: current research checkpoint
 
-S042, 2026-10-10. **The complete restricted all-pairs geometric confidence
-theorem has full GCP acceptance.** S042's mathematical endpoint is complete;
-S043 can proceed to bounded implementation/validation and its separate
-3+1 decision. The overall research roadmap remains active.
+2026-10-10. **S042 and S043 are complete.** The accepted restricted 2+1
+finite-confidence theorem now has a frozen executable study with 550
+independently audited cases. The computation gate passes; the withheld
+small-sample improvement gate fails. Park new 3+1 formalization pending a
+distinct target and useful ordinary quantitative argument. The roadmap
+remains active; next is S047's source/model audit.
+
+The [S043 result and dimensional decision](geometric-pair-numerical-results.md)
+records every sample replay and independent complete relation count. Source
+freeze `1c307399c04b82c4108183a2db898a051edecd15` preceded all evaluation data;
+the separate v1 launcher failure generated no samples and remains preserved.
+At n=74,606 all three cost cases achieve radius at most .025 in 61-68 seconds
+of worker wall time, with peak worker RSS at most 41.2 MiB. Both withheld
+n=2,048 parameters miss the raw-inverse 10% MAE improvement threshold.
+The [independent summary](../evidence/geometric-gauge/pair-numerical-v2/audit/summary.json)
+separates finite-grid diagnostics from the exact continuous-law theorem.
+No new Lean invocation or VM access was needed for S043.
 
 The [milestone proof and investment audit](geometric-pair-audit.md) is the
 authoritative mathematical account and decision. The preceding development
@@ -43,7 +56,7 @@ The smooth reconstruction converse remains an explicit external result.
   dev23, no other Lean/Lake work, all eleven terminal outcomes collected,
   cache hash verified, VM `TERMINATED` at `2026-10-10T13:13:50.861444+00:00`.
 
-The current turn retains development runs dev23 through dev32 and the final
+The S042 delivery retains development runs dev23 through dev32 and the final
 acceptance. Dev23 was canceled after a broad tactic import started unrelated
 dependency builds. Before cleanup, exact hashes, birth times and the required
 import closure verified that 1,904 newly created files (188,138,233 bytes)
@@ -65,17 +78,16 @@ they need not be repeated. No local Lean/Lake invocation occurred.
 
 ## Next action
 
-Freeze a bounded S043 numerical protocol before generating evaluation data.
-Reuse this theorem and model. Compare the inverse and selected policy with
-the midpoint on known and withheld parameters. Report parameter error and
-the certified geometric upper bound without calling the latter an exact
-geometric distance. Include relation construction/counting cost, memory,
-runtime and fallback frequency. Record whether practical investment is
-warranted, then make the separate 3+1 feasibility decision.
+Read S047 and its relevant primary full proofs, then freeze one
+single-observable quantum measurement model with detector/calibration
+assumptions. Test identifiability and comparator applicability before new
+formalization. A transfer of established methods or a precise obstruction
+is an acceptable feasibility outcome. Do not reactivate 3+1 work solely
+because the restricted 2+1 checkpoint is complete.
 
 All Lean remains on GCP. Any future run must establish new instance ownership.
 The current compressed cache is retained; root disk free space is about
 305 MiB, so check capacity before accumulating more immutable runs.
 
-Remaining to-do list: S043 protocol, bounded validation and 3+1 decision;
-then queued S047. S048 manuscript preparation remains proposed separately.
+Remaining to-do list: S047. S048 manuscript preparation remains proposed
+separately, outside the selected execution set.

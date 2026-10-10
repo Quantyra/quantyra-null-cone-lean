@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "withheld-n2048-t1_6-r27",
+    "phase": "withheld",
+    "n": 2048,
+    "theta": "1/6",
+    "replicate": 27,
+    "seed": [
+      20261010,
+      43,
+      1,
+      1,
+      6,
+      2048,
+      27
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3530,
+    "grid_rejected": 0,
+    "retained": 2048,
+    "unused_accepted": 1482,
+    "proposal_limit": 20480,
+    "batch": 4096
+  },
+  "coordinate_sha256": "5139d7287522f3189a487a0f9418dc3407de6caaabb985ca0cbee74b03356951",
+  "coordinate_bytes": 25338,
+  "scalar_oracle_n": 64,
+  "scalar_oracle_count": 425,
+  "report": {
+    "n": 2048,
+    "relations": 489500,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "1375/5888",
+      "lo": "74782615388715/562949953421312",
+      "hi": "18695653847179/140737488355328",
+      "theta": "149565230777431/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "1331253278071/35184372088832",
+      "radius": "23986521564283298607/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "1/12",
+      "geometric_upper": "1/80",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "114254261089019/3377699720527872",
+      "geometric_upper": "114254261089019/22517998136852480",
+      "radius": "23986521564283298607/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "1/12",
+      "geometric_upper": "1/80",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.10363244667887642,
+  "continuous_mean_t2": "433/4200",
+  "unordered_pairs_examined": 2096128,
+  "dense_directed_bitmatrix_bytes": 524288,
+  "seconds": {
+    "sampling": 0.0011147000041091815,
+    "save": 0.006029700001818128,
+    "all_pairs": 0.05729909999354277,
+    "oracle_and_report": 0.0033448000031057745,
+    "total": 0.06778830000257585
+  }
+}

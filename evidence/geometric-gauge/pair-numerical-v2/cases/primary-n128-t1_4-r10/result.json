@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n128-t1_4-r10",
+    "phase": "primary",
+    "n": 128,
+    "theta": "1/4",
+    "replicate": 10,
+    "seed": [
+      20261010,
+      43,
+      0,
+      1,
+      4,
+      128,
+      10
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3295,
+    "grid_rejected": 0,
+    "retained": 128,
+    "unused_accepted": 3167,
+    "proposal_limit": 5120,
+    "batch": 4096
+  },
+  "coordinate_sha256": "4bd10001aed95098b2badd5f642fd60320226ef3442aeb51769938bc90f9953b",
+  "coordinate_bytes": 1844,
+  "scalar_oracle_n": 128,
+  "scalar_oracle_count": 1819,
+  "report": {
+    "n": 128,
+    "relations": 1819,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "1819/8128",
+      "lo": "0",
+      "hi": "0",
+      "theta": "0",
+      "rounding": "0",
+      "b_upper": "46988533883741/281474976710656",
+      "radius": "10582992543965566725/15467612920203968512"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "1/4",
+      "geometric_upper": "3/80",
+      "radius": "10582992543965566725/15467612920203968512",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.10329336803569192,
+  "continuous_mean_t2": "293/2800",
+  "unordered_pairs_examined": 8128,
+  "dense_directed_bitmatrix_bytes": 2048,
+  "seconds": {
+    "sampling": 0.000999800002318807,
+    "save": 0.001567100000102073,
+    "all_pairs": 0.00037740000698249787,
+    "oracle_and_report": 0.011419799993745983,
+    "total": 0.01436410000314936
+  }
+}

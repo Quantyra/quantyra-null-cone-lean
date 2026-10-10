@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n128-t1_4-r25",
+    "phase": "primary",
+    "n": 128,
+    "theta": "1/4",
+    "replicate": 25,
+    "seed": [
+      20261010,
+      43,
+      0,
+      1,
+      4,
+      128,
+      25
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3327,
+    "grid_rejected": 0,
+    "retained": 128,
+    "unused_accepted": 3199,
+    "proposal_limit": 5120,
+    "batch": 4096
+  },
+  "coordinate_sha256": "372f8ced39783e7a822320654307f6ee18b26735c76e3887d4ae24b8d61067cb",
+  "coordinate_bytes": 1833,
+  "scalar_oracle_n": 128,
+  "scalar_oracle_count": 1945,
+  "report": {
+    "n": 128,
+    "relations": 1945,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "1945/8128",
+      "lo": "40607126629155/140737488355328",
+      "hi": "162428506516621/562949953421312",
+      "theta": "324857013033241/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "46988533883741/281474976710656",
+      "radius": "105829925439655687857/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "43382036322585/1125899906842624",
+      "geometric_upper": "26029221793551/4503599627370496",
+      "radius": "105829925439655687857/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "0",
+      "geometric_upper": "0",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.09713206254763193,
+  "continuous_mean_t2": "293/2800",
+  "unordered_pairs_examined": 8128,
+  "dense_directed_bitmatrix_bytes": 2048,
+  "seconds": {
+    "sampling": 0.0010600999958114699,
+    "save": 0.001393300000927411,
+    "all_pairs": 0.0003355999942868948,
+    "oracle_and_report": 0.00879480000003241,
+    "total": 0.011583799991058186
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n128-t3_8-r07",
+    "phase": "primary",
+    "n": 128,
+    "theta": "3/8",
+    "replicate": 7,
+    "seed": [
+      20261010,
+      43,
+      0,
+      3,
+      8,
+      128,
+      7
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3053,
+    "grid_rejected": 0,
+    "retained": 128,
+    "unused_accepted": 2925,
+    "proposal_limit": 5120,
+    "batch": 4096
+  },
+  "coordinate_sha256": "2d98400388bc4e4cc1893a5dfa697af60899df4a64decaf09a2c9c373734c522",
+  "coordinate_bytes": 1836,
+  "scalar_oracle_n": 128,
+  "scalar_oracle_count": 1898,
+  "report": {
+    "n": 128,
+    "relations": 1898,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "949/4064",
+      "lo": "37300212598149/281474976710656",
+      "hi": "74600425196299/562949953421312",
+      "theta": "149200850392597/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "46988533883741/281474976710656",
+      "radius": "105829925439655687857/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "273011614673387/1125899906842624",
+      "geometric_upper": "819034844020161/22517998136852480",
+      "radius": "105829925439655687857/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.10738025902620235,
+  "continuous_mean_t2": "599/5600",
+  "unordered_pairs_examined": 8128,
+  "dense_directed_bitmatrix_bytes": 2048,
+  "seconds": {
+    "sampling": 0.001142599998274818,
+    "save": 0.002734000008786097,
+    "all_pairs": 0.0004690999921876937,
+    "oracle_and_report": 0.012988000002223998,
+    "total": 0.017333700001472607
+  }
+}

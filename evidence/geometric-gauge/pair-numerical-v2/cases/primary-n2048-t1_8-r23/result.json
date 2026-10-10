@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n2048-t1_8-r23",
+    "phase": "primary",
+    "n": 2048,
+    "theta": "1/8",
+    "replicate": 23,
+    "seed": [
+      20261010,
+      43,
+      0,
+      1,
+      8,
+      2048,
+      23
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3723,
+    "grid_rejected": 0,
+    "retained": 2048,
+    "unused_accepted": 1675,
+    "proposal_limit": 20480,
+    "batch": 4096
+  },
+  "coordinate_sha256": "00128974cf2bab5f0cb059eec86c49695eb80f214fdb6903687387ba969734eb",
+  "coordinate_bytes": 25341,
+  "scalar_oracle_n": 64,
+  "scalar_oracle_count": 487,
+  "report": {
+    "n": 2048,
+    "relations": 497829,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "497829/2096128",
+      "lo": "67535904483823/281474976710656",
+      "hi": "135071808967647/562949953421312",
+      "theta": "270143617935293/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "1331253278071/35184372088832",
+      "radius": "23986521564283298607/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "129406129579965/1125899906842624",
+      "geometric_upper": "77643677747979/4503599627370496",
+      "radius": "23986521564283298607/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.10553597899220812,
+  "continuous_mean_t2": "573/5600",
+  "unordered_pairs_examined": 2096128,
+  "dense_directed_bitmatrix_bytes": 524288,
+  "seconds": {
+    "sampling": 0.0011929000029340386,
+    "save": 0.006637200000113808,
+    "all_pairs": 0.05918890000612009,
+    "oracle_and_report": 0.0035970999888377264,
+    "total": 0.07061609999800567
+  }
+}

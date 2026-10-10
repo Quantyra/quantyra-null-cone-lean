@@ -1,0 +1,78 @@
+{
+  "input": {
+    "id": "primary-n2048-t1_8-r00",
+    "phase": "primary",
+    "n": 2048,
+    "theta": "1/8",
+    "replicate": 0,
+    "seed": [
+      20261010,
+      43,
+      0,
+      1,
+      8,
+      2048,
+      0
+    ]
+  },
+  "sampling": {
+    "proposals_drawn": 4096,
+    "envelope_accepted": 3682,
+    "grid_rejected": 0,
+    "retained": 2048,
+    "unused_accepted": 1634,
+    "proposal_limit": 20480,
+    "batch": 4096
+  },
+  "coordinate_sha256": "891d6933c9ff69e4efe18276341dcc97246c53d768d554f46921017528be3dc0",
+  "coordinate_bytes": 25338,
+  "scalar_oracle_n": 64,
+  "scalar_oracle_count": 371,
+  "report": {
+    "n": 2048,
+    "relations": 492454,
+    "branch": "midpoint",
+    "theta": "1/4",
+    "radius": "3/80",
+    "raw": {
+      "u": "246227/1048064",
+      "lo": "48066512554125/281474976710656",
+      "hi": "96133025108251/562949953421312",
+      "theta": "192266050216501/1125899906842624",
+      "rounding": "1/1125899906842624",
+      "b_upper": "1331253278071/35184372088832",
+      "radius": "23986521564283298607/154676129202039685120"
+    }
+  },
+  "errors": {
+    "midpoint": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    },
+    "raw": {
+      "absolute_parameter_error": "51528561861173/1125899906842624",
+      "geometric_upper": "154585685583519/22517998136852480",
+      "radius": "23986521564283298607/154676129202039685120",
+      "upper_within_radius": true
+    },
+    "policy": {
+      "absolute_parameter_error": "1/8",
+      "geometric_upper": "3/160",
+      "radius": "3/80",
+      "upper_within_radius": true
+    }
+  },
+  "sample_mean_t2": 0.1014777330364478,
+  "continuous_mean_t2": "573/5600",
+  "unordered_pairs_examined": 2096128,
+  "dense_directed_bitmatrix_bytes": 524288,
+  "seconds": {
+    "sampling": 0.018793299997923896,
+    "save": 0.011147500001243316,
+    "all_pairs": 0.061853399995015934,
+    "oracle_and_report": 0.0038263000024016947,
+    "total": 0.09562049999658484
+  }
+}

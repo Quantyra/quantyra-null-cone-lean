@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-10T13:32:10.397225+00:00",
+  "head": "1c307399c04b82c4108183a2db898a051edecd15",
+  "remote_main": "1c307399c04b82c4108183a2db898a051edecd15",
+  "sources": [
+    {
+      "path": "notes/geometric-pair-numerical-protocol.json",
+      "git_sha256": "8f69e8f34324e11db35777a234127212a773c48916a6f0306e3dd959a9d58237",
+      "worktree_sha256": "8f69e8f34324e11db35777a234127212a773c48916a6f0306e3dd959a9d58237"
+    },
+    {
+      "path": "notes/geometric-pair-launch-amendment.json",
+      "git_sha256": "f4b467c09dbb8ba6281d00123c155a96596cd282c281a70db5589585cfa1d854",
+      "worktree_sha256": "f4b467c09dbb8ba6281d00123c155a96596cd282c281a70db5589585cfa1d854"
+    },
+    {
+      "path": "notes/geometric-pair-numerical-design.md",
+      "git_sha256": "2c95b2ab3983b5bfd1a7c2c413c836888e684aaf9384eb37fb0c556b5176a6a1",
+      "worktree_sha256": "2c95b2ab3983b5bfd1a7c2c413c836888e684aaf9384eb37fb0c556b5176a6a1"
+    },
+    {
+      "path": "tools/geometric_pair.py",
+      "git_sha256": "e653b346a5763fb4bbbfdad680e89eefb690a95409ec5dccd63119e256f89316",
+      "worktree_sha256": "e653b346a5763fb4bbbfdad680e89eefb690a95409ec5dccd63119e256f89316"
+    },
+    {
+      "path": "tools/test_geometric_pair.py",
+      "git_sha256": "a467f55ca28f2b0c0afc4b749065a6ee8aac3f9146fc0a5d1c7aecde50c324f4",
+      "worktree_sha256": "a467f55ca28f2b0c0afc4b749065a6ee8aac3f9146fc0a5d1c7aecde50c324f4"
+    },
+    {
+      "path": "tools/run_geometric_pair_study.py",
+      "git_sha256": "7c5c326326c7602372c3881fcfb1dbfe8a5ac7573e105ec9b3999f72faa7fb65",
+      "worktree_sha256": "7c5c326326c7602372c3881fcfb1dbfe8a5ac7573e105ec9b3999f72faa7fb65"
+    },
+    {
+      "path": "tools/audit_geometric_pair_study.py",
+      "git_sha256": "3e378f422226a3bf1f150bf2a5f0c5a27003828d6d2a703348c9d06427380b0b",
+      "worktree_sha256": "3e378f422226a3bf1f150bf2a5f0c5a27003828d6d2a703348c9d06427380b0b"
+    },
+    {
+      "path": "tools/finite_data_resource.py",
+      "git_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+      "worktree_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c"
+    }
+  ],
+  "protocol_sha256": "8f69e8f34324e11db35777a234127212a773c48916a6f0306e3dd959a9d58237",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable_sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+  "planned_groups": 23,
+  "planned_cases": 550,
+  "scope": "local Python numerical experiment; accepted Lean runs only on GCP"
+}

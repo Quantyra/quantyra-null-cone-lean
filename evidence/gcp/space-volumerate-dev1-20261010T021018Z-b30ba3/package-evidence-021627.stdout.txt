@@ -1,0 +1,100 @@
+ℹ [2969/3003] Replayed QuantyraNullCone.ProperTime
+info: QuantyraNullCone/ProperTime.lean:403:0: 'QuantyraNullCone.FutureCurve.integral_derivU' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:404:0: 'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:405:0: 'QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:406:0: 'QuantyraNullCone.FutureCurve.length_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:407:0: 'QuantyraNullCone.InDensityClass.proper_time_conformalDistance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:408:0: 'QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2971/3003] Replayed QuantyraNullCone.LowerSeparation
+info: QuantyraNullCone/LowerSeparation.lean:121:0: 'QuantyraNullCone.odd_gaussian_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:122:0: 'QuantyraNullCone.odd_gaussian_square_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:123:0: 'QuantyraNullCone.odd_gaussian_product_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:124:0: 'QuantyraNullCone.lower_alternative_deviation_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:125:0: 'QuantyraNullCone.lower_witness_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:126:0: 'QuantyraNullCone.odd_gaussian_witness_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:127:0: 'QuantyraNullCone.lower_witness_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:128:0: 'QuantyraNullCone.lower_coefficient_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:129:0: 'QuantyraNullCone.lower_quotient_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:130:0: 'QuantyraNullCone.lower_separation_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerSeparation.lean:131:0: 'QuantyraNullCone.lower_success_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3003/3027] Replayed QuantyraNullCone.LowerMoments
+info: QuantyraNullCone/LowerMoments.lean:106:0: 'QuantyraNullCone.gaussian_second_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:107:0: 'QuantyraNullCone.odd_gaussian_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:108:0: 'QuantyraNullCone.odd_gaussian_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:109:0: 'QuantyraNullCone.odd_gaussian_second_moment_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:110:0: 'QuantyraNullCone.lower_profile_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:111:0: 'QuantyraNullCone.lower_profile_total_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:112:0: 'QuantyraNullCone.lower_profile_truncated_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:113:0: 'QuantyraNullCone.lower_single_point_divergence_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerMoments.lean:114:0: 'QuantyraNullCone.lower_single_point_divergence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3004/3027] Replayed QuantyraNullCone.LowerTesting
+info: QuantyraNullCone/LowerTesting.lean:105:0: 'QuantyraNullCone.finite_probability_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerTesting.lean:106:0: 'QuantyraNullCone.finite_seed_event_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerTesting.lean:107:0: 'QuantyraNullCone.finite_seed_event_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerTesting.lean:108:0: 'QuantyraNullCone.finite_seed_two_point_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerTesting.lean:109:0: 'QuantyraNullCone.lower_order_randomized_testing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3006/3027] Replayed QuantyraNullCone.LowerScale
+info: QuantyraNullCone/LowerScale.lean:65:0: 'QuantyraNullCone.lower_bandwidth_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerScale.lean:66:0: 'QuantyraNullCone.lower_bandwidth_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerScale.lean:67:0: 'QuantyraNullCone.lower_bandwidth_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerScale.lean:68:0: 'QuantyraNullCone.lower_TV_budget_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerScale.lean:69:0: 'QuantyraNullCone.lower_probability_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3027] Replayed QuantyraNullCone.LowerProduct
+info: QuantyraNullCone/LowerProduct.lean:109:0: 'QuantyraNullCone.lower_flat_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:110:0: 'QuantyraNullCone.lower_likelihood_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:111:0: 'QuantyraNullCone.lower_likelihood_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:112:0: 'QuantyraNullCone.lower_sample_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:113:0: 'QuantyraNullCone.lower_likelihood_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:114:0: 'QuantyraNullCone.lower_alternative_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:115:0: 'QuantyraNullCone.lower_likelihood_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:116:0: 'QuantyraNullCone.normalized_square_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:117:0: 'QuantyraNullCone.lower_product_divergence_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:118:0: 'QuantyraNullCone.lower_product_divergence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3027] Replayed QuantyraNullCone.LowerDataProcessing
+info: QuantyraNullCone/LowerDataProcessing.lean:89:0: 'QuantyraNullCone.finite_observation_L1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:90:0: 'QuantyraNullCone.integral_abs_le_sqrt_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:91:0: 'QuantyraNullCone.lower_sample_real_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:92:0: 'QuantyraNullCone.lower_order_TV_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3009/3027] Built QuantyraNullCone.MarkedOrder (51s)
+✔ [3010/3027] Built QuantyraNullCone.ThinningGenerating (51s)
+✔ [3011/3027] Built QuantyraNullCone.ThinningLaplace (3.7s)
+✔ [3012/3027] Built QuantyraNullCone.ConfoundingGeometry (3.0s)
+✔ [3013/3027] Built QuantyraNullCone.ThinningTermination (3.3s)
+✔ [3014/3027] Built QuantyraNullCone.ConfoundingDetector (3.3s)
+✔ [3015/3027] Built QuantyraNullCone.ConfoundingTargets (3.5s)
+✔ [3016/3027] Built QuantyraNullCone.ThinningStopping (3.9s)
+✔ [3017/3027] Built QuantyraNullCone.ConfoundingTime (4.2s)
+✔ [3018/3027] Built QuantyraNullCone.ThinningTerminalPatterns (2.0s)
+✔ [3019/3027] Built QuantyraNullCone.ThinningStoppedLaw (2.0s)
+✔ [3020/3027] Built QuantyraNullCone.ConfoundingLaw (3.2s)
+✔ [3021/3027] Built QuantyraNullCone.ConfoundingMarked (3.1s)
+✔ [3022/3027] Built QuantyraNullCone.MarkedEstimator (2.0s)
+✔ [3023/3027] Built QuantyraNullCone.VolumeRateBounds (3.7s)
+✔ [3024/3027] Built QuantyraNullCone.VolumeRateUpper (3.1s)
+✔ [3025/3027] Built QuantyraNullCone.VolumeRateExperiment (3.3s)
+✔ [3026/3027] Built QuantyraNullCone.VolumeRateLikelihood (4.7s)
+✖ [3027/3027] Building QuantyraNullCone.VolumeRateScale (4.2s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/QuantyraNullCone/VolumeRateScale.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/.lake/build/lib/lean/QuantyraNullCone/VolumeRateScale.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/.lake/build/lib/lean/QuantyraNullCone/VolumeRateScale.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/.lake/build/ir/QuantyraNullCone/VolumeRateScale.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumerate-dev1-20261010T021018Z-b30ba3/source/.lake/build/ir/QuantyraNullCone/VolumeRateScale.setup.json --json
+error: QuantyraNullCone/VolumeRateScale.lean:38:59: No goals to be solved
+error: QuantyraNullCone/VolumeRateScale.lean:41:24: Unknown identifier `one_add_neg_eq_sub`
+error: QuantyraNullCone/VolumeRateScale.lean:42:4: linarith failed to find a contradiction
+case h
+n : ℕ
+hn : 0 < n
+hnR : 0 < ↑n
+hn1 : 1 ≤ ↑n
+x : ℝ := 1 / (36 * ↑n)
+hx : 0 ≤ x
+hx1 : x ≤ 1
+hnx : ↑n * x = 1 / 36
+hBern : 1 + -(↑n * x) ≤ (1 + -x) ^ n
+a✝ : (1 - x) ^ n < 35 / 36
+⊢ False
+failed
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.VolumeRateScale

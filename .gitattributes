@@ -88,3 +88,6 @@ evidence/confounding/** -text -whitespace
 evidence/gcp/space-volumeupper-*/** -text -whitespace
 evidence/volumeupper/** -text -whitespace
 QuantyraNullCone/VolumeRate*.lean text eol=lf
+
+evidence/gcp/space-volumerate-*/** -text -whitespace
+evidence/volumerate/** -text -whitespace

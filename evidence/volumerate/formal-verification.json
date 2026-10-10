@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "run": "space-volumerate-acceptance-20261010T023105Z-5d08cf",
+  "audited_exports": 797,
+  "new_exports_by_module": {
+    "VolumeRateLikelihood": [
+      "QuantyraNullCone.retained_measure_one",
+      "QuantyraNullCone.calibration_likelihood_nonneg_ae",
+      "QuantyraNullCone.calibration_likelihood_integrable",
+      "QuantyraNullCone.calibration_sample_withDensity",
+      "QuantyraNullCone.calibration_likelihood_integral",
+      "QuantyraNullCone.calibration_density_square_integrable",
+      "QuantyraNullCone.calibration_likelihood_square_integrable",
+      "QuantyraNullCone.calibration_single_point_divergence",
+      "QuantyraNullCone.calibration_product_divergence",
+      "QuantyraNullCone.calibration_central_square_integrable",
+      "QuantyraNullCone.calibration_sample_real_apply"
+    ],
+    "VolumeRateScale": [
+      "QuantyraNullCone.volume_sampling_epsilon_positive",
+      "QuantyraNullCone.volume_sampling_epsilon_small",
+      "QuantyraNullCone.volume_sampling_epsilon_square",
+      "QuantyraNullCone.volume_sampling_power_bound",
+      "QuantyraNullCone.volume_sampling_divergence_bound"
+    ],
+    "VolumeRateSampling": [
+      "QuantyraNullCone.unit_detector_volume_model",
+      "QuantyraNullCone.unthinned_marked_law",
+      "QuantyraNullCone.full_marked_sampling_TV_bound",
+      "QuantyraNullCone.finite_randomized_scalar_obstruction",
+      "QuantyraNullCone.physical_volume_sampling_obstruction",
+      "QuantyraNullCone.physical_volume_sampling_rate_lower"
+    ],
+    "VolumeRateJoint": [
+      "QuantyraNullCone.physical_volume_joint_rate_lower",
+      "QuantyraNullCone.physical_volume_joint_rate"
+    ],
+    "VolumeRateEmpty": [
+      "QuantyraNullCone.physical_marked_volume_range",
+      "QuantyraNullCone.no_data_physical_volume_error",
+      "QuantyraNullCone.empty_full_marked_law",
+      "QuantyraNullCone.zero_sample_marked_law_equal",
+      "QuantyraNullCone.no_data_physical_volume_obstruction"
+    ]
+  },
+  "root_build_jobs": 3097,
+  "accepted_source_count": 198,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "1cc7b1596ab85e32fd6d7bea66d6fd3a47d43ddd",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "2a861b22e234f367e7582c89834cf96eca474132f66e91b5273ab812ee05d031",
+    "receipt.json": "f1214236abc33933b9eea239a76f3c4d1d4f5f042ea1340f043e270f518c3627",
+    "cleanup.json": "01ee80c8b0b548a23c94f95280c11850d90302bba9c8cd77b1a4a3a64c010719",
+    "input-archive.json": "8e534c3924caa53a3454066be6acb45800809ef5e8bd285cd3173e94899ca388",
+    "run.sh": "0456a2b04622f6f92997aee9503cfb4a4813834d2d079b0c47b260c1e23164de",
+    "logs/build.stdout.txt": "4931c37891e1a5f39019325abd26a40dd3e594c435bc29a24daeaa5c80c5bbd3",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "0ff3331e98d6ca0393e420719f30979cde1b68c1c58d7cde6ff47802de48aef0",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "primary-proof comparison, finite formula validation and manuscript disposition remain open",
+    "sampling until a prescribed retained count is covered; geometry-dependent stopping is not",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

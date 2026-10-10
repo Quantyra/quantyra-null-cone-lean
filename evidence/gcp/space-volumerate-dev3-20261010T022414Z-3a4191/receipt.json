@@ -1,0 +1,7 @@
+{
+  "run": "space-volumerate-dev3-20261010T022414Z-3a4191",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.VolumeRateEmpty",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

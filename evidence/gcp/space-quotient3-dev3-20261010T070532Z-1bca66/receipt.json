@@ -1,0 +1,7 @@
+{
+  "run": "space-quotient3-dev3-20261010T070532Z-1bca66",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzQuotientMeasure",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

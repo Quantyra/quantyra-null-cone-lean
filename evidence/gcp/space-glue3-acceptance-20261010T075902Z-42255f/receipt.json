@@ -1,0 +1,11 @@
+{
+  "run": "space-glue3-acceptance-20261010T075902Z-42255f",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone",
+  "acceptance": true,
+  "audited_exports": 1054,
+  "owned_warnings": 0,
+  "dependency_identities_before_and_after": true,
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

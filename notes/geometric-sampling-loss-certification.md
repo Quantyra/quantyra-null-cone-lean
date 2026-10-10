@@ -1,5 +1,7 @@
 # Quotient sampling and coupling-distortion foundations
 
+Subsequent progress: [coupling gluing and the distortion triangle](geometric-triangle-certification.md) now have 1,054-report GCP acceptance. The historical sampling/loss acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,041 exact type/axiom reports, including 37 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Exact original experiment

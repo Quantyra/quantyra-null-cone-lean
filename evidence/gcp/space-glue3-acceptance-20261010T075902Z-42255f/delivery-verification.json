@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_commit": "8ddb78190e979635a2213c26b3f7a88fea9b5a81",
+  "captured_files": 217,
+  "lean_inputs": 183,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "32c09f3c29cb8e0b5a3c3ff76e930364bb96651d93ca1c005425568cd7d62c8d",
+  "module_sha256": {
+    "QuantyraNullCone/TimeCouplingGluing.lean": "e620c5c88c3dd072126eeec70e358779d282e71c7be241b8c8b32df7c9a0f457",
+    "QuantyraNullCone/TimeDistortionTriangle.lean": "69f8398a868c340174391b3312e046c88a03314777e2cc3a5b7d48efba1d0386",
+    "QuantyraNullCone/LorentzDistortionTriangle.lean": "4b9d1dbb62a11ba87787258262921fed4484d310359b3b32e6b72c8a56e95575"
+  },
+  "audited_named_exports": 1054,
+  "new_gluing_triangle_exports": 13,
+  "root_build_jobs": 3116,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1041_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T08:01:27.029525+00:00"
+}

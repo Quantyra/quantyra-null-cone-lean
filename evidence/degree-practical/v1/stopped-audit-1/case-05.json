@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "case": "case-05",
+  "exact_density_cells": 64,
+  "full_relation_checked_from_lorentz_coordinates": true,
+  "report_certificates_checked": true,
+  "all_density_metrics_recomputed": true,
+  "input_sha256": {
+    "baseline.json.gz": "5945da9caab9d05983c89e3844c39a5ecaebcfd98b4ef526d89eff1063714900",
+    "candidate.json.gz": "7ecfd7e059ab74dbb89103e08a45f5f930e7df27dece80d6d4f258f2ed52a7cb",
+    "config.json": "dcc349c45e076ac06a8eec9bcc3a7b77beb4064e79227aeb954ee6383cf830fc",
+    "coordinates.json.gz": "cefc47a52ca30aea7ffc3496e7277668755dc3a47b413f5392170bc3b5d67a32",
+    "order.json.gz": "0ed1d53975663265cfb866b2eb0b0fa408966b76bf78313b9f60c34f18362fde",
+    "resource.json": "03a01504af8fc6ce4c606a7aeeba2c31a0d29927cf648a89690c5f120a77f8d6",
+    "result.json": "0584cb06fd91c8ee46dd3adbd5ac88d33d5ca432cf27e27fed7cc9e7adeaf5ba"
+  },
+  "elapsed_seconds": 2.2256970000016736
+}

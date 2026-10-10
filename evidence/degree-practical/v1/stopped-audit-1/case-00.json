@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "case": "case-00",
+  "exact_density_cells": 64,
+  "full_relation_checked_from_lorentz_coordinates": true,
+  "report_certificates_checked": true,
+  "all_density_metrics_recomputed": true,
+  "input_sha256": {
+    "baseline-relabeled.json.gz": "7cb6c1b044b1729a3ebb27058247d0c7680c21a6c7ecfa5248e989076ed5c5fe",
+    "baseline.json.gz": "f0c70a6141412e18cc3b88637c4e4be53089ee133e30a9506c6a64e25d853121",
+    "candidate-relabeled.json.gz": "478c92a5be447634182ae361bdcab40daa0121e4eb7e80898fdf2bafa995026f",
+    "candidate.json.gz": "2595735754c2d2daae0030a0cbc0035f22214533d3930cbadef2af26bbf21bdf",
+    "config.json": "2e04421b91e5fc3fd9b0b001a7e3faf1cb50d38d57e51a40fb40c07124ea27bd",
+    "coordinates.json.gz": "7093d4504241548e99bf4058c3d8800e22efb41098ccda5f037f4c33014d4e18",
+    "order.json.gz": "e1d817cded77c32732d88619935d687b6198c4e6316eae866068fdc0c22398d6",
+    "resource.json": "c9547c05ceb3fc5ac03bf94de9a2cda124bf34d0499c0ea866ea920f26d9ac15",
+    "result.json": "0453c0b7e08ae8c550a1a64ba3c49bc03e08946effc7ead8ec4949d8212709fc"
+  },
+  "elapsed_seconds": 4.4056778000012855
+}

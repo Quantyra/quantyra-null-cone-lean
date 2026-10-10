@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "config": {
+    "name": "flat",
+    "family": "fgm",
+    "coefficient": "0",
+    "n": 3072,
+    "grid": 8,
+    "admitted": true,
+    "replicate": 0,
+    "seed": [
+      39041010,
+      0,
+      1,
+      0,
+      0
+    ],
+    "metamorphic": true
+  },
+  "sampling": {
+    "consumed_proposals": 6182,
+    "drawn_proposals": 7168
+  },
+  "artifacts": [
+    {
+      "path": "prescribed-coordinates.json.gz",
+      "sha256_json": "47be355148a59f5552c889f823ec25702220cd5a6a708050915057963e8b558e",
+      "uncompressed_bytes": 124462,
+      "sha256_gzip": "1a4535967ed35af9a30164983864f0410b485d81da951923f450707b813547a6",
+      "compressed_bytes": 56970
+    },
+    {
+      "path": "prescribed-order.json.gz",
+      "sha256_json": "a76f32172a6fe390936be598708e6e3d2fdabfa240fd4469971197cb4fb0346c",
+      "uncompressed_bytes": 2819588,
+      "sha256_gzip": "beb20e478d9006d635ba4e93ddd0b73852734f33852922e47880e07df173a4a3",
+      "compressed_bytes": 1312721
+    }
+  ],
+  "seconds": 19.872070100005658,
+  "estimator_runs": 0,
+  "scope": "Deterministic replay of the interrupted prescribed seed, not recovered original bytes or an additional trial. The interrupted worker saved no coordinate hash."
+}

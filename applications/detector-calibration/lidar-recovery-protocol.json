@@ -1,0 +1,24 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "scope": "Development-only check of a specific opening for a calibration-aware range estimator: does a phase-dependent background with an optimally fitted hard cutoff explain event-age dependence? This does not establish a ranging benefit.",
+  "prior_information": "The first million high-flux frames have already supplied counts, gap quantiles and cutoff incompatibilities. Their minimum gap and lower quantiles motivated this check. Published full-record fits are known. No range, phase/age exposure or hazard fit has been performed here. Both halves below are development data, not the reserved final validation sample.",
+  "input": {
+    "relative_path": "2019_01_28/FGS_td198_2019_01_28_acq14.mat",
+    "sha256": "cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26"
+  },
+  "train_frames": [0, 500000],
+  "evaluation_frames": [500000, 1000000],
+  "phase_edges_ns": [15, 25, 35, 45, 55, 65, 75, 85, 95],
+  "age_edges_ns": [198, 198.25, 198.5, 198.75, 199, 199.5, 200, 201, 202, 205, 210, 220, 250, 300, 400, 600],
+  "hard_cutoff_interval_ns": [198, 200],
+  "alternative_pseudocount": 0.5,
+  "alternative_prior_rate_per_ns": 0.015,
+  "timestamp_perturbation_ns": [0, 0.008, -0.008],
+  "ordinary_argument": "lidar-recovery-argument.md",
+  "comparison": "Fit positive age-by-phase cell intensities on the chronological training half. Evaluate their continuous-time counting-process log score on the second half. Compare with the supremum hard-cutoff likelihood fitted directly to that evaluation half, allowing a separate background rate in each of eight phase strata. The cutoff supremum occurs at the smallest scored gap, clipped to the allowed interval. This is a stronger comparison than holding a wrong nominal cutoff or a training-only background fixed.",
+  "history_convention": "Use every recorded detection to reset age, including detections outside the scored phase/age region. Condition on the first recorded event; do not infer the initial detector state. Retain the preceding event at the half boundary. Censor at the fixed one-million-frame boundary, which is inside the known acquisition. Define absolute time as frame*measured_period+detTime, then compute its phase modulo measured_period. Preserve the known out-of-period timestamp through this mapping; discard no event.",
+  "quantization": "The analytic likelihood assumes exact continuous timestamps. Actual data have 8 ps resolution. Two deterministic alternating +/-8 ps perturbations are sensitivity checks, not an exhaustive uncertainty bound or an exact physical p-value. Do not convert a large log-score advantage into a physical confidence certificate.",
+  "gate": "If the prefit age-dependent model exceeds the optimized hard model by more than log(100) on the evaluation half for all three timestamp scenarios, investigate whether recovery-aware ranging changes the decision and beats calibrated joint likelihood and robust one-step inference. Otherwise park this specific opening unless a new ordinary argument changes the comparison. This is a model-diagnostic gate, not the full user goal or evidence of new statistical methodology.",
+  "verification": "Check exposure integrals against an independent interval-splitting implementation, phase partitions against their union, count partitions, frozen hashes, and the cutoff monotonicity calculation. Preserve failures. No data outcomes at or beyond frame 1000000, low-flux refit, pulse refit, Lean/Lake invocation, new hardware, outreach or publication."
+}

@@ -1,0 +1,7 @@
+{
+  "run": "space-join3-dev3-20261010T061740Z-9a6e85",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzConcatenation",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

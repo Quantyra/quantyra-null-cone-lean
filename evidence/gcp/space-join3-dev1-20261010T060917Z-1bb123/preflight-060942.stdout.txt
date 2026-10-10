@@ -1,0 +1,4 @@
+no-other-Lean-work
+usage(total=206900281344, used=206208970752, free=674533376)
+usage(total=33709740032, used=0, free=33709740032)
+MemAvailable_KiB 64773300

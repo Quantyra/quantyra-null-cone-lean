@@ -2198,3 +2198,57 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.weighted_time_separation_le_add3
 #check QuantyraNullCone.weighted_time_separation_difference3
 #print axioms QuantyraNullCone.weighted_time_separation_difference3
+
+/-! Actual AC-curve concatenation and causal reverse triangle (S042). -/
+#check QuantyraNullCone.join_integrable_left3
+#print axioms QuantyraNullCone.join_integrable_left3
+#check QuantyraNullCone.join_integrable_right3
+#print axioms QuantyraNullCone.join_integrable_right3
+#check QuantyraNullCone.join_integrable3
+#print axioms QuantyraNullCone.join_integrable3
+#check QuantyraNullCone.join_integral_left3
+#print axioms QuantyraNullCone.join_integral_left3
+#check QuantyraNullCone.join_integral_right3
+#print axioms QuantyraNullCone.join_integral_right3
+#check QuantyraNullCone.join_integral3
+#print axioms QuantyraNullCone.join_integral3
+#check QuantyraNullCone.join_primitive_left3
+#print axioms QuantyraNullCone.join_primitive_left3
+#check QuantyraNullCone.join_primitive_right3
+#print axioms QuantyraNullCone.join_primitive_right3
+#check QuantyraNullCone.joined_coord_AC3
+#print axioms QuantyraNullCone.joined_coord_AC3
+#check QuantyraNullCone.joined_coord_left3
+#print axioms QuantyraNullCone.joined_coord_left3
+#check QuantyraNullCone.joined_coord_right3
+#print axioms QuantyraNullCone.joined_coord_right3
+#check QuantyraNullCone.joined_coord_deriv3
+#print axioms QuantyraNullCone.joined_coord_deriv3
+#check QuantyraNullCone.ae_left_half3
+#print axioms QuantyraNullCone.ae_left_half3
+#check QuantyraNullCone.ae_right_half3
+#print axioms QuantyraNullCone.ae_right_half3
+#check QuantyraNullCone.joined_velocity3
+#print axioms QuantyraNullCone.joined_velocity3
+#check QuantyraNullCone.joined_future3
+#print axioms QuantyraNullCone.joined_future3
+#check QuantyraNullCone.FutureCurve3.concat_point_left
+#print axioms QuantyraNullCone.FutureCurve3.concat_point_left
+#check QuantyraNullCone.FutureCurve3.concat_point_right
+#print axioms QuantyraNullCone.FutureCurve3.concat_point_right
+#check QuantyraNullCone.FutureCurve3.concat_velocity
+#print axioms QuantyraNullCone.FutureCurve3.concat_velocity
+#check QuantyraNullCone.flat_proper_speed_smul3
+#print axioms QuantyraNullCone.flat_proper_speed_smul3
+#check QuantyraNullCone.FutureCurve3.concat_weighted_integrand
+#print axioms QuantyraNullCone.FutureCurve3.concat_weighted_integrand
+#check QuantyraNullCone.curve_integral_eq_interval3
+#print axioms QuantyraNullCone.curve_integral_eq_interval3
+#check QuantyraNullCone.FutureCurve3.concat_weightedLength
+#print axioms QuantyraNullCone.FutureCurve3.concat_weightedLength
+#check QuantyraNullCone.FutureCurve3.weightedLength_nonneg
+#print axioms QuantyraNullCone.FutureCurve3.weightedLength_nonneg
+#check QuantyraNullCone.weighted_time_reverse_triangle3
+#print axioms QuantyraNullCone.weighted_time_reverse_triangle3
+#check QuantyraNullCone.InDensityClass3.time_reverse_triangle3
+#print axioms QuantyraNullCone.InDensityClass3.time_reverse_triangle3

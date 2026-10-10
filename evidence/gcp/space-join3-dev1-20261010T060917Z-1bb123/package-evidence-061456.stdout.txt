@@ -1,0 +1,100 @@
+  ht
+ has type
+  t ∈ uIoc 2⁻¹ 1
+but is expected to have type
+  2⁻¹ < t ∧ t ≤ 1
+error: QuantyraNullCone/LorentzConcatenation.lean:24:61: unsolved goals
+f g : ℝ → ℝ
+hg : IntervalIntegrable g volume 0 1
+h : IntervalIntegrable (fun t => 2 * g (2 * t - 1)) volume (1 / 2) 1
+t : ℝ
+ht : t ∈ uIoc (1 / 2) 1
+ht' : t ∈ Ioc (1 / 2) 1
+⊢ t ≤ 2⁻¹ → g (2 * t - 1) = f (2 * t)
+warning: QuantyraNullCone/LorentzConcatenation.lean:30:21: This simp argument is unused:
+  not_le.mpr ht'.1
+
+Hint: Omit it from the simp argument list.
+  simp [joinScalar3,̵ ̵n̵o̵t̵_̵l̵e̵.̵m̵p̵r̵ ̵h̵t̵'̵.̵1̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzConcatenation.lean:38:78: unsolved goals
+case h
+f g : ℝ → ℝ
+t : ℝ
+ht : t ∈ Icc 0 (1 / 2)
+s : ℝ
+hs : s ∈ uIcc 0 t
+hs' : s ∈ Icc 0 t
+⊢ 2⁻¹ < s → g (2 * s - 1) = f (2 * s)
+warning: QuantyraNullCone/LorentzConcatenation.lean:42:23: This simp argument is unused:
+  hs'.2.trans ht.2
+
+Hint: Omit it from the simp argument list.
+  simp [joinScalar3,̵ ̵h̵s̵'̵.̵2̵.̵t̵r̵a̵n̵s̵ ̵h̵t̵.̵2̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzConcatenation.lean:53:43: Type mismatch: After simplification, term
+  hs
+ has type
+  s ∈ uIoc 2⁻¹ t
+but is expected to have type
+  2⁻¹ < s ∧ s ≤ t
+error: QuantyraNullCone/LorentzConcatenation.lean:50:46: unsolved goals
+case h.h
+f g : ℝ → ℝ
+t : ℝ
+ht : t ∈ Icc (1 / 2) 1
+s : ℝ
+hs : s ∈ uIoc (1 / 2) t
+hs' : s ∈ Ioc (1 / 2) t
+⊢ s ≤ 2⁻¹ → f (2 * s) = g (2 * s - 1)
+error: QuantyraNullCone/LorentzConcatenation.lean:58:2: Type mismatch
+  h
+has type
+  2 * (1 / 2 * ∫ (x : ℝ) in 0..2 * t - 1, g x) = ∫ (x : ℝ) in 0..2 * t - 1, g x
+but is expected to have type
+  2 * ∫ (x : ℝ) in 1 / 2..t, g (2 * x - 1) = ∫ (s : ℝ) in 0..2 * t - 1, g s
+warning: QuantyraNullCone/LorentzConcatenation.lean:54:23: This simp argument is unused:
+  not_le.mpr hs'.1
+
+Hint: Omit it from the simp argument list.
+  simp [joinScalar3,̵ ̵n̵o̵t̵_̵l̵e̵.̵m̵p̵r̵ ̵h̵s̵'̵.̵1̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzConcatenation.lean:74:23: linarith failed to find a contradiction
+case h
+f g : ℝ → ℝ
+hf : AbsolutelyContinuousOnInterval f 0 1
+t : ℝ
+ht : t ∈ Icc 0 (1 / 2)
+a✝ : 2 * t < 0
+⊢ False
+failed
+error: QuantyraNullCone/LorentzConcatenation.lean:93:23: linarith failed to find a contradiction
+case h
+f g : ℝ → ℝ
+hf : AbsolutelyContinuousOnInterval f 0 1
+hg : AbsolutelyContinuousOnInterval g 0 1
+hfg : f 1 = g 0
+t : ℝ
+ht : t ∈ Icc (1 / 2) 1
+hsub : uIcc (1 / 2) t ⊆ uIcc (1 / 2) 1
+a✝ : 2 * t - 1 < 0
+⊢ False
+failed
+info: QuantyraNullCone/LorentzConcatenation.lean:134:0: 'QuantyraNullCone.join_integrable_left3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:135:0: 'QuantyraNullCone.join_integrable_right3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:136:0: 'QuantyraNullCone.join_integrable3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:137:0: 'QuantyraNullCone.join_integral_left3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:138:0: 'QuantyraNullCone.join_integral_right3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:139:0: 'QuantyraNullCone.join_integral3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:140:0: 'QuantyraNullCone.join_primitive_left3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:141:0: 'QuantyraNullCone.join_primitive_right3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:142:0: 'QuantyraNullCone.joined_coord_AC3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:143:0: 'QuantyraNullCone.joined_coord_left3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:144:0: 'QuantyraNullCone.joined_coord_right3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzConcatenation.lean:145:0: 'QuantyraNullCone.joined_coord_deriv3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzConcatenation

@@ -1,6 +1,8 @@
 # Quantitative reconstruction from finite causal orders
 
-S046 mathematical acceptance, 2026-10-09: [joint physical-volume/calibration minimax rate, full marked observations, arbitrary independent randomization and the separate zero-sample result](notes/physical-volume-joint-certification.md) are now GCP certified. Full audit: 797 exact reports, including 29 additions, zero warnings. Source comparison, final finite validation and manuscript disposition remain open. Published manuscripts and the frozen pilot are unchanged.
+S046 finite validation, 2026-10-09: [frozen exact-formula and interval comparison](notes/physical-volume-finite-validation.md) passes 1,656 complete-law coverage checks and an independent artifact audit. Across 1,108 paired report cases, the joint-rate interval is wider than the existing exact-binomial report in 732 and equal in 376. Retain the exact-binomial report for practical use. Direct source comparison, final comparator applicability and manuscript disposition remain open.
+
+S046 mathematical acceptance, 2026-10-09: [joint physical-volume/calibration minimax rate, full marked observations, arbitrary independent randomization and the separate zero-sample result](notes/physical-volume-joint-certification.md) are now GCP certified. Full audit: 797 exact reports, including 29 additions, zero warnings. Source comparison, final comparator applicability and manuscript disposition remain open. Published manuscripts and the frozen pilot are unchanged.
 
 Earlier S046 upper/detector acceptance, 2026-10-09: [full marked-order estimator, uniform finite volume upper bound and uniform detector-confounding obstruction](notes/physical-volume-rate-progress.md) are GCP certified. Full audit: 768 exact reports, including 25 new theorems, zero warnings. The sampling lower bound and joint minimax theorem were subsequently certified as recorded above; published manuscripts and the frozen pilot are unchanged.
 

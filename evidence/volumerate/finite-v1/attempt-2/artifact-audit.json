@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "frozen_commit": "2dc6f4f2994fdfed3c97870094cf8d771668eb61",
+  "committed_source_identities": 12,
+  "unique_binomial_certificates": 104,
+  "interval_cells": 1108,
+  "independent_integer_tail_coverage_cells": 1656,
+  "pmf_recurrences": 261,
+  "minimum_exact_coverage": "107292581651677037916100594479960551146413965635416292342443499860075679628088239427363907808664324696323954228035348839649527262516450089241574003588900441456202958333724144733046578628997167528594636800000000000/111428085424037875665180058147280029795390841188111561613813584755256075586369658017087907743370357445117168831432757033282260181586912335157282455453122188466968053665831976797777954215059410615886399655489600001",
+  "paired_width_counts": {
+    "joint_narrower": 0,
+    "joint_wider": 732,
+    "equal": 376
+  },
+  "all_prespecified_cells_present_once": true,
+  "expected_width_enclosures_verified": true,
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "audit_source_sha256": "e2429e6aa37a7f4a90925f5a0bb78ed597bff4fd3b74fb397bfbf30d7f3caf08",
+  "artifact_sha256": {
+    "freeze.json": "20f451ee510d7f528b7a4d036155e2ca8c874eba44c184c811952edc2df591e8",
+    "formulas.json": "a0810e42c14f7675aa9d933b806e9f245d474d4de65eaea8c67acb0615105380",
+    "intervals.json": "219779d34ab9d46e77778a365d801980ce991f9fbfe9695057426f49feeb4496",
+    "coverage.json": "a3e89381b4443841a7649bd71f34d36f3ca35fa8bbb06328d17f42351789389b",
+    "summary.json": "518b5816dc27dfd9f73a010f6d9a2dcc9ff4b0b7ee2523c34264e1cb17202769"
+  },
+  "elapsed_seconds": 3.150657600002887,
+  "limits": "Checks the frozen finite grid and retained artifacts; no universal Python proof or source-literature completion."
+}

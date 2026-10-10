@@ -1,3 +1,4 @@
+import QuantyraNullCone.VolumeRateExperiment
 import QuantyraNullCone.ConfoundingTesting
 import QuantyraNullCone.ThinningStoppedCoverage
 import QuantyraNullCone.ThinningLaplace

@@ -1,0 +1,7 @@
+{
+  "run": "space-volumeupper-dev3-20261010T015315Z-bbd9b4",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.VolumeRateExperiment",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

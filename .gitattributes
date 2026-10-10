@@ -84,3 +84,7 @@ evidence/firstretained/** -text -whitespace
 
 evidence/gcp/space-confounding-*/** -text -whitespace
 evidence/confounding/** -text -whitespace
+
+evidence/gcp/space-volumeupper-*/** -text -whitespace
+evidence/volumeupper/** -text -whitespace
+QuantyraNullCone/VolumeRate*.lean text eol=lf

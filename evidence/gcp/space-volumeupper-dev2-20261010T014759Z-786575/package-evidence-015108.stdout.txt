@@ -1,0 +1,100 @@
+ha : 0 < 1 / R
+this : IsProbabilityMeasure (retainedMeasure mu pi) := ⋯
+nu : Measure (UnlabeledMarkedOrderCode n m) := ⋯
+theta : ℝ := ⋯
+hunit : mu.real (markedIntervalSet nullChronology (anchors p) (anchors q)) ∈ Set.Icc 0 1
+hbias :
+  |(retainedMeasure mu pi).real (markedIntervalSet nullChronology (anchors p) (anchors q)) -
+        mu.real (markedIntervalSet nullChronology (anchors p) (anchors q))| ≤
+    calibrationBudget R
+code : UnlabeledMarkedOrderCode ?m.163 m
+⊢ ℕ
+error: QuantyraNullCone/VolumeRateUpper.lean:30:7: Failed to infer type of binder `code`
+error: QuantyraNullCone/VolumeRateUpper.lean:28:14: don't know how to synthesize implicit argument `α`
+  @setOf (UnlabeledMarkedOrderCode ?m.163 m) fun code =>
+    2 * physicalVolumeRate n R <
+      |markedOrderFraction p q code - mu.real (markedIntervalSet nullChronology (anchors p) (anchors q))|
+context:
+rho : DiamondPoint → ℝ
+hK : InDensityClass rho
+pi : DiamondPoint → ℝ
+hpi : Integrable pi (densityMeasure rho)
+R : ℝ
+hR : 1 ≤ R
+hbounds : ∀ (x : DiamondPoint), 1 / R ≤ pi x ∧ pi x ≤ 1
+n m : ℕ
+hn : 0 < n
+anchors : Fin m → DiamondPoint
+p q : Fin m
+mu : Measure DiamondPoint := ⋯
+this✝ : IsProbabilityMeasure mu := ⋯
+ha : 0 < 1 / R
+this : IsProbabilityMeasure (retainedMeasure mu pi) := ⋯
+nu : Measure (UnlabeledMarkedOrderCode n m) := ⋯
+theta : ℝ := ⋯
+hunit : mu.real (markedIntervalSet nullChronology (anchors p) (anchors q)) ∈ Set.Icc 0 1
+hbias :
+  |(retainedMeasure mu pi).real (markedIntervalSet nullChronology (anchors p) (anchors q)) -
+        mu.real (markedIntervalSet nullChronology (anchors p) (anchors q))| ≤
+    calibrationBudget R
+⊢ Type
+error: QuantyraNullCone/VolumeRateUpper.lean:28:50: don't know how to synthesize implicit argument `n`
+  @markedOrderFraction ?m.163 m p q code
+context:
+rho : DiamondPoint → ℝ
+hK : InDensityClass rho
+pi : DiamondPoint → ℝ
+hpi : Integrable pi (densityMeasure rho)
+R : ℝ
+hR : 1 ≤ R
+hbounds : ∀ (x : DiamondPoint), 1 / R ≤ pi x ∧ pi x ≤ 1
+n m : ℕ
+hn : 0 < n
+anchors : Fin m → DiamondPoint
+p q : Fin m
+mu : Measure DiamondPoint := ⋯
+this✝ : IsProbabilityMeasure mu := ⋯
+ha : 0 < 1 / R
+this : IsProbabilityMeasure (retainedMeasure mu pi) := ⋯
+nu : Measure (UnlabeledMarkedOrderCode n m) := ⋯
+theta : ℝ := ⋯
+hunit : mu.real (markedIntervalSet nullChronology (anchors p) (anchors q)) ∈ Set.Icc 0 1
+hbias :
+  |(retainedMeasure mu pi).real (markedIntervalSet nullChronology (anchors p) (anchors q)) -
+        mu.real (markedIntervalSet nullChronology (anchors p) (anchors q))| ≤
+    calibrationBudget R
+code : UnlabeledMarkedOrderCode ?m.163 m
+⊢ ℕ
+error: QuantyraNullCone/VolumeRateUpper.lean:28:15: Failed to infer type of binder `code`
+error: QuantyraNullCone/VolumeRateUpper.lean:16:20: unsolved goals
+rho : DiamondPoint → ℝ
+hK : InDensityClass rho
+pi : DiamondPoint → ℝ
+hpi : Integrable pi (densityMeasure rho)
+R : ℝ
+hR : 1 ≤ R
+hbounds : ∀ (x : DiamondPoint), 1 / R ≤ pi x ∧ pi x ≤ 1
+n m : ℕ
+hn : 0 < n
+anchors : Fin m → DiamondPoint
+p q : Fin m
+mu : Measure DiamondPoint := densityMeasure rho
+this✝ : IsProbabilityMeasure mu := InDensityClass.isProbabilityMeasure hK
+ha : 0 < 1 / R
+this : IsProbabilityMeasure (retainedMeasure mu pi) := retained_measure_probability mu hpi ha hbounds
+nu : Measure (UnlabeledMarkedOrderCode n m) := retainedMarkedOrderLaw rho pi n anchors
+theta : ℝ := (retainedMeasure mu pi).real (markedIntervalSet nullChronology (anchors p) (anchors q))
+hunit : mu.real (markedIntervalSet nullChronology (anchors p) (anchors q)) ∈ Set.Icc 0 1
+hbias :
+  |(retainedMeasure mu pi).real (markedIntervalSet nullChronology (anchors p) (anchors q)) -
+        mu.real (markedIntervalSet nullChronology (anchors p) (anchors q))| ≤
+    calibrationBudget R
+⊢ (retainedMarkedOrderLaw rho pi n anchors).real
+      {code |
+        2 * physicalVolumeRate n R <
+          |markedOrderFraction p q code -
+              (densityMeasure rho).real (markedIntervalSet nullChronology (anchors p) (anchors q))|} ≤
+    1 / 20
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.VolumeRateUpper

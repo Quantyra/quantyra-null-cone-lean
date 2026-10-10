@@ -1,0 +1,68 @@
+1
+info: QuantyraNullCone/DegreeEstimator.lean:161:0: 'QuantyraNullCone.selectedDegreeDensity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:162:0: 'QuantyraNullCone.densityEstimateGood_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:163:0: 'QuantyraNullCone.DensityEstimateGood.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:164:0: 'QuantyraNullCone.degree_reconstruction_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:165:0: 'QuantyraNullCone.reconstructed_selected_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:166:0: 'QuantyraNullCone.InDensityClass.fourth_root_density_estimation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/DegreeEstimator.lean:167:0: 'QuantyraNullCone.fourth_root_order_only_estimator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2939/2994] Replayed QuantyraNullCone.DegreeLaw
+info: QuantyraNullCone/DegreeLaw.lean:92:0: 'QuantyraNullCone.density_estimate_common_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:93:0: 'QuantyraNullCone.InDensityClass.degree_estimate_intersects' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:94:0: 'QuantyraNullCone.InDensityClass.degree_distance_small_TV' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DegreeLaw.lean:95:0: 'QuantyraNullCone.InDensityClass.fourth_root_actual_law_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2940/2994] Replayed QuantyraNullCone.OddGaussian
+info: QuantyraNullCone/OddGaussian.lean:101:0: 'QuantyraNullCone.odd_gaussian_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:102:0: 'QuantyraNullCone.odd_gaussian_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:103:0: 'QuantyraNullCone.odd_gaussian_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:104:0: 'QuantyraNullCone.odd_gaussian_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:105:0: 'QuantyraNullCone.odd_gaussian_deriv_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:106:0: 'QuantyraNullCone.odd_gaussian_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:107:0: 'QuantyraNullCone.lower_profile_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:108:0: 'QuantyraNullCone.lower_profile_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:109:0: 'QuantyraNullCone.lower_profile_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:110:0: 'QuantyraNullCone.lower_profile_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/OddGaussian.lean:111:0: 'QuantyraNullCone.lower_profile_integral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2941/2994] Replayed QuantyraNullCone.LowerAlternatives
+info: QuantyraNullCone/LowerAlternatives.lean:107:0: 'QuantyraNullCone.lower_alternative_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:108:0: 'QuantyraNullCone.lower_alternative_deviation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:109:0: 'QuantyraNullCone.lower_alternative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:110:0: 'QuantyraNullCone.lower_alternative_coordinate_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:111:0: 'QuantyraNullCone.lower_alternative_euclidean_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:112:0: 'QuantyraNullCone.lower_alternative_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:113:0: 'QuantyraNullCone.lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:114:0: 'QuantyraNullCone.lower_flat_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:115:0: 'QuantyraNullCone.lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2980/2994] Built QuantyraNullCone.MarkedOrder (43s)
+✔ [2981/2994] Built QuantyraNullCone.ThinningGenerating (43s)
+✔ [2982/2994] Built QuantyraNullCone.ThinningLaplace (3.3s)
+✔ [2983/2994] Built QuantyraNullCone.ConfoundingGeometry (3.5s)
+✔ [2984/2994] Built QuantyraNullCone.ThinningTermination (3.1s)
+✔ [2985/2994] Built QuantyraNullCone.ConfoundingDetector (3.1s)
+✔ [2986/2994] Built QuantyraNullCone.ConfoundingTargets (3.2s)
+✔ [2987/2994] Built QuantyraNullCone.ThinningStopping (3.5s)
+✔ [2988/2994] Built QuantyraNullCone.ThinningTerminalPatterns (2.8s)
+✔ [2989/2994] Built QuantyraNullCone.ThinningStoppedLaw (2.8s)
+✔ [2990/2994] Built QuantyraNullCone.ConfoundingLaw (3.1s)
+✔ [2991/2994] Built QuantyraNullCone.ConfoundingMarked (3.0s)
+✖ [2992/2994] Building QuantyraNullCone.MarkedEstimator (2.7s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/QuantyraNullCone/MarkedEstimator.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/.lake/build/lib/lean/QuantyraNullCone/MarkedEstimator.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/.lake/build/lib/lean/QuantyraNullCone/MarkedEstimator.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/.lake/build/ir/QuantyraNullCone/MarkedEstimator.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-volumeupper-dev1-20261010T014014Z-b7048d/source/.lake/build/ir/QuantyraNullCone/MarkedEstimator.setup.json --json
+error: QuantyraNullCone/MarkedEstimator.lean:8:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+error: QuantyraNullCone/MarkedEstimator.lean:30:74: unsolved goals
+case h
+n m : ℕ
+p q : Fin m
+anchors : Fin m → DiamondPoint
+sample : Fin n → DiamondPoint
+i : Fin n
+⊢ (decide (nullChronology (anchors p) (sample i)) && decide (nullChronology (sample i) (anchors q))) =
+    (decide (nullChronology (anchors p) (sample i)) && decide (nullChronology (sample i) (anchors q)))
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.MarkedEstimator
+error: build failed
+TERMINAL_EXIT=1

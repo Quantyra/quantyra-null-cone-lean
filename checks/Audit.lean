@@ -1888,3 +1888,55 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.calibration_density_randomized_obstruction
 #check QuantyraNullCone.calibration_time_randomized_obstruction
 #print axioms QuantyraNullCone.calibration_time_randomized_obstruction
+
+-- Full marked estimator, finite upper rate and uniform detector-confounding obstruction.
+#check QuantyraNullCone.marked_order_interval_bits_relabel
+#print axioms QuantyraNullCone.marked_order_interval_bits_relabel
+#check QuantyraNullCone.marked_order_fraction_measurable
+#print axioms QuantyraNullCone.marked_order_fraction_measurable
+#check QuantyraNullCone.sampled_marked_order_interval_bits
+#print axioms QuantyraNullCone.sampled_marked_order_interval_bits
+#check QuantyraNullCone.sampled_marked_order_fraction
+#print axioms QuantyraNullCone.sampled_marked_order_fraction
+#check QuantyraNullCone.marked_order_fraction_unit
+#print axioms QuantyraNullCone.marked_order_fraction_unit
+#check QuantyraNullCone.full_marked_order_fraction_hoeffding
+#print axioms QuantyraNullCone.full_marked_order_fraction_hoeffding
+#check QuantyraNullCone.calibration_budget_nonneg
+#print axioms QuantyraNullCone.calibration_budget_nonneg
+#check QuantyraNullCone.retention_lower_bias
+#print axioms QuantyraNullCone.retention_lower_bias
+#check QuantyraNullCone.retention_upper_bias
+#print axioms QuantyraNullCone.retention_upper_bias
+#check QuantyraNullCone.retained_volume_bias
+#print axioms QuantyraNullCone.retained_volume_bias
+#check QuantyraNullCone.volume_sampling_scale_positive
+#print axioms QuantyraNullCone.volume_sampling_scale_positive
+#check QuantyraNullCone.volume_sampling_budget
+#print axioms QuantyraNullCone.volume_sampling_budget
+#check QuantyraNullCone.volume_rate_error_inclusion
+#print axioms QuantyraNullCone.volume_rate_error_inclusion
+#check QuantyraNullCone.physical_volume_rate_upper
+#print axioms QuantyraNullCone.physical_volume_rate_upper
+#check QuantyraNullCone.fixed_marked_physical_volume_rate_upper
+#print axioms QuantyraNullCone.fixed_marked_physical_volume_rate_upper
+#check QuantyraNullCone.VolumeRateModel.detector_integrable
+#print axioms QuantyraNullCone.VolumeRateModel.detector_integrable
+#check QuantyraNullCone.VolumeRateModel.marked_probability
+#print axioms QuantyraNullCone.VolumeRateModel.marked_probability
+#check QuantyraNullCone.VolumeRateModel.volume_rate_upper
+#print axioms QuantyraNullCone.VolumeRateModel.volume_rate_upper
+#check QuantyraNullCone.calibration_budget_positive
+#print axioms QuantyraNullCone.calibration_budget_positive
+#check QuantyraNullCone.calibration_budget_le_third
+#print axioms QuantyraNullCone.calibration_budget_le_third
+#check QuantyraNullCone.calibration_budget_detector_ratio
+#print axioms QuantyraNullCone.calibration_budget_detector_ratio
+#check QuantyraNullCone.calibration_flat_model
+#print axioms QuantyraNullCone.calibration_flat_model
+#check QuantyraNullCone.calibration_alternative_model
+#print axioms QuantyraNullCone.calibration_alternative_model
+#check QuantyraNullCone.physical_volume_detector_obstruction
+#print axioms QuantyraNullCone.physical_volume_detector_obstruction
+#check QuantyraNullCone.physical_volume_detector_rate_lower
+#print axioms QuantyraNullCone.physical_volume_detector_rate_lower

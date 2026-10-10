@@ -1,5 +1,7 @@
 # Quantitative reconstruction from finite causal orders
 
+S046 partial acceptance, 2026-10-09: [full marked-order estimator, uniform finite volume upper bound and uniform detector-confounding obstruction](notes/physical-volume-rate-progress.md) are GCP certified. Full audit: 768 exact reports, including 25 new theorems, zero warnings. The sampling lower bound and joint minimax theorem remain uncertified; published manuscripts and the frozen pilot are unchanged.
+
 S040 confounding acceptance, 2026-10-09: [admissible distinct geometries, globally valid detectors, complete marked-order/process law equality, physical target separation and arbitrary randomized-estimation obstruction](notes/confounding-certification.md) now have full GCP acceptance: 743 exact type/axiom reports, including 70 new theorems, with zero warnings. The frozen pilot and all manuscripts remain unchanged.
 
 Accepted supporting components include [first-n termination, its actual iid law and physical coverage](notes/thinning-stopped-certification.md), [finite thinning](notes/thinning-certification.md), [random-count/Poisson composition](notes/thinning-process-certification.md), the [Laplace functional](notes/thinning-laplace-certification.md) and the [exact-binomial report](notes/binomial-certification.md). Their earlier receipts remain preserved. The [joint volume/calibration rate](notes/physical-volume-calibration-rate.md) remains an ordinary uncertified proof. Remaining to-do list: S039, S042-S044 and S046 in the planning roadmap.

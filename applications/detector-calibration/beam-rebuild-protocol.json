@@ -1,0 +1,54 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "scope": "Verify fixture provenance and reconstruct reference associations on the already inspected 10000-event subset. This is a data-adequacy step, not a new tracking method or decision-benefit experiment.",
+  "source_commit": "9ab568b787a9c018207dff6a33b9ef2148153e1a",
+  "prior_results": "The small merged fixture has already been found byte-identical to all records with its event IDs in the full merged fixture: 99478 rows, 10000 events, from 1116936 rows and 112700 events. These identity results are retrospective. The rebuild comparison below has not been evaluated before this protocol and executable are frozen.",
+  "files": {
+    "Merged_small.h5": {
+      "path": "beam_telescope_analysis/testing/fixtures/Merged_small.h5",
+      "lfs": true,
+      "sha256": "1b4f472b6b6727e56310453f57863ab365b78261edaa538c654b7c2f3c03c3a8"
+    },
+    "Merged_result.h5": {
+      "path": "beam_telescope_analysis/testing/fixtures/Merged_result.h5",
+      "lfs": true,
+      "sha256": "624c6c4bd617b9daf470475288bb6e0888209c3969774203088229eb13bd7c3e"
+    },
+    "TrackCandidates_result.h5": {
+      "path": "beam_telescope_analysis/testing/fixtures/TrackCandidates_result.h5",
+      "lfs": true,
+      "sha256": "27b19dd6a12b2a0d60519e8c1f274dbd7972139f91a1a5dacb9feef597fa64a5"
+    },
+    "geometry_utils.py": {
+      "path": "beam_telescope_analysis/tools/geometry_utils.py",
+      "sha256": "b2afeb77c878b1b6ba7394ac137170afca295e4cf18bcc8f3174424f1f385d5d"
+    },
+    "track_analysis.py": {
+      "path": "beam_telescope_analysis/track_analysis.py",
+      "sha256": "bc6467c95245ef38084a2740421edf86d0b868b3d44038bb317e3a6fcc39d94d"
+    },
+    "telescope_aligned.yaml": {
+      "path": "beam_telescope_analysis/testing/fixtures/telescope_aligned.yaml",
+      "sha256": "ab59386e71beeec84a1a869bbe34e0f50a3d2cb07fcfcc1163156ad50dd047a4"
+    },
+    "LICENSE.txt": {
+      "path": "LICENSE.txt",
+      "sha256": "575ec487d0dcc03ee3b8a417b5db41f83344894c7855f52fa8d97b71f29da073"
+    }
+  },
+  "fixed_procedure": [
+    "Replay the unmodified upstream track-association routines with all six planes and the supplied geometry. Require exact field agreement with the saved TrackCandidates_result.h5 before interpreting the projected reconstruction. These are candidate associations, not fitted trajectories.",
+    "Construct a separate input containing only event IDs and fields of reference planes 0,1,2,4,5. Remove rows with no reference hit. Do not pass DUT3 columns, its geometry or all-detector hit flags to the reference finder. This removes detector influence at per-event association given the fixed published alignment; it does not independently calibrate that alignment.",
+    "Run the same established finder on these five planes. Compare complete five-reference cluster tuples, including event ID, with the corresponding six-plane associations. Report lost, gained and shared tuples; no physical false-association rate or improved efficiency follows from disagreement alone.",
+    "Check that replacing DUT3 fields or adding rows containing only DUT3 hits leaves the projected input byte-identical. Check a split at the median event boundary gives the same reference associations as the complete subset.",
+    "Only inspect detection/association outcomes in Merged_small. Use Merged_result to compare subset identity and count event IDs outside it. Keep those other 102700 event outcomes unanalyzed pending a useful decision, matched strong comparators, calibration model and separate frozen evaluation protocol."
+  ],
+  "limits": [
+    "Published alignment used this development subset, including DUT3. Conditional input independence is not statistical independence or physical validation.",
+    "The full merged file identifies its six upstream clustered files. Raw-to-cluster conversion, trigger selection and detector settings still require adequate provenance before a physical efficiency claim.",
+    "Reference-only association and excluded-detector fits are established practice. BTA and Corryvreckan/GBL or Kalman tracking remain eligible comparators. A correction to an all-hit or detector-influenced reference alone is not a new-method advantage.",
+    "Multiple tracks per event, matching uncertainty, finite alignment precision and detector acceptance remain explicit calibration obligations. No iid row assumption is made.",
+    "All prior studies/manuscripts stay frozen. No Lean, hardware, outreach, deployment or publication is selected by this check."
+  ]
+}

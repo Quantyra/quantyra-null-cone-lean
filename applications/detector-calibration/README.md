@@ -6,6 +6,6 @@ Current checkpoint: **the first screen is complete and negative for improvement*
 
 `derivation.md` gives the ordinary renewal argument. `SOURCES.md` records applicable prior work and the limits of the available physical evidence. Code and numerical checks here are not Lean-certified. Every future Lean invocation remains GCP-only and is contingent on useful mathematics and comparative value.
 
-Continuation: the [source screen](../balanced-volume/source-screen.md) identifies stronger established timing methods and redirects the next bounded comparison to observable balance in the original model. The [balanced-volume checkpoint](../balanced-volume/README.md) now records a positive finite pilot against three implemented comparators; a stronger auxiliary-constrained comparison and physical validation remain open. This detector screen stays frozen.
+Continuation: the [balanced-volume comparison](../balanced-volume/FINITE-REFERENCE-RESULTS.md) now parks promotion of its original candidate after a stronger exact finite reference dominates it. The [physical-data screen](physical-data-screen.md) examines cesium lifetime, BrightEyes timing and beam-telescope records. The beam fixture retains misses on the evaluated detector, but its earlier association step can use that detector; reference independence and physical calibration remain open. The original detector experiment stays frozen.
 
-Remaining to-do list: complete the strongest balanced-volume comparison and validate any surviving decision procedure physically.
+Remaining to-do list: verify an adequate physical reference sample, establish a surviving benefit against applicable existing methods, then validate that benefit physically.

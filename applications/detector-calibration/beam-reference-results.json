@@ -1,0 +1,439 @@
+{
+  "scope": "Structural adequacy screen of an existing beam-telescope regression fixture; no comparative-benefit or physical-calibration experiment",
+  "protocol_sha256": "de8ba4a8336c5116e65566f671989cb5fdb823b134aa1b7d9b9914716fa4475c",
+  "executable_sha256": "d3ca79f979648880d20ac805468e0439ea0f69ba4f0917c420921334bd9f23b3",
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "h5py": "3.16.0",
+    "hdf5plugin": "7.1.0"
+  },
+  "inputs": {
+    "Tracks_result.h5": {
+      "sha256": "136d3cd99c06bb75f1a4ea0d2e9fbbe2261ce0bfac3b8229372d14429e8d0cfb",
+      "bytes": 107329094,
+      "url": "https://media.githubusercontent.com/media/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/Tracks_result.h5"
+    },
+    "track_analysis.py": {
+      "sha256": "bc6467c95245ef38084a2740421edf86d0b868b3d44038bb317e3a6fcc39d94d",
+      "bytes": 104493,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/track_analysis.py"
+    },
+    "data_selection.py": {
+      "sha256": "46f5d29419fd2a8746a9d100744c8584ea6df55066596812ee475a53a0f8db54",
+      "bytes": 26767,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/tools/data_selection.py"
+    },
+    "result_analysis.py": {
+      "sha256": "fb7d7e4cf5b4b188233327e48d2cc57d77b728be6c1870c013cd02b6291b8252",
+      "bytes": 229584,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/result_analysis.py"
+    },
+    "test_track_analysis.py": {
+      "sha256": "b01c2e4230c3769158b6d029912a0dc4cae15de121080e019a539df69ea36e6c",
+      "bytes": 8506,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/test_track_analysis.py"
+    },
+    "test_result_analysis.py": {
+      "sha256": "85670c652b8daad4cd9649567cc03dee8efa3e32c478af91a0af1cb9195120a4",
+      "bytes": 6216,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/test_result_analysis.py"
+    },
+    "telescope_aligned.yaml": {
+      "sha256": "ab59386e71beeec84a1a869bbe34e0f50a3d2cb07fcfcc1163156ad50dd047a4",
+      "bytes": 3076,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/telescope_aligned.yaml"
+    },
+    "eutelescope.py": {
+      "sha256": "bfcb83e6ad97f44775b65e0182d95662093254a5fd5b6e6a8ab28a14c70a226c",
+      "bytes": 18589,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/examples/eutelescope.py"
+    },
+    "README.md": {
+      "sha256": "95d3c4219362132bd301a54e944768ec8292bc961e9d69c8f24c1f0a0b2fccda",
+      "bytes": 9920,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/README.md"
+    },
+    "LICENSE.txt": {
+      "sha256": "575ec487d0dcc03ee3b8a417b5db41f83344894c7855f52fa8d97b71f29da073",
+      "bytes": 1067,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/LICENSE.txt"
+    }
+  },
+  "tables": {
+    "0": {
+      "rows": 56520,
+      "events": 9936,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9238,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 775,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "62": 775,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    },
+    "1": {
+      "rows": 56815,
+      "events": 9935,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9237,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 1070,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "61": 1070,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    },
+    "2": {
+      "rows": 56656,
+      "events": 9931,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9234,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 911,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "59": 911,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    },
+    "3": {
+      "rows": 56792,
+      "events": 9937,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9249,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 1047,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "55": 1047,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    },
+    "4": {
+      "rows": 55809,
+      "events": 9926,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9207,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 64,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "47": 64,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    },
+    "5": {
+      "rows": 60564,
+      "events": 9951,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 9311,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 4819,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "31": 4819,
+        "63": 55745
+      },
+      "independent_field_consistency": {
+        "0": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "1": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "2": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "3": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "4": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        },
+        "5": {
+          "bit_x_disagreements": 0,
+          "bit_y_disagreements": 0,
+          "bit_n_hits_disagreements": 0
+        }
+      }
+    }
+  },
+  "claim_boundary": "Structural counts only. No independent-efficiency calibration, comparative benefit, physical validation or spacetime inference is established.",
+  "stored_fit_arguments": {
+    "telescope_configuration": "/home/silab/git/bta/beam_telescope_analysis/testing/fixtures/telescope_aligned.yaml",
+    "input_track_candidates_file": "tmp_track_test_output/TrackCandidates.h5",
+    "output_tracks_file": "tmp_track_test_output/Tracks.h5",
+    "quality_distances": "[(36.8, 36.8), (36.8, 36.8), (36.8, 36.8), (36.8, 36.8), (36.8, 36.8), (36.8, 36.8)]",
+    "isolation_distances": "(1000.0, 1000.0)"
+  },
+  "dut3_descriptive_subsets": {
+    "split_event": 43479950608,
+    "reference_quality_subset": {
+      "rows": 19412,
+      "events": 8243,
+      "first_event": 529960,
+      "last_event": 78187499080,
+      "events_with_multiple_rows": 5562,
+      "event_ids_nondecreasing": true,
+      "missing_dut_hit_rows": 313,
+      "missing_reference_hit_rows": 0,
+      "nonfinite_fit_rows": 0,
+      "hit_patterns": {
+        "55": 313,
+        "63": 19099
+      }
+    },
+    "chronological_halves": {
+      "earlier": {
+        "all_rows": {
+          "rows": 29138,
+          "events": 4968,
+          "first_event": 529960,
+          "last_event": 43478329968,
+          "events_with_multiple_rows": 4629,
+          "event_ids_nondecreasing": true,
+          "missing_dut_hit_rows": 582,
+          "missing_reference_hit_rows": 0,
+          "nonfinite_fit_rows": 0,
+          "hit_patterns": {
+            "55": 582,
+            "63": 28556
+          }
+        },
+        "reference_quality_subset": {
+          "rows": 9845,
+          "events": 4153,
+          "first_event": 529960,
+          "last_event": 43478329968,
+          "events_with_multiple_rows": 2778,
+          "event_ids_nondecreasing": true,
+          "missing_dut_hit_rows": 177,
+          "missing_reference_hit_rows": 0,
+          "nonfinite_fit_rows": 0,
+          "hit_patterns": {
+            "55": 177,
+            "63": 9668
+          }
+        }
+      },
+      "later": {
+        "all_rows": {
+          "rows": 27654,
+          "events": 4969,
+          "first_event": 43479950608,
+          "last_event": 78187499080,
+          "events_with_multiple_rows": 4620,
+          "event_ids_nondecreasing": true,
+          "missing_dut_hit_rows": 465,
+          "missing_reference_hit_rows": 0,
+          "nonfinite_fit_rows": 0,
+          "hit_patterns": {
+            "55": 465,
+            "63": 27189
+          }
+        },
+        "reference_quality_subset": {
+          "rows": 9567,
+          "events": 4090,
+          "first_event": 43479950608,
+          "last_event": 78187499080,
+          "events_with_multiple_rows": 2784,
+          "event_ids_nondecreasing": true,
+          "missing_dut_hit_rows": 136,
+          "missing_reference_hit_rows": 0,
+          "nonfinite_fit_rows": 0,
+          "hit_patterns": {
+            "55": 136,
+            "63": 9431
+          }
+        }
+      }
+    }
+  }
+}

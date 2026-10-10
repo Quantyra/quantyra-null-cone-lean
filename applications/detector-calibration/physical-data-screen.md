@@ -404,18 +404,110 @@ Reproduce with the two executables and `--cache-dir` pointing to the existing
 external data directory; each requires a new `--output` path so frozen
 results cannot be silently overwritten. No Lean/Lake or GCP run occurred.
 
+## Range consequence: recovery-rate correction misses its target
+
+2026-10-10 continuation. **Park the multiplicative recovery-rate correction
+alone as the proposed route to the 1 mm decision.** The
+[range protocol](lidar-range-protocol.json),
+[ordinary argument](lidar-range-argument.md) and
+[executable](lidar_range_screen.py) were pushed at
+`2328a521466795c37a701cca449a0e75b5b5583c` before local range fitting.
+They nominate a later 1 mm / 95% reliability benchmark at 10,000 laser
+periods, with a 20% squared-error reduction against the strongest eligible
+comparator. The current necessary development gate is a consistent correction
+of at least 0.2 mm. This is a research benchmark, not an asserted deployment
+requirement. No short-acquisition risk comparison or physical accuracy claim
+has yet been made.
+
+Use the same two high-flux development halves and two pulse-background
+conventions. Fit a supported hard cutoff, flexible early recovery factors,
+and four guarded likelihoods. The discrete comparators use the unmodified
+pinned robust pilot and one-step functions and their joint likelihood/score,
+with a documented SciPy optimizer and centered-bin reader adaptation. Native
+12,500-bin and coarse 625-bin results are retained. Half-bin origins are
+explicitly aligned; the authors' complete published pipeline is not claimed
+reproduced. The fitted low-flux delay is a provisional reference only.
+
+The first continuous-time fit gives a correction of only about 0.01 mm.
+Larger differences between continuous and native discrete estimates require
+an observation-model check before any physical interpretation. The
+[native audit protocol](lidar-range-audit-protocol.json) was pushed at
+`f9bc8d8c70d7ccd3ee4b4b3057e0e6b2acee21b3`, followed by the executable import
+fix at `37ac4caa8c7cd98959be5aa207adf6be73ff778f` before its first data fit.
+The initial invocation failed at module import, before accessing outcomes;
+its source revision remains in history. The audit fits recovery and a 205 ns
+guard within the same native Bernoulli likelihood as the strong comparator.
+
+| Pulse convention / half | Recovery minus continuous hard (mm) | Recovery minus native hard (mm) | Native 205 ns guard minus native hard (mm) |
+| --- | ---: | ---: | ---: |
+| Subtract minimum / first | -0.009823 | -0.043250 | -0.562146 |
+| Subtract minimum / second | -0.011030 | -0.049358 | -0.610255 |
+| Keep baseline / first | -0.009875 | -0.043162 | -0.563205 |
+| Keep baseline / second | -0.011089 | -0.049199 | -0.610376 |
+
+Both recovery gates fail. The small correction is consistent across halves
+and pulse choices, but falls below the frozen worthwhile-effect threshold.
+This does not refute all recovery-aware methods or establish an impossibility
+result. In particular, the larger guarded shift survives the matched native
+model. It calls for separating age-dependent pulse timing/shape from a changing
+signal-to-background ratio before selecting another estimator.
+
+The native one-step estimates are close to native joint MLEs in these long
+development windows; the coarse one-step estimates are farther away. A claim
+based only on the coarse implementation would miss the stronger native
+comparator. Several continuous-time fits have distinct local modes; small
+score residuals are not global-optimum certificates. Those individual starts
+are retained. The native fits also use local optimization, with consistent
+solutions from the declared starts, not a theorem about the global optimum.
+
+The provisional native low-flux delay is 2.827697 ns with background
+subtraction and 2.827610 ns without, relative to the arbitrary calibration
+template origin. The high-flux delays remain several millimeters away in
+delay-equivalent distance. This discrepancy does not identify which estimate
+is accurate or show that the target moved. The 150 ns low-flux guard retains
+2,704 of 3,259 post-initial detections, so treating this record as an ideal
+unaffected low-flux truth would be especially unwarranted. Hidden avalanches,
+afterpulsing, pulse drift, timing offsets and target/reference stability remain
+unresolved. A guarded shift toward this provisional reference is not yet a
+validated accuracy gain.
+
+### Verification and disposition
+
+The continuous exposure implementation sums pulse antiderivatives over
+recorded live intervals. Its compressed form agrees with direct full-interval
+sums in 120 cases, including period wrap, to `1.601e-10` pulse-exposure units.
+Synthetic wrapped-interval and gradient checks pass. The native age-cell
+exposures match the independently structured hard-model reconstruction and
+their age-union partitions exactly; independent enumeration checks 75
+synthetic cells. Analytic score finite differences are below `1.2e-8` for
+the retained continuous/native fits. Direct dense evaluation of all ten
+native-audit fits agrees with the compact likelihood within `4.657e-10` log
+units and its normalized score within `1.917e-16`. Source/input/protocol
+hashes match the frozen commits. Solver status and residuals are retained;
+the largest native-audit normalized score is about `5.91e-7`.
+
+The [first result](lidar-range-results.json) SHA256 is
+`948643ef50775ced817efcc835daf2899558cbf2c54ba0ea0d6b2b2eeba07821`;
+the [native audit](lidar-range-audit.json) SHA256 is
+`abf69ebb3dfb357173c8c388bb78d9475ee1f15bd563c8941f8fe61a6ef2be7d`.
+JSON output uses explicit LF line endings. Reproduce each executable with
+`--cache-dir`, `--upstream-root` and a new `--output` path; source files are
+hash-checked before import. No final-reserve outcomes, Lean/Lake invocation,
+new hardware or publication occurred. This milestone closes the proposed
+recovery-rate correction's development gate negatively, not the full goal.
+
 ## Next selection gate
 
-The age-dependence result warrants a bounded ranging comparison. First quantify
-the effect on the range score after allowing amplitude and background to
-adjust: a large predictive discrepancy can have negligible effect on range.
-Then compare recovery-aware inference against fitted hard-cutoff joint
-likelihood, robust one-step estimation, an established flexible recovery
-likelihood and a guarded likelihood that retains the full detection history.
-Freeze the range tolerance, error requirement, calibration inputs and resource
-budget before the comparison. If the range effect is negligible or already
-matched by the applicable established method, park promotion of a distinct
-method. Do not spend the final reserve to rescue an unsuccessful comparison.
+The amplitude-only recovery extension has been screened and misses its
+worthwhile-range-effect gate. The remaining specific lead is the larger
+native guarded shift: use the existing development records to distinguish
+changing pulse/background proportions from pulse timing or shape changes with
+detector history. Determine whether the separate low-flux record can supply
+a calibrated reference, or whether an additional acquisition at another
+holdoff is needed as a physical control. These questions must produce a
+useful ordinary argument and a fair comparison against native joint likelihood,
+native robust one-step, flexible recovery and guarded inference. Do not spend
+the final reserve to rescue the failed recovery-rate correction.
 
 Pulse and reference calibration, latent timestamp treatment, complete history,
 stability and dependence remain explicit obligations. A different target from

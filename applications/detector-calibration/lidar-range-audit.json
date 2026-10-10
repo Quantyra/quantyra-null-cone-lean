@@ -1,0 +1,450 @@
+{
+  "audit_protocol_sha256": "db3324ab3dccd344b6529446fe98ea24add4c9f132c590b8dede0bcf79845909",
+  "audit_executable_sha256": "6dd8b44aa2ff49adc74028de7de007400c245e3a850201bddd6f98fd17637d49",
+  "parent_result_sha256": "948643ef50775ced817efcc835daf2899558cbf2c54ba0ea0d6b2b2eeba07821",
+  "synthetic_audit": {
+    "synthetic_integer_enumeration": "pass",
+    "cells": 75
+  },
+  "variants": [
+    {
+      "pulse": "smooth_min_subtracted",
+      "high_flux": [
+        {
+          "window_frames": [
+            0,
+            500000
+          ],
+          "hard_exposure_counts_equal": true,
+          "age_partition_equal": true,
+          "profiled_recovery": {
+            "tau_ns": 2.8648835027463946,
+            "a": 0.27533359559120846,
+            "b_per_ns": 0.015737204018549656,
+            "g": [
+              0.0010905396934429157,
+              0.10931712718812557,
+              0.4665274240873261,
+              0.6675508387035293,
+              0.7443450270621279,
+              0.8417307172289918,
+              0.9313873634338352,
+              0.9926543638461062,
+              1.001474206675199,
+              1.0
+            ],
+            "detections": 198276,
+            "negative_mean_loglik": 9.46028277898975,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 359,
+            "normalized_score_max": 6.49444888829963e-08,
+            "gradient_difference_max": 4.071871130454741e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8648835027463946,
+                "negative_mean_loglik": 9.46028277898975,
+                "success": true,
+                "iterations": 359
+              },
+              {
+                "tau_ns": 2.8648835187643806,
+                "negative_mean_loglik": 9.460282778989761,
+                "success": true,
+                "iterations": 340
+              },
+              {
+                "tau_ns": 2.864883519727844,
+                "negative_mean_loglik": 9.46028277898995,
+                "success": true,
+                "iterations": 375
+              }
+            ]
+          },
+          "guard_205": {
+            "tau_ns": 2.8614218018541946,
+            "a": 0.27865909978757886,
+            "b_per_ns": 0.015704589603725342,
+            "g": [
+              1.0
+            ],
+            "detections": 171622,
+            "negative_mean_loglik": 9.536136002657885,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 18,
+            "normalized_score_max": 1.73431211506412e-08,
+            "gradient_difference_max": 8.209973508297537e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8614218018541946,
+                "negative_mean_loglik": 9.536136002657885,
+                "success": true,
+                "iterations": 18
+              },
+              {
+                "tau_ns": 2.861421803094642,
+                "negative_mean_loglik": 9.536136002657885,
+                "success": false,
+                "iterations": 15
+              },
+              {
+                "tau_ns": 2.8614218021120883,
+                "negative_mean_loglik": 9.536136002657885,
+                "success": true,
+                "iterations": 17
+              }
+            ]
+          },
+          "recovery_minus_native_hard_mm": -0.043249965605563635,
+          "guard_minus_native_hard_mm": -0.562145875272278
+        },
+        {
+          "window_frames": [
+            500000,
+            1000000
+          ],
+          "hard_exposure_counts_equal": true,
+          "age_partition_equal": true,
+          "profiled_recovery": {
+            "tau_ns": 2.864925585149682,
+            "a": 0.27174304532236543,
+            "b_per_ns": 0.015753915033521932,
+            "g": [
+              0.0010982473845786867,
+              0.10839139530378986,
+              0.5182407328049975,
+              0.6561532735837102,
+              0.7285131650318527,
+              0.8442065681652942,
+              0.936988325271491,
+              0.9952695211103294,
+              0.9963626261944065,
+              1.0
+            ],
+            "detections": 198225,
+            "negative_mean_loglik": 9.467946268529273,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 321,
+            "normalized_score_max": 5.904096952219933e-07,
+            "gradient_difference_max": 2.3932337485599526e-09,
+            "starts": [
+              {
+                "tau_ns": 2.864925578077662,
+                "negative_mean_loglik": 9.467946269190715,
+                "success": true,
+                "iterations": 169
+              },
+              {
+                "tau_ns": 2.864925585149682,
+                "negative_mean_loglik": 9.467946268529273,
+                "success": true,
+                "iterations": 321
+              },
+              {
+                "tau_ns": 2.864925685872436,
+                "negative_mean_loglik": 9.467946269188264,
+                "success": true,
+                "iterations": 224
+              }
+            ]
+          },
+          "guard_205": {
+            "tau_ns": 2.8611836835433695,
+            "a": 0.27245383329922435,
+            "b_per_ns": 0.015744200332100566,
+            "g": [
+              1.0
+            ],
+            "detections": 171755,
+            "negative_mean_loglik": 9.545248135584169,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "iterations": 16,
+            "normalized_score_max": 3.18686035301179e-11,
+            "gradient_difference_max": 3.5847062084925618e-09,
+            "starts": [
+              {
+                "tau_ns": 2.861183683550099,
+                "negative_mean_loglik": 9.54524813558417,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.8611836836949367,
+                "negative_mean_loglik": 9.54524813558417,
+                "success": true,
+                "iterations": 14
+              },
+              {
+                "tau_ns": 2.8611836835433695,
+                "negative_mean_loglik": 9.545248135584169,
+                "success": true,
+                "iterations": 16
+              }
+            ]
+          },
+          "recovery_minus_native_hard_mm": -0.049358326991173554,
+          "guard_minus_native_hard_mm": -0.6102552670664587
+        }
+      ],
+      "low_flux_provisional_reference": {
+        "tau_ns": 2.8276967562981246,
+        "a": 0.0004963921966553153,
+        "b_per_ns": 2.2204828511066762e-05,
+        "g": [
+          1.0
+        ],
+        "detections": 2704,
+        "negative_mean_loglik": 15.914125529840739,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 19,
+        "normalized_score_max": 1.2253622825710696e-08,
+        "gradient_difference_max": 9.200845604453138e-09,
+        "starts": [
+          {
+            "tau_ns": 2.8276967570763056,
+            "negative_mean_loglik": 15.914125529840742,
+            "success": true,
+            "iterations": 18
+          },
+          {
+            "tau_ns": 2.8276967564636175,
+            "negative_mean_loglik": 15.914125529840742,
+            "success": true,
+            "iterations": 8
+          },
+          {
+            "tau_ns": 2.8276967562981246,
+            "negative_mean_loglik": 15.914125529840739,
+            "success": true,
+            "iterations": 19
+          }
+        ]
+      }
+    },
+    {
+      "pulse": "smooth_unsubtracted",
+      "high_flux": [
+        {
+          "window_frames": [
+            0,
+            500000
+          ],
+          "hard_exposure_counts_equal": true,
+          "age_partition_equal": true,
+          "profiled_recovery": {
+            "tau_ns": 2.8648867878226443,
+            "a": 0.2758480135206807,
+            "b_per_ns": 0.015733120942784277,
+            "g": [
+              0.0010905894140452771,
+              0.10931590695271001,
+              0.46652336040331965,
+              0.6675085914814382,
+              0.7440838621609672,
+              0.8415753735600423,
+              0.9306485142773072,
+              0.9910317448478002,
+              1.001498651811687,
+              1.0
+            ],
+            "detections": 198276,
+            "negative_mean_loglik": 9.460275645983645,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 355,
+            "normalized_score_max": 1.1456334355266072e-07,
+            "gradient_difference_max": 9.480123773000229e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8648867878226443,
+                "negative_mean_loglik": 9.460275645983645,
+                "success": true,
+                "iterations": 355
+              },
+              {
+                "tau_ns": 2.8648867684760972,
+                "negative_mean_loglik": 9.460275645983891,
+                "success": true,
+                "iterations": 239
+              },
+              {
+                "tau_ns": 2.8648867873293784,
+                "negative_mean_loglik": 9.460275645983998,
+                "success": true,
+                "iterations": 322
+              }
+            ]
+          },
+          "guard_205": {
+            "tau_ns": 2.861417435162363,
+            "a": 0.2791442168925786,
+            "b_per_ns": 0.015700764845387592,
+            "g": [
+              1.0
+            ],
+            "detections": 171622,
+            "negative_mean_loglik": 9.536127951806655,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 15,
+            "normalized_score_max": 3.866084863838965e-09,
+            "gradient_difference_max": 2.5210723648668235e-09,
+            "starts": [
+              {
+                "tau_ns": 2.861417435162363,
+                "negative_mean_loglik": 9.536127951806655,
+                "success": true,
+                "iterations": 15
+              },
+              {
+                "tau_ns": 2.861417435334671,
+                "negative_mean_loglik": 9.536127951806657,
+                "success": true,
+                "iterations": 16
+              },
+              {
+                "tau_ns": 2.861417435305305,
+                "negative_mean_loglik": 9.536127951806657,
+                "success": true,
+                "iterations": 16
+              }
+            ]
+          },
+          "recovery_minus_native_hard_mm": -0.04316210314848939,
+          "guard_minus_native_hard_mm": -0.5632049839957843
+        },
+        {
+          "window_frames": [
+            500000,
+            1000000
+          ],
+          "hard_exposure_counts_equal": true,
+          "age_partition_equal": true,
+          "profiled_recovery": {
+            "tau_ns": 2.8649477424223937,
+            "a": 0.27223659959180724,
+            "b_per_ns": 0.015750004432027207,
+            "g": [
+              0.0010984300328763662,
+              0.10839035928247819,
+              0.5182389930871232,
+              0.6561227858412778,
+              0.7282927615317857,
+              0.8441202529323705,
+              0.9362521093986521,
+              0.9936933257463108,
+              0.996391170506286,
+              1.0
+            ],
+            "detections": 198225,
+            "negative_mean_loglik": 9.467946276111682,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 260,
+            "normalized_score_max": 1.8952026850299872e-07,
+            "gradient_difference_max": 8.480559586431717e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8649477170903728,
+                "negative_mean_loglik": 9.467946276111908,
+                "success": true,
+                "iterations": 256
+              },
+              {
+                "tau_ns": 2.8649477424223937,
+                "negative_mean_loglik": 9.467946276111682,
+                "success": true,
+                "iterations": 260
+              },
+              {
+                "tau_ns": 2.8649477302597908,
+                "negative_mean_loglik": 9.46794627611173,
+                "success": true,
+                "iterations": 318
+              }
+            ]
+          },
+          "guard_205": {
+            "tau_ns": 2.861203970984535,
+            "a": 0.2729056668983191,
+            "b_per_ns": 0.015740661784556628,
+            "g": [
+              1.0
+            ],
+            "detections": 171755,
+            "negative_mean_loglik": 9.545251961450882,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "iterations": 17,
+            "normalized_score_max": 2.2665969722176107e-10,
+            "gradient_difference_max": 8.036681514397327e-09,
+            "starts": [
+              {
+                "tau_ns": 2.861203970984535,
+                "negative_mean_loglik": 9.545251961450882,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.861203970978088,
+                "negative_mean_loglik": 9.545251961450882,
+                "success": true,
+                "iterations": 14
+              },
+              {
+                "tau_ns": 2.8612039709795654,
+                "negative_mean_loglik": 9.545251961450882,
+                "success": true,
+                "iterations": 17
+              }
+            ]
+          },
+          "recovery_minus_native_hard_mm": -0.0491990917628717,
+          "guard_minus_native_hard_mm": -0.6103763125357738
+        }
+      ],
+      "low_flux_provisional_reference": {
+        "tau_ns": 2.8276098588718854,
+        "a": 0.0004974109281204616,
+        "b_per_ns": 2.219464238102182e-05,
+        "g": [
+          1.0
+        ],
+        "detections": 2704,
+        "negative_mean_loglik": 15.914019212969482,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 14,
+        "normalized_score_max": 1.8408834343976744e-08,
+        "gradient_difference_max": 1.1199835654395981e-08,
+        "starts": [
+          {
+            "tau_ns": 2.8276098580164697,
+            "negative_mean_loglik": 15.914019212969484,
+            "success": true,
+            "iterations": 13
+          },
+          {
+            "tau_ns": 2.8276098588718854,
+            "negative_mean_loglik": 15.914019212969482,
+            "success": true,
+            "iterations": 14
+          },
+          {
+            "tau_ns": 2.827609869290879,
+            "negative_mean_loglik": 15.914019212969487,
+            "success": true,
+            "iterations": 20
+          }
+        ]
+      }
+    }
+  ],
+  "range_benefit_demonstrated": false,
+  "matched_model_correction_gate_pass": false,
+  "limits": "Adaptive development audit, quantized working likelihood, local optimization. Low-flux reference is provisional. No independent target calibration, performance superiority or physical coverage established."
+}

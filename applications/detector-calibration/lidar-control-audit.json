@@ -1,0 +1,277 @@
+{
+  "executable_sha256": "5f404b6ac9634acae90638943c3d758dc9477663b61084134baf092d6f98d296",
+  "fits": [
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "tau_ns": [
+        2.8712373676031993,
+        2.8616721163246512
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.06971932422902624,
+          0.0
+        ],
+        [
+          0.0,
+          0.00513235025519723
+        ]
+      ],
+      "early_sd_mm": 0.2640441709809672,
+      "mature_sd_mm": 0.07164042333206323,
+      "contrast_sd_mm": 0.27359034062668125,
+      "information_condition_number": 71041.56854606474,
+      "source_relative_information_difference": 4.2508581428244575e-16,
+      "inverse_identity_difference": 2.220446049250313e-16
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "tau_ns": [
+        2.863967100305139,
+        2.8582768447389335
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.07243030365870988,
+          0.0
+        ],
+        [
+          0.0,
+          0.005086592854570383
+        ]
+      ],
+      "early_sd_mm": 0.2691287863806283,
+      "mature_sd_mm": 0.0713203537187694,
+      "contrast_sd_mm": 0.27841856352132893,
+      "information_condition_number": 86086.89434803864,
+      "source_relative_information_difference": 4.212973200556971e-16,
+      "inverse_identity_difference": 2.220446049250313e-16
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "tau_ns": [
+        2.8712401728325085,
+        2.8616797314645974
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.0700211412561725,
+          0.0
+        ],
+        [
+          0.0,
+          0.005153029006792091
+        ]
+      ],
+      "early_sd_mm": 0.2646150813090072,
+      "mature_sd_mm": 0.07178460146014667,
+      "contrast_sd_mm": 0.27417908429157134,
+      "information_condition_number": 70673.98767425213,
+      "source_relative_information_difference": 2.1339872804947129e-16,
+      "inverse_identity_difference": 2.220446049250313e-16
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "tau_ns": [
+        2.8639462489373435,
+        2.8582772430754777
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.07272289126092457,
+          0.0
+        ],
+        [
+          0.0,
+          0.0051078066532311995
+        ]
+      ],
+      "early_sd_mm": 0.2696718214069178,
+      "mature_sd_mm": 0.07146892089035065,
+      "contrast_sd_mm": 0.278981536869657,
+      "information_condition_number": 85656.44529139625,
+      "source_relative_information_difference": 2.1152663935492343e-15,
+      "inverse_identity_difference": 2.220446049250313e-16
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "tau_ns": [
+        2.878807075554499,
+        2.8614380518555453
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.01889817102612629,
+          0.0
+        ],
+        [
+          0.0,
+          0.00690843948014158
+        ]
+      ],
+      "early_sd_mm": 0.13747061877407218,
+      "mature_sd_mm": 0.08311702280605086,
+      "contrast_sd_mm": 0.16064436033134766,
+      "information_condition_number": 29541.417258119483,
+      "source_relative_information_difference": 5.720397648254312e-16,
+      "inverse_identity_difference": 5.1394536269379e-16
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "tau_ns": [
+        2.8779157951258267,
+        2.8611940758466616
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.01908162528849938,
+          0.0
+        ],
+        [
+          0.0,
+          0.0070932483274937785
+        ]
+      ],
+      "early_sd_mm": 0.13813625624179693,
+      "mature_sd_mm": 0.08422142439720298,
+      "contrast_sd_mm": 0.1617865062852683,
+      "information_condition_number": 21109.88944778454,
+      "source_relative_information_difference": 2.936917228503037e-16,
+      "inverse_identity_difference": 4.2073200292590183e-16
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "tau_ns": [
+        2.878828629726125,
+        2.8614339032374354
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.018968284885980288,
+          0.0
+        ],
+        [
+          0.0,
+          0.006937252264677046
+        ]
+      ],
+      "early_sd_mm": 0.13772539666299854,
+      "mature_sd_mm": 0.08329016907581017,
+      "contrast_sd_mm": 0.16095197156498994,
+      "information_condition_number": 29389.417692544936,
+      "source_relative_information_difference": 3.590147099438623e-16,
+      "inverse_identity_difference": 3.8671780367689597e-16
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "tau_ns": [
+        2.8779357554636715,
+        2.8612144214279853
+      ],
+      "delay_covariance_mm2": [
+        [
+          0.019151623836853888,
+          0.0
+        ],
+        [
+          0.0,
+          0.007120756136234937
+        ]
+      ],
+      "early_sd_mm": 0.1383893920676505,
+      "mature_sd_mm": 0.08438457285686132,
+      "contrast_sd_mm": 0.1620875688419344,
+      "information_condition_number": 21020.60522764538,
+      "source_relative_information_difference": 1.031904696522756e-15,
+      "inverse_identity_difference": 4.9669073321568435e-16
+    }
+  ],
+  "result_hashes": {
+    "control": "200dac8e70b94bc35b04cedacaeaaeeee789176a4309bdbdd61c3a636a765d4c",
+    "history": "3f8af0fde13b259ea258e9ec5f7b1ae68a67a7aa721a71b362d6becd539d7adc"
+  },
+  "comparisons": [
+    {
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "mature_difference_mm": 0.035085381261861275,
+      "conditional_independent_record_sd_mm": 0.10973053237517263,
+      "difference_over_diagnostic_sd": 0.31974128350989034
+    },
+    {
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "mature_difference_mm": -0.4372819421699386,
+      "conditional_independent_record_sd_mm": 0.1103623177631938,
+      "difference_over_diagnostic_sd": -3.962239567206458
+    },
+    {
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        0,
+        500000
+      ],
+      "mature_difference_mm": 0.03684872423334141,
+      "conditional_independent_record_sd_mm": 0.10995581508710277,
+      "difference_over_diagnostic_sd": 0.33512301467777095
+    },
+    {
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        500000,
+        1000000
+      ],
+      "mature_difference_mm": -0.4402719589413248,
+      "conditional_independent_record_sd_mm": 0.11058283225467747,
+      "difference_over_diagnostic_sd": -3.981377126671505
+    }
+  ],
+  "physical_error_control_validated": false,
+  "limits": "Local fitted Bernoulli information with empirical exposures and fixed pulse. No sandwich/drift/reference/calibration uncertainty. Cross-record standard errors additionally assume independent acquisition errors. These are diagnostic scales, not confidence intervals or physical significance tests."
+}

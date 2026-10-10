@@ -548,19 +548,90 @@ the [audit](lidar-history-audit.json) SHA256 is
 `4e0dbf9aba21231d48df87927d8c3417277d7e2a85a6f5da48d19175e3d8bb6e`.
 Both executables take `--cache-dir`, `--upstream-root` and a new `--output`.
 
+## Physical holdoff control: reference stability is not established
+
+The [control protocol](lidar-control-protocol.json) and executable were pushed
+at `7195050c462ab5196258b16ed67333e072557531` before retrieving or inspecting
+acq13. The public archive supplied only the selected 180 ns holdoff member,
+verified by its 21,719,768-byte length, CRC `15ced32d` and SHA256
+`fe40ffa1f1c0f7d23431100c99ed85eeecaafdca275a53ffb982b1853f970490`.
+Its first million frames contain 426,666 detections; its other outcomes are
+reserved. Raw data remain outside Git. The input schema, scalars and retrieval
+ranges are recorded in the [result](lidar-control-results.json).
+
+This acquisition tests another physical setting from the source's fixed-target
+experiment. It shifts each age-cell boundary by the known 18 ns holdoff
+difference, keeping a seven-nanosecond maturity margin. It is not an
+independently measured range standard or a randomized intervention.
+
+| Pulse / half | Early minus mature (mm equivalent) | Mature 180 ns minus mature 198 ns (mm) | Hard minus guarded, 180 ns (mm) |
+| --- | ---: | ---: | ---: |
+| Subtract minimum / first | 1.433795 | 0.035085 | 0.076007 |
+| Subtract minimum / second | 0.852948 | -0.437282 | 0.045789 |
+| Keep baseline / first | 1.433074 | 0.036849 | 0.075936 |
+| Keep baseline / second | 0.849763 | -0.440272 | 0.045795 |
+
+The necessary 0.2 mm descriptive reference-stability screen fails in the
+second half for both pulse variants. Mature acq13 estimates also change by
+approximately 0.51 mm between its own halves. Individual two-delay fits
+improve their fitted likelihood, but their first-half parameters lose about
+39.6 log units against the second-half optimized common-delay model. The
+earlier positive predictive gain does not transfer automatically. Both
+settings' mature fits remain 4.58--5.11 mm from the provisional low-flux fit.
+These are delay contrasts, not target-motion or accuracy measurements.
+
+The [precision audit](lidar-control-audit.json) inverts the empirical
+Bernoulli information including every fitted amplitude/background nuisance.
+With the pulse held fixed and independent acquisition errors assumed, the
+cross-setting mature-delay difference has a diagnostic standard deviation
+of 0.110 mm. The second-half discrepancy is approximately four such standard
+deviations. This calculation omits pulse calibration, drift and model error;
+it is neither a calibrated significance test nor an uncertainty certificate.
+It shows why simple counting precision alone is an inadequate explanation
+within the working model, while leaving physical cause unresolved.
+
+All sixteen selected fits converge, maximum normalized score is `4.259e-7`
+and finite-difference discrepancy is below `1.754e-8`. Exact age partitions
+and the synthetic exposure audit pass. The pinned upstream row likelihood
+agrees with all eight common/split control fits within `1.165e-9` log units
+and `4.572e-17` normalized score units. The independently assembled empirical
+information matches the upstream function to relative error `2.116e-15`;
+matrix/inverse products agree with identity to `5.140e-16`.
+The control result SHA256 is
+`200dac8e70b94bc35b04cedacaeaaeeee789176a4309bdbdd61c3a636a765d4c`;
+the precision-audit SHA256 is
+`c40e64f2989cbb9e8203e8412931a7a35d55ea73639ccb3a7858d2ce0b17bed1`.
+
+The [original paper](https://doi.org/10.1364/OPTICA.403190), section 4.B,
+describes the fixed target, variable holdoff and attenuated pulse calibration.
+The [author-hosted dissertation](https://vivekgoyal.org/documents/Rapp_PhDThesis2020.pdf),
+section 5.5, also discusses the background-calibration difficulties. The
+inspected descriptions provide no millimeter-scale timing-reference uncertainty.
+The calibration MAT file contains a trimmed pulse histogram, its smoothed
+version, bin width and trim indices, without acquisition identity or drift
+measurements. Independence from the low-flux acquisition is not established.
+The dissertation is cached outside Git with SHA256
+`fbb523df4b6faebafbb03ef1d5862f68a046a5002c8155374a8dbd28cac9e4cb`.
+
+**Disposition:** retain the timing-history lead but park acq13/acq14 as an
+uncalibrated common submillimeter reference. Resolve timestamp construction,
+pulse-calibration provenance, stability and any known-displacement/reference
+measurements before a physical accuracy comparison. No new formula can infer
+the missing common latency from these single-target fits alone.
+
 ## Next selection gate
 
 The amplitude-only recovery extension has been screened and misses its
-worthwhile-range-effect gate. The remaining specific lead is the larger
-native guarded shift now has a repeatable pulse-location discrepancy after
-freeing the proportions. Establish a physical control before adding estimator
-complexity: determine whether the acquisition documentation and a different
-holdoff setting can bound instrument timing changes, and what independent
-reference or calibration is available. A common instrument delay and physical
+worthwhile-range-effect gate. The larger native guarded shift has a repeatable
+pulse-location discrepancy after freeing the proportions. The additional
+physical holdoff control fails the proposed reference-stability screen.
+Clarify the raw timestamp/synchronization construction and seek existing
+independent timing or known-displacement calibration before adding estimator
+complexity. A common instrument delay and physical
 time of flight enter as a sum; opposite shifts leave the observed likelihood
 unchanged. The present fits alone therefore cannot certify absolute accuracy.
-A second holdoff acquisition can probe model transfer, but does not by itself
-supply known physical target motion or absolute range. These questions must produce a
+A different holdoff probes model transfer, but does not by itself supply known
+physical target motion or absolute range. These questions must produce a
 useful ordinary argument and a fair comparison against native joint likelihood,
 native robust one-step, flexible recovery and guarded inference. Do not spend
 the final reserve to rescue the failed recovery-rate correction.

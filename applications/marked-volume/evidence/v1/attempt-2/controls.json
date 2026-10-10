@@ -1,0 +1,6 @@
+{
+  "negative_controls_rejected": 5,
+  "zero_sample_cases": 4,
+  "binomial_certificates": 1348,
+  "calibration_seconds": 28.400097199999436
+}

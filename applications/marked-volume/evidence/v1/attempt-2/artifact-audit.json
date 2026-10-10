@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "strata": 132,
+  "all_possible_counts_recomputed": true,
+  "metric_rows": 528,
+  "exact_valid_coverage_rows": 396,
+  "trial_records": 8448,
+  "lorentz_coordinate_witnesses": 132,
+  "frozen_source_identities": 8,
+  "preexisting_files_preserved": 8040,
+  "absolute_utility_pass": false,
+  "additionality_pass": false,
+  "decision": "park_operational_candidate",
+  "audit_seconds": 36.00456790000317,
+  "artifact_sha256": {
+    "freeze.json": "52b220f3f5a7333c62b3645168dc0d209799540a19869aac60b02ab08d00272a",
+    "controls.json": "9398e5c9e68e09e64005351c3fab15c08db4b27628efcd70d0ed3a77fe3ecc63",
+    "strata.json.gz": "a60be1f99b00c1335addd6e72365b6b8eab89a479701a5f714421bd11f437c7b",
+    "trials.json.gz": "ae8844fd445226247a2d08992db15a1e6e1c5a40fdc68ae4c9b616b90f22a627",
+    "witnesses.json.gz": "9f754e7c6cd8b6e55a34083fa0022ab010b6d69d9c043a3d305b000e5ffd8d0e",
+    "summary.json": "9484fb3461e4b8b00139c2afad73a61845b6be764b6427a54dcd0b4c099fa124"
+  },
+  "audit_source_sha256": "55233f35816dabe30ee8adedf56a02c7f08d206c505095bb63c99c86b0d4cf4f",
+  "limits": "Checks all exact model-law metrics and 132 saved coordinate witnesses; not a proof of floating sampler semantics or real detector validity."
+}

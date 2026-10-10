@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "strata": 132,
+  "trials": 8448,
+  "gate_strata": 27,
+  "negative_controls": 5,
+  "exact_valid_coverage_rows": 396,
+  "independent_count_and_relation_checks": 8448,
+  "witnesses": 132,
+  "sampling_diagnostic_pass": true,
+  "absolute_utility_pass": false,
+  "additionality_pass": false,
+  "reports_identical_to_established_counterpart": true,
+  "decision": "park_operational_candidate",
+  "elapsed_seconds": 300.6291459000058,
+  "peak_python_traced_bytes": 57431331,
+  "artifact_bytes_before_summary": 6509043,
+  "stage_seconds": {
+    "calibration_verification": 28.400097199999436,
+    "exact_laws": 177.88472559999354,
+    "sampling": 5.420031600049697,
+    "relation_construction": 18.246318699690164,
+    "quantyra_reports": 32.06809239999711,
+    "reference_reports": 1.6711030999213108
+  },
+  "preserved_files": 8040,
+  "new_lean_invocations": 0,
+  "limits": "Known continuous-model exact laws and float simulation diagnostics; no physical instrument or carrying-capacity validation; no globally optimal interval claim."
+}

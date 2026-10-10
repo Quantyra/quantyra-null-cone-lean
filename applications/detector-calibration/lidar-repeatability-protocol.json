@@ -1,0 +1,25 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "parent_commit": "78f338eeacf0ca5d832bd154af27c825b3d091dd",
+  "question": "Does an age-dependent pulse-location calibration retain a worthwhile advantage over conventionally offset-calibrated native estimators at the intended acquisition budget?",
+  "prior_information": "All prior acq13/acq14 prefix summaries and half-record fits are known. This is an adaptive development comparison, not blind testing. No new input outcomes are selected. The physical control failed its reference-stability screen; this study cannot repair missing physical reference calibration.",
+  "data": "The existing first-million-frame prefixes of acq13 (180 ns) and acq14 (198 ns), input hashes from their frozen parent protocols/results. Same two pulse variants, source functions and centered native K=12500 bins.",
+  "calibration_frames": [0,500000],
+  "evaluation_frames": [500000,1000000],
+  "block_frames": 10000,
+  "methods": [
+    "Native supported-hard-cutoff joint MLE, allowing the largest supported cutoff within nominal holdoff through holdoff+2 ns separately per block.",
+    "Unmodified native upstream robust pilot/one-step estimator on exactly the same counts and exposures as native joint MLE.",
+    "Guarded native joint MLE after holdoff+7 ns, with every observed event retained as a state reset.",
+    "Calibrated common pulse-location model: first-half common-delay age-cell signal/background profiles are fixed, with global signal and background multipliers and a common delay fitted per block.",
+    "Calibrated history-location model: first-half two-delay age-cell signal/background profiles and early-minus-mature delay are fixed, with the same three per-block fitted parameters as the calibrated common-location model. The delay parameter refers to mature detections."
+  ],
+  "calibration_fairness": "All methods receive the same first-half observations and pulse calibration. Every method, including native joint/one-step and guarded inference, subtracts its own mean of the 50 fitted calibration-block delays. The two profile models reuse first-half fits already retained in the parent result. No evaluation outcomes tune profiles, offsets, guards or age boundaries. This remains retrospective because aggregate evaluation outcomes were previously inspected.",
+  "ordinary_argument": "The calibrated profile likelihood has predictable Bernoulli hazard z_jr=A*a_j*f_r(tau+delta_j)+B*b_j*width, with known calibration coefficients for this development comparison. For x=(log A,tau,log B), dz=(signal,A*a_j*df,background), and score sum is (N/p-M)*dz, p=1-exp(-z). The common-location comparator sets every delta_j=0 and uses its own calibrated age profiles. Subtracting each method's calibration-block mean removes a constant fitted timing offset for every method. If the target and common instrument timing were stable, residuals would describe relative range errors; neither stability nor absolute reference is established here. Centered variance and squared residuals are descriptive diagnostics only.",
+  "outputs": "For each method/holdoff/pulse, retain every calibration/evaluation block delay and solver outcome, calibration mean, evaluation mean residual, unbiased centered evaluation variance, mean squared evaluation residual, and fraction of residuals within 1 mm. Units are c/2 times delay differences relative to each method's calibration mean, not errors against physical ground truth. Report paired per-block squared-residual differences and their descriptive standard error without a confidence or significance claim.",
+  "numerics": {"delay_offsets_ns":[-0.08,0,0.08],"delay_radius_ns":0.4,"maxiter":800,"ftol":1e-13,"gtol":1e-8},
+  "development_gate": "For the principal acq14 condition, the calibrated history model must reduce evaluation mean squared residual by at least 20% relative to the best of all four comparators, for both pulse variants. Report acq13 separately as a transfer control rather than combining conditions to conceal failure. A positive gate only warrants a calibrated accuracy study. A negative gate parks this stationary-offset correction at the declared budget; it is not an impossibility theorem for history-aware ranging.",
+  "verification": "Byte/hash-check frozen source and result dependencies and physical inputs. Audit age/guard and supported-hard event counts and exposure partitions. Retain all optimizer status, local-start differences, bounds, finite-difference profile scores and dense likelihood comparisons. Compare an independently assembled upstream per-row likelihood/score for representative new profile fits. Verify that calibrated training means are zero to roundoff and reproduce aggregate metrics independently from per-block outputs. No numerical success is a physical calibration certificate.",
+  "boundaries": "No final-reserve outcomes, new measurement data, email sending, hardware, Lean/Lake or manuscript/publication work. Existing email approval remains pending and is not inferred from this continuation. Preserve all previous results."
+}

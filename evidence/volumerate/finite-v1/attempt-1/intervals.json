@@ -1,0 +1,290 @@
+[
+  {
+    "n": 0,
+    "k": 0,
+    "R": "1",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "1025/1024",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "65/64",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "17/16",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "9/8",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "5/4",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "3/2",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  },
+  {
+    "n": 0,
+    "k": 0,
+    "R": "2",
+    "raw_binomial": [
+      "0",
+      "1"
+    ],
+    "adjustments": 0,
+    "methods": {
+      "transformed_exact_binomial": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "transformed_hoeffding": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "joint_rate": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      },
+      "known_range": {
+        "lower": "1/8",
+        "upper": "3/8",
+        "empty": false,
+        "width": "1/4"
+      }
+    }
+  }
+]

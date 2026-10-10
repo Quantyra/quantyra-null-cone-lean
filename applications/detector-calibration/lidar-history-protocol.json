@@ -1,0 +1,22 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "parent_commit": "18b23a93769f0d804240f029e462eb1129cd11c7",
+  "question": "Does the guarded range shift survive allowing separate signal and background amplitudes at different elapsed times since detection?",
+  "scope": "Adaptive development diagnostic using only the already inspected acq14 frames below 1000000. Previous range results and both halves are known. No significance level, novel estimator, physical cause, calibrated accuracy or final performance benefit is claimed.",
+  "inputs": "Reuse the frozen range protocol's input hashes, pulse variants, centered native 12500-bin convention and upstream source. Preserve both parent results byte-for-byte. No low-flux refit, new data or reserved outcomes.",
+  "age_edges_ns": [198,199,200,201,205,210,300],
+  "last_edge": "infinity",
+  "delay_split_ns": 205,
+  "models": [
+    "Common delay, independent positive signal a_j and background b_j in every age cell: p_jr=1-exp(-a_j*f_r(tau)-b_j*width).",
+    "Two delays, one for ages below 205 ns and one for ages at least 205 ns; the same independent a_j,b_j as the common-delay model."
+  ],
+  "ordinary_argument": "Age is predictable from recorded history. Count every available integer slot until the next detection or right censoring, retaining all detections as history resets. Under the stated conditional Bernoulli working model, each cell contributes N*log(1-exp(-z))-(M-N)*z, z=a*f(tau)+b*width. Its z derivative is N/(1-exp(-z))-M. Thus analytic log-amplitude, delay and log-background scores follow by the chain rule. Free a_j,b_j remove the multiplicative model's constant signal/background ratio constraint; two delays test an additional shared-template-location restriction. Both remain misspecified if the pulse shape or observation mechanism changes. Measured delay=physical time of flight+instrument latency: adding delta to the former and subtracting delta from the latter leaves this likelihood unchanged, so these data alone cannot calibrate absolute range.",
+  "numerics": {"delay_offsets_ns": [-0.08,0,0.08], "delay_radius_ns": 0.4, "maxiter": 2500, "ftol": 1e-15, "gtol": 1e-9},
+  "fit_and_score": "Fit both models separately to each existing half and pulse variant. Initialize the two-delay model at each common-delay solution, plus opposite delay offsets. Retain all starts, optimizer status, score and bounds. Score the first-half two-delay fit on the second half against the common-delay model optimized directly on the second half. This is a retrospective predictive diagnostic, not a valid preselected likelihood-ratio test.",
+  "decision": "A timing/template-history lead survives only if the early-minus-mature delay equivalent exceeds 0.2 mm with the same sign in all four fits and the first-half alternative has positive second-half log-score advantage for both pulse variants. This supports selecting a physical control; it does not meet the existing 1 mm/95% or 20% risk-improvement benchmark. Also report how much freeing proportions moves the common delay toward the prior guarded delay, without treating either as truth.",
+  "verification": "Reuse the audited integer exposure reconstruction and independently enumerate a synthetic stream. Check each age partition against its union. Compare collapsed and dense likelihoods and analytic scores; finite-difference all new parameters at an off-optimum point. Verify nesting of common-delay fits inside the two-delay model and exact parent/input/source hashes. No global optimality claim.",
+  "source_context": "Polyakov, Single-Photon Detector Calibration (NIST, 2015), section II.A, explains that reset can change detection latency as well as efficiency. https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=914455 . This is motivation and prior art, not calibration or diagnosis of the present device.",
+  "boundaries": "No Lean/Lake, new hardware, outreach, publication, manuscript changes or final-reserve analysis. A null or adverse diagnostic leaves the full goal active; a positive diagnostic still requires an adequate reference and matched useful decision comparison."
+}

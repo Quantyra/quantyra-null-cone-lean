@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-10T13:31:08.087292+00:00",
+  "head": "9d85390e037809d5bd6523fa871b479265e95b0a",
+  "remote_main": "9d85390e037809d5bd6523fa871b479265e95b0a",
+  "sources": [
+    {
+      "path": "notes/geometric-pair-numerical-protocol.json",
+      "git_sha256": "a88dda5ff0b77a2d4d1cea96b319e5ed199f574ad49fb101279614876305b3bf",
+      "worktree_sha256": "a88dda5ff0b77a2d4d1cea96b319e5ed199f574ad49fb101279614876305b3bf"
+    },
+    {
+      "path": "notes/geometric-pair-numerical-design.md",
+      "git_sha256": "2c95b2ab3983b5bfd1a7c2c413c836888e684aaf9384eb37fb0c556b5176a6a1",
+      "worktree_sha256": "2c95b2ab3983b5bfd1a7c2c413c836888e684aaf9384eb37fb0c556b5176a6a1"
+    },
+    {
+      "path": "tools/geometric_pair.py",
+      "git_sha256": "e653b346a5763fb4bbbfdad680e89eefb690a95409ec5dccd63119e256f89316",
+      "worktree_sha256": "e653b346a5763fb4bbbfdad680e89eefb690a95409ec5dccd63119e256f89316"
+    },
+    {
+      "path": "tools/test_geometric_pair.py",
+      "git_sha256": "a13cdd1d2604c8b69bb2a78708cf46aa07216faa8f5a404a2b68cedbc53a09fb",
+      "worktree_sha256": "a13cdd1d2604c8b69bb2a78708cf46aa07216faa8f5a404a2b68cedbc53a09fb"
+    },
+    {
+      "path": "tools/run_geometric_pair_study.py",
+      "git_sha256": "36b7c1004b5d4b9103808b071a8d33e5f96dbbc356907d767616fe3ea43a0dd7",
+      "worktree_sha256": "36b7c1004b5d4b9103808b071a8d33e5f96dbbc356907d767616fe3ea43a0dd7"
+    },
+    {
+      "path": "tools/audit_geometric_pair_study.py",
+      "git_sha256": "45dc253d5356a1812177f4187d6f58f72efb985cc38bce84a3a3501d732a1292",
+      "worktree_sha256": "45dc253d5356a1812177f4187d6f58f72efb985cc38bce84a3a3501d732a1292"
+    },
+    {
+      "path": "tools/finite_data_resource.py",
+      "git_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+      "worktree_sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c"
+    }
+  ],
+  "protocol_sha256": "a88dda5ff0b77a2d4d1cea96b319e5ed199f574ad49fb101279614876305b3bf",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable_sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+  "planned_groups": 23,
+  "planned_cases": 550,
+  "scope": "local Python numerical experiment; accepted Lean runs only on GCP"
+}

@@ -1,0 +1,18 @@
+{
+  "outcome": "worker_failed",
+  "groups_completed": 0,
+  "groups_attempted": 1,
+  "wall_seconds": 0.37262560000817757,
+  "resource_limits": {
+    "worker_seconds": 120,
+    "execution_seconds": 900,
+    "audit_seconds": 900,
+    "rss_bytes": 536870912,
+    "commit_bytes": 1073741824,
+    "artifact_bytes": 134217728,
+    "poll_seconds": 0.01,
+    "processes_per_worker": 1,
+    "threads": 1
+  },
+  "finished_utc": "2026-10-10T13:31:08.614871+00:00"
+}

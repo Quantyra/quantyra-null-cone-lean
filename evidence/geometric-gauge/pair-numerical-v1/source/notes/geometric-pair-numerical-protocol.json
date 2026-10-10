@@ -1,6 +1,5 @@
 {
-  "id": "S043-pair3-v2",
-  "amendment": "v1 terminated in argument parsing before creating any case or drawing data. See geometric-pair-launch-amendment.json. v2 corrects only launcher argument forwarding and adds its non-sampling test. The statistical design, sample sizes, thresholds and resource limits are unchanged. This is a new pre-data freeze, not a retry after numerical results.",
+  "id": "S043-pair3-v1",
   "date": "2026-10-10",
   "status": "freeze before generating evaluation data",
   "model": "Original S042 time-quadratic normalized density on the genuine 2+1 open Lorentz diamond; theta in [0,1/2]",

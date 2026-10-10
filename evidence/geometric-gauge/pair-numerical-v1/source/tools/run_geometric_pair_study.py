@@ -19,12 +19,9 @@ from finite_data_resource import supervise
 
 PROTOCOL = ROOT/'notes/geometric-pair-numerical-protocol.json'
 SOURCES = ['notes/geometric-pair-numerical-protocol.json',
-    'notes/geometric-pair-launch-amendment.json',
     'notes/geometric-pair-numerical-design.md', 'tools/geometric_pair.py',
     'tools/test_geometric_pair.py', 'tools/run_geometric_pair_study.py',
     'tools/audit_geometric_pair_study.py', 'tools/finite_data_resource.py']
-WORKER_BOOTSTRAP = ('import runpy; script=sys.argv.pop(1); '
-                    'runpy.run_path(script,run_name="__main__")')
 
 
 def dump(path, value):
@@ -189,7 +186,7 @@ def execute(dest):
     limits = p['resource']
     started = time.perf_counter()
     outcomes, reason = [], 'completed'
-    code = WORKER_BOOTSTRAP
+    code = 'import runpy; runpy.run_path(sys.argv[1],run_name="__main__")'
     for group in plan(p):
         remaining = limits['execution_seconds']-(time.perf_counter()-started)
         if remaining <= 0:

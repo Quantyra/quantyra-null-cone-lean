@@ -3,25 +3,17 @@ import copy
 from fractions import Fraction as F
 from pathlib import Path
 import sys
-import subprocess
 import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import numpy as np
 from geometric_pair import (GRID, L, C, K, P0, PMAX, BASE_RADIUS, pair_probability,
     inverse_bracket, estimate, verify_report, relation_count, reference_relation_count,
     exact_log_certificate)
-from run_geometric_pair_study import flat_transform, plan, protocol, WORKER_BOOTSTRAP
+from run_geometric_pair_study import flat_transform, plan, protocol
 from audit_geometric_pair_study import time_sorted_count, interval
 
 
 class GeometricPairTests(unittest.TestCase):
-    def test_worker_argument_forwarding_without_data(self):
-        script = Path(__file__).with_name('run_geometric_pair_study.py')
-        result = subprocess.run([sys.executable, '-c', 'import sys; '+WORKER_BOOTSTRAP,
-            str(script), '--help'], capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('{run,worker}', result.stdout)
-
     def test_constants_and_inverse(self):
         self.assertEqual(K, F(225225, 54952))
         self.assertEqual(pair_probability(0), P0)

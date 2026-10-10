@@ -1,0 +1,2 @@
+usage: run_geometric_pair_study.py [-h] {run,worker} destination [group]
+run_geometric_pair_study.py: error: argument mode: invalid choice: 'C:\\Users\\dfred\\Desktop\\Projects\\IGH\\quantyra-null-cone-lean\\tools\\run_geometric_pair_study.py' (choose from run, worker)

@@ -14,7 +14,7 @@ import numpy as np
 from scipy.stats import beta
 from geometric_pair import (GRID, L, MIDPOINT, BASE_RADIUS, pair_probability,
     validate_points, verify_report, reference_relation_count, exact_log_certificate)
-from run_geometric_pair_study import dump, sha, sample, plan, WORKER_BOOTSTRAP
+from run_geometric_pair_study import dump, sha, sample, plan
 from finite_data_resource import supervise
 
 
@@ -199,7 +199,7 @@ def supervised_audit(destination):
     (dest/'audit').mkdir(exist_ok=False)
     p = json.loads((dest/'source/notes/geometric-pair-numerical-protocol.json').read_text())
     limits = p['resource']
-    result = supervise(WORKER_BOOTSTRAP,
+    result = supervise('import runpy; runpy.run_path(sys.argv[1],run_name="__main__")',
         [__file__, 'worker', str(dest)], dest/'audit/audit.log',
         seconds=limits['audit_seconds'], rss_limit=limits['rss_bytes'],
         commit_limit=limits['commit_bytes'], poll_seconds=limits['poll_seconds'])

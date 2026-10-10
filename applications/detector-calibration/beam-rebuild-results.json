@@ -1,0 +1,88 @@
+{
+  "scope": "Verify fixture provenance and reconstruct reference associations on the already inspected 10000-event subset. This is a data-adequacy step, not a new tracking method or decision-benefit experiment.",
+  "inputs": {
+    "Merged_small.h5": {
+      "sha256": "1b4f472b6b6727e56310453f57863ab365b78261edaa538c654b7c2f3c03c3a8",
+      "bytes": 19566316,
+      "url": "https://media.githubusercontent.com/media/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/Merged_small.h5"
+    },
+    "Merged_result.h5": {
+      "sha256": "624c6c4bd617b9daf470475288bb6e0888209c3969774203088229eb13bd7c3e",
+      "bytes": 216346571,
+      "url": "https://media.githubusercontent.com/media/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/Merged_result.h5"
+    },
+    "TrackCandidates_result.h5": {
+      "sha256": "27b19dd6a12b2a0d60519e8c1f274dbd7972139f91a1a5dacb9feef597fa64a5",
+      "bytes": 19146484,
+      "url": "https://media.githubusercontent.com/media/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/TrackCandidates_result.h5"
+    },
+    "geometry_utils.py": {
+      "sha256": "b2afeb77c878b1b6ba7394ac137170afca295e4cf18bcc8f3174424f1f385d5d",
+      "bytes": 16441,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/tools/geometry_utils.py"
+    },
+    "track_analysis.py": {
+      "sha256": "bc6467c95245ef38084a2740421edf86d0b868b3d44038bb317e3a6fcc39d94d",
+      "bytes": 104493,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/track_analysis.py"
+    },
+    "telescope_aligned.yaml": {
+      "sha256": "ab59386e71beeec84a1a869bbe34e0f50a3d2cb07fcfcc1163156ad50dd047a4",
+      "bytes": 3076,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/beam_telescope_analysis/testing/fixtures/telescope_aligned.yaml"
+    },
+    "LICENSE.txt": {
+      "sha256": "575ec487d0dcc03ee3b8a417b5db41f83344894c7855f52fa8d97b71f29da073",
+      "bytes": 1067,
+      "url": "https://raw.githubusercontent.com/SiLab-Bonn/beam_telescope_analysis/9ab568b787a9c018207dff6a33b9ef2148153e1a/LICENSE.txt"
+    }
+  },
+  "protocol_sha256": "0f46b48271a6de22c55f0e05ccbc65d45c17a8769084c1816ed38c5267db73fc",
+  "executable_sha256": "aab29cd1a7028f586c5b94450ca84b88d90cd67f23040c6246770c1fa3c94444",
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "h5py": "3.16.0",
+    "hdf5plugin": "7.1.0",
+    "numba": "0.68.0",
+    "llvmlite": "0.50.0",
+    "PyYAML": "6.0.3"
+  },
+  "provenance": {
+    "small_rows": 99478,
+    "small_events": 10000,
+    "full_rows": 1116936,
+    "full_events": 112700,
+    "small_events_absent_from_full": 0,
+    "other_event_ids": 102700,
+    "selected_rows": 99478,
+    "same_dtype": true,
+    "exact_subset_bytes": true,
+    "stored_merge_arguments": {
+      "telescope_configuration": "/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/telescope.yaml",
+      "input_cluster_files": "['/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT0_clustered.h5', '/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT1_clustered.h5', '/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT2_clustered.h5', '/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT3_clustered.h5', '/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT4_clustered.h5', '/home/silab/git/beam_telescope_analysis/beam_telescope_analysis/testing/fixtures/TestBeamData_Mimosa26_DUT5_clustered.h5']",
+      "output_merged_file": "tmp_alignment_test_output/Merged.h5"
+    }
+  },
+  "six_plane_replay": {
+    "rows": 99478,
+    "fields": 74,
+    "disagreements": {}
+  },
+  "reference_rebuild": {
+    "projected_rows": 99448,
+    "projected_fields": 61,
+    "reference_events": 10000,
+    "original_complete_tuples": 56792,
+    "reference_complete_tuples": 56907,
+    "shared_tuples": 56017,
+    "original_only_tuples": 775,
+    "reference_only_tuples": 890,
+    "duplicate_complete_tuples": 0,
+    "replacement_projection_identical": true,
+    "DUT_only_padding_projection_identical": true,
+    "event_boundary_split_disagreements": {},
+    "reference_record_sha256": "8de24c7d62d1de4b30b6f5a9445fe5d259918832a741b9a8d36ce71b77b8803a"
+  },
+  "claim_boundary": "A replayed established association method with DUT3 excluded from per-event inputs given fixed published alignment. No new tracking advantage, calibration certificate, physical efficiency estimate or completed goal is claimed."
+}

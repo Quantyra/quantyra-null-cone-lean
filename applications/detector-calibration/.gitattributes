@@ -7,3 +7,6 @@ vendor/18662495/* -text
 vendor/3701333/* -text
 # This unmodified source JSON uses CRLF; retain its published member bytes.
 vendor/3701333/fig3_info.json whitespace=cr-at-eol
+# Preserve the frozen recovery output hashes, including original line endings.
+lidar-recovery-results.json -text -whitespace
+lidar-recovery-audit.json -text -whitespace

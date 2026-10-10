@@ -1,0 +1,9 @@
+{
+  "run": "space-stopping-laplace-dev1-20261009T235703Z-231953",
+  "status": "preflight_failed_before_upload_or_compilation",
+  "persistent_free_bytes": 795439104,
+  "required_free_bytes": 805306368,
+  "resolution": "new immutable run with isolated RAM build cache; persistent sources and logs",
+  "lean_invoked": false,
+  "ownership_transferred_to_continuing_campaign": true
+}

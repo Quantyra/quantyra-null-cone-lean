@@ -1,0 +1,3 @@
+Terminal task RAM cache was already absent; its preserved symlink identified the exact target.
+Removed terminal task cache link; persistent sources and logs preserved.
+usage(total=206900281344, used=206091517952, free=791986176)

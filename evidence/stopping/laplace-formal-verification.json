@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "run": "space-stopping-acceptance-20261010T001049Z-8b6cab",
+  "audited_exports": 647,
+  "new_exports_by_module": {
+    "ThinningGenerating": [
+      "QuantyraNullCone.thinning_unit_integrable",
+      "QuantyraNullCone.retained_integral_identity",
+      "QuantyraNullCone.poisson_power_hasSum",
+      "QuantyraNullCone.poisson_power_series",
+      "QuantyraNullCone.retained_sample_product_measurable",
+      "QuantyraNullCone.retained_sample_product_unit",
+      "QuantyraNullCone.retained_sample_product_integral"
+    ],
+    "ThinningLaplace": [
+      "QuantyraNullCone.poisson_retained_product_lintegral",
+      "QuantyraNullCone.poisson_retained_product_integral",
+      "QuantyraNullCone.poisson_retained_product_intensity",
+      "QuantyraNullCone.poisson_retained_laplace_functional"
+    ]
+  },
+  "root_build_jobs": 3072,
+  "accepted_source_count": 170,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "425bbd9adb099f871949ebbbf928c18f9f56a4e9",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "efaba516cd55ea1dd244929305aca1b166722fda22f5a7adf9e7b1722578129b",
+    "receipt.json": "0cff1daae48e898b29891dee950e7864a8575809e1968ab85986d0b5b5b2b105",
+    "cleanup.json": "08014fc463e294eae9cdd51db84cd886bb0e2be9875c6f5b30e0a477f3b6fb55",
+    "input-archive.json": "47872e1b79320f65992b1ee6529f6b961acbe1014e2f58326a3439f83213b9f0",
+    "run.sh": "725963f26b45ae77198d104bf55fba1638da6393b85e1f3d60faa2967a1875d1",
+    "logs/build.stdout.txt": "6f0ba0ad57b0908b808669a6fba74e8000fefaa52b03c9404b0c177a3e8dc414",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "7f6e17befaa3b86910fe8a2f8c9be916e004d5b998d84a33ca7c9e58c4dc9c96",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "sampling until n with almost-sure termination remains S040",
+    "concrete complete marked-order encoding remains S040",
+    "Laplace endpoint assumes positive mean retention and real-valued nonnegative measurable tests",
+    "complete S038 geometric confounding endpoint remains S040",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

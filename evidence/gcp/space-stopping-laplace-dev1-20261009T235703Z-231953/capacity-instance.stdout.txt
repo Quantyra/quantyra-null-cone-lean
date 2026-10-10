@@ -1,0 +1,8 @@
+{
+  "status": "RUNNING",
+  "disks": [
+    {
+      "source": "https://www.googleapis.com/compute/v1/projects/quantyra-lean-cert-20260915/zones/us-central1-a/disks/quantyra-lean-builder-01"
+    }
+  ]
+}

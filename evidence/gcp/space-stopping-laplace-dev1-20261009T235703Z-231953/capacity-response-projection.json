@@ -1,0 +1,7 @@
+{
+  "retained_fields": [
+    "status",
+    "disks.source"
+  ],
+  "reason": "Bound the capacity record to the instance status and attached disk identity."
+}

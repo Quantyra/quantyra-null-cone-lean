@@ -1668,3 +1668,27 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.mixed_physical_report_coverage
 #check QuantyraNullCone.InDensityClass.mixed_physical_report_coverage
 #print axioms QuantyraNullCone.InDensityClass.mixed_physical_report_coverage
+
+-- Actual retained Poisson product and Laplace functionals.
+#check QuantyraNullCone.thinning_unit_integrable
+#print axioms QuantyraNullCone.thinning_unit_integrable
+#check QuantyraNullCone.retained_integral_identity
+#print axioms QuantyraNullCone.retained_integral_identity
+#check QuantyraNullCone.poisson_power_hasSum
+#print axioms QuantyraNullCone.poisson_power_hasSum
+#check QuantyraNullCone.poisson_power_series
+#print axioms QuantyraNullCone.poisson_power_series
+#check QuantyraNullCone.retained_sample_product_measurable
+#print axioms QuantyraNullCone.retained_sample_product_measurable
+#check QuantyraNullCone.retained_sample_product_unit
+#print axioms QuantyraNullCone.retained_sample_product_unit
+#check QuantyraNullCone.retained_sample_product_integral
+#print axioms QuantyraNullCone.retained_sample_product_integral
+#check QuantyraNullCone.poisson_retained_product_lintegral
+#print axioms QuantyraNullCone.poisson_retained_product_lintegral
+#check QuantyraNullCone.poisson_retained_product_integral
+#print axioms QuantyraNullCone.poisson_retained_product_integral
+#check QuantyraNullCone.poisson_retained_product_intensity
+#print axioms QuantyraNullCone.poisson_retained_product_intensity
+#check QuantyraNullCone.poisson_retained_laplace_functional
+#print axioms QuantyraNullCone.poisson_retained_laplace_functional

@@ -326,8 +326,98 @@ The follow-up counts `detTime < 0` and `detTime >= 1e9*tr` within the same
 frame prefix, reports their distinct values, and checks integrality of
 `rawPulseShape`. It applies no correction. No Lean/Lake or GCP run occurred.
 
+## Recovery-model development comparison
+
+2026-10-10 continuation. **The specific age-dependence diagnostic passes.**
+An age-by-phase intensity fitted on frames `[0,500000)` predicts the later
+development half better than the best hard-cutoff model fitted directly to
+that later half. The latter is allowed a continuous cutoff in `[198,200]` ns
+and eight separate phase rates. This comparison does not merely hold an
+incorrect nominal cutoff fixed. It still does not establish a range benefit.
+
+The [ordinary argument](lidar-recovery-argument.md),
+[protocol](lidar-recovery-protocol.json) and
+[executable](lidar_recovery_screen.py) were pushed at
+`4f70f9299bc3bdf5fb1fddecc36609d3a555e666` before this new exposure/hazard fit.
+Earlier gap summaries from the entire development prefix motivated the check.
+It is retrospective; the second half is a development evaluation, not final
+untouched validation. All outcomes from frame 1,000,000 onward remain reserved.
+
+The scored region has laser phases 15--95 ns, divided into eight strata,
+and ages 198--600 ns, divided into 15 strata. Every detection resets the
+history, including detections outside this region. Analysis conditions on
+the first recorded event and keeps the preceding event at the half boundary.
+Exposure is censored at a fixed frame boundary inside the known acquisition;
+the unknown acquisition endpoint is not imputed from its last detection.
+The known out-of-period timestamp is preserved through absolute-time mapping.
+
+| Timestamp scenario | Alternative minus optimized-null log score |
+| --- | ---: |
+| Original recorded times | 287.0181 |
+| Alternating +8/-8 ps perturbation | 257.2136 |
+| Alternating -8/+8 ps perturbation | 318.9197 |
+
+All exceed the declared diagnostic threshold `log(100)`. The optimized
+off-pulse cutoff for the original evaluation coordinates is 198.313600 ns;
+this differs from the earlier minimum gap over **all** phases. Descriptive
+evaluation rates per ns are 0.0016575 at age 198.25--198.5 ns, 0.0095252 at
+198.75--199 ns, 0.0140377 at 199.5--200 ns, and 0.0155516 at 201--202 ns.
+The corresponding training rates show a similar increase. These are observed
+conditional intensities per reconstructed exposure, not detection efficiencies.
+Gradual recovery is one explanation; afterpulsing, incident variation and
+other observation effects have not been separated.
+
+Independent explicit interval intersections check 9,868 exposure cases with
+maximum absolute error `1.244e-8` ns. Phase-union checks agree within
+`4.657e-10` ns. A separate count-label implementation reproduces all stored
+cell counts, and a scalar score sum agrees within `2.329e-10` log units.
+Frozen protocol, executable, argument and input hashes match Git and the
+result artifact. The hard-cutoff supremum has an ordinary monotonicity proof
+and also passes the prescribed grid check.
+
+The [audit](lidar-recovery-audit.json) retains a numerical sensitivity:
+computing phase directly from the original within-frame coordinates changes
+some labels exactly on phase boundaries. The circular coordinate discrepancy
+is below `1.616e-8` ns, but the count matrices' L1 changes are 50--66.
+The three resulting log-score advantages are 287.4932, 257.4420 and 318.1548.
+The original results are preserved; this numerical sensitivity does not change
+the gate. Future range fits should use the original phase coordinates and
+frame-difference gaps to avoid absolute-time cancellation at bin boundaries.
+
+**Inference limits:** the frozen argument's conditional likelihood-ratio
+theorem requires a fixed protocol or a valid adjustment for selection.
+Here earlier full-prefix outcomes helped select the check. In addition, exact
+continuous timestamps are a mathematical assumption, whereas these records
+are quantized. Consequently neither the nominal `log(100)` threshold nor the
+two perturbations gives this retrospective physical check an exact 1% error
+certificate. The perturbations do not bound all possible latent timestamps.
+No causal recovery mechanism, absolute calibration or ranging accuracy has
+been validated by these log scores.
+
+The [result](lidar-recovery-results.json) SHA256 is
+`9ee887258d5cd6956079d6084703d0e318396eefd49735a39dc44cd68439271a`;
+the audit SHA256 is
+`3369793e58f7c39eed4602ab5ea758b43d240ff4b218505af4218b1d202bc0d7`.
+Reproduce with the two executables and `--cache-dir` pointing to the existing
+external data directory; each requires a new `--output` path so frozen
+results cannot be silently overwritten. No Lean/Lake or GCP run occurred.
+
 ## Next selection gate
 
-Choose a task for which the observable record, independently known or calibrated target, detector selection uncertainty and useful decision threshold are jointly available. Prefer an existing physical control or withheld calibration run. Specify the strongest applicable inference and decision cost before measuring performance. If a transfer changes the physical target from spacetime volume, state and justify that bridge explicitly. A constructed coordinate order or simulated thinning of physical measurements cannot substitute for detector calibration.
+The age-dependence result warrants a bounded ranging comparison. First quantify
+the effect on the range score after allowing amplitude and background to
+adjust: a large predictive discrepancy can have negligible effect on range.
+Then compare recovery-aware inference against fitted hard-cutoff joint
+likelihood, robust one-step estimation, an established flexible recovery
+likelihood and a guarded likelihood that retains the full detection history.
+Freeze the range tolerance, error requirement, calibration inputs and resource
+budget before the comparison. If the range effect is negligible or already
+matched by the applicable established method, park promotion of a distinct
+method. Do not spend the final reserve to rescue an unsuccessful comparison.
+
+Pulse and reference calibration, latent timestamp treatment, complete history,
+stability and dependence remain explicit obligations. A different target from
+spacetime volume needs its own measurement bridge; this lidar investigation
+does not validate causal-order spacetime reconstruction.
 
 Remaining to-do list: establish a useful calibration-aware range decision and matched comparative argument, validate timing/recovery/pulse and reference assumptions, then demonstrate the benefit using reserved measurements. The full user goal remains active; validated practical use remains unachieved.

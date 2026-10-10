@@ -1,0 +1,56 @@
+{
+  "freeze": "4f70f9299bc3bdf5fb1fddecc36609d3a555e666",
+  "frozen_hashes": {
+    "lidar-recovery-protocol.json": "879410b4af576bc06f99bed020257dc78211c865a2948de8e5527d29973e6749",
+    "lidar_recovery_screen.py": "afc8305323785072d25a2e9dc439fc0b30d07d41bda267d9090fdfec440bdcab",
+    "lidar-recovery-argument.md": "0bf4d8b9ea091d2e5e894a3b746463eec6b688cacc0c6d8ae635d5f89b33f597"
+  },
+  "result_sha256": "9ee887258d5cd6956079d6084703d0e318396eefd49735a39dc44cd68439271a",
+  "audit_executable_sha256": "bb2796b56bd093fffd0c0c1e5c92fc8b532aefe815073e13b319dbe92afa25f4",
+  "source_sha256": "cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26",
+  "scenarios": [
+    {
+      "perturbation_ns": 0,
+      "independent_counts_match": true,
+      "score_error": 2.3283064365386963e-10,
+      "source_coordinate_count_l1_changes": [
+        65,
+        66
+      ],
+      "source_coordinate_log_score_advantage": 287.4932391302427,
+      "source_coordinate_gate_pass": true,
+      "maximum_gap_coordinate_difference_ns": 2.8946999464096734e-08,
+      "maximum_phase_coordinate_difference_ns": 100.00080000599777,
+      "maximum_circular_phase_coordinate_difference_ns": 1.4838995809896005e-08
+    },
+    {
+      "perturbation_ns": 0.008,
+      "independent_counts_match": true,
+      "score_error": 1.1641532182693481e-10,
+      "source_coordinate_count_l1_changes": [
+        55,
+        50
+      ],
+      "source_coordinate_log_score_advantage": 257.44204505719244,
+      "source_coordinate_gate_pass": true,
+      "maximum_gap_coordinate_difference_ns": 3.145041205243615e-08,
+      "maximum_phase_coordinate_difference_ns": 100.00080000550908,
+      "maximum_circular_phase_coordinate_difference_ns": 1.615030242874127e-08
+    },
+    {
+      "perturbation_ns": -0.008,
+      "independent_counts_match": true,
+      "score_error": 0.0,
+      "source_coordinate_count_l1_changes": [
+        54,
+        62
+      ],
+      "source_coordinate_log_score_advantage": 318.1548245692393,
+      "source_coordinate_gate_pass": true,
+      "maximum_gap_coordinate_difference_ns": 3.1569612701787264e-08,
+      "maximum_phase_coordinate_difference_ns": 100.00080000617186,
+      "maximum_circular_phase_coordinate_difference_ns": 1.6143040681981802e-08
+    }
+  ],
+  "interpretation": "Frozen screen counts/scores reproduce. Source-coordinate counts expose floating-point boundary sensitivity, retained here without overwriting the original. Recomputed scores are an additional numeric sensitivity using the original exposure arrays; they do not bound all physical timestamp rounding. Prior full-prefix gap summaries motivated this retrospective protocol, so even under exact timestamps these scores are not a prospectively calibrated 1% test. The frozen argument's conditional theorem assumes a fixed protocol or appropriate selection adjustment. No reserved outcomes read."
+}

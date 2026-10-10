@@ -2426,3 +2426,79 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.InDensityClass3.quotientDensity_isOpenPosMeasure
 #check QuantyraNullCone.InDensityClass3.quotientDensity_open_pos
 #print axioms QuantyraNullCone.InDensityClass3.quotientDensity_open_pos
+
+/-! Exact quotient order laws and the selected coupling-distortion functional (S042). -/
+#check QuantyraNullCone.measurable_closedSampleVal3
+#print axioms QuantyraNullCone.measurable_closedSampleVal3
+#check QuantyraNullCone.InDensityClass3.closedSample_isProbabilityMeasure
+#print axioms QuantyraNullCone.InDensityClass3.closedSample_isProbabilityMeasure
+#check QuantyraNullCone.InDensityClass3.closedSample_map_val
+#print axioms QuantyraNullCone.InDensityClass3.closedSample_map_val
+#check QuantyraNullCone.measurable_quotientSampleProjection3
+#print axioms QuantyraNullCone.measurable_quotientSampleProjection3
+#check QuantyraNullCone.InDensityClass3.quotientSample_isProbabilityMeasure
+#print axioms QuantyraNullCone.InDensityClass3.quotientSample_isProbabilityMeasure
+#check QuantyraNullCone.InDensityClass3.quotientSample_map_projection
+#print axioms QuantyraNullCone.InDensityClass3.quotientSample_map_projection
+#check QuantyraNullCone.measurable_quotientSampledOrder3
+#print axioms QuantyraNullCone.measurable_quotientSampledOrder3
+#check QuantyraNullCone.quotientSampledOrder3_projection
+#print axioms QuantyraNullCone.quotientSampledOrder3_projection
+#check QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq
+#print axioms QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq
+#check QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq
+#print axioms QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq
+#check QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure
+#print axioms QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure
+#check QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent
+#print axioms QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent
+#check QuantyraNullCone.IsTimeCoupling.isProbabilityMeasure
+#print axioms QuantyraNullCone.IsTimeCoupling.isProbabilityMeasure
+#check QuantyraNullCone.isTimeCoupling_prod
+#print axioms QuantyraNullCone.isTimeCoupling_prod
+#check QuantyraNullCone.IsTimeCoupling.swap
+#print axioms QuantyraNullCone.IsTimeCoupling.swap
+#check QuantyraNullCone.measurableSet_timeBadPairs
+#print axioms QuantyraNullCone.measurableSet_timeBadPairs
+#check QuantyraNullCone.timeDistortion_bddBelow
+#print axioms QuantyraNullCone.timeDistortion_bddBelow
+#check QuantyraNullCone.timeDistortion_one_admissible
+#print axioms QuantyraNullCone.timeDistortion_one_admissible
+#check QuantyraNullCone.timeDistortion_nonempty
+#print axioms QuantyraNullCone.timeDistortion_nonempty
+#check QuantyraNullCone.timeDistortionLoss_nonneg
+#print axioms QuantyraNullCone.timeDistortionLoss_nonneg
+#check QuantyraNullCone.timeDistortionLoss_le_of_admissible
+#print axioms QuantyraNullCone.timeDistortionLoss_le_of_admissible
+#check QuantyraNullCone.timeDistortionLoss_le_one
+#print axioms QuantyraNullCone.timeDistortionLoss_le_one
+#check QuantyraNullCone.timeBadPairs_swap_measure
+#print axioms QuantyraNullCone.timeBadPairs_swap_measure
+#check QuantyraNullCone.timeDistortionAdmissible_swap
+#print axioms QuantyraNullCone.timeDistortionAdmissible_swap
+#check QuantyraNullCone.timeDistortionLoss_symm
+#print axioms QuantyraNullCone.timeDistortionLoss_symm
+#check QuantyraNullCone.isTimeCoupling_graph
+#print axioms QuantyraNullCone.isTimeCoupling_graph
+#check QuantyraNullCone.isTimeCoupling_graph_of_preserving
+#print axioms QuantyraNullCone.isTimeCoupling_graph_of_preserving
+#check QuantyraNullCone.graphTimeCoupling_bad_eq_zero
+#print axioms QuantyraNullCone.graphTimeCoupling_bad_eq_zero
+#check QuantyraNullCone.timeDistortionLoss_le_of_transport
+#print axioms QuantyraNullCone.timeDistortionLoss_le_of_transport
+#check QuantyraNullCone.timeDistortionLoss_eq_zero_of_isometry
+#print axioms QuantyraNullCone.timeDistortionLoss_eq_zero_of_isometry
+#check QuantyraNullCone.timeDistortionLoss_self
+#print axioms QuantyraNullCone.timeDistortionLoss_self
+#check QuantyraNullCone.geometricDistortion3_nonneg
+#print axioms QuantyraNullCone.geometricDistortion3_nonneg
+#check QuantyraNullCone.geometricDistortion3_le_one
+#print axioms QuantyraNullCone.geometricDistortion3_le_one
+#check QuantyraNullCone.geometricDistortion3_symm
+#print axioms QuantyraNullCone.geometricDistortion3_symm
+#check QuantyraNullCone.geometricDistortion3_self
+#print axioms QuantyraNullCone.geometricDistortion3_self
+#check QuantyraNullCone.geometricDistortion3_le_of_transport
+#print axioms QuantyraNullCone.geometricDistortion3_le_of_transport
+#check QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry
+#print axioms QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry

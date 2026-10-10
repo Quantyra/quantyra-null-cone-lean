@@ -1,0 +1,7 @@
+{
+  "run": "space-qloss3-dev4-20261010T073120Z-e4f8ed",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzDistortion",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

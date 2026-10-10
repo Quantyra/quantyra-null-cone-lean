@@ -1,6 +1,6 @@
 # Physical evidence selection after the finite comparison
 
-S049, 2026-10-10. The [finite balanced-volume comparison](../balanced-volume/FINITE-REFERENCE-RESULTS.md) parks promotion of the frozen four-tail candidate and retains a better exact reference. Three primary-source leads are inspected below. The latest beam check derives the selection/contamination envelope and parks the proposed all-cluster transfer to the complete-reference cohort: at least 15.2% of development clusters cannot be paired one-to-one with that cohort. The exact model also shows how 11.7% contamination can erase the earlier benchmark separation. These are distinct finite-record and model results, not a measured population contamination rate. Physical calibration and a comparative decision benefit remain open; no practical-use claim follows.
+S049, 2026-10-10. The [finite balanced-volume comparison](../balanced-volume/FINITE-REFERENCE-RESULTS.md) parks promotion of the frozen four-tail candidate and retains a better exact reference. The beam check below also parks the proposed all-cluster transfer. The latest source screen retrieves actual lidar timing records and a separate raw pulse calibration, verifies bounded development counts, and identifies a dead-time convention that is incompatible with those records as an exact cutoff. This supplies a better observation/calibration lead, not a validated detector model or comparative benefit. Physical validation and practical use remain unachieved.
 
 ## Cesium lifetime archive: useful physical data, insufficient observation record
 
@@ -172,8 +172,162 @@ python applications/detector-calibration/beam_profile_model.py --cache-dir PATH_
 No reserved response/association outcome, earlier manuscript or Lean source
 was changed or evaluated by this check. No Lean/Lake or GCP run was invoked.
 
+## High-flux lidar: timestamp history and calibration counts available
+
+This continuation screens a ranging decision rather than a spatial beam-profile
+decision. It does not treat photon times as a causal-order observation or
+reopen the parked beam transfer.
+
+### Applicable existing methods
+
+- [Po et al. (CVPR 2022)](https://arxiv.org/html/2111.15047v2) already use
+  adaptive gating and exposure. Their [released implementation](https://github.com/cmu-ci-lab/adaptive-gating-spad)
+  resamples measured fixed-gate histograms. Such replay can support a model
+  comparison but does not independently validate the counterfactual acquisition
+  history of a new policy. No large file from that release was retrieved.
+- [Rapp et al. (Optica 2021)](https://doi.org/10.1364/OPTICA.403190) already
+  model detector/electronics dead times and provide histogram correction and
+  flux inference. Their separate low-flux acquisition and pulse calibration
+  motivate the selected record check. The public data are linked by
+  [HighFluxSPL](https://github.com/Goyal-STIR-Group/HighFluxSPL/tree/1494365d05867fa6bff9b989dc4f0bd5817a0b4e).
+- [Kitichotkul et al. (ICCV 2025)](https://arxiv.org/html/2507.09386v1)
+  already provide efficient joint depth/signal/background likelihood inference.
+  Merely replacing a stationary-histogram approximation with likelihood
+  inference cannot be claimed as our new contribution. Its observation model
+  and resource requirements must be matched in a future comparison.
+- [Jorgensen and Johnson (2026), sections II, V-F and VI](https://arxiv.org/html/2605.23210v1)
+  provide exposure-aware sufficient statistics, asymptotic information bounds
+  and robust one-step inference. Their real-data benchmark uses acq14, with a
+  full-acquisition likelihood fit as proxy truth. They explicitly identify
+  residual model mismatch and describe optimized gating as ongoing work. These
+  methods are required comparators; neither routine likelihood optimization,
+  a one-step update nor a fitted full-record proxy establishes our goal.
+- [Zhang et al. (2025)](https://arxiv.org/html/2509.20500v1) already accelerate
+  Markov transition-matrix construction. A speed comparison must include that
+  formulation if stationary-distribution computation is the proposed benefit.
+
+This is a scoped source/implementation screen, not a completed originality
+review or a numerical comparison of these methods. The [source manifest](lidar-source-manifest.json)
+pins eight inspected files from HighFluxSPL at `1494365d05867fa6bff9b989dc4f0bd5817a0b4e`
+and the 2026 implementation at `d63dc5d8e2395ff1104a81946b989c4345d0baab`.
+No upstream executable was run. The former ranging script uses nominal
+holdoff plus 2 ns; the latter data reader uses nominal holdoff. Their differing
+conventions motivate the check, not an allegation that either publication
+claims exact physical calibration from its nominal setting.
+
+### Frozen adequacy check
+
+[Protocol](lidar-record-protocol.json) and [executable](lidar_record_screen.py)
+were pushed at `eae51464d528892c9c9e451be64cd52a7ab83553` before local
+event-outcome analysis. Published results and archive metadata were already
+known. This is retrospective analysis, not a blinded physical experiment.
+
+Only three named ZIP members were retrieved using HTTP byte ranges from the
+456,605,196-byte public archive. Member sizes and CRC32 agree with its central
+directory; SHA256 identities below freeze the retrieved bytes. CRC is an
+integrity check, not an independent physical-data authenticity certificate.
+All raw data stay outside Git; software MIT licenses are not presumed to
+license redistribution of the separate data archive.
+
+| Member, under `2019_01_28/` | Bytes | SHA256 |
+| --- | ---: | --- |
+| `FGS_td048_2019_01_28_acq1.mat` | 19,558,228 | `74e8aa95c4b04f2face829e771aa77bafb6b712914b0bf147dedfcc047268098` |
+| `FGS_td198_2019_01_28_acq14.mat` | 20,133,276 | `cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26` |
+| `laser_calib_100.mat` | 3,168 | `69391ff9b96dce1d8fba65ab5c962d77c3e81a69eb063a0f23185b0991ceebf8` |
+
+Both event files include laser frame numbers, within-frame detection times,
+8 ps timestamp resolution, measured repetition period, optical density and
+nominal holdoff. This allows reconstruction of absolute event times, including
+empty periods between recorded detections. The files do not supply an explicit
+acquisition-end timestamp: the last occupied frame does not determine a
+possibly trailing empty acquisition interval.
+The detector's initial recovery state at an analysis boundary also needs an
+explicit convention or conditioning on a preceding recorded event.
+
+Outcome analysis uses only frame IDs `[0,1,000,000)` in each file. Full lengths
+and frame extents were inspected as authorized provenance metadata. The
+development counts are **3,260 low-flux detections** and **396,502 high-flux
+detections**. Original absolute-time order is increasing, without duplicates;
+frame-difference and absolute-time gap calculations agree to `2.90e-8` ns.
+A separate searchsorted prefix extraction reproduces both event counts and
+all ten cutoff counts using absolute-time differences.
+
+The high-flux nominal holdoff is 198 ns, exceeding the stated 80 ns timing
+electronics dead time. Its minimum observed development gap is 198.2336 ns.
+The prescribed four-bin rounding allowance is 0.032 ns:
+
+| Proposed exact cutoff | High-flux gaps below cutoff minus allowance |
+| --- | ---: |
+| 198 ns | 0 |
+| 198.5 ns | 141 |
+| 199 ns | 2,085 |
+| 200 ns | 13,232 |
+| 201 ns | 27,477 |
+
+Thus a literal 200 ns hard cutoff is incompatible with this record under
+the specified rounding allowance. Zero violations at 198 ns do not establish
+instantaneous full recovery, independent arrivals, absence of afterpulsing
+or a calibrated dead-time confidence bound. The low-flux minimum gap is
+80.3288 ns despite nominal 48 ns holdoff, consistent with a separate
+electronics constraint; it must not be processed using a detector-only
+live-time model merely because its illumination is attenuated.
+
+The initial phase-range check is retained as a failure, not silently repaired.
+Its [bounded follow-up](lidar-record-followup.json) finds exactly one high-flux
+development phase beyond the stated period, by 0.00720 ns, less than one raw
+timestamp bin. This is compatible with quantization but does not establish
+its cause. Future exposure reconstruction must specify wrapping and timestamp
+uncertainty without silently discarding that event. The follow-up inspects
+only the same development prefix.
+
+The pulse file includes **253 raw nonnegative integer bins totaling 606,768**,
+alongside a smoothed curve and trim indices. Raw counts are available for
+investigating calibration uncertainty; they are not automatically a complete
+calibration likelihood. The file does not supply acquisition duration,
+per-event history, the counts outside the trimmed window or repeated
+calibrations establishing drift. Timing-offset, trimming/background and
+recovery uncertainty must be justified before treating its template as known.
+
+The high-flux file extends to frame 9,999,924 and the low-flux file to
+999,992,461. Outcomes at or after frame 1,000,000 have not been analyzed here.
+Those remainders are available for a frozen evaluation, subject to verifying
+stability and dependence; they are not claimed independent solely because
+the intervals are disjoint. The existing beam reserve is untouched.
+
+### Decision and reproduction
+
+**Retain this source for a calibration-aware ranging comparison.** The
+specific opening is a reliable range decision at limited acquisition time,
+with pulse and recovery uncertainty propagated rather than treated as exact.
+The available low-flux acquisition offers a separate measurement reference;
+its timing and uncertainty are still unvalidated. Before fitting the remaining
+records, derive a useful finite decision rule and a matched comparison against
+joint likelihood and robust one-step inference, with the same calibration,
+error tolerance and compute/acquisition budget. Improving only a deliberately
+wrong dead-time setting or an uncorrected histogram is not sufficient.
+
+No new gating policy is selected: deleting events from a free-running record
+does not recover photons that an alternative gate would have observed. No
+depth/flux fit, performance advantage, physical coverage certificate or new
+formalization was produced by this check.
+
+[Results](lidar-record-results.json), SHA256
+`ec15cf7369a47a2185f39e087f4a6aaa7f484c69e59f25a244ec3e107a6cf68d`,
+record metadata, schemas, request ranges, versions and all declared checks.
+The follow-up SHA256 is
+`4fc4ba882311b274ad1abacc9c9413e6396aede1e86dcfebc0b9ba45f5183135`.
+Both frozen input files match Git byte-for-byte. Reproduce the main screen:
+
+```text
+python applications/detector-calibration/lidar_record_screen.py --cache-dir PATH_OUTSIDE_REPOSITORY --fetch --output applications/detector-calibration/lidar-record-results.json
+```
+
+The follow-up counts `detTime < 0` and `detTime >= 1e9*tr` within the same
+frame prefix, reports their distinct values, and checks integrality of
+`rawPulseShape`. It applies no correction. No Lean/Lake or GCP run occurred.
+
 ## Next selection gate
 
 Choose a task for which the observable record, independently known or calibrated target, detector selection uncertainty and useful decision threshold are jointly available. Prefer an existing physical control or withheld calibration run. Specify the strongest applicable inference and decision cost before measuring performance. If a transfer changes the physical target from spacetime volume, state and justify that bridge explicitly. A constructed coordinate order or simulated thinning of physical measurements cannot substitute for detector calibration.
 
-Remaining to-do list: select a defensible operational cohort and useful physical decision, establish a comparative argument before further calibration engineering, validate its observation/sampling assumptions, then demonstrate the benefit on reserved measurements. The full user goal remains active; validated practical use remains unachieved.
+Remaining to-do list: establish a useful calibration-aware range decision and matched comparative argument, validate timing/recovery/pulse and reference assumptions, then demonstrate the benefit using reserved measurements. The full user goal remains active; validated practical use remains unachieved.

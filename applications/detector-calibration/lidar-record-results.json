@@ -1,0 +1,365 @@
+{
+  "scope": "Bounded adequacy check of HighFluxSPL timestamp and pulse-calibration records. This is not an estimator comparison, a physical calibration certificate or an improvement claim.",
+  "protocol_sha256": "8b4905c56e5895d47cc1ccf652cbe3e581626a0d9e1cb70db0ff4941ec372b1e",
+  "script_sha256": "31f8e0df85e96d502c5fa3b8a1bc5062b1c1ac1bee0aad70d533c2a13c2f6f2f",
+  "requested_ranges": [
+    [
+      456605174,
+      456605195
+    ],
+    [
+      456605154,
+      456605173
+    ],
+    [
+      456598865,
+      456605173
+    ],
+    [
+      73,
+      102
+    ],
+    [
+      103,
+      142
+    ],
+    [
+      175,
+      19539613
+    ],
+    [
+      169748269,
+      169748298
+    ],
+    [
+      169748299,
+      169748339
+    ],
+    [
+      169748372,
+      187999109
+    ],
+    [
+      51090132,
+      51090161
+    ],
+    [
+      51090162,
+      51090191
+    ],
+    [
+      51090224,
+      51093394
+    ]
+  ],
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "members": [
+    {
+      "name": "2019_01_28/FGS_td048_2019_01_28_acq1.mat",
+      "bytes": 19558228,
+      "crc32": "80a3e202",
+      "sha256": "74e8aa95c4b04f2face829e771aa77bafb6b712914b0bf147dedfcc047268098",
+      "schema": [
+        {
+          "name": "OD",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "T_holdoff",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "detTime",
+          "shape": [
+            3224377,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "frameNum",
+          "shape": [
+            3224377,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "tr",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {
+        "OD": 3,
+        "T_holdoff": 48,
+        "binRes": 8e-12,
+        "tr": 1.0000076000577605e-07
+      },
+      "event_record": {
+        "full_array_length": 3224377,
+        "full_frame_extent": [
+          58.0,
+          999992461.0
+        ],
+        "development_range": [
+          0,
+          1000000
+        ],
+        "development_detections": 3260,
+        "development_frames_with_detections": 3226,
+        "development_frames_with_multiple_detections": 34,
+        "phase_within_period": true,
+        "nondecreasing_absolute_times": true,
+        "duplicate_absolute_times": 0,
+        "independent_gap_max_disagreement_ns": 2.473200311214896e-08,
+        "period_ns": 100.00076000577604,
+        "raw_bin_ns": 0.008,
+        "holdoff_ns": 48.0,
+        "holdoff_exceeds_80ns_electronics": false,
+        "gap_quantiles_ns": {
+          "0": 80.32876000577606,
+          "0.0001": 80.42780320577606,
+          "0.001": 80.97026008149022,
+          "0.01": 83.13196080335011,
+          "0.5": 14012.866400808647
+        },
+        "rounding_allowance_ns": 0.032,
+        "cutoff_diagnostics": [
+          {
+            "offset_ns": 0,
+            "cutoff_ns": 48.0,
+            "gaps_below_cutoff_minus_allowance": 0
+          },
+          {
+            "offset_ns": 0.5,
+            "cutoff_ns": 48.5,
+            "gaps_below_cutoff_minus_allowance": 0
+          },
+          {
+            "offset_ns": 1,
+            "cutoff_ns": 49.0,
+            "gaps_below_cutoff_minus_allowance": 0
+          },
+          {
+            "offset_ns": 2,
+            "cutoff_ns": 50.0,
+            "gaps_below_cutoff_minus_allowance": 0
+          },
+          {
+            "offset_ns": 3,
+            "cutoff_ns": 51.0,
+            "gaps_below_cutoff_minus_allowance": 0
+          }
+        ],
+        "boundary": "Descriptive development-record compatibility only; no fitted or certified dead time."
+      }
+    },
+    {
+      "name": "2019_01_28/FGS_td198_2019_01_28_acq14.mat",
+      "bytes": 20133276,
+      "crc32": "4091c435",
+      "sha256": "cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26",
+      "schema": [
+        {
+          "name": "OD",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "T_holdoff",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "detTime",
+          "shape": [
+            3964445,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "frameNum",
+          "shape": [
+            3964445,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "tr",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {
+        "OD": 0,
+        "T_holdoff": 198,
+        "binRes": 8e-12,
+        "tr": 1.0000080000640005e-07
+      },
+      "event_record": {
+        "full_array_length": 3964445,
+        "full_frame_extent": [
+          5.0,
+          9999924.0
+        ],
+        "development_range": [
+          0,
+          1000000
+        ],
+        "development_detections": 396502,
+        "development_frames_with_detections": 396502,
+        "development_frames_with_multiple_detections": 0,
+        "phase_within_period": false,
+        "nondecreasing_absolute_times": true,
+        "duplicate_absolute_times": 0,
+        "independent_gap_max_disagreement_ns": 2.8946999464096734e-08,
+        "period_ns": 100.00080000640004,
+        "raw_bin_ns": 0.008,
+        "holdoff_ns": 198.0,
+        "holdoff_exceeds_80ns_electronics": true,
+        "gap_quantiles_ns": {
+          "0": 198.23360001280008,
+          "0.0001": 198.39080001280007,
+          "0.001": 198.58560001280009,
+          "0.01": 199.29760001280007,
+          "0.5": 235.73040001920015
+        },
+        "rounding_allowance_ns": 0.032,
+        "cutoff_diagnostics": [
+          {
+            "offset_ns": 0,
+            "cutoff_ns": 198.0,
+            "gaps_below_cutoff_minus_allowance": 0
+          },
+          {
+            "offset_ns": 0.5,
+            "cutoff_ns": 198.5,
+            "gaps_below_cutoff_minus_allowance": 141
+          },
+          {
+            "offset_ns": 1,
+            "cutoff_ns": 199.0,
+            "gaps_below_cutoff_minus_allowance": 2085
+          },
+          {
+            "offset_ns": 2,
+            "cutoff_ns": 200.0,
+            "gaps_below_cutoff_minus_allowance": 13232
+          },
+          {
+            "offset_ns": 3,
+            "cutoff_ns": 201.0,
+            "gaps_below_cutoff_minus_allowance": 27477
+          }
+        ],
+        "boundary": "Descriptive development-record compatibility only; no fitted or certified dead time."
+      }
+    },
+    {
+      "name": "2019_01_28/laser_calib_100.mat",
+      "bytes": 3168,
+      "crc32": "674094cf",
+      "sha256": "69391ff9b96dce1d8fba65ab5c962d77c3e81a69eb063a0f23185b0991ceebf8",
+      "schema": [
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "rawPulseShape",
+          "shape": [
+            253,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "smoothPulseShape",
+          "shape": [
+            253,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "trimWindow",
+          "shape": [
+            1,
+            253
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {
+        "binRes": 8.000000000000001e-12
+      },
+      "calibration_arrays": {
+        "rawPulseShape": {
+          "finite": true,
+          "minimum": 4.0,
+          "maximum": 14331.0,
+          "sum": 606768.0
+        },
+        "smoothPulseShape": {
+          "finite": true,
+          "minimum": 7.999999999999997,
+          "maximum": 13786.681464861744,
+          "sum": 606766.7116659684
+        },
+        "trimWindow": {
+          "finite": true,
+          "minimum": 84.0,
+          "maximum": 336.0,
+          "sum": 53130.0
+        }
+      }
+    }
+  ]
+}

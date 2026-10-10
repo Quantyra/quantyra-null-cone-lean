@@ -1,0 +1,66 @@
+[
+  {
+    "repo": "Goyal-STIR-Group/HighFluxSPL",
+    "commit": "1494365d05867fa6bff9b989dc4f0bd5817a0b4e",
+    "path": "README.md",
+    "bytes": 2270,
+    "sha256": "f42c76ce844dff7a295b60950477f272ef8a9f08e11bfb75a57bc47ac3c8289f",
+    "url": "https://raw.githubusercontent.com/Goyal-STIR-Group/HighFluxSPL/1494365d05867fa6bff9b989dc4f0bd5817a0b4e/README.md"
+  },
+  {
+    "repo": "Goyal-STIR-Group/HighFluxSPL",
+    "commit": "1494365d05867fa6bff9b989dc4f0bd5817a0b4e",
+    "path": "LICENSE",
+    "bytes": 1073,
+    "sha256": "31858aa0b3fd6413fcb2c82b70ba57bfc957c8556081a3807bf5c572fa713d40",
+    "url": "https://raw.githubusercontent.com/Goyal-STIR-Group/HighFluxSPL/1494365d05867fa6bff9b989dc4f0bd5817a0b4e/LICENSE"
+  },
+  {
+    "repo": "Goyal-STIR-Group/HighFluxSPL",
+    "commit": "1494365d05867fa6bff9b989dc4f0bd5817a0b4e",
+    "path": "main_ranging_comparison.m",
+    "bytes": 7956,
+    "sha256": "921a65aa5a152728f9cdff7ccfc1226f36639dd3ede90e03c724739166befb7e",
+    "url": "https://raw.githubusercontent.com/Goyal-STIR-Group/HighFluxSPL/1494365d05867fa6bff9b989dc4f0bd5817a0b4e/main_ranging_comparison.m"
+  },
+  {
+    "repo": "FredericJorgensen/dead-time-event-estimation",
+    "commit": "d63dc5d8e2395ff1104a81946b989c4345d0baab",
+    "path": "README.md",
+    "bytes": 2261,
+    "sha256": "9b8051bfc986852d8965686f999e3f385e3f2a1b53fca3e12cd69f0988b43ba8",
+    "url": "https://raw.githubusercontent.com/FredericJorgensen/dead-time-event-estimation/d63dc5d8e2395ff1104a81946b989c4345d0baab/README.md"
+  },
+  {
+    "repo": "FredericJorgensen/dead-time-event-estimation",
+    "commit": "d63dc5d8e2395ff1104a81946b989c4345d0baab",
+    "path": "LICENSE.txt",
+    "bytes": 1074,
+    "sha256": "e130f3c3c02bfbd57acc05903b2e0e306204c9408c7657ab2a346ffe7bba9e6d",
+    "url": "https://raw.githubusercontent.com/FredericJorgensen/dead-time-event-estimation/d63dc5d8e2395ff1104a81946b989c4345d0baab/LICENSE.txt"
+  },
+  {
+    "repo": "FredericJorgensen/dead-time-event-estimation",
+    "commit": "d63dc5d8e2395ff1104a81946b989c4345d0baab",
+    "path": "src/spl_fisher_bounds/highfluxspl.py",
+    "bytes": 38178,
+    "sha256": "b906803151662afbfc8fdbd1aee4f02556e0f1c33fb2b488be6d045d3cdbb352",
+    "url": "https://raw.githubusercontent.com/FredericJorgensen/dead-time-event-estimation/d63dc5d8e2395ff1104a81946b989c4345d0baab/src/spl_fisher_bounds/highfluxspl.py"
+  },
+  {
+    "repo": "FredericJorgensen/dead-time-event-estimation",
+    "commit": "d63dc5d8e2395ff1104a81946b989c4345d0baab",
+    "path": "src/spl_fisher_bounds/constants.py",
+    "bytes": 2382,
+    "sha256": "5640809a538131d84a8a81e480fb47ff9c5c8da370f897f0468c2e75ffd2f02f",
+    "url": "https://raw.githubusercontent.com/FredericJorgensen/dead-time-event-estimation/d63dc5d8e2395ff1104a81946b989c4345d0baab/src/spl_fisher_bounds/constants.py"
+  },
+  {
+    "repo": "FredericJorgensen/dead-time-event-estimation",
+    "commit": "d63dc5d8e2395ff1104a81946b989c4345d0baab",
+    "path": "src/spl_fisher_bounds/model.py",
+    "bytes": 6052,
+    "sha256": "192c7258c2e07979a64e62042db33a306eff6ab3c8c19b026d58a11dda1bf78c",
+    "url": "https://raw.githubusercontent.com/FredericJorgensen/dead-time-event-estimation/d63dc5d8e2395ff1104a81946b989c4345d0baab/src/spl_fisher_bounds/model.py"
+  }
+]

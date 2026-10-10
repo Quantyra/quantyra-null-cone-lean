@@ -1,0 +1,14 @@
+{
+  "freeze_inputs_verified": "eae51464d528892c9c9e451be64cd52a7ab83553",
+  "initial_result_sha256": "ec15cf7369a47a2185f39e087f4a6aaa7f484c69e59f25a244ec3e107a6cf68d",
+  "diagnostic_scope": "Follow-up of the predeclared phase-range failure, restricted to the same development frames. No data repair or estimator run.",
+  "phase_min_ns": 0.0,
+  "phase_max_ns": 100.00800000000001,
+  "negative_phases": 0,
+  "phases_at_or_above_period": 1,
+  "max_excess_ns": 0.007199993599968479,
+  "off_range_phase_values": [
+    100.00800000000001
+  ],
+  "raw_pulse_values_are_nonnegative_integers": true
+}

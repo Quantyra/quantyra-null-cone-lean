@@ -1,3 +1,4 @@
+import QuantyraNullCone.LorentzBoundary
 import QuantyraNullCone.LorentzUnlabeled
 import QuantyraNullCone.VolumeRateEmpty
 import QuantyraNullCone.VolumeRateExperiment

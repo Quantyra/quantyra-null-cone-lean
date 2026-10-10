@@ -1,0 +1,7 @@
+{
+  "run": "space-boundary-dev2-20261010T052500Z-88557a",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzBoundary",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

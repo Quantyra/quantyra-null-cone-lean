@@ -2026,3 +2026,75 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.InDensityClass3.unlabeledOrderLawTV_eq
 #check QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff
 #print axioms QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff
+
+-- Genuine 2+1 compact causal diamonds and exact chronological boundary profiles.
+#check QuantyraNullCone.lorentz_waist_subset_closed3
+#print axioms QuantyraNullCone.lorentz_waist_subset_closed3
+#check QuantyraNullCone.isClosed_lorentzWaist3
+#print axioms QuantyraNullCone.isClosed_lorentzWaist3
+#check QuantyraNullCone.isCompact_lorentzWaist3
+#print axioms QuantyraNullCone.isCompact_lorentzWaist3
+#check QuantyraNullCone.time_shift_time3
+#print axioms QuantyraNullCone.time_shift_time3
+#check QuantyraNullCone.time_shift_radius3
+#print axioms QuantyraNullCone.time_shift_radius3
+#check QuantyraNullCone.time_shift_sub_radius3
+#print axioms QuantyraNullCone.time_shift_sub_radius3
+#check QuantyraNullCone.time_shift_radius_sub3
+#print axioms QuantyraNullCone.time_shift_radius_sub3
+#check QuantyraNullCone.spatial_radius_sub_symm3
+#print axioms QuantyraNullCone.spatial_radius_sub_symm3
+#check QuantyraNullCone.spatial_radius_self_sub3
+#print axioms QuantyraNullCone.spatial_radius_self_sub3
+#check QuantyraNullCone.causal3_refl
+#print axioms QuantyraNullCone.causal3_refl
+#check QuantyraNullCone.causal3_transitive
+#print axioms QuantyraNullCone.causal3_transitive
+#check QuantyraNullCone.chronological3_trans_causal3
+#print axioms QuantyraNullCone.chronological3_trans_causal3
+#check QuantyraNullCone.causal3_trans_chronological3
+#print axioms QuantyraNullCone.causal3_trans_chronological3
+#check QuantyraNullCone.causal3_antisymmetric
+#print axioms QuantyraNullCone.causal3_antisymmetric
+#check QuantyraNullCone.bottom_sub_radius3
+#print axioms QuantyraNullCone.bottom_sub_radius3
+#check QuantyraNullCone.top_sub_radius3
+#print axioms QuantyraNullCone.top_sub_radius3
+#check QuantyraNullCone.closed_lorentz_diamond_iff_tips3
+#print axioms QuantyraNullCone.closed_lorentz_diamond_iff_tips3
+#check QuantyraNullCone.lorentz_diamond_iff_tips3
+#print axioms QuantyraNullCone.lorentz_diamond_iff_tips3
+#check QuantyraNullCone.causal_diamond_subset_closed3
+#print axioms QuantyraNullCone.causal_diamond_subset_closed3
+#check QuantyraNullCone.causal_diamond_subset_open3
+#print axioms QuantyraNullCone.causal_diamond_subset_open3
+#check QuantyraNullCone.isClosed_causalDiamond3
+#print axioms QuantyraNullCone.isClosed_causalDiamond3
+#check QuantyraNullCone.isCompact_causalDiamond3
+#print axioms QuantyraNullCone.isCompact_causalDiamond3
+#check QuantyraNullCone.open_lorentz_causal_diamond3
+#print axioms QuantyraNullCone.open_lorentz_causal_diamond3
+#check QuantyraNullCone.past_time_shift_interior3
+#print axioms QuantyraNullCone.past_time_shift_interior3
+#check QuantyraNullCone.future_time_shift_interior3
+#print axioms QuantyraNullCone.future_time_shift_interior3
+#check QuantyraNullCone.past_chronological_margin3
+#print axioms QuantyraNullCone.past_chronological_margin3
+#check QuantyraNullCone.future_chronological_margin3
+#print axioms QuantyraNullCone.future_chronological_margin3
+#check QuantyraNullCone.lorentz_waist_no_closed_neighbors3
+#print axioms QuantyraNullCone.lorentz_waist_no_closed_neighbors3
+#check QuantyraNullCone.interior_past_iff3
+#print axioms QuantyraNullCone.interior_past_iff3
+#check QuantyraNullCone.interior_future_iff3
+#print axioms QuantyraNullCone.interior_future_iff3
+#check QuantyraNullCone.lorentz_interior_iff_neighbors3
+#print axioms QuantyraNullCone.lorentz_interior_iff_neighbors3
+#check QuantyraNullCone.lorentz_waist_iff_no_neighbors3
+#print axioms QuantyraNullCone.lorentz_waist_iff_no_neighbors3
+#check QuantyraNullCone.causal3_of_past_inclusion
+#print axioms QuantyraNullCone.causal3_of_past_inclusion
+#check QuantyraNullCone.causal3_of_future_inclusion
+#print axioms QuantyraNullCone.causal3_of_future_inclusion
+#check QuantyraNullCone.chronological_profile_eq_iff3
+#print axioms QuantyraNullCone.chronological_profile_eq_iff3

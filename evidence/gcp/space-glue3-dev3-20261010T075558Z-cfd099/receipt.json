@@ -1,0 +1,7 @@
+{
+  "run": "space-glue3-dev3-20261010T075558Z-cfd099",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzDistortionTriangle",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

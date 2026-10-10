@@ -26,7 +26,20 @@ for report in reports:
     names = {name.strip() for name in report.split(",") if name.strip()}
     if not names <= ALLOWED:
         sys.exit(f"Unexpected theorem dependencies: {sorted(names - ALLOWED)}")
-for name in ('measurable_closedSampleVal3',
+for name in ('time_map_compProd_comap',
+             'gluedTimeMeasure_left',
+             'gluedTimeMeasure_right',
+             'gluedTimeMeasure_isProbabilityMeasure',
+             'isTimeCoupling_glued_endpoints',
+             'exists_timeCoupling_gluing',
+             'timeBadPairs_triangle_subset',
+             'timeBadPairs_map_measure',
+             'timeBadPairs_glued_bound',
+             'timeDistortionAdmissible_trans',
+             'timeDistortionLoss_triangle',
+             'geometricDistortion3_triangle',
+             'geometricDistortion3_reverse_triangle',
+             'measurable_closedSampleVal3',
              'InDensityClass3.closedSample_isProbabilityMeasure',
              'InDensityClass3.closedSample_map_val',
              'measurable_quotientSampleProjection3',

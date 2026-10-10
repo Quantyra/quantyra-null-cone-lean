@@ -1,0 +1,7 @@
+{
+  "run": "space-glue3-dev1-20261010T074847Z-785695",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.TimeCouplingGluing",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

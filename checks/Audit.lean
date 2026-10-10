@@ -2502,3 +2502,31 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.geometricDistortion3_le_of_transport
 #check QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry
 #print axioms QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry
+
+-- S042: actual coupling gluing and distortion triangle.
+#check QuantyraNullCone.time_map_compProd_comap
+#print axioms QuantyraNullCone.time_map_compProd_comap
+#check QuantyraNullCone.gluedTimeMeasure_left
+#print axioms QuantyraNullCone.gluedTimeMeasure_left
+#check QuantyraNullCone.gluedTimeMeasure_right
+#print axioms QuantyraNullCone.gluedTimeMeasure_right
+#check QuantyraNullCone.gluedTimeMeasure_isProbabilityMeasure
+#print axioms QuantyraNullCone.gluedTimeMeasure_isProbabilityMeasure
+#check QuantyraNullCone.isTimeCoupling_glued_endpoints
+#print axioms QuantyraNullCone.isTimeCoupling_glued_endpoints
+#check QuantyraNullCone.exists_timeCoupling_gluing
+#print axioms QuantyraNullCone.exists_timeCoupling_gluing
+#check QuantyraNullCone.timeBadPairs_triangle_subset
+#print axioms QuantyraNullCone.timeBadPairs_triangle_subset
+#check QuantyraNullCone.timeBadPairs_map_measure
+#print axioms QuantyraNullCone.timeBadPairs_map_measure
+#check QuantyraNullCone.timeBadPairs_glued_bound
+#print axioms QuantyraNullCone.timeBadPairs_glued_bound
+#check QuantyraNullCone.timeDistortionAdmissible_trans
+#print axioms QuantyraNullCone.timeDistortionAdmissible_trans
+#check QuantyraNullCone.timeDistortionLoss_triangle
+#print axioms QuantyraNullCone.timeDistortionLoss_triangle
+#check QuantyraNullCone.geometricDistortion3_triangle
+#print axioms QuantyraNullCone.geometricDistortion3_triangle
+#check QuantyraNullCone.geometricDistortion3_reverse_triangle
+#print axioms QuantyraNullCone.geometricDistortion3_reverse_triangle

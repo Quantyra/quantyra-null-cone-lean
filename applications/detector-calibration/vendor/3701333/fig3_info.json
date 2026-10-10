@@ -1,0 +1,14 @@
+{
+    "date" : "2019-11-06",
+    "cell" : "Thorlabs CS S132",
+    "laser frequency" : {"value" : 437.5992, "unit" : "THz"},
+    "mean temperature" : {"value" : 22.58, "unit" : "°C"},
+    "standard deviation temperature" : {"value" : 0.28, "unit" : "°C"},
+    "total duration" : {"value" : 26.4, "unit" : "hours"},
+    "cycle duration" : {"value" : 50, "unit" : "µs"},
+    "cycle number" : 1899069473,
+    "photons detected" : 197711705,
+    "photons per cycle" : 0.10410978,
+    "reference photons detected" : 129240529,
+    "reference photons per cycle" : 0.06805466
+}

@@ -1,0 +1,58 @@
+{
+  "dataset_doi": "10.5281/zenodo.3701333",
+  "publication_doi": "10.1103/PhysRevA.101.042510",
+  "authors": [
+    "S. Pucher",
+    "P. Schneeweiss",
+    "A. Rauschenbeutel",
+    "A. Dareau"
+  ],
+  "dataset_license": "CC-BY-4.0",
+  "retrieved_date": "2026-10-10",
+  "archive": "histograms.zip",
+  "archive_url": "https://zenodo.org/api/records/3701333/files/histograms.zip/content",
+  "archive_bytes": 11101007,
+  "archive_md5": "79d910aa0505a127717d3d742870240a",
+  "archive_sha256": "4350154bc943bb7c58c7240455d4ff0429234d3f442c3fcb2a27c19cfe78326b",
+  "files": [
+    {
+      "path": "fig3_info.json",
+      "archive_member": "histograms/fig3/fig3_info.json",
+      "bytes": 587,
+      "sha256": "8809e9cb1f90cb52d1264ab90d799cdd94d111de4951356ae8a9796d6f231b48"
+    },
+    {
+      "path": "fig3_fluorescence_histo.npz",
+      "archive_member": "histograms/fig3/fig3_fluorescence_histo.npz",
+      "bytes": 160476,
+      "sha256": "0305ec0ecb9b65673fc6df5cd2e6da8437a01c4c5d1757210aca2824168676e3"
+    },
+    {
+      "path": "fig3_reference_histo.npz",
+      "archive_member": "histograms/fig3/fig3_reference_histo.npz",
+      "bytes": 160476,
+      "sha256": "207e49bfe89256f3f7db6efec39c57080c314171f32431beb17f5a51f65f4ce3"
+    }
+  ],
+  "inspected_histogram_summary": {
+    "fluorescence": {
+      "bins": 9998,
+      "time_min_us": 0.0,
+      "time_max_us": 49.99499899979995,
+      "bin_width_us": 0.005001000200040007,
+      "count_sum": 197711476,
+      "minimum_bin_count": 533,
+      "maximum_bin_count": 40086
+    },
+    "reference": {
+      "bins": 9998,
+      "time_min_us": 0.0,
+      "time_max_us": 49.99499899979995,
+      "bin_width_us": 0.005001000200040007,
+      "count_sum": 129240344,
+      "minimum_bin_count": 492,
+      "maximum_bin_count": 26632
+    }
+  },
+  "physical_validation_complete": false
+}

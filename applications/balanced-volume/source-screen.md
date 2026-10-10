@@ -21,4 +21,6 @@ Published-source continuation: the final [Tudball article](https://pmc.ncbi.nlm.
 
 [Resin, A Simple Algorithm for Exact Multinomial Tests](https://arxiv.org/pdf/2008.12682), version 2, supplies simple-null exact-test definitions and computation. The introduction and test definitions were inspected. It does not itself supply a globally calibrated composite-null procedure for our six-facet probability polygon. That nuisance optimization remains a concrete next step, not a reason to treat an asymptotic comparison as finite validation.
 
-Remaining to-do list: complete joint finite multinomial comparison, then select adequate physical evidence for a surviving decision procedure.
+Finite-comparison continuation: [exact conditional rejection-region calibration](FINITE-REFERENCE-RESULTS.md) now supplies a stronger finite reference with a pointwise inclusion proof and independently checked integer size certificates. This is our specialization of established exact-test construction, not an algorithm attributed to Resin. It suffices to rule out the frozen candidate's positive-power-improvement gate. Full joint likelihood-ratio calibration and optimality are not claimed. The [new physical-source screen](../detector-calibration/physical-data-screen.md) records the next data-selection evidence.
+
+Remaining to-do list: select a physical decision with adequate observation/calibration evidence and establish a benefit against applicable existing methods before validation and further formalization.

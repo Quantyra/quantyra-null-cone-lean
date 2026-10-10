@@ -4,3 +4,6 @@
 *.json text eol=lf
 *.md text eol=lf
 vendor/18662495/* -text
+vendor/3701333/* -text
+# This unmodified source JSON uses CRLF; retain its published member bytes.
+vendor/3701333/fig3_info.json whitespace=cr-at-eol

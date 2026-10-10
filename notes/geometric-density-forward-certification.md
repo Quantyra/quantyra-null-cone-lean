@@ -1,5 +1,7 @@
 # Density forward stability for the actual geometric loss
 
+Subsequent progress: [general interior isometry transport](geometric-interior-isometry-certification.md) now has 1,165-report GCP acceptance. The smooth reconstruction converse remains an explicit external dependency. The historical density-forward acceptance below is preserved.
+
 S042 component, 2026-10-10 (Hawaii). **Full GCP acceptance passes: 1,131 exact type/axiom reports, including 24 new results, with zero warnings.** The original normalized 2+1 class now satisfies the forward bound with constant one. S042 remains active and S043 remains gated.
 
 ## Result

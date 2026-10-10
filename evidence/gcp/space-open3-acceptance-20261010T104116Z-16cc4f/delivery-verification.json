@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_commit": "b5aa9aed937a1dca8fbcf0c7928e9dc4061f1c02",
+  "captured_files": 239,
+  "lean_inputs": 205,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "95da42f3b55226bff00dc971ac58d384f12967f06612f931715acce01cbf0bd2",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzInteriorCurveMap.lean": "6a25fcb866135b4e0830aca7f92fcc00216f9b270e002cbaba12dd27436dad29",
+    "QuantyraNullCone/LorentzMetricJacobian.lean": "5b9ca9148640bd427053fe333499a48cf30250a423131ea272d4e3a55b967614",
+    "QuantyraNullCone/LorentzInteriorIsometry.lean": "5c0bf03ced6e0a0ab61e779954f6102e6ee9d03dc6611818dabb952f56d9f556",
+    "QuantyraNullCone/LorentzInteriorMeasure.lean": "b3679bec4ff056464e73bbf59d475d1a4f1f26dce9c82930f51320a624c1abff",
+    "QuantyraNullCone/LorentzInteriorDistortion.lean": "fea57eea24630025d902e87afea72054309b62f79455c18ce18f5f5d1cf0b673"
+  },
+  "audited_named_exports": 1165,
+  "new_interior_isometry_exports": 34,
+  "root_build_jobs": 3166,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1131_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T10:45:17.195520+00:00"
+}

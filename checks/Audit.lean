@@ -2252,3 +2252,101 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.weighted_time_reverse_triangle3
 #check QuantyraNullCone.InDensityClass3.time_reverse_triangle3
 #print axioms QuantyraNullCone.InDensityClass3.time_reverse_triangle3
+
+/-! Direct AC endpoint perturbation and joint endpoint continuity (S042). -/
+#check QuantyraNullCone.spatial_lift_norm3
+#print axioms QuantyraNullCone.spatial_lift_norm3
+#check QuantyraNullCone.spatial_radius_add_le3
+#print axioms QuantyraNullCone.spatial_radius_add_le3
+#check QuantyraNullCone.future_cone_add3
+#print axioms QuantyraNullCone.future_cone_add3
+#check QuantyraNullCone.future_cone_smul3
+#print axioms QuantyraNullCone.future_cone_smul3
+#check QuantyraNullCone.flat_proper_speed_add_ge3
+#print axioms QuantyraNullCone.flat_proper_speed_add_ge3
+#check QuantyraNullCone.ac_subinterval_subset3
+#print axioms QuantyraNullCone.ac_subinterval_subset3
+#check QuantyraNullCone.ac_deriv_integrable_subinterval3
+#print axioms QuantyraNullCone.ac_deriv_integrable_subinterval3
+#check QuantyraNullCone.ac_integral_deriv_subinterval3
+#print axioms QuantyraNullCone.ac_integral_deriv_subinterval3
+#check QuantyraNullCone.ac_causal_increment3
+#print axioms QuantyraNullCone.ac_causal_increment3
+#check QuantyraNullCone.FutureCurve3.causal_mono
+#print axioms QuantyraNullCone.FutureCurve3.causal_mono
+#check QuantyraNullCone.FutureCurve3.time_position_bounds
+#print axioms QuantyraNullCone.FutureCurve3.time_position_bounds
+#check QuantyraNullCone.FutureCurve3.timeFraction_mem
+#print axioms QuantyraNullCone.FutureCurve3.timeFraction_mem
+#check QuantyraNullCone.closed_diamond_norm_le_one3
+#print axioms QuantyraNullCone.closed_diamond_norm_le_one3
+#check QuantyraNullCone.closed_diamond_dist_le_two3
+#print axioms QuantyraNullCone.closed_diamond_dist_le_two3
+#check QuantyraNullCone.FutureCurve3.point_zero
+#print axioms QuantyraNullCone.FutureCurve3.point_zero
+#check QuantyraNullCone.FutureCurve3.point_one
+#print axioms QuantyraNullCone.FutureCurve3.point_one
+#check QuantyraNullCone.ac_const3
+#print axioms QuantyraNullCone.ac_const3
+#check QuantyraNullCone.FutureCurve3.coord_hasDerivAt
+#print axioms QuantyraNullCone.FutureCurve3.coord_hasDerivAt
+#check QuantyraNullCone.FutureCurve3.timeFraction_AC
+#print axioms QuantyraNullCone.FutureCurve3.timeFraction_AC
+#check QuantyraNullCone.FutureCurve3.adjustCoord_AC
+#print axioms QuantyraNullCone.FutureCurve3.adjustCoord_AC
+#check QuantyraNullCone.FutureCurve3.adjustCoord_deriv
+#print axioms QuantyraNullCone.FutureCurve3.adjustCoord_deriv
+#check QuantyraNullCone.FutureCurve3.adjust_start
+#print axioms QuantyraNullCone.FutureCurve3.adjust_start
+#check QuantyraNullCone.FutureCurve3.adjust_finish
+#print axioms QuantyraNullCone.FutureCurve3.adjust_finish
+#check QuantyraNullCone.FutureCurve3.adjust_velocity
+#print axioms QuantyraNullCone.FutureCurve3.adjust_velocity
+#check QuantyraNullCone.FutureCurve3.adjust_future
+#print axioms QuantyraNullCone.FutureCurve3.adjust_future
+#check QuantyraNullCone.FutureCurve3.adjust_point
+#print axioms QuantyraNullCone.FutureCurve3.adjust_point
+#check QuantyraNullCone.FutureCurve3.adjust_speed_lower
+#print axioms QuantyraNullCone.FutureCurve3.adjust_speed_lower
+#check QuantyraNullCone.endpoint_residual_norm3
+#print axioms QuantyraNullCone.endpoint_residual_norm3
+#check QuantyraNullCone.FutureCurve3.adjust_point_distance
+#print axioms QuantyraNullCone.FutureCurve3.adjust_point_distance
+#check QuantyraNullCone.FutureCurve3.adjust_weightedLength_lower
+#print axioms QuantyraNullCone.FutureCurve3.adjust_weightedLength_lower
+#check QuantyraNullCone.time_margin_pos_iff3
+#print axioms QuantyraNullCone.time_margin_pos_iff3
+#check QuantyraNullCone.abs_time_le_norm3
+#print axioms QuantyraNullCone.abs_time_le_norm3
+#check QuantyraNullCone.spatial_radius_le_norm3
+#print axioms QuantyraNullCone.spatial_radius_le_norm3
+#check QuantyraNullCone.spatial_radius_difference3
+#print axioms QuantyraNullCone.spatial_radius_difference3
+#check QuantyraNullCone.time_margin_difference3
+#print axioms QuantyraNullCone.time_margin_difference3
+#check QuantyraNullCone.endpoint_increment_difference3
+#print axioms QuantyraNullCone.endpoint_increment_difference3
+#check QuantyraNullCone.endpoint_residual_future3
+#print axioms QuantyraNullCone.endpoint_residual_future3
+#check QuantyraNullCone.weighted_time_le_two_hi3
+#print axioms QuantyraNullCone.weighted_time_le_two_hi3
+#check QuantyraNullCone.weighted_time_adjust_lower3
+#print axioms QuantyraNullCone.weighted_time_adjust_lower3
+#check QuantyraNullCone.weighted_time_endpoint_bound3
+#print axioms QuantyraNullCone.weighted_time_endpoint_bound3
+#check QuantyraNullCone.flat_time_max_formula3
+#print axioms QuantyraNullCone.flat_time_max_formula3
+#check QuantyraNullCone.continuous_flatEndpoint3
+#print axioms QuantyraNullCone.continuous_flatEndpoint3
+#check QuantyraNullCone.flat_endpoint_zero_of_not_chronological3
+#print axioms QuantyraNullCone.flat_endpoint_zero_of_not_chronological3
+#check QuantyraNullCone.weighted_time_continuousWithinAt_timelike3
+#print axioms QuantyraNullCone.weighted_time_continuousWithinAt_timelike3
+#check QuantyraNullCone.weighted_time_continuousWithinAt_nontimelike3
+#print axioms QuantyraNullCone.weighted_time_continuousWithinAt_nontimelike3
+#check QuantyraNullCone.weighted_time_continuousOn3
+#print axioms QuantyraNullCone.weighted_time_continuousOn3
+#check QuantyraNullCone.weighted_time_uniformContinuousOn3
+#print axioms QuantyraNullCone.weighted_time_uniformContinuousOn3
+#check QuantyraNullCone.InDensityClass3.time_continuousOn
+#print axioms QuantyraNullCone.InDensityClass3.time_continuousOn

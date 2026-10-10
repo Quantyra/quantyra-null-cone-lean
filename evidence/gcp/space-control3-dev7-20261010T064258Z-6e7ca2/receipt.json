@@ -1,0 +1,7 @@
+{
+  "run": "space-control3-dev7-20261010T064258Z-6e7ca2",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzTimeContinuity",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

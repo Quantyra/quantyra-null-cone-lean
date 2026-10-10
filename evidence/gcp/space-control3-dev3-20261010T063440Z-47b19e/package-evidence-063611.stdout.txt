@@ -1,0 +1,100 @@
+p q : LorentzPoint3
+c : FutureCurve3 p q
+hpq : chronological3 p q
+p' q' : LorentzPoint3
+hp' : p' ∈ closedLorentzDiamond3
+hq' : q' ∈ closedLorentzDiamond3
+k : ℝ
+hk : 0 ≤ k
+hk' : k ≤ 1
+he : spatialRadius3 (endpointResidual3 p q p' q' k) ≤ (endpointResidual3 p q p' q' k).ofLp 0
+t : ℝ
+ht : t ∈ Icc 0 1
+hp : p ∈ closedLorentzDiamond3
+hq : q ∈ closedLorentzDiamond3
+htheta : c.timeFraction t ∈ Icc 0 1
+hd : ‖(WithLp.toLp 2 fun i => c.coord i t) - p‖ ≤ 2
+⊢ ‖(c.adjust hpq hp' hq' hk he).point t - c.point t‖ ≤ ‖p' - p‖ + ‖q' - p' - (q - p)‖ + 4 * (1 - k)
+error: QuantyraNullCone/LorentzCurvePerturbation.lean:220:4: linarith failed to find a contradiction
+case h.h
+p q : LorentzPoint3
+c : FutureCurve3 p q
+hpq : chronological3 p q
+p' q' : LorentzPoint3
+hp' : p' ∈ closedLorentzDiamond3
+hq' : q' ∈ closedLorentzDiamond3
+k : ℝ
+hk : 0 ≤ k
+hk' : k ≤ 1
+he : spatialRadius3 (endpointResidual3 p q p' q' k) ≤ (endpointResidual3 p q p' q' k).ofLp 0
+w : LorentzPoint3 → ℝ
+lo hi delta : ℝ
+hw : InTimeWeightClass3 w lo hi
+hdelta : 0 ≤ delta
+hclose : ∀ t ∈ Icc 0 1, |w ((c.adjust hpq hp' hq' hk he).point t) - w (c.point t)| ≤ delta
+d : FutureCurve3 p' q' := c.adjust hpq hp' hq' hk he
+t : ℝ
+hv : k * c.flatSpeed t ≤ (c.adjust hpq hp' hq' hk he).flatSpeed t
+ht : t ∈ Icc 0 1
+hc : -delta ≤ w ((c.adjust hpq hp' hq' hk he).point t) - w (c.point t)
+hw0 : 0 ≤ w (d.point t)
+hs : 0 ≤ flatProperSpeed3 (c.velocity t)
+h1 : w (d.point t) * (k * c.flatSpeed t) ≤ w (d.point t) * (c.adjust hpq hp' hq' hk he).flatSpeed t
+h2 : k * (w (c.point t) - delta) ≤ k * w (d.point t)
+h3 : k * (w (c.point t) - delta) * flatProperSpeed3 (c.velocity t) ≤ k * w (d.point t) * flatProperSpeed3 (c.velocity t)
+h4 : k * delta ≤ 1 * delta
+h5 : k * delta * flatProperSpeed3 (c.velocity t) ≤ 1 * delta * flatProperSpeed3 (c.velocity t)
+a✝ : w (d.point t) * d.flatSpeed t < k * (w (c.point t) * c.flatSpeed t) - delta * c.flatSpeed t
+⊢ False
+failed
+error: QuantyraNullCone/LorentzCurvePerturbation.lean:224:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : ℝ), k * (w (c.point a) * c.flatSpeed a) - delta * c.flatSpeed a ∂curveMeasure
+in the target expression
+  ∫ (x : ℝ), ((fun x => k * (w (c.point x) * c.flatSpeed x)) - fun x => delta * c.flatSpeed x) x ∂curveMeasure ≤
+    ∫ (x : ℝ), w (d.point x) * d.flatSpeed x ∂curveMeasure
+
+p q : LorentzPoint3
+c : FutureCurve3 p q
+hpq : chronological3 p q
+p' q' : LorentzPoint3
+hp' : p' ∈ closedLorentzDiamond3
+hq' : q' ∈ closedLorentzDiamond3
+k : ℝ
+hk : 0 ≤ k
+hk' : k ≤ 1
+he : spatialRadius3 (endpointResidual3 p q p' q' k) ≤ (endpointResidual3 p q p' q' k).ofLp 0
+w : LorentzPoint3 → ℝ
+lo hi delta : ℝ
+hw : InTimeWeightClass3 w lo hi
+hdelta : 0 ≤ delta
+hclose : ∀ t ∈ Icc 0 1, |w ((c.adjust hpq hp' hq' hk he).point t) - w (c.point t)| ≤ delta
+d : FutureCurve3 p' q' := c.adjust hpq hp' hq' hk he
+hpoint :
+  ∀ᵐ (t : ℝ) ∂curveMeasure, k * (w (c.point t) * c.flatSpeed t) - delta * c.flatSpeed t ≤ w (d.point t) * d.flatSpeed t
+hint :
+  ∫ (x : ℝ), ((fun x => k * (w (c.point x) * c.flatSpeed x)) - fun x => delta * c.flatSpeed x) x ∂curveMeasure ≤
+    ∫ (x : ℝ), w (d.point x) * d.flatSpeed x ∂curveMeasure
+⊢ k * c.weightedLength w - 2 * delta ≤ (c.adjust hpq hp' hq' hk he).weightedLength w
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:230:0: 'QuantyraNullCone.ac_const3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:231:0: 'QuantyraNullCone.FutureCurve3.coord_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:232:0: 'QuantyraNullCone.FutureCurve3.timeFraction_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:233:0: 'QuantyraNullCone.FutureCurve3.adjustCoord_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:234:0: 'QuantyraNullCone.FutureCurve3.adjustCoord_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:235:0: 'QuantyraNullCone.FutureCurve3.adjust_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:236:0: 'QuantyraNullCone.FutureCurve3.adjust_finish' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:237:0: 'QuantyraNullCone.FutureCurve3.adjust_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:238:0: 'QuantyraNullCone.FutureCurve3.adjust_future' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:239:0: 'QuantyraNullCone.FutureCurve3.adjust_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:240:0: 'QuantyraNullCone.FutureCurve3.adjust_speed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:241:0: 'QuantyraNullCone.endpoint_residual_norm3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:242:0: 'QuantyraNullCone.FutureCurve3.adjust_point_distance' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:243:0: 'QuantyraNullCone.FutureCurve3.adjust_weightedLength_lower' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzCurvePerturbation

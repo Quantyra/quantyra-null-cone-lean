@@ -1,6 +1,7 @@
 import QuantyraNullCone.LorentzBoundary
 import QuantyraNullCone.LorentzWeightedTime
 import QuantyraNullCone.LorentzConcatenation
+import QuantyraNullCone.LorentzTimeContinuity
 import QuantyraNullCone.LorentzUnlabeled
 import QuantyraNullCone.VolumeRateEmpty
 import QuantyraNullCone.VolumeRateExperiment

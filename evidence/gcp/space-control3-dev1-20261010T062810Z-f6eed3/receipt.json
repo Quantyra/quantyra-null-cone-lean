@@ -1,0 +1,7 @@
+{
+  "run": "space-control3-dev1-20261010T062810Z-f6eed3",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzCurveControl",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

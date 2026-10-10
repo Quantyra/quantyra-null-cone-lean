@@ -1,6 +1,6 @@
 # The diamond boundary and qualitative conditioning
 
-S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md) and [chronological boundary/compact-diamond component](geometric-boundary-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
+S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md), [chronological boundary/compact-diamond component](geometric-boundary-certification.md) and [actual weighted-curve/time-profile component](geometric-proper-time-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
 
 ## Model and dependencies
 
@@ -44,7 +44,7 @@ It allows free passage through W. Triangle inequalities follow by splitting path
 
 D is intrinsically the subset of X having both nonempty positive past and positive future. The remaining lateral boundary is retained; only W is identified.
 
-The exact chronological profile classification, intrinsic interior, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The positive weighted-time/chronology bridge, continuity and topology/measure properties of the time-separation quotient remain ordinary arguments here. Chronological component acceptance does not certify those remaining conclusions.
+The exact chronological profile classification, explicit interior-neighbor criteria, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The [actual weighted-curve supremum](geometric-proper-time-certification.md) now has GCP acceptance for integrability, sharp flat length and straight-segment attainment, two-sided weighted comparison, strict positivity/chronology equivalence and the exact numerical profile classes against all closed-diamond points. Its integrand equals the existing density metric proper speed. Curve concatenation/reverse triangle, endpoint continuity and the quotient topology/measure properties remain ordinary arguments here.
 
 ## Gauge and the geometric loss
 
@@ -74,6 +74,8 @@ Every flat curve length is at most two. Supremizing over the same curves gives |
 Let T be the total variation of mu_rho and mu_sigma, so T<=delta/2. Couple their common density min(rho,sigma) diagonally and their residual density differences by a normalized product. Diagonal probability is at least 1-T. In two independent copies both coordinates agree with probability at least (1-T)^2. On this event the time discrepancy is at most delta; the complement has probability at most 2T-T^2<=delta. Therefore
 
     d_G(rho,sigma) <= ||rho-sigma||_infinity.
+
+The generic estimate `sup|tau_w-tau_v|<=2 sup|w-v|` is now GCP accepted for positive continuous bounded weights. The density-specific cube-root constant and diagonal/residual coupling argument still require their own formal proofs.
 
 This is a forward continuity statement in the fixed normalized model. It is not an inverse bound from orders or a coordinate gauge selection.
 

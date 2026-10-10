@@ -1,0 +1,4 @@
+no-other-Lean-work
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G  193G  644M 100% /
+tmpfs            32G     0   32G   0% /dev/shm

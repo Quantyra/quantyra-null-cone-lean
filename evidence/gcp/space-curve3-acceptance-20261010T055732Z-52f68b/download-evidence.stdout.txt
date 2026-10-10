@@ -1,0 +1,1 @@
+space-curve3-acceptance-2 | 32 kB |  32.0 kB/s | ETA: 00:00:00 |  60%space-curve3-acceptance-2 | 52 kB |  52.7 kB/s | ETA: 00:00:00 | 100%

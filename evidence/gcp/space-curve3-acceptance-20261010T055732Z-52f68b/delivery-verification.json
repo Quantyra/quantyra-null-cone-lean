@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_commit": "ee649c57d0765bb3ed4380c6f4a6054c0b61bdc4",
+  "captured_files": 204,
+  "lean_inputs": 170,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "83db37f775d9a9218db45b37785ade7f76b0a26d210e955c02e309e02d1ec026",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzProperTime.lean": "16db50757fa62f51b8a47f1be46e985e5c1f4ac28a9c7aa8747b9ca0912e6c7b",
+    "QuantyraNullCone/LorentzWeightedTime.lean": "91359b1351d883b787c04732d1aaafa35c5ac1d9712ecc231d0eae420a3a0693"
+  },
+  "audited_named_exports": 893,
+  "new_curve_and_weight_exports": 49,
+  "root_build_jobs": 3103,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_844_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T06:00:25.269047+00:00"
+}

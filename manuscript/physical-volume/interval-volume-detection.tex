@@ -1,0 +1,920 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype,booktabs,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\hypersetup{pdftitle={Interval volume from thinned causal orders: finite confidence and calibration limits},pdfauthor={Daniel Eric Fredriksen}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\K}{\mathcal K}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\TV}{\operatorname{TV}}
+\newcommand{\Bin}{\operatorname{Bin}}
+\newcommand{\Poi}{\operatorname{Poi}}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\ind}{\mathbf 1}
+\title{Interval volume from thinned causal orders:\\finite confidence and calibration limits}
+\author{Daniel Eric Fredriksen\\Quantyra Inc.\\
+\url{https://github.com/Quantyra/quantyra-null-cone-lean}}
+\date{10 October 2026\\Version 0.1.0 --- unpublished manuscript}
+\begin{document}
+\maketitle
+\begin{abstract}
+An event detector samples a causal geometry with an unknown spatially
+varying retention probability. We study the normalized physical volume of
+one marked chronological interval when only the full order of the retained
+events and two distinguished anchors is observed. In a smooth, bounded
+class of two-dimensional conformal geometries, with known detector ratio
+bound $1\le R\le2$, the fixed-confidence minimax accuracy for $n\ge1$
+retained events has scale
+$\min\{1,n^{-1/2}+(R-1)/(R+1)\}$, uniformly in $n$ and $R$.
+The lower bound covers arbitrary measurable estimators of the full marked
+order, including independent randomization. It uses admitted geometric
+alternatives with either close sampling laws or exactly equal detected
+laws. We separately give a finite confidence report by composing certified
+binomial endpoints with the established bounded-selection transforms of
+Aronow and Lee. Complete thinning arguments connect fixed, independently
+mixed, Poisson and first-$n$ retention experiments. The mathematical chain
+has exact-source Lean verification on Google Cloud. A preserved pilot and
+a separate frozen finite comparison support retaining the exact-binomial
+report for practical reporting; the minimax upper bound is conservative.
+No absolute volume scale or physical detector calibration is inferred.
+\end{abstract}
+
+\section{Question and contribution}
+Counting the events between two marked events is an intrinsic operation on
+a causal order. Its physical interpretation depends on how events are
+sampled. If detection favors some locations, the proportion of retained
+events in an interval estimates its \emph{detected} probability, rather
+than its physical volume fraction. More retained events alone need not
+remove this discrepancy.
+
+This paper connects three results in one explicit experiment: the law of
+independent thinning, an executable finite confidence report under bounded
+unknown detection, and a uniform upper and lower accuracy theorem for a
+geometric class. The lower construction preserves the entire marked-order
+law, not just the interval count. Consequently, an estimator cannot avoid
+the calibration obstruction by using additional order relations or an
+independent random seed. A second construction gives the sampling term
+even under perfect detection.
+
+The statistical ingredients have established antecedents. The binary
+selection transforms are those of Aronow and Lee \cite{aronow}; confidence
+inversion follows Clopper and Pearson \cite{clopper}, and the analytic
+comparison uses Hoeffding's inequality \cite{hoeffding}. Partial
+identification distinguishes an unknown target from bounds on its possible
+values, and confidence for either object requires an additional sampling
+argument \cite{imbens,stoye,tudball}. Our contribution is the connected
+geometric experiment, its admitted full-law alternatives, the finite
+uniform rate, and the formal and computational evidence. We make no
+exhaustive priority claim for all related statistical problems.
+
+The physical question here is narrower than reconstructing a complete
+metric from order. The target is one normalized interval volume in a
+specified two-dimensional model. Coordinates define the model but are not
+observed. The fixed anchors and their roles are part of the experiment;
+choosing an interval after looking at the sample would require a different
+coverage argument.
+
+\section{Geometry, observations and the main result}
+Let $D=[0,1]^2$ and write $x=(u,v)$. A function $\rho:\R^2\to\R$
+belongs to $\K$ when it is smooth on some open neighborhood of $D$ and,
+for all points of $D$, satisfies
+\begin{align}
+ \tfrac12\le\rho\le\tfrac32,\qquad
+ |\rho(x)-\rho(y)|\le2\|x-y\|_2,\label{eq:class}\\
+ \int_0^1\rho(u,t)\dd t=1,\qquad
+ \int_0^1\rho(t,v)\dd t=1.\nonumber
+\end{align}
+The Lipschitz norm is Euclidean. Only behavior on $D$ and smoothness near
+it are required; positivity on all of $\R^2$ is not assumed. Set
+$\mu_\rho(B)=\int_{B\cap D}\rho(u,v)\dd u\dd v$.
+
+\begin{proposition}[Geometric interpretation]\label{prop:geometry}
+The measure $\mu_\rho$ is a probability measure. On $D$, equip the model
+with the Lorentzian metric
+\[
+ g_\rho=-\rho(\dd u\otimes\dd v+\dd v\otimes\dd u)
+\]
+and future direction increasing both coordinates. Its volume element is
+$\rho\dd u\dd v$ and its strict chronological relation is
+$x\prec y$ if and only if $x_1<y_1$ and $x_2<y_2$.
+For the fixed anchors $a=(0,0)$ and $b=(1/2,1/2)$, let
+\[
+ A=\{x:a\prec x\prec b\}=(0,1/2)^2,\qquad
+ v_\rho=\mu_\rho(A).
+\]
+Then $1/8\le v_\rho\le3/8$.
+\end{proposition}
+\begin{proof}
+Integrating either marginal identity gives total mass one. The metric
+matrix has determinant $-\rho^2$, so its volume density is $\rho$.
+A nonzero future timelike tangent has both components positive, since
+$g_\rho(\dot x,\dot x)=-2\rho\dot u\dot v<0$ and the time orientation
+selects the positive branch. A future timelike curve therefore increases
+both coordinates. Conversely, the straight segment between two points
+with strictly increasing coordinates lies in the convex diamond and is
+future timelike. This proves the relation and the expression for $A$.
+Its ordinary area is $1/4$; integrating the density bounds gives the
+asserted range. Boundaries have zero measure.
+\end{proof}
+
+Our units normalize the total geometry volume to one. Thus $v_\rho$ is a
+dimensionless physical volume fraction. Without external scale
+information this experiment cannot attach an absolute spacetime volume
+unit to the answer.
+
+Let the detector $\pi:\R^2\to\R$ be measurable, with the global bounds
+\begin{equation}\label{eq:detector}
+ 1/R\le\pi(x)\le1,\qquad R\ge1.
+\end{equation}
+Here $R$ is known and deterministic. Write
+\[
+ Z=\int\pi\dd\mu_\rho>0,\qquad
+ \nu(B)=Z^{-1}\int_B\pi\dd\mu_\rho,\qquad \theta=\nu(A).
+\]
+In the fixed-retained-count experiment, $X_1,\ldots,X_n$ are independent
+with law $\nu$. The observation $Y_n$ consists of every directed strict
+chronological relation among these events and the two anchors, modulo
+permutations of sample labels fixing the anchor roles. This is a finite
+measurable observation space. It includes sample--sample, anchor--sample
+and anchor--anchor relations. Coordinates, rejected locations, detector
+values, generated counts and clocks are not observed in this experiment.
+
+The count
+\[
+ K=\sum_{i=1}^n\ind\{a\prec X_i\prec b\}
+\]
+is determined by $Y_n$ and unchanged by relabeling. Under the model,
+$K\sim\Bin(n,\theta)$. The complete observation can contain more
+information than $K$; only the upper procedure discards that information.
+Write $P_{\rho,\pi}^{(n)}$ for the law of $Y_n$.
+
+\begin{theorem}[Uniform joint accuracy]\label{thm:main}
+For $n\ge1$ and $1\le R\le2$, put
+\[
+ a_n=n^{-1/2},\qquad b_R=\frac{R-1}{R+1},\qquad
+ s(n,R)=\min\{1,a_n+b_R\}.
+\]
+For every admitted $(\rho,\pi)$, the observable fraction $\widehat v=K/n$
+satisfies
+\begin{equation}\label{eq:upper}
+ P_{\rho,\pi}^{(n)}\{|\widehat v-v_\rho|>2s(n,R)\}\le1/20.
+\end{equation}
+Conversely, let $(\Omega,\xi)$ be any probability space and let
+$T:Y_n\times\Omega\to\R$ be any measurable estimator. There exists an
+admitted $(\rho,\pi)$ such that
+\begin{equation}\label{eq:lower}
+ (P_{\rho,\pi}^{(n)}\otimes\xi)
+ \{|T-v_\rho|>s(n,R)/256\}\ge1/4.
+\end{equation}
+The seed law $\xi$ is common to the alternatives and independent of the
+observation. No boundedness or determinism restriction is placed on $T$.
+\end{theorem}
+
+The proof appears in Section~\ref{sec:rate}. If the 95\% minimax radius is
+the infimum over eligible procedures of radii with worst-case failure at
+most $1/20$, this theorem places it between $s(n,R)/256$ and $2s(n,R)$.
+It holds at $R=1$ and uniformly for sequences $R=R_n$ tending to one.
+The constants are deliberately conservative and are not asserted optimal.
+Section~\ref{sec:report} supplies the more useful reporting procedure.
+Zero samples are treated separately in Proposition~\ref{prop:empty}.
+
+\section{What independent thinning produces}\label{sec:thinning}
+We give the process argument on an arbitrary probability space
+$(E,\mu)$ with a measurable $0\le\pi\le1$ and $Z=\int\pi\dd\mu>0$.
+Generate independent pairs $(X_i,U_i)$, where $X_i\sim\mu$ and
+$U_i\sim\operatorname{Unif}[0,1]$, with all coordinates independent.
+Retain event $i$ precisely when $U_i<\pi(X_i)$, and list retained
+locations in increasing \emph{generation index}. This order is not a
+sorting by spacetime location.
+
+\begin{proposition}[Finite and mixed generation]\label{prop:finite-thinning}
+Let $\alpha(B)=\int_B\pi\dd\mu$ and $\nu=\alpha/Z$. For fixed generated
+count $N$, a retained index set $I=\{i_1<\cdots<i_n\}$, and measurable
+$B_1,\ldots,B_n$, the joint probability of exactly this index set and
+$X_{i_j}\in B_j$ for every $j$ is
+\begin{equation}\label{eq:pattern}
+ Z^n(1-Z)^{N-n}\prod_{j=1}^n\nu(B_j).
+\end{equation}
+Writing $C_N$ for the retained count and $V_n$ for its ordered locations,
+their joint subprobability measure is
+\begin{equation}\label{eq:counttuple}
+ \Prb(C_N=n,V_n\in\cdot)
+ =\binom Nn Z^n(1-Z)^{N-n}\nu^{\otimes n}(\cdot)
+ \quad(0\le n\le N).
+\end{equation}
+If $N$ is chosen independently with any probability mass function $q_N$,
+the right side is summed against $q_N$. Conditional on any retained count
+of positive probability, the locations consequently have law
+$\nu^{\otimes n}$.
+\end{proposition}
+\begin{proof}
+Tonelli's theorem gives
+\[
+ \Prb(X_i\in B,\ U_i<\pi(X_i))
+ =\int_B\int_0^1\ind\{u<\pi(x)\}\dd u\dd\mu(x)=\alpha(B).
+\]
+The rejection probability is $1-Z$. Multiplying these one-event
+identities over the independent generated pairs proves
+\eqref{eq:pattern}. There are $\binom Nn$ disjoint retained patterns;
+the same product law for the ordered locations occurs for each. Summing
+proves \eqref{eq:counttuple} on measurable rectangles. Finite measures
+agreeing on such rectangles agree on the product sigma algebra, so the
+statement holds for every measurable tuple event. Independence of $N$
+then gives the mixture by the law of total probability. Division by its
+count mass is justified only when that mass is positive.
+\end{proof}
+
+These are submeasure identities even for impossible patterns. In
+particular, they include $Z=1$ and $n=0$, using empty products and $0^0=1$.
+The empty tuple has its unique probability law; impossible counts are not
+assigned a conditional distribution by division by zero. An arbitrarily
+location-dependent choice of $N$ is outside the independence assumption.
+
+\begin{proposition}[Poisson generation and its Laplace functional]
+\label{prop:poisson}
+If $N\sim\Poi(\kappa)$ independently, with $\kappa\ge0$, then
+$C_N\sim\Poi(\kappa Z)$ and, conditional on a possible count $n$, the
+retained tuple has law $\nu^{\otimes n}$. For every nonnegative measurable
+real function $h$,
+\begin{equation}\label{eq:laplace}
+ \E\exp\left(-\sum_{i\text{ retained}}h(X_i)\right)
+ =\exp\left(\kappa\int\pi(x)(e^{-h(x)}-1)\dd\mu(x)\right).
+\end{equation}
+\end{proposition}
+\begin{proof}
+For fixed $n$, set $N=n+r$ in the mixture of \eqref{eq:counttuple}.
+The scalar mass is
+\[
+ \sum_{r=0}^\infty e^{-\kappa}\frac{\kappa^{n+r}}{(n+r)!}
+ \binom{n+r}{n}Z^n(1-Z)^r
+ =e^{-\kappa Z}\frac{(\kappa Z)^n}{n!}.
+\]
+The tuple factor does not depend on $r$. This proves the count and
+conditional laws, also at $\kappa=0$. Alternatively a single generated
+pair contributes a Laplace factor
+\[
+ M=\int(1-\pi+\pi e^{-h})\dd\mu
+   =1+\int\pi(e^{-h}-1)\dd\mu\in[0,1].
+\]
+For $N$ pairs the expectation is $M^N$. Summing its Poisson series yields
+$e^{\kappa(M-1)}$, which is \eqref{eq:laplace}. All integrands are
+bounded or nonnegative, so the integrations and series are justified.
+\end{proof}
+
+Repeated locations, if the underlying measure has atoms, are counted with
+multiplicity. For a nonnormalized geometry of total volume $V$, taking
+$\mu=\mathrm{vol}/V$ and generated intensity $\kappa V$ instead produces
+the retained intensity measure $\kappa\pi\,\mathrm{vol}$. This identity
+does not make $V$ identifiable from a fixed retained order.
+
+\begin{proposition}[Stopping after the first $n$ retained events]
+\label{prop:stopping}
+In the infinite independent stream, the prefix ending at the $n$th retained
+event is almost surely finite for every $n\ge1$. Its ordered retained
+tuple has law $\nu^{\otimes n}$. For $n=0$, the prefix and tuple are empty.
+\end{proposition}
+\begin{proof}
+After any fixed index, the probability that the next $m$ trials all fail is
+$(1-Z)^m$, which tends to zero. By continuity of probability on decreasing
+events, having no later success has probability zero. If there were only
+finitely many successes, some integer index would be after the last one.
+A countable union of these null events is null. Thus every required
+success occurs in a finite prefix.
+
+For $n\ge1$ and a terminal prefix of length $N\ge n$, its last event is
+accepted and exactly $n-1$ of the preceding $N-1$ events are accepted.
+Applying \eqref{eq:pattern} to these disjoint patterns gives
+\[
+ \Prb(T_n=N,V_n\in B)
+ =\binom{N-1}{n-1}Z^n(1-Z)^{N-n}\nu^{\otimes n}(B).
+\]
+These terminal events are disjoint and exhaust probability one by the
+first paragraph. Summing first with $B$ the whole tuple space shows their
+scalar masses sum to one, and then summing for arbitrary $B$ proves the
+result. At $n=0$ the assertion is the empty-product identity.
+\end{proof}
+
+The accepted formal proof sums a finite set of terminal patterns instead
+of simplifying its cardinality to $\binom{N-1}{n-1}$. The displayed
+combinatorial simplification is elementary prose packaging; the actual
+stopped-tuple law is formally verified. The stopping argument concerns a
+prescribed retained count, not a general data-dependent stopping rule.
+
+\section{A finite report for physical volume}\label{sec:report}
+The following transformation separates detector uncertainty from sampling
+uncertainty. Here $R\ge1$ may exceed the range needed in the joint rate.
+Define, for $x\in[0,1]$,
+\begin{equation}\label{eq:transforms}
+ L_R(x)=\frac{x}{R-(R-1)x},\qquad
+ U_R(x)=\frac{Rx}{1+(R-1)x}.
+\end{equation}
+
+\begin{proposition}[Bounded selection]\label{prop:selection}
+For a probability measure $\mu$, a measurable target set of probability
+$v$, and a detector $\pi\in[1/R,1]$, let $\theta$ be its retained
+probability. Then
+\begin{equation}\label{eq:identification}
+ L_R(\theta)\le v\le U_R(\theta),\qquad |\theta-v|\le b_R.
+\end{equation}
+Both transforms are increasing on $[0,1]$.
+\end{proposition}
+\begin{proof}
+Put $s=\int_A\pi\dd\mu$ and $t=\int_{A^c}\pi\dd\mu$. Then
+$v/R\le s\le v$ and $(1-v)/R\le t\le1-v$.
+Since $s+t>0$ and $\theta=s/(s+t)$, these inequalities imply
+\[
+ \frac{v}{v+R(1-v)}\le\theta\le
+ \frac{Rv}{Rv+1-v}.
+\]
+Solving the two inequalities for $v$ proves the bounds in
+\eqref{eq:identification}, including $v=0,1$. All relevant denominators
+are positive. For $x\le y$, the differences of the transforms are
+\[
+ L_R(y)-L_R(x)=\frac{R(y-x)}{[R-(R-1)x][R-(R-1)y]},
+\]
+\[
+ U_R(y)-U_R(x)=\frac{R(y-x)}{[1+(R-1)x][1+(R-1)y]},
+\]
+which prove monotonicity. Finally, direct common-denominator calculations
+give
+\begin{align*}
+ b_R-(x-L_R(x))&=
+ \frac{(R-1)[R(1-x)^2+x^2]}{(R+1)[R-(R-1)x]}\ge0,\\
+ b_R-(U_R(x)-x)&=
+ \frac{(R-1)[(1-x)^2+Rx^2]}{(R+1)[1+(R-1)x]}\ge0.
+\end{align*}
+Substitute $x=\theta$ and use the established bounds for $v$.
+\end{proof}
+
+These binary transforms appear explicitly in Aronow and Lee
+\cite[p.~237]{aronow}. For observed zero--one values with $k$ ones, a
+normalized weighted mean with weights in $[1,R]$ has minimum $L_R(k/n)$
+and maximum $U_R(k/n)$: assign the smallest weights to the ones and the
+largest to the zeros for the minimum, and reverse them for the maximum.
+The analogous probability bounds are sharp when no further restrictions
+are imposed, by constant detectors on $A$ and $A^c$. Neither fact proves
+sharpness of the identified set inside $\K$ conditional on the full order.
+Moreover, plug-in bounds alone are not a confidence interval. With
+$n=1$, $R=1$ and the flat density, the plug-in interval is $\{0\}$ or
+$\{1\}$, and has zero coverage for the true value $1/4$.
+
+\begin{theorem}[Finite confidence from valid endpoint tables]
+\label{thm:report}
+Let $0<\delta<1$ and choose endpoints $0\le l(k)\le u(k)\le1$ for
+every $k\in\{0,\ldots,n\}$. Suppose, with $X_p\sim\Bin(n,p)$, that
+\begin{align}
+ l(k)=0\quad&\text{or}\quad\Prb(X_{l(k)}\ge k)\le\delta/2,\label{eq:tailchecks}\\
+ u(k)=1\quad&\text{or}\quad\Prb(X_{u(k)}\le k)\le\delta/2.\nonumber
+\end{align}
+If $K\sim\Bin(n,\theta)$, then
+\[
+ \Prb\{l(K)\le\theta\le u(K)\}\ge1-\delta.
+\]
+In the geometric model, a physical-volume report with the same coverage is
+\begin{equation}\label{eq:physical-report}
+ I(K)=[L_R(l(K)),U_R(u(K))]\cap[1/8,3/8].
+\end{equation}
+At $n=0$, take $[l(0),u(0)]=[0,1]$, giving $I(0)=[1/8,3/8]$.
+The coverage holds in each conditional retained-count experiment of
+Section~\ref{sec:thinning}, in the first-$n$ experiment, and after mixing
+over retained counts when the same failure budget is used at each count.
+\end{theorem}
+\begin{proof}
+Couple $X_p=\sum_{i=1}^n\ind\{U_i<p\}$ with independent uniform
+$U_i$. This count increases with $p$, so its upper tails increase and
+its lower tails decrease with $p$. Under the true $\theta$, a failure
+$l(k)>\theta$ implies
+$\Prb(X_\theta\ge k)\le\delta/2$ by \eqref{eq:tailchecks} and
+monotonicity. For any integer-valued random variable $X$, the event
+$\{\Prb(X\ge X_{\rm obs})\le c\}$ has probability at most $c$:
+if there is a qualifying integer in its finite support, let $k_0$ be the
+smallest; all qualifying outcomes are in $\{X\ge k_0\}$, whose mass is
+at most $c$. If none qualifies the event is empty. Applying this with
+$c=\delta/2$ bounds the lower-endpoint failure. The largest qualifying
+integer and a lower tail give the same bound for $u(k)<\theta$.
+The union bound proves the first assertion. No monotonicity of the
+endpoint table as a function of $k$ is required.
+
+On the successful binomial event, Proposition~\ref{prop:selection} and
+monotonicity imply $L_R(l(K))\le v_\rho\le U_R(u(K))$.
+The deterministic range in Proposition~\ref{prop:geometry} permits
+intersection without losing that event. An empty intersection stays empty;
+it has no target coverage. The zero-sample statement is immediate.
+The tuple laws already proved transfer this argument to each conditional
+or stopped experiment. Finally, a mixture of failure probabilities each
+at most $\delta$ is at most $\delta$.
+\end{proof}
+
+\begin{proposition}[Integer endpoint certificates]\label{prop:certificate}
+For $p=m/d$ with integers $0\le m\le d$ and $d>0$, binomial probabilities
+can be certified exactly using
+\[
+ \Prb(X_p=j)=\frac{t_j}{d^n},\qquad
+ t_j=\binom njm^j(d-m)^{n-j}.
+\]
+For $0<m<d$ and $j<n$, the recurrence
+\begin{equation}\label{eq:recurrence}
+ t_{j+1}=\frac{t_j(n-j)m}{(j+1)(d-m)}
+\end{equation}
+has exact integer division. Rational tail comparisons in
+\eqref{eq:tailchecks} therefore reduce to integer comparisons.
+\end{proposition}
+\begin{proof}
+Substitution in the binomial mass formula gives the common denominator
+$d^n$. The identity $(j+1)\binom n{j+1}=(n-j)\binom nj$ proves
+\eqref{eq:recurrence} by multiplication; its denominator is positive and
+the quotient equals the integer $t_{j+1}$. Sum these numerators over the
+desired tail and cross-multiply positive denominators against the rational
+budget. At $m=0$ or $m=d$, use the deterministic count at $0$ or $n$
+instead of dividing by zero. The empty-sample mass is one.
+\end{proof}
+
+The implementation proposes Clopper--Pearson endpoints using floating
+point beta quantiles, rounds them outward to denominator $2^{16}$, then
+checks the rational tail inequalities exactly. Proposal precision is not
+the certificate: a failed check triggers an outward adjustment or a
+full-range fallback. Both preserve the stated coverage when the final
+table passes. The recorded pilot checks every count in its tables; its
+adjacent inward checks additionally bound the outward grid error for those
+tables. This is not a guarantee on every possible proposal/fallback path.
+
+For comparison we also use
+$[\max(0,K/n-r_n),\min(1,K/n+r_n)]$ with a rational
+$r_n\ge\sqrt{2/n}$. Hoeffding's bound is at most $2e^{-4}<1/20$:
+indeed $e^4\ge\sum_{j=0}^5 4^j/j!>40$. Transforming these endpoints
+gives a valid analytic physical report. The implementation chooses the
+rational radius by an integer square-root calculation. At $n=0$ it uses
+the no-data interval. Python execution and floating point proposal
+semantics are tested software, not compiled Lean theorems.
+
+\section{Proof of the joint accuracy theorem}\label{sec:rate}
+We first give the upper argument, then prove two lower obstructions for
+the actual marked observation.
+
+\subsection{Uniform upper bound}
+By Proposition~\ref{prop:selection}, $|\theta-v_\rho|\le b_R$.
+The count fraction satisfies $0\le K/n\le1$ and $v_\rho\in[0,1]$.
+If $a_n+b_R\ge1$, error strictly greater than $2s=2$ is impossible.
+Otherwise, error greater than $2(a_n+b_R)$ forces
+$|K/n-\theta|>2a_n+b_R\ge2a_n$. Hoeffding's inequality therefore gives
+\[
+ \Prb\{|K/n-v_\rho|>2s(n,R)\}
+ \le2\exp(-2n(2a_n)^2)=2e^{-8}\le1/20.
+\]
+This proves \eqref{eq:upper}; the same argument works for any $R\ge1$.
+The restriction $R\le2$ is used below in the geometric detector alternative.
+
+\subsection{Testing, geometry and actual likelihoods}
+\begin{lemma}[Testing with an independent seed]\label{lem:testing}
+Let $P,Q$ be probability laws on a finite observation space, and suppose
+$\TV(P,Q)\le\eta$. For any common independent seed law $\xi$, measurable
+real estimator $T$ and targets $v_0<v_1$, if $2r<v_1-v_0$, then
+\[
+ \max\{(P\otimes\xi)(|T-v_0|>r),
+          (Q\otimes\xi)(|T-v_1|>r)\}\ge(1-\eta)/2.
+\]
+In particular, identical laws give the lower bound $1/2$.
+\end{lemma}
+\begin{proof}
+Let $B_i=\{|T-v_i|\le r\}$. These measurable sets are disjoint:
+membership in both would give $v_1-v_0\le2r$. For any measurable set
+$B$ in the observation--seed product, its section probabilities
+$h(y)=\xi\{\omega:(y,\omega)\in B\}$ lie in $[0,1]$. The finite
+signed-mass formula gives
+\[
+ |(P\otimes\xi)(B)-(Q\otimes\xi)(B)|
+ =\left|\sum_y(P\{y\}-Q\{y\})h(y)\right|\le\TV(P,Q).
+\]
+Thus $(P\otimes\xi)(B_0)+(Q\otimes\xi)(B_1)
+\le(Q\otimes\xi)(B_0\cup B_1)+\eta\le1+\eta$.
+The complementary failure probabilities sum to at least $1-\eta$,
+which proves the claim. The identical-law argument also works on an
+arbitrary measurable observation space.
+\end{proof}
+
+\begin{lemma}[An admitted polynomial family]\label{lem:family}
+For $0\le\varepsilon\le1/2$, define
+\[
+ f(t)=2t-1,\qquad
+ \rho_\varepsilon(u,v)=1+\varepsilon f(u)f(v).
+\]
+Then $\rho_\varepsilon\in\K$ and
+\begin{equation}\label{eq:family-target}
+ v_{\rho_\varepsilon}=1/4+\varepsilon/16.
+\end{equation}
+Under $n$ unthinned flat coordinate samples, the likelihood of the
+$\rho_\varepsilon$ sample is $L=\prod_i\rho_\varepsilon(X_i)$, with
+\begin{equation}\label{eq:likelihood}
+ \E_0L=1,\qquad \E_0(L-1)^2=(1+\varepsilon^2/9)^n-1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The polynomial is smooth. On $[0,1]$, $|f|\le1$, giving
+$1-\varepsilon\le\rho_\varepsilon\le1+\varepsilon$.
+For $x=(u,v)$ and $y=(u',v')$ in $D$, adding and subtracting
+$f(u')f(v)$ yields
+\[
+ |\rho_\varepsilon(x)-\rho_\varepsilon(y)|
+ \le2\varepsilon(|u-u'|+|v-v'|)
+ \le4\varepsilon\|x-y\|_2\le2\|x-y\|_2.
+\]
+Since $\int_0^1 f=0$, both coordinate marginals equal one.
+Also $\int_0^{1/2}f=-1/4$, proving \eqref{eq:family-target}.
+The flat law is uniform on $D$. Multiplication of the single-point
+density identities gives the actual product likelihood on coordinate
+space; it is nonnegative on that support and integrates to one.
+Because $\int_0^1f^2=1/3$, the single-point second moment is
+$1+\varepsilon^2/9$. Independence gives its $n$th power for $\E_0L^2$.
+Subtracting $2\E_0L-1=1$ proves \eqref{eq:likelihood}.
+\end{proof}
+
+\begin{lemma}[Sampling obstruction]\label{lem:sampling}
+For every $n\ge1$, $R\ge1$ and estimator/seed in
+Theorem~\ref{thm:main}, there is an admitted model with unit detector
+such that
+\[
+ (P_{\rho,1}^{(n)}\otimes\xi)(|T-v_\rho|>a_n/128)\ge3/8.
+\]
+\end{lemma}
+\begin{proof}
+Compare $\rho_0=1$ with $\rho_\varepsilon$ for
+$\varepsilon=1/(2\sqrt n)\le1/2$, using $\pi=1$ for both.
+This detector is allowed for every $R\ge1$.
+Put $x=1/(36n)$. Bernoulli's inequality gives
+$(1-x)^n\ge1-nx=35/36$; it follows by induction from
+$(1-x)^{j+1}\ge(1-jx)(1-x)\ge1-(j+1)x$ whenever needed here.
+Moreover $(1+x)^n(1-x)^n=(1-x^2)^n\le1$. Hence
+\[
+ \E_0(L-1)^2=(1+1/(36n))^n-1\le1/35.
+\]
+For coordinate laws with density $L$ relative to the flat law, their
+total variation is $\tfrac12\E_0|L-1|$; this follows by splitting the
+zero-integral function $L-1$ into positive and negative parts.
+Cauchy--Schwarz therefore bounds it by $1/(2\sqrt{35})\le1/4$.
+
+Mapping coordinates to the full marked order cannot increase total
+variation: the inverse image of an observation event is a coordinate
+event. The two full marked-order laws thus have total variation at most
+$1/4$, regardless of the other relations present in the observation.
+Their targets differ by $\varepsilon/16=a_n/32$. With $r=a_n/128$,
+the strict separation $2r<a_n/32$ holds. Lemma~\ref{lem:testing} now
+gives the asserted lower bound $(1-1/4)/2=3/8$.
+\end{proof}
+
+\subsection{Exact detector confounding}
+\begin{lemma}[Calibration obstruction]\label{lem:detector}
+For $1<R\le2$, $n\ge0$ and any eligible estimator/seed, there is an
+admitted model satisfying
+\[
+ (P_{\rho,\pi}^{(n)}\otimes\xi)(|T-v_\rho|>b_R/64)\ge1/2.
+\]
+The two alternatives used in the proof have the same unnormalized
+accepted-location measure. Their finite generated-count and stopped
+accepted-tuple experiments also have the same laws.
+\end{lemma}
+\begin{proof}
+Set $\varepsilon=b_R\in(0,1/3]$. Compare the flat density with
+$\rho_\varepsilon$ from Lemma~\ref{lem:family}. Define the detectors
+globally by
+\[
+ \pi_0(x)=1-\varepsilon,\qquad
+ \pi_\varepsilon(x)=
+ \frac{1-\varepsilon}
+ {\max\{1-\varepsilon,\min\{1+\varepsilon,\rho_\varepsilon(x)\}\}}.
+\]
+The denominator is continuous and at least $1-\varepsilon>0$. Thus
+$\pi_\varepsilon$ is measurable and everywhere lies between
+$(1-\varepsilon)/(1+\varepsilon)=1/R$ and $1$.
+Also $1-\varepsilon\ge1/R$, so $\pi_0$ is admitted. The clamping
+matters outside $D$; an unclamped reciprocal need not be a valid global
+detector.
+
+On $D$ the denominator equals $\rho_\varepsilon$, so
+$\rho_\varepsilon\pi_\varepsilon=1-\varepsilon
+=\rho_0\pi_0$. Both unnormalized accepted measures equal
+$(1-\varepsilon)\,\mathrm{Leb}|_D$, both acceptance masses equal
+$1-\varepsilon$, and both retained laws are uniform on $D$.
+Their full marked-order laws are therefore identical for every $n$.
+Their target volumes differ by $\varepsilon/16$, which is strictly
+larger than $2(\varepsilon/64)$. The identical-law case of
+Lemma~\ref{lem:testing} proves the claim.
+
+Equality of the accepted submeasures gives equality of $Z$ and $\nu$.
+Equations~\eqref{eq:pattern}--\eqref{eq:counttuple} then give equality
+even if the generated count and acceptance pattern are retained, provided
+the same generated-count law is used. The mixed, Poisson and stopped
+identities give their respective equalities as well. Rejected locations
+are not part of these equal-law records.
+\end{proof}
+
+\subsection{Combining the obstructions and treating zero samples}
+\begin{proof}[Completion of Theorem~\ref{thm:main}]
+Only the lower bound remains. If $a_n\ge b_R$, then
+$s(n,R)\le2a_n$ and $s(n,R)/256\le a_n/128$.
+Lemma~\ref{lem:sampling} supplies failure at least $3/8$, hence at
+least $1/4$, at the smaller radius in \eqref{eq:lower}.
+If $b_R>a_n$, then $R>1$, $s(n,R)\le2b_R$, and
+$s(n,R)/256\le b_R/128<b_R/64$.
+Lemma~\ref{lem:detector} supplies failure at least $1/2$ at the larger
+radius, and therefore at least $1/4$ at the stated radius. These cases
+exhaust all $n\ge1$ and $1\le R\le2$, including $R=1$.
+\end{proof}
+
+\begin{proposition}[Zero retained samples]\label{prop:empty}
+For $n=0$, the constant estimator $1/4$ has error at most $1/8$ over
+$\K$. For every $R\ge1$ and every measurable randomized estimator of
+the empty-sample marked observation, some admitted model satisfies
+\[
+ (P_{\rho,\pi}^{(0)}\otimes\xi)(|T-v_\rho|>1/128)\ge1/2.
+\]
+\end{proposition}
+\begin{proof}
+The upper statement follows from $v_\rho\in[1/8,3/8]$.
+For the lower statement, compare the flat density and
+$\rho_{1/2}$, both with unit detector. There are no random sampled
+points. The observation still includes the fixed anchor relations, but
+these are identical in both models, so its law is the same Dirac mass.
+The targets differ by $1/32>2/128$. Apply the identical-law testing
+argument with $r=1/128$ and the arbitrary independent seed.
+\end{proof}
+
+\section{Two preserved computational studies}\label{sec:studies}
+The following studies were frozen and executed before preparation of this
+manuscript. Their data are preserved unchanged. They ask different
+questions and do not form one pooled experiment. All reported widths are
+dimensionless volume-fraction widths. An expected width averages over a
+specified count law; a realized width is the width at one observed count.
+Coverage means probability of containing the true target and is distinct
+from either width.
+
+\subsection{Original generic-probability pilot}
+The pilot used 300 combinations of retained count, target probability,
+detector ratio and detector pattern, and four methods, producing 1,200
+rows. Counts were $n\in\{0,64,256,1024\}$. Each configuration used
+2,000 Monte Carlo counts as well as a numerical sum over the complete
+binomial law. At $n=0,64$, 600 method rows also received exact rational
+coverage checks; 450 belonged to the three valid methods and 150 to the
+deliberately misspecified method that ignored detection bias.
+The generic target grid includes probabilities outside $[1/8,3/8]$;
+it is not a grid confined to our fixed geometric interval.
+
+The valid methods were the transformed certified binomial interval, the
+transformed analytic interval, and the full $[0,1]$ no-data interval.
+The fourth method estimated the detected probability as if it were the
+physical probability. The 1,348 distinct count intervals passed their
+exact endpoint checks, with 2,688 adjacent inward endpoint rejections and
+no adjustments or fallbacks. Minimum complete-law numerical coverage
+over valid methods was $0.951071$; the minimum exact rational coverage
+in the checked small-count subset was $0.966807$.
+The bias-ignoring method fell to approximately $1.20\times10^{-19}$.
+
+\input{pilot-widths.tex}
+Table~\ref{tab:pilot} reports the worst \emph{expected} width over this
+pilot's prescribed target and detector patterns at $n=1024$. Its frozen
+width threshold of $0.20$ passed for all tested cells with $R\le1.25$.
+This was a bounded feasibility result, not a claim over untested targets
+or a field detector. Execution took 277.11 seconds, with 4,774,983 bytes
+of Python-traced peak memory. That metric does not include all native
+allocations or measure total process resident memory.
+
+The pilot separately generated four actual geometric configurations, each
+with 200 trials of $n=1024$ retained events: flat density or
+$\rho_{1/4}$, with constant or compensating detection. Their targets
+were respectively $1/4$ and $17/64$. Recorded coverage proportions were
+$0.935$, $0.955$, $0.965$ and $1.000$ in the preserved artifact order.
+The first is 187 successes out of 200; it has not been replaced or hidden
+because it lies below $0.95$. Its exact binomial confidence interval for
+the repeated-trial success probability is approximately $[0.8914,0.9650]$;
+the complete-law coverage for the corresponding flat case is about
+$0.952905$. Thus this Monte Carlo fluctuation does not contradict the
+finite guarantee. The compensated polynomial case has $R=5/3$ and mean
+width about $0.24188$.
+
+\subsection{Frozen geometric finite comparison}
+The later study used the known geometric range $[1/8,3/8]$ for every
+method. It compared four reports from the same $(n,K,R)$: transformed
+certified binomial, transformed Hoeffding, the joint-rate interval centered
+at $K/n$ with radius $2s(n,R)$, and the fixed known range. Every interval
+was intersected with the known range. An empty intersection had zero width
+and no coverage; it was not replaced by a fallback. All methods returned
+the known range at $n=0$.
+
+The formula grid used $n=q^2$ for $q=1,2,4,8,16,32,64$ and
+\[
+ R\in\{1,1025/1024,65/64,17/16,9/8,5/4,3/2,2\},
+\]
+augmented by admitted crossover values with
+$b_R\in\{1/(2q),1/q,\min(2/q,1/3)\}$ and $b_R\le1/3$.
+There were 71 rate cells. Report calculations included every count for
+$n=0,1,4,16,64$ and seven selected counts
+$0,1,n/4,n/2,3n/4,n-1,n$ for $n=256,1024$.
+All 104 distinct binomial endpoint reports passed exact tail checks with
+no fallback.
+
+For complete-law coverage, the study used
+$\rho_\varepsilon$ with $\varepsilon\in\{0,1/4,1/2\}$ and uniform,
+inside-low or inside-high piecewise detection in $[1/R,1]$.
+For $n\le64$, all 1,656 exact rational coverage checks passed; their
+minimum was approximately $0.96288634$. Expected widths were enclosed
+by outward rational display intervals of width at most $10^{-12}$,
+and empty-report probabilities were computed exactly. Complete-law
+coverage was not calculated at $n=256$ or $1024$ in this study.
+
+Across 1,108 paired realized-report cases, the joint-rate interval was
+wider than the certified binomial report in 732 and equal in 376; it was
+never narrower on that grid. Table~\ref{tab:finite} shows three selected
+\emph{realized} widths at $n=1024$, $K=256$. This is evidence for retaining
+the exact-binomial practical report, not a proof of universal interval
+dominance or shortest possible intervals.
+\input{finite-widths.tex}
+
+The formula checks included eight polynomial parameter values, product
+divergence through $n=4096$, and five negative controls: an incorrect
+target denominator, an incorrect second moment, an invalid strict-gap
+boundary, an unclamped ambient detector and a shrunken binomial interval.
+No Monte Carlo samples, numerical quadrature or random seeds were used in
+this second study. Execution took 199.33 seconds with 59,031,222 bytes
+of Python-traced peak memory. A separate artifact audit took about
+3.15 seconds and checked the saved cells, including 261 binomial-mass
+recurrences. The first attempt stopped because SciPy was unavailable;
+its partial output remains preserved. The successful retry used the same
+frozen protocol and runner after restoring the required dependency.
+It did not alter the grid or select a favorable resampling outcome.
+
+\section{Source comparisons and verification scope}\label{sec:verification}
+Aronow and Lee's journal article and two-page supplement were read in
+full, including the article's Proposition~1 and the supplement's Lemma~1
+and Propositions~2--3. Their weighted-mean bounds, binary formulas and
+asymptotic convergence arguments receive attribution here. They do not
+themselves supply this paper's finite binomial confidence calibration or
+the full marked-order geometric lower construction. In the reviewed
+comparison, their binary transform is algebraically identical to the
+transform already applied to the calibrated binomial benchmark. Adding
+another numerical column with those same endpoints would duplicate the
+existing method.
+
+The related partial-identification comparisons use the editions actually
+inspected: Imbens and Manski's 2003 CeMMAP working paper, Stoye's
+17 December 2008 preprint, and Tudball and colleagues' fourth arXiv
+version together with the journal and supplementary proof comparison.
+Their confidence constructions and sample constraints have their own
+regularity and asymptotic assumptions. We have not imported such
+assumptions to replace our finite count argument, nor inferred that every
+possible partial-identification method is covered by this comparison.
+An uninspected journal edition is not claimed textually identical to its
+reviewed preprint. Purchased source PDFs are kept private and are not
+redistributed with our source package.
+
+The accepted Lean development includes exact types and axiom reports for
+797 exports in its original full audit. That total covers the entire
+accepted dependency collection, not 797 new theorems of this manuscript.
+The authoritative run is
+\begin{center}\small
+\texttt{space-volumerate-acceptance-20261010T023105Z-5d08cf}.
+\end{center}
+It ran on Google Cloud with Lean 4.30.0 and the pinned mathlib revision
+recorded in the source archive. It completed 3,097 root build jobs with
+zero warnings. Its reports use only the standard axioms
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+The 198 captured source files, dependency identities, raw logs, receipt
+and task-owned instance shutdown evidence are retained. Proof commit:
+\begin{center}\small
+\texttt{354fa1f8dc8746328077041ef79d3621837f99e7}.
+\end{center}
+
+The accompanying \texttt{formal-map.json} associates each labeled
+mathematical claim with the exact accepted exports and source hashes.
+It also identifies elementary prose packaging, such as the determinant
+calculation and terminal-pattern cardinality, rather than representing
+every sentence as a separate kernel theorem. Principal entries are:
+\begin{center}
+\small
+\begin{tabular}{ll}
+\toprule
+Manuscript result & Principal Lean module(s)\\
+\midrule
+Finite/mixed thinning & \texttt{ThinningCount}, \texttt{ThinningMixture}\\
+Poisson and stopped laws & \texttt{ThinningPoisson}, \texttt{ThinningStoppedLaw}\\
+Finite confidence and certificates & \texttt{BinomialCalibration}, \texttt{BinomialArithmetic}\\
+Physical report transfer & \texttt{BinomialGeometry}, \texttt{ThinningMixedCoverage}\\
+Geometric alternatives & \texttt{ConfoundingGeometry}, \texttt{ConfoundingMarked}\\
+Sampling lower bound & \texttt{VolumeRateLikelihood}, \texttt{VolumeRateSampling}\\
+Uniform upper/lower theorem & \texttt{VolumeRateUpper}, \texttt{VolumeRateJoint}\\
+Zero samples & \texttt{VolumeRateEmpty}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Preparation reuses this immutable acceptance; it does not rerun Lean or
+change any accepted proof. The source verifier checks the full captured
+archive against the original proof commit and the current mapped modules
+against that archive. Later repository integration files can contain
+additional projects without changing the original acceptance evidence.
+The Python reports and mathematical source comparison are separately
+audited evidence, not kernel verification of Python, SciPy, the operating
+system or an actual detector. Formal correctness also does not establish
+that the model is a correct description of a physical instrument.
+
+The reproducibility package supplies the manuscript source and build
+instructions, exact formal map, original proof snapshot and acceptance
+logs, table extraction, and frozen computational evidence. Its manifest
+records file hashes. The manuscript is licensed CC BY 4.0; source-code
+licenses and the original repository license are preserved. This is an
+unpublished preparation with no newly assigned manuscript DOI.
+
+\section{Implications and limits}\label{sec:implications}
+With perfectly calibrated uniform detection ($R=1$), the theorem gives
+the familiar $n^{-1/2}$ scale for this scalar target. For fixed $R>1$,
+the calibration term remains positive as $n$ grows. Within the stated
+model, using more marked-order relations cannot force the worst-case
+volume error to vanish: the compensated geometries have exactly the same
+retained law. This is an information limit of the observation experiment,
+not a failure of one estimator.
+
+The sampling and calibration terms become comparable at
+$n^{-1/2}\asymp(R-1)/(R+1)$. To keep a sampling-order accuracy as $n$
+increases, the ratio uncertainty must shrink at that order as well.
+This gives a statistical way to distinguish the benefit of more retained
+events from the benefit of better detector knowledge. It does not choose
+a monetary optimum, specify a calibration instrument, or measure a
+sensor's achievable $R$. If $R$ were inferred from finite calibration
+data, its uncertainty would need an additional coverage argument and
+failure-budget allocation.
+
+Physical use would require evidence for the causal observation map,
+the sampling and independent detection assumptions, a justified bound on
+the detector ratio, stable anchor identification and any conversion from
+normalized to absolute units. None is demonstrated by the synthetic
+studies. Dependence between detections, geometry-dependent stopping,
+measurement error in causal relations or sample-selected anchors are
+outside the present theorem. The results do not establish reconstruction
+in higher dimensions, curvature estimates, operational resource gains or
+a new quantum inference method.
+
+The practical outcome is an inspectable finite report together with a
+proved explanation of its calibration limit. Open-source, decentralized
+review and downstream use can test and improve these results; anticipated
+uptake is not treated as validation. New applications should first show
+that their observation and calibration assumptions fit the experiment,
+then compare the report with an established method using the same data
+and coverage requirements.
+
+\begin{thebibliography}{9}
+\raggedright
+\interlinepenalty=10000
+\bibitem{aronow}
+P.~M. Aronow and D.~K. Lee.
+Interval estimation of population means under unknown but bounded
+probabilities of sample selection.
+\emph{Biometrika} 100(1), 235--240 (2013).
+\href{https://doi.org/10.1093/biomet/ass064}{doi:10.1093/biomet/ass064}.
+Journal article and two-page supplementary proofs inspected.
+
+\bibitem{clopper}
+C.~J. Clopper and E.~S. Pearson.
+The use of confidence or fiducial limits illustrated in the case of the
+binomial. \emph{Biometrika} 26(4), 404--413 (1934).
+\href{https://doi.org/10.1093/biomet/26.4.404}{doi:10.1093/biomet/26.4.404}.
+
+\bibitem{hoeffding}
+W. Hoeffding.
+Probability inequalities for sums of bounded random variables.
+\emph{Journal of the American Statistical Association} 58(301), 13--30 (1963).
+\href{https://doi.org/10.1080/01621459.1963.10500830}{doi:10.1080/01621459.1963.10500830}.
+
+\bibitem{imbens}
+G.~W. Imbens and C.~F. Manski.
+Confidence intervals for partially identified parameters.
+CeMMAP Working Paper CWP09/03, 29 May 2003 (reviewed edition).
+\url{https://cemmap.ac.uk/wp-content/uploads/2020/08/CWP0903.pdf}.
+Related journal version: \emph{Econometrica} (2004),
+\href{https://doi.org/10.1111/j.1468-0262.2004.00555.x}{doi:10.1111/j.1468-0262.2004.00555.x}.
+
+\bibitem{stoye}
+J. Stoye.
+More on confidence intervals for partially identified parameters.
+Author preprint, 17 December 2008 (reviewed edition).
+\url{https://stoye.economics.cornell.edu/docs/stoye-ecma2009-pre.pdf}.
+Related journal version: \emph{Econometrica} (2009),
+\href{https://doi.org/10.3982/ECTA7347}{doi:10.3982/ECTA7347}.
+
+\bibitem{tudball}
+M.~J. Tudball, R.~A. Hughes, K. Tilling, J. Bowden and Q. Zhao.
+Sample-constrained partial identification with application to selection
+bias. \emph{Biometrika} 110(2) (2023).
+\href{https://doi.org/10.1093/biomet/asac042}{doi:10.1093/biomet/asac042}.
+Reviewed preprint: \href{https://arxiv.org/abs/1906.10159v4}{arXiv:1906.10159v4},
+4 October 2021; journal and supplementary proof comparison recorded in
+the companion source audit.
+\end{thebibliography}
+\end{document}

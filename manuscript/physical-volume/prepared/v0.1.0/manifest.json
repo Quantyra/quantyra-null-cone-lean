@@ -1,0 +1,17 @@
+{
+  "status": "prepared, unpublished; no DOI or deposit",
+  "version": "0.1.0",
+  "pages": 14,
+  "proof_commit": "354fa1f8dc8746328077041ef79d3621837f99e7",
+  "source_package_files": 71,
+  "files": {
+    "interval-volume-detection.pdf": {
+      "sha256": "38c6dc47d341e38e69817d4f18301d6810d8c147d6ffb23b1ee405974d235ee5",
+      "bytes": 133957
+    },
+    "interval-volume-detection-source.zip": {
+      "sha256": "c271f631b5159d5408264e893539ed7a4b2dacf8a695ac61282e7a1bddbca478",
+      "bytes": 1121285
+    }
+  }
+}

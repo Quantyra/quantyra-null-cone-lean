@@ -1,0 +1,26 @@
+{
+  "source_review_repository": "Quantyra/Quantyra-Space-Planning",
+  "source_review_commit": "4242346c496666d6f561544d6d4d10aca6f540cd",
+  "source_review_path": "docs/S046-source-proof-comparison.md",
+  "source_review_sha256": "3f3ee52be048d8efcc2b68c68d1d38dd018d98b837e70da6f388556c05b32e8a",
+  "snapshot_file": "source-review.snapshot.txt",
+  "source_review_url": "https://github.com/Quantyra/Quantyra-Space-Planning/blob/4242346c496666d6f561544d6d4d10aca6f540cd/docs/S046-source-proof-comparison.md",
+  "purchased_pdfs_private_hashes_rechecked": {
+    "ass064.pdf": "a6bcd1a2e9e0e5c43d7b90d7227b6456e4d97629b6b19a71612b822535ebd507",
+    "Bka-12-198_supplement.pdf": "9c3b23c711ab82a5ebbeda74ae4f51b0b1d56af148647608da990ae20dfb0ef1"
+  },
+  "purchased_bytes_in_package": false,
+  "editions": {
+    "aronow": "2013 journal article and two-page supplement; all four proofs reviewed",
+    "clopper": "1934 original article; full text reviewed",
+    "hoeffding": "1963 original paper; bounded-sum concentration",
+    "imbens": "CeMMAP CWP09/03, 29 May 2003; journal edition equivalence not asserted",
+    "stoye": "Author preprint, 17 December 2008; journal not compared line by line",
+    "tudball": "arXiv 1906.10159v4, 4 October 2021; journal and supplement proof comparison"
+  },
+  "limits": [
+    "Scoped comparison, not exhaustive priority search",
+    "No statistical theorem imported from unverified asymptotic assumptions",
+    "Snapshot retains historical progress wording; S048 preparation status is in README and preparation audit"
+  ]
+}

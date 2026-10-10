@@ -1,0 +1,578 @@
+{
+  "proof_commit": "354fa1f8dc8746328077041ef79d3621837f99e7",
+  "gcp_run": "space-volumerate-acceptance-20261010T023105Z-5d08cf",
+  "captured_sources": 198,
+  "audited_exports": 797,
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "archive_sha256": "ad6d668e8100821dd8d4a7cfb84eb0d279ffc829b8e6f86e76432ab8c6a809cc",
+  "claims": [
+    {
+      "label": "prop:geometry",
+      "reviewed_scope": "Density normalization and interval range; metric determinant and timelike straight-segment interpretation are elementary prose, not additional exported endpoints.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.null_interval_rectangle",
+          "source": "QuantyraNullCone/BinomialGeometry.lean",
+          "source_sha256": "d1e4a106fc6a2feb849785799a5c8bb6ff88a6b7d607032b21e3e8359f334872",
+          "accepted_type": "QuantyraNullCone.null_interval_rectangle (p q : QuantyraNullCone.DiamondPoint) :\n  QuantyraNullCone.markedIntervalSet QuantyraNullCone.nullChronology p q = (Set.Ioo p.1 q.1).prod (Set.Ioo p.2 q.2)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.physical_marked_volume_range",
+          "source": "QuantyraNullCone/VolumeRateEmpty.lean",
+          "source_sha256": "97f3e7234d77b94bca0d35aaadb31ad67b52103d36c6de03366b42f2c7ba7e41",
+          "accepted_type": "QuantyraNullCone.physical_marked_volume_range {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) : QuantyraNullCone.physicalMarkedVolume rho ∈ Set.Icc (1 / 8) (3 / 8)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "thm:main",
+      "reviewed_scope": "Exact strict radii, full marked-order law, global detector bounds, arbitrary independent probability seed; R in [1,2], n positive.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.physical_volume_joint_rate",
+          "source": "QuantyraNullCone/VolumeRateJoint.lean",
+          "source_sha256": "ecdbd5a24e3be99fdda3c79c89b4a14bd482b9445700f5453f2bb4f70b57f8d8",
+          "accepted_type": "QuantyraNullCone.physical_volume_joint_rate.{u_1} {R : ℝ} (hR : 1 ≤ R) (hR2 : R ≤ 2) {n : ℕ} (hn : 0 < n) :\n  (∀ (rho pi : QuantyraNullCone.DiamondPoint → ℝ),\n      QuantyraNullCone.VolumeRateModel R rho pi →\n        (QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).real\n            {code |\n              2 * QuantyraNullCone.physicalVolumeRate n R <\n                |QuantyraNullCone.markedOrderFraction 0 1 code - QuantyraNullCone.physicalMarkedVolume rho|} ≤\n          1 / 20) ∧\n    ∀ (Ω : Type u_1) [inst : MeasurableSpace Ω] (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi]\n      (T : QuantyraNullCone.UnlabeledMarkedOrderCode n 2 × Ω → ℝ),\n      Measurable T →\n        ∃ rho pi,\n          QuantyraNullCone.VolumeRateModel R rho pi ∧\n            1 / 4 ≤\n              ((QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).prod xi).real\n                {z | QuantyraNullCone.physicalVolumeRate n R / 256 < |T z - QuantyraNullCone.physicalMarkedVolume rho|}",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.physical_volume_joint_rate_lower",
+          "source": "QuantyraNullCone/VolumeRateJoint.lean",
+          "source_sha256": "ecdbd5a24e3be99fdda3c79c89b4a14bd482b9445700f5453f2bb4f70b57f8d8",
+          "accepted_type": "QuantyraNullCone.physical_volume_joint_rate_lower.{u_1} {R : ℝ} (hR : 1 ≤ R) (hR2 : R ≤ 2) {n : ℕ} (hn : 0 < n)\n  {Ω : Type u_1} [MeasurableSpace Ω] (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi]\n  (T : QuantyraNullCone.UnlabeledMarkedOrderCode n 2 × Ω → ℝ) (hT : Measurable T) :\n  ∃ rho pi,\n    QuantyraNullCone.VolumeRateModel R rho pi ∧\n      1 / 4 ≤\n        ((QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).prod xi).real\n          {z | QuantyraNullCone.physicalVolumeRate n R / 256 < |T z - QuantyraNullCone.physicalMarkedVolume rho|}",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.fixed_marked_physical_volume_rate_upper",
+          "source": "QuantyraNullCone/VolumeRateUpper.lean",
+          "source_sha256": "2c9d049f7e83cab77927d4771a1c9f864374ef267e0d7b8e8d1215a24ac01bd0",
+          "accepted_type": "QuantyraNullCone.fixed_marked_physical_volume_rate_upper {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) {pi : QuantyraNullCone.DiamondPoint → ℝ}\n  (hpi : MeasureTheory.Integrable pi (QuantyraNullCone.densityMeasure rho)) {R : ℝ} (hR : 1 ≤ R)\n  (hbounds : ∀ (x : QuantyraNullCone.DiamondPoint), 1 / R ≤ pi x ∧ pi x ≤ 1) {n : ℕ} (hn : 0 < n) :\n  (QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).real\n      {code |\n        2 * QuantyraNullCone.physicalVolumeRate n R <\n          |QuantyraNullCone.markedOrderFraction 0 1 code -\n              (QuantyraNullCone.densityMeasure rho).real\n                (QuantyraNullCone.markedIntervalSet QuantyraNullCone.nullChronology (0, 0) (1 / 2, 1 / 2))|} ≤\n    1 / 20",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.sampled_marked_order_fraction",
+          "source": "QuantyraNullCone/MarkedEstimator.lean",
+          "source_sha256": "b6146387db17d1652584a169024807a4ab31ad24cc08b1c6e796602bc867f583",
+          "accepted_type": "QuantyraNullCone.sampled_marked_order_fraction {n m : ℕ} (p q : Fin m) (anchors : Fin m → QuantyraNullCone.DiamondPoint)\n  (sample : Fin n → QuantyraNullCone.DiamondPoint) :\n  QuantyraNullCone.markedOrderFraction p q (QuantyraNullCone.sampledUnlabeledMarkedOrder anchors sample) =\n    QuantyraNullCone.markedFraction\n      (QuantyraNullCone.markedIntervalCode QuantyraNullCone.nullChronology (anchors p) (anchors q) sample)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.full_marked_order_fraction_hoeffding",
+          "source": "QuantyraNullCone/MarkedEstimator.lean",
+          "source_sha256": "b6146387db17d1652584a169024807a4ab31ad24cc08b1c6e796602bc867f583",
+          "accepted_type": "QuantyraNullCone.full_marked_order_fraction_hoeffding (mu : MeasureTheory.Measure QuantyraNullCone.DiamondPoint)\n  [MeasureTheory.IsProbabilityMeasure mu] {n m : ℕ} (hn : 0 < n) (anchors : Fin m → QuantyraNullCone.DiamondPoint)\n  (p q : Fin m) {r : ℝ} (hr : 0 ≤ r) :\n  (MeasureTheory.Measure.map (QuantyraNullCone.sampledUnlabeledMarkedOrder anchors)\n          (MeasureTheory.Measure.pi fun x => mu)).real\n      {code |\n        r ≤\n          |QuantyraNullCone.markedOrderFraction p q code -\n              mu.real (QuantyraNullCone.markedIntervalSet QuantyraNullCone.nullChronology (anchors p) (anchors q))|} ≤\n    2 * Real.exp (-2 * ↑n * r ^ 2)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.membership_count_eq_binomial",
+          "source": "QuantyraNullCone/BinomialObservation.lean",
+          "source_sha256": "fbe6fdc8ca4ba89fcda8c848f822fa503e263c7e7d869c43b75170370e68be7d",
+          "accepted_type": "QuantyraNullCone.membership_count_eq_binomial.{u_1} {Omega : Type u_1} [MeasurableSpace Omega]\n  (mu : MeasureTheory.Measure Omega) [MeasureTheory.IsProbabilityMeasure mu] (n : ℕ) {S : Set Omega}\n  (hS : MeasurableSet S) : QuantyraNullCone.membershipCountLaw mu n S = QuantyraNullCone.binomialCountLaw n (mu.real S)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:finite-thinning",
+      "reviewed_scope": "Unconditional submeasure equalities precede division; conditioning requires positive count mass. Independent generated count only.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.detected_submeasure",
+          "source": "QuantyraNullCone/ThinningChannel.lean",
+          "source_sha256": "720e64d2c49dd97507506771ef03c4eb4f860439c7c5e6eefb44fb38f50972be",
+          "accepted_type": "QuantyraNullCone.detected_submeasure.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  {pi : Ω → ℝ} (hpi : Measurable pi) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) :\n  MeasureTheory.Measure.map Prod.fst\n      ((mu.prod QuantyraNullCone.uniform01Measure).restrict (QuantyraNullCone.retentionEvent pi)) =\n    mu.withDensity fun x => ENNReal.ofReal (pi x)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_subset_law",
+          "source": "QuantyraNullCone/ThinningSubset.lean",
+          "source_sha256": "2a9629c27a7af1493a6d83617a6a2f24c3244acda3379efc8cac0f16f8fa5e8a",
+          "accepted_type": "QuantyraNullCone.retained_subset_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) {N : ℕ} (I : Finset (Fin N))\n  (hc :\n    (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n        (QuantyraNullCone.retentionPattern pi I) ≠\n      0) :\n  MeasureTheory.Measure.map (QuantyraNullCone.retainedSubsetView I)\n      (MeasureTheory.Measure.pi fun x =>\n          mu.prod QuantyraNullCone.uniform01Measure)[|QuantyraNullCone.retentionPattern pi I] =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_ordered_pattern_law",
+          "source": "QuantyraNullCone/ThinningSelected.lean",
+          "source_sha256": "dcd60230ac3036a30cb070f4a39b9bc255626f0870a7df076217799e31cbfaf9",
+          "accepted_type": "QuantyraNullCone.retained_ordered_pattern_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) {N n : ℕ} (fallback : Ω)\n  (code : Fin N → Bool) (hn : QuantyraNullCone.bitCount code = n)\n  (hc :\n    (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n        (QuantyraNullCone.retentionPattern pi (QuantyraNullCone.trueBits code)) ≠\n      0) :\n  MeasureTheory.Measure.map (QuantyraNullCone.retainedOrderedView pi fallback n)\n      (MeasureTheory.Measure.pi fun x =>\n          mu.prod\n            QuantyraNullCone.uniform01Measure)[|QuantyraNullCone.retentionPattern pi (QuantyraNullCone.trueBits code)] =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_count_submeasure_law",
+          "source": "QuantyraNullCone/ThinningCount.lean",
+          "source_sha256": "f75e5b99f447f5cb2d57f38ab4eb6a848a7ff245894d734e0ce09f05d60f5ff9",
+          "accepted_type": "QuantyraNullCone.retained_count_submeasure_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (N n : ℕ) (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.retainedOrderedView pi fallback n)\n      ((MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure).restrict\n        (QuantyraNullCone.retainedCountEvent pi N n)) =\n    (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n        (QuantyraNullCone.retainedCountEvent pi N n) •\n      MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_count_conditional_law",
+          "source": "QuantyraNullCone/ThinningCount.lean",
+          "source_sha256": "f75e5b99f447f5cb2d57f38ab4eb6a848a7ff245894d734e0ce09f05d60f5ff9",
+          "accepted_type": "QuantyraNullCone.retained_count_conditional_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (N n : ℕ) (fallback : Ω)\n  (hc :\n    (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n        (QuantyraNullCone.retainedCountEvent pi N n) ≠\n      0) :\n  MeasureTheory.Measure.map (QuantyraNullCone.retainedOrderedView pi fallback n)\n      (MeasureTheory.Measure.pi fun x =>\n          mu.prod QuantyraNullCone.uniform01Measure)[|QuantyraNullCone.retainedCountEvent pi N n] =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.mixed_retained_submeasure_series",
+          "source": "QuantyraNullCone/ThinningMixture.lean",
+          "source_sha256": "db663587d736bee33f4446dedda1e357399efd80d93707a4f9b4270f8c0b6bf8",
+          "accepted_type": "QuantyraNullCone.mixed_retained_submeasure_series.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]\n  (mu : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure mu] (q : MeasureTheory.Measure ℕ) {pi : Ω → ℝ}\n  (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1)\n  (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (n : ℕ) (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.mixedRetainedView pi fallback n)\n      ((QuantyraNullCone.randomGeneratedLaw mu q).restrict {z | QuantyraNullCone.mixedRetainedCount pi z = n}) =\n    (∑' (N : ℕ),\n        q {N} *\n          (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n            (QuantyraNullCone.retainedCountEvent pi N n)) •\n      MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.mixed_retained_conditional_law",
+          "source": "QuantyraNullCone/ThinningMixture.lean",
+          "source_sha256": "db663587d736bee33f4446dedda1e357399efd80d93707a4f9b4270f8c0b6bf8",
+          "accepted_type": "QuantyraNullCone.mixed_retained_conditional_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] (q : MeasureTheory.Measure ℕ) [MeasureTheory.IsProbabilityMeasure q]\n  {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1)\n  (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (n : ℕ) (fallback : Ω)\n  (hc : (QuantyraNullCone.randomGeneratedLaw mu q) {z | QuantyraNullCone.mixedRetainedCount pi z = n} ≠ 0) :\n  MeasureTheory.Measure.map (QuantyraNullCone.mixedRetainedView pi fallback n)\n      (QuantyraNullCone.randomGeneratedLaw mu q)[|{z | QuantyraNullCone.mixedRetainedCount pi z = n}] =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:poisson",
+      "reviewed_scope": "Finite Poisson generation, including zero intensity, and nonnegative measurable real h; nonnormalized physical units are elementary rescaling.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.poisson_retained_submeasure_law",
+          "source": "QuantyraNullCone/ThinningPoisson.lean",
+          "source_sha256": "919b26fd0a1be4aa77b06099b49fea0df91b8295256d331a75b73fe595fc1ec1",
+          "accepted_type": "QuantyraNullCone.poisson_retained_submeasure_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] (kappa : NNReal) {pi : Ω → ℝ} (hpi : Measurable pi)\n  (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu)\n  (n : ℕ) (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.mixedRetainedView pi fallback n)\n      ((QuantyraNullCone.randomGeneratedLaw mu (ProbabilityTheory.poissonMeasure kappa)).restrict\n        {z | QuantyraNullCone.mixedRetainedCount pi z = n}) =\n    (ProbabilityTheory.poissonMeasure (QuantyraNullCone.retainedPoissonRate kappa mu pi)) {n} •\n      MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.poisson_retained_count_law",
+          "source": "QuantyraNullCone/ThinningPoisson.lean",
+          "source_sha256": "919b26fd0a1be4aa77b06099b49fea0df91b8295256d331a75b73fe595fc1ec1",
+          "accepted_type": "QuantyraNullCone.poisson_retained_count_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] (kappa : NNReal) {pi : Ω → ℝ} (hpi : Measurable pi)\n  (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu)\n  (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.mixedRetainedCount pi)\n      (QuantyraNullCone.randomGeneratedLaw mu (ProbabilityTheory.poissonMeasure kappa)) =\n    ProbabilityTheory.poissonMeasure (QuantyraNullCone.retainedPoissonRate kappa mu pi)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.poisson_retained_laplace_functional",
+          "source": "QuantyraNullCone/ThinningLaplace.lean",
+          "source_sha256": "8592129da0c4fe121ec8e1da4fc66dcf5abeed515a189906741adabe23822fbb",
+          "accepted_type": "QuantyraNullCone.poisson_retained_laplace_functional.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]\n  (mu : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure mu] (kappa : NNReal) {pi : Ω → ℝ}\n  (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1)\n  (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (fallback : Ω) {h : Ω → ℝ} (hh : Measurable h) (hnonneg : ∀ (x : Ω), 0 ≤ h x) :\n  ∫ (z : ℕ × (ℕ → Ω × ℝ)),\n      Real.exp\n        (-∑ i,\n            h\n              (QuantyraNullCone.mixedRetainedView pi fallback (QuantyraNullCone.mixedRetainedCount pi z) z\n                i)) ∂QuantyraNullCone.randomGeneratedLaw mu (ProbabilityTheory.poissonMeasure kappa) =\n    Real.exp (↑kappa * ∫ (x : Ω), pi x * (Real.exp (-h x) - 1) ∂mu)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:stopping",
+      "reviewed_scope": "Almost-sure termination and actual first-n tuple law; Lean retains a finite terminal-pattern sum. The negative-binomial cardinality is proved in prose.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.iid_positive_event_infinite",
+          "source": "QuantyraNullCone/ThinningTermination.lean",
+          "source_sha256": "350d3330bc7ed914af89f504e45dbb017912e13efddc454cb295ca1488113cae",
+          "accepted_type": "QuantyraNullCone.iid_positive_event_infinite.{u_1} {X : Type u_1} [MeasurableSpace X] (mu : MeasureTheory.Measure X)\n  [MeasureTheory.IsProbabilityMeasure mu] {S : Set X} (hS : MeasurableSet S) (hp : 0 < mu S) :\n  ∀ᵐ (sample : ℕ → X) ∂MeasureTheory.Measure.infinitePi fun x => mu, {i | sample i ∈ S}.Infinite",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.ae_stream_retained_count_surjective",
+          "source": "QuantyraNullCone/ThinningTermination.lean",
+          "source_sha256": "350d3330bc7ed914af89f504e45dbb017912e13efddc454cb295ca1488113cae",
+          "accepted_type": "QuantyraNullCone.ae_stream_retained_count_surjective.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]\n  (mu : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi)\n  (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) :\n  ∀ᵐ (sample : ℕ → Ω × ℝ) ∂QuantyraNullCone.generatedStreamLaw mu,\n    Function.Surjective fun N => QuantyraNullCone.streamRetainedCount pi N sample",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.stopped_retained_submeasure",
+          "source": "QuantyraNullCone/ThinningStoppedLaw.lean",
+          "source_sha256": "047348bc1f908476af0403b1cc90dfb1b70347d397baab0ca34388425809e7fa",
+          "accepted_type": "QuantyraNullCone.stopped_retained_submeasure.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (N n : ℕ) (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.stoppedRetainedView pi fallback n)\n      ((QuantyraNullCone.generatedStreamLaw mu).restrict (QuantyraNullCone.retainedStopPrefix pi n ⁻¹' {N})) =\n    (MeasureTheory.Measure.pi fun x => mu.prod QuantyraNullCone.uniform01Measure)\n        (QuantyraNullCone.retainedTerminalEvent pi n N) •\n      MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.stopped_retained_conditional_law",
+          "source": "QuantyraNullCone/ThinningStoppedLaw.lean",
+          "source_sha256": "047348bc1f908476af0403b1cc90dfb1b70347d397baab0ca34388425809e7fa",
+          "accepted_type": "QuantyraNullCone.stopped_retained_conditional_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω]\n  (mu : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi)\n  (hInt : MeasureTheory.Integrable pi mu) (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu)\n  (N n : ℕ) (fallback : Ω)\n  (hc : (QuantyraNullCone.generatedStreamLaw mu) (QuantyraNullCone.retainedStopPrefix pi n ⁻¹' {N}) ≠ 0) :\n  MeasureTheory.Measure.map (QuantyraNullCone.stoppedRetainedView pi fallback n)\n      (QuantyraNullCone.generatedStreamLaw mu)[|QuantyraNullCone.retainedStopPrefix pi n ⁻¹' {N}] =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.stopped_retained_iid_law",
+          "source": "QuantyraNullCone/ThinningStoppedLaw.lean",
+          "source_sha256": "047348bc1f908476af0403b1cc90dfb1b70347d397baab0ca34388425809e7fa",
+          "accepted_type": "QuantyraNullCone.stopped_retained_iid_law.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu)\n  (hbounds : ∀ (x : Ω), pi x ∈ Set.Icc 0 1) (hZ : 0 < ∫ (x : Ω), pi x ∂mu) (n : ℕ) (fallback : Ω) :\n  MeasureTheory.Measure.map (QuantyraNullCone.stoppedRetainedView pi fallback n)\n      (QuantyraNullCone.generatedStreamLaw mu) =\n    MeasureTheory.Measure.pi fun x => QuantyraNullCone.retainedMeasure mu pi",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:selection",
+      "reviewed_scope": "Global detector bounds specialized to a=1/R, b=1. Transform monotonicity and bias, not geometric identified-set sharpness.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.retention_mass_identification",
+          "source": "QuantyraNullCone/MarkedVolume.lean",
+          "source_sha256": "49bd8dd0708dd38ccb53c9ccf7bab1e1c621a130c408eb98c9832fdc2c638deb",
+          "accepted_type": "QuantyraNullCone.retention_mass_identification {a b v s t : ℝ} (ha : 0 < a) (hab : a ≤ b) (hv : v ∈ Set.Icc 0 1)\n  (hs : a * v ≤ s ∧ s ≤ b * v) (ht : a * (1 - v) ≤ t ∧ t ≤ b * (1 - v)) :\n  QuantyraNullCone.retentionLower (b / a) (s / (s + t)) ≤ v ∧ v ≤ QuantyraNullCone.retentionUpper (b / a) (s / (s + t))",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_physical_identification",
+          "source": "QuantyraNullCone/MarkedThinning.lean",
+          "source_sha256": "0d96637c9e8262c18d7a79fafa8eb72f5ddeaa0bdcdabe61684ca6b163d25c77",
+          "accepted_type": "QuantyraNullCone.retained_physical_identification.{u_1} {Omega : Type u_1} [MeasurableSpace Omega]\n  (mu : MeasureTheory.Measure Omega) [MeasureTheory.IsProbabilityMeasure mu] {pi : Omega → ℝ}\n  (hpi : MeasureTheory.Integrable pi mu) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hbounds : ∀ (x : Omega), a ≤ pi x ∧ pi x ≤ b) {S : Set Omega} (hS : MeasurableSet S) :\n  QuantyraNullCone.retentionLower (b / a) ((QuantyraNullCone.retainedMeasure mu pi).real S) ≤ mu.real S ∧\n    mu.real S ≤ QuantyraNullCone.retentionUpper (b / a) ((QuantyraNullCone.retainedMeasure mu pi).real S)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retention_lower_mono",
+          "source": "QuantyraNullCone/MarkedVolume.lean",
+          "source_sha256": "49bd8dd0708dd38ccb53c9ccf7bab1e1c621a130c408eb98c9832fdc2c638deb",
+          "accepted_type": "QuantyraNullCone.retention_lower_mono {R x y : ℝ} (hR : 1 ≤ R) (hx : x ∈ Set.Icc 0 1) (hy : y ∈ Set.Icc 0 1)\n  (hxy : x ≤ y) : QuantyraNullCone.retentionLower R x ≤ QuantyraNullCone.retentionLower R y",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retention_upper_mono",
+          "source": "QuantyraNullCone/MarkedVolume.lean",
+          "source_sha256": "49bd8dd0708dd38ccb53c9ccf7bab1e1c621a130c408eb98c9832fdc2c638deb",
+          "accepted_type": "QuantyraNullCone.retention_upper_mono {R x y : ℝ} (hR : 1 ≤ R) (hx : x ∈ Set.Icc 0 1) (hy : y ∈ Set.Icc 0 1)\n  (hxy : x ≤ y) : QuantyraNullCone.retentionUpper R x ≤ QuantyraNullCone.retentionUpper R y",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retention_interval_composition",
+          "source": "QuantyraNullCone/MarkedVolume.lean",
+          "source_sha256": "49bd8dd0708dd38ccb53c9ccf7bab1e1c621a130c408eb98c9832fdc2c638deb",
+          "accepted_type": "QuantyraNullCone.retention_interval_composition {R theta v L U : ℝ} (hR : 1 ≤ R) (htheta : theta ∈ Set.Icc 0 1)\n  (hL : L ∈ Set.Icc 0 1) (hU : U ∈ Set.Icc 0 1)\n  (hid : QuantyraNullCone.retentionLower R theta ≤ v ∧ v ≤ QuantyraNullCone.retentionUpper R theta)\n  (hcover : L ≤ theta ∧ theta ≤ U) : QuantyraNullCone.retentionLower R L ≤ v ∧ v ≤ QuantyraNullCone.retentionUpper R U",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retention_lower_bias",
+          "source": "QuantyraNullCone/VolumeRateBounds.lean",
+          "source_sha256": "46dab348ccf83ecd910c729db57ac789e97a37f7ed175183b48ebfa21ca41186",
+          "accepted_type": "QuantyraNullCone.retention_lower_bias {R x : ℝ} (hR : 1 ≤ R) (hx : x ∈ Set.Icc 0 1) :\n  x - QuantyraNullCone.retentionLower R x ≤ QuantyraNullCone.calibrationBudget R",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retention_upper_bias",
+          "source": "QuantyraNullCone/VolumeRateBounds.lean",
+          "source_sha256": "46dab348ccf83ecd910c729db57ac789e97a37f7ed175183b48ebfa21ca41186",
+          "accepted_type": "QuantyraNullCone.retention_upper_bias {R x : ℝ} (hR : 1 ≤ R) (hx : x ∈ Set.Icc 0 1) :\n  QuantyraNullCone.retentionUpper R x - x ≤ QuantyraNullCone.calibrationBudget R",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "thm:report",
+      "reviewed_scope": "Real endpoint coverage theorem; executable tables use rational delta/endpoints. Known-range intersection is an elementary event inclusion. Process specializations are accepted for rational tables; the real-table statement follows by the same proved tuple laws.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.finite_upper_tail_pvalue",
+          "source": "QuantyraNullCone/BinomialCalibration.lean",
+          "source_sha256": "9caa39483d18fe6dc81d724ce6cf9896cf782b3d1c0392f96cd1ed79a57210b6",
+          "accepted_type": "QuantyraNullCone.finite_upper_tail_pvalue.{u_1} {Alpha : Type u_1} [Fintype Alpha] [LinearOrder Alpha]\n  [MeasurableSpace Alpha] (mu : MeasureTheory.Measure Alpha) [MeasureTheory.IsFiniteMeasure mu] {alpha : ℝ}\n  (ha : 0 ≤ alpha) : mu.real {x | mu.real (Set.Ici x) ≤ alpha} ≤ alpha",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.finite_lower_tail_pvalue",
+          "source": "QuantyraNullCone/BinomialCalibration.lean",
+          "source_sha256": "9caa39483d18fe6dc81d724ce6cf9896cf782b3d1c0392f96cd1ed79a57210b6",
+          "accepted_type": "QuantyraNullCone.finite_lower_tail_pvalue.{u_1} {Alpha : Type u_1} [Fintype Alpha] [LinearOrder Alpha]\n  [MeasurableSpace Alpha] (mu : MeasureTheory.Measure Alpha) [MeasureTheory.IsFiniteMeasure mu] {alpha : ℝ}\n  (ha : 0 ≤ alpha) : mu.real {x | mu.real (Set.Iic x) ≤ alpha} ≤ alpha",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_tail_interval_coverage",
+          "source": "QuantyraNullCone/BinomialCalibration.lean",
+          "source_sha256": "9caa39483d18fe6dc81d724ce6cf9896cf782b3d1c0392f96cd1ed79a57210b6",
+          "accepted_type": "QuantyraNullCone.binomial_tail_interval_coverage {n : ℕ} {p delta : ℝ} (hp : p ∈ Set.Icc 0 1) (hd : 0 ≤ delta)\n  (L U : Fin (n + 1) → ℝ) (hL : ∀ (k : Fin (n + 1)), L k ∈ Set.Icc 0 1) (hU : ∀ (k : Fin (n + 1)), U k ∈ Set.Icc 0 1)\n  (hcL : ∀ (k : Fin (n + 1)), L k = 0 ∨ QuantyraNullCone.binomialUpperTail n k (L k) ≤ delta / 2)\n  (hcU : ∀ (k : Fin (n + 1)), U k = 1 ∨ QuantyraNullCone.binomialLowerTail n k (U k) ≤ delta / 2) :\n  (QuantyraNullCone.binomialCountLaw n p).real {k | ¬(L k ≤ p ∧ p ≤ U k)} ≤ delta",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_binomial_report_coverage",
+          "source": "QuantyraNullCone/BinomialCalibration.lean",
+          "source_sha256": "9caa39483d18fe6dc81d724ce6cf9896cf782b3d1c0392f96cd1ed79a57210b6",
+          "accepted_type": "QuantyraNullCone.retained_binomial_report_coverage.{u_1} {Omega : Type u_1} [MeasurableSpace Omega]\n  (mu : MeasureTheory.Measure Omega) [MeasureTheory.IsProbabilityMeasure mu] {pi : Omega → ℝ}\n  (hpi : MeasureTheory.Integrable pi mu) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hbounds : ∀ (x : Omega), a ≤ pi x ∧ pi x ≤ b) (n : ℕ) (C : Omega → Omega → Prop) (p q : Omega)\n  (hS : MeasurableSet (QuantyraNullCone.markedIntervalSet C p q)) {delta : ℚ} (hd : 0 ≤ delta) (L U : Fin (n + 1) → ℚ)\n  (hvalid : QuantyraNullCone.BinomialReportValid n delta L U) :\n  (QuantyraNullCone.markedIntervalLaw (QuantyraNullCone.retainedMeasure mu pi) n C p q).real\n      {code |\n        ¬(QuantyraNullCone.retentionLower (b / a) ↑(L (QuantyraNullCone.boundedBitCount code)) ≤\n              mu.real (QuantyraNullCone.markedIntervalSet C p q) ∧\n            mu.real (QuantyraNullCone.markedIntervalSet C p q) ≤\n              QuantyraNullCone.retentionUpper (b / a) ↑(U (QuantyraNullCone.boundedBitCount code)))} ≤\n    ↑delta",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.InDensityClass.retained_marked_binomial_coverage",
+          "source": "QuantyraNullCone/BinomialGeometry.lean",
+          "source_sha256": "d1e4a106fc6a2feb849785799a5c8bb6ff88a6b7d607032b21e3e8359f334872",
+          "accepted_type": "QuantyraNullCone.InDensityClass.retained_marked_binomial_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) {pi : QuantyraNullCone.DiamondPoint → ℝ}\n  (hpi : MeasureTheory.Integrable pi (QuantyraNullCone.densityMeasure rho)) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hbounds : ∀ (x : QuantyraNullCone.DiamondPoint), a ≤ pi x ∧ pi x ≤ b) (n : ℕ) (p q : QuantyraNullCone.DiamondPoint)\n  {delta : ℚ} (hd : 0 ≤ delta) (L U : Fin (n + 1) → ℚ)\n  (hcheck : QuantyraNullCone.binomialReportCheck n delta L U = true) :\n  (QuantyraNullCone.markedIntervalLaw (QuantyraNullCone.retainedMeasure (QuantyraNullCone.densityMeasure rho) pi) n\n          QuantyraNullCone.nullChronology p q).real\n      {code |\n        ¬(QuantyraNullCone.retentionLower (b / a) ↑(L (QuantyraNullCone.boundedBitCount code)) ≤\n              (QuantyraNullCone.densityMeasure rho).real ((Set.Ioo p.1 q.1).prod (Set.Ioo p.2 q.2)) ∧\n            (QuantyraNullCone.densityMeasure rho).real ((Set.Ioo p.1 q.1).prod (Set.Ioo p.2 q.2)) ≤\n              QuantyraNullCone.retentionUpper (b / a) ↑(U (QuantyraNullCone.boundedBitCount code)))} ≤\n    ↑delta",
+          "axioms": "propext,\n Classical.choice,\n Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.mixed_physical_report_coverage",
+          "source": "QuantyraNullCone/ThinningMixedCoverage.lean",
+          "source_sha256": "80ca733ca183847dd0af71d4310d270c14dc02a1ed671c0e3fb54c6e8c20d9dc",
+          "accepted_type": "QuantyraNullCone.mixed_physical_report_coverage.{u_1} {Ω : Type u_1} [MeasurableSpace Ω] (mu : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure mu] (Q : MeasureTheory.Measure ℕ) [MeasureTheory.IsProbabilityMeasure Q]\n  {pi : Ω → ℝ} (hpi : Measurable pi) (hInt : MeasureTheory.Integrable pi mu) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hb : b ≤ 1) (hbounds : ∀ (x : Ω), a ≤ pi x ∧ pi x ≤ b) (fallback : Ω) (C : Ω → Ω → Prop) (p q : Ω)\n  (hS : MeasurableSet (QuantyraNullCone.markedIntervalSet C p q)) {delta : ℚ} (hd : 0 ≤ delta)\n  (L U : (n : ℕ) → Fin (n + 1) → ℚ) (hvalid : ∀ (n : ℕ), QuantyraNullCone.BinomialReportValid n delta (L n) (U n)) :\n  (QuantyraNullCone.randomGeneratedLaw mu Q).real\n      {z |\n        QuantyraNullCone.mixedRetainedObservable pi fallback\n            (fun n => QuantyraNullCone.physicalReportFailure mu (b / a) n C p q (L n) (U n)) z =\n          true} ≤\n    ↑delta",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.InDensityClass.stopped_physical_report_coverage",
+          "source": "QuantyraNullCone/ThinningStoppedCoverage.lean",
+          "source_sha256": "a8da13ff758b8287ba8996896abbb61f5e952ef7a4dd5d841fa16696b4767daf",
+          "accepted_type": "QuantyraNullCone.InDensityClass.stopped_physical_report_coverage {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) {pi : QuantyraNullCone.DiamondPoint → ℝ} (hpi : Measurable pi)\n  (hInt : MeasureTheory.Integrable pi (QuantyraNullCone.densityMeasure rho)) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hb : b ≤ 1) (hbounds : ∀ (x : QuantyraNullCone.DiamondPoint), a ≤ pi x ∧ pi x ≤ b) (n : ℕ)\n  (p q : QuantyraNullCone.DiamondPoint) {delta : ℚ} (hd : 0 ≤ delta) (L U : Fin (n + 1) → ℚ)\n  (hcheck : QuantyraNullCone.binomialReportCheck n delta L U = true) :\n  (QuantyraNullCone.generatedStreamLaw (QuantyraNullCone.densityMeasure rho)).real\n      {sample |\n        QuantyraNullCone.physicalReportFailure (QuantyraNullCone.densityMeasure rho) (b / a) n\n            QuantyraNullCone.nullChronology p q L U (QuantyraNullCone.stoppedRetainedView pi p n sample) =\n          true} ≤\n    ↑delta",
+          "axioms": "propext,\n Classical.choice,\n Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.marked_hoeffding_95",
+          "source": "QuantyraNullCone/MarkedThinning.lean",
+          "source_sha256": "0d96637c9e8262c18d7a79fafa8eb72f5ddeaa0bdcdabe61684ca6b163d25c77",
+          "accepted_type": "QuantyraNullCone.marked_hoeffding_95 {n : ℕ} {r : ℝ} (hbudget : 2 ≤ ↑n * r ^ 2) :\n  2 * Real.exp (-2 * ↑n * r ^ 2) ≤ 1 / 20",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.retained_marked_volume_95",
+          "source": "QuantyraNullCone/MarkedThinning.lean",
+          "source_sha256": "0d96637c9e8262c18d7a79fafa8eb72f5ddeaa0bdcdabe61684ca6b163d25c77",
+          "accepted_type": "QuantyraNullCone.retained_marked_volume_95.{u_1} {Omega : Type u_1} [MeasurableSpace Omega]\n  (mu : MeasureTheory.Measure Omega) [MeasureTheory.IsProbabilityMeasure mu] {pi : Omega → ℝ}\n  (hpi : MeasureTheory.Integrable pi mu) {a b : ℝ} (ha : 0 < a) (hab : a ≤ b)\n  (hbounds : ∀ (x : Omega), a ≤ pi x ∧ pi x ≤ b) {n : ℕ} (hn : 0 < n) (C : Omega → Omega → Prop) (p q : Omega)\n  (hS : MeasurableSet (QuantyraNullCone.markedIntervalSet C p q)) {r : ℚ} (hr : 0 ≤ r) (hbudget : 2 ≤ ↑n * r ^ 2) :\n  (QuantyraNullCone.markedIntervalLaw (QuantyraNullCone.retainedMeasure mu pi) n C p q).real\n      {code |\n        ¬(QuantyraNullCone.retentionLower (b / a) (QuantyraNullCone.markedLower (↑r) code) ≤\n              mu.real (QuantyraNullCone.markedIntervalSet C p q) ∧\n            mu.real (QuantyraNullCone.markedIntervalSet C p q) ≤\n              QuantyraNullCone.retentionUpper (b / a) (QuantyraNullCone.markedUpper (↑r) code))} ≤\n    1 / 20",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:certificate",
+      "reviewed_scope": "Exact binomial numerator and integer check soundness; no kernel certification of Python/SciPy execution.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.binomial_mass_integer_identity",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_mass_integer_identity {n k m d : ℕ} (hk : k ≤ n) (hmd : m ≤ d) (hd : 0 < d) :\n  QuantyraNullCone.binomialMassQ n k (↑m / ↑d) = ↑(QuantyraNullCone.binomialNumerator n k m d) / ↑d ^ n",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_upper_integer_check",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_upper_integer_check {n m d c e : ℕ} (k : Fin (n + 1)) (hmd : m ≤ d) (hd : 0 < d) (he : 0 < e)\n  (hc : QuantyraNullCone.binomialUpperNumerator n k m d * e ≤ c * d ^ n) :\n  QuantyraNullCone.binomialUpperTailQ n k (↑m / ↑d) ≤ ↑c / ↑e",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_lower_integer_check",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_lower_integer_check {n m d c e : ℕ} (k : Fin (n + 1)) (hmd : m ≤ d) (hd : 0 < d) (he : 0 < e)\n  (hc : QuantyraNullCone.binomialLowerNumerator n k m d * e ≤ c * d ^ n) :\n  QuantyraNullCone.binomialLowerTailQ n k (↑m / ↑d) ≤ ↑c / ↑e",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_numerator_recurrence",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_numerator_recurrence {n k m d : ℕ} (hk : k < n) :\n  QuantyraNullCone.binomialNumerator n (k + 1) m d * ((k + 1) * (d - m)) =\n    QuantyraNullCone.binomialNumerator n k m d * (n - k) * m",
+          "axioms": "propext, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_numerator_division",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_numerator_division {n k m d : ℕ} (hk : k < n) (hmd : m < d) :\n  QuantyraNullCone.binomialNumerator n k m d * (n - k) * m / ((k + 1) * (d - m)) =\n    QuantyraNullCone.binomialNumerator n (k + 1) m d",
+          "axioms": "propext, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.binomial_report_check_sound",
+          "source": "QuantyraNullCone/BinomialArithmetic.lean",
+          "source_sha256": "354fcf7ea26f228b7d29b19170d23baa1e41151ca3e7968a8cae18a4ae0a91ff",
+          "accepted_type": "QuantyraNullCone.binomial_report_check_sound {n : ℕ} {delta : ℚ} {L U : Fin (n + 1) → ℚ}\n  (hcheck : QuantyraNullCone.binomialReportCheck n delta L U = true) : QuantyraNullCone.BinomialReportValid n delta L U",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "lem:testing",
+      "reviewed_scope": "Finite observation space, arbitrary common independent seed, total variation two-point inequality; scalar disjoint balls instantiated at the accepted thresholds.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.finite_seed_event_bound",
+          "source": "QuantyraNullCone/LowerTesting.lean",
+          "source_sha256": "82c9850904bfcbe296e7a16e0c6e5b767c7a0367947f22091535d753bcab99f5",
+          "accepted_type": "QuantyraNullCone.finite_seed_event_bound.{u_1, u_2} {α : Type u_1} {Ω : Type u_2} [Fintype α] [MeasurableSpace α]\n  [MeasurableSingletonClass α] [MeasurableSpace Ω] (μ ν : MeasureTheory.Measure α) (ξ : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure μ] [MeasureTheory.IsProbabilityMeasure ν] [MeasureTheory.IsProbabilityMeasure ξ]\n  {S : Set (α × Ω)} (hS : MeasurableSet S) :\n  (μ.prod ξ).real S - (ν.prod ξ).real S ≤ 1 / 2 * ∑ i, |μ.real {i} - ν.real {i}|",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.finite_seed_two_point_lower_bound",
+          "source": "QuantyraNullCone/LowerTesting.lean",
+          "source_sha256": "82c9850904bfcbe296e7a16e0c6e5b767c7a0367947f22091535d753bcab99f5",
+          "accepted_type": "QuantyraNullCone.finite_seed_two_point_lower_bound.{u_1, u_2} {α : Type u_1} {Ω : Type u_2} [Fintype α]\n  [MeasurableSpace α] [MeasurableSingletonClass α] [MeasurableSpace Ω] (μ ν : MeasureTheory.Measure α)\n  (ξ : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure μ] [MeasureTheory.IsProbabilityMeasure ν]\n  [MeasureTheory.IsProbabilityMeasure ξ] {A B : Set (α × Ω)} (hA : MeasurableSet A) (hB : MeasurableSet B)\n  (hAB : Disjoint A B) :\n  (1 - 1 / 2 * ∑ i, |μ.real {i} - ν.real {i}|) / 2 ≤ max ((μ.prod ξ).real Aᶜ) ((ν.prod ξ).real Bᶜ)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.finite_randomized_scalar_obstruction",
+          "source": "QuantyraNullCone/VolumeRateSampling.lean",
+          "source_sha256": "aa4b21b8f1404b2035e863ff91ce82a45bd23ab8016846520bbeaf75ea67857d",
+          "accepted_type": "QuantyraNullCone.finite_randomized_scalar_obstruction.{u_1, u_2} {Y : Type u_1} {Ω : Type u_2} [Fintype Y]\n  [MeasurableSpace Y] [MeasurableSingletonClass Y] [MeasurableSpace Ω] (mu nu : MeasureTheory.Measure Y)\n  [MeasureTheory.IsProbabilityMeasure mu] [MeasureTheory.IsProbabilityMeasure nu] (xi : MeasureTheory.Measure Ω)\n  [MeasureTheory.IsProbabilityMeasure xi] (hTV : 1 / 2 * ∑ y, |mu.real {y} - nu.real {y}| ≤ 1 / 4) (T : Y × Ω → ℝ)\n  (hT : Measurable T) {v0 v1 r : ℝ} (hgap : 2 * r < v1 - v0) :\n  3 / 8 ≤ max ((mu.prod xi).real {z | r < |T z - v0|}) ((nu.prod xi).real {z | r < |T z - v1|})",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.identical_law_randomized_scalar_obstruction",
+          "source": "QuantyraNullCone/ConfoundingMarked.lean",
+          "source_sha256": "cf34aa7e8c9b3c5bb7d8d12c9911978fb5c2220e631711b683b5356c84cb0a90",
+          "accepted_type": "QuantyraNullCone.identical_law_randomized_scalar_obstruction.{u_1, u_2} {Y : Type u_1} {Ω : Type u_2}\n  [MeasurableSpace Y] [MeasurableSpace Ω] (mu nu : MeasureTheory.Measure Y) [MeasureTheory.IsProbabilityMeasure mu]\n  (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi] (hLaw : mu = nu) (T : Y × Ω → ℝ)\n  (hT : Measurable T) {v0 v1 r : ℝ} (hgap : 2 * r < v1 - v0) :\n  1 / 2 ≤ max ((mu.prod xi).real {z | r < |T z - v0|}) ((nu.prod xi).real {z | r < |T z - v1|})",
+          "axioms": "propext,\n Classical.choice,\n Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "lem:family",
+      "reviewed_scope": "Admitted smooth polynomial densities, target integral, actual coordinate likelihood and second moment.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.calibration_density_in_class",
+          "source": "QuantyraNullCone/ConfoundingGeometry.lean",
+          "source_sha256": "f8615e09431163361c9dde2fb6472ad2e0c088dde6f2cdb91d7da053297ce3a0",
+          "accepted_type": "QuantyraNullCone.calibration_density_in_class {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) :\n  QuantyraNullCone.InDensityClass (QuantyraNullCone.calibrationDensity epsilon)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_marked_volume",
+          "source": "QuantyraNullCone/ConfoundingTargets.lean",
+          "source_sha256": "7ff94a37ab38021821e96b5c7055ea3c2a824e1d14acea0e01b529d312d66471",
+          "accepted_type": "QuantyraNullCone.calibration_marked_volume {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) :\n  (QuantyraNullCone.densityMeasure (QuantyraNullCone.calibrationDensity epsilon)).real\n      (QuantyraNullCone.markedIntervalSet QuantyraNullCone.nullChronology (0, 0) (1 / 2, 1 / 2)) =\n    1 / 4 + epsilon / 16",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_sample_withDensity",
+          "source": "QuantyraNullCone/VolumeRateLikelihood.lean",
+          "source_sha256": "97b37b3b2ffdfe1d90432b6994420e259325d296d98e21555a351e9091731e73",
+          "accepted_type": "QuantyraNullCone.calibration_sample_withDensity {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) (n : ℕ) :\n  QuantyraNullCone.sampleMeasure (QuantyraNullCone.calibrationDensity epsilon) n =\n    (QuantyraNullCone.lowerBaseSample n).withDensity fun sample =>\n      ENNReal.ofReal (QuantyraNullCone.calibrationLikelihood epsilon sample)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_likelihood_integral",
+          "source": "QuantyraNullCone/VolumeRateLikelihood.lean",
+          "source_sha256": "97b37b3b2ffdfe1d90432b6994420e259325d296d98e21555a351e9091731e73",
+          "accepted_type": "QuantyraNullCone.calibration_likelihood_integral {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) (n : ℕ) :\n  ∫ (x : Fin n → QuantyraNullCone.DiamondPoint),\n      QuantyraNullCone.calibrationLikelihood epsilon x ∂QuantyraNullCone.lowerBaseSample n =\n    1",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_product_divergence",
+          "source": "QuantyraNullCone/VolumeRateLikelihood.lean",
+          "source_sha256": "97b37b3b2ffdfe1d90432b6994420e259325d296d98e21555a351e9091731e73",
+          "accepted_type": "QuantyraNullCone.calibration_product_divergence {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) (n : ℕ) :\n  ∫ (x : Fin n → QuantyraNullCone.DiamondPoint),\n      (QuantyraNullCone.calibrationLikelihood epsilon x - 1) ^ 2 ∂QuantyraNullCone.lowerBaseSample n =\n    (1 + epsilon ^ 2 / 9) ^ n - 1",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "lem:sampling",
+      "reviewed_scope": "Actual full marked-order law contraction with unit detector; finite divergence bound; strict a_n/128 radius and 3/8 failure.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.volume_sampling_power_bound",
+          "source": "QuantyraNullCone/VolumeRateScale.lean",
+          "source_sha256": "90b2ede989197cf160c9dbe973cce38e4f96c204400e94464e79446c9db46112",
+          "accepted_type": "QuantyraNullCone.volume_sampling_power_bound {n : ℕ} (hn : 0 < n) : (1 + 1 / (36 * ↑n)) ^ n ≤ 36 / 35",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.volume_sampling_divergence_bound",
+          "source": "QuantyraNullCone/VolumeRateScale.lean",
+          "source_sha256": "90b2ede989197cf160c9dbe973cce38e4f96c204400e94464e79446c9db46112",
+          "accepted_type": "QuantyraNullCone.volume_sampling_divergence_bound {n : ℕ} (hn : 0 < n) :\n  ∫ (x : Fin n → QuantyraNullCone.DiamondPoint),\n      (QuantyraNullCone.calibrationLikelihood (QuantyraNullCone.volumeSamplingEpsilon n) x - 1) ^\n        2 ∂QuantyraNullCone.lowerBaseSample n ≤\n    1 / 35",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.full_marked_sampling_TV_bound",
+          "source": "QuantyraNullCone/VolumeRateSampling.lean",
+          "source_sha256": "aa4b21b8f1404b2035e863ff91ce82a45bd23ab8016846520bbeaf75ea67857d",
+          "accepted_type": "QuantyraNullCone.full_marked_sampling_TV_bound {n : ℕ} (hn : 0 < n) {m : ℕ}\n  (anchors : Fin m → QuantyraNullCone.DiamondPoint) :\n  1 / 2 *\n      ∑ code,\n        |(QuantyraNullCone.retainedMarkedOrderLaw QuantyraNullCone.lowerFlat (fun x => 1) n anchors).real {code} -\n            (QuantyraNullCone.retainedMarkedOrderLaw\n                  (QuantyraNullCone.calibrationDensity (QuantyraNullCone.volumeSamplingEpsilon n)) (fun x => 1) n\n                  anchors).real\n              {code}| ≤\n    1 / 4",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.physical_volume_sampling_rate_lower",
+          "source": "QuantyraNullCone/VolumeRateSampling.lean",
+          "source_sha256": "aa4b21b8f1404b2035e863ff91ce82a45bd23ab8016846520bbeaf75ea67857d",
+          "accepted_type": "QuantyraNullCone.physical_volume_sampling_rate_lower.{u_1} {R : ℝ} (hR : 1 ≤ R) {n : ℕ} (hn : 0 < n) {Ω : Type u_1}\n  [MeasurableSpace Ω] (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi]\n  (T : QuantyraNullCone.UnlabeledMarkedOrderCode n 2 × Ω → ℝ) (hT : Measurable T) :\n  ∃ rho pi,\n    QuantyraNullCone.VolumeRateModel R rho pi ∧\n      3 / 8 ≤\n        ((QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).prod xi).real\n          {z | QuantyraNullCone.volumeSamplingScale n / 128 < |T z - QuantyraNullCone.physicalMarkedVolume rho|}",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "lem:detector",
+      "reviewed_scope": "Global clamped detector, equal accepted submeasure and full laws, strict b_R/64 radius and 1/2 failure. R>1, R<=2.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.calibration_detector_bounds",
+          "source": "QuantyraNullCone/ConfoundingDetector.lean",
+          "source_sha256": "6c60bf18362d8deebd2e70cf03584f5ba95a47c3a92d8bfb387d481661e9efd7",
+          "accepted_type": "QuantyraNullCone.calibration_detector_bounds {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2)\n  (p : QuantyraNullCone.DiamondPoint) :\n  (1 - epsilon) / (1 + epsilon) ≤ QuantyraNullCone.calibrationDetector epsilon p ∧\n    QuantyraNullCone.calibrationDetector epsilon p ≤ 1",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_detector_on_diamond",
+          "source": "QuantyraNullCone/ConfoundingDetector.lean",
+          "source_sha256": "6c60bf18362d8deebd2e70cf03584f5ba95a47c3a92d8bfb387d481661e9efd7",
+          "accepted_type": "QuantyraNullCone.calibration_detector_on_diamond {epsilon : ℝ} (he : 0 ≤ epsilon) {p : QuantyraNullCone.DiamondPoint}\n  (hp : p ∈ QuantyraNullCone.diamond) :\n  QuantyraNullCone.calibrationDetector epsilon p = (1 - epsilon) / QuantyraNullCone.calibrationDensity epsilon p",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_detected_submeasure",
+          "source": "QuantyraNullCone/ConfoundingLaw.lean",
+          "source_sha256": "4867b2d6e533b8708b819cdb6091b5e71becd7a05527e14de197892ea7f42971",
+          "accepted_type": "QuantyraNullCone.calibration_detected_submeasure {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) :\n  ((QuantyraNullCone.densityMeasure (QuantyraNullCone.calibrationDensity epsilon)).withDensity fun x =>\n      ENNReal.ofReal (QuantyraNullCone.calibrationDetector epsilon x)) =\n    ENNReal.ofReal (1 - epsilon) • QuantyraNullCone.diamondVolume",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_full_marked_law_equal",
+          "source": "QuantyraNullCone/ConfoundingMarked.lean",
+          "source_sha256": "cf34aa7e8c9b3c5bb7d8d12c9911978fb5c2220e631711b683b5356c84cb0a90",
+          "accepted_type": "QuantyraNullCone.calibration_full_marked_law_equal {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2) (n : ℕ)\n  {m : ℕ} (anchors : Fin m → QuantyraNullCone.DiamondPoint) :\n  QuantyraNullCone.retainedMarkedOrderLaw QuantyraNullCone.lowerFlat (fun x => 1 - epsilon) n anchors =\n    QuantyraNullCone.retainedMarkedOrderLaw (QuantyraNullCone.calibrationDensity epsilon)\n      (QuantyraNullCone.calibrationDetector epsilon) n anchors",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.physical_volume_detector_rate_lower",
+          "source": "QuantyraNullCone/VolumeRateExperiment.lean",
+          "source_sha256": "8ce549628926d998540056b3c08a13a14697db479649c242f4caae92c7bd5670",
+          "accepted_type": "QuantyraNullCone.physical_volume_detector_rate_lower.{u_1} {R : ℝ} (hR : 1 < R) (hR2 : R ≤ 2) (n : ℕ) {Ω : Type u_1}\n  [MeasurableSpace Ω] (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi]\n  (T : QuantyraNullCone.UnlabeledMarkedOrderCode n 2 × Ω → ℝ) (hT : Measurable T) :\n  ∃ rho pi,\n    QuantyraNullCone.VolumeRateModel R rho pi ∧\n      1 / 2 ≤\n        ((QuantyraNullCone.retainedMarkedOrderLaw rho pi n QuantyraNullCone.volumeRateAnchors).prod xi).real\n          {z | QuantyraNullCone.calibrationBudget R / 64 < |T z - QuantyraNullCone.physicalMarkedVolume rho|}",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_pattern_submeasure_equal",
+          "source": "QuantyraNullCone/ConfoundingProcess.lean",
+          "source_sha256": "cd76d73d5c55e200bb43562512417258ec11ce8b6f8fbc711201b1cf2264a64b",
+          "accepted_type": "QuantyraNullCone.calibration_pattern_submeasure_equal {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2)\n  {N : ℕ} (code : Fin N → Bool) (fallback : QuantyraNullCone.DiamondPoint) :\n  MeasureTheory.Measure.map\n      (QuantyraNullCone.retainedOrderedView (fun x => 1 - epsilon) fallback (QuantyraNullCone.bitCount code))\n      ((MeasureTheory.Measure.pi fun x =>\n            (QuantyraNullCone.densityMeasure QuantyraNullCone.lowerFlat).prod\n              QuantyraNullCone.uniform01Measure).restrict\n        (QuantyraNullCone.membershipCode (QuantyraNullCone.retentionEvent fun x => 1 - epsilon) ⁻¹' {code})) =\n    MeasureTheory.Measure.map\n      (QuantyraNullCone.retainedOrderedView (QuantyraNullCone.calibrationDetector epsilon) fallback\n        (QuantyraNullCone.bitCount code))\n      ((MeasureTheory.Measure.pi fun x =>\n            (QuantyraNullCone.densityMeasure (QuantyraNullCone.calibrationDensity epsilon)).prod\n              QuantyraNullCone.uniform01Measure).restrict\n        (QuantyraNullCone.membershipCode\n            (QuantyraNullCone.retentionEvent (QuantyraNullCone.calibrationDetector epsilon)) ⁻¹'\n          {code}))",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_stopped_submeasure_equal",
+          "source": "QuantyraNullCone/ConfoundingProcess.lean",
+          "source_sha256": "cd76d73d5c55e200bb43562512417258ec11ce8b6f8fbc711201b1cf2264a64b",
+          "accepted_type": "QuantyraNullCone.calibration_stopped_submeasure_equal {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2)\n  (N n : ℕ) (fallback : QuantyraNullCone.DiamondPoint) :\n  MeasureTheory.Measure.map (QuantyraNullCone.stoppedRetainedView (fun x => 1 - epsilon) fallback n)\n      ((QuantyraNullCone.generatedStreamLaw (QuantyraNullCone.densityMeasure QuantyraNullCone.lowerFlat)).restrict\n        (QuantyraNullCone.retainedStopPrefix (fun x => 1 - epsilon) n ⁻¹' {N})) =\n    MeasureTheory.Measure.map\n      (QuantyraNullCone.stoppedRetainedView (QuantyraNullCone.calibrationDetector epsilon) fallback n)\n      ((QuantyraNullCone.generatedStreamLaw\n            (QuantyraNullCone.densityMeasure (QuantyraNullCone.calibrationDensity epsilon))).restrict\n        (QuantyraNullCone.retainedStopPrefix (QuantyraNullCone.calibrationDetector epsilon) n ⁻¹' {N}))",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.calibration_mixed_marked_equal",
+          "source": "QuantyraNullCone/ConfoundingProcess.lean",
+          "source_sha256": "cd76d73d5c55e200bb43562512417258ec11ce8b6f8fbc711201b1cf2264a64b",
+          "accepted_type": "QuantyraNullCone.calibration_mixed_marked_equal {epsilon : ℝ} (he : 0 ≤ epsilon) (heSmall : epsilon ≤ 1 / 2)\n  (q : MeasureTheory.Measure ℕ) [MeasureTheory.IsProbabilityMeasure q] (fallback : QuantyraNullCone.DiamondPoint)\n  {m : ℕ} (anchors : Fin m → QuantyraNullCone.DiamondPoint) :\n  MeasureTheory.Measure.map\n      (QuantyraNullCone.mixedRetainedObservable (fun x => 1 - epsilon) fallback\n        (QuantyraNullCone.countedMarkedOrder anchors))\n      (QuantyraNullCone.randomGeneratedLaw (QuantyraNullCone.densityMeasure QuantyraNullCone.lowerFlat) q) =\n    MeasureTheory.Measure.map\n      (QuantyraNullCone.mixedRetainedObservable (QuantyraNullCone.calibrationDetector epsilon) fallback\n        (QuantyraNullCone.countedMarkedOrder anchors))\n      (QuantyraNullCone.randomGeneratedLaw\n        (QuantyraNullCone.densityMeasure (QuantyraNullCone.calibrationDensity epsilon)) q)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    },
+    {
+      "label": "prop:empty",
+      "reviewed_scope": "Anchor relations remain in the zero-sample Dirac observation. Strict 1/128 obstruction; deterministic 1/8 upper error.",
+      "exports": [
+        {
+          "name": "QuantyraNullCone.physical_marked_volume_range",
+          "source": "QuantyraNullCone/VolumeRateEmpty.lean",
+          "source_sha256": "97f3e7234d77b94bca0d35aaadb31ad67b52103d36c6de03366b42f2c7ba7e41",
+          "accepted_type": "QuantyraNullCone.physical_marked_volume_range {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) : QuantyraNullCone.physicalMarkedVolume rho ∈ Set.Icc (1 / 8) (3 / 8)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.no_data_physical_volume_error",
+          "source": "QuantyraNullCone/VolumeRateEmpty.lean",
+          "source_sha256": "97f3e7234d77b94bca0d35aaadb31ad67b52103d36c6de03366b42f2c7ba7e41",
+          "accepted_type": "QuantyraNullCone.no_data_physical_volume_error {rho : QuantyraNullCone.DiamondPoint → ℝ}\n  (hK : QuantyraNullCone.InDensityClass rho) : |1 / 4 - QuantyraNullCone.physicalMarkedVolume rho| ≤ 1 / 8",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.empty_full_marked_law",
+          "source": "QuantyraNullCone/VolumeRateEmpty.lean",
+          "source_sha256": "97f3e7234d77b94bca0d35aaadb31ad67b52103d36c6de03366b42f2c7ba7e41",
+          "accepted_type": "QuantyraNullCone.empty_full_marked_law (mu : MeasureTheory.Measure QuantyraNullCone.DiamondPoint)\n  [MeasureTheory.IsProbabilityMeasure mu] {m : ℕ} (anchors : Fin m → QuantyraNullCone.DiamondPoint) :\n  MeasureTheory.Measure.map (QuantyraNullCone.sampledUnlabeledMarkedOrder anchors)\n      (MeasureTheory.Measure.pi fun x => mu) =\n    MeasureTheory.Measure.dirac (QuantyraNullCone.sampledUnlabeledMarkedOrder anchors fun i => i.elim0)",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        },
+        {
+          "name": "QuantyraNullCone.no_data_physical_volume_obstruction",
+          "source": "QuantyraNullCone/VolumeRateEmpty.lean",
+          "source_sha256": "97f3e7234d77b94bca0d35aaadb31ad67b52103d36c6de03366b42f2c7ba7e41",
+          "accepted_type": "QuantyraNullCone.no_data_physical_volume_obstruction.{u_1} {R : ℝ} (hR : 1 ≤ R) {Ω : Type u_1} [MeasurableSpace Ω]\n  (xi : MeasureTheory.Measure Ω) [MeasureTheory.IsProbabilityMeasure xi]\n  (T : QuantyraNullCone.UnlabeledMarkedOrderCode 0 2 × Ω → ℝ) (hT : Measurable T) :\n  ∃ rho pi,\n    QuantyraNullCone.VolumeRateModel R rho pi ∧\n      1 / 2 ≤\n        ((QuantyraNullCone.retainedMarkedOrderLaw rho pi 0 QuantyraNullCone.volumeRateAnchors).prod xi).real\n          {z | 1 / 128 < |T z - QuantyraNullCone.physicalMarkedVolume rho|}",
+          "axioms": "propext, Classical.choice, Quot.sound"
+        }
+      ]
+    }
+  ]
+}

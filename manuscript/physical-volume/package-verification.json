@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "portable_hash_verification": true,
+  "unpacked_source_build": true,
+  "identical_page_renders": 14,
+  "pdf_binary_identity_required": false,
+  "reason": "PDF metadata may change across builds; frozen PDF bytes remain authoritative",
+  "new_lean_invocations": 0,
+  "new_samples": 0
+}

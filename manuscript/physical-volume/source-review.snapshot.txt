@@ -1,0 +1,68 @@
+# Source comparison for physical volume accuracy
+
+2026-10-09. [S046](../stories/S046-targeted-statistical-extensions.md), [selected experiment](S046-physical-functional-rate-plan.md). The reviewed inference proofs support keeping a finite probability argument for this experiment. They do not resolve its lower bound over the original geometric class and full marked-order observations. Mathematical derivations and certification belong in `Quantyra/quantyra-null-cone-lean`.
+
+## Reviewed primary proofs
+
+### Imbens and Manski
+
+Read the [2003 CeMMAP working paper CWP09/03](https://cemmap.ac.uk/wp-content/uploads/2020/08/CWP0903.pdf), dated May 29: sections 2–4.2, Lemma 3.3, Assumptions 4.1–4.4, and the appendix proof chain through Lemmas 7.1–7.7 and Lemma 4.1. Coverage uses uniform normal approximation, consistent variance estimates and special control of estimated identification width. Lemma 7.7 supplies one-sided critical-value control near zero width. The missing-data example observes selection indicators for the generated sample. S046 instead observes retained events conditional on n, so that propensity estimate is unavailable. The [2004 journal record](https://doi.org/10.1111/j.1468-0262.2004.00555.x) was inspected, but the author-hosted journal PDF remains inaccessible; edition equivalence is unverified. The cited uniform-CLT reference was not independently audited. This comparison imports no theorem.
+
+### Stoye
+
+Read the [December 17, 2008 author preprint](https://stoye.economics.cornell.edu/docs/stoye-ecma2009-pre.pdf): sections 2–3, Assumptions 1–3, Lemmas 1–3, Propositions 1–3, Appendix A in full, and Appendix B's Gaussian formulas. The proofs separate shrinking-width sequences from widths large relative to sampling error. Local superefficiency supports the original interval; Proposition 3 uses width thresholding for the more general case. Variance floors and uniform normal approximation remain substantive assumptions. These are asymptotic coverage arguments, including near point identification, rather than finite binomial guarantees. The [2009 journal metadata](https://doi.org/10.3982/ECTA7347) and author publication listing were checked; the journal text was not compared line by line. A bounded correction search located no separate correction notice, which is not proof that none exists. S046 retains its finite statement uniform in n and R.
+
+### Tudball and coauthors
+
+Read [arXiv 1906.10159v4](https://arxiv.org/html/1906.10159v4), dated October 4, 2021: section 2, Appendices B–D, including Theorem 2.1 and its supporting proofs. Also inspected the [journal article](https://academic.oup.com/biomet/article/110/2/485/6649721), sections 2–3, and its linked 11-page Supplementary Material, including Proposition 3, Lemmas 2–3 and Theorem 1's proof. The argument combines a relaxed feasible set, asymptotic normal calibration and a bound on failure of set containment. It requires optimizer and variance assumptions. The result remains asymptotic in the journal edition. Its ratio-weight optimization is a relevant comparison, but the general detector class in S046 has not been reduced to its finite-dimensional optimization hypotheses. S046 must establish its own finite joint guarantee; a pointwise constraint test alone does not discharge a simultaneous-set requirement. Invoked Shapiro results were identified, not independently re-proved. Journal publication was online in 2022 and in volume 110(2), 2023.
+
+### Bounded selection probabilities
+
+[Aronow and Lee, Biometrika 100(1), 2013, pages 235–240](https://doi.org/10.1093/biomet/ass064): Dan supplied the purchased six-page journal article and its two-page supplement in Downloads on 2026-10-09 (Hawaii). All pages and all four proofs are inspected. Proposition 1's appendix on pages 239–240 optimizes the normalized weighted mean, reduces to sorted endpoint weights and proves the threshold rule. Page 237 explicitly gives the same binary selection transforms used by our physical-volume report.
+
+The supplement proves Lemma 1's equal-outcome weight property, Proposition 2's grouped-weight optimizer using inequalities (B1)–(B2), and Proposition 3's convergence under replicated finite-population sampling. The latter uses the strong law and strict threshold conditions to stabilize an optimal weight pattern. Lower counterparts follow by symmetry. Equal weight bounds are handled directly in our binary algebra; no strict-improvement argument is imported at R=1. The standard strong law was not separately re-proved for this source audit. These proofs provide no finite 95% confidence calibration or uniform geometric/full-observation minimax result.
+
+Article SHA256: `a6bcd1a2e9e0e5c43d7b90d7227b6456e4d97629b6b19a71612b822535ebd507`. Supplement ZIP SHA256: `4ebf395b7f880b544fe626b79a95e6c5c0cffa8b01c77028b6429cc7394502ba`. Its sole member, `Bka-12-198_supplement.pdf`, has SHA256 `9c3b23c711ab82a5ebbeda74ae4f51b0b1d56af148647608da990ae20dfb0ef1`. Purchased files, extraction, rendered supplement pages and receipts remain private outside Git.
+
+The [satellite comparison](https://github.com/Quantyra/quantyra-null-cone-lean/blob/64d6e896ce9902551bbb10d9f3940f891834f897/notes/physical-volume-selection-comparison.md) derives the binary correspondence. Applying these same monotone transforms to the same exact-binomial certificate yields exactly the existing practical report for every input. A raw plug-in sensitivity interval has no such finite confidence guarantee; the admitted flat model with R=1 and n=1 gives zero coverage of its quarter-square target. The full source therefore supplies no distinct finite-coverage comparator requiring another experiment. Generic weight sharpness still does not establish sharpness in K given the full marked-order law.
+
+## Consequences for the selected experiment
+
+The following are decisions for our proof and comparison, not new conclusions attributed to the reviewed papers.
+
+| Requirement | Consequence |
+| --- | --- |
+| Original density class K and fixed quarter-square interval | The retention transforms supply valid outer bounds. Their sharpness within K, given the entire marked-order law, is unproved. Do not identify their width with the minimax radius. |
+| Full marked order | The upper estimator may discard relations and use the membership count. The lower bound must control the full observation law, or the stronger latent-coordinate experiment, before information is discarded. |
+| Conditional retained sample | No generated-event count, rejection indicators, latent coordinates or calibrated clock may enter an estimator or comparator unless the experiment is explicitly changed. |
+| Uniform R approaching 1 | Combine separate sample-noise and detector-confounding arguments with constants independent of R and n. A theorem for each fixed positive bias is insufficient. |
+| Finite confidence | Retain exact binomial inversion or the accepted finite concentration bound. An asymptotic interval may be a labeled diagnostic, but does not replace a comparator with the specified finite guarantee. |
+| Contribution | Any contribution must be stated at the level actually proved: geometric admissibility, full observation laws, finite joint bounds, executable calibration and formal certification. Neither generic partial identification nor bounded-weight mean estimation is a new topic here. |
+
+This comparison does not establish a sharp identified set, shortest confidence interval, optimal monetary calibration policy, or physical sensor advantage. Those claims are outside the selected result. No new samples were generated and the S041 pilot remains frozen.
+
+## Formal dependencies and accepted endpoints
+
+The initial dependency inspection used baseline `874b1157788cd1869c32d84cfa20ae96164d4481` (532 accepted exports). [S041 completion](S041-physical-functional-completion-audit.md) now adds the accepted exact-binomial chain at `de9631a013b4799fb498b4aa836c25af0a17d8a2`, with 577 exports. The generic components below support the subsequently accepted S046 endpoints recorded in the joint-rate audit.
+
+| Existing component | Reuse and new obligation |
+| --- | --- |
+| `MarkedVolume.lean`: `iid_indicator_hoeffding` and `marked_interval_actual_law_hoeffding` | Finite count concentration. [S046 partial acceptance](S046-rate-certification-progress.md) now adds the quotient scalar estimator, target range and explicit bias/radius calculation for the full uniform upper endpoint. |
+| `MarkedThinning.lean`: `retained_physical_identification` and `retained_marked_volume_95` | Normalized retained-measure and physical-volume bounds. S040 now accepts finite generated counts, independent random-count/Poisson count-tuple composition, unconditional coverage and the [explicit Laplace functional](S040-laplace-certification-progress.md); [first-n stopping/termination and its physical coverage are also accepted](S040-stopping-certification-progress.md). [S040 completion](S040-imperfect-observation-completion-audit.md) now accepts admissible full-law confounding and physical target separation. |
+| `LowerDataProcessing.lean`: `finite_observation_L1_bound` and `integral_abs_le_sqrt_second` | Generic finite-observation contraction and second-moment bound. [S046 joint acceptance](S046-joint-rate-certification.md) now supplies actual sampling-likelihood identities, integrability, exact moments and full marked-order contraction for S040's admissible polynomial family. |
+| `LowerTesting.lean`: `finite_seed_two_point_lower_bound` | Allows arbitrary independent probability-valued randomization. [S046 joint acceptance](S046-joint-rate-certification.md) now supplies measurable disjoint scalar-success events, admitted alternatives and the actual randomized sampling obstruction. |
+| Old `lower_order_TV_bound` and specialized product-likelihood results | These concern the old alternative family and unmarked order. They do not already prove the new marked functional lower endpoint. |
+
+S040 now accepts the shared geometric family, globally valid compensating detector, full marked observation and randomized identical-law obstruction. [S040 completion audit](S040-imperfect-observation-completion-audit.md). S046 now accepts the [R-dependent detector specialization and uniform upper endpoint](S046-rate-certification-progress.md). Its [product-likelihood comparison, sampling lower bound, combined endpoint and zero-sample result](S046-joint-rate-certification.md) are now also GCP certified. The completion audit combines these accepted components with the completed source, finite-validation and disposition requirements; reusable components alone did not close the story.
+
+The implementation sequence is: admissible geometric alternatives and target separation; finite sample-law comparison; exact detector-confounding alternatives for every R; randomized scalar testing; joint upper/lower endpoint and n=0 convention; GCP acceptance. The [ordinary satellite derivation](https://github.com/Quantyra/quantyra-null-cone-lean/blob/46eeac7a5b995e85a9034f2f9b0be72f273853c5/notes/physical-volume-calibration-rate.md) now supplies these mathematical arguments with explicit uniform constants. The combined S046 endpoint now has an exact-source formal mapping and GCP acceptance in the separate joint-rate audit. No new endpoint is certified by this source review alone.
+
+Access follow-up, 2026-10-09: earlier publisher/preprint attempts were inaccessible. Dan supplied the purchased article and then the separate supplementary ZIP. Both are now fully inspected. The source-access item is resolved; no purchased content or account credentials were added to either public repository.
+
+## Delivery and remaining work
+
+The scoped primary-proof comparison and comparator review are complete within the editions listed above. No equivalence with unread Imbens–Manski/Stoye journal editions is asserted; the current claims rely on the identified working-paper/preprint proofs. The [mathematical result](S046-joint-rate-certification.md) and [frozen finite study](S046-finite-validation-progress.md) are accepted. No additional comparator or protocol amendment is required by the inspected sources under the frozen observations and finite-coverage requirement. This is not an exhaustive literature or optimal-interval claim. The [manuscript decision](https://github.com/Quantyra/quantyra-null-cone-lean/blob/64d6e896ce9902551bbb10d9f3940f891834f897/notes/physical-volume-manuscript-decision.md) recommends a separate methods/theory paper for subsequent preparation. [S046 completion](S046-completion-audit.md).
+
+The earlier source-study continuation was delivered only as local planning edits because satellite/Git/GCP access was restricted. Its reported 532-export baseline and unverified cloud state were historical observations. Access is now restored, and S041's completion audit verifies 577 accepted exports, the satellite push and task-owned shutdown. This source comparison itself supplies no theorem or experiment; the separate GCP progress audit records the accepted S046 components.
+
+Remaining to-do list: none for the scoped source/comparator review. The selected roadmap still requires S039 and S042–S044; S047 is queued and S048 preparation is proposed separately.

@@ -105,3 +105,5 @@ evidence/gcp/space-qubit-*/** -text -whitespace
 QuantyraNullCone/Qubit*.lean text eol=lf
 notes/quantum-measurement* text eol=lf
 tools/*quantum_measurement*.py text eol=lf
+manuscript/physical-volume/** -text
+manuscript/physical-volume/*.log -whitespace

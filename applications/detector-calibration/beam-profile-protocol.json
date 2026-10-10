@@ -1,0 +1,31 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "scope": "Ordinary feasibility of a detector-only multicategory beam-profile report, allowing off-target records and imperfect marginal balance. No comparative advantage or physical calibration pass is presumed.",
+  "prior_information": "The beam development subset and its reconstruction have been inspected. The reference count 56907 is known. The new endpoint formulas, convex lift and exact contamination witness are derived before this check. The raw DUT3 cluster count and its cardinality comparison have not been computed for this gate. This is retrospective analysis, not a new experiment or blinded measurement.",
+  "model_grid": {
+    "bands": [["9/32", "11/32"], ["3/16", "5/16"]],
+    "relative_retention_bounds": ["1", "9/8", "5/4", "2"],
+    "balance_errors": ["0", "1/100", "1/50"],
+    "contamination_bounds": ["0", "1/100", "1/20", "1/10"]
+  },
+  "checks": [
+    "Construct the entire attainable null polygon using exact rational corner images and a convex hull; derive why this represents the continuous nuisance set.",
+    "For all 96 model cases, compare four exact conditional endpoints with an independent homogeneous linear-program formulation; also compare support values in 16 fixed directions. Require successful solves and errors/residuals <= 1e-9.",
+    "Verify recovery of the earlier bounds at zero balance error and contamination.",
+    "Check the exact same-law witness at a=9/32, d=0, R=5/4 and contamination 20/171. The observed categorical law must equal the earlier pure-thinning alternative with a=1/4, d=0, R=5/4.",
+    "Compute the exact minimum contamination needed for that observed law to enter the null at balance errors 0, 1/100, 1/50, 3/100, 1/25 and 1/20. Independently check each minimum by an LP over the continuous lifted model.",
+    "On Merged_small only, count all DUT3 clusters from finite x coordinates and independently from positive n_hits. Compare the known complete-reference tuple count with the observed cluster count. Report max(0, 1-Nref/Nobserved) as a cardinality bound for this specific one-to-one record matching, not as a physical noise-rate or calibrated population-probability estimate."
+  ],
+  "development_input": {
+    "name": "Merged_small.h5",
+    "sha256": "1b4f472b6b6727e56310453f57863ab365b78261edaa538c654b7c2f3c03c3a8",
+    "source_commit": "9ab568b787a9c018207dff6a33b9ef2148153e1a"
+  },
+  "reference_result": {
+    "path": "beam-rebuild-results.json",
+    "sha256": "00df72d7c30240aaba17865972716a7e08275fc57b45055403fa52fc6b123686"
+  },
+  "decision_gate": "Do not transfer the old pure-thinning test to all detector clusters without an operational selection/contamination bridge. Do not attribute reference-only filtering to a detector-only instrument. If the proposed mapping cannot satisfy a useful model envelope, change or park that mapping before using reserved measurements. A quantitative benefit still needs a matched comparison with full multinomial nuisance inference.",
+  "boundaries": "No detection or association outcomes from the other 102700 events are read. No ROI tuning, physical efficiency estimate, fitted beam anomaly, calibration certificate, Lean invocation or publication is part of this check. All prior artifacts remain frozen."
+}

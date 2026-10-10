@@ -121,8 +121,15 @@ def main():
     for name in ["lidar-range-protocol.json", "lidar_range_screen.py", "lidar_range_audit.py",
                  "lidar-range-results.json", "lidar-range-audit.json", "lidar-source-manifest.json"]:
         frozen = subprocess.check_output(["git","show",f'{protocol["parent_commit"]}:applications/detector-calibration/{name}'],cwd=HERE)
-        assert parent.hashlib.sha256(frozen).hexdigest() == parent.sha(HERE/name)
-        parents[name] = parent.sha(HERE/name)
+        working = (HERE/name).read_bytes()
+        # This older manifest has a CRLF working copy and an LF Git blob.
+        # Preserve it; all executable and result dependencies remain byte-exact.
+        if name == "lidar-source-manifest.json":
+            assert frozen.replace(b"\r\n",b"\n") == working.replace(b"\r\n",b"\n")
+        else:
+            assert frozen == working
+        parents[name] = {"working_sha256": parent.sha(HERE/name),
+                         "git_sha256": parent.hashlib.sha256(frozen).hexdigest()}
     for key in ["high_flux", "pulse"]:
         assert parent.sha(args.cache_dir/original[key]["path"]) == original[key]["sha256"]
     _, models, upstream_hashes = parent.source_modules(args.upstream_root, original)

@@ -1,0 +1,67 @@
+0
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:134:0: 'QuantyraNullCone.closure_lorentzDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:135:0: 'QuantyraNullCone.closedDensityMeasure3_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:136:0: 'QuantyraNullCone.closedDensityMeasure3_map_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:137:0: 'QuantyraNullCone.InDensityClass3.closedDensityMeasure_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:138:0: 'QuantyraNullCone.InDensityClass3.closedDensity_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:139:0: 'QuantyraNullCone.InDensityClass3.densityMeasure_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:140:0: 'QuantyraNullCone.InDensityClass3.densityMeasure_open_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:141:0: 'QuantyraNullCone.InDensityClass3.closedDensity_isOpenPosMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:142:0: 'QuantyraNullCone.quotientDensityMeasure3_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:143:0: 'QuantyraNullCone.InDensityClass3.quotientDensity_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:144:0: 'QuantyraNullCone.InDensityClass3.quotientDensity_isOpenPosMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientMeasure.lean:145:0: 'QuantyraNullCone.InDensityClass3.quotientDensity_open_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2999/3003] Built QuantyraNullCone.LorentzQuotientLaws (9.9s)
+info: QuantyraNullCone/LorentzQuotientLaws.lean:128:0: 'QuantyraNullCone.measurable_closedSampleVal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:129:0: 'QuantyraNullCone.InDensityClass3.closedSample_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:130:0: 'QuantyraNullCone.InDensityClass3.closedSample_map_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:131:0: 'QuantyraNullCone.measurable_quotientSampleProjection3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:132:0: 'QuantyraNullCone.InDensityClass3.quotientSample_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:133:0: 'QuantyraNullCone.InDensityClass3.quotientSample_map_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:134:0: 'QuantyraNullCone.measurable_quotientSampledOrder3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:135:0: 'QuantyraNullCone.quotientSampledOrder3_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:136:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:137:0: 'QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:138:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:139:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3000/3003] Built QuantyraNullCone.LorentzDistortion (4.0s)
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3001/3003] Built QuantyraNullCone.LorentzDistortionZero (2.7s)
+info: QuantyraNullCone/LorentzDistortionZero.lean:22:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3002/3003] Built QuantyraNullCone.LorentzDistortionIsomorphy (2.7s)
+info: QuantyraNullCone/LorentzDistortionIsomorphy.lean:25:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3003/3003] Built QuantyraNullCone.LorentzZeroOrderLaws (4.6s)
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:53:0: 'QuantyraNullCone.orderLaw3_eq_of_time_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:54:0: 'QuantyraNullCone.geometricDistortion3_zero_orderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:55:0: 'QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3003 jobs).
+TERMINAL_EXIT=0

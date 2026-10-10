@@ -1,0 +1,14 @@
+{"run": "space-zero3-dev2-20261010T081545Z-d458a5", "verified_files": 224, "removed_source_bytes": 1442968, "archive_sha256": "664e24eb9cc6bc18356299cfcecaa0d1faf9c05ec39c391fbecc0e326dbd0044"}
+{"run": "space-zero3-dev3-20261010T081834Z-d98aae", "verified_files": 224, "removed_source_bytes": 1443130, "archive_sha256": "49017d57997eb899cead271547c011debd8f72f63ca518b3dfa1839a35fe7773"}
+{"run": "space-control3-dev1-20261010T062810Z-f6eed3", "verified_files": 206, "removed_source_bytes": 1314464, "archive_sha256": "9663bcf659b9828a89a0bb735ebd51aee4767860c4bc215378cb6467f80f53c2"}
+{"run": "space-control3-dev2-20261010T063133Z-161f4d", "verified_files": 207, "removed_source_bytes": 1322393, "archive_sha256": "be1577f3783b39eb91fb810f342b35bf9bb71f4fb638cff3a888a6c70de22a06"}
+{"run": "space-control3-dev3-20261010T063440Z-47b19e", "verified_files": 208, "removed_source_bytes": 1333147, "archive_sha256": "4645ef3d755df08fb0b00ed6eda4832d29a53924e184feaf5e0c3c6d6f2c7a26"}
+{"run": "space-control3-dev4-20261010T063642Z-e038e3", "verified_files": 208, "removed_source_bytes": 1335137, "archive_sha256": "3cd2ad451fe40e7266d42d7e43bbb2d5c55a460f4ee37efd14ccca58d383fe76"}
+{"run": "space-control3-dev5-20261010T063839Z-1af7e7", "verified_files": 209, "removed_source_bytes": 1342943, "archive_sha256": "fffed99bb56806b5e90966c20f9a11cd3dde9d16a6d888388155a659a1086d49"}
+{"run": "space-control3-dev6-20261010T064054Z-e3bb38", "verified_files": 209, "removed_source_bytes": 1350484, "archive_sha256": "a4c59548fef8a3a10515bf75c299441f4037f7d16575ff47af891fc6ce163641"}
+{"run": "space-control3-dev7-20261010T064258Z-6e7ca2", "verified_files": 209, "removed_source_bytes": 1350543, "archive_sha256": "327ee76b37376d14d19bbd4cf0fa1e9c5a181a94348cc706dcfeb1bc8eeaa37e"}
+{"run": "space-quotient3-dev1-20261010T065833Z-a8df0a", "verified_files": 210, "removed_source_bytes": 1361063, "archive_sha256": "0aead9e59b3aacc46d5e200ec286f5cd4fc1cfb83dadfa9621e8bd27f6f7e34e"}
+{"run": "space-quotient3-dev2-20261010T070257Z-46cb85", "verified_files": 211, "removed_source_bytes": 1368574, "archive_sha256": "77dfa28b556af7de7899e2aa422243bc5c03219c6e15456be2476556162dc46f"}
+{"run": "space-quotient3-dev3-20261010T070532Z-1bca66", "verified_files": 211, "removed_source_bytes": 1375017, "archive_sha256": "2f522fd2979e0b60c141a371629be5a3322be0fcf14f18e059331c637bf05742"}
+Preserved all immutable archives, manifests, logs, receipts, shared dependencies and caches; removed only verified redundant extracted development source files.
+Disk: usage(total=206900281344, used=206322278400, free=561225728)

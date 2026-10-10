@@ -1,0 +1,10 @@
+{"run": "space-zero3-dev1-20261010T080904Z-fef5cf", "verified_files": 221, "removed_source_bytes": 1428030, "archive_sha256": "201d7a416b84c0f9539af483809054411f6d91a8be9d535d9afc27dd38855d50"}
+{"run": "space-glue3-dev1-20261010T074847Z-785695", "verified_files": 215, "removed_source_bytes": 1407456, "archive_sha256": "417bdec7ff6d6a5110321536d4768e240240a2833843d2115a1072dfaf598b11"}
+{"run": "space-glue3-dev2-20261010T075259Z-cb0e20", "verified_files": 217, "removed_source_bytes": 1416589, "archive_sha256": "f96d26947d6edc120dacd1c0a14888c90e74a95da146be40be6fec56a5616d02"}
+{"run": "space-glue3-dev3-20261010T075558Z-cfd099", "verified_files": 217, "removed_source_bytes": 1416657, "archive_sha256": "c2788b0384a349602e3212c688cf1cf15b4cf8336e5f554858e197c3e0aad0d3"}
+{"run": "space-qloss3-dev1-20261010T071842Z-456cea", "verified_files": 212, "removed_source_bytes": 1381832, "archive_sha256": "842bd022d77341c10122394cf4f6a1223ab1546dfb0fabdb36effb3184431558"}
+{"run": "space-qloss3-dev2-20261010T072358Z-862e4a", "verified_files": 214, "removed_source_bytes": 1403181, "archive_sha256": "aa3f12edee915fd36f5df7c39a754e7ef9656ed32f14f87d96ce6dc574c27904"}
+{"run": "space-qloss3-dev3-20261010T072807Z-6afd40", "verified_files": 214, "removed_source_bytes": 1403056, "archive_sha256": "1ef0cc16ec5fa76318deb253230b4326145bf627eb33ced81a97b129ed70a44d"}
+{"run": "space-qloss3-dev4-20261010T073120Z-e4f8ed", "verified_files": 214, "removed_source_bytes": 1403136, "archive_sha256": "144077b973c427c4a495d0859c0ddbf3b9ec8d7ffd46804bf8568330a0482bb6"}
+Preserved all immutable archives, manifests, logs, receipts, shared dependencies and caches; removed only verified redundant extracted development source files.
+Disk: usage(total=206900281344, used=206334914560, free=548589568)

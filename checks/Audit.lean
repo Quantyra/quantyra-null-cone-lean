@@ -2530,3 +2530,53 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.geometricDistortion3_triangle
 #check QuantyraNullCone.geometricDistortion3_reverse_triangle
 #print axioms QuantyraNullCone.geometricDistortion3_reverse_triangle
+
+-- S042: zero-distortion attainment and actual time isomorphy.
+#check QuantyraNullCone.timeBadPairs_antitone
+#print axioms QuantyraNullCone.timeBadPairs_antitone
+#check QuantyraNullCone.time_eq_ae_of_bad_zero
+#print axioms QuantyraNullCone.time_eq_ae_of_bad_zero
+#check QuantyraNullCone.IsZeroTimeCoupling.bad_eq_zero
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.bad_eq_zero
+#check QuantyraNullCone.IsZeroTimeCoupling.loss_eq_zero
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.loss_eq_zero
+#check QuantyraNullCone.isOpen_timeBadPairs
+#print axioms QuantyraNullCone.isOpen_timeBadPairs
+#check QuantyraNullCone.isTimeCoupling_of_tendsto
+#print axioms QuantyraNullCone.isTimeCoupling_of_tendsto
+#check QuantyraNullCone.timeCoupling_selfProd_tendsto
+#print axioms QuantyraNullCone.timeCoupling_selfProd_tendsto
+#check QuantyraNullCone.timeBadPairs_limit_eq_zero
+#print axioms QuantyraNullCone.timeBadPairs_limit_eq_zero
+#check QuantyraNullCone.isZeroTimeCoupling_of_tendsto
+#print axioms QuantyraNullCone.isZeroTimeCoupling_of_tendsto
+#check QuantyraNullCone.exists_zeroTimeCoupling_of_loss_zero
+#print axioms QuantyraNullCone.exists_zeroTimeCoupling_of_loss_zero
+#check QuantyraNullCone.timeDistortionLoss_eq_zero_iff
+#print axioms QuantyraNullCone.timeDistortionLoss_eq_zero_iff
+#check QuantyraNullCone.geometricDistortion3_eq_zero_iff
+#print axioms QuantyraNullCone.geometricDistortion3_eq_zero_iff
+#check QuantyraNullCone.time_support_prod_mem
+#print axioms QuantyraNullCone.time_support_prod_mem
+#check QuantyraNullCone.IsTimeCoupling.support_left_surjective
+#print axioms QuantyraNullCone.IsTimeCoupling.support_left_surjective
+#check QuantyraNullCone.IsTimeCoupling.support_right_surjective
+#print axioms QuantyraNullCone.IsTimeCoupling.support_right_surjective
+#check QuantyraNullCone.IsZeroTimeCoupling.time_eq_on_support
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.time_eq_on_support
+#check QuantyraNullCone.IsZeroTimeCoupling.support_left_unique
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.support_left_unique
+#check QuantyraNullCone.IsZeroTimeCoupling.support_right_unique
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.support_right_unique
+#check QuantyraNullCone.IsZeroTimeCoupling.exists_homeomorph
+#print axioms QuantyraNullCone.IsZeroTimeCoupling.exists_homeomorph
+#check QuantyraNullCone.timeDistortionLoss_eq_zero_iff_homeomorph
+#print axioms QuantyraNullCone.timeDistortionLoss_eq_zero_iff_homeomorph
+#check QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph
+#print axioms QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph
+#check QuantyraNullCone.orderLaw3_eq_of_time_isometry
+#print axioms QuantyraNullCone.orderLaw3_eq_of_time_isometry
+#check QuantyraNullCone.geometricDistortion3_zero_orderLaw_eq
+#print axioms QuantyraNullCone.geometricDistortion3_zero_orderLaw_eq
+#check QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq
+#print axioms QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq

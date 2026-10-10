@@ -1,0 +1,7 @@
+{
+  "run": "space-zero3-dev3-20261010T081834Z-d98aae",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzDistortionIsomorphy",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

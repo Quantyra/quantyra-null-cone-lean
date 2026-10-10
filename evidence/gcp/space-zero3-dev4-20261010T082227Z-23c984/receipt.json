@@ -1,0 +1,7 @@
+{
+  "run": "space-zero3-dev4-20261010T082227Z-23c984",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzZeroOrderLaws",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

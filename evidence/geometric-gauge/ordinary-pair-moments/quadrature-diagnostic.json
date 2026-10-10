@@ -1,0 +1,29 @@
+{
+  "status": "PASS_DETERMINISTIC_QUADRATURE_DIAGNOSTIC",
+  "random_samples": 0,
+  "results": [
+    {
+      "coefficient": 0,
+      "quadrature": 0.11428571428573314,
+      "exact": "4/35",
+      "absolute_difference": 1.8859913630819847e-14,
+      "reported_outer_error_sum": 6.509795994521141e-12
+    },
+    {
+      "coefficient": 1,
+      "quadrature": 0.018701298701300783,
+      "exact": "36/1925",
+      "absolute_difference": 2.0816681711721685e-15,
+      "reported_outer_error_sum": 2.6772339175055128e-12
+    },
+    {
+      "coefficient": 2,
+      "quadrature": -0.000402264402269236,
+      "exact": "-151/375375",
+      "absolute_difference": 4.8336985455921244e-15,
+      "reported_outer_error_sum": 3.748023135872143e-12
+    }
+  ],
+  "elapsed_seconds": 0.10810679999849526,
+  "scope": "Numerically integrates the pre-radial-reduction moment formula; no rigorous quadrature enclosure or geometric proof."
+}

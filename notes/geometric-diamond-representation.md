@@ -1,6 +1,6 @@
 # The diamond boundary and qualitative conditioning
 
-S042, 2026-10-09 (Hawaii). **Ordinary mathematical work; not GCP certified.** Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus remains missing. S042 is incomplete and S043 remains gated.
+S042, 2026-10-09 (Hawaii). **Ordinary geometric work; not GCP certified.** The separate [finite labeling component](geometric-label-certification.md) now has GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
 
 ## Model and dependencies
 
@@ -77,7 +77,7 @@ This is a forward continuity statement in the fixed normalized model. It is not 
 
 ## Finite labels and qualitative conditioning
 
-For fixed n the iid labeled order law is invariant under vertex permutations. Point masses are constant on each finite isomorphism orbit, and each equals the orbit's unlabeled mass divided by its size. Summing absolute differences gives equality of labeled and unlabeled total variation. In particular equal unlabeled laws imply equal labeled laws. No infinite generic sequence is randomly reordered. The existing QuotientTV finite fiber lemma supplies a formal pattern; the actual 2+1 iid instantiation remains uncertified.
+For fixed n the iid labeled order law is invariant under vertex permutations. Point masses are constant on each finite isomorphism orbit, and each equals the orbit's unlabeled mass divided by its size. Summing absolute differences gives equality of labeled and unlabeled total variation. In particular equal unlabeled laws imply equal labeled laws. No infinite generic sequence is randomly reordered. The existing QuotientTV finite fiber lemma supplies the formal pattern. Its actual 2+1 iid instantiation and both law-equality directions are now [GCP certified](geometric-label-certification.md) for finite density measures, with explicit original-class corollaries. The continuous-class measure and geometric arguments still require their own formalization.
 
 B is compact by uniform boundedness, a common Lipschitz constant and closed range/integral constraints. For every n, diagonal sample coupling gives
 
@@ -94,4 +94,4 @@ This avoids assuming smooth limits, but supplies **no explicit N(epsilon), gamma
 
 A possible single-observation frequency route must also handle dependence. Uniform random labeling of a canonical representative, using an explicit independent seed, has exactly the original iid labeled order law by finite exchangeability. Disjoint k-point blocks then have iid law_k distributions, permitting coordinatewise Bernoulli bounds and a finite union bound for empirical frequencies. A deterministic data-dependent partition of a canonical order cannot simply be called iid. This is a randomized route, not a certified frequency theorem or implemented estimator.
 
-Remaining to-do list: independently audit these ordinary arguments and external proof dependencies; certify the representation, gauge/label and continuity endpoints on GCP; obtain a useful explicit inverse or a rigorous scoped obstruction; resolve S043's gate. No new publication or physical application is claimed complete.
+Remaining to-do list: audit these ordinary geometric arguments and external proof dependencies; certify representation, gauge and continuity endpoints on GCP; audit/certify the restricted finite route or obtain a rigorous scoped obstruction; resolve S043's gate. The finite labeling bridge is accepted, but the random-label/disjoint-block observation construction is separate. No new publication or physical application is claimed complete.

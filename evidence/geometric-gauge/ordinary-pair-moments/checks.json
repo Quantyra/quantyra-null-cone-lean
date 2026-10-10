@@ -1,0 +1,47 @@
+{
+  "status": "PASS_EXACT_ARITHMETIC_ONLY",
+  "random_samples": 0,
+  "rest_time_second": "1/10",
+  "rest_space_coordinate_second": "3/20",
+  "ordered_pair_probability_coefficients": [
+    "4/35",
+    "36/1925",
+    "-151/375375"
+  ],
+  "comparable_pair_derivative_lower": "13738/375375",
+  "geometric_forward_factor": "9/10",
+  "geometric_to_pair_probability_factor": "675675/27476",
+  "pair_size": 2,
+  "formal_certification": false,
+  "scope": "Checks arithmetic after stated geometric reductions; does not prove those reductions.",
+  "source_sha256": "ed314c6fb211fdaace8307d155170c678ce2d91884b0c4f594236abc0e889f4b",
+  "quadrature": {
+    "status": "PASS_DETERMINISTIC_QUADRATURE_DIAGNOSTIC",
+    "random_samples": 0,
+    "results": [
+      {
+        "coefficient": 0,
+        "quadrature": 0.11428571428573314,
+        "exact": "4/35",
+        "absolute_difference": 1.8859913630819847e-14,
+        "reported_outer_error_sum": 6.509795994521141e-12
+      },
+      {
+        "coefficient": 1,
+        "quadrature": 0.018701298701300783,
+        "exact": "36/1925",
+        "absolute_difference": 2.0816681711721685e-15,
+        "reported_outer_error_sum": 2.6772339175055128e-12
+      },
+      {
+        "coefficient": 2,
+        "quadrature": -0.000402264402269236,
+        "exact": "-151/375375",
+        "absolute_difference": 4.8336985455921244e-15,
+        "reported_outer_error_sum": 3.748023135872143e-12
+      }
+    ],
+    "elapsed_seconds": 0.09701180000411114,
+    "scope": "Numerical moment integral only; no rigorous enclosure or geometric proof."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "campaign_ownership": {
+    "initial_state": "TERMINATED",
+    "started_for_task": true
+  },
+  "campaign_ownership_run": "space-zero3-dev1-20261010T080904Z-fef5cf",
+  "no_other_lean_work": true,
+  "acceptance_collected_before_shutdown": true,
+  "initial_cleanup_state": "RUNNING",
+  "stop_verified": true,
+  "final_state": "TERMINATED",
+  "temporary_build_storage": "isolated GCP /dev/shm; sources and logs persistent",
+  "verified_utc": "2026-10-10T08:33:57.808729+00:00"
+}

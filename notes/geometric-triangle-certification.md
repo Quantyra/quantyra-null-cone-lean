@@ -1,5 +1,7 @@
 # Coupling gluing and the distortion triangle
 
+Subsequent progress: [zero distortion, compact time isomorphy and original order laws](geometric-zero-isomorphy-certification.md) now have 1,078-report GCP acceptance. The historical triangle acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,054 exact type/axiom reports, including 13 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Mathematical result

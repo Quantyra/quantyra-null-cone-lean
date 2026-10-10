@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_commit": "d1b97ea937206641e84faa735155a8baf3cff215",
+  "captured_files": 225,
+  "lean_inputs": 191,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "a8f5ad47d141941291dfcb2b211ddd92779d4ff12b37bd89aa3e3de5024fef83",
+  "module_sha256": {
+    "QuantyraNullCone/TimeZeroCoupling.lean": "120f4a8697f3f7cf09c33bec5fbe909ecf444a851f4a52dd63ea7225831e2c77",
+    "QuantyraNullCone/TimeCouplingLimit.lean": "fdb32e4fc13b4cc2cfdad064b48684cc60cb9dffb580bcbbe4337b17a04769e7",
+    "QuantyraNullCone/TimeZeroAttainment.lean": "15c5f09aa25e4624d2f26b72348a2df4f25c7a807b5c05af6ab5a997242b03a4",
+    "QuantyraNullCone/LorentzDistortionZero.lean": "9e47cfb03c6cc3ccf219b63da8980fca27b82cefc86fd27c0b85cc7e3aa821d3",
+    "QuantyraNullCone/TimeCouplingSupport.lean": "d0fecf36c795b73f31be832c3fb9a439eab17d8ef51ad768d2366a53c8ae6157",
+    "QuantyraNullCone/TimeZeroIsomorphy.lean": "b7e3913c5cabd28f0d62ac2480b4dd34aeba7e97eda19e9c496f3f0d2f6191ef",
+    "QuantyraNullCone/LorentzDistortionIsomorphy.lean": "a1995eb0f0c324116493bf9195971f436e99dc7cff4395bffeff03df6052bf45",
+    "QuantyraNullCone/LorentzZeroOrderLaws.lean": "4bb562d2bb942ee618b90c17d8c162b73fa2e0def58acc98672d23e696abf79f"
+  },
+  "audited_named_exports": 1078,
+  "new_zero_isomorphy_exports": 24,
+  "root_build_jobs": 3152,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1054_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T08:30:35.202375+00:00"
+}

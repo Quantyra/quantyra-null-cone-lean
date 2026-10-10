@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-10",
+  "scope": "Bounded relevant-proof comparison; no exhaustive priority/correction search or complete edition comparison.",
+  "pdfs_redistributed": false,
+  "records": [
+    {
+      "name": "roy-sinha-surya-v1",
+      "url": "https://arxiv.org/pdf/1212.0631v1",
+      "final_url": "https://arxiv.org/pdf/1212.0631v1",
+      "pages": 22,
+      "sha256": "b1732ce02b9547e689a113653dab6c470d835f26ab0899e45d604d54249d4244",
+      "bytes": 222884,
+      "retrieved_utc": "2026-10-10T10:51:57.106933+00:00",
+      "inspected_scope": "Relevant flat-chain, dimension/fluctuation and Appendix moments; PDF pages 4-8 and 13-22. Journal metadata only; no full journal comparison."
+    },
+    {
+      "name": "reid-v1",
+      "url": "https://arxiv.org/pdf/gr-qc/0207103v1",
+      "final_url": "https://arxiv.org/pdf/gr-qc/0207103v1",
+      "pages": 16,
+      "sha256": "fdfc702ca8c06bab823995d84c0d8050be274684e921d6ab0e2d858383180432",
+      "bytes": 974788,
+      "retrieved_utc": "2026-10-10T10:51:58.022368+00:00",
+      "inspected_scope": "Retrieved for provenance; no complete version comparison."
+    },
+    {
+      "name": "reid-v2",
+      "url": "https://arxiv.org/pdf/gr-qc/0207103v2",
+      "pages": 26,
+      "sha256": "9141b06a342c953cdb91de78c4291065bc683cf59970d23a97893e77e47f7679",
+      "bytes": 732077,
+      "retrieved_utc": "2026-10-10T10:52:13.346229+00:00",
+      "inspected_scope": "Section III and relevant section IV sampling passages, PDF pages 6-9; latest listed arXiv revision dated 2004-01-19."
+    },
+    {
+      "name": "hoeffding-1963",
+      "url": "https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf",
+      "pages": 19,
+      "sha256": "3021bcc097ef23a99a84d0eef8dcce2fd835c71df79a105727d3e03f8f0b8930",
+      "bytes": 1451039,
+      "retrieved_utc": "2026-10-10T10:56:29.909492+00:00",
+      "route": "PowerShell HTTPS with system certificate trust; initial Python trust-store attempt failed before download",
+      "inspected_scope": "Printed pages 14-16 and 24-25 visually read; especially section 5a U-statistic permutation/Jensen proof."
+    }
+  ]
+}

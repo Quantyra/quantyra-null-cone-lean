@@ -1,0 +1,139 @@
+{
+  "status": "PASS_EXACT_ARITHMETIC_ONLY",
+  "scope": "Rational consequences of the ordinary geometric/probability proof; analytic steps are not certified by this script.",
+  "formal_certification": false,
+  "random_samples": 0,
+  "lean_invocations": 0,
+  "flat_moments": {
+    "mass": "1",
+    "t2": "1/10",
+    "t4": "1/35",
+    "r2": "3/10",
+    "f2": "13/700"
+  },
+  "q_coefficients": [
+    "4/35",
+    "36/1925",
+    "-151/375375"
+  ],
+  "independent_radial_checker_agrees": true,
+  "radial_checker_sha256": "ed314c6fb211fdaace8307d155170c678ce2d91884b0c4f594236abc0e889f4b",
+  "pair_slope_lower": "13738/375375",
+  "pmax": "185489/750750",
+  "bernoulli_variance_upper": "104849697629/563625562500",
+  "weight_derivative_upper": "27/100",
+  "weight_derivative_cube_check": "10040160519/10000000000",
+  "time_integral_upper": "5/9",
+  "geometric_factor": "3/20",
+  "geometric_inverse_factor": "225225/54952",
+  "midpoint_geometric_radius": "3/80",
+  "sample_bound": {
+    "alpha": "1/20",
+    "log_upper": "369/100",
+    "log_upper_proof": "Positive exponential Taylor sum k=0..20 is greater than 40.",
+    "rows": [
+      {
+        "geometric_radius": "1/40",
+        "old_factor_hoeffding_n": 3570386,
+        "new_factor_hoeffding_n": 99178,
+        "new_factor_bernstein_n": 74606
+      },
+      {
+        "geometric_radius": "1/100",
+        "old_factor_hoeffding_n": 22314906,
+        "new_factor_hoeffding_n": 619860,
+        "new_factor_bernstein_n": 463260
+      },
+      {
+        "geometric_radius": "1/200",
+        "old_factor_hoeffding_n": 89259622,
+        "new_factor_hoeffding_n": 2479434,
+        "new_factor_bernstein_n": 1849002
+      }
+    ],
+    "at_most_midpoint_even_n": {
+      "hoeffding": 44080,
+      "bernstein": 33338
+    },
+    "interpretation": "Sufficient bounds, not necessary sample sizes, minimax lower bounds or measured performance. All-pairs proof uses effective m=floor(n/2), not n choose 2 independent observations."
+  },
+  "permutation_identity_checks": [
+    {
+      "n": 2,
+      "permutations": 2,
+      "occurrences_per_edge": 2
+    },
+    {
+      "n": 3,
+      "permutations": 6,
+      "occurrences_per_edge": 2
+    },
+    {
+      "n": 4,
+      "permutations": 24,
+      "occurrences_per_edge": 8
+    },
+    {
+      "n": 5,
+      "permutations": 120,
+      "occurrences_per_edge": 24
+    },
+    {
+      "n": 6,
+      "permutations": 720,
+      "occurrences_per_edge": 144
+    },
+    {
+      "n": 7,
+      "permutations": 5040,
+      "occurrences_per_edge": 720
+    },
+    {
+      "n": 8,
+      "permutations": 40320,
+      "occurrences_per_edge": 5760
+    }
+  ],
+  "quadratic_candidates": [
+    {
+      "name": "retained_time",
+      "a": "1",
+      "b": "0",
+      "q_coefficients": [
+        "4/35",
+        "36/1925",
+        "-151/375375"
+      ],
+      "pair_slope_lower": "13738/375375",
+      "shape_second_moment": "13/700"
+    },
+    {
+      "name": "spatial",
+      "a": "0",
+      "b": "-1",
+      "q_coefficients": [
+        "4/35",
+        "52/1925",
+        "701/375375"
+      ],
+      "pair_slope_lower": "104/1925",
+      "shape_second_moment": "37/700"
+    },
+    {
+      "name": "density_box_vertex",
+      "a": "2/3",
+      "b": "-4/3",
+      "q_coefficients": [
+        "4/35",
+        "8/165",
+        "548/135135"
+      ],
+      "pair_slope_lower": "16/165",
+      "shape_second_moment": "41/315",
+      "geometric_factor_upper": "11/20",
+      "inverse_factor_upper": "363/64"
+    }
+  ],
+  "decision": "Retain time family; sharper pair slope alone does not improve the audited geometric error guarantee.",
+  "source_sha256": "0854008f1002e20fd3f2741fae2d6fdd7e8efcf9382ae1cd19488c1759a59941"
+}

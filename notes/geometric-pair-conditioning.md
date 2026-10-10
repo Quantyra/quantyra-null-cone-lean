@@ -1,5 +1,7 @@
 # A restricted 2+1 route through pair probabilities
 
+2026-10-10 continuation: the [complete ordinary pair audit](geometric-pair-audit.md) supersedes the selected constant and estimator route below. It proves the ordinary geometric factor `3/20`, selects an all-pairs U-statistic with a dependence-aware Bernstein bound, records relevant primary-proof comparisons and checks sufficient sample counts. The body below is preserved as the earlier calculation and randomized-matching alternative. New endpoints remain uncertified; S043 remains gated.
+
 Subsequent progress: the general [density-to-geometric forward bound](geometric-density-forward-certification.md) now has 1,131-report GCP acceptance. The restricted family membership, pair-integral, inverse-conditioning and finite-observation/confidence arguments below retain their separate proof obligations.
 
 S042 ordinary research, 2026-10-09 (Hawaii). **Not Lean certified; no S043 go decision.** This calculation tests a possible explicit finite route after the [full-class representation argument](geometric-diamond-representation.md). The original class and its nontrivial gauge remain part of S042. This one-parameter subclass does not replace full-class identifiability or supply its missing explicit inverse modulus.

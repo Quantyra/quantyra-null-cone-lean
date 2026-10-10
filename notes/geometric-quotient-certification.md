@@ -1,6 +1,6 @@
 # Compact time-profile quotient and full sampling support
 
-S042 component, 2026-10-09 (Hawaii). The 37-result GCP development build passes; full repository acceptance is pending. S042 remains incomplete and S043 remains gated.
+S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,004 exact type/axiom reports, including 37 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Exact topological realization
 
@@ -26,10 +26,14 @@ The support argument first proves `closure(D)=C` by explicit radial contraction.
 
 ## Verification
 
-The audit adds 37 named type/axiom checks: 24 quotient and time-separation results, followed by 13 closure, measure transport and support results. All earlier 967 audit statements and mathematical modules are preserved. The third immutable GCP development build passes 2,962 jobs and all 37 named reports. The first run stopped at a library theorem-name mismatch in the uniform-continuity corollary; the second stopped at namespace/argument mismatches in measure transport. Both failures are retained. The third SSH process returned a local transport error after printing remote terminal exit zero; separate evidence collection verifies the remote outcome. Full acceptance and source-custody details remain pending. No Lean/Lake command runs locally.
+The audit adds 37 named type/axiom checks: 24 quotient and time-separation results, followed by 13 closure, measure transport and support results. All earlier 967 audit statements and mathematical modules are preserved. The third immutable GCP development run, `space-quotient3-dev3-20261010T070532Z-1bca66`, passes 2,962 jobs and all 37 named reports. The first run stopped at a library theorem-name mismatch in the uniform-continuity corollary; the second stopped at namespace/argument mismatches in measure transport. Both failures are retained. The third SSH process returned a local transport error after printing remote terminal exit zero; separate evidence collection verifies the remote outcome. All Lean/Lake execution is remote GCP-only.
+
+Proof commit `cb95697bc73010756c54f6e94842cddec3fa748e` was pushed before full acceptance. Run `space-quotient3-acceptance-20261010T070843Z-26b0bb` passes 3,110 root jobs and 1,004 reports. Its [receipt](../evidence/gcp/space-quotient3-acceptance-20261010T070843Z-26b0bb/receipt.json) and [independent verification](../evidence/gcp/space-quotient3-acceptance-20261010T070843Z-26b0bb/delivery-verification.json) confirm all 211 captured files, including 177 Lean inputs, match the immutable archive, raw committed Git blobs and normalized local source. Source and pinned dependency identities are verified before and after execution. All reported axioms are limited to `propext`, `Classical.choice` and `Quot.sound`. All earlier 967 audit statements remain verbatim, and earlier mathematical modules are unchanged. Input archive SHA-256: `d605a06acabde792c49e3c3ecff2015197e8900ab7ae84dff82a665ef65efea2`. The full acceptance controller exits successfully.
+
+The [cleanup receipt](../evidence/gcp/space-quotient3-acceptance-20261010T070843Z-26b0bb/cleanup.json) verifies original task ownership, no other Lean work, evidence collection before shutdown and final instance state `TERMINATED` at `2026-10-10T07:14:17.477176+00:00`.
 
 ## Remaining scope
 
 These results discharge the compact time-profile quotient, continuous descent, point distinction, compact superlevels and full probability support for the selected model. The general Jacobian/isometry action and coupling-distortion loss properties still require proofs. The sup metric on this representation is not itself the selected statistical loss. Exact finite sample/order transport and the restricted pair-conditioning/confidence construction also remain open. No finite-order inverse guarantee follows solely from this representation.
 
-Remaining to-do list: gauge/loss properties, restricted pair-law and finite-confidence proofs for S042; then gated S043 and queued S047. S048 remains proposed separately.
+Remaining to-do list: exact sample-law transport, gauge/loss properties, restricted pair-law and finite-confidence proofs for S042; then gated S043 and queued S047. S048 remains proposed separately.

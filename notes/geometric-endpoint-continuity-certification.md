@@ -1,5 +1,7 @@
 # Joint endpoint continuity of actual weighted proper time
 
+Subsequent progress: the [compact quotient and full-support component](geometric-quotient-certification.md) now has 1,004-report GCP acceptance. The historical endpoint-continuity acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 967 exact type/axiom reports, including 48 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Direct construction and quantitative comparison

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_commit": "cb95697bc73010756c54f6e94842cddec3fa748e",
+  "captured_files": 211,
+  "lean_inputs": 177,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "d605a06acabde792c49e3c3ecff2015197e8900ab7ae84dff82a665ef65efea2",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzTimeQuotient.lean": "116ab1b6740a680ed421f021d574574fd9e3c3455dd54af945d9f417bb5ea3fe",
+    "QuantyraNullCone/LorentzQuotientMeasure.lean": "6e6de2c666246735c6f57e9c82f17f2ebe248c728d17bcf8859c8ea115305776"
+  },
+  "audited_named_exports": 1004,
+  "new_quotient_support_exports": 37,
+  "root_build_jobs": 3110,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_967_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T07:11:29.544960+00:00"
+}

@@ -1,0 +1,2189 @@
+[
+  {
+    "stratum": 0,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9397335052490234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9354163829939753,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 0.9269100649909147,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 12,
+    "m": 0,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6842738687992096,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 12,
+    "m": 4,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6813677349927088,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 0,
+    "n": 12,
+    "m": 12,
+    "coverage": "68501587441/68719476736",
+    "fallback_probability": "218341565/34359738368",
+    "mean_theta_radius_float": 0.6752059333580795,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.719733901321888,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 12,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 12,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 1,
+    "n": 12,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.34695839136838913,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9397335052490234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9354163829939753,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.926677351506928,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 12,
+    "m": 0,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6842738687992096,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 12,
+    "m": 4,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6813677349927088,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 2,
+    "n": 12,
+    "m": 12,
+    "coverage": "16723851/16777216",
+    "fallback_probability": "26767/8388608",
+    "mean_theta_radius_float": 0.5255101671824355,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 12,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 12,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 3,
+    "n": 12,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.83068671875,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.828995867166366,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 0.8254860320050054,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 12,
+    "m": 0,
+    "coverage": "244140576/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5729654006185,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 12,
+    "m": 4,
+    "coverage": "244140576/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5692867670400475,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 4,
+    "n": 12,
+    "m": 12,
+    "coverage": "582074013255098632197241/582076609134674072265625",
+    "fallback_probability": "4703568864971996494801/14551915228366851806640625",
+    "mean_theta_radius_float": 0.5614091796189288,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 4,
+    "m": 0,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9599555755615234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 4,
+    "m": 4,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9570870384639492,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 4,
+    "m": 12,
+    "coverage": "167745787903/167772160000",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 0.9514349657835866,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 12,
+    "m": 0,
+    "coverage": "31180495341/31250000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8262455312034948,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 12,
+    "m": 4,
+    "coverage": "498872506981/500000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8203842168301761,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 5,
+    "n": 12,
+    "m": 12,
+    "coverage": "1673656462100341177/1677721600000000000",
+    "fallback_probability": "53173295696912573/8388608000000000000",
+    "mean_theta_radius_float": 0.8087480801891551,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 4,
+    "m": 0,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8281704193115235,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 4,
+    "m": 4,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8279901670444703,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 4,
+    "m": 12,
+    "coverage": "40953541/40960000",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.8281626586067523,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 12,
+    "m": 0,
+    "coverage": "15624215893/15625000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5772338262484884,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 12,
+    "m": 4,
+    "coverage": "249979781623/250000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5767160939455886,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 6,
+    "n": 12,
+    "m": 12,
+    "coverage": "409502216820227/409600000000000",
+    "fallback_probability": "6500000000143/2048000000000000",
+    "mean_theta_radius_float": 0.5769831971563698,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 4,
+    "m": 0,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.953252099609375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 4,
+    "m": 4,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9505638147788539,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 4,
+    "m": 12,
+    "coverage": "2555917/2560000",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.9451512559389625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 12,
+    "m": 0,
+    "coverage": "242691584/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.847711204499125,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 12,
+    "m": 4,
+    "coverage": "242691328/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8404593050257565,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 7,
+    "n": 12,
+    "m": 12,
+    "coverage": "994053120541/1000000000000",
+    "fallback_probability": "3174999581/1000000000000",
+    "mean_theta_radius_float": 0.7807117431733286,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 4,
+    "m": 0,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 4,
+    "m": 4,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 4,
+    "m": 12,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 12,
+    "m": 0,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 12,
+    "m": 4,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 8,
+    "n": 12,
+    "m": 12,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 4,
+    "m": 0,
+    "coverage": "390544/390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.893434529921875,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 4,
+    "m": 4,
+    "coverage": "390544/390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8922538433001002,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 4,
+    "m": 12,
+    "coverage": "23277885093199657103713/23283064365386962890625",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 0.8897973720954554,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 12,
+    "m": 0,
+    "coverage": "59594645651820544/59604644775390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7112748591707048,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 12,
+    "m": 4,
+    "coverage": "37245150604250812416/37252902984619140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7083139184668945,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 9,
+    "n": 12,
+    "m": 12,
+    "coverage": "710260917147140736564041553826157/710542735760100185871124267578125",
+    "fallback_probability": "1134240874195301926846904637217/3552713678800500929355621337890625",
+    "mean_theta_radius_float": 0.7020052270552497,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9713475704193115,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9692950860013093,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 4,
+    "m": 12,
+    "coverage": "1073607085/1073741824",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 0.9652509371159175,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 12,
+    "m": 0,
+    "coverage": "8388571/8388608",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8898939890477777,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 12,
+    "m": 4,
+    "coverage": "67108271/67108864",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8841193391291636,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 10,
+    "n": 12,
+    "m": 12,
+    "coverage": "140713075636949/140737488355328",
+    "fallback_probability": "445968345277/70368744177664",
+    "mean_theta_radius_float": 0.8726857583667502,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9254072904586792,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9243810482496781,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 4,
+    "m": 12,
+    "coverage": "524255/524288",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.9224949299523576,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 12,
+    "m": 0,
+    "coverage": "16723931/16777216",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7828300044711796,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 12,
+    "m": 4,
+    "coverage": "133791151/134217728",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7796345831811105,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 11,
+    "n": 12,
+    "m": 12,
+    "coverage": "68496086039/68719476736",
+    "fallback_probability": "109052047/34359738368",
+    "mean_theta_radius_float": 0.7727270882695912,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9254072904586792,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9243810482496781,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 4,
+    "m": 12,
+    "coverage": "524255/524288",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.9224949299523576,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 12,
+    "m": 0,
+    "coverage": "16723931/16777216",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7828300044711796,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 12,
+    "m": 4,
+    "coverage": "133791151/134217728",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7796345831811105,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 12,
+    "n": 12,
+    "m": 12,
+    "coverage": "68496086039/68719476736",
+    "fallback_probability": "109052047/34359738368",
+    "mean_theta_radius_float": 0.7727270882695912,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8794670104980469,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8794670104980469,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8794670104980469,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 12,
+    "m": 0,
+    "coverage": "2035/2048",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.658731572329998,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 12,
+    "m": 4,
+    "coverage": "2035/2048",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.658731572329998,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 13,
+    "n": 12,
+    "m": 12,
+    "coverage": "2035/2048",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.658731572329998,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.941772836303711,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9405031427793377,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 4,
+    "m": 12,
+    "coverage": "37252147079834940433/37252902984619140625",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 0.9378342946769787,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 12,
+    "m": 0,
+    "coverage": "999665821107/1000000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.822454538431014,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 12,
+    "m": 4,
+    "coverage": "624785591343843/625000000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.818618934401889,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 14,
+    "n": 12,
+    "m": 12,
+    "coverage": "1861734594560744777268885779/1862645149230957031250000000",
+    "fallback_probability": "4641722306732993618737/14551915228366851806640625",
+    "mean_theta_radius_float": 0.8100661377245313,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 4,
+    "m": 0,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9599555755615234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 4,
+    "m": 4,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9570870384639492,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 4,
+    "m": 12,
+    "coverage": "167745787903/167772160000",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 0.9514349657835866,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 12,
+    "m": 0,
+    "coverage": "31180495341/31250000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8262455312034948,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 12,
+    "m": 4,
+    "coverage": "498872506981/500000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8203842168301761,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 15,
+    "n": 12,
+    "m": 12,
+    "coverage": "1673656462100341177/1677721600000000000",
+    "fallback_probability": "53173295696912573/8388608000000000000",
+    "mean_theta_radius_float": 0.8087480801891551,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 4,
+    "m": 0,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.953252099609375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 4,
+    "m": 4,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9505638147788539,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 4,
+    "m": 12,
+    "coverage": "2555917/2560000",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.9451512559389625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 12,
+    "m": 0,
+    "coverage": "242691584/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.847711204499125,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 12,
+    "m": 4,
+    "coverage": "242691328/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8404593050257565,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 16,
+    "n": 12,
+    "m": 12,
+    "coverage": "994053120541/1000000000000",
+    "fallback_probability": "3174999581/1000000000000",
+    "mean_theta_radius_float": 0.7807117431733286,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 4,
+    "m": 0,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8281704193115235,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 4,
+    "m": 4,
+    "coverage": "9999/10000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8279901670444703,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 4,
+    "m": 12,
+    "coverage": "40953541/40960000",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.8281626586067523,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 12,
+    "m": 0,
+    "coverage": "15624215893/15625000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5772338262484884,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 12,
+    "m": 4,
+    "coverage": "249979781623/250000000000",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.5767160939455886,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 17,
+    "n": 12,
+    "m": 12,
+    "coverage": "409502216820227/409600000000000",
+    "fallback_probability": "6500000000143/2048000000000000",
+    "mean_theta_radius_float": 0.5769831971563698,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 4,
+    "m": 0,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 4,
+    "m": 4,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 4,
+    "m": 12,
+    "coverage": "624/625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.821466943359375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 12,
+    "m": 0,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 12,
+    "m": 4,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 18,
+    "n": 12,
+    "m": 12,
+    "coverage": "243187712/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.556213114992625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 4,
+    "m": 0,
+    "coverage": "390369/390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9387823599999999,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 4,
+    "m": 4,
+    "coverage": "390369/390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9363350506488156,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 4,
+    "m": 12,
+    "coverage": "23267809057827797872513/23283064365386962890625",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 0.9311662888458467,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 12,
+    "m": 0,
+    "coverage": "59522503342455792/59604644775390625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.809933515017328,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 12,
+    "m": 4,
+    "coverage": "37201099343393363184/37252902984619140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.8037056560671124,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 19,
+    "n": 12,
+    "m": 12,
+    "coverage": "3547532325157838235396275727997729/3552713678800500929355621337890625",
+    "fallback_probability": "1141145311250621516405733693217/3552713678800500929355621337890625",
+    "mean_theta_radius_float": 0.7854750114932093,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9397335052490234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9354163829939753,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "106327/16777216",
+    "mean_theta_radius_float": 0.9269100649909147,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 12,
+    "m": 0,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6842738687992096,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 12,
+    "m": 4,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6813677349927088,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 20,
+    "n": 12,
+    "m": 12,
+    "coverage": "68501587441/68719476736",
+    "fallback_probability": "218341565/34359738368",
+    "mean_theta_radius_float": 0.6752059333580795,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9397335052490234,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9354163829939753,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.926677351506928,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 12,
+    "m": 0,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6842738687992096,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 12,
+    "m": 4,
+    "coverage": "4083/4096",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6813677349927088,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 21,
+    "n": 12,
+    "m": 12,
+    "coverage": "16723851/16777216",
+    "fallback_probability": "26767/8388608",
+    "mean_theta_radius_float": 0.5255101671824355,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.719733901321888,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 12,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 12,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 22,
+    "n": 12,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "13/4096",
+    "mean_theta_radius_float": 0.34695839136838913,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.718841552734375,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 12,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 12,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 23,
+    "n": 12,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.344879150390625,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.910540966796875,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 4,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9066732272418977,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 4,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "19011959077249/59604644775390625",
+    "mean_theta_radius_float": 0.8985009744955105,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 12,
+    "m": 0,
+    "coverage": "244062801/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.670558822509125,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 12,
+    "m": 4,
+    "coverage": "244062801/244140625",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.6659439641027489,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 24,
+    "n": 12,
+    "m": 12,
+    "coverage": "581872180889703646978969/582076609134674072265625",
+    "fallback_probability": "5115105407557854133201/14551915228366851806640625",
+    "mean_theta_radius_float": 0.6393716649829889,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "6806496847/144603922678272",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9130089621303321,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 4,
+    "m": 4,
+    "coverage": "531425/531441",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9121544684502385,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 4,
+    "m": 12,
+    "coverage": "59270953482067087/59296646043258912",
+    "fallback_probability": "6806496847/144603922678272",
+    "mean_theta_radius_float": 0.9103711244481455,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 12,
+    "m": 0,
+    "coverage": "94129137739/94143178827",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7547134987290774,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 12,
+    "m": 4,
+    "coverage": "121975042552279/122009559759792",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7522774399965636,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 25,
+    "n": 12,
+    "m": 12,
+    "coverage": "20406445239444402094445591/20420209427679362525020416",
+    "fallback_probability": "1922830746309952076857/40840418855358725050040832",
+    "mean_theta_radius_float": 0.7469711289940955,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 0,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 0,
+    "m": 4,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 0,
+    "m": 12,
+    "coverage": "1",
+    "fallback_probability": "6806496847/144603922678272",
+    "mean_theta_radius_float": 1.0,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 4,
+    "m": 0,
+    "coverage": "1",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9130089621303321,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 4,
+    "m": 4,
+    "coverage": "531425/531441",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.9121544684502385,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 4,
+    "m": 12,
+    "coverage": "59270953482067087/59296646043258912",
+    "fallback_probability": "6806496847/144603922678272",
+    "mean_theta_radius_float": 0.9103711244481455,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 12,
+    "m": 0,
+    "coverage": "94129137739/94143178827",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7547134987290774,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 12,
+    "m": 4,
+    "coverage": "121975042552279/122009559759792",
+    "fallback_probability": "0",
+    "mean_theta_radius_float": 0.7522774399965636,
+    "coverage_pass": true
+  },
+  {
+    "stratum": 26,
+    "n": 12,
+    "m": 12,
+    "coverage": "20406445239444402094445591/20420209427679362525020416",
+    "fallback_probability": "1922830746309952076857/40840418855358725050040832",
+    "mean_theta_radius_float": 0.7469711289940955,
+    "coverage_pass": true
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-10T14:04:16.480935+00:00",
+  "sources": [
+    {
+      "name": "johnston-arxiv-v2",
+      "url": "https://arxiv.org/pdf/0909.0944v2",
+      "final_url": "https://arxiv.org/pdf/0909.0944v2",
+      "pages": 4,
+      "sha256": "a807d10d2ca2ade1482fd20e37a60109760a7208187540ae5631c3e026579c66",
+      "bytes": 863245,
+      "retrieved_utc": "2026-10-10T13:48:09.443546+00:00"
+    },
+    {
+      "name": "keith-aps-accepted",
+      "url": "https://link.aps.org/accepted/10.1103/PhysRevA.98.042318",
+      "error": "HTTP Error 403: Forbidden",
+      "utc": "2026-10-10T13:51:04.081652+00:00"
+    },
+    {
+      "name": "keith-arxiv-v2",
+      "url": "https://arxiv.org/pdf/1803.08245v2",
+      "final_url": "https://arxiv.org/pdf/1803.08245v2",
+      "pages": 14,
+      "sha256": "53f2cfba6bfbb7cfdffcf2bea527d123a70a7a408294a1e90a69cff400b5d5f8",
+      "bytes": 880708,
+      "retrieved_utc": "2026-10-10T13:48:08.955060+00:00"
+    },
+    {
+      "name": "keith-nist-2018",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925399",
+      "error": "HTTP Error 403: Forbidden",
+      "utc": "2026-10-10T13:48:08.459369+00:00"
+    },
+    {
+      "name": "lundeen-arxiv-v1",
+      "url": "https://arxiv.org/pdf/0807.2444v1",
+      "final_url": "https://arxiv.org/pdf/0807.2444v1",
+      "pages": 6,
+      "sha256": "28afa113d896aebed84c6a8c18232328bf01daef358e07a7096b7d4e49d7729e",
+      "bytes": 464416,
+      "retrieved_utc": "2026-10-10T13:48:09.133706+00:00"
+    },
+    {
+      "name": "lundeen-journal",
+      "url": "https://physik.uni-paderborn.de/fileadmin-nw/physik/Arbeitsgruppen/integrierte-quantenoptik/publications/2009/Nature_Physics_5__27_-_30__2009_.pdf",
+      "final_url": "https://physik.uni-paderborn.de/fileadmin-nw/physik/Arbeitsgruppen/integrierte-quantenoptik/publications/2009/Nature_Physics_5__27_-_30__2009_.pdf",
+      "pages": 4,
+      "sha256": "0c6c3dc156519f4ac5a86b8b05db7a3fee88508b1741ac7097861cbee268773e",
+      "bytes": 1681893,
+      "retrieved_utc": "2026-10-10T13:48:10.874506+00:00"
+    },
+    {
+      "name": "wang-polytopes-v1",
+      "url": "https://arxiv.org/pdf/1808.09988v1",
+      "final_url": "https://arxiv.org/pdf/1808.09988v1",
+      "pages": 10,
+      "sha256": "baef3292778470f13a60ffea83d06e8901cb78b2729794b353ccb771dc786837",
+      "bytes": 1952347,
+      "retrieved_utc": "2026-10-10T13:51:21.526635+00:00"
+    },
+    {
+      "name": "nist-official-code",
+      "url": "https://github.com/usnistgov/state_meas_tomo",
+      "commit": "d0188c9245ee1872089425fe29cd5430de4b314a",
+      "inspected_file": "partial_tomography/tomography.py",
+      "sha256": "cfa6a7090fc8029b3eac9de6ff9deb0c961e2f816fa0bb85c14d0458ddff4965",
+      "scope": "Static read of Q likelihood, gradient, optimizer and stopping calculation; package not run."
+    }
+  ],
+  "note": "Source PDFs are held privately, not redistributed. Read scope is in notes/quantum-measurement-sources.md."
+}

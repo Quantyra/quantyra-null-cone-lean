@@ -2978,3 +2978,27 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.orderPairMean_eq_relation_count
 #check QuantyraNullCone.sampled_order_relation_count3
 #print axioms QuantyraNullCone.sampled_order_relation_count3
+#check QuantyraNullCone.qubit_click_ranges
+#print axioms QuantyraNullCone.qubit_click_ranges
+#check QuantyraNullCone.qubit_trial_probability
+#print axioms QuantyraNullCone.qubit_trial_probability
+#check QuantyraNullCone.qubit_trial_click_masses
+#print axioms QuantyraNullCone.qubit_trial_click_masses
+#check QuantyraNullCone.qubit_record_probability
+#print axioms QuantyraNullCone.qubit_record_probability
+#check QuantyraNullCone.qubit_probe_count_preserving
+#print axioms QuantyraNullCone.qubit_probe_count_preserving
+#check QuantyraNullCone.qubit_calibration_plus_preserving
+#print axioms QuantyraNullCone.qubit_calibration_plus_preserving
+#check QuantyraNullCone.qubit_calibration_minus_preserving
+#print axioms QuantyraNullCone.qubit_calibration_minus_preserving
+#check QuantyraNullCone.qubit_confounded_full_probe_law
+#print axioms QuantyraNullCone.qubit_confounded_full_probe_law
+#check QuantyraNullCone.qubit_uncalibrated_randomized_obstruction
+#print axioms QuantyraNullCone.qubit_uncalibrated_randomized_obstruction
+#check QuantyraNullCone.qubit_box_report_covers
+#print axioms QuantyraNullCone.qubit_box_report_covers
+#check QuantyraNullCone.binomial_marginal_report_failure
+#print axioms QuantyraNullCone.binomial_marginal_report_failure
+#check QuantyraNullCone.loss_only_qubit_confidence
+#print axioms QuantyraNullCone.loss_only_qubit_confidence

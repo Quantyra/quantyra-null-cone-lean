@@ -1,0 +1,65 @@
+error: QuantyraNullCone/QubitConfidence.lean:88:39: Type mismatch
+  binomial_marginal_report_failure mu (qubitProbeCount 0) hp ⟨hrp, ?m.314⟩ ?m.316 Lp Up vp
+has type
+  mu.real {y | ¬(↑(Lp (qubitProbeCount 0 y)) ≤ q.rPlus ∧ q.rPlus ≤ ↑(Up (qubitProbeCount 0 y)))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E0 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:90:39: Type mismatch
+  binomial_marginal_report_failure mu (qubitProbeCount 1) hn ⟨hrn, ?m.347⟩ ?m.349 Ln Un vn
+has type
+  mu.real {y | ¬(↑(Ln (qubitProbeCount 1 y)) ≤ q.rMinus ∧ q.rMinus ≤ ↑(Un (qubitProbeCount 1 y)))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E1 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:92:39: Type mismatch
+  binomial_marginal_report_failure mu (fun record => record.2.1) (qubit_calibration_plus_preserving q n mPlus mMinus)
+    ⟨?m.385, q.plus_range.right⟩ ?m.389 Le Ue ve
+has type
+  mu.real {y | ¬(↑(Le y.2.1) ≤ q.etaPlus ∧ q.etaPlus ≤ ↑(Ue y.2.1))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E2 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:95:39: Type mismatch
+  binomial_marginal_report_failure mu (fun record => record.2.2) (qubit_calibration_minus_preserving q n mPlus mMinus)
+    ⟨?m.438, q.minus_range.right⟩ ?m.442 Lf Uf vf
+has type
+  mu.real {y | ¬(↑(Lf y.2.2) ≤ q.etaMinus ∧ q.etaMinus ≤ ↑(Uf y.2.2))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E3 ≤ 1 / 80
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.QubitConfidence
+info: QuantyraNullCone/LowerAlternatives.lean:113:0: 'QuantyraNullCone.lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:114:0: 'QuantyraNullCone.lower_flat_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerAlternatives.lean:115:0: 'QuantyraNullCone.lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2992/2993] Built QuantyraNullCone.QubitLoss (3.6s)
+✖ [2993/2993] Building QuantyraNullCone.QubitConfidence (3.9s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/QuantyraNullCone/QubitConfidence.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/.lake/build/lib/lean/QuantyraNullCone/QubitConfidence.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/.lake/build/lib/lean/QuantyraNullCone/QubitConfidence.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/.lake/build/ir/QuantyraNullCone/QubitConfidence.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-qubit-confidence-development-20261010T141159Z-42638d/source/.lake/build/ir/QuantyraNullCone/QubitConfidence.setup.json --json
+error: QuantyraNullCone/QubitConfidence.lean:88:39: Type mismatch
+  binomial_marginal_report_failure mu (qubitProbeCount 0) hp ⟨hrp, ?m.314⟩ ?m.316 Lp Up vp
+has type
+  mu.real {y | ¬(↑(Lp (qubitProbeCount 0 y)) ≤ q.rPlus ∧ q.rPlus ≤ ↑(Up (qubitProbeCount 0 y)))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E0 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:90:39: Type mismatch
+  binomial_marginal_report_failure mu (qubitProbeCount 1) hn ⟨hrn, ?m.347⟩ ?m.349 Ln Un vn
+has type
+  mu.real {y | ¬(↑(Ln (qubitProbeCount 1 y)) ≤ q.rMinus ∧ q.rMinus ≤ ↑(Un (qubitProbeCount 1 y)))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E1 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:92:39: Type mismatch
+  binomial_marginal_report_failure mu (fun record => record.2.1) (qubit_calibration_plus_preserving q n mPlus mMinus)
+    ⟨?m.385, q.plus_range.right⟩ ?m.389 Le Ue ve
+has type
+  mu.real {y | ¬(↑(Le y.2.1) ≤ q.etaPlus ∧ q.etaPlus ≤ ↑(Ue y.2.1))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E2 ≤ 1 / 80
+error: QuantyraNullCone/QubitConfidence.lean:95:39: Type mismatch
+  binomial_marginal_report_failure mu (fun record => record.2.2) (qubit_calibration_minus_preserving q n mPlus mMinus)
+    ⟨?m.438, q.minus_range.right⟩ ?m.442 Lf Uf vf
+has type
+  mu.real {y | ¬(↑(Lf y.2.2) ≤ q.etaMinus ∧ q.etaMinus ≤ ↑(Uf y.2.2))} ≤ ↑(1 / 80)
+but is expected to have type
+  mu.real E3 ≤ 1 / 80
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.QubitConfidence
+REMOTE_TERMINAL_EXIT=1

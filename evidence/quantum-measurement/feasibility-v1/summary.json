@@ -1,0 +1,20 @@
+{
+  "exact_cells": 243,
+  "count_tuples": 20865,
+  "diagnostic_cases": 81,
+  "marginal_reports": 190,
+  "minimum_coverage": "2035/2048",
+  "all_exact_coverage_pass": true,
+  "matched_endpoints_equal": true,
+  "largest_budget_width_passes": 27,
+  "largest_budget_cases": 27,
+  "mean_radius_improvement": 0,
+  "improvement_gate_pass": false,
+  "worker_seconds": 5.125149900006363,
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "limitations": "Exact coverage grid is not uniform proof; near-mean cases are not random trials; joint fits have no global optimum or confidence certificate."
+}

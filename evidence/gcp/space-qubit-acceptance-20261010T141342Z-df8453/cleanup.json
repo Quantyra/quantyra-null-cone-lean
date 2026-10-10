@@ -1,0 +1,29 @@
+{
+  "ownership_run": "space-qubit-loss-development-20261010T140823Z-83a8ca",
+  "campaign_ownership": {
+    "initial_state": "TERMINATED",
+    "started_for_task": true
+  },
+  "all_terminal_outcomes_collected": [
+    [
+      "space-qubit-loss-development-20261010T140823Z-83a8ca",
+      1
+    ],
+    [
+      "space-qubit-confidence-development-20261010T141159Z-42638d",
+      1
+    ],
+    [
+      "space-qubit-acceptance-20261010T141342Z-df8453",
+      0
+    ]
+  ],
+  "no_other_lean_work": true,
+  "accepted_run": "space-qubit-acceptance-20261010T141342Z-df8453",
+  "initial_state": "RUNNING",
+  "final_state": "TERMINATED",
+  "stop_verified": true,
+  "persistent_cache_sha256_verified_before_shutdown": "0a554d297f71cc269090202b1c7766c92ae19cdb2cba1033209b8b3d36d9e414",
+  "persistent_cache_retained": true,
+  "verified_utc": "2026-10-10T14:19:48.476307+00:00"
+}

@@ -1,7 +1,8 @@
 # Loss-only qubit measurement: scoped feasibility argument
 
-2026-10-10, S047. This is an ordinary mathematical argument and model freeze,
-not a claim of Lean acceptance or a laboratory validation. The accompanying
+2026-10-10, S047. This is the ordinary mathematical argument and model freeze.
+Subsequent [GCP acceptance and evaluation](quantum-measurement-results.md)
+certify the specified probability endpoints; no laboratory validation is claimed. The accompanying
 [source comparison](quantum-measurement-sources.md) finds an established
 confidence construction. The question is whether transferring it gives a
 reason to invest in a separate quantum method.
@@ -141,15 +142,17 @@ maximum and its bootstrap interval do not supply the uniform finite coverage
 guarantee proved here. The evaluation records optimization outcomes rather
 than assuming a global maximum or treating bootstrap coverage as exact.
 
-## Formal reuse and remaining obligation
+## Formal reuse and accepted scope
 
-`binomial_report_coverage` and `membership_count_eq_binomial` already have
-GCP acceptance in the satellite. They supply the generic marginal confidence
-and iid count machinery. The Born reduction, full count-law construction,
-four-report projection/coverage bridge and the explicit indistinguishability
-pair above are ordinary mathematics at this checkpoint. They must not be
-described as a certified quantum endpoint. Any selected new formal endpoint
-will get an exact ordinary-to-formal map and GCP-only acceptance.
+`binomial_report_coverage` and `membership_count_eq_binomial` supply the
+previously accepted generic marginal confidence and iid count machinery.
+The new `QubitLoss` and `QubitConfidence` modules now have GCP acceptance for
+the explicit full ternary-record law, its actual count marginals, the
+four-report confidence guarantee and the no-calibration indistinguishability
+obstruction. The [formal map](quantum-measurement-results.md) records exact
+scope and source custody. The density-matrix/POVM reduction, population
+sharpness and width-decomposition discussion remain ordinary arguments;
+Python and physical detector assumptions are not Lean verified.
 
-Remaining to-do list: frozen bounded evaluation, applicable certification,
-and the final S047 investment/manuscript decision.
+Remaining to-do list: none for S047; the final decision retains this known-method
+transfer and parks a separate quantum-method investment.

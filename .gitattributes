@@ -99,3 +99,9 @@ evidence/geometric-gauge/pair-confidence-acceptance/*.json text eol=lf
 evidence/geometric-gauge/pair-integral-development/*.py text eol=lf
 evidence/geometric-gauge/pair-integral-development/*.json text eol=lf
 evidence/geometric-gauge/pair-numerical-*/** -text -whitespace
+
+evidence/quantum-measurement/** -text -whitespace
+evidence/gcp/space-qubit-*/** -text -whitespace
+QuantyraNullCone/Qubit*.lean text eol=lf
+notes/quantum-measurement* text eol=lf
+tools/*quantum_measurement*.py text eol=lf

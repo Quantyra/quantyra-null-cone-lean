@@ -120,5 +120,8 @@ phenomenon is identified. The bounded evaluation will test implementation
 and cost, not attempt to manufacture a distinction by changing the baseline's
 information.
 
-Remaining to-do list: bounded qubit evaluation and applicable certification;
-field follow-up remains gated on a distinct stability/observation argument.
+The subsequent [bounded evaluation and certification](quantum-measurement-results.md)
+are complete and retain this source-gate assessment.
+
+Remaining to-do list: none for this source screen. Field follow-up remains
+gated on a distinct stability/observation argument.

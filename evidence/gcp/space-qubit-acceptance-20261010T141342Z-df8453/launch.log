@@ -1,0 +1,8 @@
+inputs.tar.gz: OK
+RESTORING_TASK_CACHE space-pair3-acceptance-20261010T130617Z-981811 2d279c84a78af1c5654fda2d534fa19ce26f17652cf4e06425b51056d173b625
+CACHE_INVENTORY before 696
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+PASS input and pinned dependency identities
+CACHE_INVENTORY after 702
+PASS development build and source preservation
+RETAINED_TASK_CACHE 0a554d297f71cc269090202b1c7766c92ae19cdb2cba1033209b8b3d36d9e414 52446946

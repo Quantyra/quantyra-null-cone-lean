@@ -1,0 +1,78 @@
+{
+  "diagnostics.json": {
+    "sha256": "75f3e143b195fd2592918e315468c65b6256185a781aac12af8b2583f088e69c",
+    "bytes": 193789
+  },
+  "exact-coverage.json": {
+    "sha256": "11f26da7eb852772181023767f1c7a9643ce84b99ae2a0a72627b454d4757f72",
+    "bytes": 46841
+  },
+  "manifest.json": {
+    "sha256": "26d0ce4b634129265f022b1b4cc10b7e2aa11370ee0499e00a12a62a19d76cd5",
+    "bytes": 6014
+  },
+  "marginals.json": {
+    "sha256": "883879429f0ed207fa1ac7fc0f0dcc83276c845cb30d47bc18e5579711df07bb",
+    "bytes": 29372
+  },
+  "reports.jsonl": {
+    "sha256": "b57e7cceb84bc1dd1434badbab573270772db9d97ce970b75317d3ff6287fa67",
+    "bytes": 1066970
+  },
+  "resource.json": {
+    "sha256": "65b5b579b5d35430d7d2729cef6540bdecc7ffa3f76d3ebc772c18db154cb50c",
+    "bytes": 345
+  },
+  "source/evidence/quantum-measurement/source-inventory.json": {
+    "sha256": "9ea3e91fac9c99217b7c2f7efafb020afd68f5fe8d63cb0540be4b37230a3acc",
+    "bytes": 2960
+  },
+  "source/notes/quantum-measurement-model.md": {
+    "sha256": "021f1ba537e18a8cde42c3b5e0fe601e29a594647f87448a8a5595913154bb3a",
+    "bytes": 8130
+  },
+  "source/notes/quantum-measurement-protocol.json": {
+    "sha256": "5c3579b752c452008e451bdd9e89a379112e9e2348b795c9976973d2220faa9f",
+    "bytes": 4019
+  },
+  "source/notes/quantum-measurement-protocol.md": {
+    "sha256": "ddee1bca45a788f47056e98a48208f2b91fb3c5200c79e0c001b84156f820066",
+    "bytes": 5751
+  },
+  "source/notes/quantum-measurement-sources.md": {
+    "sha256": "74068b651c47f2830e24aa16cf1a9f16f72f5e0cbcb90c0463647461b6caf9be",
+    "bytes": 7391
+  },
+  "source/tools/audit_quantum_measurement_study.py": {
+    "sha256": "a76322a46518817356fc30fc76277e2efb112427d5a86e9ceb8b0195253c647b",
+    "bytes": 10642
+  },
+  "source/tools/finite_data_resource.py": {
+    "sha256": "058590531d08d285d08aafd782c0c9410e942c284d663505d0bc0c709304651c",
+    "bytes": 7282
+  },
+  "source/tools/marked_volume.py": {
+    "sha256": "ee989e40647b89d00ff9cf4b9c557b91b02ec487bcdead6cb5017711eb1309a6",
+    "bytes": 5228
+  },
+  "source/tools/quantum_measurement.py": {
+    "sha256": "6365bc9d332423a6c0c5af5f3ec2fde5adec85fe07601e04f4cda4c77c72afca",
+    "bytes": 5987
+  },
+  "source/tools/run_quantum_measurement_study.py": {
+    "sha256": "f77d70c8efaebec35b2ac1926b3acf4c66ba28635e6697c8309b14fc8edf56bb",
+    "bytes": 9798
+  },
+  "source/tools/test_quantum_measurement.py": {
+    "sha256": "617ba22cbe1f7bb007dff1a5140bea792911d756437c0fe1114cfc12fc7bbbfd",
+    "bytes": 3029
+  },
+  "summary.json": {
+    "sha256": "c2f3be91057aef758d78be027f273cd27998c8f8d9a5c2f8892f584890482b90",
+    "bytes": 631
+  },
+  "worker.log": {
+    "sha256": "198f21da672c123e0cb430147b759f665bf94038189b6bdbde5e6bb870d88ce4",
+    "bytes": 1413
+  }
+}

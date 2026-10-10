@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "run": "space-qubit-acceptance-20261010T141342Z-df8453",
+  "source_files": 268,
+  "audited_exports": 1288,
+  "numerical_source_commit": "ec87f42064ee2330d181dcbc2ad17975b1edead2",
+  "study_inventory_files": 19,
+  "raw_evidence_files": 161,
+  "raw_evidence_bytes": 4661158,
+  "git_scope": "index",
+  "archive_sha256": "4b986c497b5268ba95e16d11e5ac7ecd4b013680b87a1a19b8fb7a07ed0f1b6b",
+  "scope": "Exact source and raw Git custody; the numerical audit and GCP logs are separate acceptance evidence."
+}

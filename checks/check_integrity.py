@@ -26,7 +26,19 @@ for report in reports:
     names = {name.strip() for name in report.split(",") if name.strip()}
     if not names <= ALLOWED:
         sys.exit(f"Unexpected theorem dependencies: {sorted(names - ALLOWED)}")
-for name in ('exp_remainder_bernstein',
+for name in ('qubit_click_ranges',
+             'qubit_trial_probability',
+             'qubit_trial_click_masses',
+             'qubit_record_probability',
+             'qubit_probe_count_preserving',
+             'qubit_calibration_plus_preserving',
+             'qubit_calibration_minus_preserving',
+             'qubit_confounded_full_probe_law',
+             'qubit_uncalibrated_randomized_obstruction',
+             'qubit_box_report_covers',
+             'binomial_marginal_report_failure',
+             'loss_only_qubit_confidence',
+             'exp_remainder_bernstein',
              'exp_mul_bounded_bernstein',
              'centered_indicator_bernstein_mgf',
              'bernsteinRadius_identity',

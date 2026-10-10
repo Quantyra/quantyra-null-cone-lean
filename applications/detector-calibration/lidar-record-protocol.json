@@ -1,0 +1,30 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "scope": "Bounded adequacy check of HighFluxSPL timestamp and pulse-calibration records. This is not an estimator comparison, a physical calibration certificate or an improvement claim.",
+  "prior_information": "The 2021 paper and source describe a fixed target, separate low-flux reference and calibrated pulse. The 2026 paper already reports full-acquisition fitted proxy parameters and block-based results for acq14. Those published outcomes are known. No local event outcomes have been analyzed. Source code, archive directory and sizes have been inspected. The original source uses holdoff+2 ns; the newer reader uses holdoff alone. Both are checked descriptively without selecting a fitted dead time.",
+  "archive": {
+    "url": "https://drive.usercontent.google.com/download?id=1TwwtDn4BheJ9Ij25taWhk2_VLMedrtry&export=download&confirm=t",
+    "bytes": 456605196,
+    "index_provenance": "Public data link in Goyal-STIR-Group/HighFluxSPL README at 1494365d05867fa6bff9b989dc4f0bd5817a0b4e; ZIP central directory inspected using HTTP ranges.",
+    "members": [
+      {"name": "2019_01_28/FGS_td048_2019_01_28_acq1.mat", "bytes": 19558228, "crc32": "80a3e202"},
+      {"name": "2019_01_28/FGS_td198_2019_01_28_acq14.mat", "bytes": 20133276, "crc32": "4091c435"},
+      {"name": "2019_01_28/laser_calib_100.mat", "bytes": 3168, "crc32": "674094cf"}
+    ]
+  },
+  "development_frame_range": [0, 1000000],
+  "dead_time_offsets_ns": [0, 0.5, 1, 2, 3],
+  "gap_quantiles": [0, 0.0001, 0.001, 0.01, 0.5],
+  "rounding_allowance_raw_bins": 4,
+  "checks": [
+    "Retrieve only the three named members with ZIP CRC and size checks; record SHA256, file metadata and exact request ranges. Keep data outside Git.",
+    "List MATLAB variable names, shapes and classes. Inspect scalar numeric acquisition metadata. For the pulse calibration, inspect variable availability, finite/nonnegative values and normalization summaries; do not assume a smoothed pulse contains raw counts or uncertainty.",
+    "Allow full-file frame extent and array-length inspection for record provenance. Restrict phase/gap/multiplicity outcomes to frame IDs in [0,1000000). Preserve original order and record any ordering failure rather than silently sort.",
+    "Verify finite timestamps, integral nonnegative frame IDs and phases in the declared repetition period. Independently compute consecutive gaps from frame differences plus phase differences and from absolute timestamps; require disagreement at most 1e-5 ns.",
+    "Report gap quantiles and counts below each declared holdoff offset, allowing four raw timestamp bins for rounding. These are hard-cutoff compatibility diagnostics, not a fitted dead time or probability calibration.",
+    "Check that the newer source's acq14 nominal holdoff exceeds its stated 80 ns electronics dead time, and identify which further observation/calibration evidence is still missing."
+  ],
+  "decision_gate": "Select further inference work only if the record supports reconstructible exposure and meaningful independent calibration. Preserve existing model-based results and compare any future method against joint likelihood and robust one-step inference, including calibration sensitivity. Resampling a histogram or fitting a full-record proxy does not independently validate the physical target.",
+  "boundaries": "No depth/flux fit, hypothesis test, policy optimization, performance comparison or response analysis outside the fixed development range. No raw-data redistribution, Lean/Lake invocation, hardware operation, author outreach or publication. The beam reserve is untouched."
+}

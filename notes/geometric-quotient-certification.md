@@ -1,5 +1,7 @@
 # Compact time-profile quotient and full sampling support
 
+Subsequent progress: [exact quotient sampling and coupling-loss foundations](geometric-sampling-loss-certification.md) now have 1,041-report GCP acceptance. The historical quotient/support acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,004 exact type/axiom reports, including 37 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Exact topological realization

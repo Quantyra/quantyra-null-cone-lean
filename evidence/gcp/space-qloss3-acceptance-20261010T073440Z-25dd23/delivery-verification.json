@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_commit": "0dc998b24959239e71a3e2aebd00ab49d6edde4d",
+  "captured_files": 214,
+  "lean_inputs": 180,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "3bef942aed0153826215eca301ee26a96690dbaec74ead6336163f85ce93e56b",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzQuotientLaws.lean": "f55c19b74d5fc3fa821838e43b3e659b6a5f64e57a282e139b20f84f7a4c437d",
+    "QuantyraNullCone/TimeCouplingLoss.lean": "c20395ff1d4f63ebde1a5fd71ad7c94d2c7972047caf5ce6f55441a12e3e5e40",
+    "QuantyraNullCone/LorentzDistortion.lean": "87b6baf47d28c0c7a5df2350282cf663652ff408d3702826ae4ed057f1551874"
+  },
+  "audited_named_exports": 1041,
+  "new_sampling_loss_exports": 37,
+  "root_build_jobs": 3113,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1004_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T07:37:45.663317+00:00"
+}

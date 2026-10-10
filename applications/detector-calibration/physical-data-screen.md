@@ -398,6 +398,8 @@ The [result](lidar-recovery-results.json) SHA256 is
 `9ee887258d5cd6956079d6084703d0e318396eefd49735a39dc44cd68439271a`;
 the audit SHA256 is
 `3369793e58f7c39eed4602ab5ea758b43d240ff4b218505af4218b1d202bc0d7`.
+These two JSON outputs retain their original bytes through explicit Git
+attributes, so the recorded hashes also identify the committed payloads.
 Reproduce with the two executables and `--cache-dir` pointing to the existing
 external data directory; each requires a new `--output` path so frozen
 results cannot be silently overwritten. No Lean/Lake or GCP run occurred.

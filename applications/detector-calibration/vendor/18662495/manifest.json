@@ -1,0 +1,114 @@
+﻿[
+    {
+        "file":  "count_fits.py",
+        "bytes":  9742,
+        "original_checksum":  "md5:64ca26f8b4a938db0662e47a0bed86d5",
+        "sha256":  "945c1374db8172633fa29c5aedd57509f2942c712a26017b8474a22873227175",
+        "url":  "https://zenodo.org/api/records/18662495/files/count_fits.py/content"
+    },
+    {
+        "file":  "config.json",
+        "bytes":  994,
+        "original_checksum":  "md5:adea1a45560ba11c660cfa4be9edbad0",
+        "sha256":  "1a9b77da041e53ea15d363f68ccd9bff1c9b7f3872f936f894c6aa5c657f5be3",
+        "url":  "https://zenodo.org/api/records/18662495/files/config.json/content"
+    },
+    {
+        "file":  "spad3_dead_time.txt",
+        "bytes":  191,
+        "original_checksum":  "md5:7f6bb4e7ca2cb99a873e56f411be3e5a",
+        "sha256":  "20e1c1512ce07e8bdae285f6d6ad8f0db120ffcb7c563c1b862b0906fdeea95c",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad3_dead_time.txt/content"
+    },
+    {
+        "file":  "spad1_dead_time.txt",
+        "bytes":  232,
+        "original_checksum":  "md5:1ca47a006ed7fe772f9404cad35b8463",
+        "sha256":  "51084881609c7941f6ccb0a66ebf8afec447d7fbb81b94de5ae9962799086447",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad1_dead_time.txt/content"
+    },
+    {
+        "file":  "spad2_dead_time.txt",
+        "bytes":  224,
+        "original_checksum":  "md5:bcbade4111143d6986b194543d37c545",
+        "sha256":  "1f601a0c017655ad06d1fa58d0bd76bef00a228fba1a18cad97557523f2297b5",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad2_dead_time.txt/content"
+    },
+    {
+        "file":  "snspd1_dead_time.txt",
+        "bytes":  219,
+        "original_checksum":  "md5:20cee7976afb29964df11def2bd743ef",
+        "sha256":  "f6b69f7a49f6ec38863dc5af3d0b071fecaf2b2f227fa988bbd4815b0dbb9753",
+        "url":  "https://zenodo.org/api/records/18662495/files/snspd1_dead_time.txt/content"
+    },
+    {
+        "file":  "1,3M_hist.txt",
+        "bytes":  585100,
+        "original_checksum":  "md5:219efdc51273957b54d8054e3a92c32d",
+        "sha256":  "9c58d33eef50b0d2972af7727661e7ecf25efa4d55347f5ba895c4d9db2d759c",
+        "url":  "https://zenodo.org/api/records/18662495/files/1,3M_hist.txt/content"
+    },
+    {
+        "file":  "experiment_analytical.py",
+        "bytes":  3530,
+        "original_checksum":  "md5:2c2d715516ca8dbf167fe96770525964",
+        "sha256":  "fbcc3bc134b17d92ce0ee0df53a44a47a4733257c0dbc9fa32b2d9fd9367f741",
+        "url":  "https://zenodo.org/api/records/18662495/files/experiment_analytical.py/content"
+    },
+    {
+        "file":  "spad2.txt",
+        "bytes":  467,
+        "original_checksum":  "md5:e3e0f4c94a5659ab4a82ac64840a20f0",
+        "sha256":  "5ea848aa351fc6bb08781d25f47211dc72c5457b31b56a4bb90c0a09990e0115",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad2.txt/content"
+    },
+    {
+        "file":  "lib_fits.py",
+        "bytes":  2565,
+        "original_checksum":  "md5:e69ffa8eb6043d535fe4674d621990da",
+        "sha256":  "265c53a2487838ffa79103a7bda8e0f6bea432d13162b3cfad894a1b644b948f",
+        "url":  "https://zenodo.org/api/records/18662495/files/lib_fits.py/content"
+    },
+    {
+        "file":  "snspd1.txt",
+        "bytes":  473,
+        "original_checksum":  "md5:3505ac4d826c0e773b432e27d12bd31b",
+        "sha256":  "b9246859e0682f25525ac985baae3eb13eedc2e2974a633de9dbe241ee4c7f9e",
+        "url":  "https://zenodo.org/api/records/18662495/files/snspd1.txt/content"
+    },
+    {
+        "file":  "spad3.txt",
+        "bytes":  616,
+        "original_checksum":  "md5:57a73f22ac112962fdc59fa385b7297c",
+        "sha256":  "7f1fe3d0cf196fa0461c52dfa9ee7a95ea579cd016e170b1335fe1441079ee63",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad3.txt/content"
+    },
+    {
+        "file":  "plot_data.py",
+        "bytes":  464,
+        "original_checksum":  "md5:7ef5c7bbf81b86c9b54e3ccd1cb21abc",
+        "sha256":  "2736eb2d6b6c977075cde96952d71f02b87b3d4a2a916fc1dd473b6ead780d3b",
+        "url":  "https://zenodo.org/api/records/18662495/files/plot_data.py/content"
+    },
+    {
+        "file":  "spad1.txt",
+        "bytes":  569,
+        "original_checksum":  "md5:cd6f6973e6af71e11ed54ae3d620ca87",
+        "sha256":  "28562763c2bd5723888505050f147b7ad17b44d4b8752d4011dcf4de5b9a4b58",
+        "url":  "https://zenodo.org/api/records/18662495/files/spad1.txt/content"
+    },
+    {
+        "file":  "time_definitions.py",
+        "bytes":  3111,
+        "original_checksum":  "md5:8ea09db8f3f582b19dd4806d7d290d9e",
+        "sha256":  "c2a8aeab472aa977a46ad861dbceecf6ac354be8e0b9571fe32634a3e39446bb",
+        "url":  "https://zenodo.org/api/records/18662495/files/time_definitions.py/content"
+    },
+    {
+        "file":  "README.md",
+        "bytes":  847,
+        "original_checksum":  "md5:13e96ef60f9d9da5037c9b8282e1d9e8",
+        "sha256":  "aaad5e007003524ec01d49027c2f1707d2ef83d6f6dc638f2a21ff57e96cd16e",
+        "url":  "https://zenodo.org/api/records/18662495/files/README.md/content"
+    }
+]

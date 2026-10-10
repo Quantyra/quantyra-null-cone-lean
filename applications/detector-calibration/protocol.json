@@ -1,0 +1,30 @@
+{
+  "id": "S049-detector-screen-v1",
+  "date": "2026-10-10",
+  "status_at_freeze": "before local curve inspection; published summary and author configuration already read",
+  "purpose": "source-model consistency and dataset sufficiency, not a practical-benefit acceptance experiment",
+  "data": {"record": "18662495", "device": "snspd1", "license": "CC-BY-4.0"},
+  "synthetic": {
+    "q": [0.01, 0.1, 0.25, 0.5, 0.75, 0.9],
+    "blind_pulses": [0, 1, 2, 3, 4],
+    "recovery_prefixes": [[0.2], [0.0, 0.3], [0.0, 0.0, 0.2, 0.8], [0.1, 0.4, 0.7, 0.95]],
+    "arithmetic_check_tolerance": 1e-12,
+    "decision_counterexample": {"q": 0.5, "blind_pulses": 2, "threshold_q": 0.475}
+  },
+  "comparators": ["original deposited geometric-age code", "renewal survival formula", "independent stationary Markov-chain solve", "hard dead-time renewal model"],
+  "recovery": {"dead_ns": 19.29, "reset95_ns": 6.76, "pulse_hz": 79400000.0, "cutoffs": [0.999, 0.999999999999]},
+  "physical_check": {
+    "ordering": "ascending measured count rate, hence ascending reconstructed reference flux for this device; assert the two orderings agree",
+    "training": "first floor(n/2) rows",
+    "test": "remaining rows",
+    "fitted_parameters": ["eta0"],
+    "eta0_bounds": [0.5, 1.0],
+    "objective": "sum of squared efficiency residuals divided by supplied standard uncertainties squared",
+    "recovery_parameters": "fixed from independent histogram/configuration; never fit on test rows",
+    "outputs": ["all predictions", "test efficiency RMSE", "test inverse-flux relative errors", "absolute residual over supplied uncertainty"],
+    "common_flux_scale_sensitivity": [0.995, 1.0, 1.005],
+    "claims": "descriptive retrospective compatibility only; no formal goodness-of-fit or coverage claim because joint uncertainties and raw acquisition law are unavailable"
+  },
+  "progress_gate": "A renewal/geometric discrepancy alone does not meet the goal: the strongest established renewal comparator supplies the same correct law. Continue to a distinct decision method only with a justified benefit and sufficient physical evidence.",
+  "resources": {"local_python_permitted": true, "lean_gcp_only": true, "new_hardware_or_contact": false}
+}

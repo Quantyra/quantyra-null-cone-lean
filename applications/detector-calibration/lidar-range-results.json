@@ -1,0 +1,1274 @@
+{
+  "protocol_sha256": "c2ecaffee31cae5433a24f4e7b853023e5bf3f797a5ea059494aea8d7402e5b2",
+  "executable_sha256": "5242492df03bd1db5fcf85e063f837aac6b91d86a04846b126248ebf5f68a87b",
+  "argument_sha256": "26deefa93af0b03c41a6a4b4fb4f223545aebba4b2fa0a8339a6605786e688f5",
+  "upstream_hashes": {
+    "LICENSE.txt": "e130f3c3c02bfbd57acc05903b2e0e306204c9408c7657ab2a346ffe7bba9e6d",
+    "src/spl_fisher_bounds/constants.py": "5640809a538131d84a8a81e480fb47ff9c5c8da370f897f0468c2e75ffd2f02f",
+    "src/spl_fisher_bounds/model.py": "192c7258c2e07979a64e62042db33a306eff6ab3c8c19b026d58a11dda1bf78c",
+    "src/spl_fisher_bounds/estimators.py": "2a5ccf3986045450fecdad704b775b32bb090ec9d6a07afe5e2711a30bca626b"
+  },
+  "input_hashes": {
+    "high_flux": "cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26",
+    "low_flux": "74e8aa95c4b04f2face829e771aa77bafb6b712914b0bf147dedfcc047268098",
+    "pulse": "69391ff9b96dce1d8fba65ab5c962d77c3e81a69eb063a0f23185b0991ceebf8"
+  },
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "variants": [
+    {
+      "pulse": "smooth_min_subtracted",
+      "high_flux": [
+        {
+          "window_frames": [
+            0,
+            500000
+          ],
+          "hard_cutoff_ns": 198.23360001280008,
+          "native_discrete": {
+            "K": 12500,
+            "bin_width_ns": 0.008000064000512003,
+            "dead_bins": 24778,
+            "dead_bin_duration_ns": 198.2255858046864,
+            "detections_scored": 198276,
+            "pilot_tau_ns": 2.868022944183553,
+            "one_step_tau_ns": 2.865187809581902,
+            "joint_mle_tau_ns": 2.865172035459286,
+            "joint_mle_a": 0.26452775414219065,
+            "joint_mle_b_per_ns": 0.015528542165275099,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 1.3761498863499663e-08,
+            "starts": [
+              {
+                "tau_ns": 2.865172051037608,
+                "success": true,
+                "negative_mean_loglik": 9.465300086439592
+              },
+              {
+                "tau_ns": 2.8651720358961055,
+                "success": true,
+                "negative_mean_loglik": 9.465300086439592
+              },
+              {
+                "tau_ns": 2.865172035459286,
+                "success": true,
+                "negative_mean_loglik": 9.465300086439589
+              }
+            ]
+          },
+          "coarse_discrete": {
+            "K": 625,
+            "bin_width_ns": 0.16000128001024005,
+            "dead_bins": 1238,
+            "dead_bin_duration_ns": 198.08158465267718,
+            "detections_scored": 198276,
+            "pilot_tau_ns": 2.960023680189441,
+            "one_step_tau_ns": 2.8991446676334087,
+            "joint_mle_tau_ns": 2.860852879813581,
+            "joint_mle_a": 0.2644181799245983,
+            "joint_mle_b_per_ns": 0.015508019928639975,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 4.680140262609302e-07,
+            "starts": [
+              {
+                "tau_ns": 2.860852879813581,
+                "success": true,
+                "negative_mean_loglik": 6.480664650041461
+              },
+              {
+                "tau_ns": 2.8608528126486026,
+                "success": true,
+                "negative_mean_loglik": 6.480664650041469
+              },
+              {
+                "tau_ns": 2.860852886104029,
+                "success": true,
+                "negative_mean_loglik": 6.48066465004151
+              }
+            ]
+          },
+          "continuous_hard": {
+            "a": 0.2647426341947788,
+            "tau_ns": 2.8674176289422375,
+            "b_per_ns": 0.015529947408261248,
+            "log_likelihood": -919363.9514547335,
+            "detections_scored": 198276,
+            "recovery_factors": [
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 1.178585823440063e-08,
+            "finite_difference_score_error": 1.8966763760692312e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8674176290988567,
+                "negative_mean_loglik": 4.636788877396831,
+                "success": true,
+                "iterations": 8
+              },
+              {
+                "tau_ns": 2.8674176289422375,
+                "negative_mean_loglik": 4.636788877396828,
+                "success": true,
+                "iterations": 15
+              },
+              {
+                "tau_ns": 2.867417635429893,
+                "negative_mean_loglik": 4.636788877396833,
+                "success": true,
+                "iterations": 18
+              }
+            ]
+          },
+          "profiled_recovery": {
+            "a": 0.2756562894051123,
+            "tau_ns": 2.8673520948188504,
+            "b_per_ns": 0.015737475748098036,
+            "log_likelihood": -918385.8444037425,
+            "detections_scored": 198276,
+            "recovery_factors": [
+              0.0011164405228316578,
+              0.1084344854968647,
+              0.4627251488940385,
+              0.6621624736026952,
+              0.7529789216900524,
+              0.8372256880095781,
+              0.9310473304291799,
+              0.992653929873833,
+              1.0015064165211653,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "normalized_score_max": 1.0144198848825062e-10,
+            "finite_difference_score_error": 3.5606475895988074e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8673520948188504,
+                "negative_mean_loglik": 4.6318558191800445,
+                "success": true,
+                "iterations": 13
+              },
+              {
+                "tau_ns": 2.8673520700727497,
+                "negative_mean_loglik": 4.631855819180083,
+                "success": true,
+                "iterations": 14
+              },
+              {
+                "tau_ns": 2.855200979935619,
+                "negative_mean_loglik": 4.633067809482271,
+                "success": true,
+                "iterations": 10
+              }
+            ]
+          },
+          "guarded": {
+            "201": {
+              "a": 0.2775443794087417,
+              "tau_ns": 2.8603461701916078,
+              "b_per_ns": 0.015713441440114936,
+              "log_likelihood": -868728.7121910797,
+              "detections_scored": 184355,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 5.962879612586977e-08,
+              "finite_difference_score_error": 1.6905094292192328e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.854339660649017,
+                  "negative_mean_loglik": 4.712872638801294,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.8665655467052926,
+                  "negative_mean_loglik": 4.712576277694394,
+                  "success": true,
+                  "iterations": 17
+                },
+                {
+                  "tau_ns": 2.8603461701916078,
+                  "negative_mean_loglik": 4.712260107895526,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "205": {
+              "a": 0.27857158170066393,
+              "tau_ns": 2.860358224344902,
+              "b_per_ns": 0.015705100829344967,
+              "log_likelihood": -807933.4299621398,
+              "detections_scored": 171622,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 1.3412658557131058e-08,
+              "finite_difference_score_error": 2.64796968938363e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.860358224344902,
+                  "negative_mean_loglik": 4.707633228619523,
+                  "success": true,
+                  "iterations": 11
+                },
+                {
+                  "tau_ns": 2.8665752245765006,
+                  "negative_mean_loglik": 4.707947019717367,
+                  "success": true,
+                  "iterations": 15
+                },
+                {
+                  "tau_ns": 2.8603582246547217,
+                  "negative_mean_loglik": 4.707633228619524,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "210": {
+              "a": 0.2788513529554043,
+              "tau_ns": 2.860306137583265,
+              "b_per_ns": 0.01570858668670597,
+              "log_likelihood": -738409.1634403982,
+              "detections_scored": 157049,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 2.222373193312225e-09,
+              "finite_difference_score_error": 2.7575379479838347e-11,
+              "starts": [
+                {
+                  "tau_ns": 2.866522756173477,
+                  "negative_mean_loglik": 4.702125403524969,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.866522756001884,
+                  "negative_mean_loglik": 4.702125403524965,
+                  "success": true,
+                  "iterations": 17
+                },
+                {
+                  "tau_ns": 2.860306137583265,
+                  "negative_mean_loglik": 4.70177564607478,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "220": {
+              "a": 0.27885088436517647,
+              "tau_ns": 2.8602260573861447,
+              "b_per_ns": 0.015695768137116105,
+              "log_likelihood": -615910.2774258413,
+              "detections_scored": 131281,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 1.7999493351926364e-08,
+              "finite_difference_score_error": 2.5596159652528302e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.8602260573861447,
+                  "negative_mean_loglik": 4.691541635315402,
+                  "success": true,
+                  "iterations": 21
+                },
+                {
+                  "tau_ns": 2.8664534831957234,
+                  "negative_mean_loglik": 4.691945445116221,
+                  "success": true,
+                  "iterations": 12
+                },
+                {
+                  "tau_ns": 2.8602260582140717,
+                  "negative_mean_loglik": 4.691541635315403,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            }
+          },
+          "geometry_audit": {
+            "full_interval_sum_cases": 30,
+            "max_absolute_pulse_exposure_error": 1.3096723705530167e-10
+          },
+          "recovery_minus_native_mm": 0.3267826769948655,
+          "recovery_minus_continuous_hard_mm": -0.009823317966540485
+        },
+        {
+          "window_frames": [
+            500000,
+            1000000
+          ],
+          "hard_cutoff_ns": 198.23360001280008,
+          "native_discrete": {
+            "K": 12500,
+            "bin_width_ns": 0.008000064000512003,
+            "dead_bins": 24778,
+            "dead_bin_duration_ns": 198.2255858046864,
+            "detections_scored": 198225,
+            "pilot_tau_ns": 2.868022944183553,
+            "one_step_tau_ns": 2.8654408166956213,
+            "joint_mle_tau_ns": 2.865254868463348,
+            "joint_mle_a": 0.2613663789229737,
+            "joint_mle_b_per_ns": 0.015544269044075236,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 2.431339321095925e-09,
+            "starts": [
+              {
+                "tau_ns": 2.865254868463348,
+                "success": true,
+                "negative_mean_loglik": 9.472849925521677
+              },
+              {
+                "tau_ns": 2.8652548708694345,
+                "success": true,
+                "negative_mean_loglik": 9.472849925521677
+              },
+              {
+                "tau_ns": 2.865254875711874,
+                "success": true,
+                "negative_mean_loglik": 9.472849925521679
+              }
+            ]
+          },
+          "coarse_discrete": {
+            "K": 625,
+            "bin_width_ns": 0.16000128001024005,
+            "dead_bins": 1238,
+            "dead_bin_duration_ns": 198.08158465267718,
+            "detections_scored": 198225,
+            "pilot_tau_ns": 2.960023680189441,
+            "one_step_tau_ns": 2.9015418523936636,
+            "joint_mle_tau_ns": 2.8609546840846596,
+            "joint_mle_a": 0.2613895853695254,
+            "joint_mle_b_per_ns": 0.015522761866134185,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "normalized_score_max": 2.2389020628104396e-10,
+            "starts": [
+              {
+                "tau_ns": 2.8609546745786445,
+                "success": true,
+                "negative_mean_loglik": 6.487528156754884
+              },
+              {
+                "tau_ns": 2.8609546840846596,
+                "success": true,
+                "negative_mean_loglik": 6.487528156754882
+              },
+              {
+                "tau_ns": 2.8609546848074547,
+                "success": true,
+                "negative_mean_loglik": 6.487528156754882
+              }
+            ]
+          },
+          "continuous_hard": {
+            "a": 0.2615675105252362,
+            "tau_ns": 2.8674519698665217,
+            "b_per_ns": 0.01554569677687896,
+            "log_likelihood": -920624.8793215674,
+            "detections_scored": 198225,
+            "recovery_factors": [
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 5.459596661107948e-08,
+            "finite_difference_score_error": 4.30735684750147e-10,
+            "starts": [
+              {
+                "tau_ns": 2.8674519710887973,
+                "negative_mean_loglik": 4.644342940202134,
+                "success": true,
+                "iterations": 19
+              },
+              {
+                "tau_ns": 2.8674519698665217,
+                "negative_mean_loglik": 4.64434294020213,
+                "success": true,
+                "iterations": 15
+              },
+              {
+                "tau_ns": 2.8612521691493673,
+                "negative_mean_loglik": 4.644512573534666,
+                "success": true,
+                "iterations": 22
+              }
+            ]
+          },
+          "profiled_recovery": {
+            "a": 0.2720499336708528,
+            "tau_ns": 2.867378383532505,
+            "b_per_ns": 0.015754202594329955,
+            "log_likelihood": -919670.253420098,
+            "detections_scored": 198225,
+            "recovery_factors": [
+              0.0011247489910603255,
+              0.10751806330517516,
+              0.5140266436165964,
+              0.6508785959838431,
+              0.7369498892853363,
+              0.8397057007222208,
+              0.9366961186609889,
+              0.9952797646316193,
+              0.9964028825675634,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 6.109991325280441e-08,
+            "finite_difference_score_error": 1.0317209540042574e-08,
+            "starts": [
+              {
+                "tau_ns": 2.867378383532505,
+                "negative_mean_loglik": 4.639527069845368,
+                "success": true,
+                "iterations": 16
+              },
+              {
+                "tau_ns": 2.8673783842236045,
+                "negative_mean_loglik": 4.639527069845368,
+                "success": true,
+                "iterations": 19
+              },
+              {
+                "tau_ns": 2.867378382825571,
+                "negative_mean_loglik": 4.639527069845368,
+                "success": true,
+                "iterations": 12
+              }
+            ]
+          },
+          "guarded": {
+            "201": {
+              "a": 0.272730588733313,
+              "tau_ns": 2.8665805352743146,
+              "b_per_ns": 0.015742659978703097,
+              "log_likelihood": -870638.7590039592,
+              "detections_scored": 184433,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 2.2684695131098e-09,
+              "finite_difference_score_error": 3.95310993639951e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.854267280518841,
+                  "negative_mean_loglik": 4.720878068725155,
+                  "success": true,
+                  "iterations": 9
+                },
+                {
+                  "tau_ns": 2.8665805465553142,
+                  "negative_mean_loglik": 4.720623527264444,
+                  "success": true,
+                  "iterations": 17
+                },
+                {
+                  "tau_ns": 2.8665805352743146,
+                  "negative_mean_loglik": 4.720623527264422,
+                  "success": true,
+                  "iterations": 12
+                }
+              ]
+            },
+            "205": {
+              "a": 0.27239336190031327,
+              "tau_ns": 2.8603028394212853,
+              "b_per_ns": 0.015744691530570898,
+              "log_likelihood": -810125.8261935092,
+              "detections_scored": 171755,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "normalized_score_max": 9.05569812879193e-10,
+              "finite_difference_score_error": 2.9326532778269944e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.854234948070364,
+                  "negative_mean_loglik": 4.717302597216538,
+                  "success": true,
+                  "iterations": 19
+                },
+                {
+                  "tau_ns": 2.866562113665627,
+                  "negative_mean_loglik": 4.717070200998346,
+                  "success": true,
+                  "iterations": 18
+                },
+                {
+                  "tau_ns": 2.8603028394212853,
+                  "negative_mean_loglik": 4.716752503237222,
+                  "success": true,
+                  "iterations": 20
+                }
+              ]
+            },
+            "210": {
+              "a": 0.27308419573133114,
+              "tau_ns": 2.8665730494987005,
+              "b_per_ns": 0.015715980269110398,
+              "log_likelihood": -739230.0199482158,
+              "detections_scored": 156836,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "normalized_score_max": 2.398560431208196e-10,
+              "finite_difference_score_error": 2.5991236527389203e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.866573052673405,
+                  "negative_mean_loglik": 4.713395011019256,
+                  "success": true,
+                  "iterations": 18
+                },
+                {
+                  "tau_ns": 2.8665730494987005,
+                  "negative_mean_loglik": 4.713395011019254,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.8665730495745505,
+                  "negative_mean_loglik": 4.713395011019254,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "220": {
+              "a": 0.271745394267544,
+              "tau_ns": 2.86030119935181,
+              "b_per_ns": 0.01568923284466898,
+              "log_likelihood": -616374.5032816094,
+              "detections_scored": 130966,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 1.668173117894609e-09,
+              "finite_difference_score_error": 3.598906565664174e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.8603011978267707,
+                  "negative_mean_loglik": 4.706370380721788,
+                  "success": true,
+                  "iterations": 14
+                },
+                {
+                  "tau_ns": 2.8665787739011472,
+                  "negative_mean_loglik": 4.706693863245738,
+                  "success": true,
+                  "iterations": 16
+                },
+                {
+                  "tau_ns": 2.86030119935181,
+                  "negative_mean_loglik": 4.706370380721785,
+                  "success": true,
+                  "iterations": 22
+                }
+              ]
+            }
+          },
+          "geometry_audit": {
+            "full_interval_sum_cases": 30,
+            "max_absolute_pulse_exposure_error": 1.4551915228366852e-10
+          },
+          "recovery_minus_native_mm": 0.31830690109127197,
+          "recovery_minus_continuous_hard_mm": -0.011030313975065346
+        }
+      ],
+      "low_flux_provisional_reference": {
+        "a": 0.0004964257619362014,
+        "tau_ns": 2.827958638478549,
+        "b_per_ns": 2.220449484081053e-05,
+        "log_likelihood": -29975.487349673684,
+        "detections_scored": 2704,
+        "recovery_factors": [
+          1.0
+        ],
+        "optimizer_success": true,
+        "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "normalized_score_max": 5.6295381626316604e-08,
+        "finite_difference_score_error": 1.166555199411546e-08,
+        "starts": [
+          {
+            "tau_ns": 2.8279586372393033,
+            "negative_mean_loglik": 11.085609226950355,
+            "success": true,
+            "iterations": 13
+          },
+          {
+            "tau_ns": 2.840528557300721,
+            "negative_mean_loglik": 11.088283936660327,
+            "success": true,
+            "iterations": 20
+          },
+          {
+            "tau_ns": 2.827958638478549,
+            "negative_mean_loglik": 11.085609226950327,
+            "success": true,
+            "iterations": 17
+          }
+        ]
+      }
+    },
+    {
+      "pulse": "smooth_unsubtracted",
+      "high_flux": [
+        {
+          "window_frames": [
+            0,
+            500000
+          ],
+          "hard_cutoff_ns": 198.23360001280008,
+          "native_discrete": {
+            "K": 12500,
+            "bin_width_ns": 0.008000064000512003,
+            "dead_bins": 24778,
+            "dead_bin_duration_ns": 198.2255858046864,
+            "detections_scored": 198276,
+            "pilot_tau_ns": 2.868022944183553,
+            "one_step_tau_ns": 2.865191979673325,
+            "joint_mle_tau_ns": 2.865174734380316,
+            "joint_mle_a": 0.2649793477093455,
+            "joint_mle_b_per_ns": 0.015523948504738757,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 2.985852129932834e-08,
+            "starts": [
+              {
+                "tau_ns": 2.865174733388545,
+                "success": true,
+                "negative_mean_loglik": 9.465295669835166
+              },
+              {
+                "tau_ns": 2.865174734735655,
+                "success": true,
+                "negative_mean_loglik": 9.465295669835166
+              },
+              {
+                "tau_ns": 2.865174734380316,
+                "success": true,
+                "negative_mean_loglik": 9.465295669835164
+              }
+            ]
+          },
+          "coarse_discrete": {
+            "K": 625,
+            "bin_width_ns": 0.16000128001024005,
+            "dead_bins": 1238,
+            "dead_bin_duration_ns": 198.08158465267718,
+            "detections_scored": 198276,
+            "pilot_tau_ns": 2.960023680189441,
+            "one_step_tau_ns": 2.8986897474001054,
+            "joint_mle_tau_ns": 2.860914830309498,
+            "joint_mle_a": 0.2648306690277026,
+            "joint_mle_b_per_ns": 0.015503923961050348,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 9.2718404461942e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8609148434833704,
+                "success": true,
+                "negative_mean_loglik": 6.480660280893357
+              },
+              {
+                "tau_ns": 2.860914840284932,
+                "success": true,
+                "negative_mean_loglik": 6.480660280893368
+              },
+              {
+                "tau_ns": 2.860914830309498,
+                "success": true,
+                "negative_mean_loglik": 6.480660280893356
+              }
+            ]
+          },
+          "continuous_hard": {
+            "a": 0.265191685013192,
+            "tau_ns": 2.867415950347453,
+            "b_per_ns": 0.015525376607432482,
+            "log_likelihood": -919363.432165456,
+            "detections_scored": 198276,
+            "recovery_factors": [
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 7.50593976553086e-08,
+            "finite_difference_score_error": 2.293629492388337e-09,
+            "starts": [
+              {
+                "tau_ns": 2.867415950347453,
+                "negative_mean_loglik": 4.636786258374468,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.867415953495645,
+                "negative_mean_loglik": 4.636786258374472,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.867415950107218,
+                "negative_mean_loglik": 4.636786258374468,
+                "success": true,
+                "iterations": 23
+              }
+            ]
+          },
+          "profiled_recovery": {
+            "a": 0.276167656839461,
+            "tau_ns": 2.8673500703518595,
+            "b_per_ns": 0.01573341469677799,
+            "log_likelihood": -918384.7906107476,
+            "detections_scored": 198276,
+            "recovery_factors": [
+              0.0011164298369773433,
+              0.10843223480368219,
+              0.462720029539242,
+              0.6621189222255456,
+              0.7527109392279295,
+              0.837068992516123,
+              0.9303228525635854,
+              0.991028656079451,
+              1.0015304546422439,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 3.2638441243385047e-08,
+            "finite_difference_score_error": 4.472572257213994e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8611736059884083,
+                "negative_mean_loglik": 4.631977909397798,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.8673500703518595,
+                "negative_mean_loglik": 4.6318505044016804,
+                "success": true,
+                "iterations": 18
+              },
+              {
+                "tau_ns": 2.855225693729245,
+                "negative_mean_loglik": 4.6330569367492345,
+                "success": true,
+                "iterations": 10
+              }
+            ]
+          },
+          "guarded": {
+            "201": {
+              "a": 0.2780195996588946,
+              "tau_ns": 2.86034950768708,
+              "b_per_ns": 0.015709199886877048,
+              "log_likelihood": -868727.8444565292,
+              "detections_scored": 184355,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 2.3754357450301025e-08,
+              "finite_difference_score_error": 4.2327977586723367e-10,
+              "starts": [
+                {
+                  "tau_ns": 2.86034950768708,
+                  "negative_mean_loglik": 4.712255401028067,
+                  "success": true,
+                  "iterations": 9
+                },
+                {
+                  "tau_ns": 2.8665569668787834,
+                  "negative_mean_loglik": 4.712571011969211,
+                  "success": true,
+                  "iterations": 14
+                },
+                {
+                  "tau_ns": 2.860349501342983,
+                  "negative_mean_loglik": 4.712255401028082,
+                  "success": true,
+                  "iterations": 19
+                }
+              ]
+            },
+            "205": {
+              "a": 0.27905603985155814,
+              "tau_ns": 2.8603622535873647,
+              "b_per_ns": 0.015701289877572376,
+              "log_likelihood": -807932.2831384066,
+              "detections_scored": 171622,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 1.8912612541316256e-09,
+              "finite_difference_score_error": 6.070484802063025e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.860362252910768,
+                  "negative_mean_loglik": 4.707626546354236,
+                  "success": true,
+                  "iterations": 19
+                },
+                {
+                  "tau_ns": 2.8665678475664658,
+                  "negative_mean_loglik": 4.707940157706825,
+                  "success": true,
+                  "iterations": 16
+                },
+                {
+                  "tau_ns": 2.8603622535873647,
+                  "negative_mean_loglik": 4.707626546354235,
+                  "success": true,
+                  "iterations": 14
+                }
+              ]
+            },
+            "210": {
+              "a": 0.2793393889503762,
+              "tau_ns": 2.860309641742683,
+              "b_per_ns": 0.015704694917709972,
+              "log_likelihood": -738407.8021121684,
+              "detections_scored": 157049,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 1.2357124564508568e-08,
+              "finite_difference_score_error": 8.997851758379277e-11,
+              "starts": [
+                {
+                  "tau_ns": 2.8543232984055686,
+                  "negative_mean_loglik": 4.702380115706183,
+                  "success": true,
+                  "iterations": 11
+                },
+                {
+                  "tau_ns": 2.866514898967341,
+                  "negative_mean_loglik": 4.702116369077745,
+                  "success": true,
+                  "iterations": 14
+                },
+                {
+                  "tau_ns": 2.860309641742683,
+                  "negative_mean_loglik": 4.70176697789969,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "220": {
+              "a": 0.2798845907418913,
+              "tau_ns": 2.866445393573303,
+              "b_per_ns": 0.01569301518226769,
+              "log_likelihood": -615962.5591453882,
+              "detections_scored": 131281,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "normalized_score_max": 3.448498169372495e-10,
+              "finite_difference_score_error": 1.2874925107162274e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.854226204360159,
+                  "negative_mean_loglik": 4.6921260326487575,
+                  "success": true,
+                  "iterations": 20
+                },
+                {
+                  "tau_ns": 2.866445393573303,
+                  "negative_mean_loglik": 4.691939878165067,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.8542262020559446,
+                  "negative_mean_loglik": 4.692126032648755,
+                  "success": true,
+                  "iterations": 17
+                }
+              ]
+            }
+          },
+          "geometry_audit": {
+            "full_interval_sum_cases": 30,
+            "max_absolute_pulse_exposure_error": 1.4551915228366852e-10
+          },
+          "recovery_minus_native_mm": 0.3260746589424572,
+          "recovery_minus_continuous_hard_mm": -0.009875162906000386
+        },
+        {
+          "window_frames": [
+            500000,
+            1000000
+          ],
+          "hard_cutoff_ns": 198.23360001280008,
+          "native_discrete": {
+            "K": 12500,
+            "bin_width_ns": 0.008000064000512003,
+            "dead_bins": 24778,
+            "dead_bin_duration_ns": 198.2255858046864,
+            "detections_scored": 198225,
+            "pilot_tau_ns": 2.868022944183553,
+            "one_step_tau_ns": 2.865449504895587,
+            "joint_mle_tau_ns": 2.8652759634329628,
+            "joint_mle_a": 0.26180306623402694,
+            "joint_mle_b_per_ns": 0.015539865454588736,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 4.561505316452695e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8652759634329628,
+                "success": true,
+                "negative_mean_loglik": 9.472851992579892
+              },
+              {
+                "tau_ns": 2.865275962865282,
+                "success": true,
+                "negative_mean_loglik": 9.472851992579892
+              },
+              {
+                "tau_ns": 2.8652759703278208,
+                "success": true,
+                "negative_mean_loglik": 9.472851992579892
+              }
+            ]
+          },
+          "coarse_discrete": {
+            "K": 625,
+            "bin_width_ns": 0.16000128001024005,
+            "dead_bins": 1238,
+            "dead_bin_duration_ns": 198.08158465267718,
+            "detections_scored": 198225,
+            "pilot_tau_ns": 2.960023680189441,
+            "one_step_tau_ns": 2.901098402772062,
+            "joint_mle_tau_ns": 2.8610215718963947,
+            "joint_mle_a": 0.26178319660671784,
+            "joint_mle_b_per_ns": 0.015518885772398185,
+            "joint_mle_success": true,
+            "joint_mle_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "normalized_score_max": 9.962863449955256e-10,
+            "starts": [
+              {
+                "tau_ns": 2.861021581487129,
+                "success": true,
+                "negative_mean_loglik": 6.487532402008146
+              },
+              {
+                "tau_ns": 2.8610215718963947,
+                "success": true,
+                "negative_mean_loglik": 6.487532402008144
+              },
+              {
+                "tau_ns": 2.861021568209069,
+                "success": true,
+                "negative_mean_loglik": 6.487532402008144
+              }
+            ]
+          },
+          "continuous_hard": {
+            "a": 0.26200210791002565,
+            "tau_ns": 2.8674511443322395,
+            "b_per_ns": 0.015541292660228639,
+            "log_likelihood": -920625.4307776779,
+            "detections_scored": 198225,
+            "recovery_factors": [
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "normalized_score_max": 2.5191720921550567e-08,
+            "finite_difference_score_error": 1.4660358159650916e-09,
+            "starts": [
+              {
+                "tau_ns": 2.8674511443322395,
+                "negative_mean_loglik": 4.644345722172672,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.8674511454999294,
+                "negative_mean_loglik": 4.644345722172672,
+                "success": true,
+                "iterations": 17
+              },
+              {
+                "tau_ns": 2.861262744959038,
+                "negative_mean_loglik": 4.644517294817107,
+                "success": true,
+                "iterations": 14
+              }
+            ]
+          },
+          "profiled_recovery": {
+            "a": 0.2725416416118217,
+            "tau_ns": 2.8673771680060076,
+            "b_per_ns": 0.01575028871535008,
+            "log_likelihood": -919670.3712845666,
+            "detections_scored": 198225,
+            "recovery_factors": [
+              0.00112474000032006,
+              0.1075177569804712,
+              0.5140268635566868,
+              0.6508432146157246,
+              0.7367008867801518,
+              0.8395853382525166,
+              0.9359914686363943,
+              0.9937026431330948,
+              0.9964307322105863,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "normalized_score_max": 1.8274700373053166e-10,
+            "finite_difference_score_error": 5.157888302662755e-10,
+            "starts": [
+              {
+                "tau_ns": 2.8673771680487437,
+                "negative_mean_loglik": 4.639527664444782,
+                "success": true,
+                "iterations": 10
+              },
+              {
+                "tau_ns": 2.8673771679686193,
+                "negative_mean_loglik": 4.639527664444782,
+                "success": true,
+                "iterations": 20
+              },
+              {
+                "tau_ns": 2.8673771680060076,
+                "negative_mean_loglik": 4.63952766444478,
+                "success": true,
+                "iterations": 23
+              }
+            ]
+          },
+          "guarded": {
+            "201": {
+              "a": 0.27267982358756304,
+              "tau_ns": 2.8603316487692747,
+              "b_per_ns": 0.01573741464800886,
+              "log_likelihood": -870583.4424961784,
+              "detections_scored": 184433,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 9.356540975619108e-09,
+              "finite_difference_score_error": 2.2853009583453585e-10,
+              "starts": [
+                {
+                  "tau_ns": 2.8603316487692747,
+                  "negative_mean_loglik": 4.720323599877346,
+                  "success": true,
+                  "iterations": 13
+                },
+                {
+                  "tau_ns": 2.866572817829606,
+                  "negative_mean_loglik": 4.720622782092732,
+                  "success": true,
+                  "iterations": 11
+                },
+                {
+                  "tau_ns": 2.866572817800876,
+                  "negative_mean_loglik": 4.72062278209273,
+                  "success": true,
+                  "iterations": 21
+                }
+              ]
+            },
+            "205": {
+              "a": 0.27284109976798165,
+              "tau_ns": 2.8603072733183725,
+              "b_per_ns": 0.015741174610237132,
+              "log_likelihood": -810126.8128032037,
+              "detections_scored": 171755,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 5.070603668113748e-08,
+              "finite_difference_score_error": 1.2411752065575113e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.8665553467241276,
+                  "negative_mean_loglik": 4.717072044398085,
+                  "success": true,
+                  "iterations": 11
+                },
+                {
+                  "tau_ns": 2.8665553460562743,
+                  "negative_mean_loglik": 4.717072044398085,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.8603072733183725,
+                  "negative_mean_loglik": 4.716758247522365,
+                  "success": true,
+                  "iterations": 20
+                }
+              ]
+            },
+            "210": {
+              "a": 0.2730334253713559,
+              "tau_ns": 2.860314987674532,
+              "b_per_ns": 0.01571107032641932,
+              "log_likelihood": -739181.4731535604,
+              "detections_scored": 156836,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+              "normalized_score_max": 2.2382246153532118e-10,
+              "finite_difference_score_error": 5.388936255947604e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.860314987674532,
+                  "negative_mean_loglik": 4.713085472426997,
+                  "success": true,
+                  "iterations": 10
+                },
+                {
+                  "tau_ns": 2.866566548224712,
+                  "negative_mean_loglik": 4.713397721462301,
+                  "success": true,
+                  "iterations": 17
+                },
+                {
+                  "tau_ns": 2.8665665542001224,
+                  "negative_mean_loglik": 4.713397721462285,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            },
+            "220": {
+              "a": 0.2721924635740746,
+              "tau_ns": 2.8603063917851412,
+              "b_per_ns": 0.01568559812654543,
+              "log_likelihood": -616375.1999529373,
+              "detections_scored": 130966,
+              "recovery_factors": [
+                1.0
+              ],
+              "optimizer_success": true,
+              "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+              "normalized_score_max": 8.650323140242193e-08,
+              "finite_difference_score_error": 1.1003154746927826e-09,
+              "starts": [
+                {
+                  "tau_ns": 2.8603063917851412,
+                  "negative_mean_loglik": 4.706375700204155,
+                  "success": true,
+                  "iterations": 21
+                },
+                {
+                  "tau_ns": 2.8665723502928215,
+                  "negative_mean_loglik": 4.706694344422933,
+                  "success": true,
+                  "iterations": 9
+                },
+                {
+                  "tau_ns": 2.8665723502819924,
+                  "negative_mean_loglik": 4.706694344422934,
+                  "success": true,
+                  "iterations": 11
+                }
+              ]
+            }
+          },
+          "geometry_audit": {
+            "full_interval_sum_cases": 30,
+            "max_absolute_pulse_exposure_error": 1.6007106751203537e-10
+          },
+          "recovery_minus_native_mm": 0.31496264185697914,
+          "recovery_minus_continuous_hard_mm": -0.011088772337428165
+        }
+      ],
+      "low_flux_provisional_reference": {
+        "a": 0.0004971973818205889,
+        "tau_ns": 2.8219662563603216,
+        "b_per_ns": 2.2196761469314865e-05,
+        "log_likelihood": -29976.63129183345,
+        "detections_scored": 2704,
+        "recovery_factors": [
+          1.0
+        ],
+        "optimizer_success": true,
+        "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "normalized_score_max": 7.091055725160635e-07,
+        "finite_difference_score_error": 2.9001944797536067e-09,
+        "starts": [
+          {
+            "tau_ns": 2.8219662563603216,
+            "negative_mean_loglik": 11.086032282482785,
+            "success": true,
+            "iterations": 18
+          },
+          {
+            "tau_ns": 2.8341360686991446,
+            "negative_mean_loglik": 11.086193674101118,
+            "success": true,
+            "iterations": 12
+          },
+          {
+            "tau_ns": 2.8219662488166475,
+            "negative_mean_loglik": 11.086032282482787,
+            "success": true,
+            "iterations": 12
+          }
+        ]
+      }
+    }
+  ],
+  "model_certification": false,
+  "range_benefit_demonstrated": false,
+  "development_gate_pass": false,
+  "elapsed_seconds": 10.667196800000966,
+  "limits": "No exact physical error certificate from continuous timestamps or a fitted curve. The low-flux electronics dead time can hide avalanches; its 150 ns guard is a provisional convention requiring a bound on electronics plus detector recovery. Its fit is not calibrated ground truth. Pulse/background trimming, drift, timewalk, additive afterpulsing, dependence and complete recording remain unvalidated. The original phase and frame-difference coordinates avoid numerical boundary cancellation; latent 8 ps quantization is still unresolved."
+}

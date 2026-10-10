@@ -1,0 +1,12 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "parent_freeze": "2328a521466795c37a701cca449a0e75b5b5583c",
+  "parent_result_sha256": "948643ef50775ced817efcc835daf2899558cbf2c54ba0ea0d6b2b2eeba07821",
+  "reason": "The parent fits show approximately 0.01 mm recovery changes within the continuous model but 0.3 mm differences against native discrete likelihood. Some continuous fits have distinct local modes. Audit recovery within the same native Bernoulli likelihood before attributing a cross-model difference to physics. Preserve the parent result and its failed development gate.",
+  "methods": "Native K=12500 only, same centered coordinate convention and pulse variants. Construct integer activation and detection matrices jointly by phase and elapsed bins since the preceding recorded detection. Fit p_jr=1-exp(-g_j*(a*f_r(tau)+b_bin)) with freely fitted log g in early age cells and g=1 after 205 ns. Cells with zero detections have maximizing g=0 exactly. Compare with parent native hard-cutoff MLE. Also fit a 205 ns guarded native likelihood. This extends an established intensity model; it is not claimed as a novel general method.",
+  "low_flux": "Fit the provisional 150 ns guarded reference with the same native-bin observation convention. It remains uncalibrated, particularly regarding hidden avalanches and drift.",
+  "numerics": {"maxiter": 2000, "ftol": 1e-15, "gtol": 1e-10, "delay_offsets_ns": [-0.08,0,0.08]},
+  "verification": "Compare hard-model integer exposures byte-for-byte with the parent implementation, verify age partition exposure/count sums, independently enumerate a small synthetic detection stream, finite-difference the new score, and retain all optimizer outcomes. A matched recovery change below 0.2 mm fails the intended correction-size gate regardless of cross-model offsets. No global-optimum theorem or calibrated physical coverage is inferred.",
+  "boundaries": "Same first-million-frame development prefixes only. Existing recovery and range outcomes are known, so this is an adaptive development audit. No final-reserve data, new pulse measurements, Lean/Lake, hardware, publication or outreach."
+}

@@ -1,0 +1,96 @@
+info: QuantyraNullCone/LogLowerProduct.lean:95:0: 'QuantyraNullCone.log_lower_seed_real_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:96:0: 'QuantyraNullCone.log_lower_seed_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3069/3099] Replayed QuantyraNullCone.LogLowerScale
+info: QuantyraNullCone/LogLowerScale.lean:129:0: 'QuantyraNullCone.log_lower_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:130:0: 'QuantyraNullCone.nonneg_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:131:0: 'QuantyraNullCone.log_lower_scale_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:132:0: 'QuantyraNullCone.log_lower_scale_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:133:0: 'QuantyraNullCone.log_lower_scale_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:134:0: 'QuantyraNullCone.log_lower_mesh_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:135:0: 'QuantyraNullCone.log_lower_scale_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:136:0: 'QuantyraNullCone.log_lower_mesh_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:137:0: 'QuantyraNullCone.log_lower_rate_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:138:0: 'QuantyraNullCone.log_lower_target_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3070/3099] Replayed QuantyraNullCone.LogLowerBound
+info: QuantyraNullCone/LogLowerBound.lean:130:0: 'QuantyraNullCone.logarithmic_lower_bound_at_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:131:0: 'QuantyraNullCone.logarithmic_randomized_minimax_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:132:0: 'QuantyraNullCone.logarithmic_uniform_radius_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:133:0: 'QuantyraNullCone.fourth_root_uniform_radius_achievable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:134:0: 'QuantyraNullCone.logarithmic_minimax_radius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3071/3099] Built QuantyraNullCone.LorentzBoundary (4.7s)
+info: QuantyraNullCone/LorentzBoundary.lean:369:0: 'QuantyraNullCone.lorentz_waist_subset_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:370:0: 'QuantyraNullCone.isClosed_lorentzWaist3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:371:0: 'QuantyraNullCone.isCompact_lorentzWaist3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:372:0: 'QuantyraNullCone.time_shift_time3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:373:0: 'QuantyraNullCone.time_shift_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:374:0: 'QuantyraNullCone.time_shift_sub_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:375:0: 'QuantyraNullCone.time_shift_radius_sub3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:376:0: 'QuantyraNullCone.spatial_radius_sub_symm3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:377:0: 'QuantyraNullCone.spatial_radius_self_sub3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:378:0: 'QuantyraNullCone.causal3_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:379:0: 'QuantyraNullCone.causal3_transitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:380:0: 'QuantyraNullCone.chronological3_trans_causal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:381:0: 'QuantyraNullCone.causal3_trans_chronological3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:382:0: 'QuantyraNullCone.causal3_antisymmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:383:0: 'QuantyraNullCone.bottom_sub_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:384:0: 'QuantyraNullCone.top_sub_radius3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:385:0: 'QuantyraNullCone.closed_lorentz_diamond_iff_tips3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:386:0: 'QuantyraNullCone.lorentz_diamond_iff_tips3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:387:0: 'QuantyraNullCone.causal_diamond_subset_closed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:388:0: 'QuantyraNullCone.causal_diamond_subset_open3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:389:0: 'QuantyraNullCone.isClosed_causalDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:390:0: 'QuantyraNullCone.isCompact_causalDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:391:0: 'QuantyraNullCone.open_lorentz_causal_diamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:392:0: 'QuantyraNullCone.past_time_shift_interior3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:393:0: 'QuantyraNullCone.future_time_shift_interior3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:394:0: 'QuantyraNullCone.past_chronological_margin3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:395:0: 'QuantyraNullCone.future_chronological_margin3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:396:0: 'QuantyraNullCone.lorentz_waist_no_closed_neighbors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:397:0: 'QuantyraNullCone.interior_past_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:398:0: 'QuantyraNullCone.interior_future_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:399:0: 'QuantyraNullCone.lorentz_interior_iff_neighbors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:400:0: 'QuantyraNullCone.lorentz_waist_iff_no_neighbors3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:401:0: 'QuantyraNullCone.causal3_of_past_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:402:0: 'QuantyraNullCone.causal3_of_future_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoundary.lean:403:0: 'QuantyraNullCone.chronological_profile_eq_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3072/3099] Built QuantyraNullCone.MarkedOrder (5.4s)
+✔ [3073/3099] Built QuantyraNullCone.ThinningGenerating (5.5s)
+ℹ [3074/3099] Built QuantyraNullCone.LorentzUnlabeled (5.7s)
+info: QuantyraNullCone/LorentzUnlabeled.lean:137:0: 'QuantyraNullCone.relabelSample3_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:138:0: 'QuantyraNullCone.sampledOrder3_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:139:0: 'QuantyraNullCone.sample_relabel_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:140:0: 'QuantyraNullCone.orderLaw3_exchangeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:141:0: 'QuantyraNullCone.orderLaw3_singleton_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:142:0: 'QuantyraNullCone.orderLaw3_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:143:0: 'QuantyraNullCone.orderLaw3_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:144:0: 'QuantyraNullCone.unlabeledOrderLawTV3_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:145:0: 'QuantyraNullCone.finite_measure_eq_of_L1_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:146:0: 'QuantyraNullCone.unlabeledOrderLaw3_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:147:0: 'QuantyraNullCone.InDensityClass3.unlabeledOrderLawTV_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:148:0: 'QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3075/3099] Built QuantyraNullCone.ThinningLaplace (3.2s)
+✔ [3076/3099] Built QuantyraNullCone.ConfoundingGeometry (3.4s)
+✔ [3077/3099] Built QuantyraNullCone.ThinningTermination (3.0s)
+✔ [3078/3099] Built QuantyraNullCone.ConfoundingDetector (2.0s)
+✔ [3079/3099] Built QuantyraNullCone.ConfoundingTargets (3.1s)
+✔ [3080/3099] Built QuantyraNullCone.ThinningStopping (3.5s)
+✔ [3081/3099] Built QuantyraNullCone.ConfoundingTime (3.7s)
+✔ [3082/3099] Built QuantyraNullCone.ThinningTerminalPatterns (2.8s)
+✔ [3083/3099] Built QuantyraNullCone.ThinningStoppedLaw (2.8s)
+✔ [3084/3099] Built QuantyraNullCone.ThinningStoppedCoverage (2.8s)
+✔ [3085/3099] Built QuantyraNullCone.ConfoundingLaw (3.1s)
+✔ [3086/3099] Built QuantyraNullCone.ConfoundingMarked (2.9s)
+✔ [3087/3099] Built QuantyraNullCone.MarkedEstimator (2.8s)
+✔ [3088/3099] Built QuantyraNullCone.ConfoundingProcess (3.2s)
+✔ [3089/3099] Built QuantyraNullCone.ConfoundingTesting (2.9s)
+✔ [3090/3099] Built QuantyraNullCone.VolumeRateBounds (3.4s)
+✔ [3091/3099] Built QuantyraNullCone.VolumeRateUpper (2.8s)
+✔ [3092/3099] Built QuantyraNullCone.VolumeRateExperiment (2.0s)
+✔ [3093/3099] Built QuantyraNullCone.VolumeRateLikelihood (3.8s)
+✔ [3094/3099] Built QuantyraNullCone.VolumeRateScale (4.0s)
+✔ [3095/3099] Built QuantyraNullCone.VolumeRateSampling (3.1s)
+✔ [3096/3099] Built QuantyraNullCone.VolumeRateJoint (2.9s)
+✔ [3097/3099] Built QuantyraNullCone.VolumeRateEmpty (3.0s)
+✔ [3098/3099] Built QuantyraNullCone (2.4s)
+Build completed successfully (3099 jobs).
+REMOTE_TERMINAL_EXIT=0

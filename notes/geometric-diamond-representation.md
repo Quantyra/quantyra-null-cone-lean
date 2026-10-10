@@ -1,6 +1,6 @@
 # The diamond boundary and qualitative conditioning
 
-S042, 2026-10-09 (Hawaii). **Ordinary geometric work; not GCP certified.** The separate [finite labeling component](geometric-label-certification.md) now has GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
+S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md) and [chronological boundary/compact-diamond component](geometric-boundary-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
 
 ## Model and dependencies
 
@@ -43,6 +43,8 @@ Set X=C/W. A compatible quotient metric is induced by
 It allows free passage through W. Triangle inequalities follow by splitting paths according to whether they use W; distinct noncollapsed points have positive distance. The compact quotient topology agrees with this metric topology. Time separation descends continuously to X^2, has compact positive superlevel sets and distinguishes points. The pushed measure has full support because each nonempty relatively open set meets D in a nonempty open set and rho is bounded below. These are the required bounded Lorentzian metric-measure hypotheses.
 
 D is intrinsically the subset of X having both nonempty positive past and positive future. The remaining lateral boundary is retained; only W is identified.
+
+The exact chronological profile classification, intrinsic interior, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The positive weighted-time/chronology bridge, continuity and topology/measure properties of the time-separation quotient remain ordinary arguments here. Chronological component acceptance does not certify those remaining conclusions.
 
 ## Gauge and the geometric loss
 

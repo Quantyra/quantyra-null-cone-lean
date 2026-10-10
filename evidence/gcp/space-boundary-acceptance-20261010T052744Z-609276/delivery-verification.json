@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_commit": "27ca7c4babac503134d685d413d7c5233e930157",
+  "captured_files": 202,
+  "lean_inputs": 168,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "git_identity_method": "git cat-file --batch",
+  "archive_diagnostic": "git archive converts verify.yml to CRLF in this environment; raw blob identities are verified directly",
+  "audited_named_exports": 844,
+  "new_boundary_exports": 35,
+  "root_build_jobs": 3099,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "verified_utc": "2026-10-10T05:31:10.294173+00:00"
+}

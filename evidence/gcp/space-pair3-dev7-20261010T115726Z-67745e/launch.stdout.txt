@@ -1,0 +1,71 @@
+warning: QuantyraNullCone/LorentzBoost.lean:26:65: This simp argument is unused:
+  Matrix.mulVec
+
+Hint: Omit it from the simp argument list.
+  simp [̵l̵o̵r̵e̵n̵t̵z̵B̵o̵o̵s̵t̵3̵,̵l̵o̵r̵e̵n̵t̵z̵B̵o̵o̵s̵t̵M̵a̵t̵r̵i̵x̵3̵,̵M̵a̵t̵r̵i̵x̵.̵t̵o̵L̵p̵L̵i̵n̵_̵a̵p̵p̵l̵y̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵V̵e̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵l̵o̵r̵e̵n̵t̵z̵P̵o̵i̵n̵t̵3̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵d̵i̵v̵_̵e̵q̵_̵m̵u̵l̵_̵i̵n̵v̵]̵[̲l̲o̲r̲e̲n̲t̲z̲B̲o̲o̲s̲t̲3̲,̲ ̲l̲o̲r̲e̲n̲t̲z̲B̲o̲o̲s̲t̲M̲a̲t̲r̲i̲x̲3̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲o̲L̲p̲L̲i̲n̲_̲a̲p̲p̲l̲y̲,̲ ̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲l̲o̲r̲e̲n̲t̲z̲P̲o̲i̲n̲t̲3̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲d̲i̲v̲_̲e̲q̲_̲m̲u̲l̲_̲i̲n̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzBoost.lean:45:2: Type mismatch: After simplification, term
+  lorentz_boost_bilinear3 hd v v
+ has type
+  -(((lorentzBoost3 a b) v).ofLp 0 * ((lorentzBoost3 a b) v).ofLp 0) +
+        ((lorentzBoost3 a b) v).ofLp 1 * ((lorentzBoost3 a b) v).ofLp 1 +
+      ((lorentzBoost3 a b) v).ofLp 2 * ((lorentzBoost3 a b) v).ofLp 2 =
+    -(v.ofLp 0 * v.ofLp 0) + v.ofLp 1 * v.ofLp 1 + v.ofLp 2 * v.ofLp 2
+but is expected to have type
+  -(((lorentzBoost3 a b) v).ofLp 0 * ((lorentzBoost3 a b) v).ofLp 0) +
+      (((lorentzBoost3 a b) v).ofLp 1 * ((lorentzBoost3 a b) v).ofLp 1 +
+        ((lorentzBoost3 a b) v).ofLp 2 * ((lorentzBoost3 a b) v).ofLp 2) =
+    -(v.ofLp 0 * v.ofLp 0) + (v.ofLp 1 * v.ofLp 1 + v.ofLp 2 * v.ofLp 2)
+error: QuantyraNullCone/LorentzBoost.lean:72:6: Unknown identifier `map_linearMap_addHaar_eq_smul_addHaar`
+error: QuantyraNullCone/LorentzBoost.lean:70:45: unsolved goals
+a b : ℝ
+hd : 1 - a ^ 2 - b ^ 2 ≠ 0
+⊢ Measure.map (⇑(lorentzBoost3 a b)) volume = volume
+info: QuantyraNullCone/LorentzBoost.lean:122:0: 'QuantyraNullCone.lorentz_boost_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:123:0: 'QuantyraNullCone.lorentz_boost_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:124:0: 'QuantyraNullCone.lorentz_boost_abs_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:125:0: 'QuantyraNullCone.lorentz_boost_volume_preserving3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:126:0: 'QuantyraNullCone.lorentz_boost_future3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:127:0: 'QuantyraNullCone.lorentz_boost_chronological_iff3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzBoost
+warning: QuantyraNullCone/LorentzBoost.lean:26:65: This simp argument is unused:
+  Matrix.mulVec
+
+Hint: Omit it from the simp argument list.
+  simp [̵l̵o̵r̵e̵n̵t̵z̵B̵o̵o̵s̵t̵3̵,̵l̵o̵r̵e̵n̵t̵z̵B̵o̵o̵s̵t̵M̵a̵t̵r̵i̵x̵3̵,̵M̵a̵t̵r̵i̵x̵.̵t̵o̵L̵p̵L̵i̵n̵_̵a̵p̵p̵l̵y̵,̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵V̵e̵c̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵d̵o̵t̵P̵r̵o̵d̵u̵c̵t̵,̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵,̵l̵o̵r̵e̵n̵t̵z̵P̵o̵i̵n̵t̵3̵,̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵d̵i̵v̵_̵e̵q̵_̵m̵u̵l̵_̵i̵n̵v̵]̵[̲l̲o̲r̲e̲n̲t̲z̲B̲o̲o̲s̲t̲3̲,̲ ̲l̲o̲r̲e̲n̲t̲z̲B̲o̲o̲s̲t̲M̲a̲t̲r̲i̲x̲3̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲t̲o̲L̲p̲L̲i̲n̲_̲a̲p̲p̲l̲y̲,̲ ̲d̲o̲t̲P̲r̲o̲d̲u̲c̲t̲,̲ ̲F̲i̲n̲.̲s̲u̲m̲_̲u̲n̲i̲v̲_̲s̲u̲c̲c̲,̲
+  ̲ ̲ ̲ ̲ ̲ ̲ ̲l̲o̲r̲e̲n̲t̲z̲P̲o̲i̲n̲t̲3̲,̲ ̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲d̲i̲v̲_̲e̲q̲_̲m̲u̲l̲_̲i̲n̲v̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzBoost.lean:45:2: Type mismatch: After simplification, term
+  lorentz_boost_bilinear3 hd v v
+ has type
+  -(((lorentzBoost3 a b) v).ofLp 0 * ((lorentzBoost3 a b) v).ofLp 0) +
+        ((lorentzBoost3 a b) v).ofLp 1 * ((lorentzBoost3 a b) v).ofLp 1 +
+      ((lorentzBoost3 a b) v).ofLp 2 * ((lorentzBoost3 a b) v).ofLp 2 =
+    -(v.ofLp 0 * v.ofLp 0) + v.ofLp 1 * v.ofLp 1 + v.ofLp 2 * v.ofLp 2
+but is expected to have type
+  -(((lorentzBoost3 a b) v).ofLp 0 * ((lorentzBoost3 a b) v).ofLp 0) +
+      (((lorentzBoost3 a b) v).ofLp 1 * ((lorentzBoost3 a b) v).ofLp 1 +
+        ((lorentzBoost3 a b) v).ofLp 2 * ((lorentzBoost3 a b) v).ofLp 2) =
+    -(v.ofLp 0 * v.ofLp 0) + (v.ofLp 1 * v.ofLp 1 + v.ofLp 2 * v.ofLp 2)
+error: QuantyraNullCone/LorentzBoost.lean:72:6: Unknown identifier `map_linearMap_addHaar_eq_smul_addHaar`
+error: QuantyraNullCone/LorentzBoost.lean:70:45: unsolved goals
+a b : ℝ
+hd : 1 - a ^ 2 - b ^ 2 ≠ 0
+⊢ Measure.map (⇑(lorentzBoost3 a b)) volume = volume
+info: QuantyraNullCone/LorentzBoost.lean:122:0: 'QuantyraNullCone.lorentz_boost_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:123:0: 'QuantyraNullCone.lorentz_boost_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:124:0: 'QuantyraNullCone.lorentz_boost_abs_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:125:0: 'QuantyraNullCone.lorentz_boost_volume_preserving3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:126:0: 'QuantyraNullCone.lorentz_boost_future3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:127:0: 'QuantyraNullCone.lorentz_boost_chronological_iff3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzBoost
+REMOTE_TERMINAL_EXIT=1

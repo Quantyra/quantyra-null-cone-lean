@@ -1,0 +1,100 @@
+info: QuantyraNullCone/TimeCommonCoupling.lean:103:0: 'QuantyraNullCone.common_diagonal_bad_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCommonCoupling.lean:104:0: 'QuantyraNullCone.common_coupling_bad_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCommonCoupling.lean:105:0: 'QuantyraNullCone.timeDistortionLoss_le_of_common' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2987/2994] Replayed QuantyraNullCone.LorentzOrderLaws
+info: QuantyraNullCone/LorentzOrderLaws.lean:53:0: 'QuantyraNullCone.gauge_sample_forward_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:54:0: 'QuantyraNullCone.gauge_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzOrderLaws.lean:55:0: 'QuantyraNullCone.gauge_unlabeled_order_laws_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2988/2994] Replayed QuantyraNullCone.LorentzUnlabeled
+info: QuantyraNullCone/LorentzUnlabeled.lean:137:0: 'QuantyraNullCone.relabelSample3_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:138:0: 'QuantyraNullCone.sampledOrder3_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:139:0: 'QuantyraNullCone.sample_relabel_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:140:0: 'QuantyraNullCone.orderLaw3_exchangeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:141:0: 'QuantyraNullCone.orderLaw3_singleton_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:142:0: 'QuantyraNullCone.orderLaw3_fiber_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:143:0: 'QuantyraNullCone.orderLaw3_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:144:0: 'QuantyraNullCone.unlabeledOrderLawTV3_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:145:0: 'QuantyraNullCone.finite_measure_eq_of_L1_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:146:0: 'QuantyraNullCone.unlabeledOrderLaw3_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:147:0: 'QuantyraNullCone.InDensityClass3.unlabeledOrderLawTV_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzUnlabeled.lean:148:0: 'QuantyraNullCone.InDensityClass3.unlabeledOrderLaw_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2989/2994] Replayed QuantyraNullCone.LorentzQuotientLaws
+info: QuantyraNullCone/LorentzQuotientLaws.lean:128:0: 'QuantyraNullCone.measurable_closedSampleVal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:129:0: 'QuantyraNullCone.InDensityClass3.closedSample_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:130:0: 'QuantyraNullCone.InDensityClass3.closedSample_map_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:131:0: 'QuantyraNullCone.measurable_quotientSampleProjection3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:132:0: 'QuantyraNullCone.InDensityClass3.quotientSample_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:133:0: 'QuantyraNullCone.InDensityClass3.quotientSample_map_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:134:0: 'QuantyraNullCone.measurable_quotientSampledOrder3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:135:0: 'QuantyraNullCone.quotientSampledOrder3_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:136:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:137:0: 'QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:138:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:139:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2990/2994] Replayed QuantyraNullCone.LorentzDistortion
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2991/2994] Replayed QuantyraNullCone.LorentzDistortionTriangle
+info: QuantyraNullCone/LorentzDistortionTriangle.lean:29:0: 'QuantyraNullCone.geometricDistortion3_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortionTriangle.lean:30:0: 'QuantyraNullCone.geometricDistortion3_reverse_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2992/2994] Replayed QuantyraNullCone.LorentzDensityForward
+info: QuantyraNullCone/LorentzDensityForward.lean:58:0: 'QuantyraNullCone.geometricDistortion3_le_of_density_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDensityForward.lean:59:0: 'QuantyraNullCone.geometricDistortion3_same_density_on_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzDensityForward.lean:60:0: 'QuantyraNullCone.geometricDistortion3_density_perturbation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2993/2994] Replayed QuantyraNullCone.LorentzTimeGeometry
+info: QuantyraNullCone/LorentzTimeGeometry.lean:235:0: 'QuantyraNullCone.density_time_weight_family_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:236:0: 'QuantyraNullCone.FutureCurve3.time_quadratic_length_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:237:0: 'QuantyraNullCone.time_quadratic_separation_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:238:0: 'QuantyraNullCone.time_quadratic_shape_abs_integral3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:239:0: 'QuantyraNullCone.time_quadratic_common_missing3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:240:0: 'QuantyraNullCone.time_quadratic_geometric_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2994/2994] Building QuantyraNullCone.LorentzPairConditioning (5.9s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/QuantyraNullCone/LorentzPairConditioning.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/.lake/build/lib/lean/QuantyraNullCone/LorentzPairConditioning.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/.lake/build/lib/lean/QuantyraNullCone/LorentzPairConditioning.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/.lake/build/ir/QuantyraNullCone/LorentzPairConditioning.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev21-20261010T122913Z-8ce6c7/source/.lake/build/ir/QuantyraNullCone/LorentzPairConditioning.setup.json --json
+error: QuantyraNullCone/LorentzPairConditioning.lean:32:6: Unknown identifier `measurePreserving_swap`
+error: QuantyraNullCone/LorentzPairConditioning.lean:20:100: unsolved goals
+theta : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+mu : Measure LorentzPoint3 := densityMeasure3 (timeQuadraticDensity3 theta)
+this : IsProbabilityMeasure mu := InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+hd : Disjoint {z | chronological3 z.1 z.2} {z | chronological3 z.2 z.1}
+hs : MeasurableSet (Prod.swap ⁻¹' {z | chronological3 z.1 z.2})
+⊢ ((densityMeasure3 (timeQuadraticDensity3 theta)).prod (densityMeasure3 (timeQuadraticDensity3 theta))).real
+      {z | chronological3 z.1 z.2 ∨ chronological3 z.2 z.1} =
+    timeComparableProbability3 theta
+info: QuantyraNullCone/LorentzPairConditioning.lean:98:0: 'QuantyraNullCone.time_quadratic_comparable_pair_probability3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:99:0: 'QuantyraNullCone.time_quadratic_order_law_comparable3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:100:0: 'QuantyraNullCone.time_comparable_probability_conditioning3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:101:0: 'QuantyraNullCone.time_quadratic_geometric_pair_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:102:0: 'QuantyraNullCone.time_quadratic_parameter_identifiable3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzPairConditioning

@@ -1,0 +1,36 @@
+info: QuantyraNullCone/LorentzPairInterval.lean:129:0: 'QuantyraNullCone.lorentz_interval_map_top3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairInterval.lean:130:0: 'QuantyraNullCone.lorentz_interval_map_bottom3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairInterval.lean:131:0: 'QuantyraNullCone.lorentz_interval_map_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairInterval.lean:132:0: 'QuantyraNullCone.lorentz_interval_map_preimage3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2961/2965] Replayed QuantyraNullCone.LorentzIntervalVolume
+info: QuantyraNullCone/LorentzIntervalVolume.lean:74:0: 'QuantyraNullCone.lorentz_interval_map_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalVolume.lean:75:0: 'QuantyraNullCone.chronological_interval_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalVolume.lean:76:0: 'QuantyraNullCone.lorentz_interval_map_restrict3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalVolume.lean:77:0: 'QuantyraNullCone.integral_chronological_interval3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalVolume.lean:78:0: 'QuantyraNullCone.chronological_future_interval3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2962/2965] Replayed QuantyraNullCone.LorentzSpatialMoments
+info: QuantyraNullCone/LorentzSpatialMoments.lean:154:0: 'QuantyraNullCone.flat_coordinate_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialMoments.lean:155:0: 'QuantyraNullCone.flat_coordinate_cross_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialMoments.lean:156:0: 'QuantyraNullCone.flat_spatial_moments_equal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialMoments.lean:157:0: 'QuantyraNullCone.flat_spatial_radius_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialMoments.lean:158:0: 'QuantyraNullCone.flat_spatial_coordinate_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2963/2965] Replayed QuantyraNullCone.LorentzTimeFamily
+info: QuantyraNullCone/LorentzTimeFamily.lean:93:0: 'QuantyraNullCone.time_quadratic_shape_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeFamily.lean:94:0: 'QuantyraNullCone.time_quadratic_shape_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeFamily.lean:95:0: 'QuantyraNullCone.time_quadratic_density_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeFamily.lean:96:0: 'QuantyraNullCone.time_quadratic_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeFamily.lean:97:0: 'QuantyraNullCone.time_quadratic_density_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2964/2965] Built QuantyraNullCone.LorentzAffineMoments (3.1s)
+info: QuantyraNullCone/LorentzAffineMoments.lean:62:0: 'QuantyraNullCone.flat_coordinate_product_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzAffineMoments.lean:63:0: 'QuantyraNullCone.flat_linear_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzAffineMoments.lean:64:0: 'QuantyraNullCone.flat_linear_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzAffineMoments.lean:65:0: 'QuantyraNullCone.flat_affine_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2965/2965] Built QuantyraNullCone.LorentzIntervalMoments (3.4s)
+info: QuantyraNullCone/LorentzIntervalMoments.lean:122:0: 'QuantyraNullCone.lorentz_interval_map_time3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:123:0: 'QuantyraNullCone.integral_flat_future3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:124:0: 'QuantyraNullCone.flat_interval_future_time_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:125:0: 'QuantyraNullCone.flat_interval_future_shape_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:126:0: 'QuantyraNullCone.integral_flat_future_density3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:127:0: 'QuantyraNullCone.time_quadratic_future_probability3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2965 jobs).
+REMOTE_TERMINAL_EXIT=0

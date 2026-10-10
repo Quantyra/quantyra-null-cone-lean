@@ -1,0 +1,84 @@
+error: QuantyraNullCone/LorentzTriangleMoments.lean:17:2: Tactic `apply` failed: could not unify the conclusion of `IntegrableOn.mono_set
+  (ContinuousOn.integrableOn_compact isCompact_Icc ?m.54)`
+  IntegrableOn ?m.58 ?m.59 ?m.61
+with the goal
+  IntegrableOn f lightConeTriangle3 volume
+
+Note: The full type of `IntegrableOn.mono_set (ContinuousOn.integrableOn_compact isCompact_Icc ?m.54)` is
+  ?m.59 ⊆ Icc (0, 0) (1, 1) → IntegrableOn ?m.58 ?m.59 ?m.61
+
+f : ℝ × ℝ → ℝ
+hf : Continuous f
+⊢ IntegrableOn f lightConeTriangle3 volume
+info: QuantyraNullCone/LorentzTriangleMoments.lean:43:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzTriangleMoments.lean:23:65: unsolved goals
+s t b : ℝ
+hs : 0 ≤ s
+hb : 0 < b
+hi : IntegrableOn (fun a => a ^ s) (Ioo 0 b) volume
+hj : IntegrableOn (fun a => a ^ (s + 1)) (Ioo 0 b) volume
+he : ∫ (a : ℝ) in Ioo 0 b, (b - a) * a ^ s * b ^ t = (∫ (a : ℝ) in Ioo 0 b, b * a ^ s - a ^ (s + 1)) * b ^ t
+⊢ b * b ^ s * b ^ 1 * s * b ^ t + b * b ^ s * b ^ 1 * b ^ t * 2 - b * s * b ^ (1 + s) * b ^ t -
+      b * b ^ (1 + s) * b ^ t =
+    b ^ (2 + s + t)
+info: QuantyraNullCone/LorentzTriangleMoments.lean:60:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzTriangleMoments.lean:47:33: unsolved goals
+s t : ℝ
+hs : 0 ≤ s
+ht : 0 ≤ t
+hc : Continuous fun z => (z.2 - z.1) * z.1 ^ s * z.2 ^ t
+he :
+  ∫ (b : ℝ) in Ioo 0 1, ∫ (a : ℝ) in Ioo 0 b, (b - a) * a ^ s * b ^ t =
+    ∫ (b : ℝ) in Ioo 0 1, b ^ (s + t + 2) / ((s + 1) * (s + 2))
+⊢ (3 + s + t)⁻¹ * (2 + s * 3 + s ^ 2)⁻¹ = (6 + s * 11 + s * t * 3 + s ^ 2 * 6 + s ^ 2 * t + s ^ 3 + t * 2)⁻¹
+info: QuantyraNullCone/LorentzTriangleMoments.lean:85:0: 'QuantyraNullCone.integral_triangle_rpow3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTriangleMoments.lean:86:0: 'QuantyraNullCone.integral_triangle_monomial3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTriangleMoments
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzTriangleMoments.lean:23:65: unsolved goals
+s t b : ℝ
+hs : 0 ≤ s
+hb : 0 < b
+hi : IntegrableOn (fun a => a ^ s) (Ioo 0 b) volume
+hj : IntegrableOn (fun a => a ^ (s + 1)) (Ioo 0 b) volume
+he : ∫ (a : ℝ) in Ioo 0 b, (b - a) * a ^ s * b ^ t = (∫ (a : ℝ) in Ioo 0 b, b * a ^ s - a ^ (s + 1)) * b ^ t
+⊢ b * b ^ s * b ^ 1 * s * b ^ t + b * b ^ s * b ^ 1 * b ^ t * 2 - b * s * b ^ (1 + s) * b ^ t -
+      b * b ^ (1 + s) * b ^ t =
+    b ^ (2 + s + t)
+info: QuantyraNullCone/LorentzTriangleMoments.lean:60:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: QuantyraNullCone/LorentzTriangleMoments.lean:47:33: unsolved goals
+s t : ℝ
+hs : 0 ≤ s
+ht : 0 ≤ t
+hc : Continuous fun z => (z.2 - z.1) * z.1 ^ s * z.2 ^ t
+he :
+  ∫ (b : ℝ) in Ioo 0 1, ∫ (a : ℝ) in Ioo 0 b, (b - a) * a ^ s * b ^ t =
+    ∫ (b : ℝ) in Ioo 0 1, b ^ (s + t + 2) / ((s + 1) * (s + 2))
+⊢ (3 + s + t)⁻¹ * (2 + s * 3 + s ^ 2)⁻¹ = (6 + s * 11 + s * t * 3 + s ^ 2 * 6 + s ^ 2 * t + s ^ 3 + t * 2)⁻¹
+info: QuantyraNullCone/LorentzTriangleMoments.lean:85:0: 'QuantyraNullCone.integral_triangle_rpow3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTriangleMoments.lean:86:0: 'QuantyraNullCone.integral_triangle_monomial3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTriangleMoments
+REMOTE_TERMINAL_EXIT=1

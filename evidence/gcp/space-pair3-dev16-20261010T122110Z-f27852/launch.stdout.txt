@@ -1,0 +1,77 @@
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:13:17: Unknown identifier `Basis.finTwoProd`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:13:38: Unknown identifier `Basis.finTwoProd`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:20:4: Tactic `constructor` failed: no applicable constructor found
+
+case h
+z✝ z : ℝ × ℝ
+⊢ (1 - z.1 - z.2, z.2 - z.1) = (1, 0) + ((Matrix.toLin (sorry ()) (sorry ())) !![-1, -1; -1, 1]) z
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:19:24: declaration uses `sorry`
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:19:41: This simp argument is unused:
+  Matrix.toLin_finTwoProd_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵l̵i̵g̵h̵t̵C̵o̵n̵e̵M̵a̵p̵3̵,̵l̵i̵g̵h̵t̵C̵o̵n̵e̵L̵i̵n̵e̵a̵r̵3̵,̵M̵a̵t̵r̵i̵x̵.̵t̵o̵L̵i̵n̵_̵f̵i̵n̵T̵w̵o̵P̵r̵o̵d̵_̵a̵p̵p̵l̵y̵]̵[̲l̲i̲g̲h̲t̲C̲o̲n̲e̲M̲a̲p̲3̲,̲ ̲l̲i̲g̲h̲t̲C̲o̲n̲e̲L̲i̲n̲e̲a̲r̲3̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:24:62: unsolved goals
+⊢ -1 - 1 = -2
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:25:8: declaration uses `sorry`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:68:44: Unknown identifier `abs_ofNat`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:64:87: unsolved goals
+f : ℝ × ℝ → ℝ
+⊢ |2| * ∫ (a : ℝ × ℝ) in lightConeTriangle3, f (lightConeMap3 a) =
+    2 * ∫ (a : ℝ × ℝ) in lightConeTriangle3, f (lightConeMap3 a)
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:119:6: Tactic `tauto` failed
+
+f : ℝ × ℝ → ℝ
+hf : Continuous f
+hsub : lightConeTriangle3 ⊆ Icc (0, 0) (1, 1)
+hi : IntegrableOn f lightConeTriangle3 volume
+b : ℝ
+hb : b ∈ Ioo 0 1
+a : ℝ
+⊢ 0 < a ∧ a < b ∧ b < 1 ↔ 0 < a ∧ a < b
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:141:0: 'QuantyraNullCone.light_cone_map_deriv3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:142:0: 'QuantyraNullCone.light_cone_linear_det3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:143:0: 'QuantyraNullCone.light_cone_triangle_image3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:144:0: 'QuantyraNullCone.integral_radial_light_cone3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:145:0: 'QuantyraNullCone.integral_flat_light_cone3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzLightConeIntegral
+⊢ (1 - z.1 - z.2, z.2 - z.1) = (1, 0) + ((Matrix.toLin (sorry ()) (sorry ())) !![-1, -1; -1, 1]) z
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:19:24: declaration uses `sorry`
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:19:41: This simp argument is unused:
+  Matrix.toLin_finTwoProd_apply
+
+Hint: Omit it from the simp argument list.
+  simp [̵l̵i̵g̵h̵t̵C̵o̵n̵e̵M̵a̵p̵3̵,̵l̵i̵g̵h̵t̵C̵o̵n̵e̵L̵i̵n̵e̵a̵r̵3̵,̵M̵a̵t̵r̵i̵x̵.̵t̵o̵L̵i̵n̵_̵f̵i̵n̵T̵w̵o̵P̵r̵o̵d̵_̵a̵p̵p̵l̵y̵]̵[̲l̲i̲g̲h̲t̲C̲o̲n̲e̲M̲a̲p̲3̲,̲ ̲l̲i̲g̲h̲t̲C̲o̲n̲e̲L̲i̲n̲e̲a̲r̲3̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:24:62: unsolved goals
+⊢ -1 - 1 = -2
+warning: QuantyraNullCone/LorentzLightConeIntegral.lean:25:8: declaration uses `sorry`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:68:44: Unknown identifier `abs_ofNat`
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:64:87: unsolved goals
+f : ℝ × ℝ → ℝ
+⊢ |2| * ∫ (a : ℝ × ℝ) in lightConeTriangle3, f (lightConeMap3 a) =
+    2 * ∫ (a : ℝ × ℝ) in lightConeTriangle3, f (lightConeMap3 a)
+error: QuantyraNullCone/LorentzLightConeIntegral.lean:119:6: Tactic `tauto` failed
+
+f : ℝ × ℝ → ℝ
+hf : Continuous f
+hsub : lightConeTriangle3 ⊆ Icc (0, 0) (1, 1)
+hi : IntegrableOn f lightConeTriangle3 volume
+b : ℝ
+hb : b ∈ Ioo 0 1
+a : ℝ
+⊢ 0 < a ∧ a < b ∧ b < 1 ↔ 0 < a ∧ a < b
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:141:0: 'QuantyraNullCone.light_cone_map_deriv3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:142:0: 'QuantyraNullCone.light_cone_linear_det3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:143:0: 'QuantyraNullCone.light_cone_triangle_image3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:144:0: 'QuantyraNullCone.integral_radial_light_cone3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzLightConeIntegral.lean:145:0: 'QuantyraNullCone.integral_flat_light_cone3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzLightConeIntegral
+REMOTE_TERMINAL_EXIT=1

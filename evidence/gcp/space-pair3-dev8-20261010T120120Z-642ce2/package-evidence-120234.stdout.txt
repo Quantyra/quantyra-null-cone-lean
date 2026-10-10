@@ -1,0 +1,100 @@
+info: QuantyraNullCone/LorentzGaugeBounds.lean:84:0: 'QuantyraNullCone.flow_denominator_upper3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeBounds.lean:85:0: 'QuantyraNullCone.gauge_density_bounds3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeBounds.lean:86:0: 'QuantyraNullCone.gauge_density_smooth3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2949/2959] Replayed QuantyraNullCone.LorentzDerivative
+info: QuantyraNullCone/LorentzDerivative.lean:95:0: 'QuantyraNullCone.hasFDerivAt_flow_denominator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDerivative.lean:96:0: 'QuantyraNullCone.hasFDerivAt_flow_numerator3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDerivative.lean:97:0: 'QuantyraNullCone.hasFDerivAt_lorentz_flow3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2950/2959] Replayed QuantyraNullCone.LorentzJacobian
+info: QuantyraNullCone/LorentzJacobian.lean:61:0: 'QuantyraNullCone.lorentz_flow_derivative_matrix3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:62:0: 'QuantyraNullCone.lorentz_flow_derivative_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzJacobian.lean:63:0: 'QuantyraNullCone.lorentz_flow_derivative_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2951/2959] Replayed QuantyraNullCone.LorentzVolume
+info: QuantyraNullCone/LorentzVolume.lean:112:0: 'QuantyraNullCone.integrable_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:113:0: 'QuantyraNullCone.integral_lorentz_slice_area3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzVolume.lean:114:0: 'QuantyraNullCone.lorentz_diamond_volume3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2952/2959] Replayed QuantyraNullCone.LorentzChronology
+info: QuantyraNullCone/LorentzChronology.lean:96:0: 'QuantyraNullCone.chronological_iff_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:97:0: 'QuantyraNullCone.lorentz_flow_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:98:0: 'QuantyraNullCone.continuousOn_flow_time_parameter3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:99:0: 'QuantyraNullCone.lorentz_flow_chronological_forward3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzChronology.lean:100:0: 'QuantyraNullCone.lorentz_flow_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2953/2959] Replayed QuantyraNullCone.LorentzGaugeLipschitz
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:116:0: 'QuantyraNullCone.closed_lorentz_coordinate_square_difference3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:117:0: 'QuantyraNullCone.gauge_denominator_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:118:0: 'QuantyraNullCone.reciprocal_cube_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeLipschitz.lean:119:0: 'QuantyraNullCone.gauge_density_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2954/2959] Replayed QuantyraNullCone.LorentzSpatialDistance
+info: QuantyraNullCone/LorentzSpatialDistance.lean:84:0: 'QuantyraNullCone.gauge_density_spatial_invariant3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:85:0: 'QuantyraNullCone.gauge_anchor_density_gt3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzSpatialDistance.lean:86:0: 'QuantyraNullCone.gauge_o2_distance_positive3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2955/2959] Replayed QuantyraNullCone.LorentzFlat
+info: QuantyraNullCone/LorentzFlat.lean:40:0: 'QuantyraNullCone.flat_diamond_measure_mass3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:41:0: 'QuantyraNullCone.flat_density_class3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlat.lean:42:0: 'QuantyraNullCone.sampledOrder3_flow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2956/2959] Replayed QuantyraNullCone.LorentzTimeMoments
+info: QuantyraNullCone/LorentzTimeMoments.lean:152:0: 'QuantyraNullCone.lorentz_time_volume_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:153:0: 'QuantyraNullCone.flat_diamond_time_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:154:0: 'QuantyraNullCone.integral_flat_time3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:155:0: 'QuantyraNullCone.flat_time_second_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:156:0: 'QuantyraNullCone.flat_time_fourth_moment3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2957/2959] Building QuantyraNullCone.LorentzRadialIntegral (3.1s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/QuantyraNullCone/LorentzRadialIntegral.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/.lake/build/lib/lean/QuantyraNullCone/LorentzRadialIntegral.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/.lake/build/lib/lean/QuantyraNullCone/LorentzRadialIntegral.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/.lake/build/ir/QuantyraNullCone/LorentzRadialIntegral.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev8-20261010T120120Z-642ce2/source/.lake/build/ir/QuantyraNullCone/LorentzRadialIntegral.setup.json --json
+error: QuantyraNullCone/LorentzRadialIntegral.lean:20:13: Unknown constant `Module.finrank_euclideanSpace`
+error: QuantyraNullCone/LorentzRadialIntegral.lean:29:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (r : ℝ) in Ioi 0, r * (Iio R).indicator f r
+in the target expression
+  ↑(Module.finrank ℝ SpatialPoint3) *
+      (Real.pi * ∫ (y : ℝ) in Ioi 0, y ^ (Module.finrank ℝ SpatialPoint3 - 1) * (Iio R).indicator f y) =
+    2 * Real.pi * ∫ (r : ℝ) in Ioo 0 R, r * f r
+
+f : ℝ → ℝ
+R : ℝ
+he : ((Metric.ball 0 R).indicator fun z => f ‖z‖) = fun z => (Iio R).indicator f ‖z‖
+hv : volume.real (Metric.ball 0 1) = Real.pi
+hh : ∫ (r : ℝ) in Ioi 0, r * (Iio R).indicator f r = ∫ (r : ℝ) in Ioo 0 R, r * f r
+⊢ ↑(Module.finrank ℝ SpatialPoint3) *
+      (Real.pi * ∫ (y : ℝ) in Ioi 0, y ^ (Module.finrank ℝ SpatialPoint3 - 1) * (Iio R).indicator f y) =
+    2 * Real.pi * ∫ (r : ℝ) in Ioo 0 R, r * f r
+warning: QuantyraNullCone/LorentzRadialIntegral.lean:20:44: This simp argument is unused:
+  Fintype.card_fin
+
+Hint: Omit it from the simp argument list.
+  simp only [Module.finrank_euclideanSpace, F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵i̵n̵,̵ ̵hv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzRadialIntegral.lean:65:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ?m.346) in Metric.ball ?m.350 ?m.351, ?m.343 x ∂?m.345
+in the target expression
+  (fun a => ∫ (y : SpatialPoint3), splitLorentzDiamond3.indicator H (a, y)) t =
+    (fun a => ∫ (z : SpatialPoint3) in Metric.ball 0 (1 - |a|), H (a, z)) t
+
+case e_a.h.hp
+H : ℝ × SpatialPoint3 → ℝ
+hH : Continuous H
+hc : Continuous fun p => H (splitLorentzEquiv3 p)
+hi : IntegrableOn (fun p => H (splitLorentzEquiv3 p)) lorentzDiamond3 volume
+hj : IntegrableOn H splitLorentzDiamond3 (volume.prod volume)
+t : ℝ
+⊢ (fun a => ∫ (y : SpatialPoint3), splitLorentzDiamond3.indicator H (a, y)) t =
+    (fun a => ∫ (z : SpatialPoint3) in Metric.ball 0 (1 - |a|), H (a, z)) t
+error: QuantyraNullCone/LorentzRadialIntegral.lean:78:11: `simp` made no progress
+info: QuantyraNullCone/LorentzRadialIntegral.lean:84:0: 'QuantyraNullCone.integral_spatial_radial_ball3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzRadialIntegral.lean:85:0: 'QuantyraNullCone.integral_flat_spatial3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzRadialIntegral.lean:86:0: 'QuantyraNullCone.integral_flat_radial3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [2958/2959] Built QuantyraNullCone.LorentzMetricJacobian (6.3s)
+info: QuantyraNullCone/LorentzMetricJacobian.lean:55:0: 'QuantyraNullCone.lorentz_gram_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMetricJacobian.lean:56:0: 'QuantyraNullCone.lorentz_metric_linear_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMetricJacobian.lean:57:0: 'QuantyraNullCone.density_metric_jacobian3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2959/2959] Built QuantyraNullCone.LorentzBoost (5.4s)
+info: QuantyraNullCone/LorentzBoost.lean:122:0: 'QuantyraNullCone.lorentz_boost_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:123:0: 'QuantyraNullCone.lorentz_boost_bilinear3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:124:0: 'QuantyraNullCone.lorentz_boost_abs_det3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:125:0: 'QuantyraNullCone.lorentz_boost_volume_preserving3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:126:0: 'QuantyraNullCone.lorentz_boost_future3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzBoost.lean:127:0: 'QuantyraNullCone.lorentz_boost_chronological_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- QuantyraNullCone.LorentzRadialIntegral

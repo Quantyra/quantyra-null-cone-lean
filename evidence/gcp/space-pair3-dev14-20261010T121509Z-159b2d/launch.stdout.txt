@@ -1,0 +1,108 @@
+error: QuantyraNullCone/LorentzIntervalMoments.lean:33:2: ring failed, ring expressions not equal
+p q : LorentzPoint3
+h : chronological3 p q
+v : LorentzPoint3
+ht : 0 < intervalDuration3 p q
+hc :
+  ∀ (i : Fin 3),
+    intervalDuration3 p q * ((lorentzBoost3 (intervalBoostA3 p q) (intervalBoostB3 p q)) lorentzTop3).ofLp i =
+      q.ofLp i - p.ofLp i
+h0 :
+  intervalDuration3 p q *
+      ((1 + intervalBoostA3 p q ^ 2 + intervalBoostB3 p q ^ 2 +
+          2 * intervalBoostB3 p q * Matrix.vecHead (Matrix.vecTail ![0, 0])) /
+        (1 - intervalBoostA3 p q ^ 2 - intervalBoostB3 p q ^ 2)) =
+    q.ofLp 0 - p.ofLp 0
+h1 :
+  intervalDuration3 p q *
+      ((2 * intervalBoostA3 p q +
+          2 * intervalBoostA3 p q * intervalBoostB3 p q * Matrix.vecHead (Matrix.vecTail ![0, 0])) /
+--
+warning: QuantyraNullCone/LorentzIntervalMoments.lean:19:22: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵h̵t̵.̵n̵e̵'̵]̵[̲s̲m̲u̲l̲_̲e̲q̲_̲m̲u̲l̲,̲ ̲h̲t̲.̲n̲e̲'̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzIntervalMoments.lean:25:70: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [̵l̵o̵r̵e̵n̵t̵z̵T̵o̵p̵3̵,̵l̵o̵r̵e̵n̵t̵z̵P̵o̵i̵n̵t̵3̵,̵P̵i̵L̵p̵.̵t̵o̵L̵p̵_̵a̵p̵p̵l̵y̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵m̵u̵l̵_̵o̵n̵e̵,̵m̵u̵l̵_̵z̵e̵r̵o̵,̵a̵d̵d̵_̵z̵e̵r̵o̵,̵z̵e̵r̵o̵_̵a̵d̵d̵]̵[̲l̲o̲r̲e̲n̲t̲z̲T̲o̲p̲3̲,̲ ̲l̲o̲r̲e̲n̲t̲z̲P̲o̲i̲n̲t̲3̲,̲ ̲P̲i̲L̲p̲.̲t̲o̲L̲p̲_̲a̲p̲p̲l̲y̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲z̲e̲r̲o̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲o̲n̲e̲,̲
+  ̲ ̲ ̲ ̲ ̲M̲a̲t̲r̲i̲x̲.̲c̲o̲n̲s̲_̲v̲a̲l̲_̲t̲w̲o̲,̲ ̲m̲u̲l̲_̲o̲n̲e̲,̲ ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲a̲d̲d̲_̲z̲e̲r̲o̲]̲ at h0 h1 h2
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzIntervalMoments.lean:45:77: unsolved goals
+p : LorentzPoint3
+hp : p ∈ lorentzDiamond3
+f : LorentzPoint3 → ℝ
+hf : Continuous f
+hpt : chronological3 p lorentzTop3
+hs : MeasurableSet {q | chronological3 p q}
+he : {q | chronological3 p q} ∩ lorentzDiamond3 = chronologicalInterval3 p lorentzTop3
+⊢ intervalDuration3 p lorentzTop3 ^ 3 *
+      ∫ (p_1 : LorentzPoint3), f (lorentzIntervalMap3 p lorentzTop3 p_1) ∂flatDiamondMeasure3 =
+    intervalDuration3 p lorentzTop3 ^ 3 *
+      ∫ (p_1 : LorentzPoint3),
+        f (lorentzIntervalMap3 p lorentzTop3 p_1) ∂(ENNReal.ofReal lorentzVolume3)⁻¹ • volume.restrict lorentzDiamond3
+error: QuantyraNullCone/LorentzIntervalMoments.lean:117:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (densityMeasure3 (timeQuadraticDensity3 theta)) {b | (spatialRadius3 ∘ fun x => id x - ?m.88) b < ?m.65 b}
+in the target expression
+  (densityMeasure3 (timeQuadraticDensity3 theta)) {q | chronological3 p q} =
+    ENNReal.ofReal ((intervalDuration3 p lorentzTop3 / 2) ^ 3 * (1 + theta * futureTimeShapeMean3 p))
+
+theta : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+p : LorentzPoint3
+hp : p ∈ lorentzDiamond3
+⊢ (densityMeasure3 (timeQuadraticDensity3 theta)) {q | chronological3 p q} =
+    ENNReal.ofReal ((intervalDuration3 p lorentzTop3 / 2) ^ 3 * (1 + theta * futureTimeShapeMean3 p))
+info: QuantyraNullCone/LorentzIntervalMoments.lean:121:0: 'QuantyraNullCone.lorentz_interval_map_time3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:122:0: 'QuantyraNullCone.integral_flat_future3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:123:0: 'QuantyraNullCone.flat_interval_future_time_square3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:124:0: 'QuantyraNullCone.flat_interval_future_shape_mean3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:125:0: 'QuantyraNullCone.integral_flat_future_density3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:126:0: 'QuantyraNullCone.time_quadratic_future_probability3' depends on axioms: [propext,
+ sorryAx,
+--
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzIntervalMoments
+hp : p ∈ lorentzDiamond3
+f : LorentzPoint3 → ℝ
+hf : Continuous f
+hpt : chronological3 p lorentzTop3
+hs : MeasurableSet {q | chronological3 p q}
+he : {q | chronological3 p q} ∩ lorentzDiamond3 = chronologicalInterval3 p lorentzTop3
+⊢ intervalDuration3 p lorentzTop3 ^ 3 *
+      ∫ (p_1 : LorentzPoint3), f (lorentzIntervalMap3 p lorentzTop3 p_1) ∂flatDiamondMeasure3 =
+    intervalDuration3 p lorentzTop3 ^ 3 *
+      ∫ (p_1 : LorentzPoint3),
+        f (lorentzIntervalMap3 p lorentzTop3 p_1) ∂(ENNReal.ofReal lorentzVolume3)⁻¹ • volume.restrict lorentzDiamond3
+error: QuantyraNullCone/LorentzIntervalMoments.lean:117:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (densityMeasure3 (timeQuadraticDensity3 theta)) {b | (spatialRadius3 ∘ fun x => id x - ?m.88) b < ?m.65 b}
+in the target expression
+  (densityMeasure3 (timeQuadraticDensity3 theta)) {q | chronological3 p q} =
+    ENNReal.ofReal ((intervalDuration3 p lorentzTop3 / 2) ^ 3 * (1 + theta * futureTimeShapeMean3 p))
+
+theta : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+p : LorentzPoint3
+hp : p ∈ lorentzDiamond3
+⊢ (densityMeasure3 (timeQuadraticDensity3 theta)) {q | chronological3 p q} =
+    ENNReal.ofReal ((intervalDuration3 p lorentzTop3 / 2) ^ 3 * (1 + theta * futureTimeShapeMean3 p))
+info: QuantyraNullCone/LorentzIntervalMoments.lean:121:0: 'QuantyraNullCone.lorentz_interval_map_time3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:122:0: 'QuantyraNullCone.integral_flat_future3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:123:0: 'QuantyraNullCone.flat_interval_future_time_square3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:124:0: 'QuantyraNullCone.flat_interval_future_shape_mean3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:125:0: 'QuantyraNullCone.integral_flat_future_density3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzIntervalMoments.lean:126:0: 'QuantyraNullCone.time_quadratic_future_probability3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzIntervalMoments
+REMOTE_TERMINAL_EXIT=1

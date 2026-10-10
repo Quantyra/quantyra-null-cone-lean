@@ -1,15 +1,16 @@
 # Restricted confidence theorem: current development checkpoint
 
-S042, 2026-10-10. **Targeted GCP development passes for the actual restricted
-family and the sharper geometric bound.** Incremental cache reuse is verified.
+S042, 2026-10-10. **Targeted GCP development now passes for the actual pair
+probability and restricted geometric inverse, together with family membership
+and the sharper forward bound.** Incremental cache reuse is verified.
 The complete finite-confidence theorem remains under development. Full
 acceptance is still the preceding 1,165-report campaign; S042 remains at three
 of five criteria and S043 remains gated.
 
 The [ordinary theorem and investment audit](geometric-pair-audit.md) remains
 the milestone specification. This checkpoint records subsequent development;
-it does not promote the uncompleted pair-law or confidence steps to accepted
-results. Root imports and the central acceptance audit are unchanged.
+it does not promote the uncompleted confidence theorem to an accepted result.
+Root imports and the central acceptance audit are unchanged.
 
 ## Mathematical progress
 
@@ -48,7 +49,73 @@ powers. For unmatched mass, the rational pointwise bound
 moment. This replaces the ordinary audit's Cauchy–Schwarz calculation while
 retaining its stated sufficient constant. No sharpness claim is made.
 
+The subsequent interval and pair integration is now proved against the actual
+sampling measure. [LorentzBoost.lean](../QuantyraNullCone/LorentzBoost.lean)
+constructs an explicit rational Lorentz boost, proves its determinant and
+Lebesgue-volume preservation, and proves preservation of strict chronology.
+The interval map sends the original diamond to the chronological interval
+between arbitrary strictly related endpoints. Its volume is
+`V*(T/2)^3`, where `T=sqrt(-lorentzSquare(q-p))`.
+
+Actual spatial reflections, coordinate exchange and radial integration give
+zero means and mixed moments, `E[t^2]=1/10` and
+`E[x^2]=E[y^2]=3/20`. Transporting these moments proves the future interval's
+conditional shape mean
+
+    M(t,r) = (7+18*t+11*t^2)/40 + 3*r^2/80.
+
+[LorentzIntervalMoments.lean](../QuantyraNullCone/LorentzIntervalMoments.lean)
+then gives the actual density-measure probability of the future of each
+interior point. No interval-volume or covariance formula is assumed.
+
+The proved light-cone substitution `t=1-a-b`, `r=b-a` maps
+`0<a<b<1` to the radial diamond and contributes the normalized factor
+`6*(b-a)`. The future flat volume is `(a*b)^(3/2)`.
+[LorentzTriangleMoments.lean](../QuantyraNullCone/LorentzTriangleMoments.lean)
+proves the general monomial integral from the real-power primitive.
+[LorentzPairIntegral.lean](../QuantyraNullCone/LorentzPairIntegral.lean)
+expands the finite polynomial and integrates its coefficients exactly.
+
+[LorentzPairProbability.lean](../QuantyraNullCone/LorentzPairProbability.lean)
+connects this integral to the product measure, the original two-sample law,
+and the event `code 0 1 = true` in the original order law:
+
+    q(theta) = 4/35 + (36/1925)*theta - (151/375375)*theta^2.
+
+[LorentzPairConditioning.lean](../QuantyraNullCone/LorentzPairConditioning.lean)
+proves the comparable-pair probability `p(theta)=2*q(theta)`, using symmetry
+and disjointness of the two strict orientations. It proves
+
+    (13738/375375)*|theta-phi| <= |p(theta)-p(phi)|,
+    d_G(theta,phi) <= (225225/54952)*|p(theta)-p(phi)|.
+
+Consequently, equality of the original two-point order laws identifies the
+parameter within this restricted family. This is a quantitative population
+statement; a finite observation still needs the concentration and inverse
+estimator proof. It is not full-class conditioning or a physical detector
+model.
+
 ## Verification and efficiency
+
+The current combined target is `QuantyraNullCone.LorentzPairConditioning`.
+GCP run [`space-pair3-dev22-20261010T123035Z-433904`](../evidence/gcp/space-pair3-dev22-20261010T123035Z-433904/receipt.json)
+passes with zero warnings. Its 56 new printed axiom reports use only
+`propext`, `Classical.choice` and `Quot.sound`. The final incremental build
+took 10 seconds, excluding transport, compression and collection.
+The [current artifact validator](../evidence/geometric-gauge/pair-integral-development/verify-development.py)
+and [retained result](../evidence/geometric-gauge/pair-integral-development/development-validation.json)
+check the exact new sources, standard axiom reports, all preceding mathematical
+inputs unchanged, and all 16 terminal development outcomes from dev7 through
+dev22. Failed intermediate captures and the earlier successful build with
+linter warnings remain preserved. This validator only checks artifacts;
+all compiler invocations ran on GCP.
+
+The [current shutdown receipt](../evidence/gcp/space-pair3-dev22-20261010T123035Z-433904/cleanup.json)
+records the instance ownership established by dev7, collected outcomes,
+the verified retained successful cache, and task-owned shutdown. The accepted
+1,165-report campaign, published manuscripts and frozen studies are unchanged.
+
+The preceding family/geometric checkpoint remains preserved:
 
 GCP run [`space-pair3-dev6-20261010T114526Z-23f3f2`](../evidence/gcp/space-pair3-dev6-20261010T114526Z-23f3f2/receipt.json)
 passes the combined target, 2,981 jobs, with zero warnings. All 21 new printed
@@ -82,7 +149,7 @@ verify three controlled persistent-cache runs:
 Times exclude transport, compression, extraction and evidence collection;
 they are not a general wall-clock speedup guarantee. Probe modules exist only
 inside the immutable test captures, not in the project source tree. The
-successful geometric target now supplies the next cache checkpoint, 39,025,530
+successful geometric target supplied that checkpoint, 39,025,530
 bytes, SHA-256 `c522380755bae196b8f635b09c05de925fe852b03196714516032abe659e8a0f`.
 
 All Lean/Lake invocations were on the established GCP instance. The
@@ -96,18 +163,16 @@ successful preflight retry precedes the stop operation.
 
 ## Next decisive work
 
-Continue with the actual pair integral: future-interval volume and moments
-under the explicit Lorentz transformation, followed by the radial/light-cone
-integrals. Reuse the accepted determinant and coordinate-volume results and
-the newly proved actual time moments. An endpoint that assumes the pair law
-does not discharge this obligation.
+The actual pair integral, original order-law bridge and geometric inverse
+conditioning now pass targeted GCP compilation. Reuse these results without
+repeating their source comparison or cache probes.
 
-Then prove the original order-only pair statistic's permutation representation,
+Prove the original order-only pair statistic's permutation representation,
 its dependence-aware Bernstein bound, and measurable clipped inverse. Connect
 them to the geometric bound in one finite-confidence endpoint. Register the
 complete batch in the root and central audit and run full GCP acceptance at
 that milestone. The existing quantitative assessment and its practical-utility
 limitation remain in force; this development result is not an S043 go decision.
 
-Remaining to-do list: certify the actual pair law and complete finite-confidence
-endpoint, perform full GCP acceptance, and record the S043 go/park decision.
+Remaining to-do list: complete the all-pairs finite-confidence endpoint,
+perform full GCP acceptance, and record the S043 go/park decision.

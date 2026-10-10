@@ -1,0 +1,7 @@
+{
+  "run": "space-pair3-dev22-20261010T123035Z-433904",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzPairConditioning",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

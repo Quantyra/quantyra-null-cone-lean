@@ -1,0 +1,7 @@
+{
+  "run": "space-pair3-dev18-20261010T122419Z-8a982a",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzTriangleMoments",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

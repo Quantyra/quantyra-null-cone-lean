@@ -1,0 +1,36 @@
+ Quot.sound]
+ℹ [2990/2994] Replayed QuantyraNullCone.LorentzDistortion
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2991/2994] Replayed QuantyraNullCone.LorentzDistortionTriangle
+info: QuantyraNullCone/LorentzDistortionTriangle.lean:29:0: 'QuantyraNullCone.geometricDistortion3_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortionTriangle.lean:30:0: 'QuantyraNullCone.geometricDistortion3_reverse_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2992/2994] Replayed QuantyraNullCone.LorentzDensityForward
+info: QuantyraNullCone/LorentzDensityForward.lean:58:0: 'QuantyraNullCone.geometricDistortion3_le_of_density_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDensityForward.lean:59:0: 'QuantyraNullCone.geometricDistortion3_same_density_on_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzDensityForward.lean:60:0: 'QuantyraNullCone.geometricDistortion3_density_perturbation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2993/2994] Replayed QuantyraNullCone.LorentzTimeGeometry
+info: QuantyraNullCone/LorentzTimeGeometry.lean:235:0: 'QuantyraNullCone.density_time_weight_family_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:236:0: 'QuantyraNullCone.FutureCurve3.time_quadratic_length_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:237:0: 'QuantyraNullCone.time_quadratic_separation_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:238:0: 'QuantyraNullCone.time_quadratic_shape_abs_integral3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:239:0: 'QuantyraNullCone.time_quadratic_common_missing3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:240:0: 'QuantyraNullCone.time_quadratic_geometric_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2994/2994] Built QuantyraNullCone.LorentzPairConditioning (5.8s)
+info: QuantyraNullCone/LorentzPairConditioning.lean:98:0: 'QuantyraNullCone.time_quadratic_comparable_pair_probability3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:99:0: 'QuantyraNullCone.time_quadratic_order_law_comparable3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:100:0: 'QuantyraNullCone.time_comparable_probability_conditioning3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:101:0: 'QuantyraNullCone.time_quadratic_geometric_pair_inverse3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConditioning.lean:102:0: 'QuantyraNullCone.time_quadratic_parameter_identifiable3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2994 jobs).
+REMOTE_TERMINAL_EXIT=0

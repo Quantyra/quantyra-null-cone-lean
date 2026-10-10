@@ -1,0 +1,24 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "parent_commit": "ac2cd165a91a56c22d4d7da22b575e478da80500",
+  "question": "Can the previously uninspected 180 ns holdoff acquisition support a stable mature-detection timing reference for the 198 ns acquisition?",
+  "prior_information": "The archive directory, original experimental/source descriptions, published aggregate results and the acq14 development fits are known. Acq13 event outcomes have not been downloaded or inspected locally. This control is selected adaptively in response to the acq14 timing contrast. A new acquisition is a transfer check, not a randomized intervention or automatically independent calibration.",
+  "source_evidence": "Rapp et al., High-flux single-photon lidar (2021), section 4.B, DOI 10.1364/OPTICA.403190, reports a fixed white target around 50 cm, adjustable detector holdoff and an attenuated pulse calibration. Rapp's 2020 dissertation section 5.5 additionally describes background calibration difficulties. Neither inspected account gives a millimeter-scale uncertainty bound for this target or instrument delay. Author-hosted dissertation https://vivekgoyal.org/documents/Rapp_PhDThesis2020.pdf SHA256 fbb523df4b6faebafbb03ef1d5862f68a046a5002c8155374a8dbd28cac9e4cb. Different holdoffs may change recovery, count rate and instrument timing; do not call acq13 ground truth.",
+  "archive": {
+    "url": "https://drive.usercontent.google.com/download?id=1TwwtDn4BheJ9Ij25taWhk2_VLMedrtry&export=download&confirm=t",
+    "bytes": 456605196,
+    "members": [{"name":"2019_01_28/FGS_td180_2019_01_28_acq13.mat","bytes":21719768,"crc32":"15ced32d"}]
+  },
+  "development_windows_frames": [[0,500000],[500000,1000000]],
+  "holdoff_ns": 180,
+  "age_edges_ns": [180,181,182,183,187,192,282],
+  "last_edge": "infinity",
+  "delay_split_ns": 187,
+  "numerics": {"delay_offsets_ns":[-0.08,0,0.08],"delay_radius_ns":0.4,"maxiter":2500,"ftol":1e-15,"gtol":1e-9},
+  "methods": "Same pulse variants, centered native K=12500 convention and verified source functions as the parent. Fit the largest supported hard cutoff within nominal holdoff through holdoff+2 ns, native joint likelihood, native robust one-step, guarded likelihood after holdoff+7 ns, independent age-cell signal/background amplitudes with common delay, and the same nuisance model with early/mature delays. Preserve all recorded events as exposure resets. Fit each half and score the first-half split model against a second-half optimized common-delay model. Reuse existing parent algorithms without changing their likelihoods.",
+  "comparison": "Report native hard minus guarded, early minus mature, and mature acq13 minus the corresponding mature acq14 fit in range-equivalent millimeters. Also report both mature estimates relative to the provisional low-flux fit. No nominal target distance is substituted for calibrated truth. The new early/mature age split is shifted by the known 18 ns holdoff difference; it is not chosen from new outcomes.",
+  "reference_gate": "A necessary descriptive stability screen requires absolute mature acq13-acq14 differences at most 0.2 mm in both halves and both pulse variants. Passing would warrant uncertainty and transfer analysis, not prove absolute accuracy or establish the 1 mm/95% benchmark. Failing parks use of these settings as a common uncalibrated submillimeter reference. A fitted difference alone cannot separate target drift, pulse drift, instrument delay and quantization.",
+  "verification": "Check member CRC/length and record SHA256/schema/scalars, finite ordered development timestamps and complete within-window integer exposure/count partitions. Record all input and executable hashes, optimizer starts/status/score/bounds, finite-difference all new-model parameters, and check the upstream row likelihood for the new common/split fits. Native hard and mature-guard fits use previously audited code. Preserve previous results byte-for-byte.",
+  "boundaries": "Only new acq13 frames below 1000000 may be analyzed; full array length/frame extent may be read for provenance. All other acq13 outcomes join the reserve. Existing acq14/low-flux/beam reserves remain untouched. No raw-data redistribution, new hardware, outreach, publication, manuscript edits or Lean/Lake. This is a physical model/reference-control screen, not the full practical-benefit comparison."
+}

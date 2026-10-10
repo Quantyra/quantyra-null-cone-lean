@@ -1,5 +1,7 @@
 # Conformal flow transport for actual causal curves
 
+Subsequent progress: [density forward stability and joint perturbation control](geometric-density-forward-certification.md) now have 1,131-report GCP acceptance. The historical flow-transport acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,107 exact type/axiom reports, including 29 new results, with zero warnings.** The accepted conformal-flow pair has zero geometric distortion despite its positive coordinate distance. S042 remains incomplete and S043 remains gated.
 
 ## Curve and time transport

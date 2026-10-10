@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_commit": "c4b434227aa879f233e0956a6e2f5d0172818e1e",
+  "captured_files": 234,
+  "lean_inputs": 200,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "1a3169b91c02b0b7d9d7f9651c58d2d1ff7e27a92badf432057945e09fdb4b41",
+  "module_sha256": {
+    "QuantyraNullCone/CommonMeasureCoupling.lean": "68183862cf12d60920bf62af48f6c0a687b5d33c979a8c3dea2aeff546a70089",
+    "QuantyraNullCone/TimeCommonCoupling.lean": "819e4228c2e3d798b08ecf607b8e5958f474344e01144b367c9ecf9036a7def7",
+    "QuantyraNullCone/LorentzDensityWeight.lean": "e3efd921ebb7abdd6c0f24e618e8bc92145e9a468ce221dde6a1834e1c60a21d",
+    "QuantyraNullCone/LorentzCommonDensity.lean": "7fbb701ab82ccbf00666df89285e0c77396fe5ec0c93c5505688c5b28086a7e5",
+    "QuantyraNullCone/LorentzDensityForward.lean": "6a53e22bef711aaafa90f3a036846c6ecc7ca7c7569b610d069309ce5c76321f"
+  },
+  "audited_named_exports": 1131,
+  "new_density_forward_exports": 24,
+  "root_build_jobs": 3161,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1107_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T10:06:06.283660+00:00"
+}

@@ -1,5 +1,7 @@
 # A restricted 2+1 route through pair probabilities
 
+Subsequent progress: the general [density-to-geometric forward bound](geometric-density-forward-certification.md) now has 1,131-report GCP acceptance. The restricted family membership, pair-integral, inverse-conditioning and finite-observation/confidence arguments below retain their separate proof obligations.
+
 S042 ordinary research, 2026-10-09 (Hawaii). **Not Lean certified; no S043 go decision.** This calculation tests a possible explicit finite route after the [full-class representation argument](geometric-diamond-representation.md). The original class and its nontrivial gauge remain part of S042. This one-parameter subclass does not replace full-class identifiability or supply its missing explicit inverse modulus.
 
 ## Controlled family and target

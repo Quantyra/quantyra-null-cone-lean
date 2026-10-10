@@ -2098,3 +2098,103 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.causal3_of_future_inclusion
 #check QuantyraNullCone.chronological_profile_eq_iff3
 #print axioms QuantyraNullCone.chronological_profile_eq_iff3
+
+-- Actual 2+1 AC-curve proper time, density metric and weighted profiles.
+#check QuantyraNullCone.flat_proper_speed_nonneg3
+#print axioms QuantyraNullCone.flat_proper_speed_nonneg3
+#check QuantyraNullCone.flat_proper_speed_sq3
+#print axioms QuantyraNullCone.flat_proper_speed_sq3
+#check QuantyraNullCone.flat_proper_speed_le_time3
+#print axioms QuantyraNullCone.flat_proper_speed_le_time3
+#check QuantyraNullCone.proper_speed_lift_norm3
+#print axioms QuantyraNullCone.proper_speed_lift_norm3
+#check QuantyraNullCone.FutureCurve3.integrable_deriv
+#print axioms QuantyraNullCone.FutureCurve3.integrable_deriv
+#check QuantyraNullCone.FutureCurve3.integral_deriv
+#print axioms QuantyraNullCone.FutureCurve3.integral_deriv
+#check QuantyraNullCone.FutureCurve3.time_deriv_nonneg
+#print axioms QuantyraNullCone.FutureCurve3.time_deriv_nonneg
+#check QuantyraNullCone.FutureCurve3.endpoint_time_nonneg
+#print axioms QuantyraNullCone.FutureCurve3.endpoint_time_nonneg
+#check QuantyraNullCone.FutureCurve3.integrable_flatSpeed
+#print axioms QuantyraNullCone.FutureCurve3.integrable_flatSpeed
+#check QuantyraNullCone.FutureCurve3.integrable_speedLift
+#print axioms QuantyraNullCone.FutureCurve3.integrable_speedLift
+#check QuantyraNullCone.FutureCurve3.integral_speedLift
+#print axioms QuantyraNullCone.FutureCurve3.integral_speedLift
+#check QuantyraNullCone.FutureCurve3.integral_speedLift_norm
+#print axioms QuantyraNullCone.FutureCurve3.integral_speedLift_norm
+#check QuantyraNullCone.FutureCurve3.flatLength_nonneg
+#print axioms QuantyraNullCone.FutureCurve3.flatLength_nonneg
+#check QuantyraNullCone.FutureCurve3.flatLength_sq_bound
+#print axioms QuantyraNullCone.FutureCurve3.flatLength_sq_bound
+#check QuantyraNullCone.FutureCurve3.endpoint_causal
+#print axioms QuantyraNullCone.FutureCurve3.endpoint_causal
+#check QuantyraNullCone.FutureCurve3.flatLength_le_endpoint
+#print axioms QuantyraNullCone.FutureCurve3.flatLength_le_endpoint
+#check QuantyraNullCone.FutureCurve3.flatLength_le_two
+#print axioms QuantyraNullCone.FutureCurve3.flatLength_le_two
+#check QuantyraNullCone.spatial_radius_smul3
+#print axioms QuantyraNullCone.spatial_radius_smul3
+#check QuantyraNullCone.straight_point_causal3
+#print axioms QuantyraNullCone.straight_point_causal3
+#check QuantyraNullCone.straight_coord_deriv3
+#print axioms QuantyraNullCone.straight_coord_deriv3
+#check QuantyraNullCone.straight_curve_velocity3
+#print axioms QuantyraNullCone.straight_curve_velocity3
+#check QuantyraNullCone.straight_curve_flatLength3
+#print axioms QuantyraNullCone.straight_curve_flatLength3
+#check QuantyraNullCone.future_curve_nonempty_iff_causal3
+#print axioms QuantyraNullCone.future_curve_nonempty_iff_causal3
+#check QuantyraNullCone.flat_proper_speed_pos_iff3
+#print axioms QuantyraNullCone.flat_proper_speed_pos_iff3
+#check QuantyraNullCone.flat_lengths_bddAbove3
+#print axioms QuantyraNullCone.flat_lengths_bddAbove3
+#check QuantyraNullCone.flat_time_separation_nonneg3
+#print axioms QuantyraNullCone.flat_time_separation_nonneg3
+#check QuantyraNullCone.flat_time_separation_eq3
+#print axioms QuantyraNullCone.flat_time_separation_eq3
+#check QuantyraNullCone.flat_time_separation_of_not_causal3
+#print axioms QuantyraNullCone.flat_time_separation_of_not_causal3
+#check QuantyraNullCone.flat_time_separation_pos_iff3
+#print axioms QuantyraNullCone.flat_time_separation_pos_iff3
+#check QuantyraNullCone.FutureCurve3.continuousOn_point
+#print axioms QuantyraNullCone.FutureCurve3.continuousOn_point
+#check QuantyraNullCone.FutureCurve3.integrable_weightedSpeed
+#print axioms QuantyraNullCone.FutureCurve3.integrable_weightedSpeed
+#check QuantyraNullCone.FutureCurve3.weightedLength_bounds
+#print axioms QuantyraNullCone.FutureCurve3.weightedLength_bounds
+#check QuantyraNullCone.weighted_lengths_bddAbove3
+#print axioms QuantyraNullCone.weighted_lengths_bddAbove3
+#check QuantyraNullCone.weighted_time_separation_nonneg3
+#print axioms QuantyraNullCone.weighted_time_separation_nonneg3
+#check QuantyraNullCone.FutureCurve3.weightedLength_le_timeSeparation
+#print axioms QuantyraNullCone.FutureCurve3.weightedLength_le_timeSeparation
+#check QuantyraNullCone.weighted_time_separation_of_not_causal3
+#print axioms QuantyraNullCone.weighted_time_separation_of_not_causal3
+#check QuantyraNullCone.weighted_time_separation_bounds3
+#print axioms QuantyraNullCone.weighted_time_separation_bounds3
+#check QuantyraNullCone.weighted_time_separation_pos_iff3
+#print axioms QuantyraNullCone.weighted_time_separation_pos_iff3
+#check QuantyraNullCone.weighted_time_separation_zero_iff3
+#print axioms QuantyraNullCone.weighted_time_separation_zero_iff3
+#check QuantyraNullCone.weighted_time_profile_eq_iff3
+#print axioms QuantyraNullCone.weighted_time_profile_eq_iff3
+#check QuantyraNullCone.InDensityClass3.timeWeight
+#print axioms QuantyraNullCone.InDensityClass3.timeWeight
+#check QuantyraNullCone.InDensityClass3.time_separation_pos_iff3
+#print axioms QuantyraNullCone.InDensityClass3.time_separation_pos_iff3
+#check QuantyraNullCone.InDensityClass3.time_profile_eq_iff3
+#print axioms QuantyraNullCone.InDensityClass3.time_profile_eq_iff3
+#check QuantyraNullCone.density_time_weight_sq3
+#print axioms QuantyraNullCone.density_time_weight_sq3
+#check QuantyraNullCone.density_metric_proper_speed3
+#print axioms QuantyraNullCone.density_metric_proper_speed3
+#check QuantyraNullCone.FutureCurve3.weightedLength_eq_metric
+#print axioms QuantyraNullCone.FutureCurve3.weightedLength_eq_metric
+#check QuantyraNullCone.FutureCurve3.weightedLength_difference
+#print axioms QuantyraNullCone.FutureCurve3.weightedLength_difference
+#check QuantyraNullCone.weighted_time_separation_le_add3
+#print axioms QuantyraNullCone.weighted_time_separation_le_add3
+#check QuantyraNullCone.weighted_time_separation_difference3
+#print axioms QuantyraNullCone.weighted_time_separation_difference3

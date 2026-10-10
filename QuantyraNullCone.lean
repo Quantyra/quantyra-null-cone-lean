@@ -97,3 +97,5 @@ eligible independently randomized estimator has strict error above
 The certified uniform 95% minimax radius is sandwiched between this lower
 radius and min(1/2,650*(log n/n)^(1/4)), for every probability seed space.
 -/
+
+import QuantyraNullCone.LorentzWeightedTime

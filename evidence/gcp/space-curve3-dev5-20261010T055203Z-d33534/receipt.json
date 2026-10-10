@@ -1,0 +1,7 @@
+{
+  "run": "space-curve3-dev5-20261010T055203Z-d33534",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzWeightedTime",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

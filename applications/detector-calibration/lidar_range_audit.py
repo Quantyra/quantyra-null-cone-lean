@@ -4,14 +4,15 @@ import argparse
 import json
 from pathlib import Path
 import subprocess
+import sys
 
 import numpy as np
 from scipy.io import loadmat
 from scipy.optimize import minimize
 
-import lidar_range_screen as parent
-
 HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE))
+import lidar_range_screen as parent
 
 
 def integer_cells(record,window,K,edges):

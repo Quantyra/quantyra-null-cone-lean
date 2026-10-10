@@ -218,7 +218,7 @@ def main():
               "physical": physical_check(protocol, load_original_numerics()),
               "practical_goal_complete": False}
     output = ROOT / "results.json"
-    output.write_text(json.dumps(result, indent=2, allow_nan=False)+"\n", encoding="utf-8")
+    output.write_text(json.dumps(result, indent=2, allow_nan=False)+"\n", encoding="utf-8", newline="\n")
     print(json.dumps({"output": str(output), "verified_files": result["verified_original_files"],
                       "max_matrix_disagreement": result["synthetic"]["max_stationary_disagreement"],
                       "physical_rows": result["physical"]["observations"],

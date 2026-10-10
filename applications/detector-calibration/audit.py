@@ -72,7 +72,7 @@ def main():
              "observed_renewal_improvement_over_published_comparator": False,
              "goal_complete": False,
              "limitations": "Checks arithmetic, source identity and descriptive metrics; does not certify physical assumptions or finite-sample coverage."}
-    (ROOT / "audit.json").write_text(json.dumps(audit, indent=2)+"\n", encoding="utf-8")
+    (ROOT / "audit.json").write_text(json.dumps(audit, indent=2)+"\n", encoding="utf-8", newline="\n")
     print(json.dumps(audit, indent=2))
 
 

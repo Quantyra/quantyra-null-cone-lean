@@ -2580,3 +2580,61 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.geometricDistortion3_zero_orderLaw_eq
 #check QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq
 #print axioms QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq
+#check QuantyraNullCone.lorentz_flow_derivative_zero3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_zero3
+#check QuantyraNullCone.lorentz_flow_derivative_square3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_square3
+#check QuantyraNullCone.continuousOn_flow_derivative_time_parameter3
+#print axioms QuantyraNullCone.continuousOn_flow_derivative_time_parameter3
+#check QuantyraNullCone.lorentz_flow_derivative_timelike3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_timelike3
+#check QuantyraNullCone.lorentz_flow_derivative_future3
+#print axioms QuantyraNullCone.lorentz_flow_derivative_future3
+#check QuantyraNullCone.lorentz_flow_flat_proper_speed3
+#print axioms QuantyraNullCone.lorentz_flow_flat_proper_speed3
+#check QuantyraNullCone.ac_comp_lipschitz3
+#print axioms QuantyraNullCone.ac_comp_lipschitz3
+#check QuantyraNullCone.lorentz_norm_le_sum_abs3
+#print axioms QuantyraNullCone.lorentz_norm_le_sum_abs3
+#check QuantyraNullCone.FutureCurve3.point_AC
+#print axioms QuantyraNullCone.FutureCurve3.point_AC
+#check QuantyraNullCone.FutureCurve3.point_hasDerivAt
+#print axioms QuantyraNullCone.FutureCurve3.point_hasDerivAt
+#check QuantyraNullCone.FutureCurve3.map_coord_AC
+#print axioms QuantyraNullCone.FutureCurve3.map_coord_AC
+#check QuantyraNullCone.FutureCurve3.map_coord_deriv
+#print axioms QuantyraNullCone.FutureCurve3.map_coord_deriv
+#check QuantyraNullCone.FutureCurve3.map_point
+#print axioms QuantyraNullCone.FutureCurve3.map_point
+#check QuantyraNullCone.FutureCurve3.map_velocity
+#print axioms QuantyraNullCone.FutureCurve3.map_velocity
+#check QuantyraNullCone.FutureCurve3.map_weightedLength
+#print axioms QuantyraNullCone.FutureCurve3.map_weightedLength
+#check QuantyraNullCone.weighted_time_le_of_causal_map3
+#print axioms QuantyraNullCone.weighted_time_le_of_causal_map3
+#check QuantyraNullCone.convex_closedLorentzDiamond3
+#print axioms QuantyraNullCone.convex_closedLorentzDiamond3
+#check QuantyraNullCone.lorentz_flow_lipschitz3
+#print axioms QuantyraNullCone.lorentz_flow_lipschitz3
+#check QuantyraNullCone.lorentz_flow_isCausalMap3
+#print axioms QuantyraNullCone.lorentz_flow_isCausalMap3
+#check QuantyraNullCone.weighted_time_flow_eq3
+#print axioms QuantyraNullCone.weighted_time_flow_eq3
+#check QuantyraNullCone.gauge_time_weight3
+#print axioms QuantyraNullCone.gauge_time_weight3
+#check QuantyraNullCone.gauge_inverse_time_separation3
+#print axioms QuantyraNullCone.gauge_inverse_time_separation3
+#check QuantyraNullCone.gauge_forward_time_separation3
+#print axioms QuantyraNullCone.gauge_forward_time_separation3
+#check QuantyraNullCone.measurable_closedLorentzMap3
+#print axioms QuantyraNullCone.measurable_closedLorentzMap3
+#check QuantyraNullCone.closed_density_transport3
+#print axioms QuantyraNullCone.closed_density_transport3
+#check QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport
+#print axioms QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport
+#check QuantyraNullCone.gauge_geometric_distortion_zero3
+#print axioms QuantyraNullCone.gauge_geometric_distortion_zero3
+#check QuantyraNullCone.gauge_geometric_loss_removes_obstruction3
+#print axioms QuantyraNullCone.gauge_geometric_loss_removes_obstruction3
+#check QuantyraNullCone.gauge_quotient_time_homeomorph3
+#print axioms QuantyraNullCone.gauge_quotient_time_homeomorph3

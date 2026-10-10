@@ -1,0 +1,36 @@
+info: QuantyraNullCone/LorentzQuotientLaws.lean:134:0: 'QuantyraNullCone.measurable_quotientSampledOrder3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:135:0: 'QuantyraNullCone.quotientSampledOrder3_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:136:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:137:0: 'QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:138:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:139:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3006/3009] Built QuantyraNullCone.LorentzDistortion (3.6s)
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3009] Built QuantyraNullCone.LorentzDistortionZero (2.5s)
+info: QuantyraNullCone/LorentzDistortionZero.lean:22:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3009] Built QuantyraNullCone.LorentzDistortionIsomorphy (2.4s)
+info: QuantyraNullCone/LorentzDistortionIsomorphy.lean:25:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3009/3009] Built QuantyraNullCone.LorentzGaugeDistortion (30s)
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:103:0: 'QuantyraNullCone.measurable_closedLorentzMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:104:0: 'QuantyraNullCone.closed_density_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:105:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:106:0: 'QuantyraNullCone.gauge_geometric_distortion_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:107:0: 'QuantyraNullCone.gauge_geometric_loss_removes_obstruction3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:108:0: 'QuantyraNullCone.gauge_quotient_time_homeomorph3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3009 jobs).
+REMOTE_TERMINAL_EXIT=0

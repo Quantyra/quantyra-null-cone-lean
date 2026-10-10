@@ -1,0 +1,96 @@
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:37:62: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [lorentzFlowDerivative3, ContinuousLinearMap.comp_apply, ContinuousLinearMap.pi_apply,
+  ̲  ̲ ̲ ̲flowDerivativeCoordinates3, Matrix.cons_val_zero, scalarQuotientDerivative3,
+  ̲  ̲ ̲ ̲ContinuousLinearMap.sub_apply, C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:38:4: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [lorentzFlowDerivative3, ContinuousLinearMap.comp_apply,
+  ̵  ̵ ̵ ̵ContinuousLinearMap.pi_apply,
+  ̲  ̲ ̲ ̲flowDerivativeCoordinates3, Matrix.cons_val_zero,
+  ̵  ̵ ̵ ̵scalarQuotientDerivative3,
+  ̲  ̲ ̲ ̲ContinuousLinearMap.sub_apply, ContinuousLinearMap.smul_apply,̵
+  ̵ ̵ ̵ ̵ ̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:39:67: This simp argument is unused:
+  ContinuousLinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [flowNumeratorDerivative3, flowDenominatorDerivative3, C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ContinuousLinearMap.sub_apply,
+      ContinuousLinearMap.smul_apply, smul_eq_mul, lorentzCoordinateCLM3, PiLp.proj_apply,
+  ̲  ̲ ̲ ̲div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:40:4: This simp argument is unused:
+  ContinuousLinearMap.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [flowNumeratorDerivative3, flowDenominatorDerivative3, ContinuousLinearMap.add_apply,
+      C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵ ̵ContinuousLinearMap.smul_apply, smul_eq_mul, lorentzCoordinateCLM3, PiLp.proj_apply,
+  ̲  ̲ ̲ ̲div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:40:35: This simp argument is unused:
+  ContinuousLinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [flowNumeratorDerivative3, flowDenominatorDerivative3, ContinuousLinearMap.add_apply,
+      ContinuousLinearMap.sub_apply, C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵smul_eq_mul, lorentzCoordinateCLM3, PiLp.proj_apply,
+  ̲  ̲ ̲ ̲div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:40:67: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [flowNumeratorDerivative3, flowDenominatorDerivative3, ContinuousLinearMap.add_apply,
+      ContinuousLinearMap.sub_apply, ContinuousLinearMap.smul_apply, s̵m̵u̵l_̵e̵q̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵l̵orentzCoordinateCLM3,
+  ̲  ̲ ̲ ̲PiLp.proj_apply, div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantyraNullCone/LorentzFlowCone.lean:41:27: This simp argument is unused:
+  PiLp.proj_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [flowNumeratorDerivative3, flowDenominatorDerivative3, ContinuousLinearMap.add_apply,
+      ContinuousLinearMap.sub_apply, ContinuousLinearMap.smul_apply, smul_eq_mul,
+      lorentzCoordinateCLM3, P̵i̵L̵p̵.̵p̵r̵o̵j̵_̵a̵p̵p̵l̵y̵,̵ ̵div_eq_mul_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: QuantyraNullCone/LorentzFlowCone.lean:88:4: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: QuantyraNullCone/LorentzFlowCone.lean:81:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: QuantyraNullCone/LorentzFlowCone.lean:102:8: (kernel) unknown constant 'QuantyraNullCone.lorentz_flow_derivative_future3'
+info: QuantyraNullCone/LorentzFlowCone.lean:114:0: 'QuantyraNullCone.lorentz_flow_derivative_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:115:0: 'QuantyraNullCone.lorentz_flow_derivative_square3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:116:0: 'QuantyraNullCone.continuousOn_flow_derivative_time_parameter3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:117:0: 'QuantyraNullCone.lorentz_flow_derivative_timelike3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:118:0: 'QuantyraNullCone.lorentz_flow_derivative_future3' does not depend on any axioms
+info: QuantyraNullCone/LorentzFlowCone.lean:119:0: 'QuantyraNullCone.lorentz_flow_flat_proper_speed3' depends on axioms: [propext,
+ Classical.choice,
+ lorentz_flow_flat_proper_speed3,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzFlowCone
+REMOTE_TERMINAL_EXIT=1

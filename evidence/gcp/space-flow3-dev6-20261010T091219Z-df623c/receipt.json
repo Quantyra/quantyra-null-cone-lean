@@ -1,0 +1,7 @@
+{
+  "run": "space-flow3-dev6-20261010T091219Z-df623c",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzGaugeDistortion",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

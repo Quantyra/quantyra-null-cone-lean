@@ -1,0 +1,6 @@
+{"run": "space-zero3-dev4-20261010T082227Z-23c984", "verified_files": 225, "removed_source_bytes": 1446503, "archive_sha256": "72e9fb6769c26143936bf4072dab5bb433970547a5d4204547af89938364044b"}
+{"run": "space-flow3-dev1-20261010T084046Z-97888f", "verified_files": 227, "removed_source_bytes": 1459398, "archive_sha256": "39d8df5d2e22a50fbedbda21f0f9c2bf42689fe5a29e2fec2df6af9d3bb63d7b"}
+{"run": "space-flow3-dev2-20261010T084933Z-ab1700", "verified_files": 229, "removed_source_bytes": 1471118, "archive_sha256": "aec01d5ceddff206eadea84b252e96f6624d6f16edbcb68c51c196a7a5927648"}
+{"run": "space-flow3-dev3-20261010T085415Z-a1bdae", "verified_files": 229, "removed_source_bytes": 1471276, "archive_sha256": "198560fba950c789e9fd111d5ad77f4eaba860470bb5d362e4689cfeb6ad138b"}
+Preserved all immutable archives, manifests, logs, receipts, shared dependencies and caches; removed only verified redundant extracted development source files.
+Disk: usage(total=206900281344, used=206334877696, free=548626432)

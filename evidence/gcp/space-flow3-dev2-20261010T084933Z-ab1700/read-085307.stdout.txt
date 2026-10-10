@@ -1,0 +1,103 @@
+error: QuantyraNullCone/LorentzCurveMap.lean:12:55: failed to synthesize instance of type class
+  LE Type
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/LorentzCurveMap.lean:12:57: failed to synthesize instance of type class
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/LorentzCurveMap.lean:72:49: Type mismatch: After simplification, term
+  c.inDiamond
+ has type
+  ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → (WithLp.toLp 2 fun i => c.coord i t) ∈ closedLorentzDiamond3
+but is expected to have type
+  MapsTo c.point (Icc 0 1) ?m.46
+error: QuantyraNullCone/LorentzCurveMap.lean:12:57: failed to synthesize instance of type class
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/LorentzCurveMap.lean:72:49: Type mismatch: After simplification, term
+  c.inDiamond
+ has type
+  ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → (WithLp.toLp 2 fun i => c.coord i t) ∈ closedLorentzDiamond3
+but is expected to have type
+  MapsTo c.point (Icc 0 1) ?m.46
+error: QuantyraNullCone/LorentzCurveMap.lean:70:69: unsolved goals
+F : LorentzPoint3 → LorentzPoint3
+D : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+p q : LorentzPoint3
+error: QuantyraNullCone/LorentzCurveMap.lean:72:49: Type mismatch: After simplification, term
+  c.inDiamond
+ has type
+  ∀ (t : ℝ), 0 ≤ t → t ≤ 1 → (WithLp.toLp 2 fun i => c.coord i t) ∈ closedLorentzDiamond3
+but is expected to have type
+  MapsTo c.point (Icc 0 1) ?m.46
+error: QuantyraNullCone/LorentzCurveMap.lean:70:69: unsolved goals
+F : LorentzPoint3 → LorentzPoint3
+D : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+p q : LorentzPoint3
+c : FutureCurve3 p q
+hF : IsCausalMap3 F D
+i : Fin 3
+K : NNReal
+hK : LipschitzOnWith K F closedLorentzDiamond3
+⊢ AbsolutelyContinuousOnInterval (fun t => (F (c.point t)).ofLp i) 0 1
+error: QuantyraNullCone/LorentzCurveMap.lean:79:10: Unknown identifier `lorentzCoordinateCLM3`
+error: QuantyraNullCone/LorentzCurveMap.lean:70:69: unsolved goals
+F : LorentzPoint3 → LorentzPoint3
+D : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+p q : LorentzPoint3
+c : FutureCurve3 p q
+hF : IsCausalMap3 F D
+i : Fin 3
+K : NNReal
+hK : LipschitzOnWith K F closedLorentzDiamond3
+⊢ AbsolutelyContinuousOnInterval (fun t => (F (c.point t)).ofLp i) 0 1
+error: QuantyraNullCone/LorentzCurveMap.lean:79:10: Unknown identifier `lorentzCoordinateCLM3`
+error: QuantyraNullCone/LorentzCurveMap.lean:133:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  c.weightedLength w
+in the target expression
+  (fun c => c.weightedLength w) c ≤ weightedTimeSeparation3 z (F p) (F q)
+
+case inr
+error: QuantyraNullCone/LorentzCurveMap.lean:79:10: Unknown identifier `lorentzCoordinateCLM3`
+error: QuantyraNullCone/LorentzCurveMap.lean:133:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  c.weightedLength w
+in the target expression
+  (fun c => c.weightedLength w) c ≤ weightedTimeSeparation3 z (F p) (F q)
+
+case inr
+F : LorentzPoint3 → LorentzPoint3
+D : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+hF : IsCausalMap3 F D
+w z : LorentzPoint3 → ℝ
+lo hi : ℝ
+hz : InTimeWeightClass3 z lo hi
+hw :
+  ∀ p ∈ closedLorentzDiamond3,
+    ∀ (v : LorentzPoint3), spatialRadius3 v ≤ v.ofLp 0 → z (F p) * flatProperSpeed3 ((D p) v) = w p * flatProperSpeed3 v
+p q : LorentzPoint3
+error: QuantyraNullCone/LorentzCurveMap.lean:133:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  c.weightedLength w
+in the target expression
+  (fun c => c.weightedLength w) c ≤ weightedTimeSeparation3 z (F p) (F q)
+
+case inr
+F : LorentzPoint3 → LorentzPoint3
+D : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+hF : IsCausalMap3 F D
+w z : LorentzPoint3 → ℝ
+lo hi : ℝ
+hz : InTimeWeightClass3 z lo hi
+hw :
+  ∀ p ∈ closedLorentzDiamond3,
+    ∀ (v : LorentzPoint3), spatialRadius3 v ≤ v.ofLp 0 → z (F p) * flatProperSpeed3 ((D p) v) = w p * flatProperSpeed3 v
+p q : LorentzPoint3
+c : FutureCurve3 p q
+Warnings: 0

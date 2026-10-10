@@ -1,0 +1,56 @@
+error: QuantyraNullCone/LorentzGaugeDistortion.lean:63:6: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:102:0: 'QuantyraNullCone.measurable_closedLorentzMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:103:0: 'QuantyraNullCone.closed_density_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:104:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:105:0: 'QuantyraNullCone.gauge_geometric_distortion_zero3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:106:0: 'QuantyraNullCone.gauge_geometric_loss_removes_obstruction3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:107:0: 'QuantyraNullCone.gauge_quotient_time_homeomorph3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzGaugeDistortion
+ℹ [3006/3009] Built QuantyraNullCone.LorentzDistortion (3.6s)
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3007/3009] Built QuantyraNullCone.LorentzDistortionZero (2.4s)
+info: QuantyraNullCone/LorentzDistortionZero.lean:22:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3008/3009] Built QuantyraNullCone.LorentzDistortionIsomorphy (2.4s)
+info: QuantyraNullCone/LorentzDistortionIsomorphy.lean:25:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✖ [3009/3009] Building QuantyraNullCone.LorentzGaugeDistortion (18s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/QuantyraNullCone/LorentzGaugeDistortion.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/.lake/build/lib/lean/QuantyraNullCone/LorentzGaugeDistortion.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/.lake/build/lib/lean/QuantyraNullCone/LorentzGaugeDistortion.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/.lake/build/ir/QuantyraNullCone/LorentzGaugeDistortion.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-flow3-dev5-20261010T090651Z-0bfd3f/source/.lake/build/ir/QuantyraNullCone/LorentzGaugeDistortion.setup.json --json
+error: QuantyraNullCone/LorentzGaugeDistortion.lean:63:6: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:102:0: 'QuantyraNullCone.measurable_closedLorentzMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:103:0: 'QuantyraNullCone.closed_density_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:104:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:105:0: 'QuantyraNullCone.gauge_geometric_distortion_zero3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:106:0: 'QuantyraNullCone.gauge_geometric_loss_removes_obstruction3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:107:0: 'QuantyraNullCone.gauge_quotient_time_homeomorph3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzGaugeDistortion
+REMOTE_TERMINAL_EXIT=1

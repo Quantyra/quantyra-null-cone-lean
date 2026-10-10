@@ -1,0 +1,11 @@
+{
+  "run": "space-firstretained-acceptance-20261010T003652Z-af3642",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone",
+  "acceptance": true,
+  "audited_exports": 673,
+  "owned_warnings": 0,
+  "dependency_identities_before_and_after": true,
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

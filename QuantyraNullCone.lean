@@ -1,3 +1,4 @@
+import QuantyraNullCone.ThinningStoppedCoverage
 import QuantyraNullCone.ThinningLaplace
 import QuantyraNullCone.ThinningMixedCoverage
 import QuantyraNullCone.ThinningCoverage

@@ -1692,3 +1692,57 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.poisson_retained_product_intensity
 #check QuantyraNullCone.poisson_retained_laplace_functional
 #print axioms QuantyraNullCone.poisson_retained_laplace_functional
+
+-- Actual first-n retained experiment: termination, iid law and physical coverage.
+#check QuantyraNullCone.iid_no_further_event_null
+#print axioms QuantyraNullCone.iid_no_further_event_null
+#check QuantyraNullCone.iid_positive_event_infinite
+#print axioms QuantyraNullCone.iid_positive_event_infinite
+#check QuantyraNullCone.stream_retained_count_eq_nat_count
+#print axioms QuantyraNullCone.stream_retained_count_eq_nat_count
+#check QuantyraNullCone.ae_stream_retained_count_surjective
+#print axioms QuantyraNullCone.ae_stream_retained_count_surjective
+#check QuantyraNullCone.retained_count_hit_measurable
+#print axioms QuantyraNullCone.retained_count_hit_measurable
+#check QuantyraNullCone.retained_stop_witness
+#print axioms QuantyraNullCone.retained_stop_witness
+#check QuantyraNullCone.retained_stop_prefix_measurable
+#print axioms QuantyraNullCone.retained_stop_prefix_measurable
+#check QuantyraNullCone.retained_stop_prefix_spec
+#print axioms QuantyraNullCone.retained_stop_prefix_spec
+#check QuantyraNullCone.retained_stop_prefix_min
+#print axioms QuantyraNullCone.retained_stop_prefix_min
+#check QuantyraNullCone.retained_stop_prefix_eq_of_first
+#print axioms QuantyraNullCone.retained_stop_prefix_eq_of_first
+#check QuantyraNullCone.retained_stop_prefix_of_no_hit
+#print axioms QuantyraNullCone.retained_stop_prefix_of_no_hit
+#check QuantyraNullCone.retained_stop_prefix_zero
+#print axioms QuantyraNullCone.retained_stop_prefix_zero
+#check QuantyraNullCone.stopped_retained_view_measurable
+#print axioms QuantyraNullCone.stopped_retained_view_measurable
+#check QuantyraNullCone.ae_retained_stop_prefix_spec
+#print axioms QuantyraNullCone.ae_retained_stop_prefix_spec
+#check QuantyraNullCone.pattern_prefix_count_stream
+#print axioms QuantyraNullCone.pattern_prefix_count_stream
+#check QuantyraNullCone.retained_terminal_event_measurable
+#print axioms QuantyraNullCone.retained_terminal_event_measurable
+#check QuantyraNullCone.retained_terminal_event_iff
+#print axioms QuantyraNullCone.retained_terminal_event_iff
+#check QuantyraNullCone.retained_pattern_collection_submeasure
+#print axioms QuantyraNullCone.retained_pattern_collection_submeasure
+#check QuantyraNullCone.stream_terminal_pattern_submeasure
+#print axioms QuantyraNullCone.stream_terminal_pattern_submeasure
+#check QuantyraNullCone.stopped_retained_submeasure
+#print axioms QuantyraNullCone.stopped_retained_submeasure
+#check QuantyraNullCone.stopped_retained_conditional_law
+#print axioms QuantyraNullCone.stopped_retained_conditional_law
+#check QuantyraNullCone.stopped_retained_iid_law
+#print axioms QuantyraNullCone.stopped_retained_iid_law
+#check QuantyraNullCone.stopped_retained_observable_law
+#print axioms QuantyraNullCone.stopped_retained_observable_law
+#check QuantyraNullCone.stopped_marked_interval_law
+#print axioms QuantyraNullCone.stopped_marked_interval_law
+#check QuantyraNullCone.stopped_physical_report_coverage
+#print axioms QuantyraNullCone.stopped_physical_report_coverage
+#check QuantyraNullCone.InDensityClass.stopped_physical_report_coverage
+#print axioms QuantyraNullCone.InDensityClass.stopped_physical_report_coverage

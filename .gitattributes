@@ -78,3 +78,6 @@ evidence/gcp/space-process-*/** -text -whitespace
 evidence/process/** -text -whitespace
 evidence/gcp/space-stopping-*/** -text -whitespace
 evidence/stopping/** -text -whitespace
+
+evidence/gcp/space-firstretained-*/** -text -whitespace
+evidence/firstretained/** -text -whitespace

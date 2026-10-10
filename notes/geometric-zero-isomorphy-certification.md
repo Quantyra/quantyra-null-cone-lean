@@ -1,5 +1,7 @@
 # Zero distortion, compact time isomorphy and original order laws
 
+Subsequent progress: [actual conformal-flow curve/time transport and zero geometric distortion for the accepted gauge pair](geometric-flow-transport-certification.md) now have 1,107-report GCP acceptance. The historical zero-isomorphy acceptance below remains preserved.
+
 S042 component, 2026-10-09 (Hawaii). **Full GCP acceptance passes: 1,078 exact type/axiom reports, including 24 new results, with zero warnings.** S042 remains incomplete and S043 remains gated.
 
 ## Attainment and isomorphy

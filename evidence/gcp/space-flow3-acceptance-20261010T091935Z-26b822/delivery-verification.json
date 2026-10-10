@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_commit": "172bba9b05332d5dbd2c261e52ac309cf855939d",
+  "captured_files": 229,
+  "lean_inputs": 195,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "11e72787421692613314aaf5b3afd52c7a916d519749f60b6edc478f41892616",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzFlowCone.lean": "5cc3a96e4af853a4cfc764c32b27975b54c59138e366db34c3b4367bcd1460c3",
+    "QuantyraNullCone/LorentzCurveMap.lean": "bba5dc442a87a5fdd075afdf5124f188f6531fe58505d1bafcc89396c5111cdf",
+    "QuantyraNullCone/LorentzFlowTime.lean": "d7f5ba95cd4e575cf1bebfb5e4292154bc03734464bfb775d07859c91d584af5",
+    "QuantyraNullCone/LorentzGaugeDistortion.lean": "5d71b29c914ae93212beec29081ab5745b9171b6b23d34d78a76def26ac5b709"
+  },
+  "audited_named_exports": 1107,
+  "new_flow_transport_exports": 29,
+  "root_build_jobs": 3156,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1078_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T09:25:14.951225+00:00"
+}

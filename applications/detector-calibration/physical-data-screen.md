@@ -619,15 +619,100 @@ pulse-calibration provenance, stability and any known-displacement/reference
 measurements before a physical accuracy comparison. No new formula can infer
 the missing common latency from these single-target fits alone.
 
+## Equal-calibration short-block comparison: no worthwhile benefit
+
+The [repeatability protocol](lidar-repeatability-protocol.json) and executable
+were frozen at `d5512d03478ea0ce07df08820dd48c38b778be6f`. This comparison
+uses only previously selected development prefixes. Each method receives the
+same first 500,000 frames, subtracts its own mean across fifty 10,000-period
+calibration blocks, and evaluates fifty further blocks of the same duration.
+Thus all methods receive ordinary offset calibration; an apparent gain over
+an uncalibrated comparator cannot pass this screen.
+
+Native joint likelihood, native robust one-step and guarded native likelihood
+are joined by two calibrated-profile fits. Both profile methods fit global
+signal/background multipliers and delay per block. One fixes the first-half
+common-location age profiles; the other also fixes the first-half early/mature
+delay contrast. Every observed event remains part of the detector history.
+
+Mean squared evaluation residuals relative to each method's calibration mean
+are below, in mm squared. **These are repeatability diagnostics, not squared
+errors against independently known physical range.**
+
+| Holdoff / pulse baseline | Native joint | Native one-step | Guarded | Calibrated common location | Calibrated history location |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 198 ns / subtract | 0.319612 | 0.337874 | 0.404925 | 0.319931 | 0.331950 |
+| 198 ns / keep | 0.319994 | 0.338410 | 0.404536 | 0.320276 | 0.332370 |
+| 180 ns / subtract | 0.516950 | 0.540525 | 0.497416 | 0.518095 | 0.530953 |
+| 180 ns / keep | 0.517481 | 0.540572 | 0.497687 | 0.518634 | 0.531665 |
+
+The principal 198 ns gate fails for both pulse conventions: the history method
+has **3.86--3.87% larger residual score** than the strongest comparator, native
+joint likelihood, instead of the required 20% reduction. In the 180 ns control
+it has **6.74--6.83% larger residual score** than guarded likelihood. The main
+condition's calibrated history residuals fall within 1 mm in 45/50 blocks,
+versus 46/50 for native joint likelihood. These small-sample descriptive
+fractions do not establish physical coverage or a calibrated significance
+level. The 180 ns half-to-half offset affects all methods and remains an
+unresolved physical/reference question.
+
+This is an adaptive development comparison: aggregate outcomes from both
+halves were already known, and neither target stability nor instrument timing
+stability has the required calibration. More accurate predictive likelihood
+for photon timing does not by itself imply better calibrated range estimation.
+The result is a negative selection gate for this stationary history-offset
+correction at the declared budget, not a universal impossibility result.
+
+### Numerical verification and exceptions
+
+The [result](lidar-repeatability-results.json) records 400 block datasets,
+2,000 method estimates and all optimizer starts. Of 1,600 selected likelihood
+fits, 1,595 report success. The five line-search failures have normalized
+scores below `1.74e-7`. Two successful guarded fits have larger scores around
+`2.60e-4` at the unsubtracted pulse's trimmed support boundary. A
+[targeted local profile audit](lidar-repeatability-refinement.json), frozen
+in executable form at `9d4bc78e24508c269674e15b1e840e5c183ec8cf`, examines
+all seven numerical exceptions. Profiling amplitude/background in a fixed
+plus/minus 2 ps neighborhood leaves every selected delay unchanged. The two
+guarded cases have negative left and positive right delay derivatives,
+consistent with a local minimum at the nonsmooth template cutoff. Original
+solver messages remain preserved; no global-optimum claim is made.
+
+All exact exposure/age/guard partitions pass. Profile finite-difference
+discrepancies are below `3.055e-8`. Thirty-two independently assembled upstream
+row likelihood/score checks agree within `2.183e-11` log units and `6.304e-16`
+normalized score units. The [scalar metric audit](lidar-repeatability-audit.json)
+recomputes 1,948 values, with maximum discrepancy `4.228e-13`. It verifies
+training centering, residual/variance identities, paired differences and the
+strongest-comparator selection. The refinement recomputes the main scores
+again using scalar sums, leaving every negative gate unchanged.
+
+Result SHA256:
+`30071b482cff23c01f0f98f3a5904def126525c471bbe82e207105487b5e914b`.
+Metric-audit SHA256:
+`69e28cfa066b44c154ae78b9810a972845c154a5ee2d6dd8719cd38c41fee095`.
+Exception-audit SHA256:
+`ded7a591ed2521dda057c26e796f1d7c430f1d803684ebb46cd5b3a2c6a1db12`.
+The main run took approximately 181 seconds locally; no Lean/Lake ran.
+No additional physical data or final-reserve outcomes were consumed.
+
+**Disposition:** park promotion of this stationary history-offset correction.
+Keep native joint likelihood, native one-step and guarded inference in the
+baseline set, including ordinary offset calibration. Any replacement needs
+a quantitative reason to outperform those methods with matched calibration.
+The unresolved timestamp/reference questions remain relevant to physical
+interpretation, but clarifying them alone cannot complete the benefit goal.
+
 ## Next selection gate
 
-The amplitude-only recovery extension has been screened and misses its
-worthwhile-range-effect gate. The larger native guarded shift has a repeatable
-pulse-location discrepancy after freeing the proportions. The additional
-physical holdoff control fails the proposed reference-stability screen.
-Clarify the raw timestamp/synchronization construction and seek existing
-independent timing or known-displacement calibration before adding estimator
-complexity. A common instrument delay and physical
+Both the amplitude-only correction and the stationary history-offset
+correction miss their comparative development gates. The timing discrepancy
+remains a model/calibration question, not an established practical advantage.
+The physical holdoff control also fails its reference-stability screen.
+Clarify timestamp/synchronization construction and seek independent timing
+or known-displacement calibration. Before further estimator expansion,
+identify a concrete condition in which the new method can beat the strongest
+comparators after equal offset calibration. A common instrument delay and physical
 time of flight enter as a sum; opposite shifts leave the observed likelihood
 unchanged. The present fits alone therefore cannot certify absolute accuracy.
 A different holdoff probes model transfer, but does not by itself supply known

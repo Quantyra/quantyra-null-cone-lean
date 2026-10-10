@@ -1,0 +1,382 @@
+{
+  "parent_result_sha256": "30071b482cff23c01f0f98f3a5904def126525c471bbe82e207105487b5e914b",
+  "executable_sha256": "39f1541c9f5a0f93f9b1c903325beaf3b2e37fbd8238ce2534a00032cd352e66",
+  "exceptions": [
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        10000,
+        20000
+      ],
+      "method": "calibrated_common",
+      "old_tau_ns": 2.865664795110821,
+      "refined_tau_ns": 2.865664795110821,
+      "change_mm": 0.0,
+      "objective_improvement": 0.0,
+      "selected": "original",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 7.89664917623624e-08,
+      "profile_evaluations": 18,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 1.2612133559741778e-13,
+          "delay_derivative": -2.4069569773894866e-06
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": -1.0224639269398199e-07
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": -7.89664917623624e-08
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": -5.5686590050680644e-08
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 1.1013412404281553e-13,
+          "delay_derivative": 2.2490224883447837e-06
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        120000,
+        130000
+      ],
+      "method": "calibrated_common",
+      "old_tau_ns": 2.866556559461046,
+      "refined_tau_ns": 2.866556559461046,
+      "change_mm": 0.0,
+      "objective_improvement": 0.0,
+      "selected": "original",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 7.132862265279982e-08,
+      "profile_evaluations": 18,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 1.4566126083082054e-13,
+          "delay_derivative": -2.7817796456148383e-06
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 5.329070518200751e-15,
+          "delay_derivative": -9.843315834984094e-08
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": -7.132862265279982e-08
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": -4.422409882369459e-08
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 1.3145040611561853e-13,
+          "delay_derivative": 2.6391266990696107e-06
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        240000,
+        250000
+      ],
+      "method": "calibrated_common",
+      "old_tau_ns": 2.862994727220159,
+      "refined_tau_ns": 2.862994727220159,
+      "change_mm": 0.0,
+      "objective_improvement": 0.0,
+      "selected": "original",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 2.9780173292118603e-08,
+      "profile_evaluations": 18,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 1.1901590823981678e-13,
+          "delay_derivative": -2.4058812527336863e-06
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": 5.423506025874873e-09
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": 2.9780173292118603e-08
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 1.7763568394002505e-15,
+          "delay_derivative": 5.4136841340677064e-08
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 1.2612133559741778e-13,
+          "delay_derivative": 2.46545155804806e-06
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "window": [
+        330000,
+        340000
+      ],
+      "method": "calibrated_history",
+      "old_tau_ns": 2.8596516349390515,
+      "refined_tau_ns": 2.8596516349390515,
+      "change_mm": 0.0,
+      "objective_improvement": 0.0,
+      "selected": "original",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 1.7383421761214215e-07,
+      "profile_evaluations": 18,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 1.3145040611561853e-13,
+          "delay_derivative": -2.398584480849817e-06
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 1.7763568394002505e-15,
+          "delay_derivative": -1.9608173336268964e-07
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": -1.7383421761214215e-07
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 0.0,
+          "delay_derivative": -1.5158670288897193e-07
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 9.414691248821327e-14,
+          "delay_derivative": 2.0509178203766463e-06
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        990000,
+        1000000
+      ],
+      "method": "calibrated_history",
+      "old_tau_ns": 2.858186243621694,
+      "refined_tau_ns": 2.858186243621694,
+      "change_mm": 0.0,
+      "objective_improvement": 0.0,
+      "selected": "original",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 4.073238570142935e-08,
+      "profile_evaluations": 18,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 1.1368683772161603e-13,
+          "delay_derivative": -2.211891882743375e-06
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": -6.244395519493829e-08
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": -4.073238570142935e-08
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 3.552713678800501e-15,
+          "delay_derivative": -1.9020813783863432e-08
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 1.0480505352461478e-13,
+          "delay_derivative": 2.1304226431078523e-06
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        70000,
+        80000
+      ],
+      "method": "guarded",
+      "old_tau_ns": 2.8600390723011087,
+      "refined_tau_ns": 2.8600390723011087,
+      "change_mm": 0.0,
+      "objective_improvement": 6.750155989720952e-14,
+      "selected": "profile",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 0.00025965100950432784,
+      "profile_evaluations": 28,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 2.6078694759235077e-11,
+          "delay_derivative": -0.00026193865503314136
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 2.5934809855243657e-13,
+          "delay_derivative": -0.00025967387783237806
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": -0.00025965100950432784
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 5.861977570020827e-13,
+          "delay_derivative": 0.000595780284420664
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 5.968203709016962e-11,
+          "delay_derivative": 0.0005980468310162083
+        }
+      ]
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "window": [
+        650000,
+        660000
+      ],
+      "method": "guarded",
+      "old_tau_ns": 2.860039072313845,
+      "refined_tau_ns": 2.860039072313845,
+      "change_mm": 0.0,
+      "objective_improvement": 1.2349232747510541e-11,
+      "selected": "profile",
+      "bounded_scalar_success": true,
+      "bounded_scalar_message": "Solution found.",
+      "refined_normalized_score_max": 0.00026076539260302766,
+      "profile_evaluations": 26,
+      "one_sided_delay_checks": [
+        {
+          "delta_tau_ns": -1e-07,
+          "objective_difference": 5.588418616753188e-11,
+          "delay_derivative": -0.0005601005956112216
+        },
+        {
+          "delta_tau_ns": -1e-09,
+          "objective_difference": 5.559996907322784e-13,
+          "delay_derivative": -0.0005576596502224972
+        },
+        {
+          "delta_tau_ns": 0.0,
+          "objective_difference": 0.0,
+          "delay_derivative": 0.00026076539260302766
+        },
+        {
+          "delta_tau_ns": 1e-09,
+          "objective_difference": 2.611244553918368e-13,
+          "delay_derivative": 0.0002607900657932855
+        },
+        {
+          "delta_tau_ns": 1e-07,
+          "objective_difference": 2.6201263381153694e-11,
+          "delay_derivative": 0.0002632327178220551
+        }
+      ]
+    }
+  ],
+  "recomputed_comparisons": [
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_min_subtracted",
+      "best_comparator": "native_joint",
+      "mean_squared_residuals_mm2": {
+        "native_joint": 0.319611863913281,
+        "native_one_step": 0.3378735374436679,
+        "guarded": 0.4049245787719966,
+        "calibrated_common": 0.31993121650195877,
+        "calibrated_history": 0.33194978137689773
+      },
+      "history_fractional_msr_reduction": -0.038602814402923125,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 198,
+      "pulse": "smooth_unsubtracted",
+      "best_comparator": "native_joint",
+      "mean_squared_residuals_mm2": {
+        "native_joint": 0.3199936210969357,
+        "native_one_step": 0.33840951301665134,
+        "guarded": 0.4045356175895584,
+        "calibrated_common": 0.3202756596520503,
+        "calibrated_history": 0.3323697981503511
+      },
+      "history_fractional_msr_reduction": -0.038676324268558826,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_min_subtracted",
+      "best_comparator": "guarded",
+      "mean_squared_residuals_mm2": {
+        "native_joint": 0.5169497297310545,
+        "native_one_step": 0.5405249930663699,
+        "guarded": 0.497416175851273,
+        "calibrated_common": 0.5180951167067804,
+        "calibrated_history": 0.5309532880827679
+      },
+      "history_fractional_msr_reduction": -0.06742264095874995,
+      "development_gate_pass": false
+    },
+    {
+      "holdoff_ns": 180,
+      "pulse": "smooth_unsubtracted",
+      "best_comparator": "guarded",
+      "mean_squared_residuals_mm2": {
+        "native_joint": 0.5174812370544501,
+        "native_one_step": 0.5405722574078902,
+        "guarded": 0.49768724582213325,
+        "calibrated_common": 0.5186342284663101,
+        "calibrated_history": 0.5316645019813244
+      },
+      "history_fractional_msr_reduction": -0.06827029714829025,
+      "development_gate_pass": false
+    }
+  ],
+  "physical_accuracy_validated": false,
+  "max_delay_change_mm": 0.0,
+  "limits": "Local nuisance-profile audit. A clipped pulse endpoint can have nonzero one-sided score at a local minimum. Original fits and solver messages remain preserved; no global optimum or physical calibration claimed."
+}

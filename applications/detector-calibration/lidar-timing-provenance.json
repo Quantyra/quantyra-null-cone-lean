@@ -1,0 +1,266 @@
+{
+  "executable_sha256": "bcc71a3ad7e98e0d4289b0537f43dd79bbacdeceebfc9241c72508bc3f75fe28",
+  "development_frame_range": [
+    0,
+    1000000
+  ],
+  "files": [
+    {
+      "path": "2019_01_28/FGS_td048_2019_01_28_acq1.mat",
+      "sha256": "74e8aa95c4b04f2face829e771aa77bafb6b712914b0bf147dedfcc047268098",
+      "mat_header_text": "MATLAB 5.0 MAT-file, Platform: MACI64, Created on: Wed Mar 13 15:56:53 2019",
+      "variables": [
+        {
+          "name": "OD",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "T_holdoff",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "detTime",
+          "shape": [
+            3224377,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "frameNum",
+          "shape": [
+            3224377,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "tr",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        }
+      ],
+      "timing": {
+        "development_events": 3260,
+        "bin_width_ns": 0.008,
+        "period_ns": 100.00076000577604,
+        "period_in_raw_bins": 12500.095000722005,
+        "phase_lattice_max_fractional_bin_error": 1.8189894035458565e-12,
+        "reconstructed_gap_lattice_max_fractional_bin_error": 0.4999277994502336,
+        "phase_on_raw_bin_lattice_at_1e_6_bin_tolerance": true,
+        "reconstructed_gap_on_same_lattice_at_1e_6_bin_tolerance": false,
+        "outside_nominal_period_count": 0,
+        "relative_phase_min_max_ns": [
+          0.016,
+          99.936
+        ],
+        "holdoff_ns": 48.0,
+        "optical_density": 3.0
+      }
+    },
+    {
+      "path": "2019_01_28/FGS_td198_2019_01_28_acq14.mat",
+      "sha256": "cd1b55c68272a830a3c69fdf78b2198036b49607b9e4ab304c2124db5683cc26",
+      "mat_header_text": "MATLAB 5.0 MAT-file, Platform: MACI64, Created on: Wed Mar 13 16:01:48 2019",
+      "variables": [
+        {
+          "name": "OD",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "T_holdoff",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "detTime",
+          "shape": [
+            3964445,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "frameNum",
+          "shape": [
+            3964445,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "tr",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        }
+      ],
+      "timing": {
+        "development_events": 396502,
+        "bin_width_ns": 0.008,
+        "period_ns": 100.00080000640004,
+        "period_in_raw_bins": 12500.100000800005,
+        "phase_lattice_max_fractional_bin_error": 1.8189894035458565e-12,
+        "reconstructed_gap_lattice_max_fractional_bin_error": 0.49999599998409394,
+        "phase_on_raw_bin_lattice_at_1e_6_bin_tolerance": true,
+        "reconstructed_gap_on_same_lattice_at_1e_6_bin_tolerance": false,
+        "outside_nominal_period_count": 1,
+        "relative_phase_min_max_ns": [
+          0.0,
+          100.00800000000001
+        ],
+        "holdoff_ns": 198.0,
+        "optical_density": 0.0
+      }
+    },
+    {
+      "path": "2019_01_28/laser_calib_100.mat",
+      "sha256": "69391ff9b96dce1d8fba65ab5c962d77c3e81a69eb063a0f23185b0991ceebf8",
+      "mat_header_text": "MATLAB 5.0 MAT-file, Platform: PCWIN64, Created on: Mon Jul  1 08:38:54 2019",
+      "variables": [
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "rawPulseShape",
+          "shape": [
+            253,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "smoothPulseShape",
+          "shape": [
+            253,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "trimWindow",
+          "shape": [
+            1,
+            253
+          ],
+          "class": "double"
+        }
+      ]
+    },
+    {
+      "path": "2019_01_28/FGS_td180_2019_01_28_acq13.mat",
+      "sha256": "fe40ffa1f1c0f7d23431100c99ed85eeecaafdca275a53ffb982b1853f970490",
+      "mat_header_text": "MATLAB 5.0 MAT-file, Platform: MACI64, Created on: Wed Mar 13 16:01:34 2019",
+      "variables": [
+        {
+          "name": "OD",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "T_holdoff",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "binRes",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "detTime",
+          "shape": [
+            4264735,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "frameNum",
+          "shape": [
+            4264735,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "tr",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        }
+      ],
+      "timing": {
+        "development_events": 426666,
+        "bin_width_ns": 0.008,
+        "period_ns": 100.00080000640004,
+        "period_in_raw_bins": 12500.100000800005,
+        "phase_lattice_max_fractional_bin_error": 1.8189894035458565e-12,
+        "reconstructed_gap_lattice_max_fractional_bin_error": 0.49999599998409394,
+        "phase_on_raw_bin_lattice_at_1e_6_bin_tolerance": true,
+        "reconstructed_gap_on_same_lattice_at_1e_6_bin_tolerance": false,
+        "outside_nominal_period_count": 1,
+        "relative_phase_min_max_ns": [
+          0.0,
+          100.016
+        ],
+        "holdoff_ns": 180.0,
+        "optical_density": 0.0
+      }
+    }
+  ],
+  "interpretation": "File schema, header and numerical lattice provenance only. Saved MATLAB creation dates need not be acquisition dates. A sync-counter plus quantized-relative-delay representation is consistent with the data but does not establish T3 mode, the original clock, actual synchronization times or settings. No new fit, comparative benefit or physical calibration is established.",
+  "physical_reference_validated": false
+}

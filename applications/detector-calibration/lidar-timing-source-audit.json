@@ -1,0 +1,102 @@
+{
+  "scope": "Public documentation and metadata audit; no additional measurement outcomes, fitting, physical calibration or demonstrated decision benefit.",
+  "supplement": {
+    "doi": "10.6084/m9.figshare.13247213.v3",
+    "metadata_url": "https://api.figshare.com/v2/articles/13247213/versions/3",
+    "public_url": "https://opticapublishing.figshare.com/articles/journal_contribution/Supplementary_document_for_High-Flux_Single-Photon_Lidar_-_4880061_pdf/13247213/3",
+    "file_url": "https://ndownloader.figshare.com/files/52748291",
+    "bytes": 4896807,
+    "sha256": "f27b0dbd469cf49b027ea15fce820c5ee2f812fa4a49b3449ee6cd6298f73eee",
+    "md5": "78ab36f0775616fcd42fe93768b14047",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pages": 13,
+    "reviewed_locations": [
+      "Section 3.A / Table S1 (PDF pages 7-8)",
+      "Section 3.B (PDF pages 8-10)",
+      "Section 3.C / Tables S3-S4 (PDF pages 11-13)"
+    ],
+    "findings": [
+      "Table S1 confirms one-second high-flux acquisitions and the 3,964,445-event count for the 198 ns setting.",
+      "The authors discuss afterpulsing and laser-power-dependent pulse shape; these are not an independent calibration of our fitted timing-history contrast.",
+      "The mannequin reference is a longer low-flux acquisition. The additional high-signal experiment has only approximate target distance in the inspected description.",
+      "No submillimeter timing-reference uncertainty, original synchronization headers or acquisition identity for laser_calib_100.mat was identified."
+    ]
+  },
+  "highflux_source_tree": {
+    "repo": "Goyal-STIR-Group/HighFluxSPL",
+    "commit": "1494365d05867fa6bff9b989dc4f0bd5817a0b4e",
+    "url": "https://api.github.com/repos/Goyal-STIR-Group/HighFluxSPL/git/trees/1494365d05867fa6bff9b989dc4f0bd5817a0b4e",
+    "snapshot_sha256": "e527e52b9a83981766d37563c64ac574a6d95c90817b8cc4746c79e7c7e40054",
+    "truncated": false,
+    "blob_paths": [
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "main_compare_td_te.m",
+      "main_depth_image_reconstruction.m",
+      "main_histogram_correction.m",
+      "main_ranging_comparison.m",
+      "utils/DeadtimeCorrectionCode/DeadTimeCorrelation.m",
+      "utils/DeadtimeCorrectionCode/DeadTimeCorrelation.pdf",
+      "utils/DeadtimeCorrectionCode/TCSPC_DTcorrected.m",
+      "utils/DeadtimeCorrectionCode/TCSPC_DTcorrected.pdf",
+      "utils/DeadtimeCorrectionCode/subroutines/DeadTimeCorrection.m",
+      "utils/DeadtimeCorrectionCode/subroutines/ExpFun.m",
+      "utils/DeadtimeCorrectionCode/subroutines/Simplex.m",
+      "utils/DeadtimeCorrectionCode/subroutines/build_CPlusPlus.m",
+      "utils/DeadtimeCorrectionCode/subroutines/computeWeightingFunction.cpp",
+      "utils/DeadtimeCorrectionCode/subroutines/computeWeightingFunction.m",
+      "utils/DeadtimeCorrectionCode/subroutines/computeWeightingFunction.mexa64",
+      "utils/DeadtimeCorrectionCode/subroutines/computeWeightingFunction.mexmaci64",
+      "utils/DeadtimeCorrectionCode/subroutines/computeWeightingFunction.mexw64",
+      "utils/DeadtimeCorrectionCode/subroutines/mHist.m",
+      "utils/DeadtimeCorrectionCode/subroutines/mexUtil.h",
+      "utils/DeadtimeCorrectionCode/tcspc_example.mat",
+      "utils/MarkovChainHistCorrection_Te.m",
+      "utils/fcn_PDF_Pileup0_pts2pts_Te.m",
+      "utils/fcn_PDF_PileupTd.m",
+      "utils/fcn_PDF_PileupTdTe.m",
+      "utils/fcn_gen_DE_Dets3.m",
+      "utils/medfilt2d.m"
+    ],
+    "scope": "Repository tree and previously read analysis files; this is not an exhaustive content audit of every blob. No acquisition/conversion implementation was identified."
+  },
+  "public_issues": {
+    "url": "https://api.github.com/repos/Goyal-STIR-Group/HighFluxSPL/issues?state=all&per_page=100",
+    "snapshot_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "returned_items": 0,
+    "scope": "No items returned at retrieval; not a claim about future issues or private correspondence."
+  },
+  "manufacturer_reader": {
+    "repo": "PicoQuant/PicoQuant-Time-Tagged-File-Format-Demos",
+    "commit": "74d9dc9815b9ebf7d6af26b0257c22ade2798fc9",
+    "path": "PTU/Python/Read_PTU.py",
+    "url": "https://raw.githubusercontent.com/PicoQuant/PicoQuant-Time-Tagged-File-Format-Demos/74d9dc9815b9ebf7d6af26b0257c22ade2798fc9/PTU/Python/Read_PTU.py",
+    "sha256": "b15b38022e80596ababbd6fb1b175680341f0b511743593fb6af30e805d47c74",
+    "bytes": 17293,
+    "reviewed_lines": [
+      160,
+      171,
+      178,
+      250,
+      282
+    ],
+    "finding": "The official HydraHarp T3 reader separates an overflow-corrected synchronization counter from relative-delay ticks. Compatibility with this representation does not establish the acquisition mode or conversion used for the supplied MAT files."
+  },
+  "timing_report": {
+    "path": "lidar-timing-provenance.json",
+    "sha256": "0bf38d9643a3d417372de407a7319af34abe63a87129eb61fe9d322f821eddc7",
+    "replay_byte_identical": true,
+    "development_frame_range": [
+      0,
+      1000000
+    ],
+    "physical_reference_validated": false
+  },
+  "license_boundary": "The supplement license does not establish permission to redistribute the raw measurement archive; raw measurements and downloaded source documents remain outside Git.",
+  "disposition": "The selected physical-validation route remains blocked on external calibration/provenance evidence. The stationary correction remains parked after its failed comparative gate. This audit neither establishes benefit nor exhausts other possible research directions."
+}

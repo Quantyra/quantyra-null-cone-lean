@@ -703,6 +703,56 @@ a quantitative reason to outperform those methods with matched calibration.
 The unresolved timestamp/reference questions remain relevant to physical
 interpretation, but clarifying them alone cannot complete the benefit goal.
 
+## Timing provenance audit: physical validation remains blocked
+
+The [public-source audit](lidar-timing-source-audit.json) adds the previously
+unavailable [13-page supplement](https://doi.org/10.6084/m9.figshare.13247213.v3).
+Its Figshare version, file size, MD5 and SHA256 are checked. Table S1 confirms
+the one-second acquisition and 3,964,445 detections for the 198 ns setting.
+The supplement discusses afterpulsing and power-dependent pulse shape; the
+mannequin reference is a longer low-flux acquisition. Its additional
+high-signal experiment gives only an approximate target distance, and its raw
+acquisitions are not identified in the inspected archive index. These sources
+do not provide the missing independent submillimeter timing calibration.
+
+The [metadata/lattice report](lidar-timing-provenance.json), produced by
+[this executable](lidar_timing_provenance.py), inspects only the existing
+development prefixes. All three records' relative phases lie on the supplied
+8 ps grid to within `1.82e-12` bins. Reconstructed gaps need not lie on that
+same grid: the stored repetition periods are not integer multiples of 8 ps.
+The [manufacturer's pinned T3 reader](https://github.com/PicoQuant/PicoQuant-Time-Tagged-File-Format-Demos/blob/74d9dc9815b9ebf7d6af26b0257c22ade2798fc9/PTU/Python/Read_PTU.py)
+separates a synchronization counter from relative-delay ticks. Compatibility
+with that representation is not evidence of a data error and does not establish
+the acquisition mode, original synchronization times or conversion settings.
+Each high-flux prefix contains one relative phase beyond the nominal period;
+the existing fitting loader already wraps such phases into the next frame.
+
+Event MAT files contain six variables and no original instrument header or
+timing-reference uncertainty. The pulse file has four variables and no
+acquisition identity. MATLAB save dates differ between events and pulse;
+they cannot establish acquisition dates or calibration independence. Inspection
+of the pinned 29-file source tree identifies no acquisition/conversion script;
+this is a tree audit, not a content review of every file. The public issue query
+returns no items. No missing calibration facts were recovered through these
+routes.
+
+A fresh-process rerun reproduces the timing report byte for byte, SHA256
+`0bf38d9643a3d417372de407a7319af34abe63a87129eb61fe9d322f821eddc7`.
+The source audit SHA256 is
+`d4e352df31ce3d6cc8f64e977fffab6381764a5bd6c7d57ffa4cf4e754507115`.
+Downloaded documents and raw measurements remain outside Git; the supplement's
+CC BY license does not resolve the raw archive's redistribution rights.
+No new fit, reserve outcome, Lean/Lake run or email sending is part of this audit.
+
+**Disposition:** the selected physical-validation route is blocked on external
+calibration/provenance evidence. This same dependency remained unresolved at
+the holdoff-control, matched-calibration and public-source checkpoints. The
+prepared acquisition inquiry remains unsent pending the existing authorization
+request. A response alone would not establish the missing comparative benefit.
+Further fitting of these same records cannot remove the common-delay
+identifiability obstruction. This is a scoped impasse, not a claim that every
+possible dataset or research direction has been exhausted.
+
 ## Next selection gate
 
 Both the amplitude-only correction and the stationary history-offset
@@ -726,4 +776,4 @@ stability and dependence remain explicit obligations. A different target from
 spacetime volume needs its own measurement bridge; this lidar investigation
 does not validate causal-order spacetime reconstruction.
 
-Remaining to-do list: establish a useful calibration-aware range decision and matched comparative argument, validate timing/recovery/pulse and reference assumptions, then demonstrate the benefit using reserved measurements. The full user goal remains active; validated practical use remains unachieved.
+Remaining to-do list: obtain adequate independent calibration/provenance evidence, establish a useful range decision and matched comparative benefit, then validate the assumptions and benefit using reserved measurements. The goal is blocked on the selected physical-validation route and remains incomplete; validated practical use remains unachieved.

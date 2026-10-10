@@ -38,8 +38,8 @@ The [cleanup receipt](../evidence/gcp/space-curve3-acceptance-20261010T055732Z-5
 
 Uniform dependence on the weight is proved separately from continuity in the two endpoints. The latter still needs its own proof, including at the boundary. No time-separation quotient topology, full measure support or coupling-distortion metric theorem follows merely from the profile classification.
 
-Curve concatenation and the reverse triangle inequality still need formal proofs. The next continuity proof must address reparametrization of these actual AC curves, compactness of the resulting causal curve family, upper semicontinuity of weighted length and perturbation of timelike curves for lower semicontinuity. The [ordinary representation argument](geometric-diamond-representation.md) explains the intended route. A proof using only affine-time Lipschitz curves must first justify equivalence with the curve supremum defined here.
+Subsequent [GCP acceptance of concatenation and reverse triangle](geometric-concatenation-certification.md) closes those two formal obligations for this same AC supremum. The [ordinary representation argument](geometric-diamond-representation.md#direct-ac-endpoint-perturbation-route-ordinary) now supplies a direct AC endpoint perturbation route to continuity. Its formalization remains open. The earlier compactness route is retained; using that alternative would require the reparametrization bridge.
 
 Subsequent obligations are the quotient topology/support, isometry/Jacobian action and coupling loss, then the actual restricted pair-law integrals and randomized-label confidence construction. The current weight-difference estimate does not itself give the density-specific coupling bound or an inverse from finite order data.
 
-Remaining to-do list: prove curve concatenation/reverse triangle, endpoint continuity, quotient/loss and finite-observation results; resolve S042 before S043. S047 remains queued separately.
+Remaining to-do list: prove endpoint continuity, quotient/loss and finite-observation results; resolve S042 before S043. S047 remains queued separately.

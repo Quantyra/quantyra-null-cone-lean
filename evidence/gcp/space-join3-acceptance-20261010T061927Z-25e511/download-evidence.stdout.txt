@@ -1,0 +1,1 @@
+space-join3-acceptance-20 | 32 kB |  32.0 kB/s | ETA: 00:00:00 |  59%space-join3-acceptance-20 | 54 kB |  54.0 kB/s | ETA: 00:00:00 | 100%

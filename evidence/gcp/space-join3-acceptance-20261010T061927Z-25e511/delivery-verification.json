@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_commit": "f112c7a83a995fcd66c1606fbfcb1cdced2aa5a7",
+  "captured_files": 205,
+  "lean_inputs": 171,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "ff11cf0ad516e7b8e7d7127ca32d8e05a8b884fb4623fbf68ca36807fbdba097",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzConcatenation.lean": "56bc47ce901bd3f83c505a2b78bc28f7db7206bbd61419cba3f60e9f3c547caf"
+  },
+  "audited_named_exports": 919,
+  "new_concatenation_exports": 26,
+  "root_build_jobs": 3104,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_893_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T06:22:13.896736+00:00"
+}

@@ -1,6 +1,6 @@
 # The diamond boundary and qualitative conditioning
 
-S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md), [chronological boundary/compact-diamond component](geometric-boundary-certification.md) and [actual weighted-curve/time-profile component](geometric-proper-time-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
+S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md), [chronological boundary/compact-diamond component](geometric-boundary-certification.md) [actual weighted-curve/time-profile component](geometric-proper-time-certification.md) and [AC concatenation/reverse-triangle component](geometric-concatenation-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
 
 ## Model and dependencies
 
@@ -28,6 +28,42 @@ Continuity holds for continuous weights, including at boundary endpoints. For up
 
 For lower semicontinuity only positive tau matters. Its endpoint chord is timelike. Interpolate a nearly maximizing curve's spatial component with that straight chord by a positive fraction a. The new curve has a uniform strict speed margin. As a tends to zero its lengths approach the original length by dominated convergence. For fixed a, small endpoint perturbations can be absorbed by affine perturbations of the curve while preserving causality. Causal convexity keeps these curves in C, and their lengths converge. Taking these limits and then the near-maximization error to zero proves lower semicontinuity. Hence tau_rho is continuous on C^2 without assuming smooth weights.
 
+### Direct AC endpoint perturbation route (ordinary)
+
+For formalization, a direct perturbation of the existing AC curves provides a shorter alternative to the compactness/reparametrization argument above. This alternative is an ordinary derivation; endpoint continuity is not yet a Lean-certified conclusion.
+
+Take a timelike increment `A=q-p`, write `T=A_t` and `alpha=T-|A_x|>0`, and perturb the endpoints to `p',q'` in C with increment `B`. Put `delta=B-A`, `eta=(|delta_t|+|delta_x|)/alpha`, and `k=1-eta`. For sufficiently close endpoints, `0<=eta<1`. The residual `e=B-k*A=delta+eta*A` is future causal because
+
+    e_t-|e_x| >= delta_t-|delta_x|+eta*alpha >= 0.
+
+For any original admissible curve c, its time coordinate is nondecreasing by the future derivative constraint and the AC fundamental theorem. Consequently `theta(t)=(c_t(t)-p_t)/T` lies in `[0,1]`. Define directly, in the same parameter,
+
+    g(t)=p' + k*(c(t)-p) + theta(t)*e.
+
+This curve is coordinatewise AC, has the desired endpoints, and has derivative `k*c' + (c'_t/T)*e` almost everywhere. Both terms are future causal. The integral of a future-cone-valued derivative is future causal: the spatial norm of its integral is at most the integral of its spatial norm, which is at most the time increment. Apply this on each subinterval to get `p'<=g(t)<=q'`. Causal convexity of C then proves containment, including for endpoints on its boundary. This argument does not require c's time coordinate to be strictly increasing or invertible.
+
+Flat proper speed is superadditive on the future cone. One elementary proof takes the Euclidean lifts `(speed(v),v_x)` and `(speed(u),u_x)`, whose norms are `v_t` and `u_t`, and uses the Euclidean triangle inequality and nonnegative square roots. Positive homogeneity therefore gives `speed(g')>=k*speed(c')` almost everywhere.
+
+Let `D_C` be the finite Euclidean diameter of C. Uniformly over c and its parameter,
+
+    |g(t)-c(t)| <= |p'-p| + |delta| + 2*eta*D_C =: epsilon.
+
+Indeed, subtract c in the displayed formula for g, use `0<=theta<=1`, and bound both `|c(t)-p|` and `|A|` by `D_C`. Uniform continuity of a fixed continuous positive weight w on compact C supplies a modulus `omega_w(epsilon)` tending to zero. Since every c has flat length at most two, positivity of w and the speed inequality imply
+
+    L_w(g) >= k*L_w(c) - 2*omega_w(epsilon).
+
+Take the supremum over the original c; the inserted zero causes no problem because the right-side error is nonnegative and the target supremum is nonnegative. This proves
+
+    tau_w(p',q') >= (1-eta)*tau_w(p,q) - 2*omega_w(epsilon).
+
+For a convergent sequence of timelike endpoint pairs, apply the estimate in both directions. Their timelike margins stay bounded below near a timelike limit, while eta and epsilon tend to zero; the uniform bound `tau_w<=2*hi` controls the factor `1-eta`. This proves continuity at every timelike pair directly for the actual AC supremum.
+
+At all other pairs, the flat time separation is zero and is continuous on all endpoint pairs, as seen from the formula
+
+    tau0(p,q)=sqrt(max(T-|A_x|,0)*max(T+|A_x|,0)).
+
+The already accepted inequality `0<=tau_w<=hi*tau0` proves continuity there. Thus the direct route covers every pair in `C^2`, with no maximizing-curve or reparametrization-equivalence assumption. The next formal obligations are subinterval causal monotonicity, future-cone speed superadditivity, the explicit AC perturbation and its uniform length comparison, followed by the continuity argument. The earlier compactness route is retained above as an alternative ordinary proof.
+
 ## The exact boundary quotient
 
 Let W={(0,x): |x|=1}. For p in W and q=(t,y) in C, |y-p_x|>=1-|y|>=|t|. Neither ordered pair is timelike. All points of this waist circle therefore have identical zero incoming and outgoing time-separation profiles. Its zero volume does not remove the failure of point distinction.
@@ -44,7 +80,7 @@ It allows free passage through W. Triangle inequalities follow by splitting path
 
 D is intrinsically the subset of X having both nonempty positive past and positive future. The remaining lateral boundary is retained; only W is identified.
 
-The exact chronological profile classification, explicit interior-neighbor criteria, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The [actual weighted-curve supremum](geometric-proper-time-certification.md) now has GCP acceptance for integrability, sharp flat length and straight-segment attainment, two-sided weighted comparison, strict positivity/chronology equivalence and the exact numerical profile classes against all closed-diamond points. Its integrand equals the existing density metric proper speed. Curve concatenation/reverse triangle, endpoint continuity and the quotient topology/measure properties remain ordinary arguments here.
+The exact chronological profile classification, explicit interior-neighbor criteria, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The [actual weighted-curve supremum](geometric-proper-time-certification.md) now has GCP acceptance for integrability, sharp flat length and straight-segment attainment, two-sided weighted comparison, strict positivity/chronology equivalence and the exact numerical profile classes against all closed-diamond points. Its integrand equals the existing density metric proper speed. The [concatenation component](geometric-concatenation-certification.md) now certifies closure of the same AC class, exact length addition and the causal reverse triangle inequality. Endpoint continuity and the quotient topology/measure properties remain ordinary arguments here.
 
 ## Gauge and the geometric loss
 

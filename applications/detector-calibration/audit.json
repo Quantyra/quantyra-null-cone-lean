@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "freeze_commit": "59dd082b304eed44bd18867615e27c1add144970",
+  "results_sha256": "3222ec99c774308e6a1de9c28cae4aae5571388cfede0e98f4d97c0b163be2ce",
+  "vendor_local_and_git_files_checked": 16,
+  "hard_dead_time_rows_checked": 30,
+  "physical_predictions_checked": 120,
+  "renewal_matches_independent_stationary_solve": true,
+  "observed_renewal_improvement_over_published_comparator": false,
+  "goal_complete": false,
+  "limitations": "Checks arithmetic, source identity and descriptive metrics; does not certify physical assumptions or finite-sample coverage."
+}

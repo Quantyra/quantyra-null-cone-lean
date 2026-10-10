@@ -1,0 +1,1649 @@
+{
+  "protocol_sha256": "4a1126f3637b836b3e87eed415d4d9250d2e5d976054274796dbb29899dbed12",
+  "script_sha256": "c7b1815169cbe9d3cf5641c201bf558063ccb6a20c3ece368903e5f008329dcc",
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "verified_original_files": 16,
+  "synthetic": {
+    "hard_dead_time_rows": [
+      {
+        "q": 0.01,
+        "blind_pulses": 0,
+        "renewal_p": 0.01,
+        "matrix_p": 0.01,
+        "geometric_p": 0.01,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.01,
+        "blind_pulses": 1,
+        "renewal_p": 0.009900990099009901,
+        "matrix_p": 0.009900990099009901,
+        "geometric_p": 0.009900990099009901,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.01,
+        "blind_pulses": 2,
+        "renewal_p": 0.00980392156862745,
+        "matrix_p": 0.00980392156862745,
+        "geometric_p": 0.009804864072151693,
+        "geometric_relative_count_bias": 9.613535947261553e-05
+      },
+      {
+        "q": 0.01,
+        "blind_pulses": 3,
+        "renewal_p": 0.009708737864077669,
+        "matrix_p": 0.00970873786407767,
+        "geometric_p": 0.009711475945426184,
+        "geometric_relative_count_bias": 0.00028202237889707327
+      },
+      {
+        "q": 0.01,
+        "blind_pulses": 4,
+        "renewal_p": 0.009615384615384616,
+        "matrix_p": 0.009615384615384614,
+        "geometric_p": 0.009620690315236442,
+        "geometric_relative_count_bias": 0.000551792784589944
+      },
+      {
+        "q": 0.1,
+        "blind_pulses": 0,
+        "renewal_p": 0.1,
+        "matrix_p": 0.1,
+        "geometric_p": 0.1,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.1,
+        "blind_pulses": 1,
+        "renewal_p": 0.09090909090909091,
+        "matrix_p": 0.09090909090909091,
+        "geometric_p": 0.09090909090909091,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.1,
+        "blind_pulses": 2,
+        "renewal_p": 0.08333333333333333,
+        "matrix_p": 0.08333333333333334,
+        "geometric_p": 0.08392021690038395,
+        "geometric_relative_count_bias": 0.007042602804607556
+      },
+      {
+        "q": 0.1,
+        "blind_pulses": 3,
+        "renewal_p": 0.07692307692307693,
+        "matrix_p": 0.07692307692307693,
+        "geometric_p": 0.07830100579532139,
+        "geometric_relative_count_bias": 0.017913075339177853
+      },
+      {
+        "q": 0.1,
+        "blind_pulses": 4,
+        "renewal_p": 0.07142857142857142,
+        "matrix_p": 0.07142857142857144,
+        "geometric_p": 0.07364069426882681,
+        "geometric_relative_count_bias": 0.030969719763575432
+      },
+      {
+        "q": 0.25,
+        "blind_pulses": 0,
+        "renewal_p": 0.25,
+        "matrix_p": 0.25,
+        "geometric_p": 0.25,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.25,
+        "blind_pulses": 1,
+        "renewal_p": 0.2,
+        "matrix_p": 0.2,
+        "geometric_p": 0.2,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.25,
+        "blind_pulses": 2,
+        "renewal_p": 0.16666666666666666,
+        "matrix_p": 0.16666666666666666,
+        "geometric_p": 0.17157287525381018,
+        "geometric_relative_count_bias": 0.02943725152286114
+      },
+      {
+        "q": 0.25,
+        "blind_pulses": 3,
+        "renewal_p": 0.14285714285714285,
+        "matrix_p": 0.14285714285714285,
+        "geometric_p": 0.15229240186043344,
+        "geometric_relative_count_bias": 0.06604681302303406
+      },
+      {
+        "q": 0.25,
+        "blind_pulses": 4,
+        "renewal_p": 0.125,
+        "matrix_p": 0.125,
+        "geometric_p": 0.13801743173069278,
+        "geometric_relative_count_bias": 0.10413945384554224
+      },
+      {
+        "q": 0.5,
+        "blind_pulses": 0,
+        "renewal_p": 0.5,
+        "matrix_p": 0.5,
+        "geometric_p": 0.5,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.5,
+        "blind_pulses": 1,
+        "renewal_p": 0.3333333333333333,
+        "matrix_p": 0.3333333333333333,
+        "geometric_p": 0.33333333333333337,
+        "geometric_relative_count_bias": 2.220446049250313e-16
+      },
+      {
+        "q": 0.5,
+        "blind_pulses": 2,
+        "renewal_p": 0.25,
+        "matrix_p": 0.25,
+        "geometric_p": 0.2679491924311227,
+        "geometric_relative_count_bias": 0.07179676972449078
+      },
+      {
+        "q": 0.5,
+        "blind_pulses": 3,
+        "renewal_p": 0.2,
+        "matrix_p": 0.2,
+        "geometric_p": 0.22908300294075168,
+        "geometric_relative_count_bias": 0.14541501470375828
+      },
+      {
+        "q": 0.5,
+        "blind_pulses": 4,
+        "renewal_p": 0.16666666666666666,
+        "matrix_p": 0.16666666666666666,
+        "geometric_p": 0.20237689020548416,
+        "geometric_relative_count_bias": 0.21426134123290508
+      },
+      {
+        "q": 0.75,
+        "blind_pulses": 0,
+        "renewal_p": 0.75,
+        "matrix_p": 0.75,
+        "geometric_p": 0.75,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.75,
+        "blind_pulses": 1,
+        "renewal_p": 0.4285714285714286,
+        "matrix_p": 0.42857142857142855,
+        "geometric_p": 0.42857142857142855,
+        "geometric_relative_count_bias": -1.1102230246251565e-16
+      },
+      {
+        "q": 0.75,
+        "blind_pulses": 2,
+        "renewal_p": 0.30000000000000004,
+        "matrix_p": 0.30000000000000004,
+        "geometric_p": 0.3333333333333321,
+        "geometric_relative_count_bias": 0.11111111111110672
+      },
+      {
+        "q": 0.75,
+        "blind_pulses": 3,
+        "renewal_p": 0.23076923076923078,
+        "matrix_p": 0.23076923076923078,
+        "geometric_p": 0.2799704585551092,
+        "geometric_relative_count_bias": 0.21320532040547313
+      },
+      {
+        "q": 0.75,
+        "blind_pulses": 4,
+        "renewal_p": 0.1875,
+        "matrix_p": 0.1875,
+        "geometric_p": 0.2444313688008506,
+        "geometric_relative_count_bias": 0.3036339669378698
+      },
+      {
+        "q": 0.9,
+        "blind_pulses": 0,
+        "renewal_p": 0.8999999999999999,
+        "matrix_p": 0.9,
+        "geometric_p": 0.9,
+        "geometric_relative_count_bias": 2.220446049250313e-16
+      },
+      {
+        "q": 0.9,
+        "blind_pulses": 1,
+        "renewal_p": 0.47368421052631576,
+        "matrix_p": 0.47368421052631576,
+        "geometric_p": 0.47368421052631576,
+        "geometric_relative_count_bias": 0.0
+      },
+      {
+        "q": 0.9,
+        "blind_pulses": 2,
+        "renewal_p": 0.3214285714285714,
+        "matrix_p": 0.32142857142857145,
+        "geometric_p": 0.36402163391515463,
+        "geometric_relative_count_bias": 0.13251174995825887
+      },
+      {
+        "q": 0.9,
+        "blind_pulses": 3,
+        "renewal_p": 0.24324324324324326,
+        "matrix_p": 0.2432432432432432,
+        "geometric_p": 0.30375661829940154,
+        "geometric_relative_count_bias": 0.24877720856420615
+      },
+      {
+        "q": 0.9,
+        "blind_pulses": 4,
+        "renewal_p": 0.1956521739130435,
+        "matrix_p": 0.19565217391304351,
+        "geometric_p": 0.2640374104634299,
+        "geometric_relative_count_bias": 0.3495245423686415
+      }
+    ],
+    "soft_recovery_checks": 24,
+    "max_stationary_disagreement": 1.1102230246251565e-16,
+    "decision_example": {
+      "q": 0.5,
+      "blind_pulses": 2,
+      "threshold_q": 0.475,
+      "observed_p": 0.25,
+      "geometric_inverse_q": 0.4444444444444444,
+      "renewal_inverse_q": 0.5,
+      "geometric_below_threshold": true,
+      "renewal_below_threshold": false
+    }
+  },
+  "physical": {
+    "observations": 8,
+    "training_rows": 4,
+    "withheld_rows": 4,
+    "coarse_recovery_prefix": [
+      0.0,
+      0.8239561213885906
+    ],
+    "converged_recovery_prefix": [
+      0.0,
+      0.8239561213885906
+    ],
+    "original_code_max_probability_disagreement": 4.440892098500626e-16,
+    "reports": [
+      {
+        "method": "published_geometric_cutoff_0999",
+        "common_flux_scale": 0.995,
+        "fitted_eta0": 0.894223184454586,
+        "test_efficiency_rmse": 0.002606523203112593,
+        "test_flux_relative_rmse": 0.00409452535598638,
+        "test_flux_max_abs_relative_error": 0.00515829839707016,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444720777343484,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1911438.4820968711,
+            "observed_efficiency": 0.8766277338739277,
+            "supplied_sigma": 0.009402615662266885,
+            "predicted_efficiency": 0.872210974899519,
+            "inferred_flux_hz": 1921362.5175454316,
+            "relative_flux_error": 0.005191919876842643
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3978040.4399623754,
+            "observed_efficiency": 0.8502122052414302,
+            "supplied_sigma": 0.0042897206356817385,
+            "predicted_efficiency": 0.849736904293214,
+            "inferred_flux_hz": 3980381.37200134,
+            "relative_flux_error": 0.0005884636102360119
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6256222.826348221,
+            "observed_efficiency": 0.8250537981577799,
+            "supplied_sigma": 0.010009959428319939,
+            "predicted_efficiency": 0.826411644258429,
+            "inferred_flux_hz": 6245109.755319297,
+            "relative_flux_error": -0.0017763227649310043
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8574351.969738005,
+            "observed_efficiency": 0.7996675164723276,
+            "supplied_sigma": 0.0077738466715392964,
+            "predicted_efficiency": 0.8040922141818303,
+            "inferred_flux_hz": 8521982.140228406,
+            "relative_flux_error": -0.006107730321128768
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10900731.83350561,
+            "observed_efficiency": 0.7794482535460703,
+            "supplied_sigma": 0.005217916442496814,
+            "predicted_efficiency": 0.7829942047316032,
+            "inferred_flux_hz": 10844502.605961947,
+            "relative_flux_error": -0.00515829839707016
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13400376.856253838,
+            "observed_efficiency": 0.75967047227102,
+            "supplied_sigma": 0.003787750456273789,
+            "predicted_efficiency": 0.7616428040413749,
+            "inferred_flux_hz": 13359771.204710001,
+            "relative_flux_error": -0.0030301872834932464
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16228674.572064325,
+            "observed_efficiency": 0.7373767134747478,
+            "supplied_sigma": 0.00486159065521995,
+            "predicted_efficiency": 0.7389740036375168,
+            "inferred_flux_hz": 16186415.694534995,
+            "relative_flux_error": -0.002603963579507207
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19170621.66479126,
+            "observed_efficiency": 0.7197641968148581,
+            "supplied_sigma": 0.003837196885110111,
+            "predicted_efficiency": 0.7169075108771245,
+            "inferred_flux_hz": 19265491.739033975,
+            "relative_flux_error": 0.004948721846457005
+          }
+        ]
+      },
+      {
+        "method": "geometric_converged",
+        "common_flux_scale": 0.995,
+        "fitted_eta0": 0.894223184454586,
+        "test_efficiency_rmse": 0.002606523203112593,
+        "test_flux_relative_rmse": 0.00409452535598638,
+        "test_flux_max_abs_relative_error": 0.00515829839707016,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444720777343484,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1911438.4820968711,
+            "observed_efficiency": 0.8766277338739277,
+            "supplied_sigma": 0.009402615662266885,
+            "predicted_efficiency": 0.872210974899519,
+            "inferred_flux_hz": 1921362.5175454316,
+            "relative_flux_error": 0.005191919876842643
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3978040.4399623754,
+            "observed_efficiency": 0.8502122052414302,
+            "supplied_sigma": 0.0042897206356817385,
+            "predicted_efficiency": 0.849736904293214,
+            "inferred_flux_hz": 3980381.37200134,
+            "relative_flux_error": 0.0005884636102360119
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6256222.826348221,
+            "observed_efficiency": 0.8250537981577799,
+            "supplied_sigma": 0.010009959428319939,
+            "predicted_efficiency": 0.826411644258429,
+            "inferred_flux_hz": 6245109.755319297,
+            "relative_flux_error": -0.0017763227649310043
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8574351.969738005,
+            "observed_efficiency": 0.7996675164723276,
+            "supplied_sigma": 0.0077738466715392964,
+            "predicted_efficiency": 0.8040922141818303,
+            "inferred_flux_hz": 8521982.140228406,
+            "relative_flux_error": -0.006107730321128768
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10900731.83350561,
+            "observed_efficiency": 0.7794482535460703,
+            "supplied_sigma": 0.005217916442496814,
+            "predicted_efficiency": 0.7829942047316032,
+            "inferred_flux_hz": 10844502.605961947,
+            "relative_flux_error": -0.00515829839707016
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13400376.856253838,
+            "observed_efficiency": 0.75967047227102,
+            "supplied_sigma": 0.003787750456273789,
+            "predicted_efficiency": 0.7616428040413749,
+            "inferred_flux_hz": 13359771.204710001,
+            "relative_flux_error": -0.0030301872834932464
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16228674.572064325,
+            "observed_efficiency": 0.7373767134747478,
+            "supplied_sigma": 0.00486159065521995,
+            "predicted_efficiency": 0.7389740036375168,
+            "inferred_flux_hz": 16186415.694534995,
+            "relative_flux_error": -0.002603963579507207
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19170621.66479126,
+            "observed_efficiency": 0.7197641968148581,
+            "supplied_sigma": 0.003837196885110111,
+            "predicted_efficiency": 0.7169075108771245,
+            "inferred_flux_hz": 19265491.739033975,
+            "relative_flux_error": 0.004948721846457005
+          }
+        ]
+      },
+      {
+        "method": "established_renewal",
+        "common_flux_scale": 0.995,
+        "fitted_eta0": 0.894688299875542,
+        "test_efficiency_rmse": 0.003406393640016962,
+        "test_flux_relative_rmse": 0.0058840881329557,
+        "test_flux_max_abs_relative_error": 0.01113814594049245,
+        "test_max_abs_residual_over_supplied_sigma": 1.6476515786932278,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1911438.4820968711,
+            "observed_efficiency": 0.8766277338739277,
+            "supplied_sigma": 0.009402615662266885,
+            "predicted_efficiency": 0.8725857081287401,
+            "inferred_flux_hz": 1920518.0656250312,
+            "relative_flux_error": 0.00475013117775025
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3978040.4399623754,
+            "observed_efficiency": 0.8502122052414302,
+            "supplied_sigma": 0.0042897206356817385,
+            "predicted_efficiency": 0.8498855745326126,
+            "inferred_flux_hz": 3979649.920940677,
+            "relative_flux_error": 0.00040459140689796946
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6256222.826348221,
+            "observed_efficiency": 0.8250537981577799,
+            "supplied_sigma": 0.010009959428319939,
+            "predicted_efficiency": 0.8261918742620948,
+            "inferred_flux_hz": 6246891.490132036,
+            "relative_flux_error": -0.0014915287506842567
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8574351.969738005,
+            "observed_efficiency": 0.7996675164723276,
+            "supplied_sigma": 0.0077738466715392964,
+            "predicted_efficiency": 0.8034013596398057,
+            "inferred_flux_hz": 8529997.77173653,
+            "relative_flux_error": -0.005172892150685726
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10900731.83350561,
+            "observed_efficiency": 0.7794482535460703,
+            "supplied_sigma": 0.005217916442496814,
+            "predicted_efficiency": 0.7817597517940442,
+            "inferred_flux_hz": 10863860.494382143,
+            "relative_flux_error": -0.0033824645617035465
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13400376.856253838,
+            "observed_efficiency": 0.75967047227102,
+            "supplied_sigma": 0.003787750456273789,
+            "predicted_efficiency": 0.7597691888759405,
+            "inferred_flux_hz": 13398326.611990502,
+            "relative_flux_error": -0.00015299900035115055
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16228674.572064325,
+            "observed_efficiency": 0.7373767134747478,
+            "supplied_sigma": 0.00486159065521995,
+            "predicted_efficiency": 0.7363331517330507,
+            "inferred_flux_hz": 16256629.388155617,
+            "relative_flux_error": 0.001722556944940612
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19170621.66479126,
+            "observed_efficiency": 0.7197641968148581,
+            "supplied_sigma": 0.003837196885110111,
+            "predicted_efficiency": 0.7134418333093497,
+            "inferred_flux_hz": 19384146.846663672,
+            "relative_flux_error": 0.01113814594049245
+          }
+        ]
+      },
+      {
+        "method": "independent_stationary_renewal",
+        "common_flux_scale": 0.995,
+        "fitted_eta0": 0.8946882998755415,
+        "test_efficiency_rmse": 0.003406393640017117,
+        "test_flux_relative_rmse": 0.0058840881329557705,
+        "test_flux_max_abs_relative_error": 0.011138145940492672,
+        "test_max_abs_residual_over_supplied_sigma": 1.6476515786933434,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1911438.4820968711,
+            "observed_efficiency": 0.8766277338739277,
+            "supplied_sigma": 0.009402615662266885,
+            "predicted_efficiency": 0.8725857081287397,
+            "inferred_flux_hz": 1920518.0656250322,
+            "relative_flux_error": 0.004750131177750916
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3978040.4399623754,
+            "observed_efficiency": 0.8502122052414302,
+            "supplied_sigma": 0.0042897206356817385,
+            "predicted_efficiency": 0.8498855745326122,
+            "inferred_flux_hz": 3979649.920940679,
+            "relative_flux_error": 0.00040459140689841355
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6256222.826348221,
+            "observed_efficiency": 0.8250537981577799,
+            "supplied_sigma": 0.010009959428319939,
+            "predicted_efficiency": 0.8261918742620944,
+            "inferred_flux_hz": 6246891.49013204,
+            "relative_flux_error": -0.0014915287506834796
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8574351.969738005,
+            "observed_efficiency": 0.7996675164723276,
+            "supplied_sigma": 0.0077738466715392964,
+            "predicted_efficiency": 0.8034013596398054,
+            "inferred_flux_hz": 8529997.771736534,
+            "relative_flux_error": -0.005172892150685282
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10900731.83350561,
+            "observed_efficiency": 0.7794482535460703,
+            "supplied_sigma": 0.005217916442496814,
+            "predicted_efficiency": 0.7817597517940438,
+            "inferred_flux_hz": 10863860.494382149,
+            "relative_flux_error": -0.0033824645617031024
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13400376.856253838,
+            "observed_efficiency": 0.75967047227102,
+            "supplied_sigma": 0.003787750456273789,
+            "predicted_efficiency": 0.7597691888759404,
+            "inferred_flux_hz": 13398326.61199051,
+            "relative_flux_error": -0.00015299900035059544
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16228674.572064325,
+            "observed_efficiency": 0.7373767134747478,
+            "supplied_sigma": 0.00486159065521995,
+            "predicted_efficiency": 0.7363331517330504,
+            "inferred_flux_hz": 16256629.388155624,
+            "relative_flux_error": 0.001722556944941056
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19170621.66479126,
+            "observed_efficiency": 0.7197641968148581,
+            "supplied_sigma": 0.003837196885110111,
+            "predicted_efficiency": 0.7134418333093493,
+            "inferred_flux_hz": 19384146.846663676,
+            "relative_flux_error": 0.011138145940492672
+          }
+        ]
+      },
+      {
+        "method": "hard_dead_time_renewal",
+        "common_flux_scale": 0.995,
+        "fitted_eta0": 0.8865498953674363,
+        "test_efficiency_rmse": 0.011557441538946896,
+        "test_flux_relative_rmse": 0.017745214608446414,
+        "test_flux_max_abs_relative_error": 0.020663408953158102,
+        "test_max_abs_residual_over_supplied_sigma": 3.034777566787661,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1911438.4820968711,
+            "observed_efficiency": 0.8766277338739277,
+            "supplied_sigma": 0.009402615662266885,
+            "predicted_efficiency": 0.8680241866118208,
+            "inferred_flux_hz": 1930792.4173311153,
+            "relative_flux_error": 0.010125324678517789
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3978040.4399623754,
+            "observed_efficiency": 0.8502122052414302,
+            "supplied_sigma": 0.0042897206356817385,
+            "predicted_efficiency": 0.8488464522630002,
+            "inferred_flux_hz": 3984725.684460792,
+            "relative_flux_error": 0.0016805370883761217
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6256222.826348221,
+            "observed_efficiency": 0.8250537981577799,
+            "supplied_sigma": 0.010009959428319939,
+            "predicted_efficiency": 0.8286639245391539,
+            "inferred_flux_hz": 6227072.139958823,
+            "relative_flux_error": -0.004659470610066663
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8574351.969738005,
+            "observed_efficiency": 0.7996675164723276,
+            "supplied_sigma": 0.0077738466715392964,
+            "predicted_efficiency": 0.8090893627488056,
+            "inferred_flux_hz": 8465066.201460997,
+            "relative_flux_error": -0.012745659224477457
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10900731.83350561,
+            "observed_efficiency": 0.7794482535460703,
+            "supplied_sigma": 0.005217916442496814,
+            "predicted_efficiency": 0.7903533186318324,
+            "inferred_flux_hz": 10732303.244405266,
+            "relative_flux_error": -0.015451126738357579
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13400376.856253838,
+            "observed_efficiency": 0.75967047227102,
+            "supplied_sigma": 0.003787750456273789,
+            "predicted_efficiency": 0.7711654523843094,
+            "inferred_flux_hz": 13171255.396905186,
+            "relative_flux_error": -0.017098135508160972
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16228674.572064325,
+            "observed_efficiency": 0.7373767134747478,
+            "supplied_sigma": 0.00486159065521995,
+            "predicted_efficiency": 0.75054820064515,
+            "inferred_flux_hz": 15893334.832614042,
+            "relative_flux_error": -0.020663408953158102
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19170621.66479126,
+            "observed_efficiency": 0.7197641968148581,
+            "supplied_sigma": 0.003837196885110111,
+            "predicted_efficiency": 0.7302405861306005,
+            "inferred_flux_hz": 18837741.861268982,
+            "relative_flux_error": -0.017364058888796774
+          }
+        ]
+      },
+      {
+        "method": "published_geometric_cutoff_0999",
+        "common_flux_scale": 1.0,
+        "fitted_eta0": 0.8897520711514402,
+        "test_efficiency_rmse": 0.0025934914433700675,
+        "test_flux_relative_rmse": 0.004094526394235878,
+        "test_flux_max_abs_relative_error": 0.005158301325545178,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444716344824712,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1921043.7005998704,
+            "observed_efficiency": 0.872244595204558,
+            "supplied_sigma": 0.00935560258395555,
+            "predicted_efficiency": 0.8678499225169843,
+            "inferred_flux_hz": 1931017.59988904,
+            "relative_flux_error": 0.005191916917899997
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3998030.5929270107,
+            "observed_efficiency": 0.845961144215223,
+            "supplied_sigma": 0.00426827203250333,
+            "predicted_efficiency": 0.8454882221375165,
+            "inferred_flux_hz": 4000383.2766677924,
+            "relative_flux_error": 0.0005884606648443036
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6287661.132008262,
+            "observed_efficiency": 0.820928529166991,
+            "supplied_sigma": 0.00995990963117834,
+            "predicted_efficiency": 0.8222795882757645,
+            "inferred_flux_hz": 6276492.197925448,
+            "relative_flux_error": -0.0017763257033615032
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8617439.165565833,
+            "observed_efficiency": 0.7956691788899659,
+            "supplied_sigma": 0.0077349774381816,
+            "predicted_efficiency": 0.8000717552314944,
+            "inferred_flux_hz": 8564806.145871952,
+            "relative_flux_error": -0.006107733246809133
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10955509.380407648,
+            "observed_efficiency": 0.77555101227834,
+            "supplied_sigma": 0.00519182686028433,
+            "predicted_efficiency": 0.7790792357201223,
+            "inferred_flux_hz": 10898997.561848668,
+            "relative_flux_error": -0.005158301325545178
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13467715.433420943,
+            "observed_efficiency": 0.755872119909665,
+            "supplied_sigma": 0.00376881170399242,
+            "predicted_efficiency": 0.7578345919267714,
+            "inferred_flux_hz": 13426905.693852648,
+            "relative_flux_error": -0.003030190218232809
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16310225.700567162,
+            "observed_efficiency": 0.733689829907374,
+            "supplied_sigma": 0.00483728270194385,
+            "predicted_efficiency": 0.7352791354151822,
+            "inferred_flux_hz": 16267754.418982612,
+            "relative_flux_error": -0.0026039665155015435
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19266956.44702639,
+            "observed_efficiency": 0.7161653758307839,
+            "supplied_sigma": 0.00381801090068456,
+            "predicted_efficiency": 0.7133229750150794,
+            "inferred_flux_hz": 19362303.198314503,
+            "relative_flux_error": 0.004948718888230452
+          }
+        ]
+      },
+      {
+        "method": "geometric_converged",
+        "common_flux_scale": 1.0,
+        "fitted_eta0": 0.8897520711514402,
+        "test_efficiency_rmse": 0.0025934914433700675,
+        "test_flux_relative_rmse": 0.004094526394235878,
+        "test_flux_max_abs_relative_error": 0.005158301325545178,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444716344824712,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1921043.7005998704,
+            "observed_efficiency": 0.872244595204558,
+            "supplied_sigma": 0.00935560258395555,
+            "predicted_efficiency": 0.8678499225169843,
+            "inferred_flux_hz": 1931017.59988904,
+            "relative_flux_error": 0.005191916917899997
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3998030.5929270107,
+            "observed_efficiency": 0.845961144215223,
+            "supplied_sigma": 0.00426827203250333,
+            "predicted_efficiency": 0.8454882221375165,
+            "inferred_flux_hz": 4000383.2766677924,
+            "relative_flux_error": 0.0005884606648443036
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6287661.132008262,
+            "observed_efficiency": 0.820928529166991,
+            "supplied_sigma": 0.00995990963117834,
+            "predicted_efficiency": 0.8222795882757645,
+            "inferred_flux_hz": 6276492.197925448,
+            "relative_flux_error": -0.0017763257033615032
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8617439.165565833,
+            "observed_efficiency": 0.7956691788899659,
+            "supplied_sigma": 0.0077349774381816,
+            "predicted_efficiency": 0.8000717552314944,
+            "inferred_flux_hz": 8564806.145871952,
+            "relative_flux_error": -0.006107733246809133
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10955509.380407648,
+            "observed_efficiency": 0.77555101227834,
+            "supplied_sigma": 0.00519182686028433,
+            "predicted_efficiency": 0.7790792357201223,
+            "inferred_flux_hz": 10898997.561848668,
+            "relative_flux_error": -0.005158301325545178
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13467715.433420943,
+            "observed_efficiency": 0.755872119909665,
+            "supplied_sigma": 0.00376881170399242,
+            "predicted_efficiency": 0.7578345919267714,
+            "inferred_flux_hz": 13426905.693852648,
+            "relative_flux_error": -0.003030190218232809
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16310225.700567162,
+            "observed_efficiency": 0.733689829907374,
+            "supplied_sigma": 0.00483728270194385,
+            "predicted_efficiency": 0.7352791354151822,
+            "inferred_flux_hz": 16267754.418982612,
+            "relative_flux_error": -0.0026039665155015435
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19266956.44702639,
+            "observed_efficiency": 0.7161653758307839,
+            "supplied_sigma": 0.00381801090068456,
+            "predicted_efficiency": 0.7133229750150794,
+            "inferred_flux_hz": 19362303.198314503,
+            "relative_flux_error": 0.004948718888230452
+          }
+        ]
+      },
+      {
+        "method": "established_renewal",
+        "common_flux_scale": 1.0,
+        "fitted_eta0": 0.8902148480566114,
+        "test_efficiency_rmse": 0.003389363861446438,
+        "test_flux_relative_rmse": 0.0058840927940735765,
+        "test_flux_max_abs_relative_error": 0.011138157661812809,
+        "test_max_abs_residual_over_supplied_sigma": 1.6476532973824238,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1921043.7005998704,
+            "observed_efficiency": 0.872244595204558,
+            "supplied_sigma": 0.00935560258395555,
+            "predicted_efficiency": 0.868222769772119,
+            "inferred_flux_hz": 1930168.9325508242,
+            "relative_flux_error": 0.004750142825019843
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3998030.5929270107,
+            "observed_efficiency": 0.845961144215223,
+            "supplied_sigma": 0.00426827203250333,
+            "predicted_efficiency": 0.8456361373480503,
+            "inferred_flux_hz": 3999648.208114165,
+            "relative_flux_error": 0.0004046030037929693
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6287661.132008262,
+            "observed_efficiency": 0.820928529166991,
+            "supplied_sigma": 0.00995990963117834,
+            "predicted_efficiency": 0.8220609060908549,
+            "inferred_flux_hz": 6278282.977434454,
+            "relative_flux_error": -0.0014915171757694523
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8617439.165565833,
+            "observed_efficiency": 0.7956691788899659,
+            "supplied_sigma": 0.0077349774381816,
+            "predicted_efficiency": 0.7993843445204732,
+            "inferred_flux_hz": 8572862.181525638,
+            "relative_flux_error": -0.0051728806184462295
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10955509.380407648,
+            "observed_efficiency": 0.77555101227834,
+            "supplied_sigma": 0.00519182686028433,
+            "predicted_efficiency": 0.7778509451562031,
+            "inferred_flux_hz": 10918452.884741949,
+            "relative_flux_error": -0.0033824530087089855
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13467715.433420943,
+            "observed_efficiency": 0.755872119909665,
+            "supplied_sigma": 0.00376881170399242,
+            "predicted_efficiency": 0.7559703354897144,
+            "inferred_flux_hz": 13465655.042519245,
+            "relative_flux_error": -0.00015298740991998017
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16310225.700567162,
+            "observed_efficiency": 0.733689829907374,
+            "supplied_sigma": 0.00483728270194385,
+            "predicted_efficiency": 0.7326514789845642,
+            "inferred_flux_hz": 16338321.182518385,
+            "relative_flux_error": 0.001722568557113613
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19266956.44702639,
+            "observed_efficiency": 0.7161653758307839,
+            "supplied_sigma": 0.00381801090068456,
+            "predicted_efficiency": 0.7098746175808289,
+            "inferred_flux_hz": 19481554.845596652,
+            "relative_flux_error": 0.011138157661812809
+          }
+        ]
+      },
+      {
+        "method": "independent_stationary_renewal",
+        "common_flux_scale": 1.0,
+        "fitted_eta0": 0.8902148480566108,
+        "test_efficiency_rmse": 0.0033893638614466053,
+        "test_flux_relative_rmse": 0.005884092794073856,
+        "test_flux_max_abs_relative_error": 0.011138157661813475,
+        "test_max_abs_residual_over_supplied_sigma": 1.64765329738254,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1921043.7005998704,
+            "observed_efficiency": 0.872244595204558,
+            "supplied_sigma": 0.00935560258395555,
+            "predicted_efficiency": 0.8682227697721183,
+            "inferred_flux_hz": 1930168.9325508256,
+            "relative_flux_error": 0.004750142825020509
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3998030.5929270107,
+            "observed_efficiency": 0.845961144215223,
+            "supplied_sigma": 0.00426827203250333,
+            "predicted_efficiency": 0.8456361373480495,
+            "inferred_flux_hz": 3999648.208114168,
+            "relative_flux_error": 0.00040460300379363545
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6287661.132008262,
+            "observed_efficiency": 0.820928529166991,
+            "supplied_sigma": 0.00995990963117834,
+            "predicted_efficiency": 0.8220609060908541,
+            "inferred_flux_hz": 6278282.977434459,
+            "relative_flux_error": -0.0014915171757685641
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8617439.165565833,
+            "observed_efficiency": 0.7956691788899659,
+            "supplied_sigma": 0.0077349774381816,
+            "predicted_efficiency": 0.7993843445204727,
+            "inferred_flux_hz": 8572862.181525646,
+            "relative_flux_error": -0.005172880618445341
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10955509.380407648,
+            "observed_efficiency": 0.77555101227834,
+            "supplied_sigma": 0.00519182686028433,
+            "predicted_efficiency": 0.7778509451562027,
+            "inferred_flux_hz": 10918452.884741956,
+            "relative_flux_error": -0.0033824530087083193
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13467715.433420943,
+            "observed_efficiency": 0.755872119909665,
+            "supplied_sigma": 0.00376881170399242,
+            "predicted_efficiency": 0.7559703354897136,
+            "inferred_flux_hz": 13465655.042519255,
+            "relative_flux_error": -0.000152987409919203
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16310225.700567162,
+            "observed_efficiency": 0.733689829907374,
+            "supplied_sigma": 0.00483728270194385,
+            "predicted_efficiency": 0.7326514789845636,
+            "inferred_flux_hz": 16338321.182518398,
+            "relative_flux_error": 0.001722568557114501
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19266956.44702639,
+            "observed_efficiency": 0.7161653758307839,
+            "supplied_sigma": 0.00381801090068456,
+            "predicted_efficiency": 0.7098746175808285,
+            "inferred_flux_hz": 19481554.845596664,
+            "relative_flux_error": 0.011138157661813475
+          }
+        ]
+      },
+      {
+        "method": "hard_dead_time_renewal",
+        "common_flux_scale": 1.0,
+        "fitted_eta0": 0.8821171535235061,
+        "test_efficiency_rmse": 0.011499659930494658,
+        "test_flux_relative_rmse": 0.01774522305857295,
+        "test_flux_max_abs_relative_error": 0.020663417427299047,
+        "test_max_abs_residual_over_supplied_sigma": 3.034779099195198,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1921043.7005998704,
+            "observed_efficiency": 0.872244595204558,
+            "supplied_sigma": 0.00935560258395555,
+            "predicted_efficiency": 0.8636840729960009,
+            "inferred_flux_hz": 1940494.8749990796,
+            "relative_flux_error": 0.010125315937963952
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 3998030.5929270107,
+            "observed_efficiency": 0.845961144215223,
+            "supplied_sigma": 0.00426827203250333,
+            "predicted_efficiency": 0.8446022269991685,
+            "inferred_flux_hz": 4004749.3969660294,
+            "relative_flux_error": 0.0016805284208942783
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6287661.132008262,
+            "observed_efficiency": 0.820928529166991,
+            "supplied_sigma": 0.00995990963117834,
+            "predicted_efficiency": 0.8245206115851473,
+            "inferred_flux_hz": 6258363.9056043625,
+            "relative_flux_error": -0.004659479222688612
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8617439.165565833,
+            "observed_efficiency": 0.7956691788899659,
+            "supplied_sigma": 0.0077349774381816,
+            "predicted_efficiency": 0.8050439222924184,
+            "inferred_flux_hz": 8507604.148958076,
+            "relative_flux_error": -0.012745667767130153
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 10955509.380407648,
+            "observed_efficiency": 0.77555101227834,
+            "supplied_sigma": 0.00519182686028433,
+            "predicted_efficiency": 0.7864015581050052,
+            "inferred_flux_hz": 10786234.323155064,
+            "relative_flux_error": -0.015451135257600002
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13467715.433420943,
+            "observed_efficiency": 0.755872119909665,
+            "supplied_sigma": 0.00376881170399242,
+            "predicted_efficiency": 0.7673096308977434,
+            "inferred_flux_hz": 13237442.495412162,
+            "relative_flux_error": -0.017098144013152017
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16310225.700567162,
+            "observed_efficiency": 0.733689829907374,
+            "supplied_sigma": 0.00483728270194385,
+            "predicted_efficiency": 0.7467954651125976,
+            "inferred_flux_hz": 15973200.698582882,
+            "relative_flux_error": -0.020663417427299047
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19266956.44702639,
+            "observed_efficiency": 0.7161653758307839,
+            "supplied_sigma": 0.00381801090068456,
+            "predicted_efficiency": 0.7265893883785853,
+            "inferred_flux_hz": 18932403.716851383,
+            "relative_flux_error": -0.01736406739148677
+          }
+        ]
+      },
+      {
+        "method": "published_geometric_cutoff_0999",
+        "common_flux_scale": 1.005,
+        "fitted_eta0": 0.8853254458672731,
+        "test_efficiency_rmse": 0.002580589133638093,
+        "test_flux_relative_rmse": 0.004094527165322514,
+        "test_flux_max_abs_relative_error": 0.005158303500460537,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444713052889173,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1930648.9191028695,
+            "observed_efficiency": 0.8679050698552817,
+            "supplied_sigma": 0.00930905729746821,
+            "predicted_efficiency": 0.8635322630524489,
+            "inferred_flux_hz": 1940672.6836458012,
+            "relative_flux_error": 0.0051919147203571825
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 4018020.7458916456,
+            "observed_efficiency": 0.8417523823037044,
+            "supplied_sigma": 0.0042470368482620206,
+            "predicted_efficiency": 0.84128181482042,
+            "inferred_flux_hz": 4020385.184261795,
+            "relative_flux_error": 0.0005884584773652168
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6319099.437668303,
+            "observed_efficiency": 0.8168443076288469,
+            "supplied_sigma": 0.009910357841968498,
+            "predicted_efficiency": 0.818188646704821,
+            "inferred_flux_hz": 6307874.645124847,
+            "relative_flux_error": -0.0017763278856706144
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8660526.361393662,
+            "observed_efficiency": 0.7917106257611602,
+            "supplied_sigma": 0.007696494963364777,
+            "predicted_efficiency": 0.7960913003048743,
+            "inferred_flux_hz": 8607630.157783376,
+            "relative_flux_error": -0.006107735419648819
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 11010286.927309684,
+            "observed_efficiency": 0.7716925495306867,
+            "supplied_sigma": 0.005165996875904806,
+            "predicted_efficiency": 0.7752032211089779,
+            "inferred_flux_hz": 10953492.525711467,
+            "relative_flux_error": -0.005158303500460537
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13535054.010588046,
+            "observed_efficiency": 0.7521115620991692,
+            "supplied_sigma": 0.0037500613970073834,
+            "predicted_efficiency": 0.7540642719821117,
+            "inferred_flux_hz": 13494040.19282134,
+            "relative_flux_error": -0.0030301923978006684
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16391776.829069996,
+            "observed_efficiency": 0.7300396317486308,
+            "supplied_sigma": 0.004813216618849603,
+            "predicted_efficiency": 0.7316210315909684,
+            "inferred_flux_hz": 16349093.15533526,
+            "relative_flux_error": -0.002603968696001213
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19363291.22926152,
+            "observed_efficiency": 0.7126023640107303,
+            "supplied_sigma": 0.003799015821576677,
+            "predicted_efficiency": 0.7097741057432279,
+            "inferred_flux_hz": 19459114.6717647,
+            "relative_flux_error": 0.004948716691218991
+          }
+        ]
+      },
+      {
+        "method": "geometric_converged",
+        "common_flux_scale": 1.005,
+        "fitted_eta0": 0.8853254458672731,
+        "test_efficiency_rmse": 0.002580589133638093,
+        "test_flux_relative_rmse": 0.004094527165322514,
+        "test_flux_max_abs_relative_error": 0.005158303500460537,
+        "test_max_abs_residual_over_supplied_sigma": 0.7444713052889173,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1930648.9191028695,
+            "observed_efficiency": 0.8679050698552817,
+            "supplied_sigma": 0.00930905729746821,
+            "predicted_efficiency": 0.8635322630524489,
+            "inferred_flux_hz": 1940672.6836458012,
+            "relative_flux_error": 0.0051919147203571825
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 4018020.7458916456,
+            "observed_efficiency": 0.8417523823037044,
+            "supplied_sigma": 0.0042470368482620206,
+            "predicted_efficiency": 0.84128181482042,
+            "inferred_flux_hz": 4020385.184261795,
+            "relative_flux_error": 0.0005884584773652168
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6319099.437668303,
+            "observed_efficiency": 0.8168443076288469,
+            "supplied_sigma": 0.009910357841968498,
+            "predicted_efficiency": 0.818188646704821,
+            "inferred_flux_hz": 6307874.645124847,
+            "relative_flux_error": -0.0017763278856706144
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8660526.361393662,
+            "observed_efficiency": 0.7917106257611602,
+            "supplied_sigma": 0.007696494963364777,
+            "predicted_efficiency": 0.7960913003048743,
+            "inferred_flux_hz": 8607630.157783376,
+            "relative_flux_error": -0.006107735419648819
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 11010286.927309684,
+            "observed_efficiency": 0.7716925495306867,
+            "supplied_sigma": 0.005165996875904806,
+            "predicted_efficiency": 0.7752032211089779,
+            "inferred_flux_hz": 10953492.525711467,
+            "relative_flux_error": -0.005158303500460537
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13535054.010588046,
+            "observed_efficiency": 0.7521115620991692,
+            "supplied_sigma": 0.0037500613970073834,
+            "predicted_efficiency": 0.7540642719821117,
+            "inferred_flux_hz": 13494040.19282134,
+            "relative_flux_error": -0.0030301923978006684
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16391776.829069996,
+            "observed_efficiency": 0.7300396317486308,
+            "supplied_sigma": 0.004813216618849603,
+            "predicted_efficiency": 0.7316210315909684,
+            "inferred_flux_hz": 16349093.15533526,
+            "relative_flux_error": -0.002603968696001213
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19363291.22926152,
+            "observed_efficiency": 0.7126023640107303,
+            "supplied_sigma": 0.003799015821576677,
+            "predicted_efficiency": 0.7097741057432279,
+            "inferred_flux_hz": 19459114.6717647,
+            "relative_flux_error": 0.004948716691218991
+          }
+        ]
+      },
+      {
+        "method": "established_renewal",
+        "common_flux_scale": 1.005,
+        "fitted_eta0": 0.8857859206064934,
+        "test_efficiency_rmse": 0.0033725009001335745,
+        "test_flux_relative_rmse": 0.0058840918216473605,
+        "test_flux_max_abs_relative_error": 0.011138155216455115,
+        "test_max_abs_residual_over_supplied_sigma": 1.647652938821266,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1930648.9191028695,
+            "observed_efficiency": 0.8679050698552817,
+            "supplied_sigma": 0.00930905729746821,
+            "predicted_efficiency": 0.8639032555422638,
+            "inferred_flux_hz": 1939819.772522277,
+            "relative_flux_error": 0.00475014039511068
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 4018020.7458916456,
+            "observed_efficiency": 0.8417523823037044,
+            "supplied_sigma": 0.0042470368482620206,
+            "predicted_efficiency": 0.8414289943191474,
+            "inferred_flux_hz": 4019646.439433538,
+            "relative_flux_error": 0.00040460058439339974
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6319099.437668303,
+            "observed_efficiency": 0.8168443076288469,
+            "supplied_sigma": 0.009910357841968498,
+            "predicted_efficiency": 0.8179710526634211,
+            "inferred_flux_hz": 6309674.377062175,
+            "relative_flux_error": -0.0014915195905835787
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8660526.361393662,
+            "observed_efficiency": 0.7917106257611602,
+            "supplied_sigma": 0.007696494963364777,
+            "predicted_efficiency": 0.7954073097079283,
+            "inferred_flux_hz": 8615726.471596811,
+            "relative_flux_error": -0.005172883024357144
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 11010286.927309684,
+            "observed_efficiency": 0.7716925495306867,
+            "supplied_sigma": 0.005165996875904806,
+            "predicted_efficiency": 0.7739810415919708,
+            "inferred_flux_hz": 10973045.122628214,
+            "relative_flux_error": -0.00338245541894977
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13535054.010588046,
+            "observed_efficiency": 0.7521115620991692,
+            "supplied_sigma": 0.0037500613970073834,
+            "predicted_efficiency": 0.7522092905893213,
+            "inferred_flux_hz": 13532983.285003388,
+            "relative_flux_error": -0.00015298982797096183
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16391776.829069996,
+            "observed_efficiency": 0.7300396317486308,
+            "supplied_sigma": 0.004813216618849603,
+            "predicted_efficiency": 0.729006448201805,
+            "inferred_flux_hz": 16420012.74872047,
+            "relative_flux_error": 0.001722566134526593
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19363291.22926152,
+            "observed_efficiency": 0.7126023640107303,
+            "supplied_sigma": 0.003799015821576677,
+            "predicted_efficiency": 0.706342904427681,
+            "inferred_flux_hz": 19578962.57247446,
+            "relative_flux_error": 0.011138155216455115
+          }
+        ]
+      },
+      {
+        "method": "independent_stationary_renewal",
+        "common_flux_scale": 1.005,
+        "fitted_eta0": 0.8857859206064886,
+        "test_efficiency_rmse": 0.003372500900134724,
+        "test_flux_relative_rmse": 0.0058840918216494726,
+        "test_flux_max_abs_relative_error": 0.011138155216460444,
+        "test_max_abs_residual_over_supplied_sigma": 1.6476529388221135,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1930648.9191028695,
+            "observed_efficiency": 0.8679050698552817,
+            "supplied_sigma": 0.00930905729746821,
+            "predicted_efficiency": 0.8639032555422591,
+            "inferred_flux_hz": 1939819.7725222874,
+            "relative_flux_error": 0.004750140395116231
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 4018020.7458916456,
+            "observed_efficiency": 0.8417523823037044,
+            "supplied_sigma": 0.0042470368482620206,
+            "predicted_efficiency": 0.8414289943191429,
+            "inferred_flux_hz": 4019646.4394335593,
+            "relative_flux_error": 0.0004046005843987288
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6319099.437668303,
+            "observed_efficiency": 0.8168443076288469,
+            "supplied_sigma": 0.009910357841968498,
+            "predicted_efficiency": 0.817971052663417,
+            "inferred_flux_hz": 6309674.377062211,
+            "relative_flux_error": -0.0014915195905779166
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8660526.361393662,
+            "observed_efficiency": 0.7917106257611602,
+            "supplied_sigma": 0.007696494963364777,
+            "predicted_efficiency": 0.7954073097079245,
+            "inferred_flux_hz": 8615726.47159686,
+            "relative_flux_error": -0.005172883024351593
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 11010286.927309684,
+            "observed_efficiency": 0.7716925495306867,
+            "supplied_sigma": 0.005165996875904806,
+            "predicted_efficiency": 0.7739810415919675,
+            "inferred_flux_hz": 10973045.122628273,
+            "relative_flux_error": -0.00338245541894433
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13535054.010588046,
+            "observed_efficiency": 0.7521115620991692,
+            "supplied_sigma": 0.0037500613970073834,
+            "predicted_efficiency": 0.7522092905893177,
+            "inferred_flux_hz": 13532983.285003461,
+            "relative_flux_error": -0.00015298982796563276
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16391776.829069996,
+            "observed_efficiency": 0.7300396317486308,
+            "supplied_sigma": 0.004813216618849603,
+            "predicted_efficiency": 0.7290064482018018,
+            "inferred_flux_hz": 16420012.74872056,
+            "relative_flux_error": 0.0017225661345321441
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19363291.22926152,
+            "observed_efficiency": 0.7126023640107303,
+            "supplied_sigma": 0.003799015821576677,
+            "predicted_efficiency": 0.7063429044276778,
+            "inferred_flux_hz": 19578962.57247456,
+            "relative_flux_error": 0.011138155216460444
+          }
+        ]
+      },
+      {
+        "method": "hard_dead_time_renewal",
+        "common_flux_scale": 1.005,
+        "fitted_eta0": 0.8777285050375271,
+        "test_efficiency_rmse": 0.011442443341153782,
+        "test_flux_relative_rmse": 0.017745216459587508,
+        "test_flux_max_abs_relative_error": 0.020663410809559912,
+        "test_max_abs_residual_over_supplied_sigma": 3.034777902487031,
+        "rows": [
+          {
+            "split": "train",
+            "count_hz": 1675619.985,
+            "reference_flux_hz": 1930648.9191028695,
+            "observed_efficiency": 0.8679050698552817,
+            "supplied_sigma": 0.00930905729746821,
+            "predicted_efficiency": 0.8593871316236069,
+            "inferred_flux_hz": 1950197.3625522787,
+            "relative_flux_error": 0.010125322763753886
+          },
+          {
+            "split": "train",
+            "count_hz": 3382178.535,
+            "reference_flux_hz": 4018020.7458916456,
+            "observed_efficiency": 0.8417523823037044,
+            "supplied_sigma": 0.0042470368482620206,
+            "predicted_efficiency": 0.8404002204324386,
+            "inferred_flux_hz": 4024773.171147738,
+            "relative_flux_error": 0.0016805351896196363
+          },
+          {
+            "split": "train",
+            "count_hz": 5161720.405,
+            "reference_flux_hz": 6319099.437668303,
+            "observed_efficiency": 0.8168443076288469,
+            "supplied_sigma": 0.009910357841968498,
+            "predicted_efficiency": 0.8204185138083042,
+            "inferred_flux_hz": 6289655.767633911,
+            "relative_flux_error": -0.004659472496805095
+          },
+          {
+            "split": "train",
+            "count_hz": 6856630.745,
+            "reference_flux_hz": 8660526.361393662,
+            "observed_efficiency": 0.7917106257611602,
+            "supplied_sigma": 0.007696494963364777,
+            "predicted_efficiency": 0.8010387237092007,
+            "inferred_flux_hz": 8550142.227479335,
+            "relative_flux_error": -0.012745661095887928
+          },
+          {
+            "split": "test",
+            "count_hz": 8496556.39,
+            "reference_flux_hz": 11010286.927309684,
+            "observed_efficiency": 0.7716925495306867,
+            "supplied_sigma": 0.005165996875904806,
+            "predicted_efficiency": 0.7824891078284623,
+            "inferred_flux_hz": 10840165.56802184,
+            "relative_flux_error": -0.015451128604639708
+          },
+          {
+            "split": "test",
+            "count_hz": 10179870.615,
+            "reference_flux_hz": 13535054.010588046,
+            "observed_efficiency": 0.7521115620991692,
+            "supplied_sigma": 0.0037500613970073834,
+            "predicted_efficiency": 0.7634921655597768,
+            "inferred_flux_hz": 13303629.797786761,
+            "relative_flux_error": -0.017098137371321154
+          },
+          {
+            "split": "test",
+            "count_hz": 11966646.72,
+            "reference_flux_hz": 16391776.829069996,
+            "observed_efficiency": 0.7300396317486308,
+            "supplied_sigma": 0.004813216618849603,
+            "predicted_efficiency": 0.7430800605376783,
+            "inferred_flux_hz": 16053066.810552297,
+            "relative_flux_error": -0.020663410809559912
+          },
+          {
+            "split": "test",
+            "count_hz": 13798327.105,
+            "reference_flux_hz": 19363291.22926152,
+            "observed_efficiency": 0.7126023640107303,
+            "supplied_sigma": 0.003799015821576677,
+            "predicted_efficiency": 0.7229745117755367,
+            "inferred_flux_hz": 19027065.864008553,
+            "relative_flux_error": -0.017364060751452692
+          }
+        ]
+      }
+    ],
+    "warning": "Retrospective descriptive predictions, not confidence or independent physical validation."
+  },
+  "practical_goal_complete": false
+}

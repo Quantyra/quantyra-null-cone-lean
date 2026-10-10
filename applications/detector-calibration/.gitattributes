@@ -1,2 +1,5 @@
 # Preserve third-party source bytes so published checksums survive checkout.
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
 vendor/18662495/* -text

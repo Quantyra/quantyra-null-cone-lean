@@ -1,0 +1,5 @@
+{
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\dfred\\Desktop\\Projects\\IGH\\quantyra-null-cone-lean\\applications\\marked-volume\\benchmark.py\", line 267, in main\n    assert data == (ROOT/name).read_bytes().replace(b\"\\r\\n\", b\"\\n\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_seconds": 135.06654340000387
+}

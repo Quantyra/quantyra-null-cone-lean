@@ -1,0 +1,12 @@
+{
+  "failed_execution_commit": "232ff80d2bbc71b72214d8d243337f2673e5ead5",
+  "stage": "source custody before calibration or sampling",
+  "cause": "Checker normalized only the worktree side of an artifact whose committed bytes already have CRLF. Original bytes agree exactly.",
+  "calibration_bank": "evidence/marked-volume/pilot-1/interval-tables.json",
+  "sha256": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+  "bytes": 87851,
+  "crlf_pairs": 5426,
+  "original_bytes_preserved": true,
+  "samples_generated": 0,
+  "repair": "Compare exact bytes for committed/current sources; no scientific protocol, method, seed or threshold change."
+}

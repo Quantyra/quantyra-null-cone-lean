@@ -264,7 +264,7 @@ def main():
         binding = {}
         for name in sources:
             data = git("show", "HEAD:"+name)
-            assert data == (ROOT/name).read_bytes().replace(b"\r\n", b"\n")
+            assert data == (ROOT/name).read_bytes(), name
             binding[name] = sha(data)
         save(out, "freeze.json", {"commit": head, "utc": datetime.now(timezone.utc).isoformat(),
              "python": platform.python_version(), "numpy": np.__version__, "sources": binding,

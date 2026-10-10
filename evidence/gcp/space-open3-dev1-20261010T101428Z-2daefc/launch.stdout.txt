@@ -1,0 +1,36 @@
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:238:0: 'QuantyraNullCone.FutureCurve3.adjust_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:239:0: 'QuantyraNullCone.FutureCurve3.adjust_finish' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:240:0: 'QuantyraNullCone.FutureCurve3.adjust_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:241:0: 'QuantyraNullCone.FutureCurve3.adjust_future' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:242:0: 'QuantyraNullCone.FutureCurve3.adjust_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:243:0: 'QuantyraNullCone.FutureCurve3.adjust_speed_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:244:0: 'QuantyraNullCone.endpoint_residual_norm3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:245:0: 'QuantyraNullCone.FutureCurve3.adjust_point_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurvePerturbation.lean:246:0: 'QuantyraNullCone.FutureCurve3.adjust_weightedLength_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2951/2952] Built QuantyraNullCone.LorentzCurveMap (4.2s)
+info: QuantyraNullCone/LorentzCurveMap.lean:142:0: 'QuantyraNullCone.ac_comp_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:143:0: 'QuantyraNullCone.lorentz_norm_le_sum_abs3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:144:0: 'QuantyraNullCone.FutureCurve3.point_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:145:0: 'QuantyraNullCone.FutureCurve3.point_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:146:0: 'QuantyraNullCone.FutureCurve3.map_coord_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:147:0: 'QuantyraNullCone.FutureCurve3.map_coord_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:148:0: 'QuantyraNullCone.FutureCurve3.map_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:149:0: 'QuantyraNullCone.FutureCurve3.map_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:150:0: 'QuantyraNullCone.FutureCurve3.map_weightedLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:151:0: 'QuantyraNullCone.weighted_time_le_of_causal_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2952/2952] Built QuantyraNullCone.LorentzInteriorCurveMap (3.5s)
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:145:0: 'QuantyraNullCone.convex_causalDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:146:0: 'QuantyraNullCone.FutureCurve3.point_mem_causalDiamond' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:147:0: 'QuantyraNullCone.FutureCurve3.point_mem_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:148:0: 'QuantyraNullCone.IsInteriorCausalMap3.lipschitz_causalDiamond' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:149:0: 'QuantyraNullCone.FutureCurve3.mapInterior_coord_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:150:0: 'QuantyraNullCone.FutureCurve3.mapInterior_coord_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:151:0: 'QuantyraNullCone.FutureCurve3.mapInterior_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:152:0: 'QuantyraNullCone.FutureCurve3.mapInterior_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:153:0: 'QuantyraNullCone.FutureCurve3.mapInterior_weightedLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:154:0: 'QuantyraNullCone.weighted_time_le_of_interior_causal_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorCurveMap.lean:155:0: 'QuantyraNullCone.density_metric_speed_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2952 jobs).
+REMOTE_TERMINAL_EXIT=0

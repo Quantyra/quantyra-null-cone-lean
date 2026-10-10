@@ -1,0 +1,6 @@
+{"run": "space-density3-dev1-20261010T093644Z-5882c8", "verified_files": 231, "removed_source_bytes": 1485123, "archive_sha256": "31243964a06dbdfbea3000e1c269c68db7e27a08b4071ae7678da5f10f0a7517"}
+{"run": "space-density3-dev2-20261010T094540Z-a2a222", "verified_files": 234, "removed_source_bytes": 1498768, "archive_sha256": "fd9d1eaa4a72a6a76b55500f8e605454152721c70392e61ffdcd836c0caba282"}
+{"run": "space-density3-dev3-20261010T095034Z-f4fcdf", "verified_files": 234, "removed_source_bytes": 1499169, "archive_sha256": "34fbde18f57d4cec2ba7898b765bb6b24cb3edb5750ab81d2913f8acc240dac2"}
+{"run": "space-density3-dev4-20261010T095808Z-10e2f9", "verified_files": 234, "removed_source_bytes": 1499245, "archive_sha256": "af601e613031592a09e952b9a0d708bb8579bd9da9e9901e317b3147bcb6d394"}
+Preserved all immutable archives, manifests, logs, receipts, shared dependencies and caches; removed only verified redundant extracted development source files.
+Disk: usage(total=206900281344, used=206329733120, free=553771008)

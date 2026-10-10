@@ -1,0 +1,59 @@
+error: QuantyraNullCone/LorentzInteriorMeasure.lean:91:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ENNReal.ofReal |?m.221| * ENNReal.ofReal ?m.215
+in the target expression
+  (fun x => ENNReal.ofReal (rho x)) p = (fun x => ENNReal.ofReal |(DF x).det| * ENNReal.ofReal (sigma (F x))) p
+
+case h
+rho sigma : LorentzPoint3 → ℝ
+F : LorentzPoint3 → LorentzPoint3
+DF : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+hf : Measurable F
+hd : ∀ p ∈ lorentzDiamond3, HasFDerivAt F (DF p) p
+hb : BijOn F lorentzDiamond3 lorentzDiamond3
+hj : ∀ p ∈ lorentzDiamond3, sigma (F p) * |(DF p).det| = rho p
+t : Set LorentzPoint3
+ht : MeasurableSet t
+hset : MeasurableSet (F ⁻¹' t ∩ lorentzDiamond3)
+he :
+  ∫⁻ (x : LorentzPoint3) in t ∩ lorentzDiamond3, ENNReal.ofReal (sigma x) =
+    ∫⁻ (x : LorentzPoint3) in F ⁻¹' t ∩ lorentzDiamond3, ENNReal.ofReal |(DF x).det| * ENNReal.ofReal (sigma (F x))
+--
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzInteriorMeasure
+in the target expression
+  (fun x => ENNReal.ofReal (rho x)) p = (fun x => ENNReal.ofReal |(DF x).det| * ENNReal.ofReal (sigma (F x))) p
+
+case h
+rho sigma : LorentzPoint3 → ℝ
+F : LorentzPoint3 → LorentzPoint3
+DF : LorentzPoint3 → LorentzPoint3 →L[ℝ] LorentzPoint3
+hf : Measurable F
+hd : ∀ p ∈ lorentzDiamond3, HasFDerivAt F (DF p) p
+hb : BijOn F lorentzDiamond3 lorentzDiamond3
+hj : ∀ p ∈ lorentzDiamond3, sigma (F p) * |(DF p).det| = rho p
+t : Set LorentzPoint3
+ht : MeasurableSet t
+hset : MeasurableSet (F ⁻¹' t ∩ lorentzDiamond3)
+he :
+  ∫⁻ (x : LorentzPoint3) in t ∩ lorentzDiamond3, ENNReal.ofReal (sigma x) =
+    ∫⁻ (x : LorentzPoint3) in F ⁻¹' t ∩ lorentzDiamond3, ENNReal.ofReal |(DF x).det| * ENNReal.ofReal (sigma (F x))
+p : LorentzPoint3
+hp : p ∈ F ⁻¹' t ∩ lorentzDiamond3
+⊢ (fun x => ENNReal.ofReal (rho x)) p = (fun x => ENNReal.ofReal |(DF x).det| * ENNReal.ofReal (sigma (F x))) p
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:108:0: 'QuantyraNullCone.openLorentzCompletion3_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:109:0: 'QuantyraNullCone.measurable_openLorentzCompletion3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:110:0: 'QuantyraNullCone.openLorentzCompletion3_maps_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:111:0: 'QuantyraNullCone.hasFDerivAt_openLorentzCompletion3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:112:0: 'QuantyraNullCone.openLorentzCompletion3_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:113:0: 'QuantyraNullCone.density_measure3_ae_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:114:0: 'QuantyraNullCone.closed_density3_ae_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:115:0: 'QuantyraNullCone.density_transport_of_jacobian3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:116:0: 'QuantyraNullCone.InteriorDensityIsometry3.density_transport' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzInteriorMeasure
+REMOTE_TERMINAL_EXIT=1

@@ -1,0 +1,115 @@
+error: QuantyraNullCone/LorentzMetricJacobian.lean:11:59: unsolved goals
+⊢ ∏ i, ![-1, 1, 1] i = -1
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b ^ 2 * (-(M 0 0 * M 0 0) + M 1 0 * M 1 0 + M 2 0 * M 2 0) = -a ^ 2
+but is expected to have type
+  b ^ 2 * (-(M 0 0 * M 0 0) + (M 1 0 * M 1 0 + M 2 0 * M 2 0)) = -a ^ 2
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 0 * M 0 1) + M 1 0 * M 1 1 + M 2 0 * M 2 1 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 0 * M 0 1) + (M 1 0 * M 1 1 + M 2 0 * M 2 1) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 0 * M 0 2) + M 1 0 * M 1 2 + M 2 0 * M 2 2 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 0 * M 0 2) + (M 1 0 * M 1 2 + M 2 0 * M 2 2) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 1 * M 0 0) + M 1 1 * M 1 0 + M 2 1 * M 2 0 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 1 * M 0 0) + (M 1 1 * M 1 0 + M 2 1 * M 2 0) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b ^ 2 * (-(M 0 1 * M 0 1) + M 1 1 * M 1 1 + M 2 1 * M 2 1) = a ^ 2
+but is expected to have type
+  b ^ 2 * (-(M 0 1 * M 0 1) + (M 1 1 * M 1 1 + M 2 1 * M 2 1)) = a ^ 2
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 1 * M 0 2) + M 1 1 * M 1 2 + M 2 1 * M 2 2 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 1 * M 0 2) + (M 1 1 * M 1 2 + M 2 1 * M 2 2) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 2 * M 0 0) + M 1 2 * M 1 0 + M 2 2 * M 2 0 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 2 * M 0 0) + (M 1 2 * M 1 0 + M 2 2 * M 2 0) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b = 0 ∨ -(M 0 2 * M 0 1) + M 1 2 * M 1 1 + M 2 2 * M 2 1 = 0
+but is expected to have type
+  b = 0 ∨ -(M 0 2 * M 0 1) + (M 1 2 * M 1 1 + M 2 2 * M 2 1) = 0
+error: QuantyraNullCone/LorentzMetricJacobian.lean:30:6: Type mismatch: After simplification, term
+  he
+ has type
+  b ^ 2 * (-(M 0 2 * M 0 2) + M 1 2 * M 1 2 + M 2 2 * M 2 2) = a ^ 2
+but is expected to have type
+  b ^ 2 * (-(M 0 2 * M 0 2) + (M 1 2 * M 1 2 + M 2 2 * M 2 2)) = a ^ 2
+error: QuantyraNullCone/LorentzMetricJacobian.lean:36:4: No goals to be solved
+info: QuantyraNullCone/LorentzMetricJacobian.lean:56:0: 'QuantyraNullCone.lorentz_gram_det3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMetricJacobian.lean:57:0: 'QuantyraNullCone.lorentz_metric_linear_det3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzMetricJacobian.lean:58:0: 'QuantyraNullCone.density_metric_jacobian3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [3001/3016] Built QuantyraNullCone.LorentzFlowCone (5.6s)
+info: QuantyraNullCone/LorentzFlowCone.lean:118:0: 'QuantyraNullCone.lorentz_flow_derivative_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:119:0: 'QuantyraNullCone.lorentz_flow_derivative_square3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:120:0: 'QuantyraNullCone.continuousOn_flow_derivative_time_parameter3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:121:0: 'QuantyraNullCone.lorentz_flow_derivative_timelike3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:122:0: 'QuantyraNullCone.lorentz_flow_derivative_future3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:123:0: 'QuantyraNullCone.lorentz_flow_flat_proper_speed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3002/3016] Built QuantyraNullCone.LorentzEndpointBounds (4.3s)
+info: QuantyraNullCone/LorentzEndpointBounds.lean:144:0: 'QuantyraNullCone.time_margin_pos_iff3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:145:0: 'QuantyraNullCone.abs_time_le_norm3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:146:0: 'QuantyraNullCone.spatial_radius_le_norm3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:147:0: 'QuantyraNullCone.spatial_radius_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:148:0: 'QuantyraNullCone.time_margin_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:149:0: 'QuantyraNullCone.endpoint_increment_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:150:0: 'QuantyraNullCone.endpoint_residual_future3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzEndpointBounds.lean:151:0: 'QuantyraNullCone.weighted_time_le_two_hi3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:135:0: 'QuantyraNullCone.quotientSampledOrder3_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:136:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:137:0: 'QuantyraNullCone.InDensityClass3.quotientUnlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:138:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_isProbabilityMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzQuotientLaws.lean:139:0: 'QuantyraNullCone.InDensityClass3.quotientOrderLaw_weight_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3011/3016] Built QuantyraNullCone.LorentzDistortion (3.9s)
+info: QuantyraNullCone/LorentzDistortion.lean:68:0: 'QuantyraNullCone.geometricDistortion3_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:69:0: 'QuantyraNullCone.geometricDistortion3_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:70:0: 'QuantyraNullCone.geometricDistortion3_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:71:0: 'QuantyraNullCone.geometricDistortion3_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:72:0: 'QuantyraNullCone.geometricDistortion3_le_of_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzDistortion.lean:73:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3012/3016] Built QuantyraNullCone.LorentzDistortionZero (2.6s)
+info: QuantyraNullCone/LorentzDistortionZero.lean:22:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3013/3016] Built QuantyraNullCone.LorentzDistortionIsomorphy (2.7s)
+info: QuantyraNullCone/LorentzDistortionIsomorphy.lean:25:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3014/3016] Built QuantyraNullCone.LorentzGaugeDistortion (31s)
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:103:0: 'QuantyraNullCone.measurable_closedLorentzMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:104:0: 'QuantyraNullCone.closed_density_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:105:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:106:0: 'QuantyraNullCone.gauge_geometric_distortion_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:107:0: 'QuantyraNullCone.gauge_geometric_loss_removes_obstruction3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:108:0: 'QuantyraNullCone.gauge_quotient_time_homeomorph3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- QuantyraNullCone.LorentzMetricJacobian
+REMOTE_TERMINAL_EXIT=1

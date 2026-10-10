@@ -1,0 +1,7 @@
+{
+  "run": "space-open3-dev1-20261010T101428Z-2daefc",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzInteriorCurveMap",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

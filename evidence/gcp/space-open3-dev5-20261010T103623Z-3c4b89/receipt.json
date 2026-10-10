@@ -1,0 +1,7 @@
+{
+  "run": "space-open3-dev5-20261010T103623Z-3c4b89",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzInteriorDistortion",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

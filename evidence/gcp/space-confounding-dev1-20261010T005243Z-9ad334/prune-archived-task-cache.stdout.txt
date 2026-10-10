@@ -1,0 +1,3 @@
+Ephemeral task cache already absent; validated and removed only its task link.
+Removed archived task development build cache: /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev1-20261010T005243Z-9ad334/source/.lake/build
+Disk: usage(total=206900281344, used=206110838784, free=772665344)

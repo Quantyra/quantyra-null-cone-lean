@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "run": "space-confounding-acceptance-20261010T012022Z-a9c580",
+  "audited_exports": 743,
+  "new_exports_by_module": {
+    "ConfoundingGeometry": [
+      "QuantyraNullCone.calibration_density_zero",
+      "QuantyraNullCone.calibration_profile_smooth",
+      "QuantyraNullCone.calibration_profile_abs",
+      "QuantyraNullCone.calibration_profile_difference",
+      "QuantyraNullCone.calibration_profile_integral",
+      "QuantyraNullCone.calibration_density_smooth",
+      "QuantyraNullCone.calibration_density_deviation",
+      "QuantyraNullCone.calibration_density_bounds",
+      "QuantyraNullCone.calibration_density_coordinate_lipschitz",
+      "QuantyraNullCone.calibration_density_euclidean_lipschitz",
+      "QuantyraNullCone.calibration_density_transpose",
+      "QuantyraNullCone.calibration_density_marginal",
+      "QuantyraNullCone.calibration_density_in_class"
+    ],
+    "ConfoundingDetector": [
+      "QuantyraNullCone.calibration_detector_continuous",
+      "QuantyraNullCone.calibration_detector_bounds",
+      "QuantyraNullCone.calibration_detector_unit",
+      "QuantyraNullCone.calibration_detector_on_diamond",
+      "QuantyraNullCone.calibration_detector_density"
+    ],
+    "ConfoundingLaw": [
+      "QuantyraNullCone.calibration_detected_submeasure",
+      "QuantyraNullCone.calibration_detector_integrable",
+      "QuantyraNullCone.calibration_acceptance_mass",
+      "QuantyraNullCone.calibration_retained_flat",
+      "QuantyraNullCone.calibration_flat_retained",
+      "QuantyraNullCone.calibration_flat_detected_submeasure",
+      "QuantyraNullCone.calibration_retained_observable_equal",
+      "QuantyraNullCone.calibration_actual_detected_equal",
+      "QuantyraNullCone.calibration_stopped_observable_equal"
+    ],
+    "ConfoundingTargets": [
+      "QuantyraNullCone.calibration_coefficient_separation",
+      "QuantyraNullCone.calibration_quotient_separation",
+      "QuantyraNullCone.calibration_rectangle_integral",
+      "QuantyraNullCone.calibration_marked_volume",
+      "QuantyraNullCone.calibration_flat_marked_volume"
+    ],
+    "MarkedOrder": [
+      "QuantyraNullCone.marked_location_measurable",
+      "QuantyraNullCone.sampled_marked_order_measurable",
+      "QuantyraNullCone.marked_relabel_inverse",
+      "QuantyraNullCone.marked_relabel_comp",
+      "QuantyraNullCone.forget_marked_labels_eq_iff",
+      "QuantyraNullCone.sampled_unlabeled_marked_order_measurable",
+      "QuantyraNullCone.sampled_marked_order_relabel",
+      "QuantyraNullCone.sampled_unlabeled_marked_order_relabel"
+    ],
+    "ConfoundingMarked": [
+      "QuantyraNullCone.calibration_full_marked_law_equal",
+      "QuantyraNullCone.calibration_full_marked_probability",
+      "QuantyraNullCone.calibration_stopped_marked_law_equal",
+      "QuantyraNullCone.identical_law_randomized_obstruction",
+      "QuantyraNullCone.identical_law_randomized_scalar_obstruction",
+      "QuantyraNullCone.calibration_volume_randomized_obstruction"
+    ],
+    "ConfoundingProcess": [
+      "QuantyraNullCone.calibration_pattern_mass_equal",
+      "QuantyraNullCone.calibration_pattern_submeasure_equal",
+      "QuantyraNullCone.calibration_retention_code_law_equal",
+      "QuantyraNullCone.calibration_terminal_mass_equal",
+      "QuantyraNullCone.calibration_stopped_submeasure_equal",
+      "QuantyraNullCone.calibration_finite_count_equal",
+      "QuantyraNullCone.calibration_finite_submeasure_equal",
+      "QuantyraNullCone.calibration_mixed_count_equal",
+      "QuantyraNullCone.calibration_mixed_observable_equal",
+      "QuantyraNullCone.counted_marked_order_measurable",
+      "QuantyraNullCone.calibration_mixed_marked_equal"
+    ],
+    "ConfoundingTime": [
+      "QuantyraNullCone.calibration_diagonal_flat_length",
+      "QuantyraNullCone.calibration_flat_curve_length",
+      "QuantyraNullCone.calibration_flat_time",
+      "QuantyraNullCone.calibration_sqrt_lower",
+      "QuantyraNullCone.calibration_profile_square_integral",
+      "QuantyraNullCone.calibration_diagonal_length_lower",
+      "QuantyraNullCone.calibration_time_separation"
+    ],
+    "ConfoundingTesting": [
+      "QuantyraNullCone.calibration_mixed_scalar_obstruction",
+      "QuantyraNullCone.calibration_mixed_volume_randomized_obstruction",
+      "QuantyraNullCone.calibration_stopped_scalar_obstruction",
+      "QuantyraNullCone.calibration_density_success_disjoint",
+      "QuantyraNullCone.calibration_density_randomized_obstruction",
+      "QuantyraNullCone.calibration_time_randomized_obstruction"
+    ]
+  },
+  "root_build_jobs": 3088,
+  "accepted_source_count": 187,
+  "all_current_and_staged_source_hashes_match": true,
+  "task_owned_vm_cleanup_verified": true,
+  "baseline_preserved_except_allowed_integration": "ffbedef3fc69fc3afec5477b0068abe51a3f6b6c",
+  "allowed_existing_changes": [
+    ".gitattributes",
+    "QuantyraNullCone.lean",
+    "README.md",
+    "checks/Audit.lean"
+  ],
+  "new_local_lean_invocations": 0,
+  "new_samples": 0,
+  "frozen_pilot_sources_preserved": true,
+  "retained_pilot_sha256": {
+    "artifact-audit.json": "1247ad94a213d00f7802f0f80163f07c8a1dce014aba83b66448ab13aef1b601",
+    "cells.json": "008c3e9b560a17bf754189fcdbcaf05a90b581488f822c5f3459ced3281edfbe",
+    "freeze.json": "9007f1d3f18a79df7c831a190cc8a5838b2ff4f098caca7aaa60d476e4600d89",
+    "geometry.json": "dbf90be26af53c3934e544b1fdf2db7bdbc8768621440890346f6d8b083c95bd",
+    "interval-tables.json": "4d5a4402e0bb9df93dba469926c7077c6c26442fc5a16ed0b078da21028fb4a8",
+    "python-tests.json": "aa629af283d8e0a5b6b3ad4526bfb6c0cece1fc4ff8d0249ba9f0babfb7ebb3b",
+    "summary.json": "981974ea7a097aba3b6df15d9ad9be52fcee1881b8687cf333718d35fafaa9e6"
+  },
+  "raw_log_sha256": {
+    "capture-manifest.json": "83c0de1f0a4c4515bbd457ffb3e7ab31c057f8a38be6e0f2371065994eab8486",
+    "receipt.json": "324ef42b3c96b696746291c0e0468d254744766de4a4bd47f21b758d9bad0e42",
+    "cleanup.json": "9a51778b33597f9b7565463ec6ac419c0b4014c98988cc459dfb9d5b91639d76",
+    "input-archive.json": "09999f7c090e35840e7072351836a42dd5a24d6712516b4615760ae2e04bcf15",
+    "run.sh": "c98080349b688adb6a300ac70c438595fc279aa0c8903c56b08725fd78d8d7c3",
+    "logs/build.stdout.txt": "0c109ce672fac762c47fab5fddc31006bc6c96547dfd38a5b617acdca5d21f17",
+    "logs/build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs/audit.stdout.txt": "fb8e01119650d3bb382c023035813a22e567dd52a493c24be72bfef04b94728e",
+    "logs/audit.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "sampling until a prescribed retained count is covered; geometry-dependent stopping is not",
+    "Python/SciPy execution semantics are tested, not Lean compiled",
+    "no field detector or operational application validated"
+  ]
+}

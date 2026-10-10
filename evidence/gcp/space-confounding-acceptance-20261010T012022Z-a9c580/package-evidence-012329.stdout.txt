@@ -1,0 +1,100 @@
+info: QuantyraNullCone/LowerProduct.lean:116:0: 'QuantyraNullCone.normalized_square_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:117:0: 'QuantyraNullCone.lower_product_divergence_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerProduct.lean:118:0: 'QuantyraNullCone.lower_product_divergence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3061/3088] Replayed QuantyraNullCone.LowerDataProcessing
+info: QuantyraNullCone/LowerDataProcessing.lean:89:0: 'QuantyraNullCone.finite_observation_L1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:90:0: 'QuantyraNullCone.integral_abs_le_sqrt_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:91:0: 'QuantyraNullCone.lower_sample_real_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerDataProcessing.lean:92:0: 'QuantyraNullCone.lower_order_TV_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3062/3088] Replayed QuantyraNullCone.LowerBound
+info: QuantyraNullCone/LowerBound.lean:63:0: 'QuantyraNullCone.fourth_root_randomized_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerBound.lean:64:0: 'QuantyraNullCone.fourth_root_lower_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LowerBound.lean:65:0: 'QuantyraNullCone.fourth_root_minimax_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3063/3088] Replayed QuantyraNullCone.LogLowerProfile
+info: QuantyraNullCone/LogLowerProfile.lean:122:0: 'QuantyraNullCone.log_lower_raw_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:123:0: 'QuantyraNullCone.log_lower_profile_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:124:0: 'QuantyraNullCone.log_lower_raw_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:125:0: 'QuantyraNullCone.log_lower_mean_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:126:0: 'QuantyraNullCone.log_lower_mean_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:127:0: 'QuantyraNullCone.log_lower_profile_integral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:128:0: 'QuantyraNullCone.log_lower_profile_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:129:0: 'QuantyraNullCone.log_lower_profile_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:130:0: 'QuantyraNullCone.log_lower_profile_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:131:0: 'QuantyraNullCone.log_lower_gaussian_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:132:0: 'QuantyraNullCone.log_lower_gaussian_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:133:0: 'QuantyraNullCone.log_lower_profile_peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProfile.lean:134:0: 'QuantyraNullCone.log_lower_profile_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3064/3088] Replayed QuantyraNullCone.LogLowerMoments
+info: QuantyraNullCone/LogLowerMoments.lean:63:0: 'QuantyraNullCone.log_lower_raw_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:64:0: 'QuantyraNullCone.log_lower_raw_total_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:65:0: 'QuantyraNullCone.log_lower_gaussian_moment_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:66:0: 'QuantyraNullCone.log_lower_raw_interval_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:67:0: 'QuantyraNullCone.log_lower_profile_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerMoments.lean:68:0: 'QuantyraNullCone.log_lower_profile_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3065/3088] Replayed QuantyraNullCone.LogLowerAlternatives
+info: QuantyraNullCone/LogLowerAlternatives.lean:110:0: 'QuantyraNullCone.log_lower_alternative_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:111:0: 'QuantyraNullCone.log_lower_alternative_deviation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:112:0: 'QuantyraNullCone.log_lower_alternative_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:113:0: 'QuantyraNullCone.log_lower_alternative_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:114:0: 'QuantyraNullCone.log_lower_alternative_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:115:0: 'QuantyraNullCone.log_lower_alternative_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:116:0: 'QuantyraNullCone.log_lower_alternative_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerAlternatives.lean:117:0: 'QuantyraNullCone.log_lower_single_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3066/3088] Replayed QuantyraNullCone.LogLowerPacking
+info: QuantyraNullCone/LogLowerPacking.lean:127:0: 'QuantyraNullCone.log_lower_bandwidth_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:128:0: 'QuantyraNullCone.log_lower_center_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:129:0: 'QuantyraNullCone.log_lower_centers_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:130:0: 'QuantyraNullCone.log_lower_witness_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:131:0: 'QuantyraNullCone.log_lower_other_profile_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:132:0: 'QuantyraNullCone.log_lower_family_in_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:133:0: 'QuantyraNullCone.log_lower_family_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:134:0: 'QuantyraNullCone.log_lower_packing_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerPacking.lean:135:0: 'QuantyraNullCone.log_lower_success_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3067/3088] Replayed QuantyraNullCone.LogLowerTesting
+info: QuantyraNullCone/LogLowerTesting.lean:92:0: 'QuantyraNullCone.disjoint_indicator_sum_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerTesting.lean:93:0: 'QuantyraNullCone.many_event_likelihood_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerTesting.lean:94:0: 'QuantyraNullCone.many_event_failure_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3068/3088] Replayed QuantyraNullCone.LogLowerProduct
+info: QuantyraNullCone/LogLowerProduct.lean:89:0: 'QuantyraNullCone.log_lower_likelihood_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:90:0: 'QuantyraNullCone.log_lower_likelihood_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:91:0: 'QuantyraNullCone.log_lower_alternative_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:92:0: 'QuantyraNullCone.log_lower_likelihood_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:93:0: 'QuantyraNullCone.log_lower_sample_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:94:0: 'QuantyraNullCone.log_lower_product_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:95:0: 'QuantyraNullCone.log_lower_seed_real_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerProduct.lean:96:0: 'QuantyraNullCone.log_lower_seed_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3069/3088] Replayed QuantyraNullCone.LogLowerScale
+info: QuantyraNullCone/LogLowerScale.lean:129:0: 'QuantyraNullCone.log_lower_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:130:0: 'QuantyraNullCone.nonneg_le_exp_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:131:0: 'QuantyraNullCone.log_lower_scale_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:132:0: 'QuantyraNullCone.log_lower_scale_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:133:0: 'QuantyraNullCone.log_lower_scale_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:134:0: 'QuantyraNullCone.log_lower_mesh_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:135:0: 'QuantyraNullCone.log_lower_scale_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:136:0: 'QuantyraNullCone.log_lower_mesh_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:137:0: 'QuantyraNullCone.log_lower_rate_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerScale.lean:138:0: 'QuantyraNullCone.log_lower_target_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3070/3088] Replayed QuantyraNullCone.LogLowerBound
+info: QuantyraNullCone/LogLowerBound.lean:130:0: 'QuantyraNullCone.logarithmic_lower_bound_at_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:131:0: 'QuantyraNullCone.logarithmic_randomized_minimax_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:132:0: 'QuantyraNullCone.logarithmic_uniform_radius_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:133:0: 'QuantyraNullCone.fourth_root_uniform_radius_achievable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LogLowerBound.lean:134:0: 'QuantyraNullCone.logarithmic_minimax_radius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3071/3088] Built QuantyraNullCone.MarkedOrder (3.1s)
+✔ [3072/3088] Built QuantyraNullCone.ThinningGenerating (3.2s)
+✔ [3073/3088] Built QuantyraNullCone.ThinningLaplace (3.5s)
+✔ [3074/3088] Built QuantyraNullCone.ConfoundingGeometry (3.8s)
+✔ [3075/3088] Built QuantyraNullCone.ThinningTermination (3.2s)
+✔ [3076/3088] Built QuantyraNullCone.ConfoundingDetector (3.1s)
+✔ [3077/3088] Built QuantyraNullCone.ConfoundingTargets (3.4s)
+✔ [3078/3088] Built QuantyraNullCone.ThinningStopping (3.7s)
+✔ [3079/3088] Built QuantyraNullCone.ConfoundingTime (4.1s)
+✔ [3080/3088] Built QuantyraNullCone.ThinningTerminalPatterns (2.9s)
+✔ [3081/3088] Built QuantyraNullCone.ThinningStoppedLaw (2.0s)
+✔ [3082/3088] Built QuantyraNullCone.ThinningStoppedCoverage (3.0s)
+✔ [3083/3088] Built QuantyraNullCone.ConfoundingLaw (3.4s)
+✔ [3084/3088] Built QuantyraNullCone.ConfoundingMarked (3.2s)
+✔ [3085/3088] Built QuantyraNullCone.ConfoundingProcess (3.4s)
+✔ [3086/3088] Built QuantyraNullCone.ConfoundingTesting (3.3s)
+✔ [3087/3088] Built QuantyraNullCone (2.0s)
+Build completed successfully (3088 jobs).

@@ -81,3 +81,6 @@ evidence/stopping/** -text -whitespace
 
 evidence/gcp/space-firstretained-*/** -text -whitespace
 evidence/firstretained/** -text -whitespace
+
+evidence/gcp/space-confounding-*/** -text -whitespace
+evidence/confounding/** -text -whitespace

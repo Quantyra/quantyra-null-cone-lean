@@ -1,0 +1,100 @@
+ℹ [2940/2996] Replayed QuantyraNullCone.DKWQuantization
+info: QuantyraNullCone/DKWQuantization.lean:154:0: 'QuantyraNullCone.uniform_ceil_bin_grid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:155:0: 'QuantyraNullCone.uniform_quantized_profile_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWQuantization.lean:156:0: 'QuantyraNullCone.uniform_quantized_CDF' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2941/2996] Replayed QuantyraNullCone.DKWUniformGrid
+info: QuantyraNullCone/DKWUniformGrid.lean:70:0: 'QuantyraNullCone.uniform_grid_bad_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniformGrid.lean:71:0: 'QuantyraNullCone.uniform_grid_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2942/2996] Replayed QuantyraNullCone.DKWUniform
+info: QuantyraNullCone/DKWUniform.lean:169:0: 'QuantyraNullCone.uniform_bad_dyadic_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:170:0: 'QuantyraNullCone.uniform_DKW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DKWUniform.lean:171:0: 'QuantyraNullCone.uniform_DKW_actual_population' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2980/2996] Replayed QuantyraNullCone.ImprovedInverse
+info: QuantyraNullCone/ImprovedInverse.lean:134:0: 'QuantyraNullCone.InDensityClass.logarithmic_populationCDF_orbit_of_orderLawTV' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:135:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ImprovedInverse.lean:136:0: 'QuantyraNullCone.InDensityClass.full_inverse_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [2981/2996] Replayed QuantyraNullCone.ProperTime
+info: QuantyraNullCone/ProperTime.lean:403:0: 'QuantyraNullCone.FutureCurve.integral_derivU' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:404:0: 'QuantyraNullCone.sqrt_coefficient_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:405:0: 'QuantyraNullCone.FutureCurve.integral_weight_cauchy_schwarz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:406:0: 'QuantyraNullCone.FutureCurve.length_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:407:0: 'QuantyraNullCone.InDensityClass.proper_time_conformalDistance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/ProperTime.lean:408:0: 'QuantyraNullCone.InDensityClass.proper_time_logarithmic_unlabeled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [2982/2996] Built QuantyraNullCone.MarkedOrder (3.7s)
+✔ [2983/2996] Built QuantyraNullCone.ThinningGenerating (3.9s)
+✔ [2984/2996] Built QuantyraNullCone.ThinningLaplace (4.1s)
+✔ [2985/2996] Built QuantyraNullCone.ConfoundingGeometry (4.3s)
+✔ [2986/2996] Built QuantyraNullCone.ThinningTermination (3.7s)
+✔ [2987/2996] Built QuantyraNullCone.ConfoundingDetector (3.7s)
+✔ [2988/2996] Built QuantyraNullCone.ConfoundingTargets (3.8s)
+✔ [2989/2996] Built QuantyraNullCone.ThinningStopping (4.6s)
+✔ [2990/2996] Built QuantyraNullCone.ConfoundingTime (5.1s)
+✔ [2991/2996] Built QuantyraNullCone.ThinningTerminalPatterns (3.5s)
+✔ [2992/2996] Built QuantyraNullCone.ThinningStoppedLaw (3.5s)
+✔ [2993/2996] Built QuantyraNullCone.ConfoundingLaw (4.6s)
+✖ [2994/2996] Building QuantyraNullCone.ConfoundingMarked (4.2s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/QuantyraNullCone/ConfoundingMarked.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingMarked.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingMarked.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/.lake/build/ir/QuantyraNullCone/ConfoundingMarked.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev4-20261010T010920Z-87837c/source/.lake/build/ir/QuantyraNullCone/ConfoundingMarked.setup.json --json
+error: QuantyraNullCone/ConfoundingMarked.lean:62:13: don't know how to synthesize implicit argument `g`
+  @measurableSet_le ℝ (Y × Ω) PseudoMetricSpace.toUniformSpace.toTopologicalSpace Real.measurableSpace
+    BorelSpace.opensMeasurable Prod.instMeasurableSpace Real.partialOrder HasSolidNorm.orderClosedTopology
+    instSecondCountableTopologyReal (fun x => |T x - v0|) (fun x => ?m.104)
+    (Measurable.abs (Measurable.sub_const hT v0)) measurable_const
+context:
+Y : Type u_1
+Ω : Type u_2
+inst✝³ : MeasurableSpace Y
+inst✝² : MeasurableSpace Ω
+mu nu : Measure Y
+inst✝¹ : IsProbabilityMeasure mu
+xi : Measure Ω
+inst✝ : IsProbabilityMeasure xi
+hLaw : mu = nu
+T : Y × Ω → ℝ
+hT : Measurable T
+v0 v1 r : ℝ
+hgap : 2 * r < v1 - v0
+⊢ Y × Ω → ℝ
+error: QuantyraNullCone/ConfoundingMarked.lean:62:52: don't know how to synthesize implicit argument `a`
+  @measurable_const ℝ (Y × Ω) Real.measurableSpace Prod.instMeasurableSpace ?m.104
+context:
+Y : Type u_1
+Ω : Type u_2
+inst✝³ : MeasurableSpace Y
+inst✝² : MeasurableSpace Ω
+mu nu : Measure Y
+inst✝¹ : IsProbabilityMeasure mu
+xi : Measure Ω
+inst✝ : IsProbabilityMeasure xi
+hLaw : mu = nu
+T : Y × Ω → ℝ
+hT : Measurable T
+v0 v1 r : ℝ
+hgap : 2 * r < v1 - v0
+⊢ ℝ
+error: QuantyraNullCone/ConfoundingMarked.lean:62:7: failed to infer `have` declaration type
+error: QuantyraNullCone/ConfoundingMarked.lean:61:48: unsolved goals
+Y : Type u_1
+Ω : Type u_2
+inst✝³ : MeasurableSpace Y
+inst✝² : MeasurableSpace Ω
+mu nu : Measure Y
+inst✝¹ : IsProbabilityMeasure mu
+xi : Measure Ω
+inst✝ : IsProbabilityMeasure xi
+hLaw : mu = nu
+T : Y × Ω → ℝ
+hT : Measurable T
+v0 v1 r : ℝ
+hgap : 2 * r < v1 - v0
+⊢ 1 / 2 ≤ max ((mu.prod xi).real {z | r < |T z - v0|}) ((nu.prod xi).real {z | r < |T z - v1|})
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.ConfoundingMarked

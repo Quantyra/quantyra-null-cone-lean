@@ -1,0 +1,100 @@
+error: Lean exited with code 1
+✔ [2981/2991] Built QuantyraNullCone.ThinningGenerating (3.3s)
+✔ [2982/2991] Built QuantyraNullCone.ThinningLaplace (3.5s)
+✔ [2983/2991] Built QuantyraNullCone.ConfoundingGeometry (3.7s)
+✔ [2984/2991] Built QuantyraNullCone.ThinningTermination (3.2s)
+✔ [2985/2991] Built QuantyraNullCone.ConfoundingDetector (3.2s)
+✖ [2986/2991] Building QuantyraNullCone.ConfoundingTargets (3.3s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/QuantyraNullCone/ConfoundingTargets.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingTargets.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingTargets.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/ir/QuantyraNullCone/ConfoundingTargets.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/ir/QuantyraNullCone/ConfoundingTargets.setup.json --json
+error: QuantyraNullCone/ConfoundingTargets.lean:14:31: unsolved goals
+epsilon : ℝ
+he : 0 ≤ epsilon
+heSmall : epsilon ≤ 1 / 2
+hBdd : BddAbove ((fun p => |lowerFlat p - calibrationDensity epsilon p|) '' diamond)
+⊢ (0, 0) ∈ (Set.Icc 0 1).prod (Set.Icc 0 1)
+error: QuantyraNullCone/ConfoundingTargets.lean:67:18: Invalid field `mono_set`: The environment does not contain `And.mono_set`, so it is not possible to project the field `mono_set` from an expression
+  InDensityClass.integrable hK
+of type
+  AEStronglyMeasurable (calibrationDensity epsilon) diamondVolume ∧
+    HasFiniteIntegral (calibrationDensity epsilon) diamondVolume
+error: QuantyraNullCone/ConfoundingTargets.lean:80:2: Type mismatch: After simplification, term
+  h
+ has type
+  (densityMeasure (calibrationDensity 0)).real (markedIntervalSet nullChronology (0, 0) (2⁻¹, 2⁻¹)) = 4⁻¹
+but is expected to have type
+  (densityMeasure lowerFlat).real (markedIntervalSet nullChronology (0, 0) (2⁻¹, 2⁻¹)) = 4⁻¹
+error: Lean exited with code 1
+✔ [2987/2991] Built QuantyraNullCone.ThinningStopping (3.6s)
+✔ [2988/2991] Built QuantyraNullCone.ThinningTerminalPatterns (3.0s)
+✔ [2989/2991] Built QuantyraNullCone.ThinningStoppedLaw (2.0s)
+✖ [2990/2991] Building QuantyraNullCone.ConfoundingLaw (33s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/QuantyraNullCone/ConfoundingLaw.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingLaw.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/lib/lean/QuantyraNullCone/ConfoundingLaw.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/ir/QuantyraNullCone/ConfoundingLaw.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-confounding-dev2-20261010T010024Z-135bdb/source/.lake/build/ir/QuantyraNullCone/ConfoundingLaw.setup.json --json
+error: QuantyraNullCone/ConfoundingLaw.lean:40:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Measure.withDensity ?m.42 ?m.43) Set.univ
+in the target expression
+  (fun mu => mu Set.univ)
+      ((densityMeasure (calibrationDensity epsilon)).withDensity fun x =>
+        ENNReal.ofReal (calibrationDetector epsilon x)) =
+    (fun mu => mu Set.univ) (ENNReal.ofReal (1 - epsilon) • diamondVolume)
+
+epsilon : ℝ
+he : 0 ≤ epsilon
+heSmall : epsilon ≤ 1 / 2
+h :
+  (fun mu => mu Set.univ)
+      ((densityMeasure (calibrationDensity epsilon)).withDensity fun x =>
+        ENNReal.ofReal (calibrationDetector epsilon x)) =
+    (fun mu => mu Set.univ) (ENNReal.ofReal (1 - epsilon) • diamondVolume)
+⊢ ∫ (x : DiamondPoint), calibrationDetector epsilon x ∂densityMeasure (calibrationDensity epsilon) = 1 - epsilon
+error: QuantyraNullCone/ConfoundingLaw.lean:56:2: Tactic `apply` failed: could not unify the conclusion of `@withDensity_congr_ae`
+  Measure.withDensity ?μ ?f = Measure.withDensity ?μ ?g
+with the goal
+  (diamondVolume.withDensity 1).withDensity
+      ((fun x => ENNReal.ofReal (calibrationDensity epsilon x)) * fun x =>
+        ENNReal.ofReal (calibrationDetector epsilon x / (1 - epsilon))) =
+    diamondVolume.withDensity 1
+
+Note: The full type of `@withDensity_congr_ae` is
+  ∀ {α : Type ?u.1519.928} {m0 : MeasurableSpace α} {μ : Measure α} {f g : α → ENNReal},
+    f =ᶠ[ae μ] g → μ.withDensity f = μ.withDensity g
+
+epsilon : ℝ
+he : 0 ≤ epsilon
+heSmall : epsilon ≤ 1 / 2
+⊢ (diamondVolume.withDensity 1).withDensity
+      ((fun x => ENNReal.ofReal (calibrationDensity epsilon x)) * fun x =>
+        ENNReal.ofReal (calibrationDetector epsilon x / (1 - epsilon))) =
+    diamondVolume.withDensity 1
+warning: QuantyraNullCone/ConfoundingLaw.lean:74:29: `MeasureTheory.measureReal_univ_eq_one` has been deprecated: Use `MeasureTheory.probReal_univ` instead
+error: QuantyraNullCone/ConfoundingLaw.lean:119:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  Measure.map (F ∘ stoppedRetainedView (fun x => 1 - epsilon) fallback n)
+    (generatedStreamLaw (densityMeasure lowerFlat))
+in the target expression
+  Measure.map (fun sample => F (stoppedRetainedView (fun x => 1 - epsilon) fallback n sample))
+      (generatedStreamLaw (densityMeasure lowerFlat)) =
+    Measure.map (fun sample => F (stoppedRetainedView (calibrationDetector epsilon) fallback n sample))
+      (generatedStreamLaw (densityMeasure (calibrationDensity epsilon)))
+
+epsilon : ℝ
+he : 0 ≤ epsilon
+heSmall : epsilon ≤ 1 / 2
+n : ℕ
+fallback : DiamondPoint
+Y : Type u_1
+inst✝ : MeasurableSpace Y
+F : (Fin n → DiamondPoint) → Y
+hF : Measurable F
+this✝ : IsProbabilityMeasure (densityMeasure lowerFlat) := InDensityClass.isProbabilityMeasure lower_flat_in_class
+this : IsProbabilityMeasure (densityMeasure (calibrationDensity epsilon)) :=
+  InDensityClass.isProbabilityMeasure (calibration_density_in_class he heSmall)
+hc : 0 < 1 - epsilon
+hZ : 0 < ∫ (x : DiamondPoint), 1 - epsilon ∂densityMeasure lowerFlat
+⊢ Measure.map (fun sample => F (stoppedRetainedView (fun x => 1 - epsilon) fallback n sample))
+      (generatedStreamLaw (densityMeasure lowerFlat)) =
+    Measure.map (fun sample => F (stoppedRetainedView (calibrationDetector epsilon) fallback n sample))
+      (generatedStreamLaw (densityMeasure (calibrationDensity epsilon)))
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.MarkedOrder
+- QuantyraNullCone.ConfoundingTargets
+- QuantyraNullCone.ConfoundingLaw

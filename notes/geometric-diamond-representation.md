@@ -1,6 +1,6 @@
 # The diamond boundary and qualitative conditioning
 
-S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md), [chronological boundary/compact-diamond component](geometric-boundary-certification.md) [actual weighted-curve/time-profile component](geometric-proper-time-certification.md) and [AC concatenation/reverse-triangle component](geometric-concatenation-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
+S042, 2026-10-09 (Hawaii). **The full weighted geometric representation remains ordinary work.** The separate [finite labeling component](geometric-label-certification.md), [chronological boundary/compact-diamond component](geometric-boundary-certification.md), [actual weighted-curve/time-profile component](geometric-proper-time-certification.md), [AC concatenation/reverse-triangle component](geometric-concatenation-certification.md) and [joint endpoint-continuity component](geometric-endpoint-continuity-certification.md) have GCP acceptance. Retain the original genuine 2+1 class and its accepted conformal-flow obstruction. The arguments below identify the boundary quotient, a forward continuity bound, and a qualitative compactness route. An explicit useful inverse modulus on the full class remains missing. A [restricted-family ordinary pair calculation](geometric-pair-conditioning.md) supplies a candidate finite route with its own open proof obligations. S042 is incomplete and S043 remains gated.
 
 ## Model and dependencies
 
@@ -30,7 +30,7 @@ For lower semicontinuity only positive tau matters. Its endpoint chord is timeli
 
 ### Direct AC endpoint perturbation route (ordinary)
 
-For formalization, a direct perturbation of the existing AC curves provides a shorter alternative to the compactness/reparametrization argument above. This alternative is an ordinary derivation; endpoint continuity is not yet a Lean-certified conclusion.
+For formalization, a direct perturbation of the existing AC curves provides a shorter alternative to the compactness/reparametrization argument above. This direct route now has [exact-source GCP acceptance](geometric-endpoint-continuity-certification.md) for the actual AC supremum, including joint and uniform continuity on the closed diamond. The derivation below explains the certified construction.
 
 Take a timelike increment `A=q-p`, write `T=A_t` and `alpha=T-|A_x|>0`, and perturb the endpoints to `p',q'` in C with increment `B`. Put `delta=B-A`, `eta=(|delta_t|+|delta_x|)/alpha`, and `k=1-eta`. For sufficiently close endpoints, `0<=eta<1`. The residual `e=B-k*A=delta+eta*A` is future causal because
 
@@ -62,7 +62,7 @@ At all other pairs, the flat time separation is zero and is continuous on all en
 
     tau0(p,q)=sqrt(max(T-|A_x|,0)*max(T+|A_x|,0)).
 
-The already accepted inequality `0<=tau_w<=hi*tau0` proves continuity there. Thus the direct route covers every pair in `C^2`, with no maximizing-curve or reparametrization-equivalence assumption. The next formal obligations are subinterval causal monotonicity, future-cone speed superadditivity, the explicit AC perturbation and its uniform length comparison, followed by the continuity argument. The earlier compactness route is retained above as an alternative ordinary proof.
+The already accepted inequality `0<=tau_w<=hi*tau0` proves continuity there. Thus the direct route covers every pair in `C^2`, with no maximizing-curve or reparametrization-equivalence assumption. The subinterval causal monotonicity, future-cone speed superadditivity, explicit AC perturbation, uniform length comparison and joint endpoint continuity are now certified. The earlier compactness route is retained above as an alternative ordinary proof.
 
 ## The exact boundary quotient
 
@@ -80,7 +80,7 @@ It allows free passage through W. Triangle inequalities follow by splitting path
 
 D is intrinsically the subset of X having both nonempty positive past and positive future. The remaining lateral boundary is retained; only W is identified.
 
-The exact chronological profile classification, explicit interior-neighbor criteria, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The [actual weighted-curve supremum](geometric-proper-time-certification.md) now has GCP acceptance for integrability, sharp flat length and straight-segment attainment, two-sided weighted comparison, strict positivity/chronology equivalence and the exact numerical profile classes against all closed-diamond points. Its integrand equals the existing density metric proper speed. The [concatenation component](geometric-concatenation-certification.md) now certifies closure of the same AC class, exact length addition and the causal reverse triangle inequality. Endpoint continuity and the quotient topology/measure properties remain ordinary arguments here.
+The exact chronological profile classification, explicit interior-neighbor criteria, lack of all closed-diamond chronological neighbors at W, and compactness of the actual causal diamonds are now [GCP certified](geometric-boundary-certification.md). The [actual weighted-curve supremum](geometric-proper-time-certification.md) now has GCP acceptance for integrability, sharp flat length and straight-segment attainment, two-sided weighted comparison, strict positivity/chronology equivalence and the exact numerical profile classes against all closed-diamond points. Its integrand equals the existing density metric proper speed. The [concatenation component](geometric-concatenation-certification.md) now certifies closure of the same AC class, exact length addition and the causal reverse triangle inequality. The [continuity component](geometric-endpoint-continuity-certification.md) now certifies joint and uniform endpoint continuity, including the boundary. The quotient topology/measure properties remain ordinary arguments here.
 
 ## Gauge and the geometric loss
 
@@ -134,4 +134,4 @@ This avoids assuming smooth limits, but supplies **no explicit N(epsilon), gamma
 
 A possible single-observation frequency route must also handle dependence. Uniform random labeling of a canonical representative, using an explicit independent seed, has exactly the original iid labeled order law by finite exchangeability. Disjoint k-point blocks then have iid law_k distributions, permitting coordinatewise Bernoulli bounds and a finite union bound for empirical frequencies. A deterministic data-dependent partition of a canonical order cannot simply be called iid. This is a randomized route, not a certified frequency theorem or implemented estimator.
 
-Remaining to-do list: audit these ordinary geometric arguments and external proof dependencies; certify representation, gauge and continuity endpoints on GCP; audit/certify the restricted finite route or obtain a rigorous scoped obstruction; resolve S043's gate. The finite labeling bridge is accepted, but the random-label/disjoint-block observation construction is separate. No new publication or physical application is claimed complete.
+Remaining to-do list: audit these ordinary geometric arguments and external proof dependencies; certify quotient/support, gauge and loss endpoints on GCP; audit/certify the restricted finite route or obtain a rigorous scoped obstruction; resolve S043's gate. The finite labeling bridge is accepted, but the random-label/disjoint-block observation construction is separate. No new publication or physical application is claimed complete.

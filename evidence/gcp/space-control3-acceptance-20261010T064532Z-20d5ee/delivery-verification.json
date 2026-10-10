@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_commit": "98725c9da11762007c97384990de7f5f4b8a3c44",
+  "captured_files": 209,
+  "lean_inputs": 175,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "48d540481c57973bd80e99f23d44ff99900d269d75bbbb08bc0363005587a8e4",
+  "module_sha256": {
+    "QuantyraNullCone/LorentzCurveControl.lean": "e1fc37487caae6df2ec4ff19e13fd02338b9e74c241276a53093c5b4b1d8d917",
+    "QuantyraNullCone/LorentzCurvePerturbation.lean": "a9f17d0000c04e3b7c9f41d110d45710544251e8bc12f39cd16cf59a35bcbee4",
+    "QuantyraNullCone/LorentzEndpointBounds.lean": "760c87f224120276a7141f192c08d071eff48dd5f9bd7df54708029c8b28e5df",
+    "QuantyraNullCone/LorentzTimeContinuity.lean": "901ddb29beb455f5457faf5656cb2cd16e57d774929ca259a86db7a09d806c55"
+  },
+  "audited_named_exports": 967,
+  "new_endpoint_continuity_exports": 48,
+  "root_build_jobs": 3108,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_919_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "verified_utc": "2026-10-10T06:47:56.870404+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "run": "space-density3-dev4-20261010T095808Z-10e2f9",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzDensityForward",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

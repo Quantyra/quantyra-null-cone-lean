@@ -2638,3 +2638,51 @@ example {rho : QuantyraNullCone.DiamondPoint → ℝ}
 #print axioms QuantyraNullCone.gauge_geometric_loss_removes_obstruction3
 #check QuantyraNullCone.gauge_quotient_time_homeomorph3
 #print axioms QuantyraNullCone.gauge_quotient_time_homeomorph3
+#check QuantyraNullCone.common_residual_mass_eq
+#print axioms QuantyraNullCone.common_residual_mass_eq
+#check QuantyraNullCone.common_residual_left
+#print axioms QuantyraNullCone.common_residual_left
+#check QuantyraNullCone.common_residual_right
+#print axioms QuantyraNullCone.common_residual_right
+#check QuantyraNullCone.isTimeCoupling_common
+#print axioms QuantyraNullCone.isTimeCoupling_common
+#check QuantyraNullCone.common_residual_univ
+#print axioms QuantyraNullCone.common_residual_univ
+#check QuantyraNullCone.common_residual_isFiniteMeasure
+#print axioms QuantyraNullCone.common_residual_isFiniteMeasure
+#check QuantyraNullCone.IsTimeCoupling.map
+#print axioms QuantyraNullCone.IsTimeCoupling.map
+#check QuantyraNullCone.common_diagonal_bad_zero
+#print axioms QuantyraNullCone.common_diagonal_bad_zero
+#check QuantyraNullCone.common_coupling_bad_bound
+#print axioms QuantyraNullCone.common_coupling_bad_bound
+#check QuantyraNullCone.timeDistortionLoss_le_of_common
+#print axioms QuantyraNullCone.timeDistortionLoss_le_of_common
+#check QuantyraNullCone.lorentz_volume_rational_bounds3
+#print axioms QuantyraNullCone.lorentz_volume_rational_bounds3
+#check QuantyraNullCone.density_time_weight_cube3
+#print axioms QuantyraNullCone.density_time_weight_cube3
+#check QuantyraNullCone.density_time_weight_lower_rational3
+#print axioms QuantyraNullCone.density_time_weight_lower_rational3
+#check QuantyraNullCone.density_time_weight_difference3
+#print axioms QuantyraNullCone.density_time_weight_difference3
+#check QuantyraNullCone.density_time_separation_difference3
+#print axioms QuantyraNullCone.density_time_separation_difference3
+#check QuantyraNullCone.common_density_le_left3
+#print axioms QuantyraNullCone.common_density_le_left3
+#check QuantyraNullCone.common_density_le_right3
+#print axioms QuantyraNullCone.common_density_le_right3
+#check QuantyraNullCone.closed_density_univ3
+#print axioms QuantyraNullCone.closed_density_univ3
+#check QuantyraNullCone.common_density_integral_lower3
+#print axioms QuantyraNullCone.common_density_integral_lower3
+#check QuantyraNullCone.common_density_mass3
+#print axioms QuantyraNullCone.common_density_mass3
+#check QuantyraNullCone.common_density_missing_mass3
+#print axioms QuantyraNullCone.common_density_missing_mass3
+#check QuantyraNullCone.geometricDistortion3_le_of_density_close
+#print axioms QuantyraNullCone.geometricDistortion3_le_of_density_close
+#check QuantyraNullCone.geometricDistortion3_same_density_on_closed
+#print axioms QuantyraNullCone.geometricDistortion3_same_density_on_closed
+#check QuantyraNullCone.geometricDistortion3_density_perturbation
+#print axioms QuantyraNullCone.geometricDistortion3_density_perturbation

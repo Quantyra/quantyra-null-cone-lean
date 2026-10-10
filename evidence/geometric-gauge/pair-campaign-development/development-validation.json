@@ -1,0 +1,161 @@
+{
+  "verifier_sha256": "ab434c3bd9b9d5aa2a94f9ee77e374d1fff3a1667e5a76de56e363b40d05b718",
+  "status": "PASS_TARGETED_GCP_DEVELOPMENT",
+  "run": "space-pair3-dev6-20261010T114526Z-23f3f2",
+  "campaign": "pair3-20261010T111516Z-a06b82",
+  "target": "QuantyraNullCone.LorentzTimeGeometry",
+  "archive_sha256": "e82aaac2c8db24d77b2391ac1e53433cea27716d85279195c8ffbbbe3219ce35",
+  "captured_source_files": 243,
+  "captured_lean_files": 209,
+  "new_modules": [
+    "LorentzTimeMoments",
+    "LorentzTimeFamily",
+    "LorentzTimeEnvelope",
+    "LorentzTimeGeometry"
+  ],
+  "new_axiom_reports": {
+    "QuantyraNullCone.lorentz_time_volume_map3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.flat_diamond_time_map3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.integral_flat_time3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.flat_time_second_moment3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.flat_time_fourth_moment3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_shape_mean3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_shape_second_moment3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_density_bounds3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_density_class3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_density_difference3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.abs_time_shape_le_envelope3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.integral_time_shape_envelope3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.FutureCurve3.time_primitive_AC": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.FutureCurve3.integral_time_envelope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.FutureCurve3.integral_time_envelope_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.density_time_weight_family_difference3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.FutureCurve3.time_quadratic_length_difference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_separation_difference3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_shape_abs_integral3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_common_missing3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "QuantyraNullCone.time_quadratic_geometric_bound3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "new_axiom_report_count": 21,
+  "source_matches_worktree": true,
+  "prior_mathematical_inputs_unchanged": 239,
+  "prior_source_commit": "cf0bd87df75f5f21299891b4d733088bcad3df8b",
+  "full_acceptance_run": false,
+  "accepted_audit_count_unchanged": 1165,
+  "s042_criteria_complete_unchanged": 3,
+  "s043_gate_passed": false,
+  "warnings": 0,
+  "build_seconds": 18.0,
+  "all_campaign_terminal_outcomes_collected": {
+    "space-pair3-cache1-20261010T111516Z-2272d1": 0,
+    "space-pair3-cache2-20261010T112058Z-74fc69": 0,
+    "space-pair3-cache3-20261010T112429Z-c7e358": 0,
+    "space-pair3-cache4-20261010T112716Z-93b105": 0,
+    "space-pair3-cache5-20261010T113018Z-7b7d8a": 0,
+    "space-pair3-dev1-20261010T113239Z-98a26c": 1,
+    "space-pair3-dev2-20261010T113433Z-ec603f": 1,
+    "space-pair3-dev3-20261010T113634Z-49ce1e": 1,
+    "space-pair3-dev4-20261010T113849Z-fcd60f": 1,
+    "space-pair3-dev5-20261010T114109Z-47b284": 1,
+    "space-pair3-dev6-20261010T114526Z-23f3f2": 0
+  },
+  "cache_checkpoint": {
+    "campaign": "pair3-20261010T111516Z-a06b82",
+    "last_run": "space-pair3-dev6-20261010T114526Z-23f3f2",
+    "toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+    "manifest": "61d78cb094e771f720b480be1183e4727021b3b81b1aecf0e23807b022b22407",
+    "sha256": "c522380755bae196b8f635b09c05de925fe852b03196714516032abe659e8a0f",
+    "bytes": 39025530
+  },
+  "local_lean_invocations": 0,
+  "remaining": [
+    "actual pair-law integral",
+    "order-only statistic and dependence-aware Bernstein probability",
+    "monotone inverse and complete confidence endpoint",
+    "full GCP acceptance and S043 decision"
+  ]
+}

@@ -1,0 +1,13 @@
+no-other-Lean-work
+cache.tar.gz: OK
+{
+  "campaign": "pair3-20261010T111516Z-a06b82",
+  "last_run": "space-pair3-dev6-20261010T114526Z-23f3f2",
+  "toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+  "manifest": "61d78cb094e771f720b480be1183e4727021b3b81b1aecf0e23807b022b22407",
+  "sha256": "c522380755bae196b8f635b09c05de925fe852b03196714516032abe659e8a0f",
+  "bytes": 39025530
+}
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G  193G  436M 100% /
+tmpfs            32G     0   32G   0% /dev/shm

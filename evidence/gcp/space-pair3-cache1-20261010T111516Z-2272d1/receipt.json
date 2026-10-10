@@ -1,0 +1,7 @@
+{
+  "run": "space-pair3-cache1-20261010T111516Z-2272d1",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.CampaignCacheDependent",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

@@ -1,0 +1,123 @@
+error: QuantyraNullCone/LorentzTimeGeometry.lean:103:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * ?c - ?b * ?c
+in the target expression
+  |((fun t => densityTimeWeight3 (timeQuadraticDensity3 theta) (c.point t) * c.flatSpeed t) - fun t =>
+          densityTimeWeight3 (timeQuadraticDensity3 phi) (c.point t) * c.flatSpeed t)
+        t| ≤
+    K * (timeShapeEnvelope3 (c.coord 0 t) * deriv (c.coord 0) t)
+
+case h
+p q : LorentzPoint3
+c : FutureCurve3 p q
+theta phi : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+hf : phi ∈ Icc 0 (1 / 2)
+w : LorentzPoint3 → ℝ := densityTimeWeight3 (timeQuadraticDensity3 theta)
+z : LorentzPoint3 → ℝ := densityTimeWeight3 (timeQuadraticDensity3 phi)
+K : ℝ := 27 / 100 * |theta - phi|
+hK : 0 ≤ K
+hw : InTimeWeightClass3 (densityTimeWeight3 (timeQuadraticDensity3 theta)) densityTimeLower3 densityTimeUpper3
+--
+error: QuantyraNullCone/LorentzTimeGeometry.lean:152:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : LorentzPoint3), ?m.212 * timeQuadraticShape3 a ^ 2 + ?m.219 ∂flatDiamondMeasure3
+in the target expression
+  ∫ (x : LorentzPoint3), |timeQuadraticShape3 x| ∂flatDiamondMeasure3 ≤
+    ∫ (x : LorentzPoint3), ((fun x => 10 / 3 * timeQuadraticShape3 x ^ 2) + fun x => 3 / 40) x ∂flatDiamondMeasure3
+
+this : IsProbabilityMeasure flatDiamondMeasure3 := flat_diamond_probability3
+hi : Integrable timeQuadraticShape3 flatDiamondMeasure3
+hi2 : Integrable (fun b => timeQuadraticShape3 b ^ 2) flatDiamondMeasure3
+hp : ∀ (p : LorentzPoint3), |timeQuadraticShape3 p| ≤ 10 / 3 * timeQuadraticShape3 p ^ 2 + 3 / 40
+h :
+  ∫ (x : LorentzPoint3), |timeQuadraticShape3 x| ∂flatDiamondMeasure3 ≤
+    ∫ (x : LorentzPoint3), ((fun x => 10 / 3 * timeQuadraticShape3 x ^ 2) + fun x => 3 / 40) x ∂flatDiamondMeasure3
+⊢ ∫ (p : LorentzPoint3), |timeQuadraticShape3 p| ∂flatDiamondMeasure3 ≤ 3 / 20
+error: QuantyraNullCone/LorentzTimeGeometry.lean:167:22: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : LorentzPoint3), (rho + sigma) a - |(rho - sigma) a| ∂flatDiamondMeasure3
+in the target expression
+  (∫ (a : LorentzPoint3), rho a + sigma a - |rho a - sigma a| ∂flatDiamondMeasure3) / 2 =
+    1 - (∫ (p : LorentzPoint3), |rho p - sigma p| ∂flatDiamondMeasure3) / 2
+
+rho sigma : LorentzPoint3 → ℝ
+hR : InDensityClass3 rho
+hS : InDensityClass3 sigma
+he : (fun p => min (rho p) (sigma p)) = fun p => (rho p + sigma p - |rho p - sigma p|) / 2
+⊢ (∫ (a : LorentzPoint3), rho a + sigma a - |rho a - sigma a| ∂flatDiamondMeasure3) / 2 =
+    1 - (∫ (p : LorentzPoint3), |rho p - sigma p| ∂flatDiamondMeasure3) / 2
+error: QuantyraNullCone/LorentzTimeGeometry.lean:189:21: linarith failed to find a contradiction
+case h
+theta phi : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+hf : phi ∈ Icc 0 (1 / 2)
+hR : InDensityClass3 (timeQuadraticDensity3 theta)
+hS : InDensityClass3 (timeQuadraticDensity3 phi)
+hd :
+  ∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3 ≤
+    3 / 20 * |theta - phi|
+hl :
+  ∫ (p : LorentzPoint3), min (timeQuadraticDensity3 theta p) (timeQuadraticDensity3 phi p) ∂flatDiamondMeasure3 =
+    1 - (∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3) / 2
+p : LorentzPoint3
+hp : p ∈ closedLorentzDiamond3
+a✝ : timeQuadraticDensity3 theta p < 0 p
+⊢ False
+failed
+error: QuantyraNullCone/LorentzTimeGeometry.lean:189:56: linarith failed to find a contradiction
+case h
+theta phi : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+hf : phi ∈ Icc 0 (1 / 2)
+hR : InDensityClass3 (timeQuadraticDensity3 theta)
+hS : InDensityClass3 (timeQuadraticDensity3 phi)
+hd :
+  ∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3 ≤
+    3 / 20 * |theta - phi|
+hl :
+  ∫ (p : LorentzPoint3), min (timeQuadraticDensity3 theta p) (timeQuadraticDensity3 phi p) ∂flatDiamondMeasure3 =
+    1 - (∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3) / 2
+p : LorentzPoint3
+hp : p ∈ closedLorentzDiamond3
+a✝ : timeQuadraticDensity3 phi p < 0 p
+⊢ False
+failed
+info: QuantyraNullCone/LorentzTimeGeometry.lean:228:0: 'QuantyraNullCone.density_time_weight_family_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+--
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTimeGeometry
+case h
+theta phi : ℝ
+ht : theta ∈ Icc 0 (1 / 2)
+hf : phi ∈ Icc 0 (1 / 2)
+hR : InDensityClass3 (timeQuadraticDensity3 theta)
+hS : InDensityClass3 (timeQuadraticDensity3 phi)
+hd :
+  ∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3 ≤
+    3 / 20 * |theta - phi|
+hl :
+  ∫ (p : LorentzPoint3), min (timeQuadraticDensity3 theta p) (timeQuadraticDensity3 phi p) ∂flatDiamondMeasure3 =
+    1 - (∫ (p : LorentzPoint3), |timeQuadraticDensity3 theta p - timeQuadraticDensity3 phi p| ∂flatDiamondMeasure3) / 2
+p : LorentzPoint3
+hp : p ∈ closedLorentzDiamond3
+a✝ : timeQuadraticDensity3 phi p < 0 p
+⊢ False
+failed
+info: QuantyraNullCone/LorentzTimeGeometry.lean:228:0: 'QuantyraNullCone.density_time_weight_family_difference3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:229:0: 'QuantyraNullCone.FutureCurve3.time_quadratic_length_difference' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:230:0: 'QuantyraNullCone.time_quadratic_separation_difference3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:231:0: 'QuantyraNullCone.time_quadratic_shape_abs_integral3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:232:0: 'QuantyraNullCone.time_quadratic_common_missing3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeGeometry.lean:233:0: 'QuantyraNullCone.time_quadratic_geometric_bound3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTimeGeometry
+REMOTE_TERMINAL_EXIT=1

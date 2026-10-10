@@ -1,0 +1,2450 @@
+{
+  "cache": "/dev/shm/quantyra-space-space-pair3-cache5-20261010T113018Z-7b7d8a-build",
+  "artifacts": {
+    "lib/lean/QuantyraNullCone/BernoulliMGF.ilean": {
+      "sha256": "fedb66fb50e3896308d31c0acbc7018de8838103a588faf39927f9e898687b1c",
+      "bytes": 10244,
+      "mtime_ns": 1791519884000000000
+    },
+    "lib/lean/QuantyraNullCone/BernoulliMGF.olean": {
+      "sha256": "96b1f27e5d2e0d465f66285302888baa2817363710c53abf4bcad88f29dbacb1",
+      "bytes": 131904,
+      "mtime_ns": 1791519884000000000
+    },
+    "lib/lean/QuantyraNullCone/BernoulliMGF.trace": {
+      "sha256": "53c76058f4601bd82d762e2ac69d4943f0e7c04d0cec47d2bad668f12e6dc5b8",
+      "bytes": 4732,
+      "mtime_ns": 1791519884000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialArithmetic.ilean": {
+      "sha256": "dbbbc9b0902527efcfd408226fc918fba0142f8016ca0bd30b4f27ec7fa67c38",
+      "bytes": 15139,
+      "mtime_ns": 1791581975000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialArithmetic.olean": {
+      "sha256": "45a31687496fba2d6a299370f84818bd7b87f7c993c746541c8da1f55b25b68c",
+      "bytes": 342040,
+      "mtime_ns": 1791581975000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialArithmetic.trace": {
+      "sha256": "eab3dfa3f0f7773e7a23dcf682cc88a292955c3f1fc7427927b754390f396e26",
+      "bytes": 3643,
+      "mtime_ns": 1791581976000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialCalibration.ilean": {
+      "sha256": "9d190a57014ed53c48458c1682e87fb3a03c0c195d95813b805ac2d9afce6901",
+      "bytes": 37911,
+      "mtime_ns": 1791581972000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialCalibration.olean": {
+      "sha256": "9610906026412fbb6239cf7531bcd420725908df0c2e0bd456818d0ea83e780a",
+      "bytes": 343216,
+      "mtime_ns": 1791581972000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialCalibration.trace": {
+      "sha256": "ac5178ea5fae6e983863003adfee789f50e998699fef8632f9e8d1244f39f795",
+      "bytes": 3816,
+      "mtime_ns": 1791581972000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialFixtures.ilean": {
+      "sha256": "bc210b129e4aa764335f05d63dcadb079fb5c71dfdb3330007d206515a32b323",
+      "bytes": 3937,
+      "mtime_ns": 1791581978000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialFixtures.olean": {
+      "sha256": "d2f477396d48ea3c8b52037f234ebd684ec2e028e979449a80479654a5678d8c",
+      "bytes": 274352,
+      "mtime_ns": 1791581978000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialFixtures.trace": {
+      "sha256": "9c890e086d99085d5f5d946c64088bac49e6166b76cceb6cc1e8314a4d1c5cd1",
+      "bytes": 3625,
+      "mtime_ns": 1791581979000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialGeometry.ilean": {
+      "sha256": "7c2c665d27f3db407e1837169514cbbe807cd8626b1d2ceabb12f46a05e2a68a",
+      "bytes": 18502,
+      "mtime_ns": 1791581981000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialGeometry.olean": {
+      "sha256": "0f1141b795fb7cd21574762f8e1974d520d1a8c5a007911098ff011e37f00abd",
+      "bytes": 94608,
+      "mtime_ns": 1791581981000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialGeometry.trace": {
+      "sha256": "ab7858ca3f7d109feb49a88c19d2b347644e7411bb724ceb06208f42743b34c1",
+      "bytes": 3621,
+      "mtime_ns": 1791581981000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialObservation.ilean": {
+      "sha256": "6f9b6924e9103939d768a17874a31affc92ceaf26f8cd98d3ba3a1920c48beab",
+      "bytes": 38991,
+      "mtime_ns": 1791581969000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialObservation.olean": {
+      "sha256": "30811b2a55a40924cacf0c9df753979db50140b3c7561ab69c459d4716b5a57e",
+      "bytes": 299704,
+      "mtime_ns": 1791581968000000000
+    },
+    "lib/lean/QuantyraNullCone/BinomialObservation.trace": {
+      "sha256": "e97c40a3d22438529e3bc9efb1a061b6857cf68a0d43a1d43e149e02dd03edc3",
+      "bytes": 4153,
+      "mtime_ns": 1791581969000000000
+    },
+    "lib/lean/QuantyraNullCone/Bridges.ilean": {
+      "sha256": "f21b19bc8504d910a70641a2b1e302a7e895d5d7c814b67ee69eff260da99a31",
+      "bytes": 29954,
+      "mtime_ns": 1791365601000000000
+    },
+    "lib/lean/QuantyraNullCone/Bridges.olean": {
+      "sha256": "e4193ed0400aba4d995ace7459439a78f4fc6c134e14a5b20c89506df29e9abd",
+      "bytes": 451832,
+      "mtime_ns": 1791365601000000000
+    },
+    "lib/lean/QuantyraNullCone/Bridges.trace": {
+      "sha256": "d5646b730999faea424f308b6350a8ac6ae60aba22349b2ca4bd1ba935dd2a30",
+      "bytes": 4233,
+      "mtime_ns": 1791365601000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReport.ilean": {
+      "sha256": "e3a40d70286315c0bc367f939ddcf1652a1eaa14e60631ea13c0a7206fa50b96",
+      "bytes": 31822,
+      "mtime_ns": 1791432611000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReport.olean": {
+      "sha256": "14cfd2fea57821a60693afe9ff698874c4dc0b4dab8438759b9b5a9b326263ae",
+      "bytes": 370528,
+      "mtime_ns": 1791432611000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReport.trace": {
+      "sha256": "452a5020b14fa49b8d07e39b2fe5ac00fe1516d1faade88bb95d986e9a38b032",
+      "bytes": 4623,
+      "mtime_ns": 1791432611000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportCalibration.ilean": {
+      "sha256": "c04318224de6681908c1ea54c5b10fa4a9be52411ef07e7c9af26da79a291304",
+      "bytes": 13438,
+      "mtime_ns": 1791432617000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportCalibration.olean": {
+      "sha256": "b102862509aa7420f9bbd824ce91f74e135f867776249ae75b8a9ac516fd6e75",
+      "bytes": 165080,
+      "mtime_ns": 1791432617000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportCalibration.trace": {
+      "sha256": "3184e4b1eaa7985f439f400f30ba6a99cb10771f2a8005de3930ddc53cae8d90",
+      "bytes": 4434,
+      "mtime_ns": 1791432617000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportEncoding.ilean": {
+      "sha256": "4ba13f60e1decfc63e25b2344ee5cb893d03f6b12bdea64037429b8e588c2da4",
+      "bytes": 13093,
+      "mtime_ns": 1791432614000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportEncoding.olean": {
+      "sha256": "7d83049c1c1f90fc5e9ab16f1e418c9a8fea5ce04bafd477e2f95a70521253d6",
+      "bytes": 138072,
+      "mtime_ns": 1791432614000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportEncoding.trace": {
+      "sha256": "f2a7ba834ae1782a121434ef7e69367d8b2d4759fd313bbeb677b9f41025285f",
+      "bytes": 4658,
+      "mtime_ns": 1791432614000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportFixtures.ilean": {
+      "sha256": "34994f9754afa3e0d77d1a8a3ef6c70e6aa84286d8223f13b2dc9436dc8a6b74",
+      "bytes": 6630,
+      "mtime_ns": 1791432619000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportFixtures.olean": {
+      "sha256": "94823a02e3a4c8a6129c2266c752265cf2b5766dae1f9d1a9e195272e6354367",
+      "bytes": 68968,
+      "mtime_ns": 1791432619000000000
+    },
+    "lib/lean/QuantyraNullCone/CDFReportFixtures.trace": {
+      "sha256": "55689ec2dc7e177dbe4da8027db4122b0372f39b4a97304f7064c8cc1d986f14",
+      "bytes": 3588,
+      "mtime_ns": 1791432619000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.ilean": {
+      "sha256": "b05a3b0f437409511558d2d67230b2aba01f3691551252d6ffd05d1daab33c86",
+      "bytes": 635,
+      "mtime_ns": 1791631568000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.olean": {
+      "sha256": "aa700cf5fa05cc938751df4ca093339cf523dcb33a05ecc049d4de7035e534d7",
+      "bytes": 12808,
+      "mtime_ns": 1791631568000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.trace": {
+      "sha256": "093b92ccac68aa57cc449d37157dc74f2f832ac78d0d03463f949877de20b3d6",
+      "bytes": 3754,
+      "mtime_ns": 1791631568000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.ilean": {
+      "sha256": "b806cd7928da846ffd4874c69c55e8ed675bdda863a564f19b021d4e6de3964c",
+      "bytes": 892,
+      "mtime_ns": 1791631566000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.olean": {
+      "sha256": "15dfec02c2499d0ae2c055535d2af77354fae28062c6d254cc949ad412020164",
+      "bytes": 6792,
+      "mtime_ns": 1791631566000000000
+    },
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.trace": {
+      "sha256": "d7775799cb652cf35f251ed2ab12943960099c6e7d1b9b2715f51ccb7b320f1c",
+      "bytes": 3692,
+      "mtime_ns": 1791631566000000000
+    },
+    "lib/lean/QuantyraNullCone/CommonMeasureCoupling.ilean": {
+      "sha256": "28df31dcb6b43df0b7e3fde3e00ddb9ab01a594adc83077a3344c1dc31a68270",
+      "bytes": 15750,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/CommonMeasureCoupling.olean": {
+      "sha256": "358067b23e581a7a632e621ee0f3e8f77d2b38a6d373efd86b90f153609f0886",
+      "bytes": 122752,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/CommonMeasureCoupling.trace": {
+      "sha256": "2808286a6f7a48d379ac041cd217c8d180175b8d86023ac923bb4643ff14844f",
+      "bytes": 5078,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/Concentration.ilean": {
+      "sha256": "f5edd3449cc4f54ecc25c034a5b36d1cfcfa6943914c0a366bb5bb34c169dc98",
+      "bytes": 27104,
+      "mtime_ns": 1791370085000000000
+    },
+    "lib/lean/QuantyraNullCone/Concentration.olean": {
+      "sha256": "1f1da964027941f973ff142e26e8e618b4d84831a1b8ae78d6c76dafe62b2489",
+      "bytes": 352792,
+      "mtime_ns": 1791370085000000000
+    },
+    "lib/lean/QuantyraNullCone/Concentration.trace": {
+      "sha256": "94a5339e1d7a8e7d10ee36657e3bc85f510fcda92917a79ed6465474bf89069e",
+      "bytes": 4446,
+      "mtime_ns": 1791370085000000000
+    },
+    "lib/lean/QuantyraNullCone/Coordinates.ilean": {
+      "sha256": "4748b23852b2c94b1bde77ec0d6215a8267007989e61e45fcc590ec6a5683e81",
+      "bytes": 19433,
+      "mtime_ns": 1791370081000000000
+    },
+    "lib/lean/QuantyraNullCone/Coordinates.olean": {
+      "sha256": "c72e870bb842c6accad3e7121f4770ec2ea60679dc3a26c56d198564064ec174",
+      "bytes": 101256,
+      "mtime_ns": 1791370081000000000
+    },
+    "lib/lean/QuantyraNullCone/Coordinates.trace": {
+      "sha256": "894927db956e92dd6e7134392da2102b0c27c5bd0dd64b4a99e09fe51583527d",
+      "bytes": 4207,
+      "mtime_ns": 1791370081000000000
+    },
+    "lib/lean/QuantyraNullCone/Counts.ilean": {
+      "sha256": "d4df5133fa204f990685ac5046401a061a88bdfca0142615f3451bb7bb3dd3ed",
+      "bytes": 7970,
+      "mtime_ns": 1791365581000000000
+    },
+    "lib/lean/QuantyraNullCone/Counts.olean": {
+      "sha256": "ebb6d922e1273a7d1b72a5636a7c180148e1f8b741e1f6e3017379680350edff",
+      "bytes": 110856,
+      "mtime_ns": 1791365581000000000
+    },
+    "lib/lean/QuantyraNullCone/Counts.trace": {
+      "sha256": "d47895541a38f4c9b57b7fd8ef6bf2e6b603918a6a76ab964cca43f24d19ee18",
+      "bytes": 3846,
+      "mtime_ns": 1791365581000000000
+    },
+    "lib/lean/QuantyraNullCone/Cumulative.ilean": {
+      "sha256": "cfc6e07a57952018358bd95fd2b1d075ecc67f89623f7bed72cfae6d420eb23a",
+      "bytes": 28262,
+      "mtime_ns": 1791365604000000000
+    },
+    "lib/lean/QuantyraNullCone/Cumulative.olean": {
+      "sha256": "5a0322e26a2289e74996afba84ce4df864e2ce1475b8f6984b2dc0bf052155ea",
+      "bytes": 535408,
+      "mtime_ns": 1791365604000000000
+    },
+    "lib/lean/QuantyraNullCone/Cumulative.trace": {
+      "sha256": "56913ef24ea482de3e077899fafcd1c3141e0c0148ab47152d5f786146f396c2",
+      "bytes": 3899,
+      "mtime_ns": 1791365604000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWAnalytic.ilean": {
+      "sha256": "7f6b036ee6ddd83494417bda73c3172449e737fc92db360ad7ec0cd0ce93d036",
+      "bytes": 196,
+      "mtime_ns": 1791426078000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWAnalytic.olean": {
+      "sha256": "78f6e4672b45fb0d312a18f160344775ec8f1191ef163f3e537ef94195bf49f9",
+      "bytes": 2184,
+      "mtime_ns": 1791426078000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWAnalytic.trace": {
+      "sha256": "3e36cdb7e89c54f3eff571f0c11b47d672fc8c6acd2528392dcb8b2dde0ec88e",
+      "bytes": 3694,
+      "mtime_ns": 1791426078000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBarrier.ilean": {
+      "sha256": "b4d1d15c60949758e6ca5437b045ff39d32f040457d1cf52b21b34004a5e6a94",
+      "bytes": 9921,
+      "mtime_ns": 1791426070000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBarrier.olean": {
+      "sha256": "abe888dc85191cd9814518abb099343f1c15206dd52cbf4aa4dd5b201efa5012",
+      "bytes": 608952,
+      "mtime_ns": 1791426070000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBarrier.trace": {
+      "sha256": "832afb94b851a86cf312520d8717c99bbbdd9f23c6b61d0733b74cec82d1097e",
+      "bytes": 4791,
+      "mtime_ns": 1791426070000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBins.ilean": {
+      "sha256": "fad7c73a0ce99936c9842b06307e9fb0265c6586a83eb02d624fb1b53416ae41",
+      "bytes": 24159,
+      "mtime_ns": 1791427869000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBins.olean": {
+      "sha256": "93dddc87393c6e366ad0186c57dd372ca1ce5a64d3f43a055907375955622799",
+      "bytes": 395512,
+      "mtime_ns": 1791427869000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWBins.trace": {
+      "sha256": "eae126f00982be4bbea1c8fd6a9a162a51fc961e0aa39c059734f5109874a9cc",
+      "bytes": 4622,
+      "mtime_ns": 1791427869000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWClass.ilean": {
+      "sha256": "ac8686bae770c710e593022e9558db580f33d9774844bc934ab6cc623c9e1423",
+      "bytes": 17649,
+      "mtime_ns": 1791430825000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWClass.olean": {
+      "sha256": "b0d2b8c349cdaa5db6a0e91c77488924cadb197b7deb53d5d492dfedf5fd6333",
+      "bytes": 109944,
+      "mtime_ns": 1791430825000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWClass.trace": {
+      "sha256": "4a43da6fd6079375e8f26683aa7ca83d1166f26f9e1507cb46369ae8935ca3d6",
+      "bytes": 4439,
+      "mtime_ns": 1791430825000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWDifferential.ilean": {
+      "sha256": "01c7abc02d7edf125755ffd601b8eefd725b565196bafd239874a02be01fa0e7",
+      "bytes": 10055,
+      "mtime_ns": 1791426081000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWDifferential.olean": {
+      "sha256": "09f8210f72c2b3dc664aa7c9580e7671021dcaa9ea7a621b0337d2e6b54bdc8d",
+      "bytes": 471952,
+      "mtime_ns": 1791426081000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWDifferential.trace": {
+      "sha256": "1bf8c1715dafc63c2e55510011592bbd758a63f69342fd2a8f1d09680727b691",
+      "bytes": 4342,
+      "mtime_ns": 1791426082000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteCDF.ilean": {
+      "sha256": "2d65a1a39be1bdec1a2acf049403f12b0ca134a5724ccfb103bd4d992c699da1",
+      "bytes": 15846,
+      "mtime_ns": 1791427874000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteCDF.olean": {
+      "sha256": "e9eb54538d462d65523afeacbaee5335bf795df45d04445b2768e8c4607091e7",
+      "bytes": 328512,
+      "mtime_ns": 1791427874000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteCDF.trace": {
+      "sha256": "da0ea93180877a2f9a1b55177e6b208077fbade44fff0ad489e1c48c627fb6f6",
+      "bytes": 3894,
+      "mtime_ns": 1791427875000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteTail.ilean": {
+      "sha256": "3385d5d914b4598e72ff996c7e29decfe2f5aa4eb4f586355e6e82888514adee",
+      "bytes": 23749,
+      "mtime_ns": 1791427878000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteTail.olean": {
+      "sha256": "aba7f0eb124d951975fbd429b21c8e0734b3fcc56fa1d65297470c7caf5f98c5",
+      "bytes": 446648,
+      "mtime_ns": 1791427877000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWFiniteTail.trace": {
+      "sha256": "59bc17886ef6ed9dc64055b29cd962e31e7045565ac6be08da21e69d3bae9791",
+      "bytes": 4062,
+      "mtime_ns": 1791427878000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWLikelihood.ilean": {
+      "sha256": "14073f501b85c49b1a75feaa0deba49f1bf01b2b13350a9f66e3078c262c6014",
+      "bytes": 8569,
+      "mtime_ns": 1791426088000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWLikelihood.olean": {
+      "sha256": "c5ffe4fee6aadc4c2a6edd212a9d0805949de7357908c74339da305020000d5f",
+      "bytes": 297624,
+      "mtime_ns": 1791426088000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWLikelihood.trace": {
+      "sha256": "b0862d45fc1538d3cabf9edf0121e2ebacf59c1acd15db83a3761fdcd2240064",
+      "bytes": 3927,
+      "mtime_ns": 1791426088000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWMaximal.ilean": {
+      "sha256": "7ccf691e2db70b33bbada8f2024498606796c7eec0a33a7f4c461ea7e575bce3",
+      "bytes": 24305,
+      "mtime_ns": 1791427871000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWMaximal.olean": {
+      "sha256": "d9c9a4ffa5fb08956c514928be8ab5935d509489fbae123be0343ae67ddbe5d7",
+      "bytes": 267984,
+      "mtime_ns": 1791427871000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWMaximal.trace": {
+      "sha256": "1b9d8884cdfdf7775af398bb6ba4dfb95918a8135cf19bafb7cdab84967764ee",
+      "bytes": 3851,
+      "mtime_ns": 1791427871000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWPinsker.ilean": {
+      "sha256": "ac88774b2eceb1ce83ded8bb4cbab436930b1c101d4e8754709983ab6481733e",
+      "bytes": 11786,
+      "mtime_ns": 1791426073000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWPinsker.olean": {
+      "sha256": "b727dba5ce24d29c6ce6a65beb5acb7cf65bc51db21da7ee0a644ee078e79d8c",
+      "bytes": 455656,
+      "mtime_ns": 1791426073000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWPinsker.trace": {
+      "sha256": "7199cf62e0cd0b78d76455a787ac2fff675cae39c2b8511ddd5d1f1cb096e813",
+      "bytes": 4293,
+      "mtime_ns": 1791426073000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWQuantization.ilean": {
+      "sha256": "f87d65fab4048d6309a8bef25f69c56de889927b09f255e747bf2e60f8905526",
+      "bytes": 29664,
+      "mtime_ns": 1791430816000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWQuantization.olean": {
+      "sha256": "03c508c5af6302416bd9d69d21f44968070ba702a819471dffd4dbc53c48f052",
+      "bytes": 366568,
+      "mtime_ns": 1791430816000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWQuantization.trace": {
+      "sha256": "5b632b9b3ec5119592b2c09a6076924d94b6a5ee6340dfc7588c327a573b0060",
+      "bytes": 4952,
+      "mtime_ns": 1791430816000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWRoots.ilean": {
+      "sha256": "0ca4ac79a5f90a443ee38ca3b1ce557bcd9a6baae98fcc921557d9ca03bc2b40",
+      "bytes": 14450,
+      "mtime_ns": 1791426076000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWRoots.olean": {
+      "sha256": "8f71643095d010d439e7fa11122fc7c205e153c15c63c927cd3df055a6b30046",
+      "bytes": 500208,
+      "mtime_ns": 1791426076000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWRoots.trace": {
+      "sha256": "cb2446d03918f03e509b79a1a2c021fbb910de0e5a7677bfca339906f94dcc95",
+      "bytes": 3888,
+      "mtime_ns": 1791426076000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWShape.ilean": {
+      "sha256": "c95be612bfac289090918ccd4e3bbe02493eca6c314e5267a216057087034966",
+      "bytes": 17644,
+      "mtime_ns": 1791426085000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWShape.olean": {
+      "sha256": "f5fe334e87105bf3b211f128ae317418f7457820a1bad3055270da69cd97748d",
+      "bytes": 271912,
+      "mtime_ns": 1791426085000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWShape.trace": {
+      "sha256": "79ec82ac6f21671ba2ae5966f0f992a30c64d2db28522dec5f7c1f5486998634",
+      "bytes": 3688,
+      "mtime_ns": 1791426085000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniform.ilean": {
+      "sha256": "23034dad931ecba971a60b114295c83e527e6ca403734bf533e3212190171ed9",
+      "bytes": 26719,
+      "mtime_ns": 1791430822000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniform.olean": {
+      "sha256": "d4c953e7684f46c4b826d912f0da4bf9fd053a15ff667ccfc4ca5c2bc390ea21",
+      "bytes": 348464,
+      "mtime_ns": 1791430822000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniform.trace": {
+      "sha256": "d3c3e31edf737eb3593d10cfdbe8a997c63b2bc3c1eab58f574b820494e978b7",
+      "bytes": 4289,
+      "mtime_ns": 1791430822000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniformGrid.ilean": {
+      "sha256": "77f7915cf91cde0e89c9229aedcda8736fd5907d83cc6b9d19f278d2b28c6660",
+      "bytes": 15936,
+      "mtime_ns": 1791430819000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniformGrid.olean": {
+      "sha256": "7a3fe3cbe06acf3b9d206fa83f9a038814eb6fc5468c302d828371d05057c134",
+      "bytes": 137928,
+      "mtime_ns": 1791430819000000000
+    },
+    "lib/lean/QuantyraNullCone/DKWUniformGrid.trace": {
+      "sha256": "9b0c31f56fa3a31300a51e4390313cd3388cd0b6dec2799f0c406b0ef5698836",
+      "bytes": 4152,
+      "mtime_ns": 1791430819000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCellBias.ilean": {
+      "sha256": "f8acca1682195c2f41319fa5ce0d6682674c468d8e35840d6b15237348a93e4a",
+      "bytes": 19968,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCellBias.olean": {
+      "sha256": "9d63edc84500c7ec634f9d88d5e9e547ddc98fb71d4a0bc6046e9a5bb988a2f0",
+      "bytes": 625328,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCellBias.trace": {
+      "sha256": "ebd9d7a1f9664333c6492d8b827270d04dc1fda38e8c8b9d2e5776e4b3599cd0",
+      "bytes": 5140,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCells.ilean": {
+      "sha256": "3c38656e377ecfbe848fbbefb12f17f1e75ef970042e5646547600a1792d8bc1",
+      "bytes": 16058,
+      "mtime_ns": 1791519892000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCells.olean": {
+      "sha256": "461555ad31ee8e13c9baa41a148d1c804e0eadd481a22ae0f37c2636ab2adf26",
+      "bytes": 168376,
+      "mtime_ns": 1791519892000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeCells.trace": {
+      "sha256": "2bd16c5dc87cc68c1e31c3f42ebc7d0607e414dc6f1341cc87c84f4ae8b44ec8",
+      "bytes": 4502,
+      "mtime_ns": 1791519892000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeEstimator.ilean": {
+      "sha256": "3b4743937e1b1c52852c81af0fbec1d74dfadef1ce055f205cae498c701d4681",
+      "bytes": 30010,
+      "mtime_ns": 1791522507000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeEstimator.olean": {
+      "sha256": "089c6540e6e776b921397221a9d2dfefe9ed38f6fd0a24c03f9d2e443831f530",
+      "bytes": 245336,
+      "mtime_ns": 1791522507000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeEstimator.trace": {
+      "sha256": "b12f61225d50389098a112e55ee8349a96d3f4fa3fc32a7d0fc10b2b7f747fba",
+      "bytes": 5555,
+      "mtime_ns": 1791522507000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeFilter.ilean": {
+      "sha256": "3cef2ce649e99c91a7615431444146845e59062dfc6a126e0be229e02ad91c31",
+      "bytes": 28246,
+      "mtime_ns": 1791519884000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeFilter.olean": {
+      "sha256": "753281521abcead40c45147f78db137ab723829d8155c8a1ab2d52697d888cb6",
+      "bytes": 457312,
+      "mtime_ns": 1791519884000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeFilter.trace": {
+      "sha256": "eb171b06d1c165d575ab2571c590c2ab26d9d9be2d9e1ff1eefdee9c898c3d76",
+      "bytes": 4915,
+      "mtime_ns": 1791519885000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogram.ilean": {
+      "sha256": "6fa530636810c1101ae7f66419327b860e35bcd1ae9f1aa0503c55d52d39705d",
+      "bytes": 18047,
+      "mtime_ns": 1791522485000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogram.olean": {
+      "sha256": "2d2385f11cba0d91e9ea668fe0be48e5c4c7e16b6f0459dee79c761f05bc08d0",
+      "bytes": 328088,
+      "mtime_ns": 1791522485000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogram.trace": {
+      "sha256": "09d6556607102fa58d97fbcae7d740e6129c271bb0c46c2fa5dffe4a77a93631",
+      "bytes": 4732,
+      "mtime_ns": 1791522485000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogramProbability.ilean": {
+      "sha256": "0055514e62451fce9b0f27865a857901075f1fcb1ada68896343cb3e7d148a9a",
+      "bytes": 21123,
+      "mtime_ns": 1791522498000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogramProbability.olean": {
+      "sha256": "d18a724db14ce475703f5406c68ecb8593fec661f6f5bbaa98caec39a72aaa7f",
+      "bytes": 743648,
+      "mtime_ns": 1791522498000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeHistogramProbability.trace": {
+      "sha256": "ba79540bdce885d9683b5dd56ded415fe20789168799bfdb64fac7e50f489071",
+      "bytes": 4311,
+      "mtime_ns": 1791522498000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeLaw.ilean": {
+      "sha256": "0743c14c84ef2389e8059a51591e4662fc32e9e7494abaae683071608a2aa19b",
+      "bytes": 16624,
+      "mtime_ns": 1791522510000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeLaw.olean": {
+      "sha256": "1e3add97c14bca0c87ab032ae4b90a83be5ab1645f48bdeea311cf716b9d69e1",
+      "bytes": 280872,
+      "mtime_ns": 1791522510000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeLaw.trace": {
+      "sha256": "5f7c74b000aa180491a40167b876f5b4ffb1e8289d52cfd41794ff1a94dc678b",
+      "bytes": 4318,
+      "mtime_ns": 1791522511000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMass.ilean": {
+      "sha256": "854c9793cd7e2b58cfce4efa7f930ee73fabc9fac79200b6c0e6ffc782a4031b",
+      "bytes": 24934,
+      "mtime_ns": 1791519889000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMass.olean": {
+      "sha256": "cd907c8320039d5cd5ac77a52c382166ceb2cd34586564c8fffd30373a766e9d",
+      "bytes": 465760,
+      "mtime_ns": 1791519889000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMass.trace": {
+      "sha256": "5bb5ce22a67861285ff1ef919944d8f41b9de7f2b81367fdea948365598cc251",
+      "bytes": 4527,
+      "mtime_ns": 1791519889000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMesh.ilean": {
+      "sha256": "f22a4d89d8fa26360d68023f407bec9cb9722ed5692a9932b80dd5a18e1c5136",
+      "bytes": 13058,
+      "mtime_ns": 1791522492000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMesh.olean": {
+      "sha256": "225842f154d83b98eb946bf6ed3b5d3ec8f436c0cb1c4c9344ea964ecac3e438",
+      "bytes": 1343520,
+      "mtime_ns": 1791522492000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeMesh.trace": {
+      "sha256": "92a20e6a679ffe10dc1043440cb7801bdfc68c1a8a1f51f71eb0ce0223d554cb",
+      "bytes": 4472,
+      "mtime_ns": 1791522492000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeProbability.ilean": {
+      "sha256": "56fddfc33fcd185138d0efa01cfe294b16c7394fe8d7c6e810f3e5e1b2b615e9",
+      "bytes": 20676,
+      "mtime_ns": 1791519902000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeProbability.olean": {
+      "sha256": "09d2d6595351d5b6b50b2e134e01bc50474c01ba53aaf1441507e5c6a9a29c85",
+      "bytes": 758104,
+      "mtime_ns": 1791519902000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeProbability.trace": {
+      "sha256": "659505d1350e62774a1ebf12dd99f9610160048b30012c9b7461d6353b78788f",
+      "bytes": 4440,
+      "mtime_ns": 1791519903000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRateNumbers.ilean": {
+      "sha256": "c32472e658cd46a171eab204854d1ebfdc525816f4e972b559ece2f5ec6001b5",
+      "bytes": 14129,
+      "mtime_ns": 1791522501000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRateNumbers.olean": {
+      "sha256": "d6db9ecac8abdb9b1531dd88437e1f732cc5df27afeb0fcc6d43024a9873ca8a",
+      "bytes": 403840,
+      "mtime_ns": 1791522501000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRateNumbers.trace": {
+      "sha256": "6a9bf0e30a0e120dbf740ed94c98f01b1e49db18e64c2de9317b1a69acd3b337",
+      "bytes": 4559,
+      "mtime_ns": 1791522502000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRelabel.ilean": {
+      "sha256": "a4a6e96354cb3c6d0d09a8a3b5e8bf58a0c136e78cffe9c61a477de3310d3495",
+      "bytes": 19516,
+      "mtime_ns": 1791522504000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRelabel.olean": {
+      "sha256": "71c15d92538aa0cd324e65bbfe3c2d5bb5f4a3e34c0a1f8344b9b4f8713e7d81",
+      "bytes": 140472,
+      "mtime_ns": 1791522504000000000
+    },
+    "lib/lean/QuantyraNullCone/DegreeRelabel.trace": {
+      "sha256": "4ae6cdb992480496fadf80c5c2d4e6ff30d90b224ba683796b3d842895e63ebd",
+      "bytes": 5567,
+      "mtime_ns": 1791522504000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCDF.ilean": {
+      "sha256": "43b4d37a8f460962a4c248bc0c629996d3712edf61ba63cadaa5390a401122da",
+      "bytes": 50328,
+      "mtime_ns": 1791365589000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCDF.olean": {
+      "sha256": "0f9970fde743810b9da2dfd8edc52827b8015a2a366c47fa9509a9f965970fe0",
+      "bytes": 266544,
+      "mtime_ns": 1791365589000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCDF.trace": {
+      "sha256": "c0da2ab1cbf1a7fa42449e70959e847ee007ab12b3949a583db09e66b008bd54",
+      "bytes": 3955,
+      "mtime_ns": 1791365589000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellBias.ilean": {
+      "sha256": "d6aefb0691c629f64cac650fbe9e06b4795afe1d451c2548de6a85846f79b009",
+      "bytes": 29007,
+      "mtime_ns": 1791434616000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellBias.olean": {
+      "sha256": "c1868a8b18eba3c9542220fcab1bf69035acc32ef81ee97f8b077ab393a0e8df",
+      "bytes": 557904,
+      "mtime_ns": 1791434615000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellBias.trace": {
+      "sha256": "fa0e88ff6b524d08b69f0a1a9e52efd307ec77dfa389134314878b67eca50be3",
+      "bytes": 4358,
+      "mtime_ns": 1791434616000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellGrid.ilean": {
+      "sha256": "5e57fb8d12516fdb7e8a70c800f9412a8371da19d4a8403b1ac93fa737919631",
+      "bytes": 13863,
+      "mtime_ns": 1791434618000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellGrid.olean": {
+      "sha256": "8900c8d6679f799a5acc804b562e88c7dc3d853d7de6a700905fdbb4083794d8",
+      "bytes": 223064,
+      "mtime_ns": 1791434618000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellGrid.trace": {
+      "sha256": "193f46afc0a2d748cb15ff2d1b458079c6e61350635f9e3cf0ab072a175e7ad8",
+      "bytes": 4396,
+      "mtime_ns": 1791434618000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellRestrictions.ilean": {
+      "sha256": "b32dcdd1f53d0477630ccaeb3e613bed715ecd9a30862f60151245f8ab7397ad",
+      "bytes": 18723,
+      "mtime_ns": 1791434621000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellRestrictions.olean": {
+      "sha256": "7901fb013cff93534e9c8942a010f4b109c576564d99a15776950269ce43c0f6",
+      "bytes": 231048,
+      "mtime_ns": 1791434621000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellRestrictions.trace": {
+      "sha256": "94e7e0bf2a1019a192c9761421c5f6c6509f7560285bb281aba10d5ec06b57de",
+      "bytes": 4936,
+      "mtime_ns": 1791434621000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellTranslations.ilean": {
+      "sha256": "fff80ed18b78d25d99e93191155d913aef586aa226dc71530a1b8585901a6372",
+      "bytes": 20385,
+      "mtime_ns": 1791434615000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellTranslations.olean": {
+      "sha256": "73026cd605cfda5dba30cb7f2e347dbd95e279563a4a697145f29ca5a71dfe53",
+      "bytes": 224768,
+      "mtime_ns": 1791434615000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCellTranslations.trace": {
+      "sha256": "bbf03ff1d94a1cc19e28f5e552ef56610465b129146df318bbd0b44b510572a4",
+      "bytes": 4456,
+      "mtime_ns": 1791434615000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCells.ilean": {
+      "sha256": "b686603e86b43abec1bebe781a51aca56c65868f117693544e8b6dfa9fb77136",
+      "bytes": 19764,
+      "mtime_ns": 1791434612000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCells.olean": {
+      "sha256": "56f1f3b711bb42f5292b2bc5618f94575268c9bebb38526ab9f603b50d67ccfb",
+      "bytes": 246912,
+      "mtime_ns": 1791434612000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityCells.trace": {
+      "sha256": "ef7f0abbfcef2e699d4c55df9eb7aece2e9ec323f0c577b843edec4f22574cdf",
+      "bytes": 4588,
+      "mtime_ns": 1791434612000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityFeasibility.ilean": {
+      "sha256": "34a82c94b173d57c9fd722c0b54c3d9d7af0d821b2444593f27a248a249b3f5c",
+      "bytes": 6450,
+      "mtime_ns": 1791434626000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityFeasibility.olean": {
+      "sha256": "6e1f8a0ca41681c88871ac9007b4a3ed88dffed9159b8781f8bdcd5384915b6c",
+      "bytes": 56592,
+      "mtime_ns": 1791434626000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityFeasibility.trace": {
+      "sha256": "6518f94b2ce7c3cd8a67526d21495bdde4796c98ac26ff3510160ba5c06510cb",
+      "bytes": 3844,
+      "mtime_ns": 1791434627000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityHistogram.ilean": {
+      "sha256": "bdee1b26a8f5d908d9dcb4611f390bf6936dd55ba5b1d76f956d9d0be1422162",
+      "bytes": 14133,
+      "mtime_ns": 1791434624000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityHistogram.olean": {
+      "sha256": "ed6fa1b73e306990c9993ff8d1a498c9c14d29629fc8b51ce2999b7b4a7d1d0c",
+      "bytes": 342240,
+      "mtime_ns": 1791434624000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityHistogram.trace": {
+      "sha256": "dde414620e580cfa5f758ae59a2e8e0b4aa67f9a83deb9cb1bae5b9e1671dc87",
+      "bytes": 4229,
+      "mtime_ns": 1791434624000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityInterpolation.ilean": {
+      "sha256": "91c265990ca77aca60c9729d00a5ae9c77209801db0f6280b1043f178c9a2695",
+      "bytes": 35950,
+      "mtime_ns": 1791372454000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityInterpolation.olean": {
+      "sha256": "b5fddaf309a7c8810d393fb0db0f92cf34bc80ee3a3e356ff242fbb4529d07d6",
+      "bytes": 767272,
+      "mtime_ns": 1791372454000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityInterpolation.trace": {
+      "sha256": "54d0d872a35a30cd05ddb461f62dcf61f81f1a936776fe023394f7ece29d239a",
+      "bytes": 4346,
+      "mtime_ns": 1791372454000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPBands.ilean": {
+      "sha256": "f4331642e2fde50471802d1b7b26e09c254412be7b57771e6e5c2dbd1db0bafc",
+      "bytes": 20799,
+      "mtime_ns": 1791438314000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPBands.olean": {
+      "sha256": "9457cbac14261623b2cc3b80dd1077208a06a4d1200db424a3022647c7286e62",
+      "bytes": 280312,
+      "mtime_ns": 1791438314000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPBands.trace": {
+      "sha256": "db2f39bf768d255f763254b75b9409d75b75829a9462a3c42e4212624d5c1e34",
+      "bytes": 3991,
+      "mtime_ns": 1791438314000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPFeasible.ilean": {
+      "sha256": "871b9a169c01882654945a0dc0074d02fbe1decd99100e24f6a2ebeaf8468604",
+      "bytes": 28586,
+      "mtime_ns": 1791438310000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPFeasible.olean": {
+      "sha256": "49b8b91323ae6bbb3b62ccdbc3c5ffa486f4f4b6025bd972f46f33f8060048da",
+      "bytes": 345056,
+      "mtime_ns": 1791438310000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPFeasible.trace": {
+      "sha256": "578952479629366af4acf25126cd3cd78f959ce76d05ef25066f93f04dffebf0",
+      "bytes": 4212,
+      "mtime_ns": 1791438310000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPIndex.ilean": {
+      "sha256": "aa18c5789169a41f3a0f169657396f704a7956ac015123337ab0446676d85500",
+      "bytes": 19300,
+      "mtime_ns": 1791438302000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPIndex.olean": {
+      "sha256": "974c68914573f1aa0dfed6048d0be489d309ed33782a65d2485ca2519c0e8fd6",
+      "bytes": 200200,
+      "mtime_ns": 1791438302000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPIndex.trace": {
+      "sha256": "18dfe3eb8a5add5ba3f17edfe1643d95533cbb95e2fda4fe2fe96a561c3861a4",
+      "bytes": 5038,
+      "mtime_ns": 1791438302000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPModel.ilean": {
+      "sha256": "38dc26598938889609f4b5dff58c07648d6bab1b1a4269890f228c4d03baea36",
+      "bytes": 22729,
+      "mtime_ns": 1791438307000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPModel.olean": {
+      "sha256": "21a3780a7a305ea9449b5c4ac218589b3ac20618202f6eb5918469d1f37467e5",
+      "bytes": 621696,
+      "mtime_ns": 1791438307000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityLPModel.trace": {
+      "sha256": "f71f445e38c921506e502699445594f67cc3dd10c982d852bc7b8b9e439241b5",
+      "bytes": 4130,
+      "mtime_ns": 1791438307000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportBands.ilean": {
+      "sha256": "1a30ea1f65634899c4cbea8bddbe9cce57c3b539d0136f99cae0298eb59198e4",
+      "bytes": 20813,
+      "mtime_ns": 1791438320000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportBands.olean": {
+      "sha256": "e89c1686f8b0d64bc50e03bde1e61cc8609b1b041711f9080641dce1a9740a04",
+      "bytes": 251632,
+      "mtime_ns": 1791438320000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportBands.trace": {
+      "sha256": "fb27406e3cb12a68f3dc3d0a2a8c9d785cae4a88e887818b4e4b4ac3ebddbbd8",
+      "bytes": 4201,
+      "mtime_ns": 1791438320000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportCoverage.ilean": {
+      "sha256": "a40ef80bf17922e30c3ea1b0cc375d0ad3a5cd506f9383fcf611c87f77112455",
+      "bytes": 28008,
+      "mtime_ns": 1791438323000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportCoverage.olean": {
+      "sha256": "eec6430a99880ff5a7dfb128e2b3c854868e1134274110cf62957e9652b5309d",
+      "bytes": 184280,
+      "mtime_ns": 1791438323000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportCoverage.trace": {
+      "sha256": "264af0c587dbb17151434f19eaa65eff7e085c0b247d76b434cb286e07ed6f06",
+      "bytes": 5327,
+      "mtime_ns": 1791438323000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportData.ilean": {
+      "sha256": "795040a509191ed8e5f44914ecf3d7828e231f7bb951c31c0d5ef0f0fb7c0d48",
+      "bytes": 23920,
+      "mtime_ns": 1791438316000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportData.olean": {
+      "sha256": "d1901631a79a9aa2647fa7add42a435d8e1411c5622026ecad2a5f0e5d28f16b",
+      "bytes": 387112,
+      "mtime_ns": 1791438316000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportData.trace": {
+      "sha256": "e5c74307654800e505f93a2dc28480b3bf398b925930045900b433452a587260",
+      "bytes": 4553,
+      "mtime_ns": 1791438317000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportFixtures.ilean": {
+      "sha256": "75a9b4fcd3d9f079e61a05f4e6be88f79d153f18835385848799eb7931cf488f",
+      "bytes": 40984,
+      "mtime_ns": 1791438338000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportFixtures.olean": {
+      "sha256": "7a8fdc83372fdc7106d4e21d28b413062507e1ff2a5aa001e9f1f048fbdb7e4f",
+      "bytes": 3704088,
+      "mtime_ns": 1791438338000000000
+    },
+    "lib/lean/QuantyraNullCone/DensityReportFixtures.trace": {
+      "sha256": "6d5a8a416c60364fd15488c567f0717a7ec8f8217010c513be7700063cabbd40",
+      "bytes": 5396,
+      "mtime_ns": 1791438338000000000
+    },
+    "lib/lean/QuantyraNullCone/Exchangeability.ilean": {
+      "sha256": "b3e7c5e8523de01437cd7281e9af74126287877efe33e062083bf653eb30fe31",
+      "bytes": 15929,
+      "mtime_ns": 1791376399000000000
+    },
+    "lib/lean/QuantyraNullCone/Exchangeability.olean": {
+      "sha256": "72b92440b205105df13897f7ca47de3a35d96e094af74d435e87e05c60f75252",
+      "bytes": 121856,
+      "mtime_ns": 1791376399000000000
+    },
+    "lib/lean/QuantyraNullCone/Exchangeability.trace": {
+      "sha256": "df74c7e4761e2232bb8dd22a8c72e13ffc43d24c7c71032ebe27d821d75145a0",
+      "bytes": 4284,
+      "mtime_ns": 1791376399000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCDF.ilean": {
+      "sha256": "3e25542fec2426b998e764e45998cc726909872435eb072e2a47a219ad87e4d3",
+      "bytes": 24987,
+      "mtime_ns": 1791423672000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCDF.olean": {
+      "sha256": "c5bada40c26a2d80c4e330583b6a6d0becf4b0784aa00e79ddf73c5299688856",
+      "bytes": 343680,
+      "mtime_ns": 1791423672000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCDF.trace": {
+      "sha256": "d0ffa9138a7b695b5da90257bc08692e048e057183fc91fc9fbf7253bf7dae8e",
+      "bytes": 4464,
+      "mtime_ns": 1791423672000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCalibration.ilean": {
+      "sha256": "95cb327b4850c9a32f2f8c964605a23bde69e4d837554f54378d26c82fa3490f",
+      "bytes": 10701,
+      "mtime_ns": 1791423664000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCalibration.olean": {
+      "sha256": "f805d8eea4c22875f2bc02f12a98ef06947e0b1234fe06da94e2a3e865d433b5",
+      "bytes": 169720,
+      "mtime_ns": 1791423664000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteCalibration.trace": {
+      "sha256": "28f18d9e56545aa94f6539cedfd544568d4f26c05c3cafa82ccd88fcf356fadb",
+      "bytes": 5929,
+      "mtime_ns": 1791423664000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFixtures.ilean": {
+      "sha256": "e3dbceb4c6e1068c1599e5a2692975ae7dc33a0a8adbdfba748aee7466e5e092",
+      "bytes": 5712,
+      "mtime_ns": 1791423677000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFixtures.olean": {
+      "sha256": "2fb039dd0100740bcb9fe0f05f6e14cc9f9e0b63466bc4bc363a43793ebdd319",
+      "bytes": 41040,
+      "mtime_ns": 1791423677000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFixtures.trace": {
+      "sha256": "027877b7472425aaf18eae97f4a8e3e25068391c58d59b9d2c37fe231a70fdb9",
+      "bytes": 3605,
+      "mtime_ns": 1791423677000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteForcing.ilean": {
+      "sha256": "b1b8049ded5d7e297f555b63fa840c12dbbe3dd20edec2d4e338109be1470128",
+      "bytes": 51261,
+      "mtime_ns": 1791423669000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteForcing.olean": {
+      "sha256": "08f025255f274bbd672adf3040122a20c498c7a9566d6ae6fa10fcec2b5875f6",
+      "bytes": 431392,
+      "mtime_ns": 1791423668000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteForcing.trace": {
+      "sha256": "b08eed1ba374be11a2a43f9722b7391eb20b4c60f2dc3504c21951bdea15eff4",
+      "bytes": 4332,
+      "mtime_ns": 1791423669000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFoundation.ilean": {
+      "sha256": "34e6edce3a126a5aaafc1f1531ce28a7905d79804c2cff8de8ff8b7abe763a7d",
+      "bytes": 312,
+      "mtime_ns": 1791423675000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFoundation.olean": {
+      "sha256": "eb7d03d0f069651e5702d5f03d3e608f10331516f5608a9bb59d065c30beed42",
+      "bytes": 2416,
+      "mtime_ns": 1791423675000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteFoundation.trace": {
+      "sha256": "0860dc8a0f306a40966eb2afd358f4da88de22d7a981ce41df7f2d32aaf68a3c",
+      "bytes": 4155,
+      "mtime_ns": 1791423675000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteLP.ilean": {
+      "sha256": "b01c940d6e376b9cb33f26893f56b07b8ac19f960e50d2e74d4d37d2da7b635e",
+      "bytes": 11779,
+      "mtime_ns": 1791423666000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteLP.olean": {
+      "sha256": "e9ac6d0eb11308c7f7d828c58c693ad841b1ebdb21609df3823f79091d7906cd",
+      "bytes": 262208,
+      "mtime_ns": 1791423666000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteLP.trace": {
+      "sha256": "c1dbbb9964f3b39748f440fa0fe34f6ad65bd17c2a202fad0a0224ad0ba8421d",
+      "bytes": 4951,
+      "mtime_ns": 1791423666000000000
+    },
+    "lib/lean/QuantyraNullCone/FinitePositions.ilean": {
+      "sha256": "1f868ae4e7cc1c75119e7463696e954b00778705f8381031e48e854d8b0139eb",
+      "bytes": 9491,
+      "mtime_ns": 1791423670000000000
+    },
+    "lib/lean/QuantyraNullCone/FinitePositions.olean": {
+      "sha256": "3a693fb102d3cb1d94c66b33ae9c9a28a306e7685b4b103e1ea4177d77048b3f",
+      "bytes": 99800,
+      "mtime_ns": 1791423670000000000
+    },
+    "lib/lean/QuantyraNullCone/FinitePositions.trace": {
+      "sha256": "da26d08fe8984d5f90c6c7dfc7c37eed1654d3bb05af9f54e2ea962108af6a6b",
+      "bytes": 4325,
+      "mtime_ns": 1791423670000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteTV.ilean": {
+      "sha256": "1c7d9d86a53fa726b21489d4ff7b51845b6f9425404171674e072abb1f537a06",
+      "bytes": 17778,
+      "mtime_ns": 1791373828000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteTV.olean": {
+      "sha256": "78c55f8698118ea5e9ccc01ad46f806895d4f133fe997ba64299ac7e225c53f0",
+      "bytes": 290216,
+      "mtime_ns": 1791373828000000000
+    },
+    "lib/lean/QuantyraNullCone/FiniteTV.trace": {
+      "sha256": "febd71c96ce3573d14daa3c9a664c0a1f48881e466881a678d137330d231bab4",
+      "bytes": 4213,
+      "mtime_ns": 1791373828000000000
+    },
+    "lib/lean/QuantyraNullCone/GoodSamples.ilean": {
+      "sha256": "43ef34a24d5fe0f7e32e4dbff747b9fd8656ac71bd96141e13484c3e07a89a79",
+      "bytes": 17990,
+      "mtime_ns": 1791370088000000000
+    },
+    "lib/lean/QuantyraNullCone/GoodSamples.olean": {
+      "sha256": "eb4e212337d3f5283c092f114ad687f89870a1f02f8c32151cf2c686c6a307c0",
+      "bytes": 215928,
+      "mtime_ns": 1791370088000000000
+    },
+    "lib/lean/QuantyraNullCone/GoodSamples.trace": {
+      "sha256": "2e448fec5916ad0d099ff2901f6381b74762431f61b0e43a404019fb4ee2cef7",
+      "bytes": 4018,
+      "mtime_ns": 1791370089000000000
+    },
+    "lib/lean/QuantyraNullCone/Grid.ilean": {
+      "sha256": "909397e270a0a5dca46de7db009f1cfed3a45accea46fc23db0418548c1d3ed6",
+      "bytes": 12164,
+      "mtime_ns": 1791365598000000000
+    },
+    "lib/lean/QuantyraNullCone/Grid.olean": {
+      "sha256": "43b7572154c9aa72ce96b9dcb82c2b202e6477b4ca13a17069452b54f22932f5",
+      "bytes": 751816,
+      "mtime_ns": 1791365598000000000
+    },
+    "lib/lean/QuantyraNullCone/Grid.trace": {
+      "sha256": "c789035292d13b4443a89dccc6955c693f73a4dbb81451e4d8876b2bdab2aecb",
+      "bytes": 4378,
+      "mtime_ns": 1791365598000000000
+    },
+    "lib/lean/QuantyraNullCone/GridAccuracy.ilean": {
+      "sha256": "8d5104c3b97b4c3ed96c60cf292f7f06edf53709b5cf0c6e7152915846560254",
+      "bytes": 48674,
+      "mtime_ns": 1791365608000000000
+    },
+    "lib/lean/QuantyraNullCone/GridAccuracy.olean": {
+      "sha256": "b4f739a84fe3ad1925dc10bb258175bb1f989da0c3774fc24e0515433a7adf11",
+      "bytes": 686720,
+      "mtime_ns": 1791365608000000000
+    },
+    "lib/lean/QuantyraNullCone/GridAccuracy.trace": {
+      "sha256": "2c12ab228a68ecbb815d69cfa3e2ad6353723a54e211daa04cc0003a6f709c36",
+      "bytes": 4350,
+      "mtime_ns": 1791365608000000000
+    },
+    "lib/lean/QuantyraNullCone/Identifiability.ilean": {
+      "sha256": "5a22d01ab78172641ea6fb0a54381da066775a41b91b5520745edb4225b38a9f",
+      "bytes": 14982,
+      "mtime_ns": 1791375084000000000
+    },
+    "lib/lean/QuantyraNullCone/Identifiability.olean": {
+      "sha256": "93d5c38abc18e577f579cb403426a0afb9e7b4d43c9db360e77df0cca9c219ad",
+      "bytes": 191160,
+      "mtime_ns": 1791375084000000000
+    },
+    "lib/lean/QuantyraNullCone/Identifiability.trace": {
+      "sha256": "256cbbcd357981bc69fd247f4443871f7b7da1c2631ce9ad9d7ede73c0a956cc",
+      "bytes": 4348,
+      "mtime_ns": 1791375084000000000
+    },
+    "lib/lean/QuantyraNullCone/ImprovedInverse.ilean": {
+      "sha256": "7c87261bc06ccba52154d661ba7ee1858cd66569bab9dd00b93a7ef21f78e7da",
+      "bytes": 28158,
+      "mtime_ns": 1791418113000000000
+    },
+    "lib/lean/QuantyraNullCone/ImprovedInverse.olean": {
+      "sha256": "7c6e9ae0a6f9848e8f3c1c210a917465203f1ca3bbb879757fe35a6495b998ea",
+      "bytes": 510024,
+      "mtime_ns": 1791418113000000000
+    },
+    "lib/lean/QuantyraNullCone/ImprovedInverse.trace": {
+      "sha256": "188cc79b31495989b39f7690e6fa74181c6353286326afb0f34de241788e0abf",
+      "bytes": 4346,
+      "mtime_ns": 1791418113000000000
+    },
+    "lib/lean/QuantyraNullCone/InnerHistogram.ilean": {
+      "sha256": "c075c139b874ecae6d2dd4784223bbb57b09a0dba03570280c8deb45d4fd7425",
+      "bytes": 26310,
+      "mtime_ns": 1791522481000000000
+    },
+    "lib/lean/QuantyraNullCone/InnerHistogram.olean": {
+      "sha256": "2ba65d2c6e159d2dc447972513caf0cd7287c2a13950816994f9cd327e0268c5",
+      "bytes": 490632,
+      "mtime_ns": 1791522480000000000
+    },
+    "lib/lean/QuantyraNullCone/InnerHistogram.trace": {
+      "sha256": "646fcb4eb446324fe83051b4f286110b78feb0aa4ef0e0cfeb2b7cb7fc684f99",
+      "bytes": 5453,
+      "mtime_ns": 1791522481000000000
+    },
+    "lib/lean/QuantyraNullCone/InverseRate.ilean": {
+      "sha256": "dd15443db87357b4f8e4ca459f45045ab0d0d309a2efcf601e68ab07ddbc1fdb",
+      "bytes": 17932,
+      "mtime_ns": 1791375081000000000
+    },
+    "lib/lean/QuantyraNullCone/InverseRate.olean": {
+      "sha256": "f61b57c5202e4e24af8cf085550408daf6ad6e2b80c3dde732e7cf0cb9e771eb",
+      "bytes": 426688,
+      "mtime_ns": 1791375081000000000
+    },
+    "lib/lean/QuantyraNullCone/InverseRate.trace": {
+      "sha256": "212b809051a0150d28204376bafbf2335935ad0c6cd9fdb18607495d2b0f622c",
+      "bytes": 4631,
+      "mtime_ns": 1791375081000000000
+    },
+    "lib/lean/QuantyraNullCone/LogGridRate.ilean": {
+      "sha256": "99b994ffc415c2b88cc5faa72e680308d0fd7ed074f8bf8bc883a608de2116d7",
+      "bytes": 27258,
+      "mtime_ns": 1791418110000000000
+    },
+    "lib/lean/QuantyraNullCone/LogGridRate.olean": {
+      "sha256": "d108686aa6b1258f608e10a0a3ef5df0099b3b075d5064041e26a903ae9fbda1",
+      "bytes": 862000,
+      "mtime_ns": 1791418110000000000
+    },
+    "lib/lean/QuantyraNullCone/LogGridRate.trace": {
+      "sha256": "333da781bc06f46b5ac191b0863aae9d062cd45fc30aeeb5bb0deff1f502aaf3",
+      "bytes": 4666,
+      "mtime_ns": 1791418110000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerAlternatives.ilean": {
+      "sha256": "b995bb86637598f56e9c377095a75a980d9b9574c9c647c687d1c3209a0cad28",
+      "bytes": 21257,
+      "mtime_ns": 1791565906000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerAlternatives.olean": {
+      "sha256": "a281b5d0aeaa540f5758d8d1f8411add5572b6ea38ee3385741a0b398ad4cbb4",
+      "bytes": 511040,
+      "mtime_ns": 1791565906000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerAlternatives.trace": {
+      "sha256": "e4026c17fdcdb70341ec517db870989667b3e944c82e321863345063b1c56548",
+      "bytes": 5229,
+      "mtime_ns": 1791565906000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerBound.ilean": {
+      "sha256": "3dad3de82c96762f259296873d38ab48075469d0e5406b93edca7e44d9c72f77",
+      "bytes": 27919,
+      "mtime_ns": 1791565923000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerBound.olean": {
+      "sha256": "57398cf609133c6537ed5533a90fa6ab5f63aa16a9c213ed0d9870172c7129fa",
+      "bytes": 284176,
+      "mtime_ns": 1791565923000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerBound.trace": {
+      "sha256": "284336972fdceaeaf420bb3c573886f18a92bcf1249edeb80132d7b35714c05c",
+      "bytes": 4573,
+      "mtime_ns": 1791565923000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerMoments.ilean": {
+      "sha256": "f8239df00b56adb3e1f6fd58ce61856a07f9c1e4c0c89ff3e79c600991d71a30",
+      "bytes": 12320,
+      "mtime_ns": 1791565902000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerMoments.olean": {
+      "sha256": "49e2c6c49a4ee279a494df310fc62cee936f6f4d3e4cd93d92db9789f6c828dd",
+      "bytes": 223344,
+      "mtime_ns": 1791565902000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerMoments.trace": {
+      "sha256": "c62c9752a2036d2d2f41c84e1f75ea8bb2285f81308c11e9c39d64b0b0914c94",
+      "bytes": 4749,
+      "mtime_ns": 1791565902000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerPacking.ilean": {
+      "sha256": "fb59ed7da8ee8b7d1ebbf3f01a0ae2266321260f89efc4f376e1775461fac033",
+      "bytes": 17782,
+      "mtime_ns": 1791565909000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerPacking.olean": {
+      "sha256": "26d2c07f9b5ff2dc3580610e2c261505343bc9c30f45014b4e3fe06070614bc6",
+      "bytes": 628480,
+      "mtime_ns": 1791565909000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerPacking.trace": {
+      "sha256": "ddf2c16814c2580b97e3372e3d4b54c6d4051ddbb75e76dc400f8dd91c9172a4",
+      "bytes": 5323,
+      "mtime_ns": 1791565910000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProduct.ilean": {
+      "sha256": "592c97afe28119749e8989b2f26539ee59b7da3af185ebf1560754eafc2e564b",
+      "bytes": 22575,
+      "mtime_ns": 1791565917000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProduct.olean": {
+      "sha256": "a5f4013aa59d508ad8217691987eafd9fa11db3d27cececaa85043b55c7d31a0",
+      "bytes": 254416,
+      "mtime_ns": 1791565916000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProduct.trace": {
+      "sha256": "f8ac3c7f94c5cf3c209da387f999996a0df86eba869004e0309061c603f65110",
+      "bytes": 5156,
+      "mtime_ns": 1791565917000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProfile.ilean": {
+      "sha256": "d2f6b9fcaeee06e74fa0f51fc7735c89dab2391df7be6f2449cb8a75a86c72ad",
+      "bytes": 18024,
+      "mtime_ns": 1791565899000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProfile.olean": {
+      "sha256": "f567a5ecd89c799b19479cbf3e3639e4bb58f7bb780578c5e283536b0ae8d0aa",
+      "bytes": 747072,
+      "mtime_ns": 1791565899000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerProfile.trace": {
+      "sha256": "a0a2e332cf2cc0a9c5eaf18628aae2804f7b31ff6496f0cbffb48b7a763acde8",
+      "bytes": 6031,
+      "mtime_ns": 1791565899000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerScale.ilean": {
+      "sha256": "1b567681f8a4ca3b1a45f0713943ad363aed32184ea31cd5f9d6829f469f1a9f",
+      "bytes": 18527,
+      "mtime_ns": 1791565920000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerScale.olean": {
+      "sha256": "f3f4ece174d4e20ad8e31dab9f06d93111fe3aab058f07a07c4914a2a71fd411",
+      "bytes": 529976,
+      "mtime_ns": 1791565920000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerScale.trace": {
+      "sha256": "6abcb14d2b78d1414e0e6a75388bff03253c6a1e4067350d2ea0ff52c943dfe6",
+      "bytes": 5421,
+      "mtime_ns": 1791565920000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerTesting.ilean": {
+      "sha256": "c592605fa5166474d272c3798a06735e0626b20155ddff0a9a8fde65c052529b",
+      "bytes": 14089,
+      "mtime_ns": 1791565913000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerTesting.olean": {
+      "sha256": "a71716f48ab9900a79449866c459801f600a143aed91b06e2a55e7fa1afa9542",
+      "bytes": 262688,
+      "mtime_ns": 1791565913000000000
+    },
+    "lib/lean/QuantyraNullCone/LogLowerTesting.trace": {
+      "sha256": "0ff9925456b7c03e102e0e98758ad35b10f35ade635bce06eb1d55e04344a963",
+      "bytes": 4171,
+      "mtime_ns": 1791565913000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzBoundary.ilean": {
+      "sha256": "30d86b0a770619821ae7283d622536c46c1271580e7c6901233e58123d7e0714",
+      "bytes": 43825,
+      "mtime_ns": 1791631507000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzBoundary.olean": {
+      "sha256": "ee401d3b905b3b6ec531e914f5f2df420b51a749a15a688fe2187e3acbac2fea",
+      "bytes": 891296,
+      "mtime_ns": 1791631507000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzBoundary.trace": {
+      "sha256": "fdafa6facff2b05100efc916833d0849716cd44fde59c28e8a9d6bae625d3b12",
+      "bytes": 10332,
+      "mtime_ns": 1791631507000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzChronology.ilean": {
+      "sha256": "a4fa7ac871272a9b1bd0c8a7a11d1c539c1ebc6324deefb2dd5ccf27ff2feb07",
+      "bytes": 13783,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzChronology.olean": {
+      "sha256": "1f0da5eedc8208ec76a3002d793134b0286653cb0dbc5d47c40641efe94a0942",
+      "bytes": 6499136,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzChronology.trace": {
+      "sha256": "443b36e99c50ab229dd47aee868d06bfe554ea16c689a1216494e269d953a223",
+      "bytes": 4752,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCommonDensity.ilean": {
+      "sha256": "b6beebb271cbbc083ae38fce86dc30db9bb0370de87fde50993e936620692b22",
+      "bytes": 18098,
+      "mtime_ns": 1791631545000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCommonDensity.olean": {
+      "sha256": "93bc33d9d17983734ff46ae13b12a8483f9bbc80f639330cdfd5b44dbd82aaf8",
+      "bytes": 246144,
+      "mtime_ns": 1791631545000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCommonDensity.trace": {
+      "sha256": "3121c1dc353cc58b36df4eb578d2843e477784014d795bb19923b8de56aea3a5",
+      "bytes": 4916,
+      "mtime_ns": 1791631545000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzConcatenation.ilean": {
+      "sha256": "831038380652ada8fd4105440e9a0f8f156005ffd42f49e0bad43b48a204e8f8",
+      "bytes": 54962,
+      "mtime_ns": 1791631519000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzConcatenation.olean": {
+      "sha256": "6b421f1d14675178f4cc8a5e16da1bb1efb1e99549b3a9c431a9604e2b72e5ef",
+      "bytes": 552856,
+      "mtime_ns": 1791631518000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzConcatenation.trace": {
+      "sha256": "3a60f9edb6bb4a929b8f4ca33de8e27362eba33ec4be8bea4ba352664c37a1d2",
+      "bytes": 8781,
+      "mtime_ns": 1791631519000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurveControl.ilean": {
+      "sha256": "263282a6a2f370be619b2635f6a7df24d892303e7852bd64e73d8080b7b77cad",
+      "bytes": 28364,
+      "mtime_ns": 1791631522000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurveControl.olean": {
+      "sha256": "b880ebd418d11675eb5764b4e330647587b0abd862ee74c3cf772d9deeb3781f",
+      "bytes": 390792,
+      "mtime_ns": 1791631522000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurveControl.trace": {
+      "sha256": "07908b556ab8577113fb1b4aafe210c09fab59344ec1f705faaa861476b2c84a",
+      "bytes": 6632,
+      "mtime_ns": 1791631522000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurvePerturbation.ilean": {
+      "sha256": "0f6560002b095f086e1fa9237b21e0bf5a93e7fa1e188408aca68e8d605cdc6b",
+      "bytes": 43562,
+      "mtime_ns": 1791631525000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurvePerturbation.olean": {
+      "sha256": "b68a050941ae8a1eb486e998ecd1a429f8008086da46d6c5f883ea60b532e4f4",
+      "bytes": 543680,
+      "mtime_ns": 1791631525000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzCurvePerturbation.trace": {
+      "sha256": "dbe05935fc17347570b19e18d75134fafada23983cb14119877c1f4b85a2f342",
+      "bytes": 6399,
+      "mtime_ns": 1791631525000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityForward.ilean": {
+      "sha256": "731b5d8563b7ce3e5fc8ddaf527563f83e6511bf789f88b459cd4536ff1f780a",
+      "bytes": 11679,
+      "mtime_ns": 1791631563000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityForward.olean": {
+      "sha256": "eea5c82f746e20ad5e4521c7f4998f59c583fe7a6f2f9277057a5bdac93ff645",
+      "bytes": 95480,
+      "mtime_ns": 1791631563000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityForward.trace": {
+      "sha256": "04c599d4d164833219428cc28cd89b2e8867db3c92ed9f9bc9a6ecbccbab5e0e",
+      "bytes": 4807,
+      "mtime_ns": 1791631563000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityWeight.ilean": {
+      "sha256": "687a0c7143ab82a8baab6d41f569d58a36c4b77e3c9744e82d61df17b5b2736a",
+      "bytes": 13072,
+      "mtime_ns": 1791631519000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityWeight.olean": {
+      "sha256": "9b5ab297494cd12c06c56011a6686448ace202d24d0d96d404650d26d23b073e",
+      "bytes": 572712,
+      "mtime_ns": 1791631519000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDensityWeight.trace": {
+      "sha256": "e69a30327b0dfdb410f8cb441796ce9adb31c356144601e88d905716b5237e52",
+      "bytes": 4739,
+      "mtime_ns": 1791631519000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDerivative.ilean": {
+      "sha256": "e0e4411d3d2ae27748820efce956e3740940508d433007a304bbd6fde7f5d570",
+      "bytes": 17117,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDerivative.olean": {
+      "sha256": "4fddf0cf55150fdd4078e03799efca8b3f274fdac95b8ade919ad17007bb32b1",
+      "bytes": 629256,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDerivative.trace": {
+      "sha256": "c4bdce88355c1f537a504039660cc7f36c2ea06ef9d497993f8f63938d3cdcd6",
+      "bytes": 4936,
+      "mtime_ns": 1791443854000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDiamond.ilean": {
+      "sha256": "94c05eba47e7a58200760c06257db416b9580e0e8ef46c0221b4aa5023011763",
+      "bytes": 19831,
+      "mtime_ns": 1791443837000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDiamond.olean": {
+      "sha256": "537b5021aff13a41f62fe3f8feab22c90d7e77ab042493c1f47e78773baf8be8",
+      "bytes": 208376,
+      "mtime_ns": 1791443837000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDiamond.trace": {
+      "sha256": "a1f9ec54e2359c1c5a61ef71fb9a8f194e45857b0464e0d31031625b4960911c",
+      "bytes": 5693,
+      "mtime_ns": 1791443837000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortion.ilean": {
+      "sha256": "53c3f95129c47dd94e2136acc10227ba8d7da1c9c6d36f1040aaeaa7d4406773",
+      "bytes": 12434,
+      "mtime_ns": 1791631555000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortion.olean": {
+      "sha256": "17a7926fa6f16aa810d60472129ec08b26af1fa6ccef40a2552c3540394bb39c",
+      "bytes": 59016,
+      "mtime_ns": 1791631555000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortion.trace": {
+      "sha256": "cffd8f6f5d8705cc08e9a0ff878ec54969cd1b6661c41dcdaaacd47729e33489",
+      "bytes": 4884,
+      "mtime_ns": 1791631555000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortionTriangle.ilean": {
+      "sha256": "ee6235629657b19f7e0e86e53fd3d5bac912cc2581bfd31376029267b7d11b3b",
+      "bytes": 4714,
+      "mtime_ns": 1791631559000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortionTriangle.olean": {
+      "sha256": "7ab6a36095df81937010f2b9d78bdcbb7d9b7dde836eb40d879f989e8ed724c9",
+      "bytes": 85864,
+      "mtime_ns": 1791631559000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzDistortionTriangle.trace": {
+      "sha256": "15043460e489a37f276ce43e3577aa6ef50fa8d66870bd65cbd78d367a7f57b5",
+      "bytes": 4206,
+      "mtime_ns": 1791631560000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzEndpointBounds.ilean": {
+      "sha256": "1b9613641bdb6b1b6cfd5ab4ae2233db1849aaa9f9ffa6d799bd6ee91223c289",
+      "bytes": 17902,
+      "mtime_ns": 1791631529000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzEndpointBounds.olean": {
+      "sha256": "284f6aa45ed359ca00605f2e824b2a813cf29b082f7b39853c35e2ada1f398ed",
+      "bytes": 511664,
+      "mtime_ns": 1791631529000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzEndpointBounds.trace": {
+      "sha256": "2aa47561a5e767d8a03efc21b871b5a5eefeb9492fb24e06b10436b0a53dd33c",
+      "bytes": 5519,
+      "mtime_ns": 1791631529000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlat.ilean": {
+      "sha256": "86c890d41976a83212f558c496482d1a1e231b660c0d724497955e7c3509aff2",
+      "bytes": 6492,
+      "mtime_ns": 1791443859000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlat.olean": {
+      "sha256": "87953ff1ed36751390a0822ab5d1dbb89543a4898eaf4368bb026f5dcd4ae128",
+      "bytes": 83808,
+      "mtime_ns": 1791443859000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlat.trace": {
+      "sha256": "bb0bff5415c97a8d8a81c379498fcefa7ece48d3da1d2917441e7e857396eb8f",
+      "bytes": 4844,
+      "mtime_ns": 1791443859000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlow.ilean": {
+      "sha256": "cfb87528dfdc129ff1c266b95c0c7089624a91da471dee0278bfa457aa61c05c",
+      "bytes": 13769,
+      "mtime_ns": 1791443840000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlow.olean": {
+      "sha256": "17d5936733d36b70769016a853e3f223a5ed67bc0d0e61eb28afc5c00f8c036b",
+      "bytes": 321352,
+      "mtime_ns": 1791443840000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzFlow.trace": {
+      "sha256": "357710416379597006462e2dc8313ceab7ee497510a2b57bf1485db3511559ae",
+      "bytes": 5253,
+      "mtime_ns": 1791443840000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeBounds.ilean": {
+      "sha256": "c88da8107741c4e3ee7c0f55fd2ca67dd9b3467eacafc3d53aaa6d6c3f61ae60",
+      "bytes": 13463,
+      "mtime_ns": 1791443847000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeBounds.olean": {
+      "sha256": "262619a2ab3659d3b40bc7c1dff6897c64c10c0749c962b6c4a58fda68a1566b",
+      "bytes": 362904,
+      "mtime_ns": 1791443847000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeBounds.trace": {
+      "sha256": "ae07f5887decdd956341ec7610c82a3a00d4413d4e70bea2a45bb27500dc52d1",
+      "bytes": 4338,
+      "mtime_ns": 1791443848000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeClass.ilean": {
+      "sha256": "9a3f0f6b77129993f387682551c4223a898a065bd985e646f0bd0d28a8b33dc9",
+      "bytes": 14856,
+      "mtime_ns": 1791443867000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeClass.olean": {
+      "sha256": "cbf33d48064aa06d5f73aca82e67a694a4e18e25130c739dba12c13864d560df",
+      "bytes": 90264,
+      "mtime_ns": 1791443867000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeClass.trace": {
+      "sha256": "c28760b97aba6af76595f94cf8da5421a7309fd6625f329305c24adbd6bbed78",
+      "bytes": 4126,
+      "mtime_ns": 1791443867000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeLipschitz.ilean": {
+      "sha256": "efc466702f6f37b0ab086bc6302b5a1152c238243b71deda056846452feaf2bb",
+      "bytes": 15052,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeLipschitz.olean": {
+      "sha256": "22a1c0bc64b0ac12436554ba0a3fc326a9863c99ca3c6836cb6e76ea98fcc487",
+      "bytes": 834328,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzGaugeLipschitz.trace": {
+      "sha256": "72c4a1cffdb03dc0a0ad8aa34542d44fe8ac420859b044a824df0ffba9d38912",
+      "bytes": 4405,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzInverse.ilean": {
+      "sha256": "1545c68b1185e240e3fab383ea1a10435c54d1d3b11a0ce4d8d5a74ea11b9c44",
+      "bytes": 7911,
+      "mtime_ns": 1791443843000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzInverse.olean": {
+      "sha256": "a5f456f90938f1a5fa8a73cbcb6e5dc69d17a267403d75adfbbd73953eea1899",
+      "bytes": 485736,
+      "mtime_ns": 1791443843000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzInverse.trace": {
+      "sha256": "c615c2e72bec4fa7a683b8e6d3028a3d5b7d1198f79a1932aee59779b14fb8b5",
+      "bytes": 4651,
+      "mtime_ns": 1791443844000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzIsometry.ilean": {
+      "sha256": "63e9b477f0f74c31c81d01224f8e365c472209160d329dc23e4ef25d290d6835",
+      "bytes": 8762,
+      "mtime_ns": 1791443873000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzIsometry.olean": {
+      "sha256": "aa9afe3c1812b6f65c721a68985069245fc5d6e974b899f6ccd4dc53502be67d",
+      "bytes": 76992,
+      "mtime_ns": 1791443873000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzIsometry.trace": {
+      "sha256": "3deea1791e1a9ab34f565fa471fc1082013abc96cacdbe51c07ede081d449e5e",
+      "bytes": 4112,
+      "mtime_ns": 1791443873000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzJacobian.ilean": {
+      "sha256": "b30ffb02bea86e5cd531e9d1e50ecb2d9ca7014e4bbbf397224dcfda423c5b89",
+      "bytes": 10650,
+      "mtime_ns": 1791443860000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzJacobian.olean": {
+      "sha256": "522d158e1e3bedfc69e97299468c2bf4edb004cd4edf1ea503c79ecc7092f52f",
+      "bytes": 5053504,
+      "mtime_ns": 1791443860000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzJacobian.trace": {
+      "sha256": "a7d310ed4624207bb3170fe9ed8dbdd0a74397dc8620f7e53aca959fc966b5c2",
+      "bytes": 4349,
+      "mtime_ns": 1791443860000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzMeasures.ilean": {
+      "sha256": "0d044d3b1c3b128a787b36d44ec37f4e93ea6cdc5a5f40991533bab5780c95b5",
+      "bytes": 20007,
+      "mtime_ns": 1791443840000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzMeasures.olean": {
+      "sha256": "308f2e15234a99ed1129150b4204bb0cc82c0e6d12e02c8cee0f3fd8b1b1d24a",
+      "bytes": 200440,
+      "mtime_ns": 1791443840000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzMeasures.trace": {
+      "sha256": "acd99f0f9c9d9e2ef9d9a052ee716572d3d266fafc4daad561dcbf235d9cb990",
+      "bytes": 5080,
+      "mtime_ns": 1791443841000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzOrderLaws.ilean": {
+      "sha256": "b7baed883628d9765d2b18f94984b142f9134052cfe6f917ea20685eba99c1a8",
+      "bytes": 12466,
+      "mtime_ns": 1791443870000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzOrderLaws.olean": {
+      "sha256": "f42238f4fb27aa8df46121368f55007ad15e5312cbe6113617f43aea7ec6ccb9",
+      "bytes": 97440,
+      "mtime_ns": 1791443870000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzOrderLaws.trace": {
+      "sha256": "c97ebdee34ae340e07bdda86b3a571113e83b745d00ed9dc973573c8758f09a6",
+      "bytes": 4306,
+      "mtime_ns": 1791443870000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzPreservation.ilean": {
+      "sha256": "dab92d183fb8db6ce510ef9973f162da1398ea136b153ff569d75d08b5344439",
+      "bytes": 17270,
+      "mtime_ns": 1791443847000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzPreservation.olean": {
+      "sha256": "33a1d7ab3af248c9b224e08fc941c0f25d984eddcfad6cc03dab73d618061986",
+      "bytes": 435328,
+      "mtime_ns": 1791443847000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzPreservation.trace": {
+      "sha256": "7387c63017ca7bba86076a9f61e7905988688fc407dd7daf96f7a0e3a96bf28b",
+      "bytes": 5101,
+      "mtime_ns": 1791443847000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzProperTime.ilean": {
+      "sha256": "7201c0eebed87071155c8e8e0e877e7c2801911a4a14f7ac4b618ecc434ae554",
+      "bytes": 45168,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzProperTime.olean": {
+      "sha256": "2628d02ac29f00cb89cba9cdf428e2187282359d19bf6417caf9b8e2a86d4b0b",
+      "bytes": 763392,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzProperTime.trace": {
+      "sha256": "733e8a5518ddebc4f82154694bb3cafb6c7aa1a303e27ab74ebc44b70884698f",
+      "bytes": 9554,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientLaws.ilean": {
+      "sha256": "bed7bf0cb26c902ca32654bc39fce7ca15d98a5407cdd41359f9d1bfcec5d686",
+      "bytes": 26237,
+      "mtime_ns": 1791631551000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientLaws.olean": {
+      "sha256": "8fb14327d60a2e5c3ed4730d94fa694d7cd29d35fda249e0e2c549ff73a2098c",
+      "bytes": 142624,
+      "mtime_ns": 1791631551000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientLaws.trace": {
+      "sha256": "4b55370b15291e63acfb17d4f13ca67daecbd5b6e7c0f5b6929b120cc2c1a44c",
+      "bytes": 6282,
+      "mtime_ns": 1791631552000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientMeasure.ilean": {
+      "sha256": "1ab57f8fac3bfb0ea891725595a55a171cbb2613df26266448495ea865ca3922",
+      "bytes": 30514,
+      "mtime_ns": 1791631542000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientMeasure.olean": {
+      "sha256": "94f697b5a0c3114b4e1746cbcbadad9bb6bf1cca7322c8a27479b96a4e1fb82f",
+      "bytes": 260336,
+      "mtime_ns": 1791631542000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzQuotientMeasure.trace": {
+      "sha256": "ae3b833bfc34cc5e87f3ab372eada911c07bedd7e31eb983fa89d73960ed52e4",
+      "bytes": 6712,
+      "mtime_ns": 1791631542000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSmooth.ilean": {
+      "sha256": "7a2abcdb096f106f22e3c0b119eb1d2cfa2360b9ebdb9dd0514cc782266b7875",
+      "bytes": 11369,
+      "mtime_ns": 1791443858000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSmooth.olean": {
+      "sha256": "8c037bee2571a0d40fad2a74f00682f317ac0da93ca34c78eef2eb0882035300",
+      "bytes": 117544,
+      "mtime_ns": 1791443858000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSmooth.trace": {
+      "sha256": "194f5a95b2c118d9206ceedb309baca76593ebb020157166783e5edbaa38307b",
+      "bytes": 4512,
+      "mtime_ns": 1791443858000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSpatialDistance.ilean": {
+      "sha256": "674dcfb35067351baf23e5c8f2b4c7a4c044915ffe08c7a47defe2d2f3537c6f",
+      "bytes": 15296,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSpatialDistance.olean": {
+      "sha256": "a63c3d8b4e9f68bfa60fdf680375c114f229b7a5cb9c8f837804111b79271f07",
+      "bytes": 257528,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzSpatialDistance.trace": {
+      "sha256": "518e8dc5ff3fb6bf903d2f1edd1cd8499258d42cb09994ad6503f7a37a606f7e",
+      "bytes": 4409,
+      "mtime_ns": 1791443855000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeContinuity.ilean": {
+      "sha256": "655a3552bdb08117de7d0c53853d6d97f5dc5fb1bdf223ce32bc661bbf988e05",
+      "bytes": 31055,
+      "mtime_ns": 1791631536000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeContinuity.olean": {
+      "sha256": "ad4ef7352d429ca2ff25acca667d5effe2fe3b499edbd218dab9fffc6016bab9",
+      "bytes": 484192,
+      "mtime_ns": 1791631536000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeContinuity.trace": {
+      "sha256": "d0dd889df5a3f8730da342d5ff64870e5aed69f91b9d41642c8c6fba32b78aaf",
+      "bytes": 5408,
+      "mtime_ns": 1791631536000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeQuotient.ilean": {
+      "sha256": "38a273cf42825c0c4f72e9fffd544607e199abf784c34b514d0130eeeae511fc",
+      "bytes": 37065,
+      "mtime_ns": 1791631539000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeQuotient.olean": {
+      "sha256": "7b1092cba723484dcee9a99a3c488e64f01a3d66f929a7a6f35df261c6a696f2",
+      "bytes": 159360,
+      "mtime_ns": 1791631538000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTimeQuotient.trace": {
+      "sha256": "9672af04e0aed934e43df7431306128a03a15170ce0051bc8ee223bdf2ac8dc1",
+      "bytes": 8710,
+      "mtime_ns": 1791631539000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTransport.ilean": {
+      "sha256": "649143b25783f066eb12ceeb86bf6062679e75605124737f1617d345d5376212",
+      "bytes": 13701,
+      "mtime_ns": 1791443864000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTransport.olean": {
+      "sha256": "6154ca97afacc0c3075232328e81b4743979d7ab42a705443eaedd76dcba356b",
+      "bytes": 150528,
+      "mtime_ns": 1791443864000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzTransport.trace": {
+      "sha256": "bbdeccb50e41b7ac294b143ea9763aa1d32b31a5e747fc6c29e8e74c0207120a",
+      "bytes": 4495,
+      "mtime_ns": 1791443864000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzUnlabeled.ilean": {
+      "sha256": "b7824a15265181d0f7b886e8edd9fb37319a8b625d7321375711a7f7a99940b6",
+      "bytes": 24161,
+      "mtime_ns": 1791631506000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzUnlabeled.olean": {
+      "sha256": "0192edbd7cd7b738be78641c845fbf0d23441d9c8b1e9a2d1fb3daa00589d733",
+      "bytes": 219480,
+      "mtime_ns": 1791631506000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzUnlabeled.trace": {
+      "sha256": "7dd765af494e718a3b15e082cd6b48ca8e97f7a1c1bd239b89d142c2abdb9c65",
+      "bytes": 5811,
+      "mtime_ns": 1791631506000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolume.ilean": {
+      "sha256": "e686adeed69c4f2aac8b0f2db48532253d19adae7997c968aaf808eb452674f0",
+      "bytes": 21660,
+      "mtime_ns": 1791443856000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolume.olean": {
+      "sha256": "7f0a5ccc8ad15836107971d9f17112778587062fea926e55e8bab59169a6398b",
+      "bytes": 311880,
+      "mtime_ns": 1791443856000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolume.trace": {
+      "sha256": "3f8fff280d32cfc38e8f3a7eca8d22e4cef891d039faf0e72417fc03a275820e",
+      "bytes": 4339,
+      "mtime_ns": 1791443856000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolumeCoordinates.ilean": {
+      "sha256": "969e3142e5e5ee9c6beb95b8467329350caa8d69dd26aa2e9629376ab7cd524a",
+      "bytes": 19498,
+      "mtime_ns": 1791443851000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolumeCoordinates.olean": {
+      "sha256": "15b8c275dca56f00d7f7658f6195525d5da49cd0d444029ced72f5de105835ea",
+      "bytes": 283152,
+      "mtime_ns": 1791443851000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzVolumeCoordinates.trace": {
+      "sha256": "d057251b853b52c8eb3c6ee30bccbec279dcc2ffdcb4cec4088350fa21f23b74",
+      "bytes": 4858,
+      "mtime_ns": 1791443852000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzWeightedTime.ilean": {
+      "sha256": "96fa6cfa17d346fcf6400a67b1713322eac98a56f0bf4e8f79ce713f2816093c",
+      "bytes": 55023,
+      "mtime_ns": 1791631515000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzWeightedTime.olean": {
+      "sha256": "b0e550694dd3e723dec8f133fae5270dcd0fc5425bc6d436132945d63affe290",
+      "bytes": 421904,
+      "mtime_ns": 1791631514000000000
+    },
+    "lib/lean/QuantyraNullCone/LorentzWeightedTime.trace": {
+      "sha256": "4f9f3020ab55fc3411088c7d7f94472dfe5a08656da996911e18a8dc1a9d2d88",
+      "bytes": 7587,
+      "mtime_ns": 1791631515000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerAlternatives.ilean": {
+      "sha256": "76e067e1dda19e038bb977982f18e343e842bcade9b6b978a633fd29ee800101",
+      "bytes": 20162,
+      "mtime_ns": 1791525201000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerAlternatives.olean": {
+      "sha256": "a80684beeffba3b950c1f0026aba3fd78ec97eeb78a94bc371eb8fd97920bf4b",
+      "bytes": 421648,
+      "mtime_ns": 1791525201000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerAlternatives.trace": {
+      "sha256": "107a55bfcae179034175e57336bf296f1775735fdd2a49ef7ecc59be8fef8ac3",
+      "bytes": 5326,
+      "mtime_ns": 1791525201000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerBound.ilean": {
+      "sha256": "6694b9ea5a72eec5f8c52bdb8a673731443e11884b4c4fe9a540e81cd37a0391",
+      "bytes": 10426,
+      "mtime_ns": 1791525228000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerBound.olean": {
+      "sha256": "766b6f96da6a8e5199ad949623676ee4f8a44cca0bee8adfa4f717e5f5e9d0a3",
+      "bytes": 131968,
+      "mtime_ns": 1791525228000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerBound.trace": {
+      "sha256": "d52fcf6deb0734c59d3c7c8d0c617a1fbf549009911d9048b54b18b7cb808ab4",
+      "bytes": 4110,
+      "mtime_ns": 1791525228000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerDataProcessing.ilean": {
+      "sha256": "859928f9cfcf1fdc769e1335979af89230504c962fa979c49ce42fb4df980a17",
+      "bytes": 20671,
+      "mtime_ns": 1791525224000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerDataProcessing.olean": {
+      "sha256": "f25ada9775806827de8c05c0ae6084e9440240185b053659440e3dee4299bc21",
+      "bytes": 279784,
+      "mtime_ns": 1791525224000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerDataProcessing.trace": {
+      "sha256": "b435f515e895ff70245b955894d8466c3af4c4e859db26c6644f497e2dee6da0",
+      "bytes": 4362,
+      "mtime_ns": 1791525225000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerMoments.ilean": {
+      "sha256": "36c53a262f29c1249b6a23f74b28d182da337752fdb6e501e7906ae5a0792583",
+      "bytes": 18474,
+      "mtime_ns": 1791525209000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerMoments.olean": {
+      "sha256": "c369162ee68e70fa1ffa7108277403b99bbe8aefa2cff699faeeb9d7734a2d2d",
+      "bytes": 341016,
+      "mtime_ns": 1791525209000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerMoments.trace": {
+      "sha256": "0cd096e36221209333bb02b9ad3d9f8a25379c9d8d6da164ad34032da98d7b42",
+      "bytes": 5758,
+      "mtime_ns": 1791525209000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerProduct.ilean": {
+      "sha256": "088041f733fbc329f7fcd7c9488488c98e805ec1c2eaff7175b898e06b7b2398",
+      "bytes": 23961,
+      "mtime_ns": 1791525221000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerProduct.olean": {
+      "sha256": "0a3adb1109c74cec76048e3e6d08fbe39172e22a5e34e92776062cd5f8d154ca",
+      "bytes": 316544,
+      "mtime_ns": 1791525221000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerProduct.trace": {
+      "sha256": "629b80afebd40d22bd6fabb76b3d342d2b82f4e680d9f932c6d1b10b5fecd87a",
+      "bytes": 5621,
+      "mtime_ns": 1791525221000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerScale.ilean": {
+      "sha256": "97df00b3c9633658bcc27520481be6b32858bb38adf2184ce39b24db4eb2e336",
+      "bytes": 10701,
+      "mtime_ns": 1791525217000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerScale.olean": {
+      "sha256": "c6cdbd164f9c3d490e6b67d496fee4fc906df97bb15b6633f22e5d78204091d1",
+      "bytes": 268752,
+      "mtime_ns": 1791525217000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerScale.trace": {
+      "sha256": "b39dd991473878116943f870ac5daf81208b090ad05478d81bddba624a28ed98",
+      "bytes": 4617,
+      "mtime_ns": 1791525217000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerSeparation.ilean": {
+      "sha256": "a2b472dbee16bc76afdea14b544a3fb0f4617087fe8c843071508032d5382704",
+      "bytes": 20960,
+      "mtime_ns": 1791525205000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerSeparation.olean": {
+      "sha256": "4dcea5fcf13c52c6b17a617528aaa856c88e503cea7da6849d3aee5cf6a63006",
+      "bytes": 465368,
+      "mtime_ns": 1791525205000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerSeparation.trace": {
+      "sha256": "dc9990244ab25df6aff705f0c64df8011d1e12122efacaaf9bdfb9522a378cc8",
+      "bytes": 5871,
+      "mtime_ns": 1791525205000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerTesting.ilean": {
+      "sha256": "8eccaec7b6df920718843554ca954b7594a6af974af587b32aa285880990b839",
+      "bytes": 22065,
+      "mtime_ns": 1791525212000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerTesting.olean": {
+      "sha256": "49328779194fd200d9ec131e2bef3981e44d912c8177cdd744f2fe2e79e62737",
+      "bytes": 319960,
+      "mtime_ns": 1791525212000000000
+    },
+    "lib/lean/QuantyraNullCone/LowerTesting.trace": {
+      "sha256": "ae973203f12ee33d845abd5dddd475ff92f9a3d9e5676fd8903b722ea09ecac1",
+      "bytes": 4495,
+      "mtime_ns": 1791525213000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedThinning.ilean": {
+      "sha256": "26679c62b7ae233d2a9c66a07eda549eb74fdc015ffb1b17084a75d0b4de543e",
+      "bytes": 22545,
+      "mtime_ns": 1791574830000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedThinning.olean": {
+      "sha256": "9f52c4d32b1515e6e3de60e909d753b535ad90fdde2713f25886f5811471d109",
+      "bytes": 288808,
+      "mtime_ns": 1791574829000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedThinning.trace": {
+      "sha256": "4aa6c0ad432be682bb21e812436899b0a7af5af2d18148c39c1e53aacd56157a",
+      "bytes": 3567,
+      "mtime_ns": 1791574830000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedVolume.ilean": {
+      "sha256": "6e8fda4569479a5a8cbf7432b94adaad0b77f43d34e08e2d2727d92b9bd1ce2e",
+      "bytes": 44219,
+      "mtime_ns": 1791574826000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedVolume.olean": {
+      "sha256": "868362fb1c8c4839afb19f23673e4308c1156357471c92136db4b8bc3f28afd7",
+      "bytes": 708040,
+      "mtime_ns": 1791574826000000000
+    },
+    "lib/lean/QuantyraNullCone/MarkedVolume.trace": {
+      "sha256": "da21006953e6e8c3d1837fa98455c10cf4d55108a011fe38ee4fc20add5bc726",
+      "bytes": 3562,
+      "mtime_ns": 1791574827000000000
+    },
+    "lib/lean/QuantyraNullCone/Measures.ilean": {
+      "sha256": "eaeb3a0ba9647522a01f7ac5be7ef3b3d79380d4e16b2b666ffed7ac2a5db751",
+      "bytes": 14427,
+      "mtime_ns": 1791365586000000000
+    },
+    "lib/lean/QuantyraNullCone/Measures.olean": {
+      "sha256": "1e64c4dd9f51db54889bacecd9f42f80643f2dcc2e4525d0ab493b86a1cedcd0",
+      "bytes": 92432,
+      "mtime_ns": 1791365586000000000
+    },
+    "lib/lean/QuantyraNullCone/Measures.trace": {
+      "sha256": "bc73fb8bcfb80cc3e3962b3a88ff8172d7905b7b3cd88616968e683245650d12",
+      "bytes": 4162,
+      "mtime_ns": 1791365586000000000
+    },
+    "lib/lean/QuantyraNullCone/Model.ilean": {
+      "sha256": "9be9705a6b4e2241c4ae5bc219af924603e5b3a6d6622294e864f536bd62d092",
+      "bytes": 19310,
+      "mtime_ns": 1791365583000000000
+    },
+    "lib/lean/QuantyraNullCone/Model.olean": {
+      "sha256": "9ab42e09c467465b5b69932507f92b8351f51098f8b95aedd21b42ce66740468",
+      "bytes": 111376,
+      "mtime_ns": 1791365583000000000
+    },
+    "lib/lean/QuantyraNullCone/Model.trace": {
+      "sha256": "24b55c95578d4c85a9aebe220a152ef3334eab28af4046a390ed9301106d97ed",
+      "bytes": 4229,
+      "mtime_ns": 1791365583000000000
+    },
+    "lib/lean/QuantyraNullCone/OddGaussian.ilean": {
+      "sha256": "cad544a9bfbfca31ace6f8762a2fa32074b9f0185d240cb8cd7caea335cdfc2e",
+      "bytes": 15003,
+      "mtime_ns": 1791525197000000000
+    },
+    "lib/lean/QuantyraNullCone/OddGaussian.olean": {
+      "sha256": "f8d16ce4c20fc29095f94bc6fd097ca645ed4312fd77c1d4acf73dfa8915cdde",
+      "bytes": 543496,
+      "mtime_ns": 1791525197000000000
+    },
+    "lib/lean/QuantyraNullCone/OddGaussian.trace": {
+      "sha256": "ee7a8883010996697fa8c78bcf3d8ffb22355dd7365a5957b83cc9eed0a91237",
+      "bytes": 6194,
+      "mtime_ns": 1791525197000000000
+    },
+    "lib/lean/QuantyraNullCone/OrderSelector.ilean": {
+      "sha256": "2e5f284ddff690cd14e99f87df0260da50d0e6a1069c0908d0181faf71564fc5",
+      "bytes": 19093,
+      "mtime_ns": 1791373825000000000
+    },
+    "lib/lean/QuantyraNullCone/OrderSelector.olean": {
+      "sha256": "09cdcc2685d76663b6020608d5a935f788adb977a1c490bfd507823910a1e5f6",
+      "bytes": 153824,
+      "mtime_ns": 1791373825000000000
+    },
+    "lib/lean/QuantyraNullCone/OrderSelector.trace": {
+      "sha256": "e5585149d4a0eb92566eb4be2092f8a175150168dbcc590186893b569b3e18e8",
+      "bytes": 4048,
+      "mtime_ns": 1791373825000000000
+    },
+    "lib/lean/QuantyraNullCone/ProbabilityRate.ilean": {
+      "sha256": "d3cac971c1c2e382fecef49c3cb6c2b31397217f03518a9ac381e8ffabb24d8a",
+      "bytes": 16838,
+      "mtime_ns": 1791370095000000000
+    },
+    "lib/lean/QuantyraNullCone/ProbabilityRate.olean": {
+      "sha256": "2f28dd440de9b3733b38382fbc344b6ef1d811b2f0ef7be1498e1f4bd581eed8",
+      "bytes": 665512,
+      "mtime_ns": 1791370095000000000
+    },
+    "lib/lean/QuantyraNullCone/ProbabilityRate.trace": {
+      "sha256": "e8237f759adb49eaf911702341d4318e8fc3b3d1e665869958b105275d517edd",
+      "bytes": 4241,
+      "mtime_ns": 1791370095000000000
+    },
+    "lib/lean/QuantyraNullCone/ProperTime.ilean": {
+      "sha256": "24934de6c29e9d4074ddf7f80c7ccb975cf15b432a490d2fa7fcf7e928d748b5",
+      "bytes": 76701,
+      "mtime_ns": 1791423667000000000
+    },
+    "lib/lean/QuantyraNullCone/ProperTime.olean": {
+      "sha256": "e08bbbc2bc3ed64c1b790066c7c3122dc928af4030a8ee16bb2e51c2b07853f5",
+      "bytes": 624472,
+      "mtime_ns": 1791423667000000000
+    },
+    "lib/lean/QuantyraNullCone/ProperTime.trace": {
+      "sha256": "f5b106a3a7e88348989c56c2169c4cf13469b22e3159f725bc282264904a0cd4",
+      "bytes": 5220,
+      "mtime_ns": 1791423667000000000
+    },
+    "lib/lean/QuantyraNullCone/QuotientTV.ilean": {
+      "sha256": "a770b188323f753c59d731893cc68cdd6d6294ddb4f7273cb775554ad79da38a",
+      "bytes": 9682,
+      "mtime_ns": 1791376402000000000
+    },
+    "lib/lean/QuantyraNullCone/QuotientTV.olean": {
+      "sha256": "a60a131f86669666cdfb12a1aedf1647cbf75d2d9294857e7cc43dad4143ed45",
+      "bytes": 89408,
+      "mtime_ns": 1791376402000000000
+    },
+    "lib/lean/QuantyraNullCone/QuotientTV.trace": {
+      "sha256": "033db74a820e1d812ab177dfc757d1dd97d59f273fe712329719fafd8d9cf01f",
+      "bytes": 3806,
+      "mtime_ns": 1791376402000000000
+    },
+    "lib/lean/QuantyraNullCone/Realizer.ilean": {
+      "sha256": "ab3938bceb9665b986e45e668b99838eee5962443dec6b0e2626ef499f616231",
+      "bytes": 13073,
+      "mtime_ns": 1791365579000000000
+    },
+    "lib/lean/QuantyraNullCone/Realizer.olean": {
+      "sha256": "88e150ee179c8e3b38522b6cacef1fd4611d474c194527a40bbe768575d22329",
+      "bytes": 130472,
+      "mtime_ns": 1791365579000000000
+    },
+    "lib/lean/QuantyraNullCone/Realizer.trace": {
+      "sha256": "e969483712c59cada6a14a801f49161a431ebbfee04248c1daf52ca3223c826e",
+      "bytes": 3511,
+      "mtime_ns": 1791365579000000000
+    },
+    "lib/lean/QuantyraNullCone/Sampling.ilean": {
+      "sha256": "a6cb9f523943f77eae0ad3374e1fb1e77e909eb53c2332059548d7bc5388e7c0",
+      "bytes": 37599,
+      "mtime_ns": 1791370078000000000
+    },
+    "lib/lean/QuantyraNullCone/Sampling.olean": {
+      "sha256": "07f115296542d3406cdcbe95135e7735ee069b57b0a05d6ed7b7dbe9032c3c77",
+      "bytes": 317144,
+      "mtime_ns": 1791370078000000000
+    },
+    "lib/lean/QuantyraNullCone/Sampling.trace": {
+      "sha256": "6743eb269b3a6ab2d67da4f69b0331bd4a0a7ac8c9a7b504a2323183d765eaf9",
+      "bytes": 4572,
+      "mtime_ns": 1791370078000000000
+    },
+    "lib/lean/QuantyraNullCone/SmallMassConcentration.ilean": {
+      "sha256": "092d458056cf90a5bb5d829679ccd3e19ec3a4629147de6a8395f4d0578f749a",
+      "bytes": 23728,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/SmallMassConcentration.olean": {
+      "sha256": "9b23af11334cfb845a56c6f582f0a43746d3b4da87f649e76418ed7fe1189fcb",
+      "bytes": 417944,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/SmallMassConcentration.trace": {
+      "sha256": "db7ba8f996b71dbead24f822468eefd716c8306b2c74f7a6fa990e7112011479",
+      "bytes": 4648,
+      "mtime_ns": 1791519896000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCDF.ilean": {
+      "sha256": "139b1238ac8068d7d88508b039b4394fb9c4842a1e3d2107bd1da65c54d7d91d",
+      "bytes": 18783,
+      "mtime_ns": 1791432607000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCDF.olean": {
+      "sha256": "9c944785ba534553eba23d65baf68bb6eee5df9ff4198320cc364ba99e774819",
+      "bytes": 143560,
+      "mtime_ns": 1791432607000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCDF.trace": {
+      "sha256": "a41297f0374233c350e3d4949b8e5987098ebdd7c02678dfaacf1a30a9a59e33",
+      "bytes": 4424,
+      "mtime_ns": 1791432608000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCalibration.ilean": {
+      "sha256": "b7238183ed94c57b831dc61f14533923397c240e551791de2dca8ec5f36ed5ae",
+      "bytes": 22879,
+      "mtime_ns": 1791432605000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCalibration.olean": {
+      "sha256": "0b92ad30d32ccba1707bf050c46a5c44c6c48345b6ab8c97a86e208d55a9634b",
+      "bytes": 207224,
+      "mtime_ns": 1791432605000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitCalibration.trace": {
+      "sha256": "30436135a40a025bda877e7b7b72940e3c0d477059aa25100c6910a86b75c30a",
+      "bytes": 4769,
+      "mtime_ns": 1791432605000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitProbability.ilean": {
+      "sha256": "da2d97b6e95ab3915ab58d8f91f3734c5d139b3a7fdad306efa7e967142f841d",
+      "bytes": 24894,
+      "mtime_ns": 1791430828000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitProbability.olean": {
+      "sha256": "4074d39d6529bc780588fd145cf62a37427fe9417e1998e7963ee8b3935a9129",
+      "bytes": 193848,
+      "mtime_ns": 1791430828000000000
+    },
+    "lib/lean/QuantyraNullCone/SplitProbability.trace": {
+      "sha256": "351457d6e1ae09ae67888e5b11c2099f12ff95dcd0029eb2f1fda81ef2fa9d05",
+      "bytes": 4377,
+      "mtime_ns": 1791430828000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningChannel.ilean": {
+      "sha256": "24d4af5f891153ad99a4f6a87746e340919be8bdcf51a908d16d50d2017c6540",
+      "bytes": 23507,
+      "mtime_ns": 1791585777000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningChannel.olean": {
+      "sha256": "cfb6cc8594bf8e70cb779153fdce1255d8426f0b70b13996b6defe6de524fca5",
+      "bytes": 212632,
+      "mtime_ns": 1791585777000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningChannel.trace": {
+      "sha256": "09ff5ec1ff1f82bcaf07a121609bcd8b703b64c2e273a452cf15137f6a1b55f8",
+      "bytes": 3753,
+      "mtime_ns": 1791585778000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCount.ilean": {
+      "sha256": "07a510685d652f48cc4bc04908ef226d08302c4a60298667e0eaf2dda1d2cebd",
+      "bytes": 24321,
+      "mtime_ns": 1791585790000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCount.olean": {
+      "sha256": "bad77f2b66f15813ff2d1eb9256408ee2f47076fa1fbf3a3d2ee946557be6bc7",
+      "bytes": 220440,
+      "mtime_ns": 1791585790000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCount.trace": {
+      "sha256": "f4882a72ace94f7c55092b130a9ae705e5ea5607671b9091b24aea8646901a4d",
+      "bytes": 3534,
+      "mtime_ns": 1791585790000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCoverage.ilean": {
+      "sha256": "a88f03a24cb4fd2d4be4c3a298a8c36dac5032ef6bf947c4373fa4afaf5b70eb",
+      "bytes": 20898,
+      "mtime_ns": 1791585793000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCoverage.olean": {
+      "sha256": "501b3f8d9cf35884fbf81f311430dccb97deb0a5f05c62dfca7fe035f7a94a1b",
+      "bytes": 93616,
+      "mtime_ns": 1791585793000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningCoverage.trace": {
+      "sha256": "cd9e6a045cdd8cab272a3ee24b6181a5897f98556013b0606ad15820f757a4a1",
+      "bytes": 3552,
+      "mtime_ns": 1791585794000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningFunctional.ilean": {
+      "sha256": "98e02078117e3c843d8f00173ec85ed6414c54dbc3c61ae5600c2b76cf45d18b",
+      "bytes": 21440,
+      "mtime_ns": 1791589499000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningFunctional.olean": {
+      "sha256": "acc4eed3d506d178b5f2d0c7333b10e4b0380e1c18168b08972570927a96e9e6",
+      "bytes": 166680,
+      "mtime_ns": 1791589498000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningFunctional.trace": {
+      "sha256": "17d7fad38b7f2be27bb524978698df3219309cb11328298c05f90a75ac48ea85",
+      "bytes": 3565,
+      "mtime_ns": 1791589499000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixedCoverage.ilean": {
+      "sha256": "3f1566964d4ddb3770d428eac48d307653fecd662197acb7ed57cfe8a449fcbd",
+      "bytes": 22731,
+      "mtime_ns": 1791589501000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixedCoverage.olean": {
+      "sha256": "e397d1e82d23e3f5d694e4bce0119839fbad2b97f743531270ea9e1aae16bb54",
+      "bytes": 126960,
+      "mtime_ns": 1791589501000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixedCoverage.trace": {
+      "sha256": "dc61d1341b4523ee95f3c2079347a11f184d70b7e08af2fb7e9f69c5f729fe8e",
+      "bytes": 3595,
+      "mtime_ns": 1791589501000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixture.ilean": {
+      "sha256": "e863d27678933c18a1e095521f71bd9c89634bd06e772e4c9d525d39ed27b4a5",
+      "bytes": 17639,
+      "mtime_ns": 1791589489000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixture.olean": {
+      "sha256": "06aa1ddd8dbe4342e88675a1f5b1a7f0e6447138fb00a51191275116b6fa4949",
+      "bytes": 118784,
+      "mtime_ns": 1791589489000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningMixture.trace": {
+      "sha256": "f1a2427f89e7fed573a585a5dddda4a2beebe8e56e5aee3efb44c95005dba3c5",
+      "bytes": 3539,
+      "mtime_ns": 1791589489000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoisson.ilean": {
+      "sha256": "f8c2db66ed9e185610514a2a34bdf7f2083f8a394cf36c026b7d034e3804056c",
+      "bytes": 10002,
+      "mtime_ns": 1791589496000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoisson.olean": {
+      "sha256": "fe335ab03d8a89fe22481712d2da5faebd2ccf7f2383e8dd61a3a78034bcd305",
+      "bytes": 78064,
+      "mtime_ns": 1791589496000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoisson.trace": {
+      "sha256": "c4a0393cb8c937c6b5788f97dbf472397cfc07780fffea937eff5a94d20ad3bd",
+      "bytes": 3549,
+      "mtime_ns": 1791589496000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoissonMass.ilean": {
+      "sha256": "9a5f0179b4b1dc6ff824a0e7a770c1d9184c86c2e7ba01def48bea498720325d",
+      "bytes": 19905,
+      "mtime_ns": 1791589493000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoissonMass.olean": {
+      "sha256": "925d863ea0ff291c44496c38689a4b7ee846eea5c9f54974b1f7baae08c44ab7",
+      "bytes": 320944,
+      "mtime_ns": 1791589493000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningPoissonMass.trace": {
+      "sha256": "0ee9a46d37efbb8d149e3b3a0eb71dc6b10df096b27ede5f6d62076fc459b158",
+      "bytes": 4002,
+      "mtime_ns": 1791589493000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSelected.ilean": {
+      "sha256": "479dd00ff772022f681a6dc74f5100f1cce75841bad9e265d5f2db809e3fe436",
+      "bytes": 20014,
+      "mtime_ns": 1791585786000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSelected.olean": {
+      "sha256": "5ea2d03b06f7efb26c1a535e9f46b80f664e1085935c115c292986f79934f1a6",
+      "bytes": 168888,
+      "mtime_ns": 1791585786000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSelected.trace": {
+      "sha256": "ba890f5c505555401cdc1b36157873fe6d34a799c8a38e908d6be9c98bb8ffac",
+      "bytes": 3712,
+      "mtime_ns": 1791585786000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningStream.ilean": {
+      "sha256": "adca2aeac4af4d1a4aace893546bfb5364c5eb5a0c4b2789162d4c2cafa63951",
+      "bytes": 22517,
+      "mtime_ns": 1791589486000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningStream.olean": {
+      "sha256": "681f2d6d73f578eea32effde168fa41ec3461e3d3f8e92632c8fe76ac36a4099",
+      "bytes": 145264,
+      "mtime_ns": 1791589486000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningStream.trace": {
+      "sha256": "fc52ff9c3567cce8cefeca2931a9ac840be868db7352938d15304c2933298788",
+      "bytes": 3948,
+      "mtime_ns": 1791589486000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSubset.ilean": {
+      "sha256": "47e8253433f3f5f596a00e0360d8cb88b7ec33c18e7725fe8b3921957de2511c",
+      "bytes": 16078,
+      "mtime_ns": 1791585781000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSubset.olean": {
+      "sha256": "7cb0755d73880fa0c5f47768b5010cb3ed78c301d3e53d2e9d29a340b64544f2",
+      "bytes": 129432,
+      "mtime_ns": 1791585781000000000
+    },
+    "lib/lean/QuantyraNullCone/ThinningSubset.trace": {
+      "sha256": "fd016fc2ba46e240710971f4889b1d48e81ac72c77e91e2bbc029cffcac61879",
+      "bytes": 3540,
+      "mtime_ns": 1791585781000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCommonCoupling.ilean": {
+      "sha256": "a30319d6fefbcbd4ef33fe1be48c016b90c44497a8f77244bb9189ffb1a8d2a1",
+      "bytes": 19525,
+      "mtime_ns": 1791631514000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCommonCoupling.olean": {
+      "sha256": "48d414b13ae300d4c1f990fc0960594f4e570e78a7b14d106a442781babe18cd",
+      "bytes": 199368,
+      "mtime_ns": 1791631514000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCommonCoupling.trace": {
+      "sha256": "35d147c0dc8102ebf808d8beb1a506e92bce6dfc00b16fea6255b9b4de910d78",
+      "bytes": 4325,
+      "mtime_ns": 1791631514000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingGluing.ilean": {
+      "sha256": "24c090a177e20c1216df2a716701f66612469ce49df0bb9d796001aa06932525",
+      "bytes": 15932,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingGluing.olean": {
+      "sha256": "47117ef51838b15f68dc52aefa02d4316870b97b1f37ae5940bb3c7e7387bf9f",
+      "bytes": 116464,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingGluing.trace": {
+      "sha256": "7132935fb4693508cdca9ed2070d2cf75bdf09b6064c94d58f7724be385fee9f",
+      "bytes": 4915,
+      "mtime_ns": 1791631508000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingLoss.ilean": {
+      "sha256": "6fbf794f2ef33a977d9ea9f1291f7f409e489787efeb24c6501ffca497b8c0eb",
+      "bytes": 34658,
+      "mtime_ns": 1791631505000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingLoss.olean": {
+      "sha256": "4bc04f41df4b2d7c19b2529934805ae8f61bef5665c13141fb0012b0cd52cdb5",
+      "bytes": 321632,
+      "mtime_ns": 1791631505000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeCouplingLoss.trace": {
+      "sha256": "8458bc312ae3677a071955ef1353b9e00ed04a326fc888da9f7cd567b5b0d687",
+      "bytes": 7812,
+      "mtime_ns": 1791631505000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeDistortionTriangle.ilean": {
+      "sha256": "27d2184642749e8388124f896b570969098dd9e79775322e3a6b4bcc7432c568",
+      "bytes": 20079,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeDistortionTriangle.olean": {
+      "sha256": "01bd72619df33717b845429cf31e004e806afed0f44be7c84bb94ff358242a89",
+      "bytes": 286320,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/TimeDistortionTriangle.trace": {
+      "sha256": "ec7e504c9fdba7ab19ace4196c4db66d75c8fd6ec48963257371526f84460c44",
+      "bytes": 4549,
+      "mtime_ns": 1791631511000000000
+    },
+    "lib/lean/QuantyraNullCone/Transpose.ilean": {
+      "sha256": "21809014b4dd5083b984c439761214cf43b16e685db34aa02fde34169b5145cf",
+      "bytes": 15253,
+      "mtime_ns": 1791374617000000000
+    },
+    "lib/lean/QuantyraNullCone/Transpose.olean": {
+      "sha256": "f6b1df5d9f4c6bbf450467f9228982958da4c2814abc55786928a2d7a3715774",
+      "bytes": 96288,
+      "mtime_ns": 1791374617000000000
+    },
+    "lib/lean/QuantyraNullCone/Transpose.trace": {
+      "sha256": "f0c283b8a64376a08f46f16923baac3fa93006d1558f7c1ed015e5012cded9c2",
+      "bytes": 4376,
+      "mtime_ns": 1791374617000000000
+    },
+    "lib/lean/QuantyraNullCone/Unlabeled.ilean": {
+      "sha256": "ee47630b8a95644b4478c57d38b7e5ec331941a7836709c9adf7e5de7fd6c509",
+      "bytes": 24197,
+      "mtime_ns": 1791376405000000000
+    },
+    "lib/lean/QuantyraNullCone/Unlabeled.olean": {
+      "sha256": "3c796333cfc0c7606dff628267d42586329a7e186e72e35fb1d6bf3e0d9f53ad",
+      "bytes": 158328,
+      "mtime_ns": 1791376405000000000
+    },
+    "lib/lean/QuantyraNullCone/Unlabeled.trace": {
+      "sha256": "40cf88eeec6bd52e723860e1e4139cda7501d8a1d925885c680bd749a86e1ea0",
+      "bytes": 4820,
+      "mtime_ns": 1791376405000000000
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "run": "space-pair3-dev6-20261010T114526Z-23f3f2",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.LorentzTimeGeometry",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

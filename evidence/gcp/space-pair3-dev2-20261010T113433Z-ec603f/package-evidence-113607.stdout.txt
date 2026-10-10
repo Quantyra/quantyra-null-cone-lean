@@ -1,0 +1,100 @@
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QuantyraNullCone/LorentzTimeMoments.lean:147:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: QuantyraNullCone/LorentzTimeMoments.lean:149:0: 'QuantyraNullCone.lorentz_time_volume_map3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:150:0: 'QuantyraNullCone.flat_diamond_time_map3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:151:0: 'QuantyraNullCone.integral_flat_time3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:152:0: 'QuantyraNullCone.flat_time_second_moment3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:153:0: 'QuantyraNullCone.flat_time_fourth_moment3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [2979/2981] Built QuantyraNullCone.LorentzCurveMap (4.1s)
+info: QuantyraNullCone/LorentzCurveMap.lean:142:0: 'QuantyraNullCone.ac_comp_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:143:0: 'QuantyraNullCone.lorentz_norm_le_sum_abs3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:144:0: 'QuantyraNullCone.FutureCurve3.point_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:145:0: 'QuantyraNullCone.FutureCurve3.point_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:146:0: 'QuantyraNullCone.FutureCurve3.map_coord_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:147:0: 'QuantyraNullCone.FutureCurve3.map_coord_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:148:0: 'QuantyraNullCone.FutureCurve3.map_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:149:0: 'QuantyraNullCone.FutureCurve3.map_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:150:0: 'QuantyraNullCone.FutureCurve3.map_weightedLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:151:0: 'QuantyraNullCone.weighted_time_le_of_causal_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2980/2981] Building QuantyraNullCone.LorentzTimeEnvelope (3.5s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/QuantyraNullCone/LorentzTimeEnvelope.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev2-20261010T113433Z-ec603f/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.setup.json --json
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:51:77: unexpected token ':='; expected '_' or identifier
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:51:4: Application type mismatch: The argument
+  Continuous.intervalIntegrable
+    (have this := ?m.126;
+    this)
+    ?m.132
+has type
+  ∀ (b : ℝ), IntervalIntegrable (fun t => A * t ^ 2) ?m.129 ?m.132 b
+but is expected to have type
+  IntervalIntegrable ?m.93 ?m.95 ?m.91 ?m.92
+in the application
+  intervalIntegral.integral_add
+    (Continuous.intervalIntegrable
+      (have this := ?m.126;
+      this)
+      ?m.132)
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:49:56: unsolved goals
+A B a b : ℝ
+⊢ ∫ (t : ℝ) in a..b, A * t ^ 2 + B = A * ((b ^ 3 - a ^ 3) / 3) + B * (b - a)
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:84:58: unexpected token ':='; expected '_' or identifier
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:84:4: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.511
+has type
+  ∀ (b : ℝ), IntervalIntegrable timeShapeEnvelope3 ?m.508 ?m.511 b
+but is expected to have type
+  IntervalIntegrable ?m.504 ?m.505 ?m.501 ?m.502
+in the application
+  intervalIntegral.integral_add_adjacent_intervals
+    (Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.511)
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:58:56: unsolved goals
+hl : ∫ (t : ℝ) in -1..-1 / 3, timeShapeEnvelope3 t = ∫ (t : ℝ) in -1..-1 / 3, t ^ 2 + -1 / 10
+hm : ∫ (t : ℝ) in -1 / 3..1 / 3, timeShapeEnvelope3 t = ∫ (t : ℝ) in -1 / 3..1 / 3, -(4 / 5) * t ^ 2 + 1 / 10
+hr : ∫ (t : ℝ) in 1 / 3..1, timeShapeEnvelope3 t = ∫ (t : ℝ) in 1 / 3..1, t ^ 2 + -1 / 10
+⊢ ∫ (t : ℝ) in -1..1, timeShapeEnvelope3 t = 5 / 9
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:99:58: unexpected token ':='; expected '_' or identifier
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:144:58: unexpected token ':='; expected '_' or identifier
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:144:4: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.127
+has type
+  ∀ (b : ℝ), IntervalIntegrable timeShapeEnvelope3 ?m.124 ?m.127 b
+but is expected to have type
+  IntervalIntegrable ?m.120 ?m.121 ?m.117 ?m.118
+in the application
+  intervalIntegral.integral_add_adjacent_intervals
+    (Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.127)
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:137:47: unsolved goals
+p q : LorentzPoint3
+c : FutureCurve3 p q
+⊢ (∫ (u : ℝ) in -1..q.ofLp 0, timeShapeEnvelope3 u) - ∫ (u : ℝ) in -1..p.ofLp 0, timeShapeEnvelope3 u =
+    ∫ (u : ℝ) in p.ofLp 0..q.ofLp 0, timeShapeEnvelope3 u
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:160:58: unexpected token ':='; expected '_' or identifier
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:160:4: Application type mismatch: The argument
+  Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.148
+has type
+  ∀ (b : ℝ), IntervalIntegrable timeShapeEnvelope3 ?m.145 ?m.148 b
+but is expected to have type
+  IntervalIntegrable timeShapeEnvelope3 volume (-1) 1
+in the application
+  intervalIntegral.integral_mono_interval (abs_le.mp hp).left ?m.129 (abs_le.mp hq).right
+    (Filter.Eventually.of_forall time_shape_envelope_nonneg3)
+    (Continuous.intervalIntegrable continuous_time_shape_envelope3 ?m.148)
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:162:0: 'QuantyraNullCone.abs_time_shape_le_envelope3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:163:0: 'QuantyraNullCone.integral_time_shape_envelope3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:164:0: 'QuantyraNullCone.FutureCurve3.time_primitive_AC' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:165:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:166:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTimeMoments
+- QuantyraNullCone.LorentzTimeEnvelope

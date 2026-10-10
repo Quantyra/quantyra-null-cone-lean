@@ -1,0 +1,142 @@
+error: QuantyraNullCone/LorentzTimeMoments.lean:23:4: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (Measure.prod ?m.123 ?m.124) (Prod.fst ⁻¹' s ∩ splitLorentzDiamond3)
+in the target expression
+  volume (Prod.fst ⁻¹' s ∩ splitLorentzDiamond3) =
+    ∫⁻ (a : (fun x => ℝ) 0) in s, ENNReal.ofReal (lorentzSliceArea3 a) ∂volume
+
+case h
+s : Set ((fun x => ℝ) 0)
+hs : MeasurableSet s
+hm : Measurable fun p => p.ofLp 0
+he : ⇑splitLorentzEquiv3 ⁻¹' (Prod.fst ⁻¹' s ∩ splitLorentzDiamond3) = (fun p => p.ofLp 0) ⁻¹' s ∩ lorentzDiamond3
+⊢ volume (Prod.fst ⁻¹' s ∩ splitLorentzDiamond3) =
+    ∫⁻ (a : (fun x => ℝ) 0) in s, ENNReal.ofReal (lorentzSliceArea3 a) ∂volume
+error: QuantyraNullCone/LorentzTimeMoments.lean:58:12: typeclass instance problem is stuck
+  IsFiniteMeasureOnCompacts ?m.23
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsFiniteMeasureOnCompacts` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: QuantyraNullCone/LorentzTimeMoments.lean:74:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ℝ) in -1..1, (lorentzSliceArea3 * f) x ∂?m.257
+in the target expression
+  ∫ (x : ℝ) in -1..1, lorentzSliceArea3 x * f x =
+    (∫ (t : ℝ) in -1..0, Real.pi * (1 + t) ^ 2 * f t) + ∫ (t : ℝ) in 0..1, Real.pi * (1 - t) ^ 2 * f t
+
+f : ℝ → ℝ
+hf : Continuous f
+hi : ((Icc (-1) 1).indicator fun t => lorentzSliceArea3 t * f t) = fun t => lorentzSliceArea3 t * f t
+⊢ ∫ (x : ℝ) in -1..1, lorentzSliceArea3 x * f x =
+    (∫ (t : ℝ) in -1..0, Real.pi * (1 + t) ^ 2 * f t) + ∫ (t : ℝ) in 0..1, Real.pi * (1 - t) ^ 2 * f t
+error: QuantyraNullCone/LorentzTimeMoments.lean:97:13: typeclass instance problem is stuck
+  IsLocallyFiniteMeasure ?m.307
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsLocallyFiniteMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: QuantyraNullCone/LorentzTimeMoments.lean:117:13: typeclass instance problem is stuck
+  IsLocallyFiniteMeasure ?m.299
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsLocallyFiniteMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+error: QuantyraNullCone/LorentzTimeMoments.lean:129:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (p : LorentzPoint3), ?m.38 (p.ofLp 0) ∂flatDiamondMeasure3
+in the target expression
+  ∫ (p : LorentzPoint3), p.ofLp 0 ^ 2 ∂flatDiamondMeasure3 = 1 / 10
+
+⊢ ∫ (p : LorentzPoint3), p.ofLp 0 ^ 2 ∂flatDiamondMeasure3 = 1 / 10
+error: QuantyraNullCone/LorentzTimeMoments.lean:137:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (p : LorentzPoint3), ?m.38 (p.ofLp 0) ∂flatDiamondMeasure3
+in the target expression
+  ∫ (p : LorentzPoint3), p.ofLp 0 ^ 4 ∂flatDiamondMeasure3 = 1 / 35
+
+⊢ ∫ (p : LorentzPoint3), p.ofLp 0 ^ 4 ∂flatDiamondMeasure3 = 1 / 35
+info: QuantyraNullCone/LorentzTimeMoments.lean:143:0: 'QuantyraNullCone.lorentz_time_volume_map3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:144:0: 'QuantyraNullCone.flat_diamond_time_map3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:145:0: 'QuantyraNullCone.integral_flat_time3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:146:0: 'QuantyraNullCone.flat_time_second_moment3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeMoments.lean:147:0: 'QuantyraNullCone.flat_time_fourth_moment3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+ℹ [2979/2981] Built QuantyraNullCone.LorentzCurveMap (3.9s)
+info: QuantyraNullCone/LorentzCurveMap.lean:142:0: 'QuantyraNullCone.ac_comp_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:143:0: 'QuantyraNullCone.lorentz_norm_le_sum_abs3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:144:0: 'QuantyraNullCone.FutureCurve3.point_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:145:0: 'QuantyraNullCone.FutureCurve3.point_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:146:0: 'QuantyraNullCone.FutureCurve3.map_coord_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:147:0: 'QuantyraNullCone.FutureCurve3.map_coord_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:148:0: 'QuantyraNullCone.FutureCurve3.map_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:149:0: 'QuantyraNullCone.FutureCurve3.map_velocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:150:0: 'QuantyraNullCone.FutureCurve3.map_weightedLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzCurveMap.lean:151:0: 'QuantyraNullCone.weighted_time_le_of_causal_map3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2980/2981] Building QuantyraNullCone.LorentzTimeEnvelope (3.7s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/QuantyraNullCone/LorentzTimeEnvelope.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.setup.json --json
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:72:4: Type mismatch: After simplification, term
+  ht
+ has type
+  t ∈ uIcc (-1 / 3) 3⁻¹
+but is expected to have type
+  -3⁻¹ ≤ t ∧ t ≤ 3⁻¹
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:78:6: Type mismatch: After simplification, term
+  ht
+ has type
+  t ∈ uIcc 3⁻¹ 1
+but is expected to have type
+  3⁻¹ ≤ t ∧ t ≤ 1
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:141:5: typeclass instance problem is stuck
+  IsLocallyFiniteMeasure ?m.136
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsLocallyFiniteMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:159:0: 'QuantyraNullCone.abs_time_shape_le_envelope3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:160:0: 'QuantyraNullCone.integral_time_shape_envelope3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:161:0: 'QuantyraNullCone.FutureCurve3.time_primitive_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:162:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:163:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTimeMoments
+- QuantyraNullCone.LorentzTimeEnvelope
+✖ [2980/2981] Building QuantyraNullCone.LorentzTimeEnvelope (3.7s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/QuantyraNullCone/LorentzTimeEnvelope.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/lib/lean/QuantyraNullCone/LorentzTimeEnvelope.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev1-20261010T113239Z-98a26c/source/.lake/build/ir/QuantyraNullCone/LorentzTimeEnvelope.setup.json --json
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:72:4: Type mismatch: After simplification, term
+  ht
+ has type
+  t ∈ uIcc (-1 / 3) 3⁻¹
+but is expected to have type
+  -3⁻¹ ≤ t ∧ t ≤ 3⁻¹
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:78:6: Type mismatch: After simplification, term
+  ht
+ has type
+  t ∈ uIcc 3⁻¹ 1
+but is expected to have type
+  3⁻¹ ≤ t ∧ t ≤ 1
+error: QuantyraNullCone/LorentzTimeEnvelope.lean:141:5: typeclass instance problem is stuck
+  IsLocallyFiniteMeasure ?m.136
+
+Note: Lean will not try to resolve this typeclass instance problem because the fourth type argument to `IsLocallyFiniteMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:159:0: 'QuantyraNullCone.abs_time_shape_le_envelope3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:160:0: 'QuantyraNullCone.integral_time_shape_envelope3' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:161:0: 'QuantyraNullCone.FutureCurve3.time_primitive_AC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:162:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzTimeEnvelope.lean:163:0: 'QuantyraNullCone.FutureCurve3.integral_time_envelope_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzTimeMoments
+- QuantyraNullCone.LorentzTimeEnvelope
+REMOTE_TERMINAL_EXIT=1

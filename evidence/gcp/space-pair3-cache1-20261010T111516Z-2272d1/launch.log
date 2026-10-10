@@ -1,0 +1,7 @@
+inputs.tar.gz: OK
+SEEDED_TASK_OWNED_CACHE
+CACHE_INVENTORY before 417
+Lean (version 4.30.0, x86_64-unknown-linux-gnu, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)
+PASS input and pinned dependency identities
+CACHE_INVENTORY after 489
+PASS development build and source preservation

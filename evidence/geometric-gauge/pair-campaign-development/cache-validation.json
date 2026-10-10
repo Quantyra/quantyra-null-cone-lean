@@ -1,0 +1,30 @@
+{
+  "status": "PASS_GCP_INCREMENTAL_CACHE_PROBE",
+  "campaign": "pair3-20261010T111516Z-a06b82",
+  "runs": [
+    "space-pair3-cache3-20261010T112429Z-c7e358",
+    "space-pair3-cache4-20261010T112716Z-93b105",
+    "space-pair3-cache5-20261010T113018Z-7b7d8a"
+  ],
+  "seed_build_seconds": 69.0,
+  "unchanged_build_seconds": 3.0,
+  "edited_build_seconds": 8.0,
+  "tracked_artifacts_unchanged_on_replay": 489,
+  "edited_rebuilt_modules": [
+    "QuantyraNullCone.CampaignCacheDependent",
+    "QuantyraNullCone.CampaignCacheProbe"
+  ],
+  "edited_changed_tracked_artifacts": [
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.ilean",
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.olean",
+    "lib/lean/QuantyraNullCone/CampaignCacheDependent.trace",
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.ilean",
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.olean",
+    "lib/lean/QuantyraNullCone/CampaignCacheProbe.trace"
+  ],
+  "scope": "Actual GCP build duration, excluding transport, cache compression/extraction and artifact collection; no whole-theorem certification or general runtime guarantee.",
+  "cache_policy": "Persistent compressed task-owned checkpoint, exact archive/toolchain/dependency verification, fresh RAM extraction each run. Prior RAM-only reuse failed and its evidence remains preserved.",
+  "formal_certification": false,
+  "local_lean_invocations": 0,
+  "verifier_sha256": "615cf7f8457a0a4a20b6386f51449ec26d64234bf890feb23d4e04f664794a2c"
+}

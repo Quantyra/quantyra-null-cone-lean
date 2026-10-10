@@ -1,0 +1,64 @@
+{
+  "story": "S049",
+  "date": "2026-10-10",
+  "scope": "Structural adequacy screen of an existing beam-telescope regression fixture; no comparative-benefit or physical-calibration experiment",
+  "source_commit": "9ab568b787a9c018207dff6a33b9ef2148153e1a",
+  "source_repository": "https://github.com/SiLab-Bonn/beam_telescope_analysis",
+  "prior_inspection": "Source code, example documentation, table schemas, row counts and stored fit arguments were inspected. Event rows, hit/miss counts and selected-sample outcomes have not been read before this protocol and its executable are frozen. Original authors have already analyzed the data. This is retrospective research, not preregistration before measurement.",
+  "files": {
+    "Tracks_result.h5": {
+      "path": "beam_telescope_analysis/testing/fixtures/Tracks_result.h5",
+      "lfs": true,
+      "sha256": "136d3cd99c06bb75f1a4ea0d2e9fbbe2261ce0bfac3b8229372d14429e8d0cfb"
+    },
+    "track_analysis.py": {
+      "path": "beam_telescope_analysis/track_analysis.py",
+      "sha256": "bc6467c95245ef38084a2740421edf86d0b868b3d44038bb317e3a6fcc39d94d"
+    },
+    "data_selection.py": {
+      "path": "beam_telescope_analysis/tools/data_selection.py",
+      "sha256": "46f5d29419fd2a8746a9d100744c8584ea6df55066596812ee475a53a0f8db54"
+    },
+    "result_analysis.py": {
+      "path": "beam_telescope_analysis/result_analysis.py",
+      "sha256": "fb7d7e4cf5b4b188233327e48d2cc57d77b728be6c1870c013cd02b6291b8252"
+    },
+    "test_track_analysis.py": {
+      "path": "beam_telescope_analysis/testing/test_track_analysis.py",
+      "sha256": "b01c2e4230c3769158b6d029912a0dc4cae15de121080e019a539df69ea36e6c"
+    },
+    "test_result_analysis.py": {
+      "path": "beam_telescope_analysis/testing/test_result_analysis.py",
+      "sha256": "85670c652b8daad4cd9649567cc03dee8efa3e32c478af91a0af1cb9195120a4"
+    },
+    "telescope_aligned.yaml": {
+      "path": "beam_telescope_analysis/testing/fixtures/telescope_aligned.yaml",
+      "sha256": "ab59386e71beeec84a1a869bbe34e0f50a3d2cb07fcfcc1163156ad50dd047a4"
+    },
+    "eutelescope.py": {
+      "path": "beam_telescope_analysis/examples/eutelescope.py",
+      "sha256": "bfcb83e6ad97f44775b65e0182d95662093254a5fd5b6e6a8ab28a14c70a226c"
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "95d3c4219362132bd301a54e944768ec8292bc961e9d69c8f24c1f0a0b2fccda"
+    },
+    "LICENSE.txt": {
+      "path": "LICENSE.txt",
+      "sha256": "575ec487d0dcc03ee3b8a417b5db41f83344894c7855f52fa8d97b71f29da073"
+    }
+  },
+  "checks": [
+    "For every DUT table, report rows, unique events, multi-row events, monotonicity, bit-pattern counts, finite track fits and missing evaluated-DUT hits.",
+    "Independently compare all six hit bits with finite x/y coordinates and positive n_hits fields; retain discrepancies if present.",
+    "For DUT3, fixed from the upstream efficiency test before reading outcomes, report all saved rows and a reference-quality subset requiring hits and quality bits for DUTs 0,1,2,4,5 and track_chi2 < 15. Do not require DUT3 hit, quality or isolation bits.",
+    "Report the two chronological halves of unique event IDs descriptively, without fitting, tuning or declaring a held-out calibration pass. Neither half remains blinded after this screen. No ROI or efficiency target is selected."
+  ],
+  "adequacy_gate": [
+    "At least one saved track without a hit on the evaluated detector is necessary to demonstrate that misses are retained; this alone is insufficient for a valid efficiency denominator.",
+    "Resolve upstream detector-dependent association, trigger and alignment selection before calling a reference independent. The default candidate finder can use all DUTs even when the final fit excludes one.",
+    "Trace this exact fixture to its physical run and processing chain; a related example's Run36 description is not sufficient by itself.",
+    "A later beam-efficiency or fluence decision requires a separate physical bridge, matched established tag-and-probe/Kalman baselines, costs and an improvement gate before evaluation. Beam coordinates do not validate Lorentz chronology."
+  ],
+  "delivery": "Publish the small protocol, executable and descriptive result with source identities; keep downloaded public source bytes in an external cache. Do not redistribute the HDF5 fixture or equate the software MIT license with a verified independent data license. No Lean invocation is part of this screen."
+}

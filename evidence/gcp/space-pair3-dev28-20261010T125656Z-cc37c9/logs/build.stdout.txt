@@ -1,0 +1,64 @@
+ℹ [2010/2149] Replayed QuantyraNullCone.PairPermutation
+info: QuantyraNullCone/PairPermutation.lean:111:0: 'QuantyraNullCone.permutation_pair_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:112:0: 'QuantyraNullCone.pairMean_eq_permutation_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:113:0: 'QuantyraNullCone.pairMean_exp_le_permutation_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2550/2632] Replayed QuantyraNullCone.DisjointPairSample
+info: QuantyraNullCone/DisjointPairSample.lean:83:0: 'QuantyraNullCone.iid_subtuple_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:84:0: 'QuantyraNullCone.iid_disjoint_pairs_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:85:0: 'QuantyraNullCone.disjointPairIndex_injective' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:86:0: 'QuantyraNullCone.permuted_disjoint_pairs_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2578/2632] Replayed QuantyraNullCone.BernoulliMGF
+info: QuantyraNullCone/BernoulliMGF.lean:63:0: 'QuantyraNullCone.exp_remainder_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:64:0: 'QuantyraNullCone.centered_indicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:65:0: 'QuantyraNullCone.indicator_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:66:0: 'QuantyraNullCone.centered_indicator_mgf_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2629/2632] Replayed QuantyraNullCone.BernsteinIndicator
+info: QuantyraNullCone/BernsteinIndicator.lean:86:0: 'QuantyraNullCone.exp_remainder_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:87:0: 'QuantyraNullCone.exp_mul_bounded_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:88:0: 'QuantyraNullCone.centered_indicator_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2630/2632] Replayed QuantyraNullCone.BernsteinSample
+info: QuantyraNullCone/BernsteinSample.lean:67:0: 'QuantyraNullCone.iid_indicator_sum_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinSample.lean:68:0: 'QuantyraNullCone.iid_indicator_sum_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2631/2632] Building QuantyraNullCone.PairConcentration (2.9s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/QuantyraNullCone/PairConcentration.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/.lake/build/lib/lean/QuantyraNullCone/PairConcentration.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/.lake/build/lib/lean/QuantyraNullCone/PairConcentration.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/.lake/build/ir/QuantyraNullCone/PairConcentration.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev28-20261010T125656Z-cc37c9/source/.lake/build/ir/QuantyraNullCone/PairConcentration.setup.json --json
+error: QuantyraNullCone/PairConcentration.lean:31:2: Type mismatch
+  Fintype.card_mul_expect fun k => h (a k) (b k)
+has type
+  ↑(Fintype.card (Fin m)) * 𝔼 i, h (a i) (b i) = ∑ i, h (a i) (b i)
+but is expected to have type
+  ↑m * pairBlockMean a b h = ∑ x, h (a x) (b x)
+error: QuantyraNullCone/PairConcentration.lean:91:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : Fin n → Ω),
+    Real.exp
+      (t * centeredIndicatorSum S p fun k => (x (e (disjointPairLeft n k)), x (e (disjointPairRight n k)))) ∂?m.249
+in the target expression
+  ∫ (x : Fin n → Ω), (fun y => Real.exp (t * centeredIndicatorSum S p y)) (disjointPairs e x) ∂P =
+    mgf (centeredIndicatorSum S p) Q t
+
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+μ : Measure Ω
+inst✝ : IsProbabilityMeasure μ
+S : Set (Ω × Ω)
+hS : MeasurableSet S
+n : ℕ
+hn : 2 ≤ n
+t : ℝ
+ht : |t| < 3
+p : ℝ := (μ.prod μ).real S
+P : Measure (Fin n → Ω) := Measure.pi fun x => μ
+Q : Measure (Fin (n / 2) → Ω × Ω) := Measure.pi fun x => μ.prod μ
+f : Equiv.Perm (Fin n) → (Fin n → Ω) → ℝ := fun e x => Real.exp (t * centeredIndicatorSum S p (disjointPairs e x))
+hi : ∀ (e : Equiv.Perm (Fin n)), Integrable (f e) P
+e : Equiv.Perm (Fin n)
+hp :
+  MeasurePreserving (fun x k => (x (e (disjointPairLeft n k)), x (e (disjointPairRight n k)))) (Measure.pi fun x => μ)
+    (Measure.pi fun x => μ.prod μ)
+⊢ ∫ (x : Fin n → Ω), (fun y => Real.exp (t * centeredIndicatorSum S p y)) (disjointPairs e x) ∂P =
+    mgf (centeredIndicatorSum S p) Q t
+info: QuantyraNullCone/PairConcentration.lean:106:0: 'QuantyraNullCone.pairIndicator_exp_le_blocks' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:107:0: 'QuantyraNullCone.pairIndicator_exp_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:108:0: 'QuantyraNullCone.pairIndicator_bernstein_mgf' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairConcentration

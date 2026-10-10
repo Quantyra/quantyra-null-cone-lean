@@ -93,5 +93,8 @@ evidence/gcp/space-volumerate-*/** -text -whitespace
 evidence/volumerate/** -text -whitespace
 
 evidence/gcp/space-pair3-dev*/** -text -whitespace
+evidence/gcp/space-pair3-acceptance-*/** -text -whitespace
+evidence/geometric-gauge/pair-confidence-acceptance/*.py text eol=lf
+evidence/geometric-gauge/pair-confidence-acceptance/*.json text eol=lf
 evidence/geometric-gauge/pair-integral-development/*.py text eol=lf
 evidence/geometric-gauge/pair-integral-development/*.json text eol=lf

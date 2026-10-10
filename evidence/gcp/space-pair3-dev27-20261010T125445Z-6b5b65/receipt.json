@@ -1,0 +1,7 @@
+{
+  "run": "space-pair3-dev27-20261010T125445Z-6b5b65",
+  "compile_host": "GCP",
+  "target": "QuantyraNullCone.PairPermutation QuantyraNullCone.BernsteinSample QuantyraNullCone.DisjointPairSample",
+  "exit": 0,
+  "source_verified_before_and_after": true
+}

@@ -1,0 +1,61 @@
+error: QuantyraNullCone/LorentzPairEstimator.lean:63:6: Failed to rewrite using equation theorems for `timePairEstimator3`
+error: QuantyraNullCone/LorentzPairEstimator.lean:86:9: could not synthesize default value for parameter 'h₂' using tactics
+error: QuantyraNullCone/LorentzPairEstimator.lean:86:9: tactic 'aesop' failed, failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.
+Initial goal:
+  theta r : ℝ
+  ht : theta ∈ Icc 0 (1 / 2)
+  n : ℕ
+  hn : 2 ≤ n
+  hr : 0 < r
+  this : IsProbabilityMeasure (densityMeasure3 (timeQuadraticDensity3 theta)) :=
+    InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+  hsub :
+    {code | 225225 / 54952 * r < geometricDistortion3 ⋯ ⋯} ⊆
+      {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|}
+  ⊢ (unlabeledOrderLaw3 (timeQuadraticDensity3 theta) n)
+        {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|} ≠
+      ⊤
+Remaining goals after safe rules:
+  theta r : ℝ
+  ht : theta ∈ Icc 0 (1 / 2)
+  n : ℕ
+--
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzPairEstimator
+  this : IsProbabilityMeasure (densityMeasure3 (timeQuadraticDensity3 theta)) :=
+    InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+  hsub :
+    {code | 225225 / 54952 * r < geometricDistortion3 ⋯ ⋯} ⊆
+      {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|}
+  ⊢ (unlabeledOrderLaw3 (timeQuadraticDensity3 theta) n)
+        {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|} ≠
+      ⊤
+Remaining goals after safe rules:
+  theta r : ℝ
+  ht : theta ∈ Icc 0 (1 / 2)
+  n : ℕ
+  hn : 2 ≤ n
+  hr : 0 < r
+  this : IsProbabilityMeasure (densityMeasure3 (timeQuadraticDensity3 theta)) :=
+    InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+  hsub :
+    {code | 225225 / 54952 * r < geometricDistortion3 ⋯ ⋯} ⊆
+      {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|}
+  ⊢ (unlabeledOrderLaw3 (timeQuadraticDensity3 theta) n)
+        {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|} ≠
+      ⊤
+info: QuantyraNullCone/LorentzPairEstimator.lean:96:0: 'QuantyraNullCone.time_pair_clipped_inverse_exists3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:97:0: 'QuantyraNullCone.time_pair_estimator_geometric_error3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:98:0: 'QuantyraNullCone.time_pair_estimator_geometric_tail3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:99:0: 'QuantyraNullCone.time_pair_midpoint_geometric_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzPairEstimator
+REMOTE_TERMINAL_EXIT=1

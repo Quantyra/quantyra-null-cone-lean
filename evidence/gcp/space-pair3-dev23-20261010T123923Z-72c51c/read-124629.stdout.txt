@@ -1,0 +1,2 @@
+{"run": "space-pair3-dev23-20261010T123923Z-72c51c", "quarantine": "/dev/shm/quantyra-space-dev23-unused-dependencies", "all_moved_created_in_this_run": true, "required_import_closure_preserved": true, "older_artifacts_untouched": true, "source_inputs_logs_and_successful_cache_untouched": true, "no_other_lean_work": true, "moved_bytes": 188138233}
+MOVED 1904 KEPT 0 FREE 373858304

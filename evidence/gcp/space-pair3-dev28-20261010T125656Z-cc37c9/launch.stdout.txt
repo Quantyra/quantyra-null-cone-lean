@@ -1,0 +1,65 @@
+error: QuantyraNullCone/PairConcentration.lean:31:2: Type mismatch
+  Fintype.card_mul_expect fun k => h (a k) (b k)
+has type
+  ↑(Fintype.card (Fin m)) * 𝔼 i, h (a i) (b i) = ∑ i, h (a i) (b i)
+but is expected to have type
+  ↑m * pairBlockMean a b h = ∑ x, h (a x) (b x)
+error: QuantyraNullCone/PairConcentration.lean:91:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : Fin n → Ω),
+    Real.exp
+      (t * centeredIndicatorSum S p fun k => (x (e (disjointPairLeft n k)), x (e (disjointPairRight n k)))) ∂?m.249
+in the target expression
+  ∫ (x : Fin n → Ω), (fun y => Real.exp (t * centeredIndicatorSum S p y)) (disjointPairs e x) ∂P =
+    mgf (centeredIndicatorSum S p) Q t
+
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+μ : Measure Ω
+inst✝ : IsProbabilityMeasure μ
+S : Set (Ω × Ω)
+hS : MeasurableSet S
+n : ℕ
+hn : 2 ≤ n
+t : ℝ
+ht : |t| < 3
+p : ℝ := (μ.prod μ).real S
+--
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairConcentration
+error: QuantyraNullCone/PairConcentration.lean:91:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : Fin n → Ω),
+    Real.exp
+      (t * centeredIndicatorSum S p fun k => (x (e (disjointPairLeft n k)), x (e (disjointPairRight n k)))) ∂?m.249
+in the target expression
+  ∫ (x : Fin n → Ω), (fun y => Real.exp (t * centeredIndicatorSum S p y)) (disjointPairs e x) ∂P =
+    mgf (centeredIndicatorSum S p) Q t
+
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+μ : Measure Ω
+inst✝ : IsProbabilityMeasure μ
+S : Set (Ω × Ω)
+hS : MeasurableSet S
+n : ℕ
+hn : 2 ≤ n
+t : ℝ
+ht : |t| < 3
+p : ℝ := (μ.prod μ).real S
+P : Measure (Fin n → Ω) := Measure.pi fun x => μ
+Q : Measure (Fin (n / 2) → Ω × Ω) := Measure.pi fun x => μ.prod μ
+f : Equiv.Perm (Fin n) → (Fin n → Ω) → ℝ := fun e x => Real.exp (t * centeredIndicatorSum S p (disjointPairs e x))
+hi : ∀ (e : Equiv.Perm (Fin n)), Integrable (f e) P
+e : Equiv.Perm (Fin n)
+hp :
+  MeasurePreserving (fun x k => (x (e (disjointPairLeft n k)), x (e (disjointPairRight n k)))) (Measure.pi fun x => μ)
+    (Measure.pi fun x => μ.prod μ)
+⊢ ∫ (x : Fin n → Ω), (fun y => Real.exp (t * centeredIndicatorSum S p y)) (disjointPairs e x) ∂P =
+    mgf (centeredIndicatorSum S p) Q t
+info: QuantyraNullCone/PairConcentration.lean:106:0: 'QuantyraNullCone.pairIndicator_exp_le_blocks' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:107:0: 'QuantyraNullCone.pairIndicator_exp_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:108:0: 'QuantyraNullCone.pairIndicator_bernstein_mgf' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairConcentration
+REMOTE_TERMINAL_EXIT=1

@@ -1,0 +1,36 @@
+info: QuantyraNullCone/BernsteinIndicator.lean:87:0: 'QuantyraNullCone.exp_mul_bounded_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:88:0: 'QuantyraNullCone.centered_indicator_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2999/3006] Replayed QuantyraNullCone.BernsteinSample
+info: QuantyraNullCone/BernsteinSample.lean:67:0: 'QuantyraNullCone.iid_indicator_sum_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinSample.lean:68:0: 'QuantyraNullCone.iid_indicator_sum_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3000/3006] Built QuantyraNullCone.PairConcentration (4.0s)
+info: QuantyraNullCone/PairConcentration.lean:107:0: 'QuantyraNullCone.pairIndicator_exp_le_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:108:0: 'QuantyraNullCone.pairIndicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:109:0: 'QuantyraNullCone.pairIndicator_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3001/3006] Built QuantyraNullCone.BernsteinRadius (4.4s)
+info: QuantyraNullCone/BernsteinRadius.lean:42:0: 'QuantyraNullCone.bernsteinRadius_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinRadius.lean:43:0: 'QuantyraNullCone.bernstein_log_radius_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3002/3006] Built QuantyraNullCone.PairBernsteinTail (4.9s)
+info: QuantyraNullCone/PairBernsteinTail.lean:87:0: 'QuantyraNullCone.pairIndicator_chernoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairBernsteinTail.lean:88:0: 'QuantyraNullCone.pairIndicator_bernstein_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3003/3006] Built QuantyraNullCone.LorentzPairStatistic (3.7s)
+info: QuantyraNullCone/LorentzPairStatistic.lean:85:0: 'QuantyraNullCone.orderPairMean_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:86:0: 'QuantyraNullCone.sampled_order_pair_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:87:0: 'QuantyraNullCone.time_pair_variance_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:88:0: 'QuantyraNullCone.time_pair_sample_bernstein3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:89:0: 'QuantyraNullCone.time_pair_unlabeled_bernstein3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3004/3006] Built QuantyraNullCone.PairRelationCount (3.4s)
+info: QuantyraNullCone/PairRelationCount.lean:56:0: 'QuantyraNullCone.card_distinctPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairRelationCount.lean:57:0: 'QuantyraNullCone.orderPairMean_eq_relation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairRelationCount.lean:58:0: 'QuantyraNullCone.sampled_order_relation_count3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3005/3006] Built QuantyraNullCone.LorentzPairEstimator (4.3s)
+info: QuantyraNullCone/LorentzPairEstimator.lean:101:0: 'QuantyraNullCone.time_pair_clipped_inverse_exists3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:102:0: 'QuantyraNullCone.time_pair_estimator_geometric_error3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:103:0: 'QuantyraNullCone.time_pair_estimator_geometric_tail3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:104:0: 'QuantyraNullCone.time_pair_midpoint_geometric_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3006/3006] Built QuantyraNullCone.LorentzPairConfidence (3.3s)
+info: QuantyraNullCone/LorentzPairConfidence.lean:82:0: 'QuantyraNullCone.time_pair_confidence_estimator_measurable3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConfidence.lean:83:0: 'QuantyraNullCone.time_pair_raw_geometric_confidence3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairConfidence.lean:84:0: 'QuantyraNullCone.time_pair_geometric_confidence3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3006 jobs).
+REMOTE_TERMINAL_EXIT=0

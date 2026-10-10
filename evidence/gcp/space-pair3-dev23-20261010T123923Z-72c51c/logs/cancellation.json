@@ -1,0 +1,18 @@
+{
+  "reason": "cancel unnecessary broad Mathlib.Tactic dependency rebuild; narrow imports",
+  "run": "space-pair3-dev23-20261010T123923Z-72c51c",
+  "owned_lake_pids": [
+    1354
+  ],
+  "terminated_task_descendants": [
+    1354,
+    2984,
+    3022,
+    3239,
+    3252,
+    3292,
+    3311,
+    3323,
+    3328
+  ]
+}

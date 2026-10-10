@@ -1,0 +1,6 @@
+{
+  "archive": "space-pair3-dev23-20261010T123923Z-72c51c-maintenance.tar.gz",
+  "sha256": "58ba7ee40f11b1cf8e14b31a11b2de056063e3cf42e31a3eb90412b252d13d82",
+  "scope": "Supplemental cleanup evidence; original terminal evidence archive unchanged. Only verified newly created unnecessary dependency artifacts were moved to RAM.",
+  "local_lean_invocations": 0
+}

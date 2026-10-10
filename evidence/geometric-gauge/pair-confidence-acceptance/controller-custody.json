@@ -1,0 +1,6 @@
+{
+  "file": "controller-snapshot.py",
+  "sha256": "f5308d775ac36c667358495a13c5f146321bac60dfbedc4954c6502b087437f8",
+  "scope": "Controller used for the acceptance run. Includes local broad/missing-import guards; all Lean/Lake commands execute on GCP.",
+  "run": "space-pair3-acceptance-20261010T130617Z-981811"
+}

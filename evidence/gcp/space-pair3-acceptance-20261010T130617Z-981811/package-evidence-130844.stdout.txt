@@ -1,0 +1,100 @@
+info: QuantyraNullCone/LorentzFlowCone.lean:121:0: 'QuantyraNullCone.lorentz_flow_derivative_timelike3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:122:0: 'QuantyraNullCone.lorentz_flow_derivative_future3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowCone.lean:123:0: 'QuantyraNullCone.lorentz_flow_flat_proper_speed3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3158/3193] Built QuantyraNullCone.TimeCouplingLimit (5.7s)
+info: QuantyraNullCone/TimeCouplingLimit.lean:86:0: 'QuantyraNullCone.isOpen_timeBadPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCouplingLimit.lean:87:0: 'QuantyraNullCone.isTimeCoupling_of_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCouplingLimit.lean:88:0: 'QuantyraNullCone.timeCoupling_selfProd_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCouplingLimit.lean:89:0: 'QuantyraNullCone.timeBadPairs_limit_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeCouplingLimit.lean:90:0: 'QuantyraNullCone.isZeroTimeCoupling_of_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3159/3193] Built QuantyraNullCone.ThinningLaplace (4.1s)
+ℹ [3160/3193] Built QuantyraNullCone.LorentzInteriorIsometry (4.5s)
+info: QuantyraNullCone/LorentzInteriorIsometry.lean:76:0: 'QuantyraNullCone.InteriorDensityIsometry3.forward_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorIsometry.lean:77:0: 'QuantyraNullCone.InteriorDensityIsometry3.derivative_right_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzInteriorIsometry.lean:78:0: 'QuantyraNullCone.InteriorDensityIsometry3.inverse_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorIsometry.lean:79:0: 'QuantyraNullCone.InteriorDensityIsometry3.time_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorIsometry.lean:80:0: 'QuantyraNullCone.InteriorDensityIsometry3.jacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3161/3193] Built QuantyraNullCone.ConfoundingGeometry (4.7s)
+ℹ [3162/3193] Built QuantyraNullCone.LorentzFlowTime (4.0s)
+info: QuantyraNullCone/LorentzFlowTime.lean:98:0: 'QuantyraNullCone.convex_closedLorentzDiamond3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:99:0: 'QuantyraNullCone.lorentz_flow_lipschitz3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:100:0: 'QuantyraNullCone.lorentz_flow_isCausalMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:101:0: 'QuantyraNullCone.weighted_time_flow_eq3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:102:0: 'QuantyraNullCone.gauge_time_weight3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:103:0: 'QuantyraNullCone.gauge_inverse_time_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzFlowTime.lean:104:0: 'QuantyraNullCone.gauge_forward_time_separation3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3163/3193] Built QuantyraNullCone.TimeZeroAttainment (3.9s)
+info: QuantyraNullCone/TimeZeroAttainment.lean:46:0: 'QuantyraNullCone.exists_zeroTimeCoupling_of_loss_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeZeroAttainment.lean:47:0: 'QuantyraNullCone.timeDistortionLoss_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3164/3193] Built QuantyraNullCone.ThinningTermination (3.7s)
+✔ [3165/3193] Built QuantyraNullCone.ConfoundingTargets (3.9s)
+✔ [3166/3193] Built QuantyraNullCone.ConfoundingDetector (4.2s)
+ℹ [3167/3193] Built QuantyraNullCone.LorentzDistortionZero (3.6s)
+info: QuantyraNullCone/LorentzDistortionZero.lean:22:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3168/3193] Built QuantyraNullCone.TimeZeroIsomorphy (3.7s)
+info: QuantyraNullCone/TimeZeroIsomorphy.lean:81:0: 'QuantyraNullCone.IsZeroTimeCoupling.exists_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/TimeZeroIsomorphy.lean:82:0: 'QuantyraNullCone.timeDistortionLoss_eq_zero_iff_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3169/3193] Built QuantyraNullCone.ThinningStopping (4.3s)
+✔ [3170/3193] Built QuantyraNullCone.ConfoundingTime (4.3s)
+ℹ [3171/3193] Built QuantyraNullCone.LorentzDistortionIsomorphy (3.0s)
+info: QuantyraNullCone/LorentzDistortionIsomorphy.lean:25:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_iff_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3172/3193] Built QuantyraNullCone.ThinningTerminalPatterns (3.0s)
+✔ [3173/3193] Built QuantyraNullCone.ThinningStoppedLaw (3.2s)
+ℹ [3174/3193] Built QuantyraNullCone.LorentzZeroOrderLaws (5.0s)
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:53:0: 'QuantyraNullCone.orderLaw3_eq_of_time_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:54:0: 'QuantyraNullCone.geometricDistortion3_zero_orderLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzZeroOrderLaws.lean:55:0: 'QuantyraNullCone.geometricDistortion3_zero_unlabeledOrderLaw_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3175/3193] Built QuantyraNullCone.ThinningStoppedCoverage (3.1s)
+✔ [3176/3193] Built QuantyraNullCone.ConfoundingLaw (3.4s)
+✔ [3177/3193] Built QuantyraNullCone.ConfoundingMarked (3.4s)
+✔ [3178/3193] Built QuantyraNullCone.MarkedEstimator (3.3s)
+✔ [3179/3193] Built QuantyraNullCone.ConfoundingProcess (3.8s)
+✔ [3180/3193] Built QuantyraNullCone.VolumeRateBounds (3.9s)
+✔ [3181/3193] Built QuantyraNullCone.ConfoundingTesting (3.4s)
+✔ [3182/3193] Built QuantyraNullCone.VolumeRateUpper (3.0s)
+✔ [3183/3193] Built QuantyraNullCone.VolumeRateExperiment (3.4s)
+✔ [3184/3193] Built QuantyraNullCone.VolumeRateLikelihood (4.1s)
+✔ [3185/3193] Built QuantyraNullCone.VolumeRateScale (4.4s)
+ℹ [3186/3193] Built QuantyraNullCone.LorentzGaugeDistortion (35s)
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:103:0: 'QuantyraNullCone.measurable_closedLorentzMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:104:0: 'QuantyraNullCone.closed_density_transport3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:105:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_time_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:106:0: 'QuantyraNullCone.gauge_geometric_distortion_zero3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:107:0: 'QuantyraNullCone.gauge_geometric_loss_removes_obstruction3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzGaugeDistortion.lean:108:0: 'QuantyraNullCone.gauge_quotient_time_homeomorph3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3187/3193] Built QuantyraNullCone.VolumeRateSampling (3.6s)
+ℹ [3188/3193] Built QuantyraNullCone.LorentzInteriorMeasure (3.4s)
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:109:0: 'QuantyraNullCone.openLorentzCompletion3_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:110:0: 'QuantyraNullCone.measurable_openLorentzCompletion3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:111:0: 'QuantyraNullCone.openLorentzCompletion3_maps_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:112:0: 'QuantyraNullCone.hasFDerivAt_openLorentzCompletion3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:113:0: 'QuantyraNullCone.openLorentzCompletion3_bijOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:114:0: 'QuantyraNullCone.density_measure3_ae_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:115:0: 'QuantyraNullCone.closed_density3_ae_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:116:0: 'QuantyraNullCone.density_transport_of_jacobian3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorMeasure.lean:117:0: 'QuantyraNullCone.InteriorDensityIsometry3.density_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3189/3193] Built QuantyraNullCone.VolumeRateJoint (3.2s)
+✔ [3190/3193] Built QuantyraNullCone.VolumeRateEmpty (3.5s)
+ℹ [3191/3193] Built QuantyraNullCone.LorentzInteriorDistortion (32s)
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:113:0: 'QuantyraNullCone.geometricDistortion3_eq_zero_of_ae_time_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:114:0: 'QuantyraNullCone.InteriorDensityIsometry3.geometric_distortion_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:115:0: 'QuantyraNullCone.InteriorDensityIsometry3.quotient_time_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:116:0: 'QuantyraNullCone.lorentz_flow_isInteriorCausalMap3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:117:0: 'QuantyraNullCone.gauge_interior_isometry3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzInteriorDistortion.lean:118:0: 'QuantyraNullCone.gauge_geometric_zero_via_interior3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3192/3193] Built QuantyraNullCone (2.7s)
+Build completed successfully (3193 jobs).

@@ -1,0 +1,16 @@
+{
+  "campaign_ownership": {
+    "initial_state": "TERMINATED",
+    "started_for_task": true
+  },
+  "campaign_ownership_run": "space-pair3-dev23-20261010T123923Z-72c51c",
+  "no_other_lean_work": true,
+  "all_campaign_outcomes_collected_before_shutdown": true,
+  "full_acceptance_run": true,
+  "initial_cleanup_state": "RUNNING",
+  "stop_verified": true,
+  "final_state": "TERMINATED",
+  "persistent_cache_sha256_verified_before_shutdown": "2d279c84a78af1c5654fda2d534fa19ce26f17652cf4e06425b51056d173b625",
+  "persistent_cache_retained": true,
+  "verified_utc": "2026-10-10T13:13:50.861444+00:00"
+}

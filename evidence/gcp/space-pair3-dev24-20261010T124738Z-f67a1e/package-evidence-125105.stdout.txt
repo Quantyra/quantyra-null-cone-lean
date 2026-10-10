@@ -1,0 +1,100 @@
+ has type
+  ||x| / 3| < 1
+but is expected to have type
+  ‖?m.128‖ < 1
+error: QuantyraNullCone/BernsteinIndicator.lean:13:42: unsolved goals
+x : ℝ
+hx : |x| < 3
+hsum : HasSum (fun n => x ^ n / ↑n.factorial) (Real.exp x)
+hr : ||x| / 3| < 1
+⊢ Real.exp x - 1 - x ≤ x ^ 2 / (2 * (1 - |x| / 3))
+error: QuantyraNullCone/BernsteinIndicator.lean:71:22: Unknown identifier `probReal_le_one`
+error: QuantyraNullCone/BernsteinIndicator.lean:72:56: Type mismatch: After simplification, term
+  hp1
+ has type
+  p ≤ 1
+but is expected to have type
+  |p| ≤ 1
+info: QuantyraNullCone/BernsteinIndicator.lean:85:0: 'QuantyraNullCone.exp_remainder_bernstein' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:86:0: 'QuantyraNullCone.exp_mul_bounded_bernstein' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:87:0: 'QuantyraNullCone.centered_indicator_bernstein_mgf' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+✖ [2628/2628] Building QuantyraNullCone.PairPermutation (101s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/QuantyraNullCone/PairPermutation.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/.lake/build/lib/lean/QuantyraNullCone/PairPermutation.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/.lake/build/lib/lean/QuantyraNullCone/PairPermutation.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/.lake/build/ir/QuantyraNullCone/PairPermutation.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev24-20261010T124738Z-f67a1e/source/.lake/build/ir/QuantyraNullCone/PairPermutation.setup.json --json
+error: QuantyraNullCone/PairPermutation.lean:30:32: Invalid field `expect_comp`: The environment does not contain `Equiv.expect_comp`, so it is not possible to project the field `expect_comp` from an expression
+  permuteDistinctPair e
+of type
+  DistinctPair ι ≃ DistinctPair ι
+error: QuantyraNullCone/PairPermutation.lean:44:7: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:45:8: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:48:8: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:49:8: No goals to be solved
+error: QuantyraNullCone/PairPermutation.lean:55:7: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:59:32: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:62:10: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:64:10: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:73:19: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:79:27: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:89:13: Unknown constant `Real.convexOn_exp.map_sum_le`
+error: QuantyraNullCone/PairPermutation.lean:85:49: unsolved goals
+ι : Type u_1
+inst✝¹ : Fintype ι
+inst✝ : Nonempty ι
+f : ι → ℝ
+hc : 0 < ↑(Fintype.card ι)
+hw : ∑ _i, (↑(Fintype.card ι))⁻¹ = 1
+⊢ Real.exp (𝔼 i, f i) ≤ 𝔼 i, Real.exp (f i)
+error: QuantyraNullCone/PairPermutation.lean:98:8: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:101:18: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:102:8: failed to synthesize instance of type class
+  Fintype (Equiv.Perm ι)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: QuantyraNullCone/PairPermutation.lean:105:2: (deterministic) timeout at `whnf`, maximum number of heartbeats (1000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: QuantyraNullCone/PairPermutation.lean:107:0: 'QuantyraNullCone.permutation_pair_expect' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:108:0: 'QuantyraNullCone.pairMean_eq_permutation_blocks' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:109:0: 'QuantyraNullCone.pairMean_exp_le_permutation_blocks' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.BernsteinIndicator
+- QuantyraNullCone.PairPermutation

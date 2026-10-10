@@ -1,178 +1,81 @@
-# Restricted confidence theorem: current development checkpoint
+# Restricted confidence theorem: current checkpoint
 
-S042, 2026-10-10. **Targeted GCP development now passes for the actual pair
-probability and restricted geometric inverse, together with family membership
-and the sharper forward bound.** Incremental cache reuse is verified.
-The complete finite-confidence theorem remains under development. Full
-acceptance is still the preceding 1,165-report campaign; S042 remains at three
-of five criteria and S043 remains gated.
+S042, 2026-10-10. **The complete restricted all-pairs geometric confidence
+theorem has full GCP acceptance.** S042's mathematical endpoint is complete;
+S043 can proceed to bounded implementation/validation and its separate
+3+1 decision. The overall research roadmap remains active.
 
-The [ordinary theorem and investment audit](geometric-pair-audit.md) remains
-the milestone specification. This checkpoint records subsequent development;
-it does not promote the uncompleted confidence theorem to an accepted result.
-Root imports and the central acceptance audit are unchanged.
+The [milestone proof and investment audit](geometric-pair-audit.md) is the
+authoritative mathematical account and decision. The preceding development
+checkpoint is preserved at commit `f41945baa5ab066afca82aa00260151ed05aeefc`.
 
-## Mathematical progress
+## Delivered result
 
-[LorentzTimeMoments.lean](../QuantyraNullCone/LorentzTimeMoments.lean) derives
-the actual time pushforward of Lebesgue measure restricted to the original
-diamond. Spatial disk sections give the normalized time distribution and
-`E[t^2]=1/10`, `E[t^4]=1/35`. These are integral identities for the existing
-sampling measure, without an assumed marginal law.
+The actual time-quadratic density family on the original 2+1 Lorentz diamond
+has its exact pair law, geometric forward constant `3/20` and inverse factor
+`225225/54952`. The deterministic statistic counts all strict relations and
+descends to the original unlabeled order. Its permutation representation,
+the full joint law of disjoint pairs and a Bernstein MGF give the actual
+dependence-aware tail bound. The clipped inverse and midpoint policy yield
+the stated uniform confidence radius, including the zero/one-sample case.
 
-[LorentzTimeFamily.lean](../QuantyraNullCone/LorentzTimeFamily.lean) proves
-that `rho_theta=1+theta*(t^2-1/10)`, `theta in [0,1/2]`, belongs to the original
-smooth density class. It proves normalization, bounds `[19/20,29/20]`, the
-required Lipschitz bound, and `E[(t^2-1/10)^2]=13/700`.
+The endpoint is `time_pair_geometric_confidence3` in
+[LorentzPairConfidence.lean](../QuantyraNullCone/LorentzPairConfidence.lean).
+The ordinary audit's formula and conservative sufficient sample counts are
+retained. The 95% crossover is 33,338 observations. This is a sufficient
+guarantee, with no claim of measured utility, sharpness or a full-class rate.
+The smooth reconstruction converse remains an explicit external result.
 
-[LorentzTimeEnvelope.lean](../QuantyraNullCone/LorentzTimeEnvelope.lean) uses
-a shorter rational integral proof of the ordinary audit's sufficient bound:
+## Verification and execution
 
-    g(t)=t^2-1/10+2*max(0,1/10-(9/10)*t^2),
-    |t^2-1/10| <= g(t),    integral_(-1)^1 g(t) dt = 5/9.
+- Proof commit: `f4672c4ea5290e65759253e8052efae270702cbb`, pushed before acceptance.
+- GCP run: `space-pair3-acceptance-20261010T130617Z-981811`, project `quantyra-lean-cert-20260915`, instance
+  `quantyra-lean-builder-01`, zone `us-central1-a`.
+- Full root: 3,193 jobs. Exact named type/axiom reports: 1,276, including 111
+  additions across 27 modules since the preceding full audit. Zero warnings;
+  standard axioms only.
+- [Independent source/evidence verification](../evidence/geometric-gauge/pair-confidence-acceptance/acceptance-validation.json)
+  matches all 266 captured files, including 232 Lean inputs, to the immutable
+  archive, raw committed blobs and normalized local files. All preceding
+  1,165 audit statements and earlier mathematical modules are preserved.
+  Published manuscripts and frozen studies are unchanged.
+- [Shutdown receipt](../evidence/gcp/space-pair3-acceptance-20261010T130617Z-981811/cleanup.json): task ownership from
+  dev23, no other Lean/Lake work, all eleven terminal outcomes collected,
+  cache hash verified, VM `TERMINATED` at `2026-10-10T13:13:50.861444+00:00`.
 
-The split points are `-1/3` and `1/3`. The primitive is Lipschitz on `[-1,1]`;
-composition with the actual AC time coordinate, the a.e. chain rule and the
-fundamental theorem give the required curve integral estimate. No curve
-reparametrization or unproved substitution law is assumed.
+The current turn retains development runs dev23 through dev32 and the final
+acceptance. Dev23 was canceled after a broad tactic import started unrelated
+dependency builds. Before cleanup, exact hashes, birth times and the required
+import closure verified that 1,904 newly created files (188,138,233 bytes)
+were unnecessary. Only those files were moved into temporary RAM storage.
+Existing dependencies, successful cache, source captures and logs were
+preserved. The original terminal archive and supplemental maintenance archive
+have separate custody checks. The RAM copy is temporary build storage, not a
+permanent evidence archive. The retained controller now rejects broad
+`Mathlib`/`Mathlib.Tactic` imports and missing Mathlib source imports before
+submission. [Controller snapshot](../evidence/geometric-gauge/pair-confidence-acceptance/controller-snapshot.py).
 
-[LorentzTimeGeometry.lean](../QuantyraNullCone/LorentzTimeGeometry.lean)
-then proves
+Targeted builds reuse the verified task-owned compressed cache. The cache now
+also contains the full accepted root dependency closure. Its SHA-256 is
+`2d279c84a78af1c5654fda2d534fa19ce26f17652cf4e06425b51056d173b625` and size is
+51,986,664 bytes. The full root build took 98 seconds;
+this excludes transport, the separate type/axiom audit and collection.
+Earlier unchanged-target and controlled-edit cache probes remain accepted;
+they need not be repeated. No local Lean/Lake invocation occurred.
 
-    geometricDistortion3(rho_theta,rho_phi) <= (3/20)*|theta-phi|.
+## Next action
 
-It uses the actual AC weighted lengths, their time-separation suprema, and the
-accepted common-density coupling on profile quotients. A difference-of-cubes
-argument gives the weight constant `27/100` without differentiating real
-powers. For unmatched mass, the rational pointwise bound
-`|f| <= (10/3)*f^2+3/40` gives `E|f| <= 23/168 < 3/20` from the actual second
-moment. This replaces the ordinary audit's Cauchy–Schwarz calculation while
-retaining its stated sufficient constant. No sharpness claim is made.
+Freeze a bounded S043 numerical protocol before generating evaluation data.
+Reuse this theorem and model. Compare the inverse and selected policy with
+the midpoint on known and withheld parameters. Report parameter error and
+the certified geometric upper bound without calling the latter an exact
+geometric distance. Include relation construction/counting cost, memory,
+runtime and fallback frequency. Record whether practical investment is
+warranted, then make the separate 3+1 feasibility decision.
 
-The subsequent interval and pair integration is now proved against the actual
-sampling measure. [LorentzBoost.lean](../QuantyraNullCone/LorentzBoost.lean)
-constructs an explicit rational Lorentz boost, proves its determinant and
-Lebesgue-volume preservation, and proves preservation of strict chronology.
-The interval map sends the original diamond to the chronological interval
-between arbitrary strictly related endpoints. Its volume is
-`V*(T/2)^3`, where `T=sqrt(-lorentzSquare(q-p))`.
+All Lean remains on GCP. Any future run must establish new instance ownership.
+The current compressed cache is retained; root disk free space is about
+305 MiB, so check capacity before accumulating more immutable runs.
 
-Actual spatial reflections, coordinate exchange and radial integration give
-zero means and mixed moments, `E[t^2]=1/10` and
-`E[x^2]=E[y^2]=3/20`. Transporting these moments proves the future interval's
-conditional shape mean
-
-    M(t,r) = (7+18*t+11*t^2)/40 + 3*r^2/80.
-
-[LorentzIntervalMoments.lean](../QuantyraNullCone/LorentzIntervalMoments.lean)
-then gives the actual density-measure probability of the future of each
-interior point. No interval-volume or covariance formula is assumed.
-
-The proved light-cone substitution `t=1-a-b`, `r=b-a` maps
-`0<a<b<1` to the radial diamond and contributes the normalized factor
-`6*(b-a)`. The future flat volume is `(a*b)^(3/2)`.
-[LorentzTriangleMoments.lean](../QuantyraNullCone/LorentzTriangleMoments.lean)
-proves the general monomial integral from the real-power primitive.
-[LorentzPairIntegral.lean](../QuantyraNullCone/LorentzPairIntegral.lean)
-expands the finite polynomial and integrates its coefficients exactly.
-
-[LorentzPairProbability.lean](../QuantyraNullCone/LorentzPairProbability.lean)
-connects this integral to the product measure, the original two-sample law,
-and the event `code 0 1 = true` in the original order law:
-
-    q(theta) = 4/35 + (36/1925)*theta - (151/375375)*theta^2.
-
-[LorentzPairConditioning.lean](../QuantyraNullCone/LorentzPairConditioning.lean)
-proves the comparable-pair probability `p(theta)=2*q(theta)`, using symmetry
-and disjointness of the two strict orientations. It proves
-
-    (13738/375375)*|theta-phi| <= |p(theta)-p(phi)|,
-    d_G(theta,phi) <= (225225/54952)*|p(theta)-p(phi)|.
-
-Consequently, equality of the original two-point order laws identifies the
-parameter within this restricted family. This is a quantitative population
-statement; a finite observation still needs the concentration and inverse
-estimator proof. It is not full-class conditioning or a physical detector
-model.
-
-## Verification and efficiency
-
-The current combined target is `QuantyraNullCone.LorentzPairConditioning`.
-GCP run [`space-pair3-dev22-20261010T123035Z-433904`](../evidence/gcp/space-pair3-dev22-20261010T123035Z-433904/receipt.json)
-passes with zero warnings. Its 56 new printed axiom reports use only
-`propext`, `Classical.choice` and `Quot.sound`. The final incremental build
-took 10 seconds, excluding transport, compression and collection.
-The [current artifact validator](../evidence/geometric-gauge/pair-integral-development/verify-development.py)
-and [retained result](../evidence/geometric-gauge/pair-integral-development/development-validation.json)
-check the exact new sources, standard axiom reports, all preceding mathematical
-inputs unchanged, and all 16 terminal development outcomes from dev7 through
-dev22. Failed intermediate captures and the earlier successful build with
-linter warnings remain preserved. This validator only checks artifacts;
-all compiler invocations ran on GCP.
-
-The [current shutdown receipt](../evidence/gcp/space-pair3-dev22-20261010T123035Z-433904/cleanup.json)
-records the instance ownership established by dev7, collected outcomes,
-the verified retained successful cache, and task-owned shutdown. The accepted
-1,165-report campaign, published manuscripts and frozen studies are unchanged.
-
-The preceding family/geometric checkpoint remains preserved:
-
-GCP run [`space-pair3-dev6-20261010T114526Z-23f3f2`](../evidence/gcp/space-pair3-dev6-20261010T114526Z-23f3f2/receipt.json)
-passes the combined target, 2,981 jobs, with zero warnings. All 21 new printed
-axiom reports use only `propext`, `Classical.choice`, and `Quot.sound`.
-[Artifact validation](../evidence/geometric-gauge/pair-campaign-development/development-validation.json)
-checks the immutable archive, all 243 captured source files, all 239 preceding
-inputs unchanged, and the 11 collected campaign outcomes. There are 209 Lean
-inputs. The [validation script](../evidence/geometric-gauge/pair-campaign-development/verify-development.py)
-performs local artifact checks only; it invokes no compiler. The five failed
-development captures and their diagnostics remain preserved. The passing
-target took 18 seconds of build time, excluding cloud control and collection.
-
-The first two cache probes passed compilation but failed to retain their
-RAM-only cache between SSH sessions. Their evidence is preserved. The fixed
-route stores a compressed task-owned checkpoint on the persistent disk and
-extracts it into a fresh run-specific RAM directory. It verifies the archive
-hash, toolchain, dependency identities and source snapshots, uses an exclusive
-cache lock, and replaces the checkpoint only after a successful target build.
-Every submitted source archive and terminal outcome remains immutable.
-
-The [cache checker](../tools/check_gcp_incremental_cache.py) and its
-[retained result](../evidence/geometric-gauge/pair-campaign-development/cache-validation.json)
-verify three controlled persistent-cache runs:
-
-| Run | Result | Build time |
-| --- | --- | ---: |
-| `space-pair3-cache3-20261010T112429Z-c7e358` | Seed checkpoint | 69 seconds |
-| `space-pair3-cache4-20261010T112716Z-93b105` | Unchanged replay; all 489 tracked artifact hashes and timestamps retained | 3 seconds |
-| `space-pair3-cache5-20261010T113018Z-7b7d8a` | Probe edit rebuilds exactly the probe and its dependent module | 8 seconds |
-
-Times exclude transport, compression, extraction and evidence collection;
-they are not a general wall-clock speedup guarantee. Probe modules exist only
-inside the immutable test captures, not in the project source tree. The
-successful geometric target supplied that checkpoint, 39,025,530
-bytes, SHA-256 `c522380755bae196b8f635b09c05de925fe852b03196714516032abe659e8a0f`.
-
-All Lean/Lake invocations were on the established GCP instance. The
-[shutdown receipt](../evidence/gcp/space-pair3-dev6-20261010T114526Z-23f3f2/cleanup.json)
-records ownership, no other Lean work, collected outcomes and the verified
-persistent cache before stopping the task-owned instance. Earlier accepted
-proofs, manuscripts and frozen studies are unchanged.
-The first cleanup SSH process returned a nonzero Windows process code after
-printing its checks; its outcome remains retained. A separately recorded
-successful preflight retry precedes the stop operation.
-
-## Next decisive work
-
-The actual pair integral, original order-law bridge and geometric inverse
-conditioning now pass targeted GCP compilation. Reuse these results without
-repeating their source comparison or cache probes.
-
-Prove the original order-only pair statistic's permutation representation,
-its dependence-aware Bernstein bound, and measurable clipped inverse. Connect
-them to the geometric bound in one finite-confidence endpoint. Register the
-complete batch in the root and central audit and run full GCP acceptance at
-that milestone. The existing quantitative assessment and its practical-utility
-limitation remain in force; this development result is not an S043 go decision.
-
-Remaining to-do list: complete the all-pairs finite-confidence endpoint,
-perform full GCP acceptance, and record the S043 go/park decision.
+Remaining to-do list: S043 protocol, bounded validation and 3+1 decision;
+then queued S047. S048 manuscript preparation remains proposed separately.

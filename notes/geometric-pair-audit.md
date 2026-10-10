@@ -1,13 +1,15 @@
-# Restricted geometric confidence: ordinary proof and investment audit
+# Restricted geometric confidence: proof and investment audit
 
-S042, 2026-10-10. **Ordinary mathematical derivation, not Lean certification.**
-This completes the pre-formalization audit requested by the research efficiency
-protocol. Retain the original time-quadratic family, improve its geometric
-constant, and use the deterministic count of all comparable pairs with a
-dependence-aware bound. Certify this complete theorem as the next milestone.
-S042 remains at three of five criteria; S043 has not passed its gate.
+S042, 2026-10-10. **The complete restricted confidence theorem now has full
+GCP acceptance: 1,276 exact type/axiom reports, zero warnings.** The ordinary
+argument below supplied the pre-formalization audit required by the research
+efficiency protocol. Its family, actual pair integral, geometric comparison,
+all-pairs Bernstein bound and measurable inverse estimator are now connected
+in one certified endpoint. [Acceptance evidence](../evidence/geometric-gauge/pair-confidence-acceptance/acceptance-validation.json).
+S042's mathematical requirements close. Proceed to S043's bounded numerical
+validation and separate dimensional decision, reusing this theorem.
 
-The accepted baseline is the [general interior-isometry
+The preceding accepted baseline is the [general interior-isometry
 audit](geometric-interior-isometry-certification.md): 1,165 exact GCP reports.
 The smooth reconstruction converse remains external. The present restricted
 result neither supplies a full-class explicit inverse modulus nor changes the
@@ -275,7 +277,7 @@ proofs used here, not an exhaustive priority/correction search. A restricted
 conformal-parameter result in a known dimension does not establish a new
 general dimension estimator or physical detector model.
 
-## Verification and next milestone
+## Verification and next investment
 
 [The exact checker](../tools/check_geometric_pair_bounds.py) uses only rational
 arithmetic for the reduced moments, geometric constants, three quadratic
@@ -286,22 +288,64 @@ contains source hashes and explicitly excludes formal certification. No
 random samples, benchmark, Lean command or new GCP run was used for this
 audit. All earlier source/evidence bytes remain intact.
 
-The hard formal obligations are actual spatial-volume/pair integration and
-the AC weighted-time integral estimate. Start with those, reusing accepted
-coordinate, curve and coupling results. Then connect the order-invariant
-statistic, permutation/Jensen law, Bernstein inequality and monotone inverse
-to one actual-observation confidence endpoint. Check family membership and
-measurability within that same batch. Do not substitute a theorem that assumes
-the pair law or conditional independence which the endpoint must establish.
+The actual spatial-volume/pair integrations and AC weighted-time estimate
+are proved, not assumed. [LorentzPairConfidence.lean](../QuantyraNullCone/LorentzPairConfidence.lean)
+exports `time_pair_geometric_confidence3`: the stated failure probability is
+at most `alpha` for every allowed parameter, every sample size and
+`0<alpha<1`. Its input is the original `UnlabeledOrderCode`. The inverse is
+defined by the intermediate value theorem and is unique by the proved strict
+monotonicity. Measurability follows on the finite observation space. The
+policy chooses the inverse when its bound is no larger than the midpoint
+bound; this includes equality, with the same stated radius.
 
-Use targeted GCP development with verified task-owned incremental cache
-reuse, immutable submitted sources/outcomes, and one complete type/axiom
-acceptance at this theorem milestone. Cache reuse is still an implementation
-task, not an accomplished speedup. The last accepted VM state is terminated.
-Reassess the route if a hard formal step exposes a mathematical gap; do not
-turn proof difficulty into an impossibility claim. After acceptance, make the
-S043 go/park decision against its intended theorem and computational budget;
-avoid recertifying the same theorem as a separate S043 deliverable.
+[PairRelationCount.lean](../QuantyraNullCone/PairRelationCount.lean) proves
+the actual statistic is `2R/(n*(n-1))`, with the denominator evaluated in the
+natural numbers before conversion to reals. `R` includes every strict
+relation on distinct indices. [DisjointPairSample.lean](../QuantyraNullCone/DisjointPairSample.lean)
+proves the full joint iid product law for each permuted disjoint-pair block.
+The permutation/Jensen argument transfers its Bernstein MGF to the actual
+dependent all-pairs statistic. No binomial law for overlapping pairs or
+assumed pair probability is used.
 
-Remaining to-do list: certify the complete restricted confidence theorem on
-GCP, validate incremental cache reuse, and record the S043 go/park decision.
+Proof commit `f4672c4ea5290e65759253e8052efae270702cbb` precedes acceptance
+run `space-pair3-acceptance-20261010T130617Z-981811`. The complete root build
+passes 3,193 jobs; the audit checks 1,276 exact named types/axiom reports,
+including 111 additions across the 27 modules since the preceding full
+acceptance. All axioms are standard. The independent
+[artifact verifier](../evidence/geometric-gauge/pair-confidence-acceptance/verify-acceptance.py)
+matches 266 captured files, including 232 Lean inputs, against the immutable
+archive, raw committed blobs and normalized local files. Earlier mathematical
+modules, all 1,165 preceding audit statements, publications and frozen
+studies are preserved. The input archive SHA-256 is
+`4c983241ec5d16747744f2b3b287596efad4daf1af63616de9fd83db7fa006c5`.
+
+The [current checkpoint](geometric-pair-development.md) records targeted
+development, retained unsuccessful runs, verified persistent-cache reuse
+and task-owned VM cleanup. The full root build took 98 seconds, excluding
+transport, the separate type/axiom audit and evidence collection. All Lean
+execution was on GCP. The proof count is verification detail; the scientific
+delivery is the complete confidence theorem above.
+
+**Decision: go for bounded S043 validation; defer broadening the family and
+3+1 formalization.** The controlled genuine 2+1 class has an explicit finite
+observable and conditioning theorem. This passes the scientific prerequisite
+for testing an implementation. It does not establish practical efficiency:
+the conservative sufficient crossover remains 33,338 observations and
+relation construction can cost quadratically. S043 should freeze a bounded
+protocol before generating data, compare the inverse and selected policy
+with the midpoint on known and withheld parameters, and report parameter
+error plus the certified geometric upper bound separately from actual
+geometric loss. Include observation construction, counting, runtime, memory
+and fallback frequency. Reuse the accepted theorem; do not re-prove it as a
+new result. Record the 3+1 obligations and decision after that study.
+
+The pair-count statistic and permutation concentration technique are
+established. This package supplies the explicit restricted-family
+calculation and its certified connection to the original geometric loss.
+It proves neither a full-class explicit inverse modulus nor a matching
+lower rate, new dimension estimator, physical sensor model or operational
+advantage. The smooth reconstruction converse remains external as before.
+
+Remaining to-do list: S043 protocol freeze, bounded implementation/validation
+and separate 3+1 decision; then queued S047. S048 manuscript preparation
+remains proposed separately.

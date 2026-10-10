@@ -1,0 +1,58 @@
+ℹ [2576/2628] Replayed QuantyraNullCone.BernoulliMGF
+info: QuantyraNullCone/BernoulliMGF.lean:63:0: 'QuantyraNullCone.exp_remainder_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:64:0: 'QuantyraNullCone.centered_indicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:65:0: 'QuantyraNullCone.indicator_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:66:0: 'QuantyraNullCone.centered_indicator_mgf_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2627/2628] Building QuantyraNullCone.PairPermutation (2.6s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/QuantyraNullCone/PairPermutation.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean/QuantyraNullCone/PairPermutation.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean/QuantyraNullCone/PairPermutation.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/ir/QuantyraNullCone/PairPermutation.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/ir/QuantyraNullCone/PairPermutation.setup.json --json
+error: QuantyraNullCone/PairPermutation.lean:96:2: Type mismatch: After simplification, term
+  he
+ has type
+  Real.exp (∑ x, f x * (↑(Fintype.card ι))⁻¹) ≤ (↑(Fintype.card ι))⁻¹ * ∑ i, Real.exp (f i)
+but is expected to have type
+  Real.exp ((∑ i, f i) * (↑(Fintype.card ι))⁻¹) ≤ (↑(Fintype.card ι))⁻¹ * ∑ i, Real.exp (f i)
+info: QuantyraNullCone/PairPermutation.lean:111:0: 'QuantyraNullCone.permutation_pair_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:112:0: 'QuantyraNullCone.pairMean_eq_permutation_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:113:0: 'QuantyraNullCone.pairMean_exp_le_permutation_blocks' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+✖ [2628/2628] Building QuantyraNullCone.BernsteinIndicator (10s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/QuantyraNullCone/BernsteinIndicator.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean/QuantyraNullCone/BernsteinIndicator.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/lib/lean/QuantyraNullCone/BernsteinIndicator.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/ir/QuantyraNullCone/BernsteinIndicator.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev25-20261010T125151Z-c07c0e/source/.lake/build/ir/QuantyraNullCone/BernsteinIndicator.setup.json --json
+error: QuantyraNullCone/BernsteinIndicator.lean:29:39: Application type mismatch: The argument
+  abs_pow x (n + 2)
+has type
+  |x ^ (n + 2)| = |x| ^ (n + 2)
+but is expected to have type
+  |0| = x
+in the application
+  LE.le.trans_eq (le_abs_self 0) (abs_pow x (n + 2))
+error: QuantyraNullCone/BernsteinIndicator.lean:27:45: unsolved goals
+case hab.hab
+x : ℝ
+hx : |x| < 3
+hsum : HasSum (fun n => x ^ n / ↑n.factorial) (Real.exp x)
+hr : ||x| / 3| < 1
+hgeo : Summable fun n => (|x| / 3) ^ n
+htail : Summable fun n => x ^ (n + 2) / ↑(n + 2).factorial
+n : ℕ
+hf : 2 * 3 ^ n ≤ ↑(n + 2).factorial
+⊢ x ≤ |x|
+error: QuantyraNullCone/BernsteinIndicator.lean:32:13: Unknown identifier `tsum_le_tsum`
+error: QuantyraNullCone/BernsteinIndicator.lean:13:42: unsolved goals
+x : ℝ
+hx : |x| < 3
+hsum : HasSum (fun n => x ^ n / ↑n.factorial) (Real.exp x)
+hr : ||x| / 3| < 1
+hgeo : Summable fun n => (|x| / 3) ^ n
+htail : Summable fun n => x ^ (n + 2) / ↑(n + 2).factorial
+hterm : ∀ (n : ℕ), x ^ (n + 2) / ↑(n + 2).factorial ≤ x ^ 2 / 2 * (|x| / 3) ^ n
+⊢ Real.exp x - 1 - x ≤ x ^ 2 / (2 * (1 - |x| / 3))
+info: QuantyraNullCone/BernsteinIndicator.lean:85:0: 'QuantyraNullCone.exp_remainder_bernstein' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:86:0: 'QuantyraNullCone.exp_mul_bounded_bernstein' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:87:0: 'QuantyraNullCone.centered_indicator_bernstein_mgf' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairPermutation
+- QuantyraNullCone.BernsteinIndicator

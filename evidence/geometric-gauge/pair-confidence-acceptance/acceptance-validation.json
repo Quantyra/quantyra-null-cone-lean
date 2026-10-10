@@ -1,0 +1,106 @@
+{
+  "status": "PASS_FULL_GCP_ACCEPTANCE",
+  "run": "space-pair3-acceptance-20261010T130617Z-981811",
+  "source_commit": "f4672c4ea5290e65759253e8052efae270702cbb",
+  "baseline_commit": "b5aa9aed937a1dca8fbcf0c7928e9dc4061f1c02",
+  "captured_files": 266,
+  "lean_inputs": 232,
+  "source_matches_committed_raw_blobs_and_normalized_local": true,
+  "input_archive_sha256": "4c983241ec5d16747744f2b3b287596efad4daf1af63616de9fd83db7fa006c5",
+  "audited_named_exports": 1276,
+  "new_reports": 111,
+  "new_modules": [
+    "QuantyraNullCone/BernsteinIndicator.lean",
+    "QuantyraNullCone/BernsteinRadius.lean",
+    "QuantyraNullCone/BernsteinSample.lean",
+    "QuantyraNullCone/DisjointPairSample.lean",
+    "QuantyraNullCone/LorentzAffineMoments.lean",
+    "QuantyraNullCone/LorentzBoost.lean",
+    "QuantyraNullCone/LorentzIntervalMoments.lean",
+    "QuantyraNullCone/LorentzIntervalVolume.lean",
+    "QuantyraNullCone/LorentzLightConeIntegral.lean",
+    "QuantyraNullCone/LorentzPairConditioning.lean",
+    "QuantyraNullCone/LorentzPairConfidence.lean",
+    "QuantyraNullCone/LorentzPairEstimator.lean",
+    "QuantyraNullCone/LorentzPairIntegral.lean",
+    "QuantyraNullCone/LorentzPairInterval.lean",
+    "QuantyraNullCone/LorentzPairProbability.lean",
+    "QuantyraNullCone/LorentzPairStatistic.lean",
+    "QuantyraNullCone/LorentzRadialIntegral.lean",
+    "QuantyraNullCone/LorentzSpatialMoments.lean",
+    "QuantyraNullCone/LorentzTimeEnvelope.lean",
+    "QuantyraNullCone/LorentzTimeFamily.lean",
+    "QuantyraNullCone/LorentzTimeGeometry.lean",
+    "QuantyraNullCone/LorentzTimeMoments.lean",
+    "QuantyraNullCone/LorentzTriangleMoments.lean",
+    "QuantyraNullCone/PairBernsteinTail.lean",
+    "QuantyraNullCone/PairConcentration.lean",
+    "QuantyraNullCone/PairPermutation.lean",
+    "QuantyraNullCone/PairRelationCount.lean"
+  ],
+  "root_build_jobs": 3193,
+  "warnings": 0,
+  "standard_axioms_only": true,
+  "prior_1165_audit_statements_preserved": true,
+  "earlier_mathematical_modules_unchanged": true,
+  "published_manuscripts_and_frozen_studies_preserved": true,
+  "build_seconds": 98.0,
+  "cache_checkpoint": {
+    "campaign": "pair3-20261010T111516Z-a06b82",
+    "last_run": "space-pair3-acceptance-20261010T130617Z-981811",
+    "toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325",
+    "manifest": "61d78cb094e771f720b480be1183e4727021b3b81b1aecf0e23807b022b22407",
+    "sha256": "2d279c84a78af1c5654fda2d534fa19ce26f17652cf4e06425b51056d173b625",
+    "bytes": 51986664
+  },
+  "all_campaign_terminal_outcomes_collected": {
+    "space-pair3-dev23-20261010T123923Z-72c51c": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev24-20261010T124738Z-f67a1e": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev25-20261010T125151Z-c07c0e": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev26-20261010T125317Z-982c19": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev27-20261010T125445Z-6b5b65": {
+      "exit": 0,
+      "warnings": 0
+    },
+    "space-pair3-dev28-20261010T125656Z-cc37c9": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev29-20261010T125835Z-2a213e": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev30-20261010T130003Z-e10b23": {
+      "exit": 1,
+      "warnings": 1
+    },
+    "space-pair3-dev31-20261010T130145Z-3bc614": {
+      "exit": 1,
+      "warnings": 0
+    },
+    "space-pair3-dev32-20261010T130345Z-631b4b": {
+      "exit": 0,
+      "warnings": 0
+    },
+    "space-pair3-acceptance-20261010T130617Z-981811": {
+      "exit": 0,
+      "warnings": 0
+    }
+  },
+  "maintenance_custody_verified": true,
+  "local_lean_invocations": 0,
+  "verifier_sha256": "23b3915f5b9efa8a8980de3d258d4e3579708908a5231131e036f800b4d85c89",
+  "scope": "Restricted time-quadratic family, actual all-pairs unlabeled observation, original geometric loss. External smooth reconstruction converse unchanged. No full-class rate, sharpness or practical utility claim."
+}

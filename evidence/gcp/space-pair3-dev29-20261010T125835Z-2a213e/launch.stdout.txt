@@ -1,0 +1,73 @@
+error: QuantyraNullCone/PairBernsteinTail.lean:20:4: mod_cast has type
+  (0 : ℕ) < n / 2
+but is expected to have type
+  (0 : ℝ) < m
+error: QuantyraNullCone/PairBernsteinTail.lean:42:10: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `X ?x` is a value of type
+  ℝ
+error: QuantyraNullCone/PairBernsteinTail.lean:46:23: linarith failed to find a contradiction
+Ω : Type u_1
+inst✝¹ : MeasurableSpace Ω
+μ : Measure Ω
+inst✝ : IsProbabilityMeasure μ
+S : Set (Ω × Ω)
+hS : MeasurableSet S
+n : ℕ
+hn : 2 ≤ n
+t : ℝ
+ht0 : 0 ≤ t
+ht3 : t < 3
+r : ℝ
+P : Measure (Fin n → Ω) := Measure.pi fun x => μ
+p : ℝ := (μ.prod μ).real S
+m : ℝ := ↑(n / 2)
+X : (Fin n → Ω) → ℝ := fun x => m * (pairIndicatorMean S x - p)
+hm : 0 < m
+hi : ∀ (z : ℝ), Integrable (fun x => Real.exp (z * X x)) P
+--
+error: QuantyraNullCone/PairBernsteinTail.lean:67:12: typeclass instance problem is stuck
+  IsProbabilityMeasure ?m.250
+
+Note: Lean will not try to resolve this typeclass instance problem because the third type argument to `IsProbabilityMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+info: QuantyraNullCone/PairBernsteinTail.lean:83:0: 'QuantyraNullCone.pairIndicator_chernoff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairBernsteinTail.lean:84:0: 'QuantyraNullCone.pairIndicator_bernstein_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairBernsteinTail
+ht0 : 0 ≤ t
+ht3 : t < 3
+r : ℝ
+P : Measure (Fin n → Ω) := Measure.pi fun x => μ
+p : ℝ := (μ.prod μ).real S
+m : ℝ := ↑(n / 2)
+X : (Fin n → Ω) → ℝ := fun x => m * (pairIndicatorMean S x - p)
+hm : 0 < m
+hi : ∀ (z : ℝ), Integrable (fun x => Real.exp (z * X x)) P
+hg : ∀ (z : ℝ), |z| < 3 → mgf X P z ≤ Real.exp (m * p * (1 - p) * z ^ 2 / (2 * (1 - |z| / 3)))
+ht : |t| < 3
+hU : P.real {ω | m * r ≤ X ω} ≤ Real.exp (m * p * (1 - p) * t ^ 2 / (2 * (1 - t / 3)) - m * t * r)
+hL : P.real {ω | X ω ≤ -(m * r)} ≤ Real.exp (m * p * (1 - p) * t ^ 2 / (2 * (1 - t / 3)) - m * t * r)
+hUE :
+  -t * (m * r) + m * p * (1 - p) * t ^ 2 / (2 * (1 - t / 3)) = m * p * (1 - p) * t ^ 2 / (2 * (1 - t / 3)) - m * t * r
+hLE :
+  - -t * -(m * r) + m * p * (1 - p) * (-t) ^ 2 / (2 * (1 - t / 3)) =
+    m * p * (1 - p) * t ^ 2 / (2 * (1 - t / 3)) - m * t * r
+x : Fin n → Ω
+hx : x ∈ {x | r ≤ |pairIndicatorMean S x - p|}
+hb : m * r ≤ |X x|
+h : m * r ≤ -X x
+⊢ False
+failed
+error: QuantyraNullCone/PairBernsteinTail.lean:67:12: typeclass instance problem is stuck
+  IsProbabilityMeasure ?m.250
+
+Note: Lean will not try to resolve this typeclass instance problem because the third type argument to `IsProbabilityMeasure` is a metavariable. This argument must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+info: QuantyraNullCone/PairBernsteinTail.lean:83:0: 'QuantyraNullCone.pairIndicator_chernoff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairBernsteinTail.lean:84:0: 'QuantyraNullCone.pairIndicator_bernstein_tail' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.PairBernsteinTail
+REMOTE_TERMINAL_EXIT=1

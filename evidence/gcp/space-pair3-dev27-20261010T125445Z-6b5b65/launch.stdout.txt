@@ -1,0 +1,23 @@
+ℹ [2576/2630] Replayed QuantyraNullCone.BernoulliMGF
+info: QuantyraNullCone/BernoulliMGF.lean:63:0: 'QuantyraNullCone.exp_remainder_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:64:0: 'QuantyraNullCone.centered_indicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:65:0: 'QuantyraNullCone.indicator_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernoulliMGF.lean:66:0: 'QuantyraNullCone.centered_indicator_mgf_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2627/2630] Built QuantyraNullCone.PairPermutation (2.7s)
+info: QuantyraNullCone/PairPermutation.lean:111:0: 'QuantyraNullCone.permutation_pair_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:112:0: 'QuantyraNullCone.pairMean_eq_permutation_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairPermutation.lean:113:0: 'QuantyraNullCone.pairMean_exp_le_permutation_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2628/2630] Built QuantyraNullCone.DisjointPairSample (3.0s)
+info: QuantyraNullCone/DisjointPairSample.lean:83:0: 'QuantyraNullCone.iid_subtuple_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:84:0: 'QuantyraNullCone.iid_disjoint_pairs_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:85:0: 'QuantyraNullCone.disjointPairIndex_injective' depends on axioms: [propext, Quot.sound]
+info: QuantyraNullCone/DisjointPairSample.lean:86:0: 'QuantyraNullCone.permuted_disjoint_pairs_preserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2629/2630] Built QuantyraNullCone.BernsteinIndicator (11s)
+info: QuantyraNullCone/BernsteinIndicator.lean:86:0: 'QuantyraNullCone.exp_remainder_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:87:0: 'QuantyraNullCone.exp_mul_bounded_bernstein' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinIndicator.lean:88:0: 'QuantyraNullCone.centered_indicator_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2630/2630] Built QuantyraNullCone.BernsteinSample (2.8s)
+info: QuantyraNullCone/BernsteinSample.lean:67:0: 'QuantyraNullCone.iid_indicator_sum_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinSample.lean:68:0: 'QuantyraNullCone.iid_indicator_sum_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2630 jobs).
+REMOTE_TERMINAL_EXIT=0

@@ -1,0 +1,68 @@
+1
+ℹ [2999/3005] Replayed QuantyraNullCone.BernsteinSample
+info: QuantyraNullCone/BernsteinSample.lean:67:0: 'QuantyraNullCone.iid_indicator_sum_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinSample.lean:68:0: 'QuantyraNullCone.iid_indicator_sum_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3000/3005] Built QuantyraNullCone.PairConcentration (3.2s)
+info: QuantyraNullCone/PairConcentration.lean:107:0: 'QuantyraNullCone.pairIndicator_exp_le_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:108:0: 'QuantyraNullCone.pairIndicator_exp_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairConcentration.lean:109:0: 'QuantyraNullCone.pairIndicator_bernstein_mgf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3001/3005] Built QuantyraNullCone.BernsteinRadius (3.3s)
+info: QuantyraNullCone/BernsteinRadius.lean:42:0: 'QuantyraNullCone.bernsteinRadius_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/BernsteinRadius.lean:43:0: 'QuantyraNullCone.bernstein_log_radius_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3002/3005] Built QuantyraNullCone.PairBernsteinTail (3.9s)
+info: QuantyraNullCone/PairBernsteinTail.lean:87:0: 'QuantyraNullCone.pairIndicator_chernoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/PairBernsteinTail.lean:88:0: 'QuantyraNullCone.pairIndicator_bernstein_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3003/3005] Built QuantyraNullCone.LorentzPairStatistic (3.5s)
+info: QuantyraNullCone/LorentzPairStatistic.lean:85:0: 'QuantyraNullCone.orderPairMean_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:86:0: 'QuantyraNullCone.sampled_order_pair_mean3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:87:0: 'QuantyraNullCone.time_pair_variance_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:88:0: 'QuantyraNullCone.time_pair_sample_bernstein3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairStatistic.lean:89:0: 'QuantyraNullCone.time_pair_unlabeled_bernstein3' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [3004/3005] Building QuantyraNullCone.LorentzPairEstimator (3.6s)
+trace: .> LEAN_PATH=/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Cli/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/batteries/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/Qq/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/aesop/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/proofwidgets/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/importGraph/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/LeanSearchClient/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/plausible/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-20261007T093129Z-retry1/packages/mathlib/.lake/build/lib/lean:/home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/.lake/build/lib/lean /home/dfredriksen_quantyra_org/quantyra-space-tools/lean-4.30.0-linux/bin/lean /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/QuantyraNullCone/LorentzPairEstimator.lean -o /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/.lake/build/lib/lean/QuantyraNullCone/LorentzPairEstimator.olean -i /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/.lake/build/lib/lean/QuantyraNullCone/LorentzPairEstimator.ilean -c /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/.lake/build/ir/QuantyraNullCone/LorentzPairEstimator.c --setup /home/dfredriksen_quantyra_org/quantyra-space-runs/space-pair3-dev31-20261010T130145Z-3bc614/source/.lake/build/ir/QuantyraNullCone/LorentzPairEstimator.setup.json --json
+error: QuantyraNullCone/LorentzPairEstimator.lean:63:6: Failed to rewrite using equation theorems for `timePairEstimator3`
+error: QuantyraNullCone/LorentzPairEstimator.lean:86:9: could not synthesize default value for parameter 'h₂' using tactics
+error: QuantyraNullCone/LorentzPairEstimator.lean:86:9: tactic 'aesop' failed, failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.
+Initial goal:
+  theta r : ℝ
+  ht : theta ∈ Icc 0 (1 / 2)
+  n : ℕ
+  hn : 2 ≤ n
+  hr : 0 < r
+  this : IsProbabilityMeasure (densityMeasure3 (timeQuadraticDensity3 theta)) :=
+    InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+  hsub :
+    {code | 225225 / 54952 * r < geometricDistortion3 ⋯ ⋯} ⊆
+      {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|}
+  ⊢ (unlabeledOrderLaw3 (timeQuadraticDensity3 theta) n)
+        {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|} ≠
+      ⊤
+Remaining goals after safe rules:
+  theta r : ℝ
+  ht : theta ∈ Icc 0 (1 / 2)
+  n : ℕ
+  hn : 2 ≤ n
+  hr : 0 < r
+  this : IsProbabilityMeasure (densityMeasure3 (timeQuadraticDensity3 theta)) :=
+    InDensityClass3.isProbabilityMeasure (time_quadratic_density_class3 ht)
+  hsub :
+    {code | 225225 / 54952 * r < geometricDistortion3 ⋯ ⋯} ⊆
+      {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|}
+  ⊢ (unlabeledOrderLaw3 (timeQuadraticDensity3 theta) n)
+        {code | r ≤ |unlabeledPairMean code - timeComparableProbability3 theta|} ≠
+      ⊤
+info: QuantyraNullCone/LorentzPairEstimator.lean:96:0: 'QuantyraNullCone.time_pair_clipped_inverse_exists3' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:97:0: 'QuantyraNullCone.time_pair_estimator_geometric_error3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:98:0: 'QuantyraNullCone.time_pair_estimator_geometric_tail3' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+info: QuantyraNullCone/LorentzPairEstimator.lean:99:0: 'QuantyraNullCone.time_pair_midpoint_geometric_bound3' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- QuantyraNullCone.LorentzPairEstimator
+error: build failed
+TERMINAL_EXIT=1

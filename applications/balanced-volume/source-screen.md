@@ -17,4 +17,8 @@ The public [Quanta Burst Photography repository](https://github.com/sizhuom/quan
 
 Locally retained source identities outside the repository: Raupach PDF SHA256 `b5da0edbf275bb9464380afbe15912d4cb9a6e491611125a6a7a7ae0bed31696`; Tudball v4 PDF SHA256 `2fe8ffc76de503fe34421334c7bf64ce40599a14329bf023637dea3137f336c4`. These are acquisition records, not proof or novelty certificates. Other sources above were inspected through their primary web pages/code.
 
-Remaining to-do list: reproduce the strongest applicable auxiliary-constrained comparator, then select adequate physical evidence for a surviving decision procedure.
+Published-source continuation: the final [Tudball article](https://pmc.ncbi.nlm.nih.gov/articles/PMC10183833/), 14-page institutional PDF and 11-page published supplement have now been retrieved and compared with preprint v4 and author code at `e0003fa14c6ebb4a2c74106b666439c3bc5cfa73`. The categorical moment constraint is unchanged. The [explicit implementation and twelve-variant comparison](AUXILIARY-RESULTS.md) are complete, with one secondary gate pass. Source identities and the paper/code error-allocation difference are recorded in [the specialization](auxiliary-derivation.md). The table above records the initial screen; this paragraph supersedes its outstanding reproduction action.
+
+[Resin, A Simple Algorithm for Exact Multinomial Tests](https://arxiv.org/pdf/2008.12682), version 2, supplies simple-null exact-test definitions and computation. The introduction and test definitions were inspected. It does not itself supply a globally calibrated composite-null procedure for our six-facet probability polygon. That nuisance optimization remains a concrete next step, not a reason to treat an asymptotic comparison as finite validation.
+
+Remaining to-do list: complete joint finite multinomial comparison, then select adequate physical evidence for a surviving decision procedure.

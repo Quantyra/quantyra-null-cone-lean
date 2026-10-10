@@ -1,0 +1,22 @@
+{
+  "id": "S049-balanced-volume-finite-reference-v1",
+  "date": "2026-10-10",
+  "purpose": "Resolve whether the frozen four-tail candidate retains an advantage over an applicable finite exact-calibration reference. A pointwise dominance proof is a sufficient negative gate; an expensive globally optimal multinomial test is not required to refute that advantage.",
+  "design": "Secondary, retrospective comparison. Original and auxiliary outcomes are already known. Freeze and push this protocol, ordinary derivation and executable before creating reference tables or computing comparison outcomes. No candidate changes or new data.",
+  "input_commit": "6898b45b251017acb7276111c283ea0b91632000",
+  "input_results_sha256": "7b396b59bdf605c0fdf6fcfbc9be9ea042657fdbec72ca9892c09c16b75f7578",
+  "cases": ["s040", "s053", "s057"],
+  "nominal_volume": "5/16",
+  "tolerance": "1/32",
+  "false_flag_budget": "1/20",
+  "pair_budget": "1/40",
+  "candidate_tail_budget": "1/80",
+  "reference": "For each conditional A:C and B:C count, use a central acceptance interval calibrated exactly over its composite binomial null interval. The two conditional decisions each receive alpha/2; their union is valid for the full multinomial observation without independence between tests.",
+  "calibration": "Exact rational endpoint probabilities. Start with each tail at alpha/2, then delete boundary counts in descending order of the minimum endpoint tail probability until both endpoint rejection probabilities are <=alpha/2. Equal-score ties are removed together. The original alpha/4-per-tail rejection region is always feasible and retained.",
+  "composite_null_proof": "The probability of two disjoint binomial tails has no interior maximum as a function of q. Its supremum on [qlo,qhi] occurs at an endpoint. Thus rational endpoint checks cover the entire continuous nuisance interval, not merely a grid.",
+  "established_method_boundary": "This is an explicit specialization of exact rejection-region calibration, using the same conditional binomial laws as the candidate. It is not represented as a published package call or a new statistical principle. Full joint multinomial likelihood-ratio calibration may improve further and is not computed here.",
+  "evaluation": "Create all conditional-size tables through n=1024 at R=5/4 and n=2048 at R=2. Replay the three preserved positive-case samples and integrate their full finite multinomial laws with a bounded marginal omission. Verify exact inclusion of candidate critical regions for every table row.",
+  "independent_audit": "Recompute all endpoint binomial CDF numerators with binomial-coefficient recurrences, independently of the Bernoulli-step CDF recursion used to construct tables. Check uniform endpoint size and candidate inclusion with integers. Check small-count exhaustive statistics, category exchange, zero subsets, and saved-data hashes.",
+  "decision_gate": "If the finite reference contains every candidate rejection and has the same uniform false-flag guarantee, the candidate cannot satisfy a positive-power-improvement gate over this reference. Retain the useful implementation and prior results, but do not promote the candidate as establishing the requested best-existing-method benefit. Select the next application by physical observables and calibration evidence.",
+  "scope": "No new physical data or claim, no source-manuscript changes, no Lean/Lake run, no GCP instance, no new DOI. The full goal remains active after a negative candidate decision."
+}

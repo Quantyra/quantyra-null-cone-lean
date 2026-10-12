@@ -1,4 +1,4 @@
-"""On-demand Quantyra Gmail reads and marking reviewed messages as read.
+"""On-demand Quantyra Gmail reads, reviewed-message updates, and one deposit notice.
 
 Credentials use Windows user-bound DPAPI outside Git. OAuth uses Google's
 installed-app library, PKCE, state validation and a loopback callback.
@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+from email.message import EmailMessage
 import ctypes
 from ctypes import wintypes
 from datetime import datetime, timezone
@@ -256,8 +257,84 @@ def import_token(path):
     print(json.dumps(receipt))
 
 
+RESEARCH_MAILBOX = "research@quantyra.org"
+
+
+def outreach_message(doi):
+    """Plain-text deposit notice. The claim boundary is part of the message."""
+    if not re.fullmatch(r"10\.5281/zenodo\.[0-9]+", doi or ""):
+        raise AccessError("The notice requires one Zenodo version DOI.")
+    body = (
+        f"The clock-obstruction preprint is deposited at https://doi.org/{doi}.\n\n"
+        "The symmetric MMP mouth clock is not an independent boundary mode. "
+        "The classification is already known. "
+        "No shortcut, formation, propulsion, occupancy, TRL, launch, seed, or revenue result is claimed. "
+        "No Lean certificate is claimed.\n"
+    )
+    message = EmailMessage()
+    message["To"] = RESEARCH_MAILBOX
+    message["From"] = MAILBOX
+    message["Subject"] = f"Clock-obstruction preprint {doi}"
+    message.set_content(body)
+    return message
+
+
+def plain_body(payload):
+    texts = []
+    for part in parts(payload):
+        if part.get("mimeType") != "text/plain":
+            continue
+        encoded = part.get("body", {}).get("data", "")
+        if not encoded:
+            continue
+        texts.append(base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4)).decode("utf-8"))
+    return "\n".join(texts)
+
+
+def send_clock_notice(gmail, doi):
+    """Send the one authorized deposit notice and read it back from Sent."""
+    message = outreach_message(doi)
+    raw = base64.urlsafe_b64encode(message.as_bytes()).decode("ascii")
+    response = gmail.session.post(
+        API_ROOT + "/messages/send",
+        json={"raw": raw},
+        timeout=45,
+        allow_redirects=False,
+    )
+    if response.status_code != 200:
+        raise AccessError(f"Gmail send failed with HTTP {response.status_code}.")
+    try:
+        sent = response.json()
+        message_id = validate_id(sent["id"])
+    except (ValueError, KeyError, TypeError):
+        raise AccessError("Gmail send returned an unexpected response.") from None
+    fetched = gmail.get("/messages/" + message_id, {"format": "full"})
+    labels = fetched.get("labelIds", [])
+    if "SENT" not in labels:
+        raise AccessError("Gmail did not confirm the message is in Sent.")
+    body = plain_body(fetched.get("payload", {}))
+    header = headers(fetched.get("payload", {}))
+    if doi not in body or "already known" not in body or "No shortcut, formation" not in body:
+        raise AccessError("The sent message does not contain the deposit notice.")
+    if header.get("to", "").casefold() != RESEARCH_MAILBOX:
+        raise AccessError("The sent message is not addressed to the research mailbox.")
+    gmail.save()
+    receipt = {
+        "message_id": sent["id"],
+        "thread_id": fetched.get("threadId"),
+        "labels": labels,
+        "doi": doi,
+        "to": header.get("to", ""),
+        "from": header.get("from", ""),
+        "subject": header.get("subject", ""),
+        "verified_at": utc_now(),
+    }
+    print(json.dumps(receipt))
+    return receipt
+
+
 def mark_read(gmail, message_id):
-    """The sole write operation: remove UNREAD from one reviewed message."""
+    """Remove UNREAD from one reviewed message."""
     suffix = "/messages/" + validate_id(message_id)
     before = gmail.get(suffix, {"format": "metadata"})
     changed = "UNREAD" in before.get("labelIds", [])
@@ -378,6 +455,8 @@ def main(argv=None):
     downloader.add_argument("--output-dir", type=Path, required=True)
     marker = commands.add_parser("mark-read")
     marker.add_argument("--message-id", required=True)
+    notice = commands.add_parser("send-clock-notice")
+    notice.add_argument("--doi", required=True)
     args = parser.parse_args(argv)
     try:
         if args.command == "import-client":
@@ -394,6 +473,8 @@ def main(argv=None):
                 search(gmail, args.query, args.limit)
             elif args.command == "mark-read":
                 mark_read(gmail, args.message_id)
+            elif args.command == "send-clock-notice":
+                send_clock_notice(gmail, args.doi)
             else:
                 download(gmail, args.message_id, args.output_dir)
     except AccessError as error:

@@ -1,14 +1,18 @@
 """Regression checks for the Gmail credential and private-output boundaries."""
 
 import base64
+from email import message_from_bytes
+from email.policy import default as email_policy
 import json
 import os
 from pathlib import Path
+import sys
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
 from urllib.parse import parse_qs, urlparse
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gmail_api as api
 
 
@@ -89,6 +93,56 @@ class GmailBoundaries(unittest.TestCase):
                 with self.assertRaises(api.AccessError):
                     api.import_token(path)
                 gmail.assert_not_called()
+
+    def test_clock_notice_posts_the_claim_boundary_and_reads_sent(self):
+        gmail = Mock()
+        gmail.session.post.return_value.status_code = 200
+        gmail.session.post.return_value.json.return_value = {"id": "sent123"}
+        content = api.outreach_message("10.5281/zenodo.23323433").get_content().encode("utf-8")
+        encoded = base64.urlsafe_b64encode(content).decode("ascii")
+        gmail.get.return_value = {
+            "threadId": "thread123",
+            "labelIds": ["SENT"],
+            "payload": {
+                "mimeType": "text/plain",
+                "headers": [
+                    {"name": "To", "value": api.RESEARCH_MAILBOX},
+                    {"name": "From", "value": api.MAILBOX},
+                    {"name": "Subject", "value": "Clock-obstruction preprint 10.5281/zenodo.23323433"},
+                ],
+                "body": {"data": encoded},
+            },
+        }
+        with patch("builtins.print"):
+            receipt = api.send_clock_notice(gmail, "10.5281/zenodo.23323433")
+        posted = gmail.session.post.call_args
+        self.assertEqual(posted.args[0], api.API_ROOT + "/messages/send")
+        raw = posted.kwargs["json"]["raw"]
+        posted_message = message_from_bytes(
+            base64.urlsafe_b64decode(raw + "=" * (-len(raw) % 4)), policy=email_policy
+        )
+        content = posted_message.get_content()
+        self.assertEqual(posted_message["To"], api.RESEARCH_MAILBOX)
+        self.assertIn("https://doi.org/10.5281/zenodo.23323433", content)
+        self.assertIn("already known", content)
+        self.assertIn("No shortcut, formation, propulsion, occupancy, TRL, launch, seed, or revenue", content)
+        self.assertEqual(receipt["message_id"], "sent123")
+        self.assertIn("SENT", receipt["labels"])
+        gmail.save.assert_called_once()
+
+    def test_clock_notice_refuses_a_message_that_is_not_in_sent(self):
+        gmail = Mock()
+        gmail.session.post.return_value.status_code = 200
+        gmail.session.post.return_value.json.return_value = {"id": "sent123"}
+        gmail.get.return_value = {"labelIds": ["DRAFT"], "payload": {"mimeType": "text/plain", "headers": [], "body": {}}}
+        with self.assertRaises(api.AccessError):
+            api.send_clock_notice(gmail, "10.5281/zenodo.23323433")
+
+    def test_clock_notice_rejects_a_non_zenodo_doi_before_sending(self):
+        gmail = Mock()
+        with self.assertRaises(api.AccessError):
+            api.send_clock_notice(gmail, "10.1000/example")
+        gmail.session.post.assert_not_called()
 
     def test_mark_read_removes_only_unread_and_checks_result(self):
         gmail = Mock()
